@@ -6,8 +6,8 @@ interface Props {
   color?: string
 }
 
-export function SectionBadge({ label, color = '#A0A0A0' }: Props) {
-  const bgHex = Math.round(0.15 * 255).toString(16).padStart(2, '0')
+export function SectionBadge({ label, color = '#A1A1AA' }: Props) {
+  const bgHex = Math.round(0.12 * 255).toString(16).padStart(2, '0')
 
   return (
     <View style={[styles.badge, { backgroundColor: `${color}${bgHex}` }]}>
@@ -19,13 +19,14 @@ export function SectionBadge({ label, color = '#A0A0A0' }: Props) {
 const styles = StyleSheet.create({
   badge: {
     alignSelf: 'flex-start',
-    paddingVertical: 6,
+    paddingVertical: 5,
     paddingHorizontal: 12,
     borderRadius: radii.pill,
   },
   label: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '600',
-    letterSpacing: 0.5,
+    letterSpacing: 1,
+    textTransform: 'uppercase',
   },
 })

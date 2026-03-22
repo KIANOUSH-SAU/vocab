@@ -42,7 +42,7 @@ export default function Index() {
 
   // Show nothing while checking session (splash screen stays visible)
   if (!isSessionChecked) {
-    return <View style={styles.loading}><ActivityIndicator color={colors.primaryGreen} /></View>
+    return <View style={styles.loading}><ActivityIndicator color={colors.iris} /></View>
   }
 
   if (!user) return <Redirect href="/(onboarding)/" />

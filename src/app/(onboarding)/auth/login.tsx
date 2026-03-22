@@ -2,9 +2,11 @@ import { useState } from 'react'
 import { View, Text, TextInput, StyleSheet, ScrollView, Pressable } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
+import { Ionicons } from '@expo/vector-icons'
+import { LinearGradient } from 'expo-linear-gradient'
 import { useAuthForm } from '@hooks/useAuthForm'
 import { useUserStore } from '@store/userStore'
-import { colors, spacing, radii, typography } from '@constants/theme'
+import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
 import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
 import { BackButton } from '@components/ui/BackButton'
 import { Button } from '@components/ui/Button'
@@ -44,7 +46,7 @@ export default function LoginScreen() {
           <BackButton onPress={() => router.back()} />
 
           <View style={styles.header}>
-            <Text style={styles.title}>Welcome back</Text>
+            <Text style={styles.title}>Welcome{'\n'}back</Text>
             <Text style={styles.subtitle}>
               Log in to continue your learning journey
             </Text>
@@ -52,19 +54,20 @@ export default function LoginScreen() {
 
           {error && (
             <View style={styles.errorBox}>
+              <Ionicons name="alert-circle" size={16} color={colors.coralText} />
               <Text style={styles.errorText}>{error}</Text>
             </View>
           )}
 
           <View style={styles.form}>
             <View style={styles.inputGroup}>
-              <Text style={styles.label}>Email</Text>
+              <Text style={styles.label}>EMAIL</Text>
               <TextInput
                 style={styles.input}
                 value={displayEmail}
                 onChangeText={onEmailChange}
                 placeholder="you@example.com"
-                placeholderTextColor={colors.textMuted}
+                placeholderTextColor={colors.inkLight}
                 keyboardType="email-address"
                 autoCapitalize="none"
                 autoComplete="email"
@@ -72,34 +75,38 @@ export default function LoginScreen() {
             </View>
 
             <View style={styles.inputGroup}>
-              <Text style={styles.label}>Password</Text>
+              <Text style={styles.label}>PASSWORD</Text>
               <TextInput
                 style={styles.input}
                 value={password}
                 onChangeText={(v) => { setPassword(v); clearError() }}
                 placeholder="Your password"
-                placeholderTextColor={colors.textMuted}
+                placeholderTextColor={colors.inkLight}
                 secureTextEntry
                 autoComplete="current-password"
               />
             </View>
           </View>
 
-          <Button
-            label="Log In"
+          <Pressable
             onPress={() => {
-              // Ensure the displayed email is used for login
               if (!hasEditedEmail && lastLoggedInEmail) {
                 setEmail(lastLoggedInEmail)
               }
               handleLogin()
             }}
-            variant="primary"
-            size="lg"
-            fullWidth
-            loading={isLoading}
-            icon={{ library: 'Ionicons', name: 'arrow-forward', position: 'right' }}
-          />
+            disabled={isLoading}
+          >
+            <LinearGradient
+              colors={[colors.ink, '#27272A']}
+              style={[styles.primaryBtn, isLoading && { opacity: 0.6 }]}
+            >
+              <Text style={styles.primaryLabel}>
+                {isLoading ? 'Logging in...' : 'Log In'}
+              </Text>
+              {!isLoading && <Ionicons name="arrow-forward" size={18} color="#fff" />}
+            </LinearGradient>
+          </Pressable>
 
           <View style={styles.divider}>
             <View style={styles.dividerLine} />
@@ -139,44 +146,94 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+  container: { flex: 1, backgroundColor: colors.bg },
   scroll: {
-    padding: spacing[6],
-    gap: spacing[6],
-    paddingBottom: spacing[12],
+    padding: 24,
+    gap: 24,
+    paddingBottom: 48,
   },
-  header: { gap: spacing[2] },
-  title: { ...typography.heading2, color: colors.textPrimary },
-  subtitle: { ...typography.body, color: colors.textSecondary },
+  header: { gap: 8 },
+  title: {
+    fontFamily: fonts.serif,
+    fontSize: 32,
+    color: colors.ink,
+    letterSpacing: -1,
+    lineHeight: 38,
+  },
+  subtitle: {
+    fontFamily: fonts.sans,
+    fontSize: 15,
+    color: colors.ink2,
+    lineHeight: 23,
+  },
   errorBox: {
-    backgroundColor: 'rgba(239,68,68,0.1)',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    backgroundColor: colors.coralSoft,
     borderRadius: radii.md,
-    padding: spacing[3],
+    padding: 12,
     borderWidth: 1,
-    borderColor: 'rgba(239,68,68,0.3)',
+    borderColor: `${colors.coral}40`,
   },
-  errorText: { ...typography.small, color: colors.error },
-  form: { gap: spacing[4] },
-  inputGroup: { gap: spacing[1] },
-  label: { ...typography.caption, color: colors.textMuted, textTransform: 'uppercase', letterSpacing: 0.5 },
+  errorText: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 13,
+    color: colors.coralText,
+    flex: 1,
+  },
+  form: { gap: 16 },
+  inputGroup: { gap: 6 },
+  label: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 11,
+    color: colors.inkLight,
+    letterSpacing: 1,
+  },
   input: {
-    backgroundColor: colors.surface,
+    backgroundColor: colors.card,
     borderRadius: radii.md,
     borderWidth: 1,
     borderColor: colors.border,
-    padding: spacing[4],
-    ...typography.body,
-    color: colors.textPrimary,
+    padding: 16,
+    fontFamily: fonts.sans,
+    fontSize: 15,
+    color: colors.ink,
+  },
+  primaryBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: radii.md,
+    ...shadows.button,
+  },
+  primaryLabel: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 15,
+    color: '#fff',
   },
   divider: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing[3],
+    gap: 12,
   },
   dividerLine: { flex: 1, height: 1, backgroundColor: colors.border },
-  dividerText: { ...typography.caption, color: colors.textMuted },
-  oauthRow: { gap: spacing[3] },
-  switchLink: { alignSelf: 'center', paddingVertical: spacing[2] },
-  switchText: { ...typography.small, color: colors.textSecondary },
-  switchHighlight: { color: colors.primaryGreen, fontWeight: '600' },
+  dividerText: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 13,
+    color: colors.inkLight,
+  },
+  oauthRow: { gap: 12 },
+  switchLink: { alignSelf: 'center', paddingVertical: 8 },
+  switchText: {
+    fontFamily: fonts.sans,
+    fontSize: 14,
+    color: colors.ink2,
+  },
+  switchHighlight: {
+    fontFamily: fonts.sansSemiBold,
+    color: colors.iris,
+  },
 })

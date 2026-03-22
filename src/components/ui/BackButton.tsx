@@ -1,6 +1,6 @@
 import { Pressable, Text, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
-import { colors, spacing, typography } from '@constants/theme'
+import { colors, spacing } from '@constants/theme'
 
 interface Props {
   onPress: () => void
@@ -16,7 +16,7 @@ export function BackButton({ onPress, label = 'Back' }: Props) {
       accessibilityRole="button"
       accessibilityLabel={`Go back`}
     >
-      <Ionicons name="chevron-back" size={20} color={colors.textSecondary} />
+      <Ionicons name="chevron-back" size={20} color={colors.ink2} />
       <Text style={styles.label}>{label}</Text>
     </Pressable>
   )
@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   label: {
-    ...typography.bodyMedium,
-    color: colors.textSecondary,
+    fontSize: 16,
+    fontWeight: '500',
+    color: colors.ink2,
   },
 })

@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { View, Text, StyleSheet, ScrollView } from 'react-native'
+import { useEffect, useCallback } from 'react'
+import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router, useLocalSearchParams } from 'expo-router'
 import Animated, {
@@ -12,23 +12,19 @@ import Animated, {
 import { LinearGradient } from 'expo-linear-gradient'
 import { Ionicons } from '@expo/vector-icons'
 import { useUserStore } from '@store/userStore'
-import { useCallback } from 'react'
 import { LEVELS } from '@constants/levels'
 import { FIELDS } from '@constants/fields'
-import { colors, spacing, radii, typography } from '@constants/theme'
+import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
 import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
-import { IconCircle } from '@components/ui/IconCircle'
-import { Button } from '@components/ui/Button'
 import { BackButton } from '@components/ui/BackButton'
-import { Card } from '@components/ui/Card'
 import type { Level, Field } from '@/types'
 
 const LEVEL_GRADIENTS: Record<Level, [string, string]> = {
-  A1: ['#374151', '#1F2937'],
-  A2: ['#1e3a5f', '#1e3a5f'],
-  B1: ['#1e3d59', '#1a3a4a'],
-  B2: ['#312e81', '#1e1b4b'],
-  C1: ['#4c1d95', '#2e1065'],
+  A1: [colors.irisLight, colors.iris],
+  A2: [colors.iris, colors.irisDark],
+  B1: [colors.iris, colors.irisDeeper],
+  B2: [colors.irisDark, colors.irisDeeper],
+  C1: [colors.irisDeeper, '#4C2EBF'],
 }
 
 export default function LevelResultScreen() {
@@ -95,14 +91,20 @@ export default function LevelResultScreen() {
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
-        <View style={{ paddingHorizontal: spacing[6], paddingTop: spacing[2] }}>
+        <View style={styles.topBar}>
           <BackButton onPress={() => router.back()} />
+          {/* Step indicator */}
+          <View style={styles.stepRow}>
+            <View style={styles.stepDot} />
+            <View style={styles.stepDot} />
+            <View style={[styles.stepDot, styles.stepDotActive]} />
+          </View>
         </View>
+
         <ScrollView
           contentContainerStyle={styles.scroll}
           showsVerticalScrollIndicator={false}
         >
-
           {/* Level badge */}
           <Animated.View style={[styles.badgeWrapper, badgeStyle]}>
             <LinearGradient
@@ -123,17 +125,11 @@ export default function LevelResultScreen() {
 
             {/* Fields */}
             <View style={styles.fieldSection}>
-              <Text style={styles.fieldLabel}>Your selected fields</Text>
+              <Text style={styles.fieldLabel}>YOUR SELECTED FIELDS</Text>
               <View style={styles.fieldTags}>
                 {fieldMetas.map((f) => (
-                  <View key={f.id} style={[styles.tag, { borderColor: f.color }]}>
-                    <IconCircle
-                      library={f.icon.library}
-                      name={f.icon.name}
-                      color={f.color}
-                      size="sm"
-                      bgOpacity={0}
-                    />
+                  <View key={f.id} style={[styles.tag, { borderColor: f.color, backgroundColor: `${f.color}10` }]}>
+                    <View style={[styles.tagDot, { backgroundColor: f.color }]} />
                     <Text style={[styles.tagText, { color: f.color }]}>{f.label}</Text>
                   </View>
                 ))}
@@ -141,127 +137,224 @@ export default function LevelResultScreen() {
             </View>
 
             {/* What to expect */}
-            <Card variant="outlined">
-              <View style={styles.expectInner}>
-                <Text style={styles.expectTitle}>What happens next</Text>
-                <View style={styles.expectList}>
-                  <ExpectItem text="5 words selected daily, just for your field" />
-                  <ExpectItem text="Learn through swipe cards, audio & fill-in-blank" />
-                  <ExpectItem text="Words repeat until you've truly mastered them" />
-                </View>
+            <View style={styles.expectCard}>
+              <Text style={styles.expectTitle}>What happens next</Text>
+              <View style={styles.expectList}>
+                <ExpectItem
+                  text="5 words selected daily, just for your field"
+                  color={colors.iris}
+                  icon="book"
+                />
+                <ExpectItem
+                  text="Learn through swipe cards, audio & fill-in-blank"
+                  color={colors.sky}
+                  icon="headset"
+                />
+                <ExpectItem
+                  text="Words repeat until you've truly mastered them"
+                  color={colors.mint}
+                  icon="repeat"
+                />
               </View>
-            </Card>
+            </View>
           </Animated.View>
-
         </ScrollView>
 
         {/* CTA */}
         <Animated.View style={[styles.footer, btnStyle]}>
-          <Button
-            label={isGuest ? 'Start Learning' : 'Create Account & Start'}
-            onPress={proceed}
-            variant="primary"
-            size="lg"
-            fullWidth
-            icon={{ library: 'Ionicons', name: 'arrow-forward', position: 'right' }}
-          />
+          <Pressable onPress={proceed}>
+            <LinearGradient
+              colors={[colors.ink, '#27272A']}
+              style={styles.primaryBtn}
+            >
+              <Text style={styles.primaryLabel}>
+                {isGuest ? 'Start Learning' : 'Create Account & Start'}
+              </Text>
+              <Ionicons name="arrow-forward" size={18} color="#fff" />
+            </LinearGradient>
+          </Pressable>
           {isGuest ? (
             <Text style={styles.guestNote}>
               Progress saved locally · Create an account anytime
             </Text>
           ) : (
-            <Button
-              label="I already have an account"
-              onPress={goToLogin}
-              variant="ghost"
-              size="md"
-              fullWidth
-            />
+            <Pressable onPress={goToLogin} style={styles.ghostBtn}>
+              <Text style={styles.ghostLabel}>I already have an account</Text>
+            </Pressable>
           )}
         </Animated.View>
-
       </SafeAreaView>
     </MaxWidthContainer>
   )
 }
 
-function ExpectItem({ text }: { text: string }) {
+function ExpectItem({ text, color, icon }: { text: string; color: string; icon: string }) {
   return (
     <View style={styles.expectItem}>
-      <Ionicons name="checkmark-circle" size={18} color={colors.primaryGreen} />
+      <LinearGradient
+        colors={[color, `${color}CC`]}
+        style={styles.expectIcon}
+      >
+        <Ionicons name={icon as any} size={14} color="#fff" />
+      </LinearGradient>
       <Text style={styles.expectText}>{text}</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+  container: { flex: 1, backgroundColor: colors.bg },
+
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 24,
+    paddingTop: 8,
+  },
+  stepRow: { flexDirection: 'row', gap: 6 },
+  stepDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: colors.borderSoft,
+  },
+  stepDotActive: { backgroundColor: colors.iris, width: 24, borderRadius: 4 },
+
   scroll: {
-    padding: spacing[6],
-    gap: spacing[8],
-    paddingBottom: spacing[4],
+    padding: 24,
+    gap: 32,
+    paddingBottom: 16,
   },
 
   // Badge
   badgeWrapper: { alignSelf: 'flex-start' },
   badge: {
-    borderRadius: radii.card,
-    paddingHorizontal: spacing[6],
-    paddingVertical: spacing[6],
-    gap: spacing[1],
+    borderRadius: radii.xl,
+    paddingHorizontal: 28,
+    paddingVertical: 28,
+    gap: 4,
     minWidth: 180,
+    ...shadows.iris,
   },
   levelCode: {
+    fontFamily: fonts.serif,
     fontSize: 72,
-    fontWeight: '800',
     color: '#fff',
     letterSpacing: -2,
     lineHeight: 76,
   },
   levelName: {
+    fontFamily: fonts.sansMedium,
     fontSize: 18,
-    fontWeight: '600',
     color: 'rgba(255,255,255,0.7)',
     letterSpacing: 0.2,
   },
 
   // Info
-  info: { gap: spacing[6] },
-  resultHeading: { ...typography.heading2, color: colors.textPrimary },
-  description: { ...typography.body, color: colors.textSecondary, lineHeight: 26 },
+  info: { gap: 24 },
+  resultHeading: {
+    fontFamily: fonts.serif,
+    fontSize: 24,
+    color: colors.ink,
+  },
+  description: {
+    fontFamily: fonts.sans,
+    fontSize: 15,
+    color: colors.ink2,
+    lineHeight: 26,
+  },
 
   // Fields
-  fieldSection: { gap: spacing[3] },
-  fieldLabel: { ...typography.caption, color: colors.textMuted, letterSpacing: 1, textTransform: 'uppercase' },
-  fieldTags: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing[2] },
+  fieldSection: { gap: 12 },
+  fieldLabel: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 11,
+    color: colors.inkLight,
+    letterSpacing: 1.5,
+  },
+  fieldTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   tag: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    paddingHorizontal: spacing[3],
+    paddingHorizontal: 12,
     paddingVertical: 7,
     borderRadius: radii.pill,
     borderWidth: 1,
-    backgroundColor: colors.surface,
   },
-  tagText: { ...typography.smallMedium },
+  tagDot: { width: 6, height: 6, borderRadius: 3 },
+  tagText: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 13,
+  },
 
   // What to expect
-  expectInner: { gap: spacing[3] },
-  expectTitle: { ...typography.smallMedium, color: colors.textSecondary },
-  expectList: { gap: spacing[2] },
-  expectItem: { flexDirection: 'row', gap: spacing[2], alignItems: 'flex-start' },
-  expectText: { ...typography.small, color: colors.textSecondary, flex: 1, lineHeight: 20 },
+  expectCard: {
+    backgroundColor: colors.card,
+    borderRadius: radii.lg,
+    padding: 20,
+    gap: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
+    ...shadows.sm,
+  },
+  expectTitle: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 15,
+    color: colors.ink,
+  },
+  expectList: { gap: 12 },
+  expectItem: { flexDirection: 'row', gap: 12, alignItems: 'center' },
+  expectIcon: {
+    width: 28,
+    height: 28,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  expectText: {
+    fontFamily: fonts.sans,
+    fontSize: 14,
+    color: colors.ink2,
+    flex: 1,
+    lineHeight: 20,
+  },
 
   // Footer
   footer: {
-    paddingHorizontal: spacing[6],
-    paddingBottom: spacing[6],
-    paddingTop: spacing[3],
-    gap: spacing[3],
+    paddingHorizontal: 24,
+    paddingBottom: 24,
+    paddingTop: 12,
+    gap: 12,
     borderTopWidth: 1,
     borderTopColor: colors.border,
-    backgroundColor: colors.background,
+    backgroundColor: colors.bg,
   },
-  guestNote: { ...typography.caption, color: colors.textMuted, textAlign: 'center' },
+  primaryBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: radii.md,
+    ...shadows.button,
+  },
+  primaryLabel: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 15,
+    color: '#fff',
+  },
+  ghostBtn: { alignItems: 'center', paddingVertical: 10 },
+  ghostLabel: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 14,
+    color: colors.ink2,
+  },
+  guestNote: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 12,
+    color: colors.inkLight,
+    textAlign: 'center',
+  },
 })

@@ -2,16 +2,14 @@ import { View, Pressable, Text, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { colors, spacing, radii, shadows, typography } from '@constants/theme'
+import { colors, spacing, radii, shadows, springConfigs } from '@constants/theme'
 import type { BottomTabBarProps } from '@react-navigation/bottom-tabs'
-import { useIsGuest } from '@store/userStore'
 
 const TAB_ICONS: Record<string, { active: string; inactive: string }> = {
   home: { active: 'home', inactive: 'home-outline' },
   learn: { active: 'book', inactive: 'book-outline' },
   review: { active: 'refresh', inactive: 'refresh-outline' },
   stats: { active: 'stats-chart', inactive: 'stats-chart-outline' },
-  profile: { active: 'person', inactive: 'person-outline' },
 }
 
 const TAB_LABELS: Record<string, string> = {
@@ -19,7 +17,6 @@ const TAB_LABELS: Record<string, string> = {
   learn: 'Learn',
   review: 'Review',
   stats: 'Stats',
-  profile: 'Profile',
 }
 
 function TabItem({
@@ -40,11 +37,11 @@ function TabItem({
   }))
 
   const handlePressIn = () => {
-    scale.value = withSpring(0.85, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(0.85, springConfigs.snappy)
   }
 
   const handlePressOut = () => {
-    scale.value = withSpring(1, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(1, springConfigs.snappy)
   }
 
   const icons = TAB_ICONS[routeName] ?? { active: 'help', inactive: 'help-outline' }
@@ -65,13 +62,13 @@ function TabItem({
         <Ionicons
           name={iconName as never}
           size={22}
-          color={isFocused ? colors.textPrimary : colors.textMuted}
+          color={isFocused ? colors.ink : colors.inkLight}
         />
       </Animated.View>
       <Text
         style={[
           styles.tabLabel,
-          { color: isFocused ? colors.textPrimary : colors.textMuted },
+          { color: isFocused ? colors.ink : colors.inkLight },
         ]}
       >
         {label}
@@ -83,7 +80,6 @@ function TabItem({
 
 export function TabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets()
-  const isGuest = useIsGuest()
 
   return (
     <View style={[styles.outerContainer, { bottom: Math.max(insets.bottom, 12) }]}>
@@ -93,7 +89,6 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
             key={route.key}
             routeName={route.name}
             isFocused={state.index === index}
-            dynamicLabel={route.name === 'profile' ? (isGuest ? 'Login' : 'Profile') : undefined}
             onPress={() => {
               const event = navigation.emit({
                 type: 'tabPress',
@@ -119,7 +114,7 @@ const styles = StyleSheet.create({
   },
   pillContainer: {
     flexDirection: 'row',
-    backgroundColor: colors.surface,
+    backgroundColor: colors.card,
     borderRadius: radii.pill,
     borderWidth: 1,
     borderColor: colors.border,
@@ -148,6 +143,6 @@ const styles = StyleSheet.create({
     width: 4,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.primaryGreen,
+    backgroundColor: colors.iris,
   },
 })

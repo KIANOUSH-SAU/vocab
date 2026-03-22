@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Pressable } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router, useLocalSearchParams } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons'
+import { LinearGradient } from 'expo-linear-gradient'
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -10,11 +11,9 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated'
 import { usePlacementTest } from '@hooks/usePlacementTest'
-import { colors, spacing, radii, typography, shadows } from '@constants/theme'
+import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
 import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
 import { BackButton } from '@components/ui/BackButton'
-import { SectionBadge } from '@components/ui/SectionBadge'
-import { Card } from '@components/ui/Card'
 
 export default function PlacementTestScreen() {
   const { fields, guest } = useLocalSearchParams<{ fields: string; guest: string }>()
@@ -76,33 +75,59 @@ export default function PlacementTestScreen() {
       ? 'Definition'
       : 'Correct Usage'
 
+  const questionTypeColor =
+    currentQuestion.type === 'recognition'
+      ? colors.iris
+      : currentQuestion.type === 'definition'
+      ? colors.sky
+      : colors.mint
+
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
-        <View style={{ paddingHorizontal: spacing[6], paddingTop: spacing[2], paddingBottom: spacing[2] }}>
+        <View style={styles.topBar}>
           <BackButton onPress={() => router.back()} />
+          {/* Step indicator */}
+          <View style={styles.stepRow}>
+            <View style={styles.stepDot} />
+            <View style={[styles.stepDot, styles.stepDotActive]} />
+            <View style={styles.stepDot} />
+          </View>
         </View>
 
         {/* Progress bar */}
         <View style={styles.progressTrack}>
-          <Animated.View style={[styles.progressFill, progressStyle]} />
+          <Animated.View style={[styles.progressFillWrap, progressStyle]}>
+            <LinearGradient
+              colors={[colors.iris, colors.irisLight]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.progressGradient}
+            />
+          </Animated.View>
         </View>
 
         <View style={styles.content}>
-
           {/* Counter */}
-          <Text style={styles.counter}>
-            {currentIndex + 1} <Text style={styles.counterTotal}>/ {totalQuestions}</Text>
-          </Text>
+          <View style={styles.counterRow}>
+            <Text style={styles.counter}>
+              {currentIndex + 1}
+              <Text style={styles.counterTotal}> / {totalQuestions}</Text>
+            </Text>
+            {/* Question type badge */}
+            <View style={[styles.typeBadge, { backgroundColor: `${questionTypeColor}15` }]}>
+              <View style={[styles.typeDot, { backgroundColor: questionTypeColor }]} />
+              <Text style={[styles.typeText, { color: questionTypeColor }]}>
+                {questionTypeLabel}
+              </Text>
+            </View>
+          </View>
 
           {/* Question card */}
           <Animated.View style={cardStyle}>
-            <Card variant="elevated">
-              <View style={styles.questionInner}>
-                <SectionBadge label={questionTypeLabel} color={colors.textSecondary} />
-                <Text style={styles.questionText}>{currentQuestion.question}</Text>
-              </View>
-            </Card>
+            <View style={styles.questionCard}>
+              <Text style={styles.questionText}>{currentQuestion.question}</Text>
+            </View>
           </Animated.View>
 
           {/* Options */}
@@ -123,11 +148,12 @@ export default function PlacementTestScreen() {
                   disabled={selectedIndex !== null}
                   accessibilityLabel={option}
                 >
-                  <Ionicons
-                    name={isSelected ? 'radio-button-on' : 'radio-button-off'}
-                    size={20}
-                    color={isSelected ? colors.textPrimary : colors.border}
-                  />
+                  <View style={[
+                    styles.optionRadio,
+                    isSelected && styles.optionRadioSelected,
+                  ]}>
+                    {isSelected && <View style={styles.optionRadioDot} />}
+                  </View>
                   <Text
                     style={[
                       styles.optionText,
@@ -141,89 +167,169 @@ export default function PlacementTestScreen() {
               )
             })}
           </Animated.View>
-
         </View>
 
         {/* Footer hint */}
         <View style={styles.footer}>
+          <Ionicons name="shield-checkmark-outline" size={14} color={colors.inkLight} />
           <Text style={styles.hint}>No right or wrong — just be honest</Text>
         </View>
-
       </SafeAreaView>
     </MaxWidthContainer>
   )
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+  container: { flex: 1, backgroundColor: colors.bg },
+
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 24,
+    paddingTop: 8,
+    paddingBottom: 8,
+  },
+  stepRow: { flexDirection: 'row', gap: 6 },
+  stepDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: colors.borderSoft,
+  },
+  stepDotActive: { backgroundColor: colors.iris, width: 24, borderRadius: 4 },
 
   progressTrack: {
-    height: 3,
-    backgroundColor: colors.surface,
-    marginHorizontal: spacing[6],
-    marginTop: spacing[2],
+    height: 4,
+    backgroundColor: colors.borderSoft,
+    marginHorizontal: 24,
     borderRadius: radii.pill,
     overflow: 'hidden',
   },
-  progressFill: {
+  progressFillWrap: {
     height: '100%',
-    backgroundColor: colors.primaryGreen,
     borderRadius: radii.pill,
+    overflow: 'hidden',
+  },
+  progressGradient: {
+    flex: 1,
   },
 
   content: {
     flex: 1,
-    paddingHorizontal: spacing[6],
-    paddingTop: spacing[6],
-    gap: spacing[6],
+    paddingHorizontal: 24,
+    paddingTop: 28,
+    gap: 24,
   },
 
+  counterRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   counter: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: colors.textPrimary,
+    fontFamily: fonts.serif,
+    fontSize: 32,
+    color: colors.ink,
   },
   counterTotal: {
-    color: colors.textMuted,
-    fontWeight: '400',
+    fontFamily: fonts.sans,
+    fontSize: 18,
+    color: colors.inkLight,
+  },
+  typeBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: radii.pill,
+  },
+  typeDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+  },
+  typeText: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 12,
   },
 
-  questionInner: {
-    gap: spacing[3],
+  questionCard: {
+    backgroundColor: colors.card,
+    borderRadius: radii.lg,
+    padding: 24,
+    borderWidth: 1,
+    borderColor: colors.border,
+    ...shadows.card,
   },
   questionText: {
-    ...typography.heading3,
-    color: colors.textPrimary,
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 18,
+    color: colors.ink,
     lineHeight: 28,
   },
 
-  options: { gap: spacing[3] },
+  options: { gap: 10 },
   option: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing[3],
-    backgroundColor: colors.surface,
-    borderRadius: radii.lg,
-    paddingVertical: spacing[4],
-    paddingHorizontal: spacing[4],
+    gap: 14,
+    backgroundColor: colors.card,
+    borderRadius: radii.md,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
     borderWidth: 1.5,
     borderColor: colors.border,
-    ...shadows.soft,
   },
   optionSelected: {
-    borderColor: colors.primaryGreen,
-    backgroundColor: colors.elevated,
+    borderColor: colors.iris,
+    backgroundColor: colors.irisSoft,
   },
   optionDimmed: { opacity: 0.35 },
 
-  optionText: { ...typography.body, color: colors.textSecondary, flex: 1 },
-  optionTextSelected: { color: colors.textPrimary, fontWeight: '600' },
-  optionTextDimmed: { color: colors.textMuted },
+  optionRadio: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    borderWidth: 2,
+    borderColor: colors.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  optionRadioSelected: {
+    borderColor: colors.iris,
+  },
+  optionRadioDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: colors.iris,
+  },
+
+  optionText: {
+    fontFamily: fonts.sans,
+    fontSize: 15,
+    color: colors.ink2,
+    flex: 1,
+  },
+  optionTextSelected: {
+    fontFamily: fonts.sansMedium,
+    color: colors.ink,
+  },
+  optionTextDimmed: { color: colors.inkLight },
 
   footer: {
-    paddingHorizontal: spacing[6],
-    paddingBottom: spacing[6],
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingHorizontal: 24,
+    paddingBottom: 24,
   },
-  hint: { ...typography.caption, color: colors.textMuted },
+  hint: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 13,
+    color: colors.inkLight,
+  },
 })

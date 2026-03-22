@@ -33,6 +33,7 @@ An adaptive English vocabulary learning app tailored to the user's field of inte
 ---
 
 ## Architecture Rules & Decisions
+
 - **Commands vs. Skills**: Everything in `.claude/commands/` requires an explicit `/[command-name]` trigger by the user. Everything in `.claude/skills/` is auto-triggered dynamically based on the conversation context.
 - **Spaced Repetition Final Stage**: When a word reaches the end of the spaced repetition cycle, it receives a **Final Exam** wrapping up the learned vocab. Passed words are moved to a separate "overview" section and are no longer actively asked.
 - **Offline Capabilities**: If Appwrite endpoints fail, the app gracefully degrades into a "read-only offline mode" leveraging `AsyncStorage`.

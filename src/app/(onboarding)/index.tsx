@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { View, Text, StyleSheet, Platform } from "react-native";
+import { View, Text, StyleSheet, Platform, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -13,8 +15,8 @@ import Animated, {
 } from "react-native-reanimated";
 import { FIELDS } from "@constants/fields";
 import { useUserStore } from "@store/userStore";
-import { oauthLogin, isAppwriteConfigured } from "@services/appwriteService";
-import { colors, spacing, radii, typography } from "@constants/theme";
+import { oauthLogin } from "@services/appwriteService";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
 import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
 import { Button } from "@components/ui/Button";
 
@@ -56,7 +58,7 @@ function AnimatedDot({ color, index }: { color: string; index: number }) {
     borderRadius: 11,
     shadowColor: color,
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
+    shadowOpacity: 0.3,
     shadowRadius: 6,
     elevation: 4,
   }));
@@ -77,14 +79,14 @@ export default function WelcomeScreen() {
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
         <View style={styles.inner}>
-          {/* Top — field dots */}
+          {/* Field dots */}
           <Animated.View style={[styles.iconsRow, dotsStyle]}>
             {FIELDS.map((f, i) => (
               <AnimatedDot key={f.id} color={f.color} index={i} />
             ))}
           </Animated.View>
 
-          {/* Middle — wordmark + tagline */}
+          {/* Hero */}
           <View style={styles.hero}>
             <Animated.View style={wordmarkStyle}>
               <Text style={styles.wordmark}>
@@ -97,22 +99,19 @@ export default function WelcomeScreen() {
             </Animated.Text>
           </View>
 
-          {/* Bottom — CTAs */}
+          {/* CTAs */}
           <Animated.View style={[styles.actions, buttonsStyle]}>
             {isReturning ? (
               <>
-                <Button
-                  label="Go to your account"
-                  onPress={() => router.push("/(onboarding)/auth/login")}
-                  variant="primary"
-                  size="lg"
-                  fullWidth
-                  icon={{
-                    library: "Ionicons",
-                    name: "arrow-forward",
-                    position: "right",
-                  }}
-                />
+                <Pressable onPress={() => router.push("/(onboarding)/auth/login")}>
+                  <LinearGradient
+                    colors={[colors.ink, '#27272A']}
+                    style={styles.primaryBtn}
+                  >
+                    <Text style={styles.primaryLabel}>Go to your account</Text>
+                    <Ionicons name="arrow-forward" size={18} color="#fff" />
+                  </LinearGradient>
+                </Pressable>
                 <Button
                   label="Start fresh"
                   onPress={() => router.push("/(onboarding)/interests")}
@@ -123,18 +122,15 @@ export default function WelcomeScreen() {
               </>
             ) : (
               <>
-                <Button
-                  label="Create an account"
-                  onPress={() => router.push("/(onboarding)/interests")}
-                  variant="primary"
-                  size="lg"
-                  fullWidth
-                  icon={{
-                    library: "Ionicons",
-                    name: "arrow-forward",
-                    position: "right",
-                  }}
-                />
+                <Pressable onPress={() => router.push("/(onboarding)/interests")}>
+                  <LinearGradient
+                    colors={[colors.ink, '#27272A']}
+                    style={styles.primaryBtn}
+                  >
+                    <Text style={styles.primaryLabel}>Get Started</Text>
+                    <Ionicons name="arrow-forward" size={18} color="#fff" />
+                  </LinearGradient>
+                </Pressable>
                 <Button
                   label="Continue with Google"
                   onPress={() => oauthLogin("google")}
@@ -158,18 +154,19 @@ export default function WelcomeScreen() {
                     position: "left",
                   }}
                 />
-                <Button
-                  label="Try 3 words for free"
+                <Pressable
                   onPress={() =>
                     router.push({
                       pathname: "/(onboarding)/interests",
                       params: { guest: "true" },
                     })
                   }
-                  variant="ghost"
-                  size="lg"
-                  fullWidth
-                />
+                  style={styles.guestLink}
+                >
+                  <Text style={styles.guestText}>
+                    Try 3 words for free <Text style={styles.guestArrow}>→</Text>
+                  </Text>
+                </Pressable>
               </>
             )}
           </Animated.View>
@@ -180,35 +177,42 @@ export default function WelcomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+  container: { flex: 1, backgroundColor: colors.bg },
   inner: {
     flex: 1,
-    paddingHorizontal: spacing[6],
-    paddingTop: spacing[8],
-    paddingBottom: spacing[6],
+    paddingHorizontal: 24,
+    paddingTop: 32,
+    paddingBottom: 24,
     justifyContent: "space-between",
   },
-
-  // Icons
-  iconsRow: { flexDirection: "row", gap: spacing[3] },
-
-  // Hero
-  hero: { gap: spacing[4] },
+  iconsRow: { flexDirection: "row", gap: 12 },
+  hero: { gap: 16 },
   wordmark: {
+    fontFamily: fonts.serif,
     fontSize: Platform.OS === "web" ? 72 : 64,
-    fontWeight: "800",
-    color: colors.textPrimary,
+    color: colors.ink,
     letterSpacing: -2,
     lineHeight: Platform.OS === "web" ? 80 : 72,
   },
-  period: { color: "#3B82F6" },
+  period: { color: colors.iris },
   tagline: {
-    ...typography.heading3,
-    color: colors.textSecondary,
+    fontFamily: fonts.sans,
+    fontSize: 18,
+    color: colors.ink2,
     lineHeight: 30,
-    fontWeight: "400",
   },
-
-  // Actions
-  actions: { gap: spacing[3] },
+  actions: { gap: 12 },
+  primaryBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: radii.md,
+    ...shadows.button,
+  },
+  primaryLabel: { fontFamily: fonts.sansSemiBold, fontSize: 15, color: '#fff' },
+  guestLink: { alignItems: 'center', paddingVertical: 12 },
+  guestText: { fontFamily: fonts.sansMedium, fontSize: 14, color: colors.ink2 },
+  guestArrow: { color: colors.iris },
 });
