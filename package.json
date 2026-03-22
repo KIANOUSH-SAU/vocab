@@ -12,6 +12,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.0",
     "@expo/metro-runtime": "~4.0.1",
+    "@expo/vector-icons": "~14.0.4",
     "@react-native-async-storage/async-storage": "1.23.1",
     "babel-plugin-module-resolver": "^5.0.2",
     "expo": "~52.0.0",
@@ -37,6 +38,11 @@
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "zustand": "^5.0.0"
+  },
+  "overrides": {
+    "react-native-appwrite": {
+      "react-native": "$react-native"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

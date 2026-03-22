@@ -35,7 +35,6 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="(onboarding)" />
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="(auth)" />
         <Stack.Screen
           name="word/[id]"
           options={{ animation: Platform.OS === 'web' ? 'none' : 'slide_from_bottom' }}
