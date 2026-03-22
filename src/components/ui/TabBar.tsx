@@ -4,12 +4,14 @@ import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-na
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { colors, spacing, radii, shadows, typography } from '@constants/theme'
 import type { BottomTabBarProps } from '@react-navigation/bottom-tabs'
+import { useIsGuest } from '@store/userStore'
 
 const TAB_ICONS: Record<string, { active: string; inactive: string }> = {
   home: { active: 'home', inactive: 'home-outline' },
   learn: { active: 'book', inactive: 'book-outline' },
   review: { active: 'refresh', inactive: 'refresh-outline' },
   stats: { active: 'stats-chart', inactive: 'stats-chart-outline' },
+  profile: { active: 'person', inactive: 'person-outline' },
 }
 
 const TAB_LABELS: Record<string, string> = {
@@ -17,16 +19,19 @@ const TAB_LABELS: Record<string, string> = {
   learn: 'Learn',
   review: 'Review',
   stats: 'Stats',
+  profile: 'Profile',
 }
 
 function TabItem({
   routeName,
   isFocused,
   onPress,
+  dynamicLabel,
 }: {
   routeName: string
   isFocused: boolean
   onPress: () => void
+  dynamicLabel?: string
 }) {
   const scale = useSharedValue(1)
 
@@ -44,7 +49,7 @@ function TabItem({
 
   const icons = TAB_ICONS[routeName] ?? { active: 'help', inactive: 'help-outline' }
   const iconName = isFocused ? icons.active : icons.inactive
-  const label = TAB_LABELS[routeName] ?? routeName
+  const label = dynamicLabel ?? TAB_LABELS[routeName] ?? routeName
 
   return (
     <Pressable
@@ -78,6 +83,7 @@ function TabItem({
 
 export function TabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets()
+  const isGuest = useIsGuest()
 
   return (
     <View style={[styles.outerContainer, { bottom: Math.max(insets.bottom, 12) }]}>
@@ -87,6 +93,7 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
             key={route.key}
             routeName={route.name}
             isFocused={state.index === index}
+            dynamicLabel={route.name === 'profile' ? (isGuest ? 'Login' : 'Profile') : undefined}
             onPress={() => {
               const event = navigation.emit({
                 type: 'tabPress',
