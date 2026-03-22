@@ -12,12 +12,14 @@ import Animated, {
 import { LinearGradient } from 'expo-linear-gradient'
 import { Ionicons } from '@expo/vector-icons'
 import { useUserStore } from '@store/userStore'
+import { useCallback } from 'react'
 import { LEVELS } from '@constants/levels'
 import { FIELDS } from '@constants/fields'
 import { colors, spacing, radii, typography } from '@constants/theme'
 import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
 import { IconCircle } from '@components/ui/IconCircle'
 import { Button } from '@components/ui/Button'
+import { BackButton } from '@components/ui/BackButton'
 import { Card } from '@components/ui/Card'
 import type { Level, Field } from '@/types'
 
@@ -36,7 +38,7 @@ export default function LevelResultScreen() {
     guest: string
   }>()
   const isGuest = guest === 'true'
-  const { setUser } = useUserStore()
+  const { setUser, setPendingOnboardingData } = useUserStore()
 
   const levelMeta = LEVELS.find((l) => l.id === level) ?? LEVELS[0]
   const fieldList = (fields?.split(',').filter(Boolean) ?? []) as Field[]
@@ -68,21 +70,34 @@ export default function LevelResultScreen() {
   }))
   const btnStyle = useAnimatedStyle(() => ({ opacity: btnOpacity.value }))
 
-  const proceed = () => {
-    setUser({
-      id: isGuest ? 'guest' : '',
-      name: isGuest ? 'Guest' : '',
-      level: level ?? 'A1',
-      fields: fieldList,
-      voiceStyleId: '',
-      isGuest,
-    })
-    router.replace('/(tabs)/home')
-  }
+  const proceed = useCallback(() => {
+    if (isGuest) {
+      setUser({
+        id: 'guest',
+        name: 'Guest',
+        level: level ?? 'A1',
+        fields: fieldList,
+        voiceStyleId: '',
+        isGuest: true,
+      })
+      router.replace('/(tabs)/home')
+    } else {
+      setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
+      router.push('/(onboarding)/auth/signup')
+    }
+  }, [isGuest, level, fieldList])
+
+  const goToLogin = useCallback(() => {
+    setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
+    router.push('/(onboarding)/auth/login')
+  }, [level, fieldList])
 
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
+        <View style={{ paddingHorizontal: spacing[6], paddingTop: spacing[2] }}>
+          <BackButton onPress={() => router.back()} />
+        </View>
         <ScrollView
           contentContainerStyle={styles.scroll}
           showsVerticalScrollIndicator={false}
@@ -143,17 +158,25 @@ export default function LevelResultScreen() {
         {/* CTA */}
         <Animated.View style={[styles.footer, btnStyle]}>
           <Button
-            label="Start Learning"
+            label={isGuest ? 'Start Learning' : 'Create Account & Start'}
             onPress={proceed}
             variant="primary"
             size="lg"
             fullWidth
             icon={{ library: 'Ionicons', name: 'arrow-forward', position: 'right' }}
           />
-          {isGuest && (
+          {isGuest ? (
             <Text style={styles.guestNote}>
               Progress saved locally · Create an account anytime
             </Text>
+          ) : (
+            <Button
+              label="I already have an account"
+              onPress={goToLogin}
+              variant="ghost"
+              size="md"
+              fullWidth
+            />
           )}
         </Animated.View>
 

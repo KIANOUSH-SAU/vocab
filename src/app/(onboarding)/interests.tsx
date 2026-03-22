@@ -15,6 +15,7 @@ import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
 import { IconCircle } from '@components/ui/IconCircle'
 import { CheckIcon } from '@components/ui/CheckIcon'
 import { Button } from '@components/ui/Button'
+import { BackButton } from '@components/ui/BackButton'
 import { SectionBadge } from '@components/ui/SectionBadge'
 import type { Field } from '@/types'
 
@@ -108,6 +109,9 @@ export default function InterestsScreen() {
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
+        <View style={{ paddingHorizontal: spacing[6], paddingTop: spacing[2] }}>
+          <BackButton onPress={() => router.back()} />
+        </View>
 
         <ScrollView
           contentContainerStyle={styles.scrollContent}

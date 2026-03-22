@@ -2,12 +2,24 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import type { User, VoiceStyle } from '@/types'
+import type { Level, Field } from '@/types'
+
+interface PendingOnboardingData {
+  level: Level
+  fields: Field[]
+}
 
 interface UserState {
   user: User | null
   voiceStyles: VoiceStyle[]
   isAuthenticated: boolean
   isLoading: boolean
+  // Non-persisted: session check gate
+  isSessionChecked: boolean
+  // Non-persisted: temp storage between level-result and auth screens
+  pendingOnboardingData: PendingOnboardingData | null
+  // Persisted: survives logout for returning user detection
+  lastLoggedInEmail: string | null
 }
 
 interface UserActions {
@@ -15,6 +27,9 @@ interface UserActions {
   updateVoiceStyle: (voiceStyleId: string) => void
   setVoiceStyles: (styles: VoiceStyle[]) => void
   setLoading: (loading: boolean) => void
+  setSessionChecked: (checked: boolean) => void
+  setPendingOnboardingData: (data: PendingOnboardingData) => void
+  clearPendingOnboardingData: () => void
   logout: () => void
   reset: () => void
 }
@@ -24,6 +39,9 @@ const initialState: UserState = {
   voiceStyles: [],
   isAuthenticated: false,
   isLoading: false,
+  isSessionChecked: false,
+  pendingOnboardingData: null,
+  lastLoggedInEmail: null,
 }
 
 export const useUserStore = create<UserState & UserActions>()(
@@ -31,7 +49,12 @@ export const useUserStore = create<UserState & UserActions>()(
     (set) => ({
       ...initialState,
 
-      setUser: (user) => set({ user, isAuthenticated: !user.isGuest }),
+      setUser: (user) =>
+        set({
+          user,
+          isAuthenticated: !user.isGuest,
+          lastLoggedInEmail: user.email ?? null,
+        }),
 
       updateVoiceStyle: (voiceStyleId) =>
         set((state) => ({
@@ -42,14 +65,30 @@ export const useUserStore = create<UserState & UserActions>()(
 
       setLoading: (isLoading) => set({ isLoading }),
 
-      logout: () => set({ user: null, isAuthenticated: false }),
+      setSessionChecked: (isSessionChecked) => set({ isSessionChecked }),
+
+      setPendingOnboardingData: (pendingOnboardingData) => set({ pendingOnboardingData }),
+
+      clearPendingOnboardingData: () => set({ pendingOnboardingData: null }),
+
+      logout: () =>
+        set((state) => ({
+          user: null,
+          isAuthenticated: false,
+          // Preserve lastLoggedInEmail for returning user detection
+          lastLoggedInEmail: state.lastLoggedInEmail,
+        })),
 
       reset: () => set(initialState),
     }),
     {
       name: 'user-storage',
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: (state) => ({ user: state.user, voiceStyles: state.voiceStyles }),
+      partialize: (state) => ({
+        user: state.user,
+        voiceStyles: state.voiceStyles,
+        lastLoggedInEmail: state.lastLoggedInEmail,
+      }),
     }
   )
 )

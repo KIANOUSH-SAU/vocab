@@ -12,6 +12,7 @@ import Animated, {
 import { usePlacementTest } from '@hooks/usePlacementTest'
 import { colors, spacing, radii, typography, shadows } from '@constants/theme'
 import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
+import { BackButton } from '@components/ui/BackButton'
 import { SectionBadge } from '@components/ui/SectionBadge'
 import { Card } from '@components/ui/Card'
 
@@ -78,6 +79,9 @@ export default function PlacementTestScreen() {
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
+        <View style={{ paddingHorizontal: spacing[6], paddingTop: spacing[2], paddingBottom: spacing[2] }}>
+          <BackButton onPress={() => router.back()} />
+        </View>
 
         {/* Progress bar */}
         <View style={styles.progressTrack}>

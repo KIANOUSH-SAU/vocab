@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
@@ -18,9 +17,6 @@ if (Platform.OS === 'web') {
 }
 
 export default function RootLayout() {
-  useEffect(() => {
-    SplashScreen.hideAsync()
-  }, [])
 
   return (
     <GestureHandlerRootView style={styles.root}>
@@ -38,6 +34,14 @@ export default function RootLayout() {
         <Stack.Screen
           name="word/[id]"
           options={{ animation: Platform.OS === 'web' ? 'none' : 'slide_from_bottom' }}
+        />
+        <Stack.Screen
+          name="modules/pronunciation"
+          options={{ animation: Platform.OS === 'web' ? 'none' : 'slide_from_right' }}
+        />
+        <Stack.Screen
+          name="modules/letters"
+          options={{ animation: Platform.OS === 'web' ? 'none' : 'slide_from_right' }}
         />
       </Stack>
     </GestureHandlerRootView>

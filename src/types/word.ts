@@ -30,7 +30,7 @@ export interface UserWord {
   nextReviewDate: string
   intervalIndex: IntervalIndex
   totalAttempts: number
-  correctAttempts: number
+  correctAttempts: number | string // WARNING: Stored as 'text' in Appwrite DB
 }
 
 export interface WordScore {

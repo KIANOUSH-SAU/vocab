@@ -50,3 +50,63 @@ export const account = new Proxy({} as Account, {
 export const databases = new Proxy({} as Databases, {
   get: (_, prop) => (getDatabases() as unknown as Record<string | symbol, unknown>)[prop],
 })
+
+// --- Auth Functions ---
+
+/** Create new email/password account, then create session */
+export async function signUp(email: string, password: string, name: string) {
+  const acc = getAccount()
+  await acc.create(ID.unique(), email, password, name)
+  return acc.createEmailPasswordSession(email, password)
+}
+
+/** Login with existing email/password */
+export async function login(email: string, password: string) {
+  return getAccount().createEmailPasswordSession(email, password)
+}
+
+/** Get the current logged-in user. Returns null if no valid session. */
+export async function getCurrentSession() {
+  try {
+    return await getAccount().get()
+  } catch {
+    return null
+  }
+}
+
+/** Logout — delete current session */
+export async function logoutSession() {
+  return getAccount().deleteSession('current')
+}
+
+/** OAuth login (Google/Apple). Uses deep link scheme "vocab" */
+export function oauthLogin(provider: 'google' | 'apple') {
+  return getAccount().createOAuth2Session(
+    provider,
+    'vocab://auth/callback',
+    'vocab://auth/failure'
+  )
+}
+
+/** Create a user profile document in Appwrite DB */
+export async function createUserDocument(
+  userId: string,
+  userData: { name: string; email: string; level: string; fields: string[]; voiceStyleId: string }
+) {
+  return getDatabases().createDocument(DB_ID, COLLECTIONS.USERS, userId, userData)
+}
+
+/** Migrate local userWords to Appwrite */
+export async function migrateProgressToServer(
+  userId: string,
+  userWords: Record<string, Record<string, unknown>>
+) {
+  const db = getDatabases()
+  const promises = Object.values(userWords).map((uw) =>
+    db.createDocument(DB_ID, COLLECTIONS.USER_WORDS, ID.unique(), {
+      ...uw,
+      userId,
+    })
+  )
+  return Promise.allSettled(promises)
+}
