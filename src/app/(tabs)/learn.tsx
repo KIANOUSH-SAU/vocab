@@ -14,6 +14,8 @@ import Animated, {
 } from 'react-native-reanimated'
 import { useDailyWord } from '@hooks/useDailyWord'
 import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
+import { AccentBlob } from '@components/ui/AccentBlob'
+import { SectionLabel } from '@components/ui/SectionLabel'
 
 const MOCK_REVIEW_COUNT = 12
 
@@ -429,7 +431,8 @@ export default function LearnScreen() {
 
         {/* Card stack + actions */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>TODAY'S WORDS</Text>
+          <AccentBlob placement="top-right" colorTheme="green" />
+          <SectionLabel title="TODAY'S WORDS" />
           {isLoading ? (
             <View style={styles.loadingInner}>
               <Text style={styles.loadingText}>Loading session...</Text>
@@ -450,13 +453,15 @@ export default function LearnScreen() {
 
         {/* Review Queue */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>REVIEW QUEUE</Text>
+          <AccentBlob placement="bottom-left" colorTheme="green" />
+          <SectionLabel title="REVIEW QUEUE" />
           <ReviewCard count={MOCK_REVIEW_COUNT} />
         </View>
 
         {/* Word of the Day */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>WORD OF THE DAY</Text>
+          <AccentBlob placement="bottom-right" colorTheme="green" />
+          <SectionLabel title="WORD OF THE DAY" />
           <WordOfTheDay />
         </View>
       </ScrollView>
@@ -468,13 +473,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   content: { padding: 14, gap: 24, paddingBottom: 100 },
   title: { fontFamily: fonts.serif, fontSize: 28, color: colors.ink, letterSpacing: -0.5 },
-  section: { gap: 12 },
-  sectionLabel: {
-    fontFamily: fonts.sansSemiBold,
-    fontSize: 11,
-    color: colors.inkLight,
-    letterSpacing: 1.5,
-  },
+  section: { gap: 12, position: 'relative' },
   loadingInner: { alignItems: 'center', paddingVertical: 40 },
   loadingText: { fontFamily: fonts.sans, fontSize: 15, color: colors.inkLight },
   emptyCard: {

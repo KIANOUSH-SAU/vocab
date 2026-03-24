@@ -1,9 +1,9 @@
-import { useEffect } from 'react'
-import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
-import { Ionicons } from '@expo/vector-icons'
-import { LinearGradient } from 'expo-linear-gradient'
+import { useEffect } from "react";
+import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -13,11 +13,13 @@ import Animated, {
   withSpring,
   withDelay,
   Easing,
-} from 'react-native-reanimated'
-import { useCurrentUser, useIsGuest } from '@store/userStore'
-import { useStreak } from '@store/progressStore'
-import { useDailyWord } from '@hooks/useDailyWord'
-import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
+} from "react-native-reanimated";
+import { useCurrentUser, useIsGuest } from "@store/userStore";
+import { useStreak } from "@store/progressStore";
+import { useDailyWord } from "@hooks/useDailyWord";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { AccentBlob } from "@components/ui/AccentBlob";
+import { SectionLabel } from "@components/ui/SectionLabel";
 
 // Mock data
 const MOCK_PROGRESS = {
@@ -25,51 +27,13 @@ const MOCK_PROGRESS = {
   weeklyGoal: 3,
   wordsMastered: 14,
   totalWords: 50,
-}
-
-// ─── Animated Blob Shape ──────────────────────────────────────
-
-function BlobShape() {
-  const morph = useSharedValue(0)
-
-  useEffect(() => {
-    morph.value = withRepeat(
-      withSequence(
-        withTiming(1, { duration: 3000, easing: Easing.inOut(Easing.ease) }),
-        withTiming(0, { duration: 3000, easing: Easing.inOut(Easing.ease) }),
-      ),
-      -1,
-      true,
-    )
-  }, [])
-
-  const blobStyle = useAnimatedStyle(() => {
-    const t = morph.value
-    return {
-      borderTopLeftRadius: 60 + t * 20,
-      borderTopRightRadius: 40 + t * 30,
-      borderBottomLeftRadius: 50 - t * 15,
-      borderBottomRightRadius: 50 + t * 20,
-    }
-  })
-
-  return (
-    <Animated.View style={[styles.blob, blobStyle]}>
-      <LinearGradient
-        colors={['#C4B5FD', '#A78BFA']}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={StyleSheet.absoluteFill}
-      />
-    </Animated.View>
-  )
-}
+};
 
 // ─── Streak Flame Widget ──────────────────────────────────────
 
 function StreakWidget({ count }: { count: number }) {
-  const flameScale = useSharedValue(1)
-  const flameRotate = useSharedValue(0)
+  const flameScale = useSharedValue(1);
+  const flameRotate = useSharedValue(0);
 
   useEffect(() => {
     flameScale.value = withRepeat(
@@ -78,7 +42,7 @@ function StreakWidget({ count }: { count: number }) {
         withTiming(1.0, { duration: 375 }),
       ),
       -1,
-    )
+    );
     flameRotate.value = withRepeat(
       withSequence(
         withTiming(-3, { duration: 500 }),
@@ -86,97 +50,116 @@ function StreakWidget({ count }: { count: number }) {
       ),
       -1,
       true,
-    )
-  }, [])
+    );
+  }, []);
 
   const flameStyle = useAnimatedStyle(() => ({
     transform: [
       { scale: flameScale.value },
       { rotate: `${flameRotate.value}deg` },
     ],
-  }))
+  }));
 
-  const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
-  const today = new Date().getDay() // 0=Sun
-  const dayIndex = today === 0 ? 6 : today - 1
+  const DAYS = ["M", "T", "W", "T", "F", "S", "S"];
+  const today = new Date().getDay(); // 0=Sun
+  const dayIndex = today === 0 ? 6 : today - 1;
 
   return (
-    <View style={streakStyles.container}>
+    <LinearGradient
+      colors={["#F97316", "#EA580C"]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      style={streakStyles.container}
+    >
       <Animated.Text style={[streakStyles.flame, flameStyle]}>🔥</Animated.Text>
       <Text style={streakStyles.count}>{count}</Text>
       <Text style={streakStyles.label}>day streak</Text>
       <View style={streakStyles.dotsRow}>
         {DAYS.map((d, i) => {
-          const state = i < dayIndex ? 'done' : i === dayIndex ? 'today' : 'future'
+          const state =
+            i < dayIndex ? "done" : i === dayIndex ? "today" : "future";
           return (
             <View
               key={i}
               style={[
                 streakStyles.dot,
-                state === 'done' && streakStyles.dotDone,
-                state === 'today' && streakStyles.dotToday,
-                state === 'future' && streakStyles.dotFuture,
+                state === "done" && streakStyles.dotDone,
+                state === "today" && streakStyles.dotToday,
+                state === "future" && streakStyles.dotFuture,
               ]}
             >
               <Text
                 style={[
                   streakStyles.dotText,
-                  (state === 'done' || state === 'today') && { color: '#fff' },
+                  state === "today" && { color: "#EA580C" },
+                  state === "done" && { color: "#fff" },
                 ]}
               >
                 {d}
               </Text>
             </View>
-          )
+          );
         })}
       </View>
-    </View>
-  )
+    </LinearGradient>
+  );
 }
 
 const streakStyles = StyleSheet.create({
   container: {
-    backgroundColor: colors.card,
     borderRadius: radii.lg,
     padding: 20,
-    alignItems: 'center',
+    alignItems: "center",
     gap: 4,
-    ...shadows.card,
+    shadowColor: "#EA580C",
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.3,
+    shadowRadius: 16,
+    elevation: 8,
   },
   flame: { fontSize: 38 },
-  count: { fontFamily: fonts.serif, fontSize: 36, color: colors.ink },
-  label: { fontFamily: fonts.sansMedium, fontSize: 13, color: colors.ink2 },
-  dotsRow: { flexDirection: 'row', gap: 6, marginTop: 12 },
+  count: { fontFamily: fonts.serif, fontSize: 36, color: "#FFFFFF" },
+  label: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 13,
+    color: "rgba(255,255,255,0.9)",
+  },
+  dotsRow: { flexDirection: "row", gap: 6, marginTop: 12 },
   dot: {
     width: 28,
     height: 28,
     borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
-  dotDone: { backgroundColor: colors.iris },
-  dotToday: { backgroundColor: colors.amber },
-  dotFuture: { backgroundColor: colors.borderSoft },
-  dotText: { fontFamily: fonts.sansSemiBold, fontSize: 10, color: colors.ink2 },
-})
+  dotDone: { backgroundColor: "rgba(255,255,255,0.3)" },
+  dotToday: { backgroundColor: "#FFFFFF" },
+  dotFuture: { backgroundColor: "rgba(0,0,0,0.15)" },
+  dotText: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 10,
+    color: "rgba(255,255,255,0.6)",
+  },
+});
 
 // ─── Word of the Day Card (Blob Style) ────────────────────────
 
 function WordOfDayCard() {
-  const { words } = useDailyWord()
-  const word = words[0]
+  const { words } = useDailyWord();
+  const word = words[0];
 
   const w = word ?? {
-    word: 'Resilient',
-    phonetic: '/rɪˈzɪl.i.ənt/',
-    definition: 'Able to withstand or recover quickly from difficult conditions',
-    partOfSpeech: 'adjective',
-    fields: ['engineering'],
-  }
+    word: "Resilient",
+    phonetic: "/rɪˈzɪl.i.ənt/",
+    definition:
+      "Able to withstand or recover quickly from difficult conditions",
+    partOfSpeech: "adjective",
+    fields: ["engineering"],
+  };
 
   return (
     <View style={wotdStyles.wrapper}>
-      <BlobShape />
+      <AccentBlob placement="top-right" />
       <View style={wotdStyles.card}>
         <Text style={wotdStyles.label}>WORD OF THE DAY</Text>
         <Text style={wotdStyles.word}>{w.word}</Text>
@@ -186,7 +169,8 @@ function WordOfDayCard() {
         <View style={wotdStyles.footer}>
           <View style={wotdStyles.fieldChip}>
             <Text style={wotdStyles.fieldText}>
-              {(w.fields?.[0] ?? 'general').charAt(0).toUpperCase() + (w.fields?.[0] ?? 'general').slice(1)}
+              {(w.fields?.[0] ?? "general").charAt(0).toUpperCase() +
+                (w.fields?.[0] ?? "general").slice(1)}
             </Text>
           </View>
           <Pressable style={wotdStyles.playBtn}>
@@ -195,17 +179,17 @@ function WordOfDayCard() {
         </View>
       </View>
     </View>
-  )
+  );
 }
 
 const wotdStyles = StyleSheet.create({
-  wrapper: { position: 'relative' },
+  wrapper: { position: "relative" },
   card: {
     backgroundColor: colors.card,
     borderRadius: 24,
     padding: 24,
     gap: 10,
-    shadowColor: '#7C5CFC',
+    shadowColor: "#7C5CFC",
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.12,
     shadowRadius: 32,
@@ -216,13 +200,28 @@ const wotdStyles = StyleSheet.create({
     fontSize: 11,
     color: colors.ink2,
     letterSpacing: 1.5,
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
   },
-  word: { fontFamily: fonts.serif, fontSize: 30, color: colors.ink, letterSpacing: -0.5 },
+  word: {
+    fontFamily: fonts.serif,
+    fontSize: 30,
+    color: colors.ink,
+    letterSpacing: -0.5,
+  },
   phonetic: { fontFamily: fonts.mono, fontSize: 13, color: colors.iris },
   divider: { height: 1, backgroundColor: colors.border, marginVertical: 4 },
-  definition: { fontFamily: fonts.sans, fontSize: 14, color: colors.ink2, lineHeight: 21 },
-  footer: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 6 },
+  definition: {
+    fontFamily: fonts.sans,
+    fontSize: 14,
+    color: colors.ink2,
+    lineHeight: 21,
+  },
+  footer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 6,
+  },
   fieldChip: {
     backgroundColor: colors.irisSoft,
     borderRadius: 6,
@@ -235,42 +234,56 @@ const wotdStyles = StyleSheet.create({
     height: 34,
     borderRadius: 17,
     backgroundColor: colors.ink,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
-})
+});
 
 // ─── Progress Section ─────────────────────────────────────────
 
 function ProgressSection() {
-  const { sessionsCompleted, weeklyGoal, wordsMastered, totalWords } = MOCK_PROGRESS
+  const { sessionsCompleted, weeklyGoal, wordsMastered, totalWords } =
+    MOCK_PROGRESS;
 
   return (
-    <View style={progStyles.container}>
-      <View style={progStyles.row}>
-        <ProgressCard
-          label="Weekly Goal"
-          value={sessionsCompleted}
-          total={weeklyGoal}
-          gradient={['#2DD4A8', '#059669']}
-          icon="checkmark-circle"
-        />
-        <ProgressCard
-          label="Mastery"
-          value={wordsMastered}
-          total={totalWords}
-          gradient={['#7C5CFC', '#5B3FD4']}
-          icon="school"
-        />
+    <View style={progStyles.wrapper}>
+      <AccentBlob placement="bottom-left" />
+      <View style={progStyles.container}>
+        <View style={progStyles.row}>
+          <ProgressCard
+            label="Weekly Goal"
+            value={sessionsCompleted}
+            total={weeklyGoal}
+            gradient={["#2DD4A8", "#059669"]}
+            icon="checkmark-circle"
+          />
+          <ProgressCard
+            label="Mastery"
+            value={wordsMastered}
+            total={totalWords}
+            gradient={["#7C5CFC", "#5B3FD4"]}
+            icon="school"
+          />
+        </View>
       </View>
     </View>
-  )
+  );
 }
 
-function ProgressCard({ label, value, total, gradient, icon }: {
-  label: string; value: number; total: number; gradient: [string, string]; icon: string
+function ProgressCard({
+  label,
+  value,
+  total,
+  gradient,
+  icon,
+}: {
+  label: string;
+  value: number;
+  total: number;
+  gradient: [string, string];
+  icon: string;
 }) {
-  const pct = total > 0 ? Math.min(value / total, 1) : 0
+  const pct = total > 0 ? Math.min(value / total, 1) : 0;
 
   return (
     <View style={progStyles.card}>
@@ -284,7 +297,8 @@ function ProgressCard({ label, value, total, gradient, icon }: {
       </LinearGradient>
       <Text style={progStyles.cardLabel}>{label}</Text>
       <Text style={progStyles.cardValue}>
-        {value}<Text style={progStyles.cardTotal}>/{total}</Text>
+        {value}
+        <Text style={progStyles.cardTotal}>/{total}</Text>
       </Text>
       <View style={progStyles.track}>
         <LinearGradient
@@ -295,12 +309,13 @@ function ProgressCard({ label, value, total, gradient, icon }: {
         />
       </View>
     </View>
-  )
+  );
 }
 
 const progStyles = StyleSheet.create({
-  container: { gap: 12 },
-  row: { flexDirection: 'row', gap: 12 },
+  wrapper: { position: "relative" },
+  container: { gap: 12, position: "relative" },
+  row: { flexDirection: "row", gap: 12 },
   card: {
     flex: 1,
     backgroundColor: colors.card,
@@ -313,8 +328,8 @@ const progStyles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   cardLabel: { fontFamily: fonts.sansMedium, fontSize: 13, color: colors.ink2 },
   cardValue: { fontFamily: fonts.sansBold, fontSize: 24, color: colors.ink },
@@ -323,114 +338,125 @@ const progStyles = StyleSheet.create({
     height: 6,
     borderRadius: 3,
     backgroundColor: colors.borderSoft,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
-  fill: { height: '100%', borderRadius: 3 },
-})
+  fill: { height: "100%", borderRadius: 3 },
+});
 
 // ─── Module Cards ─────────────────────────────────────────────
 
 function ModuleCards() {
   return (
-    <View style={modStyles.container}>
-      <Pressable
-        onPress={() => router.push('/modules/pronunciation')}
-        style={modStyles.card}
-      >
-        <LinearGradient
-          colors={[colors.iris, colors.irisDeeper]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={modStyles.gradient}
+    <View style={modStyles.wrapper}>
+      <AccentBlob placement="bottom-right" />
+      <View style={modStyles.container}>
+        <Pressable
+          onPress={() => router.push("/modules/pronunciation")}
+          style={modStyles.card}
         >
-          <View style={modStyles.inner}>
-            <View style={modStyles.text}>
-              <Text style={modStyles.title}>Pronounce like a Pro</Text>
-              <Text style={modStyles.subtitle}>Audio & phonics practice</Text>
+          <LinearGradient
+            colors={[colors.iris, colors.irisDeeper]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={modStyles.gradient}
+          >
+            <View style={modStyles.inner}>
+              <View style={modStyles.text}>
+                <Text style={modStyles.title}>Pronounce like a Pro</Text>
+                <Text style={modStyles.subtitle}>Audio & phonics practice</Text>
+              </View>
+              <View style={modStyles.iconCircle}>
+                <Ionicons name="mic" size={22} color={colors.iris} />
+              </View>
             </View>
-            <View style={modStyles.iconCircle}>
-              <Ionicons name="mic" size={22} color={colors.iris} />
-            </View>
-          </View>
-        </LinearGradient>
-      </Pressable>
+          </LinearGradient>
+        </Pressable>
 
-      <Pressable
-        onPress={() => router.push('/modules/letters')}
-        style={modStyles.card}
-      >
-        <LinearGradient
-          colors={['#38BDF8', '#0284C7']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={modStyles.gradient}
+        <Pressable
+          onPress={() => router.push("/modules/letters")}
+          style={modStyles.card}
         >
-          <View style={modStyles.inner}>
-            <View style={modStyles.text}>
-              <Text style={modStyles.title}>Letters Overseas</Text>
-              <Text style={modStyles.subtitle}>Professional emails & writing</Text>
+          <LinearGradient
+            colors={["#38BDF8", "#0284C7"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={modStyles.gradient}
+          >
+            <View style={modStyles.inner}>
+              <View style={modStyles.text}>
+                <Text style={modStyles.title}>Letters Overseas</Text>
+                <Text style={modStyles.subtitle}>
+                  Professional emails & writing
+                </Text>
+              </View>
+              <View style={modStyles.iconCircle}>
+                <Ionicons name="mail" size={22} color="#0284C7" />
+              </View>
             </View>
-            <View style={modStyles.iconCircle}>
-              <Ionicons name="mail" size={22} color="#0284C7" />
-            </View>
-          </View>
-        </LinearGradient>
-      </Pressable>
+          </LinearGradient>
+        </Pressable>
+      </View>
     </View>
-  )
+  );
 }
 
 const modStyles = StyleSheet.create({
-  container: { gap: 12 },
-  card: { borderRadius: radii.lg, overflow: 'hidden', ...shadows.iris },
+  wrapper: { position: "relative" },
+  container: { gap: 12, position: "relative" },
+  card: { borderRadius: radii.lg, overflow: "hidden", ...shadows.iris },
   gradient: { borderRadius: radii.lg },
   inner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     padding: 20,
   },
   text: { flex: 1, gap: 4 },
-  title: { fontFamily: fonts.sansSemiBold, fontSize: 16, color: '#fff' },
-  subtitle: { fontFamily: fonts.sans, fontSize: 13, color: 'rgba(255,255,255,0.7)' },
+  title: { fontFamily: fonts.sansSemiBold, fontSize: 16, color: "#fff" },
+  subtitle: {
+    fontFamily: fonts.sans,
+    fontSize: 13,
+    color: "rgba(255,255,255,0.7)",
+  },
   iconCircle: {
     width: 44,
     height: 44,
     borderRadius: 14,
-    backgroundColor: 'rgba(255,255,255,0.9)',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "rgba(255,255,255,0.9)",
+    alignItems: "center",
+    justifyContent: "center",
   },
-})
+});
 
 // ─── Main Home Screen ─────────────────────────────────────────
 
 export default function HomeScreen() {
-  const user = useCurrentUser()
-  const isGuest = useIsGuest()
-  const streak = useStreak()
+  const user = useCurrentUser();
+  const isGuest = useIsGuest();
+  const streak = useStreak();
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
         {/* Greeting */}
         <Text style={styles.greeting}>
-          {user?.name ? `Hello, ${user.name}` : 'Good morning'}
+          {user?.name ? `Hello, ${user.name}` : "Good morning"}
         </Text>
 
         {/* Guest banner */}
         {isGuest && (
-          <LinearGradient
-            colors={[colors.irisSoft, colors.irisWash]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 0 }}
-            style={styles.guestBanner}
+          <Pressable
+            style={styles.guestAlert}
+            onPress={() => router.push("/(onboarding)/auth/signup")}
           >
-            <Ionicons name="sparkles" size={18} color={colors.iris} />
-            <Text style={styles.guestText}>
+            <Ionicons name="alert-circle" size={20} color={colors.amberText} />
+            <Text style={styles.guestAlertText}>
               Create an account to save your progress
             </Text>
-          </LinearGradient>
+          </Pressable>
         )}
 
         {/* Streak Widget */}
@@ -438,49 +464,54 @@ export default function HomeScreen() {
 
         {/* Word of the Day */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>WORD OF THE DAY</Text>
+          <SectionLabel title="WORD OF THE DAY" />
           <WordOfDayCard />
         </View>
 
         {/* Progress */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>YOUR PROGRESS</Text>
+          <SectionLabel title="YOUR PROGRESS" />
           <ProgressSection />
         </View>
 
         {/* Quick Modules */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>QUICK MODULES</Text>
+          <SectionLabel title="QUICK MODULES" />
           <ModuleCards />
         </View>
       </ScrollView>
     </SafeAreaView>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   content: { padding: 14, gap: 20, paddingBottom: 100 },
 
-  greeting: { fontFamily: fonts.serif, fontSize: 28, color: colors.ink, letterSpacing: -0.5 },
-
-  guestBanner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    padding: 14,
-    borderRadius: radii.md,
-    borderWidth: 1,
-    borderColor: '#D4C9FE',
+  greeting: {
+    fontFamily: fonts.serif,
+    fontSize: 28,
+    color: colors.ink,
+    letterSpacing: -0.5,
   },
-  guestText: { fontFamily: fonts.sansMedium, fontSize: 13, color: colors.iris, flex: 1 },
+
+  guestAlert: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: colors.amberSoft,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderRadius: radii.sm,
+    marginBottom: 24,
+    gap: 12,
+    borderWidth: 1,
+    borderColor: '#FDE68A',
+  },
+  guestAlertText: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 14,
+    color: colors.amberText,
+  },
 
   section: { gap: 12 },
-  sectionLabel: {
-    fontFamily: fonts.sansSemiBold,
-    fontSize: 11,
-    color: colors.inkLight,
-    letterSpacing: 1.5,
-    textTransform: 'uppercase',
-  },
-})
+});

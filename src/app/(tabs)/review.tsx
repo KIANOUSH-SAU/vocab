@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { useUserWords } from '@store/progressStore'
 import { useWordStore } from '@store/wordStore'
 import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
+import { AccentBlob } from '@components/ui/AccentBlob'
 import type { UserWord, Word, IntervalIndex } from '@/types'
 
 // ─── Mock Vault ───────────────────────────────────────────────
@@ -69,32 +70,49 @@ const badgeStyles = StyleSheet.create({
 // ─── Mastery Meter ────────────────────────────────────────────
 
 function MasteryMeter({ intervalIndex, isStruggling }: { intervalIndex: IntervalIndex; isStruggling: boolean }) {
-  const lit = intervalIndex + 1
+  // Rough percentage mappings for visual weight
+  const pct = isStruggling ? 0.2 : (intervalIndex + 1) / 5
+  
   const barColor = isStruggling
     ? colors.coral
     : intervalIndex === 4
       ? colors.mint
-      : colors.iris
+      : colors.amber
 
   return (
-    <View style={meterStyles.row}>
-      {[0, 1, 2, 3, 4].map((i) => (
-        <View
-          key={i}
-          style={[
-            meterStyles.bar,
-            { height: 8 + i * 4 },
-            i < lit ? { backgroundColor: barColor } : { backgroundColor: colors.border },
-          ]}
-        />
-      ))}
+    <View 
+      style={[
+        meterStyles.shadowWrapper, 
+        { shadowColor: barColor }
+      ]}
+    >
+      <View style={meterStyles.track}>
+        <View style={[meterStyles.fill, { width: `${pct * 100}%`, backgroundColor: barColor }]} />
+      </View>
     </View>
   )
 }
 
 const meterStyles = StyleSheet.create({
-  row: { flexDirection: 'row', alignItems: 'flex-end', gap: 3 },
-  bar: { width: 5, borderRadius: 2 },
+  shadowWrapper: {
+    width: 48,
+    height: 8,
+    borderRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.6,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  track: {
+    flex: 1,
+    backgroundColor: colors.borderSoft,
+    borderRadius: 4,
+    overflow: 'hidden',
+  },
+  fill: {
+    height: '100%',
+    borderRadius: 4,
+  }
 })
 
 // ─── Filter Chips ─────────────────────────────────────────────
@@ -241,7 +259,8 @@ export default function ReviewScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { position: 'relative' }]}>
+        <AccentBlob placement="top-right" colorTheme="orange" />
         <Text style={styles.title}>Mastery Vault</Text>
         <Text style={styles.subtitle}>{vault.length} words in your collection</Text>
 
@@ -274,7 +293,8 @@ export default function ReviewScreen() {
         contentContainerStyle={styles.list}
         ItemSeparatorComponent={() => <View style={{ height: 8 }} />}
         ListEmptyComponent={
-          <View style={styles.emptyInner}>
+          <View style={[styles.emptyInner, { position: 'relative' }]}>
+            <AccentBlob placement="bottom-left" colorTheme="orange" />
             <Ionicons name="library-outline" size={48} color={colors.border} />
             <Text style={styles.emptyText}>
               {search.trim() ? 'No words match your search' : 'No words in this category yet'}

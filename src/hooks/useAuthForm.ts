@@ -43,10 +43,6 @@ export function useAuthForm() {
   const [isLoading, setIsLoading] = useState(false)
 
   const { setUser, pendingOnboardingData, clearPendingOnboardingData } = useUserStore()
-  const lastLoggedInEmail = useUserStore((s) => s.lastLoggedInEmail)
-
-  // Pre-fill email for returning users
-  const initialEmail = lastLoggedInEmail ?? ''
 
   const clearError = useCallback(() => setError(null), [])
 
@@ -141,10 +137,12 @@ export function useAuthForm() {
     }
   }, [email, password, name, confirmPassword])
 
-  const handleLogin = useCallback(async () => {
+  const handleLogin = useCallback(async (emailOverride?: string) => {
     setError(null)
 
-    if (!email.trim()) {
+    const loginEmail = (emailOverride ?? email).trim()
+
+    if (!loginEmail) {
       setError('Please enter your email.')
       return
     }
@@ -159,7 +157,7 @@ export function useAuthForm() {
 
     setIsLoading(true)
     try {
-      await login(email.trim(), password)
+      await login(loginEmail, password)
       await completeAuth()
     } catch (e) {
       setError(mapAppwriteError(e))
@@ -187,7 +185,7 @@ export function useAuthForm() {
   )
 
   return {
-    email: email || initialEmail,
+    email,
     setEmail,
     password,
     setPassword,

@@ -89,12 +89,7 @@ export default function LoginScreen() {
           </View>
 
           <Pressable
-            onPress={() => {
-              if (!hasEditedEmail && lastLoggedInEmail) {
-                setEmail(lastLoggedInEmail)
-              }
-              handleLogin()
-            }}
+            onPress={() => handleLogin(displayEmail)}
             disabled={isLoading}
           >
             <LinearGradient

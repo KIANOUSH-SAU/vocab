@@ -2,6 +2,7 @@ import { View, Pressable, Text, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { LinearGradient } from 'expo-linear-gradient'
 import { colors, spacing, radii, shadows, springConfigs } from '@constants/theme'
 import type { BottomTabBarProps } from '@react-navigation/bottom-tabs'
 
@@ -17,6 +18,13 @@ const TAB_LABELS: Record<string, string> = {
   learn: 'Learn',
   review: 'Review',
   stats: 'Stats',
+}
+
+const TAB_COLORS: Record<string, [string, string]> = {
+  home: ['#A78BFA', '#7C5CFC'],
+  learn: ['#34D399', '#059669'],
+  review: ['#FBBF24', '#EA580C'],
+  stats: ['#38BDF8', '#0284C7'],
 }
 
 function TabItem({
@@ -47,6 +55,7 @@ function TabItem({
   const icons = TAB_ICONS[routeName] ?? { active: 'help', inactive: 'help-outline' }
   const iconName = isFocused ? icons.active : icons.inactive
   const label = dynamicLabel ?? TAB_LABELS[routeName] ?? routeName
+  const activeGradient = TAB_COLORS[routeName] ?? ['#7C5CFC', '#5B3FD4']
 
   return (
     <Pressable
@@ -59,21 +68,28 @@ function TabItem({
       accessibilityLabel={label}
     >
       <Animated.View style={[styles.tabIconContainer, animatedStyle]}>
-        <Ionicons
-          name={iconName as never}
-          size={22}
-          color={isFocused ? colors.ink : colors.inkLight}
-        />
+        {isFocused ? (
+          <LinearGradient
+            colors={activeGradient}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={styles.activePill}
+          >
+            <Ionicons name={iconName as never} size={18} color="#FFFFFF" />
+          </LinearGradient>
+        ) : (
+          <Ionicons name={iconName as never} size={22} color={colors.inkLight} />
+        )}
       </Animated.View>
       <Text
         style={[
           styles.tabLabel,
-          { color: isFocused ? colors.ink : colors.inkLight },
+          { color: isFocused ? activeGradient[1] : colors.inkLight },
+          isFocused && { fontWeight: '700' }
         ]}
       >
         {label}
       </Text>
-      {isFocused && <View style={styles.activeIndicator} />}
     </Pressable>
   )
 }
@@ -137,12 +153,16 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '500',
   },
-  activeIndicator: {
-    position: 'absolute',
-    bottom: 8,
-    width: 4,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: colors.iris,
+  activePill: {
+    width: 44,
+    height: 28,
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 3,
   },
 })

@@ -9,6 +9,8 @@ import { useUserWords, useStreak } from '@store/progressStore'
 import { logoutSession, isAppwriteConfigured } from '@services/appwriteService'
 import { FIELDS } from '@constants/fields'
 import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
+import { AccentBlob } from '@components/ui/AccentBlob'
+import { SectionLabel } from '@components/ui/SectionLabel'
 
 const MOCK_ACTIVITY = [
   { day: 'Mon', value: 0.8 },
@@ -38,10 +40,10 @@ function GuestGate() {
           ))}
         </View>
         <LinearGradient
-          colors={[colors.irisSoft, colors.irisWash]}
+          colors={[colors.skySoft, '#BAE6FD']}
           style={guestStyles.lockIcon}
         >
-          <Ionicons name="lock-closed" size={32} color={colors.iris} />
+          <Ionicons name="lock-closed" size={32} color={colors.sky} />
         </LinearGradient>
       </View>
 
@@ -97,7 +99,7 @@ const guestStyles = StyleSheet.create({
   bar: {
     width: 24,
     borderRadius: 8,
-    backgroundColor: colors.iris,
+    backgroundColor: colors.sky,
   },
   lockIcon: {
     width: 72,
@@ -106,7 +108,7 @@ const guestStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 2,
-    borderColor: '#D4C9FE',
+    borderColor: '#7DD3FC',
   },
   heading: { fontFamily: fonts.serif, fontSize: 24, color: colors.ink, textAlign: 'center' },
   body: {
@@ -225,7 +227,7 @@ export default function StatsScreen() {
   const isGuest = useIsGuest()
   const userWords = useUserWords()
   const streak = useStreak()
-  const reset = useUserStore((s) => s.reset)
+  const logout = useUserStore((s) => s.logout)
   const [isLoggingOut, setIsLoggingOut] = useState(false)
 
   if (isGuest || !user) {
@@ -252,7 +254,7 @@ export default function StatsScreen() {
     try {
       if (isAppwriteConfigured) await logoutSession()
     } catch { /* ignore */ }
-    reset()
+    logout()
     router.replace('/(onboarding)/')
   }
 
@@ -260,7 +262,8 @@ export default function StatsScreen() {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         {/* Profile Header */}
-        <View style={styles.profileHeader}>
+        <View style={[styles.profileHeader, { position: 'relative' }]}>
+          <AccentBlob placement="top-left" colorTheme="blue" />
           <LinearGradient
             colors={[colors.iris, colors.irisDeeper]}
             style={styles.avatar}
@@ -290,8 +293,9 @@ export default function StatsScreen() {
         )}
 
         {/* Stats Grid */}
-        <View style={styles.section}>
-          <Text style={styles.sectionLabel}>OVERVIEW</Text>
+        <View style={[styles.section, { position: 'relative' }]}>
+          <AccentBlob placement="bottom-right" colorTheme="blue" />
+          <SectionLabel title="OVERVIEW" />
           <View style={styles.grid}>
             <StatCard label="Current Streak" value={`${streak}`} icon="flame" gradient={['#FBBF24', '#F59E0B']} />
             <StatCard label="Accuracy" value={`${accuracy}%`} icon="checkmark-circle" gradient={['#2DD4A8', '#059669']} />
@@ -301,8 +305,9 @@ export default function StatsScreen() {
         </View>
 
         {/* Activity */}
-        <View style={styles.section}>
-          <Text style={styles.sectionLabel}>THIS WEEK</Text>
+        <View style={[styles.section, { position: 'relative' }]}>
+          <AccentBlob placement="top-right" colorTheme="blue" />
+          <SectionLabel title="THIS WEEK" />
           <View style={styles.chartCard}>
             <View style={styles.chartHeader}>
               <Text style={styles.chartTitle}>Daily Activity</Text>
@@ -314,7 +319,7 @@ export default function StatsScreen() {
 
         {/* Account */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>ACCOUNT</Text>
+          <SectionLabel title="ACCOUNT" />
           <Pressable style={styles.settingRow}>
             <Ionicons name="swap-horizontal-outline" size={20} color={colors.iris} />
             <Text style={styles.settingText}>Change Fields or Level</Text>
@@ -376,12 +381,6 @@ const styles = StyleSheet.create({
 
   // Section
   section: { gap: 12 },
-  sectionLabel: {
-    fontFamily: fonts.sansSemiBold,
-    fontSize: 11,
-    color: colors.inkLight,
-    letterSpacing: 1.5,
-  },
 
   // Grid
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },

@@ -18,19 +18,22 @@ export const isAppwriteConfigured =
   Boolean(endpoint) && Boolean(projectId) && Boolean(DB_ID)
 
 // Only initialize the client when env vars are present.
-// Import appwriteClient lazily — never call it when isAppwriteConfigured is false.
+// Single shared client instance — Account and Databases must share the same
+// client so that session cookies/tokens are consistent across auth + DB calls.
+let _client: Client | null = null
 let _account: Account | null = null
 let _databases: Databases | null = null
 
 function getClient(): Client {
+  if (_client) return _client
   if (!isAppwriteConfigured) {
     throw new Error(
       '[Appwrite] Not configured. Set EXPO_PUBLIC_APPWRITE_ENDPOINT, ' +
         'EXPO_PUBLIC_APPWRITE_PROJECT_ID and EXPO_PUBLIC_APPWRITE_DATABASE_ID in .env'
     )
   }
-  const client = new Client().setEndpoint(endpoint!).setProject(projectId!)
-  return client
+  _client = new Client().setEndpoint(endpoint!).setProject(projectId!)
+  return _client
 }
 
 export function getAccount(): Account {
