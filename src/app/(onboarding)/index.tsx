@@ -15,7 +15,15 @@ import Animated, {
 } from "react-native-reanimated";
 import { FIELDS } from "@constants/fields";
 import { useUserStore } from "@store/userStore";
-import { oauthLogin } from "@services/appwriteService";
+import {
+  getCurrentSession,
+  createUserDocument,
+  getAccount,
+  isAppwriteConfigured,
+} from "@services/appwriteService";
+import * as WebBrowser from "expo-web-browser";
+import { makeRedirectUri } from "expo-auth-session";
+import { OAuthProvider } from "react-native-appwrite";
 import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
 import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
 import { Button } from "@components/ui/Button";
@@ -66,9 +74,73 @@ function AnimatedDot({ color, index }: { color: string; index: number }) {
   return <Animated.View style={style} />;
 }
 
+WebBrowser.maybeCompleteAuthSession();
+
 export default function WelcomeScreen() {
   const lastLoggedInEmail = useUserStore((s) => s.lastLoggedInEmail);
+  const setUser = useUserStore((s) => s.setUser);
   const isReturning = Boolean(lastLoggedInEmail);
+
+  const handleOAuth = async (provider: "google" | "apple") => {
+    if (!isAppwriteConfigured) return;
+    try {
+      const redirectUri = makeRedirectUri({ path: "/(tabs)/home" });
+      const providerEnum =
+        provider === "google" ? OAuthProvider.Google : OAuthProvider.Apple;
+      const acc = getAccount();
+
+      const loginUrl = await acc.createOAuth2Token(
+        providerEnum,
+        redirectUri,
+        redirectUri,
+      );
+      if (!loginUrl) return;
+
+      const result = await WebBrowser.openAuthSessionAsync(
+        loginUrl.toString(),
+        redirectUri,
+      );
+
+      if (result.type === "success" && result.url) {
+        const url = new URL(result.url);
+        const userId = url.searchParams.get("userId");
+        const secret = url.searchParams.get("secret");
+        if (!userId || !secret) return;
+
+        // Exchange the OAuth token for a session
+        await acc.createSession(userId, secret);
+
+        const session = await getCurrentSession();
+        if (session) {
+          // Create user document (non-blocking — may already exist)
+          try {
+            await createUserDocument(session.$id, {
+              name: session.name || "",
+              email: session.email,
+              level: "A1",
+              fields: [],
+              voiceStyleId: "",
+            });
+          } catch {
+            /* document may already exist */
+          }
+
+          setUser({
+            id: session.$id,
+            name: session.name || "",
+            email: session.email,
+            level: "A1",
+            fields: [],
+            voiceStyleId: "",
+            isGuest: false,
+          });
+          router.replace("/(tabs)/home");
+        }
+      }
+    } catch {
+      // User cancelled or OAuth failed — silent
+    }
+  };
 
   const dotsStyle = useFadeUp(0);
   const wordmarkStyle = useFadeUp(120);
@@ -133,7 +205,7 @@ export default function WelcomeScreen() {
                 </Pressable>
                 <Button
                   label="Continue with Google"
-                  onPress={() => oauthLogin("google")}
+                  onPress={() => handleOAuth("google")}
                   variant="google"
                   size="lg"
                   fullWidth
@@ -144,7 +216,7 @@ export default function WelcomeScreen() {
                 />
                 <Button
                   label="Continue with Apple"
-                  onPress={() => oauthLogin("apple")}
+                  onPress={() => handleOAuth("apple")}
                   variant="apple"
                   size="lg"
                   fullWidth

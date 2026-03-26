@@ -505,7 +505,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     gap: 12,
     borderWidth: 1,
-    borderColor: '#FDE68A',
+    borderColor: "#FDE68A",
   },
   guestAlertText: {
     fontFamily: fonts.sansMedium,

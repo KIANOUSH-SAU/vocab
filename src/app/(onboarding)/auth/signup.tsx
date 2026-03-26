@@ -1,13 +1,20 @@
-import { View, Text, TextInput, StyleSheet, ScrollView, Pressable } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
-import { Ionicons } from '@expo/vector-icons'
-import { LinearGradient } from 'expo-linear-gradient'
-import { useAuthForm } from '@hooks/useAuthForm'
-import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
-import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
-import { BackButton } from '@components/ui/BackButton'
-import { Button } from '@components/ui/Button'
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  ScrollView,
+  Pressable,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
+import { useAuthForm } from "@hooks/useAuthForm";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
+import { BackButton } from "@components/ui/BackButton";
+import { Button } from "@components/ui/Button";
 
 export default function SignupScreen() {
   const {
@@ -24,7 +31,7 @@ export default function SignupScreen() {
     isLoading,
     handleSignup,
     handleOAuth,
-  } = useAuthForm()
+  } = useAuthForm();
 
   return (
     <MaxWidthContainer>
@@ -37,7 +44,7 @@ export default function SignupScreen() {
           <BackButton onPress={() => router.back()} />
 
           <View style={styles.header}>
-            <Text style={styles.title}>Create your{'\n'}account</Text>
+            <Text style={styles.title}>Create your{"\n"}account</Text>
             <Text style={styles.subtitle}>
               Save your progress and learn across devices
             </Text>
@@ -45,7 +52,11 @@ export default function SignupScreen() {
 
           {error && (
             <View style={styles.errorBox}>
-              <Ionicons name="alert-circle" size={16} color={colors.coralText} />
+              <Ionicons
+                name="alert-circle"
+                size={16}
+                color={colors.coralText}
+              />
               <Text style={styles.errorText}>{error}</Text>
             </View>
           )}
@@ -56,7 +67,10 @@ export default function SignupScreen() {
               <TextInput
                 style={styles.input}
                 value={name}
-                onChangeText={(v) => { setName(v); clearError() }}
+                onChangeText={(v) => {
+                  setName(v);
+                  clearError();
+                }}
                 placeholder="Your name"
                 placeholderTextColor={colors.inkLight}
                 autoCapitalize="words"
@@ -69,7 +83,10 @@ export default function SignupScreen() {
               <TextInput
                 style={styles.input}
                 value={email}
-                onChangeText={(v) => { setEmail(v); clearError() }}
+                onChangeText={(v) => {
+                  setEmail(v);
+                  clearError();
+                }}
                 placeholder="you@example.com"
                 placeholderTextColor={colors.inkLight}
                 keyboardType="email-address"
@@ -83,7 +100,10 @@ export default function SignupScreen() {
               <TextInput
                 style={styles.input}
                 value={password}
-                onChangeText={(v) => { setPassword(v); clearError() }}
+                onChangeText={(v) => {
+                  setPassword(v);
+                  clearError();
+                }}
                 placeholder="At least 8 characters"
                 placeholderTextColor={colors.inkLight}
                 secureTextEntry
@@ -96,7 +116,10 @@ export default function SignupScreen() {
               <TextInput
                 style={styles.input}
                 value={confirmPassword}
-                onChangeText={(v) => { setConfirmPassword(v); clearError() }}
+                onChangeText={(v) => {
+                  setConfirmPassword(v);
+                  clearError();
+                }}
                 placeholder="Repeat your password"
                 placeholderTextColor={colors.inkLight}
                 secureTextEntry
@@ -107,13 +130,15 @@ export default function SignupScreen() {
 
           <Pressable onPress={handleSignup} disabled={isLoading}>
             <LinearGradient
-              colors={[colors.ink, '#27272A']}
+              colors={[colors.ink, "#27272A"]}
               style={[styles.primaryBtn, isLoading && { opacity: 0.6 }]}
             >
               <Text style={styles.primaryLabel}>
-                {isLoading ? 'Creating...' : 'Create Account'}
+                {isLoading ? "Creating..." : "Create Account"}
               </Text>
-              {!isLoading && <Ionicons name="arrow-forward" size={18} color="#fff" />}
+              {!isLoading && (
+                <Ionicons name="arrow-forward" size={18} color="#fff" />
+              )}
             </LinearGradient>
           </Pressable>
 
@@ -126,32 +151,42 @@ export default function SignupScreen() {
           <View style={styles.oauthRow}>
             <Button
               label="Google"
-              onPress={() => handleOAuth('google')}
+              onPress={() => handleOAuth("google")}
               variant="google"
               size="lg"
               fullWidth
-              icon={{ source: require('../../../../assets/images/google-icon.png'), position: 'left' }}
+              icon={{
+                source: require("../../../../assets/images/google-icon.png"),
+                position: "left",
+              }}
             />
             <Button
               label="Apple"
-              onPress={() => handleOAuth('apple')}
+              onPress={() => handleOAuth("apple")}
               variant="apple"
               size="lg"
               fullWidth
-              icon={{ library: 'Ionicons', name: 'logo-apple', position: 'left' }}
+              icon={{
+                library: "Ionicons",
+                name: "logo-apple",
+                position: "left",
+              }}
             />
           </View>
 
-          <Pressable onPress={() => router.replace('/(onboarding)/auth/login')} style={styles.switchLink}>
+          <Pressable
+            onPress={() => router.replace("/(onboarding)/auth/login")}
+            style={styles.switchLink}
+          >
             <Text style={styles.switchText}>
-              Already have an account?{' '}
+              Already have an account?{" "}
               <Text style={styles.switchHighlight}>Log in</Text>
             </Text>
           </Pressable>
         </ScrollView>
       </SafeAreaView>
     </MaxWidthContainer>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -176,8 +211,8 @@ const styles = StyleSheet.create({
     lineHeight: 23,
   },
   errorBox: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
     backgroundColor: colors.coralSoft,
     borderRadius: radii.md,
@@ -210,9 +245,9 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
   primaryBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     gap: 8,
     paddingVertical: 16,
     borderRadius: radii.md,
@@ -221,11 +256,11 @@ const styles = StyleSheet.create({
   primaryLabel: {
     fontFamily: fonts.sansSemiBold,
     fontSize: 15,
-    color: '#fff',
+    color: "#fff",
   },
   divider: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 12,
   },
   dividerLine: { flex: 1, height: 1, backgroundColor: colors.border },
@@ -235,7 +270,7 @@ const styles = StyleSheet.create({
     color: colors.inkLight,
   },
   oauthRow: { gap: 12 },
-  switchLink: { alignSelf: 'center', paddingVertical: 8 },
+  switchLink: { alignSelf: "center", paddingVertical: 8 },
   switchText: {
     fontFamily: fonts.sans,
     fontSize: 14,
@@ -245,4 +280,4 @@ const styles = StyleSheet.create({
     fontFamily: fonts.sansSemiBold,
     color: colors.iris,
   },
-})
+});

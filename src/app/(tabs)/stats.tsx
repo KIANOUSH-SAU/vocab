@@ -294,7 +294,7 @@ export default function StatsScreen() {
 
         {/* Stats Grid */}
         <View style={[styles.section, { position: 'relative' }]}>
-          <AccentBlob placement="bottom-right" colorTheme="blue" />
+          <AccentBlob placement="top-right" colorTheme="blue" />
           <SectionLabel title="OVERVIEW" />
           <View style={styles.grid}>
             <StatCard label="Current Streak" value={`${streak}`} icon="flame" gradient={['#FBBF24', '#F59E0B']} />
@@ -306,7 +306,7 @@ export default function StatsScreen() {
 
         {/* Activity */}
         <View style={[styles.section, { position: 'relative' }]}>
-          <AccentBlob placement="top-right" colorTheme="blue" />
+          <AccentBlob placement="top-left" colorTheme="blue" />
           <SectionLabel title="THIS WEEK" />
           <View style={styles.chartCard}>
             <View style={styles.chartHeader}>
@@ -318,7 +318,8 @@ export default function StatsScreen() {
         </View>
 
         {/* Account */}
-        <View style={styles.section}>
+        <View style={[styles.section, { position: 'relative' }]}>
+          <AccentBlob placement="bottom-right" colorTheme="blue" />
           <SectionLabel title="ACCOUNT" />
           <Pressable style={styles.settingRow}>
             <Ionicons name="swap-horizontal-outline" size={20} color={colors.iris} />
