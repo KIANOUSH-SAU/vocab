@@ -84,10 +84,10 @@ export async function logoutSession() {
   return getAccount().deleteSession("current");
 }
 
-/** OAuth login (Google/Apple). Uses deep link scheme "vocab" */
-export function oauthLogin(provider: "google" | "apple") {
+/** OAuth login (Google). Uses deep link scheme "vocab" */
+export function oauthLogin(provider: "google") {
   return getAccount().createOAuth2Session(
-    provider,
+    provider as any,
     "vocab://auth/callback",
     "vocab://auth/failure",
   );

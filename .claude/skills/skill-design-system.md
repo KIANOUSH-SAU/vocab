@@ -59,8 +59,14 @@ Before writing ANY styled code, confirm:
 
 - Word cards must have the serif/mono/sans triple typography.
 - Flashcard stack must show 3 layers with scaling (1.0, 0.94, 0.88).
-- Quiz options must include a letter badge (A/B/C/D).
+- Quiz options must include a letter badge (A/B/C/D) with correct/wrong states (green checkmark / red X).
 - Status badges use semantic soft colors (e.g., `mint-soft` bg + `#059669` text for "Mastered").
+- **AccentBlob**: Uses SVG path morphing via `react-native-svg` + `useAnimatedProps`. 4 organic bezier keyframes, 8-11s ping-pong cycle, opacity 0.25. Props: `placement`, `colorTheme`, `size`.
+- **AnimatedFire** (`src/components/ui/AnimatedFire.tsx`): Multi-layer SVG fire with 4 animated flame paths + ellipse core + 5 ember particles. Used in StreakWidget on Home screen.
+- **TabBar**: Full-width frosted glass (`expo-blur`) bottom bar. Per-tab theme colors: Home=#8B5CF6, Learn=#10B981, Review=#F59E0B, Stats=#0EA5E9. Active state: indicator bar + translateY -2 + scale 1.15.
+- **Quiz Screen**: Gradient bg (#F5F0FF → bg), shimmer progress bar, gradient top strip on question card, confetti burst on correct (28 particles), shake on wrong, then reveal correct.
+- **Stat Cards**: SVG stroke icons (flame, circle-check, graduation-cap, clock) with semantic bg tints. NO emojis.
+- **Activity Chart**: Single mint gradient bar per day with glass shine overlay. Staggered height animation on mount (`withDelay(index * 80)`). Inactive days show 4px stub at 0.4 opacity.
 
 ## When Merging with Existing Styles
 

@@ -13,6 +13,7 @@ import Animated, {
   interpolate,
 } from 'react-native-reanimated'
 import { useDailyWord } from '@hooks/useDailyWord'
+import { useAudio } from '@hooks/useAudio'
 import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
 import { AccentBlob } from '@components/ui/AccentBlob'
 import { SectionLabel } from '@components/ui/SectionLabel'
@@ -283,6 +284,7 @@ const reviewStyles = StyleSheet.create({
 
 function WordOfTheDay() {
   const w = WORD_OF_THE_DAY
+  const { play } = useAudio()
 
   return (
     <View style={wotdStyles.card}>
@@ -311,17 +313,19 @@ function WordOfTheDay() {
       </View>
 
       {/* Pronunciation */}
-      <LinearGradient
-        colors={[colors.irisSoft, colors.irisWash]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={wotdStyles.pronounceRow}
-      >
-        <View style={wotdStyles.playCircle}>
-          <Ionicons name="volume-high" size={16} color="#fff" />
-        </View>
-        <Text style={wotdStyles.pronounceText}>Tap to hear pronunciation</Text>
-      </LinearGradient>
+      <Pressable onPress={() => play(w.word)}>
+        <LinearGradient
+          colors={[colors.irisSoft, colors.irisWash]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 0 }}
+          style={wotdStyles.pronounceRow}
+        >
+          <View style={wotdStyles.playCircle}>
+            <Ionicons name="volume-high" size={16} color="#fff" />
+          </View>
+          <Text style={wotdStyles.pronounceText}>Tap to hear pronunciation</Text>
+        </LinearGradient>
+      </Pressable>
 
       <View style={wotdStyles.divider} />
 
@@ -356,7 +360,7 @@ const wotdStyles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 4,
   },
-  posText: { fontFamily: fonts.monoSmall, fontSize: 11, color: colors.ink2, textTransform: 'uppercase' },
+  posText: { fontFamily: fonts.mono, fontSize: 11, color: colors.ink2, textTransform: 'uppercase' },
   definition: { fontFamily: fonts.sans, fontSize: 15, color: colors.ink2, lineHeight: 24 },
   divider: { height: 1, backgroundColor: colors.border },
   section: { gap: 8 },

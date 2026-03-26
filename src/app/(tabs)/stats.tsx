@@ -1,9 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
+import Svg, { Path, Circle, Polyline } from 'react-native-svg'
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+  withDelay,
+  Easing,
+} from 'react-native-reanimated'
 import { useCurrentUser, useIsGuest, useUserStore } from '@store/userStore'
 import { useUserWords, useStreak } from '@store/progressStore'
 import { logoutSession, isAppwriteConfigured } from '@services/appwriteService'
@@ -24,12 +32,88 @@ const MOCK_ACTIVITY = [
 
 const MOCK_TIME_SPENT = '2h 15m'
 
+// ─── SVG Icon Components ─────────────────────────────────────
+
+function FlameIcon({ size = 14, color = '#D97706' }: { size?: number; color?: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size} fill="none">
+      <Path
+        d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14 0-5.5 2-6 0 3.5 2.56 5.5 4 6.5 1.15.8 1.5 2.39 1.5 3.5a6 6 0 0 1-12 0c0-.59.12-1.2.36-1.78.28-.68.84-1.22 1.64-1.22.65 0 1.2.46 1 1"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  )
+}
+
+function CircleCheckIcon({ size = 14, color = '#059669' }: { size?: number; color?: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size} fill="none">
+      <Circle cx="12" cy="12" r="10" stroke={color} strokeWidth={2.5} />
+      <Path
+        d="M9 12l2 2 4-4"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  )
+}
+
+function GraduationCapIcon({ size = 14, color = '#6D28D9' }: { size?: number; color?: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size} fill="none">
+      <Path d="M22 10v6" stroke={color} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+      <Path d="M2 10l10-5 10 5-10 5z" stroke={color} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+      <Path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" stroke={color} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+    </Svg>
+  )
+}
+
+function ClockIcon({ size = 14, color = '#0284C7' }: { size?: number; color?: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size} fill="none">
+      <Circle cx="12" cy="12" r="10" stroke={color} strokeWidth={2.5} />
+      <Polyline
+        points="12 6 12 12 16 14"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  )
+}
+
+function PencilIcon({ size = 10, color = '#FFFFFF' }: { size?: number; color?: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size} fill="none">
+      <Path
+        d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M15 5l4 4"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  )
+}
+
 // ─── Guest Gate ───────────────────────────────────────────────
 
 function GuestGate() {
   return (
     <View style={guestStyles.container}>
-      {/* Dimmed bars with lock */}
       <View style={guestStyles.lockVisual}>
         <View style={guestStyles.barsRow}>
           {[0.4, 0.7, 0.5, 0.9, 0.6, 0.8, 0.3].map((h, i) => (
@@ -134,25 +218,22 @@ const guestStyles = StyleSheet.create({
   ghostLabel: { fontFamily: fonts.sansMedium, fontSize: 15, color: colors.ink2 },
 })
 
-// ─── Activity Chart ───────────────────────────────────────────
+// ─── Activity Chart (Simplified — single bar per day) ────────
 
 function ActivityChart() {
   const maxH = 80
   return (
     <View style={chartStyles.wrapper}>
       <View style={chartStyles.barsRow}>
-        {MOCK_ACTIVITY.map((d) => {
-          const barColor = d.value >= 0.8
-            ? colors.mint
-            : d.value >= 0.4
-              ? colors.iris
-              : colors.border
+        {MOCK_ACTIVITY.map((d, index) => {
+          const isInactive = d.value === 0
           return (
             <View key={d.day} style={chartStyles.barCol}>
               <View style={chartStyles.barTrack}>
-                <LinearGradient
-                  colors={d.value >= 0.4 ? [barColor, barColor] : [colors.border, colors.border]}
-                  style={[chartStyles.barFill, { height: Math.max(d.value * maxH, 4) }]}
+                <AnimatedBar
+                  index={index}
+                  height={isInactive ? 4 : Math.max(d.value * maxH, 4)}
+                  isInactive={isInactive}
                 />
               </View>
               <Text style={chartStyles.dayLabel}>{d.day}</Text>
@@ -161,6 +242,36 @@ function ActivityChart() {
         })}
       </View>
     </View>
+  )
+}
+
+function AnimatedBar({ index, height, isInactive }: { index: number; height: number; isInactive: boolean }) {
+  const animHeight = useSharedValue(4)
+
+  useEffect(() => {
+    animHeight.value = withDelay(
+      index * 80,
+      withTiming(height, {
+        duration: 800,
+        easing: Easing.bezier(0.4, 0, 0.2, 1),
+      }),
+    )
+  }, [height])
+
+  const animStyle = useAnimatedStyle(() => ({
+    height: animHeight.value,
+  }))
+
+  return (
+    <Animated.View style={[chartStyles.barOuter, animStyle, isInactive && { opacity: 0.4 }]}>
+      <LinearGradient
+        colors={['#10B981', '#059669']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 0, y: 1 }}
+        style={StyleSheet.absoluteFill}
+      />
+      <View style={chartStyles.barShine} />
+    </Animated.View>
   )
 }
 
@@ -174,20 +285,49 @@ const chartStyles = StyleSheet.create({
   },
   barCol: { flex: 1, alignItems: 'center', gap: 6 },
   barTrack: { width: '100%', height: 80, justifyContent: 'flex-end', alignItems: 'center' },
-  barFill: { width: '70%', borderRadius: 6, minHeight: 4 },
+  barOuter: {
+    width: '70%',
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+    borderBottomLeftRadius: 4,
+    borderBottomRightRadius: 4,
+    minHeight: 4,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  barShine: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+  },
   dayLabel: { fontFamily: fonts.monoMedium, fontSize: 10, color: colors.inkLight },
 })
 
-// ─── Stat Card ────────────────────────────────────────────────
+// ─── Stat Card (SVG icons instead of emojis) ─────────────────
 
-function StatCard({ label, value, icon, gradient }: {
-  label: string; value: string; icon: string; gradient: [string, string]
+type StatIconType = 'flame' | 'check' | 'cap' | 'clock'
+
+const STAT_ICON_MAP: Record<StatIconType, { icon: React.FC<{ size?: number; color?: string }>; color: string; bg: string }> = {
+  flame: { icon: FlameIcon, color: '#D97706', bg: '#FEF3C7' },
+  check: { icon: CircleCheckIcon, color: '#059669', bg: '#ECFDF5' },
+  cap: { icon: GraduationCapIcon, color: '#6D28D9', bg: '#EDE9FE' },
+  clock: { icon: ClockIcon, color: '#0284C7', bg: '#E0F2FE' },
+}
+
+function StatCard({ label, value, iconType }: {
+  label: string; value: string; iconType: StatIconType
 }) {
+  const { icon: IconComponent, color, bg } = STAT_ICON_MAP[iconType]
   return (
     <View style={statStyles.card}>
-      <LinearGradient colors={gradient} style={statStyles.iconBg}>
-        <Ionicons name={icon as any} size={16} color="#fff" />
-      </LinearGradient>
+      <View style={[statStyles.iconBg, { backgroundColor: bg }]}>
+        <IconComponent size={14} color={color} />
+      </View>
       <Text style={statStyles.value}>{value}</Text>
       <Text style={statStyles.label}>{label}</Text>
     </View>
@@ -204,11 +344,12 @@ const statStyles = StyleSheet.create({
     ...shadows.sm,
   },
   iconBg: {
-    width: 32,
-    height: 32,
-    borderRadius: 10,
+    width: 28,
+    height: 28,
+    borderRadius: radii.xs,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 10,
   },
   value: { fontFamily: fonts.sansBold, fontSize: 28, color: colors.ink },
   label: {
@@ -264,14 +405,20 @@ export default function StatsScreen() {
         {/* Profile Header */}
         <View style={[styles.profileHeader, { position: 'relative' }]}>
           <AccentBlob placement="top-left" colorTheme="blue" />
-          <LinearGradient
-            colors={[colors.iris, colors.irisDeeper]}
-            style={styles.avatar}
-          >
-            <Text style={styles.avatarText}>
-              {user.name?.charAt(0).toUpperCase() || '?'}
-            </Text>
-          </LinearGradient>
+          <View style={{ position: 'relative' }}>
+            <LinearGradient
+              colors={[colors.iris, colors.irisDeeper]}
+              style={styles.avatar}
+            >
+              <Text style={styles.avatarText}>
+                {user.name?.charAt(0).toUpperCase() || '?'}
+              </Text>
+            </LinearGradient>
+            {/* Edit icon overlay */}
+            <Pressable style={styles.avatarEditBtn} hitSlop={12}>
+              <PencilIcon size={10} color="#FFFFFF" />
+            </Pressable>
+          </View>
           <View style={styles.profileInfo}>
             <Text style={styles.profileName}>{user.name}</Text>
             <View style={styles.levelBadge}>
@@ -297,10 +444,10 @@ export default function StatsScreen() {
           <AccentBlob placement="top-right" colorTheme="blue" />
           <SectionLabel title="OVERVIEW" />
           <View style={styles.grid}>
-            <StatCard label="Current Streak" value={`${streak}`} icon="flame" gradient={['#FBBF24', '#F59E0B']} />
-            <StatCard label="Accuracy" value={`${accuracy}%`} icon="checkmark-circle" gradient={['#2DD4A8', '#059669']} />
-            <StatCard label="Mastered" value={`${mastered}`} icon="school" gradient={[colors.iris, colors.irisDeeper]} />
-            <StatCard label="Time Spent" value={MOCK_TIME_SPENT} icon="time-outline" gradient={['#38BDF8', '#0284C7']} />
+            <StatCard label="Current Streak" value={`${streak}`} iconType="flame" />
+            <StatCard label="Accuracy" value={`${accuracy}%`} iconType="check" />
+            <StatCard label="Mastered" value={`${mastered}`} iconType="cap" />
+            <StatCard label="Time Spent" value={MOCK_TIME_SPENT} iconType="clock" />
           </View>
         </View>
 
@@ -355,6 +502,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   avatarText: { fontFamily: fonts.sansBold, fontSize: 24, color: '#fff' },
+  avatarEditBtn: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: colors.ink,
+    borderWidth: 2,
+    borderColor: colors.bg,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   profileInfo: { gap: 4 },
   profileName: { fontFamily: fonts.serif, fontSize: 24, color: colors.ink },
   levelBadge: {

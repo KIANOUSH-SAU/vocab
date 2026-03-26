@@ -17,9 +17,11 @@ import Animated, {
 import { useCurrentUser, useIsGuest } from "@store/userStore";
 import { useStreak } from "@store/progressStore";
 import { useDailyWord } from "@hooks/useDailyWord";
+import { useAudio } from "@hooks/useAudio";
 import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
 import { AccentBlob } from "@components/ui/AccentBlob";
 import { SectionLabel } from "@components/ui/SectionLabel";
+import { AnimatedFire } from "@components/ui/AnimatedFire";
 
 // Mock data
 const MOCK_PROGRESS = {
@@ -32,48 +34,26 @@ const MOCK_PROGRESS = {
 // ─── Streak Flame Widget ──────────────────────────────────────
 
 function StreakWidget({ count }: { count: number }) {
-  const flameScale = useSharedValue(1);
-  const flameRotate = useSharedValue(0);
-
-  useEffect(() => {
-    flameScale.value = withRepeat(
-      withSequence(
-        withTiming(1.1, { duration: 375 }),
-        withTiming(1.0, { duration: 375 }),
-      ),
-      -1,
-    );
-    flameRotate.value = withRepeat(
-      withSequence(
-        withTiming(-3, { duration: 500 }),
-        withTiming(3, { duration: 500 }),
-      ),
-      -1,
-      true,
-    );
-  }, []);
-
-  const flameStyle = useAnimatedStyle(() => ({
-    transform: [
-      { scale: flameScale.value },
-      { rotate: `${flameRotate.value}deg` },
-    ],
-  }));
-
   const DAYS = ["M", "T", "W", "T", "F", "S", "S"];
   const today = new Date().getDay(); // 0=Sun
   const dayIndex = today === 0 ? 6 : today - 1;
 
   return (
     <LinearGradient
-      colors={["#F97316", "#EA580C"]}
+      colors={["#FF8C00", "#FF6B00", "#E85D04"]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={streakStyles.container}
     >
-      <Animated.Text style={[streakStyles.flame, flameStyle]}>🔥</Animated.Text>
+      {/* Inner radial glow approximation */}
+      <View style={streakStyles.innerGlow} />
+
+      {/* Animated SVG Fire */}
+      <AnimatedFire size={80} />
+
       <Text style={streakStyles.count}>{count}</Text>
-      <Text style={streakStyles.label}>day streak</Text>
+      <Text style={streakStyles.label}>DAY STREAK</Text>
+
       <View style={streakStyles.dotsRow}>
         {DAYS.map((d, i) => {
           const state =
@@ -91,8 +71,8 @@ function StreakWidget({ count }: { count: number }) {
               <Text
                 style={[
                   streakStyles.dotText,
-                  state === "today" && { color: "#EA580C" },
-                  state === "done" && { color: "#fff" },
+                  state === "done" && streakStyles.dotTextDone,
+                  state === "today" && streakStyles.dotTextToday,
                 ]}
               >
                 {d}
@@ -107,38 +87,82 @@ function StreakWidget({ count }: { count: number }) {
 
 const streakStyles = StyleSheet.create({
   container: {
-    borderRadius: radii.lg,
-    padding: 20,
+    borderRadius: 32,
+    padding: 28,
+    paddingHorizontal: 24,
     alignItems: "center",
     gap: 4,
-    shadowColor: "#EA580C",
-    shadowOffset: { width: 0, height: 8 },
+    position: "relative",
+    overflow: "hidden",
+    shadowColor: "#FF6B00",
+    shadowOffset: { width: 0, height: 16 },
     shadowOpacity: 0.3,
-    shadowRadius: 16,
-    elevation: 8,
+    shadowRadius: 48,
+    elevation: 16,
   },
-  flame: { fontSize: 38 },
-  count: { fontFamily: fonts.serif, fontSize: 36, color: "#FFFFFF" },
+  innerGlow: {
+    position: "absolute",
+    top: "10%",
+    left: "25%",
+    width: "50%",
+    aspectRatio: 1,
+    borderRadius: 999,
+    backgroundColor: "rgba(255, 200, 50, 0.25)",
+  },
+  count: {
+    fontFamily: fonts.serif,
+    fontSize: 56,
+    color: "#FFFFFF",
+    textAlign: "center",
+    textShadowColor: "rgba(0,0,0,0.2)",
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 12,
+    lineHeight: 56,
+  },
   label: {
-    fontFamily: fonts.sansMedium,
-    fontSize: 13,
-    color: "rgba(255,255,255,0.9)",
+    fontFamily: fonts.sansBold,
+    fontSize: 14,
+    color: "rgba(255, 255, 255, 0.9)",
+    letterSpacing: 1,
+    textTransform: "uppercase",
+    textAlign: "center",
+    marginBottom: 20,
   },
-  dotsRow: { flexDirection: "row", gap: 6, marginTop: 12 },
+  dotsRow: { flexDirection: "row", gap: 6 },
   dot: {
-    width: 28,
-    height: 28,
-    borderRadius: 8,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "rgba(255, 255, 255, 0.15)",
   },
-  dotDone: { backgroundColor: "rgba(255,255,255,0.3)" },
-  dotToday: { backgroundColor: "#FFFFFF" },
-  dotFuture: { backgroundColor: "rgba(0,0,0,0.15)" },
+  dotDone: {
+    backgroundColor: "rgba(255, 255, 255, 0.35)",
+    shadowColor: "#FFC832",
+    shadowOpacity: 0.3,
+    shadowRadius: 12,
+  },
+  dotToday: {
+    backgroundColor: "#FFFFFF",
+    shadowColor: "#FFFFFF",
+    shadowOpacity: 0.4,
+    shadowRadius: 16,
+    transform: [{ scale: 1.1 }],
+  },
+  dotFuture: {
+    backgroundColor: "rgba(255, 255, 255, 0.15)",
+  },
   dotText: {
-    fontFamily: fonts.sansSemiBold,
-    fontSize: 10,
-    color: "rgba(255,255,255,0.6)",
+    fontFamily: fonts.sansBold,
+    fontSize: 11,
+    color: "rgba(255, 255, 255, 0.7)",
+  },
+  dotTextDone: {
+    color: "#FFFFFF",
+  },
+  dotTextToday: {
+    color: "#E85D04",
   },
 });
 
@@ -146,6 +170,7 @@ const streakStyles = StyleSheet.create({
 
 function WordOfDayCard() {
   const { words } = useDailyWord();
+  const { play } = useAudio();
   const word = words[0];
 
   const w = word ?? {
@@ -173,7 +198,7 @@ function WordOfDayCard() {
                 (w.fields?.[0] ?? "general").slice(1)}
             </Text>
           </View>
-          <Pressable style={wotdStyles.playBtn}>
+          <Pressable style={wotdStyles.playBtn} onPress={() => play(w.word)}>
             <Ionicons name="play" size={14} color="#fff" />
           </Pressable>
         </View>

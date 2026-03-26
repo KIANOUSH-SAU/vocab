@@ -185,7 +185,7 @@ export function useAuthForm() {
   );
 
   const handleOAuth = useCallback(
-    async (provider: "google" | "apple") => {
+    async (provider: "google") => {
       if (!isAppwriteConfigured) {
         setError("Backend is not configured.");
         return;
@@ -197,8 +197,7 @@ export function useAuthForm() {
           path: "/(tabs)/home",
         });
 
-        const providerEnum =
-          provider === "google" ? OAuthProvider.Google : OAuthProvider.Apple;
+        const providerEnum = OAuthProvider.Google;
         const acc = getAccount();
 
         const loginUrl = await acc.createOAuth2Token(

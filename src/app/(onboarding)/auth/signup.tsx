@@ -150,25 +150,13 @@ export default function SignupScreen() {
 
           <View style={styles.oauthRow}>
             <Button
-              label="Google"
+              label="Continue with Google"
               onPress={() => handleOAuth("google")}
               variant="google"
               size="lg"
               fullWidth
               icon={{
                 source: require("../../../../assets/images/google-icon.png"),
-                position: "left",
-              }}
-            />
-            <Button
-              label="Apple"
-              onPress={() => handleOAuth("apple")}
-              variant="apple"
-              size="lg"
-              fullWidth
-              icon={{
-                library: "Ionicons",
-                name: "logo-apple",
                 position: "left",
               }}
             />
