@@ -104,11 +104,50 @@ export async function createUserDocument(
     voiceStyleId: string;
   },
 ) {
-  return getDatabases().createDocument(
+  return getDatabases().createDocument(DB_ID, COLLECTIONS.USERS, userId, {
+    ...userData,
+    fields: JSON.stringify(userData.fields),
+  });
+}
+
+/** Get a user profile document from Appwrite DB */
+export async function getUserDocument(userId: string) {
+  try {
+    const doc = await getDatabases().getDocument(
+      DB_ID,
+      COLLECTIONS.USERS,
+      userId,
+    );
+    return {
+      ...doc,
+      fields: doc.fields ? JSON.parse(doc.fields as string) : [],
+    };
+  } catch {
+    return null;
+  }
+}
+
+/** Update an existing user profile document */
+export async function updateUserDocument(
+  userId: string,
+  updates: Partial<{
+    name: string;
+    email: string;
+    level: string;
+    fields: string[];
+    voiceStyleId: string;
+  }>,
+) {
+  const payload = { ...updates };
+  if (updates.fields !== undefined && updates.fields !== null) {
+    (payload as any).fields = JSON.stringify(updates.fields);
+  }
+
+  return getDatabases().updateDocument(
     DB_ID,
     COLLECTIONS.USERS,
     userId,
-    userData,
+    payload,
   );
 }
 

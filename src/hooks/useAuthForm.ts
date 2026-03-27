@@ -8,12 +8,14 @@ import {
   getCurrentSession,
   getAccount,
   createUserDocument,
+  getUserDocument,
   migrateProgressToServer,
   isAppwriteConfigured,
 } from "@services/appwriteService";
 import * as WebBrowser from "expo-web-browser";
 import { makeRedirectUri } from "expo-auth-session";
 import { OAuthProvider } from "react-native-appwrite";
+import type { Level, Field } from "@/types";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -64,7 +66,7 @@ export function useAuthForm() {
     try {
       await migrateProgressToServer(
         userId,
-        userWords as Record<string, Record<string, unknown>>,
+        userWords as unknown as Record<string, Record<string, unknown>>,
       );
     } catch (e) {
       console.warn("[Auth] Guest migration partial failure:", e);
@@ -76,16 +78,32 @@ export function useAuthForm() {
     if (!appwriteUser)
       throw new Error("Failed to get user after authentication.");
 
+    let dbUser: {
+      fields: string[];
+      level?: string;
+      voiceStyleId?: string;
+      name?: string;
+    } | null = null;
+    try {
+      dbUser = (await getUserDocument(appwriteUser.$id)) as any;
+    } catch {
+      // Document might not exist yet
+    }
+
     const wasGuest = useUserStore.getState().user?.isGuest ?? false;
     if (wasGuest) {
       await migrateGuestData(appwriteUser.$id);
     }
 
     const onboardingData = useUserStore.getState().pendingOnboardingData;
-    const level =
-      onboardingData?.level ?? useUserStore.getState().user?.level ?? "A1";
-    const fields =
-      onboardingData?.fields ?? useUserStore.getState().user?.fields ?? [];
+    const level = (dbUser?.level ??
+      onboardingData?.level ??
+      useUserStore.getState().user?.level ??
+      "A1") as Level;
+    const fields = (dbUser?.fields ??
+      onboardingData?.fields ??
+      useUserStore.getState().user?.fields ??
+      []) as Field[];
 
     setUser({
       id: appwriteUser.$id,
@@ -93,12 +111,20 @@ export function useAuthForm() {
       email: appwriteUser.email,
       level,
       fields,
-      voiceStyleId: useUserStore.getState().user?.voiceStyleId ?? "",
+      voiceStyleId:
+        dbUser?.voiceStyleId ??
+        useUserStore.getState().user?.voiceStyleId ??
+        "",
       isGuest: false,
     });
 
     clearPendingOnboardingData();
-    router.replace("/(tabs)/home");
+
+    if (!fields || fields.length === 0) {
+      router.replace("/(onboarding)/interests");
+    } else {
+      router.replace("/(tabs)/home");
+    }
   };
 
   const handleSignup = useCallback(async () => {
@@ -140,7 +166,11 @@ export function useAuthForm() {
             fields: onboardingData?.fields ?? [],
             voiceStyleId: "",
           });
-        } catch {
+        } catch (err) {
+          console.error(
+            "[Auth] Failed to create user document after email signup:",
+            err,
+          );
           // Non-blocking — user doc creation can be retried later
         }
       }
@@ -239,7 +269,11 @@ export function useAuthForm() {
                 fields: onboardingData?.fields ?? [],
                 voiceStyleId: "",
               });
-            } catch {
+            } catch (err) {
+              console.error(
+                "[Auth] Failed to create user document after OAuth signup:",
+                err,
+              );
               // Document may already exist for returning OAuth users
             }
           }

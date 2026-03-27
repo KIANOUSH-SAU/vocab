@@ -12,6 +12,7 @@ import Animated, {
 import { LinearGradient } from 'expo-linear-gradient'
 import { Ionicons } from '@expo/vector-icons'
 import { useUserStore } from '@store/userStore'
+import { updateUserDocument } from '@services/appwriteService'
 import { LEVELS } from '@constants/levels'
 import { FIELDS } from '@constants/fields'
 import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
@@ -34,7 +35,8 @@ export default function LevelResultScreen() {
     guest: string
   }>()
   const isGuest = guest === 'true'
-  const { setUser, setPendingOnboardingData } = useUserStore()
+  const { user, setUser, setPendingOnboardingData } = useUserStore()
+  const isAuthenticated = user && !user.isGuest
 
   const levelMeta = LEVELS.find((l) => l.id === level) ?? LEVELS[0]
   const fieldList = (fields?.split(',').filter(Boolean) ?? []) as Field[]
@@ -66,8 +68,8 @@ export default function LevelResultScreen() {
   }))
   const btnStyle = useAnimatedStyle(() => ({ opacity: btnOpacity.value }))
 
-  const proceed = useCallback(() => {
-    if (isGuest) {
+  const proceed = useCallback(async () => {
+    if (isGuest && !isAuthenticated) {
       setUser({
         id: 'guest',
         name: 'Guest',
@@ -77,16 +79,36 @@ export default function LevelResultScreen() {
         isGuest: true,
       })
       router.replace('/(tabs)/home')
+    } else if (isAuthenticated) {
+      // Already logged in! Save to database & local store
+      setUser({
+        ...(user!),
+        level: level ?? 'A1',
+        fields: fieldList,
+      })
+      try {
+        await updateUserDocument(user!.id, {
+          level: level ?? 'A1',
+          fields: fieldList,
+        })
+      } catch (e) {
+        console.error("Failed to update remote user document", e)
+      }
+      router.replace('/(tabs)/home')
     } else {
       setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
       router.push('/(onboarding)/auth/signup')
     }
-  }, [isGuest, level, fieldList])
+  }, [isGuest, isAuthenticated, level, fieldList, user])
 
   const goToLogin = useCallback(() => {
-    setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
-    router.push('/(onboarding)/auth/login')
-  }, [level, fieldList])
+    if (isAuthenticated) {
+      router.replace('/(tabs)/home')
+    } else {
+      setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
+      router.push('/(onboarding)/auth/login')
+    }
+  }, [isAuthenticated, level, fieldList])
 
   return (
     <MaxWidthContainer>
@@ -168,16 +190,16 @@ export default function LevelResultScreen() {
               style={styles.primaryBtn}
             >
               <Text style={styles.primaryLabel}>
-                {isGuest ? 'Start Learning' : 'Create Account & Start'}
+                {isGuest && !isAuthenticated ? 'Start Learning' : isAuthenticated ? 'Start Learning' : 'Create Account & Start'}
               </Text>
               <Ionicons name="arrow-forward" size={18} color="#fff" />
             </LinearGradient>
           </Pressable>
-          {isGuest ? (
+          {isGuest && !isAuthenticated ? (
             <Text style={styles.guestNote}>
               Progress saved locally · Create an account anytime
             </Text>
-          ) : (
+          ) : isAuthenticated ? null : (
             <Pressable onPress={goToLogin} style={styles.ghostBtn}>
               <Text style={styles.ghostLabel}>I already have an account</Text>
             </Pressable>
