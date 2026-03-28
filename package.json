@@ -7,7 +7,11 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "pipeline": "node --env-file=.env --import tsx scripts/runPipeline.ts",
+    "pipeline:score": "node --env-file=.env --import tsx scripts/scoreWords.ts",
+    "pipeline:enrich": "node --env-file=.env --import tsx scripts/enrichWords.ts",
+    "pipeline:seed": "node --env-file=.env --import tsx scripts/seedAppwrite.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.0",
@@ -54,6 +58,8 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "node-appwrite": "^23.0.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.3.3"
   }
 }

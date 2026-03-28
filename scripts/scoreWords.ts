@@ -1,70 +1,180 @@
 /**
- * One-time preprocessing script.
+ * Step 1 of the word pipeline.
  * Reads a CEFR word list and scores each word for field relevance
- * and usability using Claude API.
+ * across ALL 5 fields + overall usability using Claude API.
  *
- * Usage: npx ts-node scripts/scoreWords.ts --field engineering --level B1
+ * Input:  data/cefr-words-{level}.txt  (one word per line)
+ * Output: data/scored-{level}.json
+ *
+ * Usage:
+ *   npx tsx scripts/scoreWords.ts --level B1
+ *   npx tsx scripts/scoreWords.ts --level B1 --threshold 5
  */
 
-import Anthropic from '@anthropic-ai/sdk'
-import * as fs from 'fs'
-import * as path from 'path'
+import Anthropic from "@anthropic-ai/sdk";
+import * as fs from "fs";
+import * as path from "path";
 
-const anthropic = new Anthropic({ apiKey: process.env.EXPO_PUBLIC_CLAUDE_API_KEY })
+// ─── Config ──────────────────────────────────────────────────────────────────
 
-const BATCH_SIZE = 50
+const FIELDS = [
+  "engineering",
+  "health",
+  "law",
+  "sports",
+  "education",
+] as const;
+const BATCH_SIZE = 40; // words per API call (keep under token limits)
+const DEFAULT_THRESHOLD = 5; // minimum fieldRelevance to keep a word for a field
 
-async function scoreWordsForField(
+interface ScoredWord {
+  word: string;
+  fieldRelevance: Record<string, number>;
+  usabilityScore: number;
+  notes: string;
+}
+
+// ─── CLI args ────────────────────────────────────────────────────────────────
+
+function parseArgs() {
+  const args = process.argv.slice(2);
+  let level = "B1";
+  let threshold = DEFAULT_THRESHOLD;
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === "--level" && args[i + 1]) level = args[i + 1];
+    if (args[i] === "--threshold" && args[i + 1])
+      threshold = parseInt(args[i + 1], 10);
+  }
+  return { level, threshold };
+}
+
+// ─── Scoring ─────────────────────────────────────────────────────────────────
+
+async function scoreBatch(
+  anthropic: Anthropic,
   words: string[],
-  field: string,
   level: string
-): Promise<object[]> {
+): Promise<ScoredWord[]> {
   const message = await anthropic.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 2000,
+    model: "claude-sonnet-4-6",
+    max_tokens: 4096,
     messages: [
       {
-        role: 'user',
-        content: `Rate each English word for:
-1. Relevance to ${field} professionals (1-10)
-2. Everyday usability for a ${level} English learner (1-10)
+        role: "user",
+        content: `You are a vocabulary assessment expert. For each English word below, provide:
 
-Return a JSON array only (no extra text):
-[{ "word": string, "fieldRelevance": number, "usabilityScore": number, "notes": string }]
+1. **fieldRelevance**: How relevant the word is to professionals in EACH of these 5 fields (1-10 scale):
+   - engineering, health, law, sports, education
+   A score of 1 means "no special relevance", 10 means "core domain vocabulary".
 
-Words: ${words.join(', ')}`,
+2. **usabilityScore**: How useful this word is for a ${level}-level English learner in everyday professional communication (1-10).
+
+3. **notes**: One short sentence explaining the word's primary domain(s).
+
+Return ONLY a valid JSON array, no markdown fences, no extra text:
+[{"word": "example", "fieldRelevance": {"engineering": 3, "health": 2, "law": 4, "sports": 1, "education": 7}, "usabilityScore": 8, "notes": "Common in academic and educational contexts."}]
+
+Words to score:
+${words.join("\n")}`,
       },
     ],
-  })
+  });
 
-  const text = message.content[0].type === 'text' ? message.content[0].text : '[]'
-  return JSON.parse(text)
+  const text =
+    message.content[0].type === "text" ? message.content[0].text : "[]";
+
+  // Extract JSON array from response (handle potential markdown fences)
+  const jsonMatch = text.match(/\[[\s\S]*\]/);
+  if (!jsonMatch) {
+    console.error("  Failed to parse batch response, skipping...");
+    return [];
+  }
+
+  try {
+    return JSON.parse(jsonMatch[0]);
+  } catch {
+    console.error("  JSON parse error, skipping batch...");
+    return [];
+  }
 }
+
+// ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const field = process.argv[3] ?? 'engineering'
-  const level = process.argv[5] ?? 'B1'
+  const { level, threshold } = parseArgs();
 
-  // TODO: Replace with actual CEFR word list path
-  const wordListPath = path.join(__dirname, `../data/cefr-words-${level}.txt`)
+  // Validate API key
+  const apiKey = process.env.ANTHROPIC_API_KEY || process.env.EXPO_PUBLIC_CLAUDE_API_KEY;
+  if (!apiKey) {
+    console.error("Error: Set ANTHROPIC_API_KEY or EXPO_PUBLIC_CLAUDE_API_KEY in your environment.");
+    process.exit(1);
+  }
+
+  const anthropic = new Anthropic({ apiKey });
+
+  // Read word list
+  const wordListPath = path.join(__dirname, `../data/cefr-words-${level}.txt`);
   if (!fs.existsSync(wordListPath)) {
-    console.error(`Word list not found: ${wordListPath}`)
-    process.exit(1)
+    console.error(`Word list not found: ${wordListPath}`);
+    console.error(`\nCreate it first with one word per line:\n  data/cefr-words-${level}.txt`);
+    process.exit(1);
   }
 
-  const allWords = fs.readFileSync(wordListPath, 'utf-8').split('\n').filter(Boolean)
-  const results: object[] = []
+  const allWords = fs
+    .readFileSync(wordListPath, "utf-8")
+    .split("\n")
+    .map((w) => w.replace(/\s+(n\.|v\.|adj\.|adv\.|prep\.|conj\.|pron\.|modal v\.|det\.|excl\.).*$/i, "").trim().toLowerCase())
+    .map((w) => w.replace(/\s*\(.*?\)\s*/g, "").trim()) // remove parenthetical notes like "(river)"
+    .filter((w) => w.length > 0 && !w.startsWith("#")); // skip empty lines and comments
 
-  for (let i = 0; i < allWords.length; i += BATCH_SIZE) {
-    const batch = allWords.slice(i, i + BATCH_SIZE)
-    console.log(`Scoring batch ${i / BATCH_SIZE + 1}/${Math.ceil(allWords.length / BATCH_SIZE)}...`)
-    const scored = await scoreWordsForField(batch, field, level)
-    results.push(...scored)
+  const uniqueWords = [...new Set(allWords)];
+  console.log(`\n📋 Scoring ${uniqueWords.length} words for level ${level}`);
+  console.log(`   Fields: ${FIELDS.join(", ")}`);
+  console.log(`   Threshold: ${threshold}+ to include in a field\n`);
+
+  // Score in batches
+  const allScored: ScoredWord[] = [];
+  const totalBatches = Math.ceil(uniqueWords.length / BATCH_SIZE);
+
+  for (let i = 0; i < uniqueWords.length; i += BATCH_SIZE) {
+    const batch = uniqueWords.slice(i, i + BATCH_SIZE);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    console.log(`  Batch ${batchNum}/${totalBatches} (${batch.length} words)...`);
+
+    const scored = await scoreBatch(anthropic, batch, level);
+    allScored.push(...scored);
+
+    // Rate limit: wait 1s between batches
+    if (i + BATCH_SIZE < uniqueWords.length) {
+      await new Promise((r) => setTimeout(r, 1000));
+    }
   }
 
-  const outPath = path.join(__dirname, `../data/scored-${field}-${level}.json`)
-  fs.writeFileSync(outPath, JSON.stringify(results, null, 2))
-  console.log(`Done. Written to ${outPath}`)
+  // Write full scored output
+  const outDir = path.join(__dirname, "../data");
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+
+  const outPath = path.join(outDir, `scored-${level}.json`);
+  fs.writeFileSync(outPath, JSON.stringify(allScored, null, 2));
+
+  // Summary
+  const fieldCounts: Record<string, number> = {};
+  for (const field of FIELDS) {
+    fieldCounts[field] = allScored.filter(
+      (w) => (w.fieldRelevance[field] ?? 0) >= threshold
+    ).length;
+  }
+
+  console.log(`\n✅ Scored ${allScored.length} words → ${outPath}`);
+  console.log(`\n   Words per field (threshold >= ${threshold}):`);
+  for (const [field, count] of Object.entries(fieldCounts)) {
+    console.log(`   ${field.padEnd(14)} ${count}`);
+  }
+  console.log(`\nNext step: npx tsx scripts/enrichWords.ts --level ${level}\n`);
 }
 
-main().catch(console.error)
+main().catch((err) => {
+  console.error("Fatal error:", err);
+  process.exit(1);
+});
