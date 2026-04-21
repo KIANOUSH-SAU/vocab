@@ -18,13 +18,7 @@ import * as path from "path";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
-const FIELDS = [
-  "engineering",
-  "health",
-  "law",
-  "sports",
-  "education",
-] as const;
+const FIELDS = ["engineering", "health", "law", "sports", "education"] as const;
 type Field = (typeof FIELDS)[number];
 
 const VALID_POS = ["noun", "verb", "adjective", "adverb", "other"] as const;
@@ -74,7 +68,7 @@ function parseArgs() {
 async function fetchDictionary(word: string): Promise<DictionaryResult | null> {
   try {
     const res = await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`,
     );
     if (!res.ok) return null;
 
@@ -94,8 +88,7 @@ async function fetchDictionary(word: string): Promise<DictionaryResult | null> {
     const rawPos = (meaning?.partOfSpeech || "other").toLowerCase();
     const partOfSpeech = VALID_POS.includes(rawPos as any) ? rawPos : "other";
 
-    const definition =
-      meaning?.definitions?.[0]?.definition || "";
+    const definition = meaning?.definitions?.[0]?.definition || "";
 
     return { phonetic, partOfSpeech, definition };
   } catch {
@@ -109,6 +102,7 @@ const CONTEXT_BATCH_SIZE = 15; // words per Claude call for context generation
 
 interface ContextResult {
   word: string;
+  definition: string;
   exampleSentence: string;
   contextPassage: string;
 }
@@ -116,13 +110,10 @@ interface ContextResult {
 async function generateContextBatch(
   anthropic: Anthropic,
   words: { word: string; definition: string; fields: string[] }[],
-  level: string
+  level: string,
 ): Promise<ContextResult[]> {
   const wordList = words
-    .map(
-      (w) =>
-        `- "${w.word}" (${w.fields.join(", ")}): ${w.definition}`
-    )
+    .map((w) => `- "${w.word}" (${w.fields.join(", ")}): ${w.definition}`)
     .join("\n");
 
   const message = await anthropic.messages.create({
@@ -133,12 +124,14 @@ async function generateContextBatch(
         role: "user",
         content: `You are a vocabulary content writer for an English learning app.
 
-For each word below, generate:
-1. **exampleSentence**: A single natural sentence using the word in the context of its primary field(s). Appropriate for a ${level}-level English learner.
-2. **contextPassage**: A 2-3 sentence educational passage explaining the word's significance in its field. Should help a learner understand WHY this word matters in professional contexts.
+For each word below, generate the following explicitly tailored for a ${level}-level English learner. CRITICAL: You must strictly restrict your vocabulary and grammar to the ${level} level. Avoid complex words or nested clauses!
 
-Return ONLY a valid JSON array, no markdown fences:
-[{"word": "example", "exampleSentence": "...", "contextPassage": "..."}]
+1. **definition**: A highly simplified, easy-to-understand definition of the word.
+2. **exampleSentence**: A single natural sentence using the word in the context of its primary field(s). Keep it extremely simple.
+3. **contextPassage**: A 2 sentence educational passage explaining the word's significance in its field. Write it like you are explaining it to a beginner.
+
+Return ONLY a valid JSON array, no markdown fences. Follow this exact structure:
+[{"word": "example", "definition": "...", "exampleSentence": "...", "contextPassage": "..."}]
 
 Words:
 ${wordList}`,
@@ -168,7 +161,7 @@ async function main() {
     process.env.ANTHROPIC_API_KEY || process.env.EXPO_PUBLIC_CLAUDE_API_KEY;
   if (!apiKey) {
     console.error(
-      "Error: Set ANTHROPIC_API_KEY or EXPO_PUBLIC_CLAUDE_API_KEY in your environment."
+      "Error: Set ANTHROPIC_API_KEY or EXPO_PUBLIC_CLAUDE_API_KEY in your environment.",
     );
     process.exit(1);
   }
@@ -179,29 +172,29 @@ async function main() {
   const scoredPath = path.join(__dirname, `../data/scored-${level}.json`);
   if (!fs.existsSync(scoredPath)) {
     console.error(`Scored file not found: ${scoredPath}`);
-    console.error(`\nRun step 1 first: npx tsx scripts/scoreWords.ts --level ${level}`);
+    console.error(
+      `\nRun step 1 first: npx tsx scripts/scoreWords.ts --level ${level}`,
+    );
     process.exit(1);
   }
 
-  const scored: ScoredWord[] = JSON.parse(
-    fs.readFileSync(scoredPath, "utf-8")
-  );
+  const scored: ScoredWord[] = JSON.parse(fs.readFileSync(scoredPath, "utf-8"));
 
   // Determine which fields each word qualifies for
   const wordsWithFields = scored
     .map((w) => {
       const fields = FIELDS.filter(
-        (f) => (w.fieldRelevance[f] ?? 0) >= threshold
+        (f) => (w.fieldRelevance[f] ?? 0) >= threshold,
       );
       return { ...w, fields };
     })
     .filter((w) => w.fields.length > 0); // drop words that don't qualify for any field
 
   console.log(
-    `\n📖 Enriching ${wordsWithFields.length} words for level ${level}`
+    `\n📖 Enriching ${wordsWithFields.length} words for level ${level}`,
   );
   console.log(
-    `   (${scored.length - wordsWithFields.length} words dropped — below threshold ${threshold} for all fields)\n`
+    `   (${scored.length - wordsWithFields.length} words dropped — below threshold ${threshold} for all fields)\n`,
   );
 
   // Step A: Fetch dictionary data for all words
@@ -221,23 +214,19 @@ async function main() {
     }
     // Light rate limiting for dictionary API
     if (i % 20 === 19) {
-      process.stdout.write(
-        `  ${i + 1}/${wordsWithFields.length} fetched...\r`
-      );
+      process.stdout.write(`  ${i + 1}/${wordsWithFields.length} fetched...\r`);
       await new Promise((r) => setTimeout(r, 500));
     }
   }
   console.log(
-    `  Dictionary: ${dictHits} found, ${dictMisses} not found (will use Claude fallback)`
+    `  Dictionary: ${dictHits} found, ${dictMisses} not found (will use Claude fallback)`,
   );
 
   // Step B: Generate example sentences + context passages via Claude
   console.log("  Generating context with Claude...");
 
   const contextMap: Record<string, ContextResult> = {};
-  const contextBatches = Math.ceil(
-    wordsWithFields.length / CONTEXT_BATCH_SIZE
-  );
+  const contextBatches = Math.ceil(wordsWithFields.length / CONTEXT_BATCH_SIZE);
 
   for (let i = 0; i < wordsWithFields.length; i += CONTEXT_BATCH_SIZE) {
     const batch = wordsWithFields.slice(i, i + CONTEXT_BATCH_SIZE);
@@ -269,7 +258,7 @@ async function main() {
       word: w.word,
       phonetic: dict?.phonetic || "",
       partOfSpeech: dict?.partOfSpeech || "other",
-      definition: dict?.definition || "",
+      definition: ctx?.definition || dict?.definition || "",
       exampleSentence: ctx?.exampleSentence || "",
       contextPassage: ctx?.contextPassage || "",
       level,
@@ -280,15 +269,15 @@ async function main() {
 
   // Flag words with missing data
   const incomplete = enriched.filter(
-    (w) => !w.definition || !w.exampleSentence
+    (w) => !w.definition || !w.exampleSentence,
   );
   if (incomplete.length > 0) {
     console.log(
-      `\n  ⚠️  ${incomplete.length} words have missing data (definition or example):`
+      `\n  ⚠️  ${incomplete.length} words have missing data (definition or example):`,
     );
     for (const w of incomplete.slice(0, 10)) {
       console.log(
-        `     ${w.word} — def: ${w.definition ? "✓" : "✗"}, example: ${w.exampleSentence ? "✓" : "✗"}`
+        `     ${w.word} — def: ${w.definition ? "✓" : "✗"}, example: ${w.exampleSentence ? "✓" : "✗"}`,
       );
     }
     if (incomplete.length > 10)
@@ -311,7 +300,7 @@ async function main() {
     console.log(`   ${field.padEnd(14)} ${count}`);
   }
   console.log(
-    `\nNext step: npx tsx scripts/seedAppwrite.ts --level ${level}\n`
+    `\nNext step: npm run pipeline:seed -- --level ${level}\n`,
   );
 }
 

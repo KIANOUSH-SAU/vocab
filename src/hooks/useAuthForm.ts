@@ -22,7 +22,25 @@ WebBrowser.maybeCompleteAuthSession();
 function mapAppwriteError(error: unknown): string {
   if (!error || typeof error !== "object")
     return "Something went wrong. Please try again.";
+
   const e = error as { code?: number; type?: string; message?: string };
+
+  if (
+    typeof e.message === "string" &&
+    (e.message.includes("<!DOCTYPE html") ||
+      e.message.includes("<html") ||
+      e.message.includes("503 error"))
+  ) {
+    return "Server is temporarily unavailable. Please try again later.";
+  }
+
+  if (e.type === "user_session_already_exists") {
+    return "session_exists"; // Special marker
+  }
+
+  // Developer visibility: Return the exact message Appwrite is sending if available
+  if (e.message) return e.message;
+
   switch (e.code) {
     case 401:
       return "Incorrect email or password.";
@@ -206,7 +224,12 @@ export function useAuthForm() {
         await login(loginEmail, password);
         await completeAuth();
       } catch (e) {
-        setError(mapAppwriteError(e));
+        const mappedError = mapAppwriteError(e);
+        if (mappedError === "session_exists") {
+          await completeAuth();
+        } else {
+          setError(mappedError);
+        }
       } finally {
         setIsLoading(false);
       }

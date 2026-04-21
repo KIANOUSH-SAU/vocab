@@ -470,7 +470,6 @@ export default function HomeScreen() {
         <Text style={styles.greeting}>
           {user?.name ? `Hello, ${user.name}` : "Good morning"}
         </Text>
-
         {/* Guest banner */}
         {isGuest && (
           <Pressable

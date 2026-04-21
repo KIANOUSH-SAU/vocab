@@ -1,33 +1,3 @@
-// export type PlacementQuestionType = "recognition" | "definition" | "usage";
-
-// export interface PlacementQuestion {
-//   id: string;
-//   type: PlacementQuestionType;
-//   level: string;
-//   question: string;
-//   options: string[];
-//   correctIndex: number;
-// }
-
-// export type PlacementQuestionType =
-//   | "recognition" // Vocabulary — Do you know this word?
-//   | "definition" // Vocabulary — What does X mean?
-//   | "usage" // Vocabulary — Is this sentence correct?
-//   | "readingComprehension"; // Reading — passage + comprehension question
-
-// export interface PlacementQuestion {
-//   id: string;
-//   type: PlacementQuestionType;
-//   skill: "vocabulary" | "reading";
-//   level: string; // "A1" | "A2" | "B1" | "B2" | "C1"
-//   question: string;
-//   passage?: string; // Used for readingComprehension
-//   options: string[];
-//   correctIndex: number;
-// }
-
-// export const PLACEMENT_QUESTIONS: PlacementQuestion[] = [];
-
 export type PlacementQuestionType =
   | "recognition"
   | "definition"

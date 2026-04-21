@@ -1,37 +1,37 @@
-import { create } from 'zustand'
-import { persist, createJSONStorage } from 'zustand/middleware'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import type { User, VoiceStyle } from '@/types'
-import type { Level, Field } from '@/types'
+import { create } from "zustand";
+import { persist, createJSONStorage } from "zustand/middleware";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import type { User, VoiceStyle } from "@/types";
+import type { Level, Field } from "@/types";
 
 interface PendingOnboardingData {
-  level: Level
-  fields: Field[]
+  level: Level;
+  fields: Field[];
 }
 
 interface UserState {
-  user: User | null
-  voiceStyles: VoiceStyle[]
-  isAuthenticated: boolean
-  isLoading: boolean
+  user: User | null;
+  voiceStyles: VoiceStyle[];
+  isAuthenticated: boolean;
+  isLoading: boolean;
   // Non-persisted: session check gate
-  isSessionChecked: boolean
+  isSessionChecked: boolean;
   // Non-persisted: temp storage between level-result and auth screens
-  pendingOnboardingData: PendingOnboardingData | null
+  pendingOnboardingData: PendingOnboardingData | null;
   // Persisted: survives logout for returning user detection
-  lastLoggedInEmail: string | null
+  lastLoggedInEmail: string | null;
 }
 
 interface UserActions {
-  setUser: (user: User) => void
-  updateVoiceStyle: (voiceStyleId: string) => void
-  setVoiceStyles: (styles: VoiceStyle[]) => void
-  setLoading: (loading: boolean) => void
-  setSessionChecked: (checked: boolean) => void
-  setPendingOnboardingData: (data: PendingOnboardingData) => void
-  clearPendingOnboardingData: () => void
-  logout: () => void
-  reset: () => void
+  setUser: (user: User) => void;
+  updateVoiceStyle: (voiceStyleId: string) => void;
+  setVoiceStyles: (styles: VoiceStyle[]) => void;
+  setLoading: (loading: boolean) => void;
+  setSessionChecked: (checked: boolean) => void;
+  setPendingOnboardingData: (data: PendingOnboardingData) => void;
+  clearPendingOnboardingData: () => void;
+  logout: () => void;
+  reset: () => void;
 }
 
 const initialState: UserState = {
@@ -42,7 +42,7 @@ const initialState: UserState = {
   isSessionChecked: false,
   pendingOnboardingData: null,
   lastLoggedInEmail: null,
-}
+};
 
 export const useUserStore = create<UserState & UserActions>()(
   persist(
@@ -67,7 +67,8 @@ export const useUserStore = create<UserState & UserActions>()(
 
       setSessionChecked: (isSessionChecked) => set({ isSessionChecked }),
 
-      setPendingOnboardingData: (pendingOnboardingData) => set({ pendingOnboardingData }),
+      setPendingOnboardingData: (pendingOnboardingData) =>
+        set({ pendingOnboardingData }),
 
       clearPendingOnboardingData: () => set({ pendingOnboardingData: null }),
 
@@ -82,18 +83,18 @@ export const useUserStore = create<UserState & UserActions>()(
       reset: () => set(initialState),
     }),
     {
-      name: 'user-storage',
+      name: "user-storage",
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (state) => ({
         user: state.user,
         voiceStyles: state.voiceStyles,
         lastLoggedInEmail: state.lastLoggedInEmail,
       }),
-    }
-  )
-)
+    },
+  ),
+);
 
 // Selectors
-export const useCurrentUser = () => useUserStore((s) => s.user)
-export const useIsGuest = () => useUserStore((s) => s.user?.isGuest ?? false)
-export const useIsAuthenticated = () => useUserStore((s) => s.isAuthenticated)
+export const useCurrentUser = () => useUserStore((s) => s.user);
+export const useIsGuest = () => useUserStore((s) => s.user?.isGuest ?? false);
+export const useIsAuthenticated = () => useUserStore((s) => s.isAuthenticated);

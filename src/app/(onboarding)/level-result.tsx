@@ -1,114 +1,119 @@
-import { useEffect, useCallback } from 'react'
-import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router, useLocalSearchParams } from 'expo-router'
+import { useEffect, useCallback } from "react";
+import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { router, useLocalSearchParams } from "expo-router";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   withDelay,
   withSpring,
-} from 'react-native-reanimated'
-import { LinearGradient } from 'expo-linear-gradient'
-import { Ionicons } from '@expo/vector-icons'
-import { useUserStore } from '@store/userStore'
-import { updateUserDocument } from '@services/appwriteService'
-import { LEVELS } from '@constants/levels'
-import { FIELDS } from '@constants/fields'
-import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
-import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
-import { BackButton } from '@components/ui/BackButton'
-import type { Level, Field } from '@/types'
+} from "react-native-reanimated";
+import { LinearGradient } from "expo-linear-gradient";
+import { Ionicons } from "@expo/vector-icons";
+import { useUserStore } from "@store/userStore";
+import { updateUserDocument } from "@services/appwriteService";
+import { LEVELS } from "@constants/levels";
+import { FIELDS } from "@constants/fields";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
+import { BackButton } from "@components/ui/BackButton";
+import type { Level, Field } from "@/types";
 
 const LEVEL_GRADIENTS: Record<Level, [string, string]> = {
   A1: [colors.irisLight, colors.iris],
   A2: [colors.iris, colors.irisDark],
   B1: [colors.iris, colors.irisDeeper],
   B2: [colors.irisDark, colors.irisDeeper],
-  C1: [colors.irisDeeper, '#4C2EBF'],
-}
+  C1: [colors.irisDeeper, "#4C2EBF"],
+};
 
 export default function LevelResultScreen() {
   const { level, fields, guest } = useLocalSearchParams<{
-    level: Level
-    fields: string
-    guest: string
-  }>()
-  const isGuest = guest === 'true'
-  const { user, setUser, setPendingOnboardingData } = useUserStore()
-  const isAuthenticated = user && !user.isGuest
+    level: Level;
+    fields: string;
+    guest: string;
+  }>();
+  const isGuest = guest === "true";
+  const { user, setUser, setPendingOnboardingData } = useUserStore();
+  const isAuthenticated = user && !user.isGuest;
 
-  const levelMeta = LEVELS.find((l) => l.id === level) ?? LEVELS[0]
-  const fieldList = (fields?.split(',').filter(Boolean) ?? []) as Field[]
-  const fieldMetas = FIELDS.filter((f) => fieldList.includes(f.id))
-  const gradient = LEVEL_GRADIENTS[level ?? 'A1']
+  const levelMeta = LEVELS.find((l) => l.id === level) ?? LEVELS[0];
+  const fieldList = (fields?.split(",").filter(Boolean) ?? []) as Field[];
+  const fieldMetas = FIELDS.filter((f) => fieldList.includes(f.id));
+  const gradient = LEVEL_GRADIENTS[level ?? "A1"];
 
   // Entrance animations
-  const badgeScale = useSharedValue(0.6)
-  const badgeOpacity = useSharedValue(0)
-  const contentOpacity = useSharedValue(0)
-  const contentTranslate = useSharedValue(24)
-  const btnOpacity = useSharedValue(0)
+  const badgeScale = useSharedValue(0.6);
+  const badgeOpacity = useSharedValue(0);
+  const contentOpacity = useSharedValue(0);
+  const contentTranslate = useSharedValue(24);
+  const btnOpacity = useSharedValue(0);
 
   useEffect(() => {
-    badgeScale.value = withSpring(1, { damping: 16, stiffness: 120 })
-    badgeOpacity.value = withTiming(1, { duration: 400 })
-    contentOpacity.value = withDelay(300, withTiming(1, { duration: 500 }))
-    contentTranslate.value = withDelay(300, withTiming(0, { duration: 500 }))
-    btnOpacity.value = withDelay(600, withTiming(1, { duration: 400 }))
-  }, [])
+    badgeScale.value = withSpring(1, { damping: 16, stiffness: 120 });
+    badgeOpacity.value = withTiming(1, { duration: 400 });
+    contentOpacity.value = withDelay(300, withTiming(1, { duration: 500 }));
+    contentTranslate.value = withDelay(300, withTiming(0, { duration: 500 }));
+    btnOpacity.value = withDelay(600, withTiming(1, { duration: 400 }));
+  }, []);
 
   const badgeStyle = useAnimatedStyle(() => ({
     opacity: badgeOpacity.value,
     transform: [{ scale: badgeScale.value }],
-  }))
+  }));
   const contentStyle = useAnimatedStyle(() => ({
     opacity: contentOpacity.value,
     transform: [{ translateY: contentTranslate.value }],
-  }))
-  const btnStyle = useAnimatedStyle(() => ({ opacity: btnOpacity.value }))
+  }));
+  const btnStyle = useAnimatedStyle(() => ({ opacity: btnOpacity.value }));
 
   const proceed = useCallback(async () => {
     if (isGuest && !isAuthenticated) {
       setUser({
-        id: 'guest',
-        name: 'Guest',
-        level: level ?? 'A1',
+        id: "guest",
+        name: "Guest",
+        level: level ?? "A1",
         fields: fieldList,
-        voiceStyleId: '',
+        voiceStyleId: "",
         isGuest: true,
-      })
-      router.replace('/(tabs)/home')
+      });
+      router.replace("/(tabs)/home");
     } else if (isAuthenticated) {
-      // Already logged in! Save to database & local store
       setUser({
-        ...(user!),
-        level: level ?? 'A1',
+        ...user!,
+        level: level ?? "A1",
         fields: fieldList,
-      })
+      });
       try {
         await updateUserDocument(user!.id, {
-          level: level ?? 'A1',
+          level: level ?? "A1",
           fields: fieldList,
-        })
+        });
       } catch (e) {
-        console.error("Failed to update remote user document", e)
+        console.error("Failed to update remote user document", e);
       }
-      router.replace('/(tabs)/home')
+      router.replace("/(tabs)/home");
     } else {
-      setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
-      router.push('/(onboarding)/auth/signup')
+      setPendingOnboardingData({
+        level: level ?? "A1",
+        fields: fieldList,
+      });
+      router.push("/(onboarding)/auth/signup");
     }
-  }, [isGuest, isAuthenticated, level, fieldList, user])
+  }, [isGuest, isAuthenticated, level, fieldList, user]);
 
   const goToLogin = useCallback(() => {
     if (isAuthenticated) {
-      router.replace('/(tabs)/home')
+      router.replace("/(tabs)/home");
     } else {
-      setPendingOnboardingData({ level: level ?? 'A1', fields: fieldList })
-      router.push('/(onboarding)/auth/login')
+      setPendingOnboardingData({
+        level: level ?? "A1",
+        fields: fieldList,
+      });
+      router.push("/(onboarding)/auth/login");
     }
-  }, [isAuthenticated, level, fieldList])
+  }, [isAuthenticated, level, fieldList]);
 
   return (
     <MaxWidthContainer>
@@ -150,9 +155,19 @@ export default function LevelResultScreen() {
               <Text style={styles.fieldLabel}>YOUR SELECTED FIELDS</Text>
               <View style={styles.fieldTags}>
                 {fieldMetas.map((f) => (
-                  <View key={f.id} style={[styles.tag, { borderColor: f.color, backgroundColor: `${f.color}10` }]}>
-                    <View style={[styles.tagDot, { backgroundColor: f.color }]} />
-                    <Text style={[styles.tagText, { color: f.color }]}>{f.label}</Text>
+                  <View
+                    key={f.id}
+                    style={[
+                      styles.tag,
+                      { borderColor: f.color, backgroundColor: `${f.color}10` },
+                    ]}
+                  >
+                    <View
+                      style={[styles.tagDot, { backgroundColor: f.color }]}
+                    />
+                    <Text style={[styles.tagText, { color: f.color }]}>
+                      {f.label}
+                    </Text>
                   </View>
                 ))}
               </View>
@@ -186,11 +201,15 @@ export default function LevelResultScreen() {
         <Animated.View style={[styles.footer, btnStyle]}>
           <Pressable onPress={proceed}>
             <LinearGradient
-              colors={[colors.ink, '#27272A']}
+              colors={[colors.ink, "#27272A"]}
               style={styles.primaryBtn}
             >
               <Text style={styles.primaryLabel}>
-                {isGuest && !isAuthenticated ? 'Start Learning' : isAuthenticated ? 'Start Learning' : 'Create Account & Start'}
+                {isGuest && !isAuthenticated
+                  ? "Start Learning"
+                  : isAuthenticated
+                    ? "Start Learning"
+                    : "Create Account & Start"}
               </Text>
               <Ionicons name="arrow-forward" size={18} color="#fff" />
             </LinearGradient>
@@ -207,34 +226,39 @@ export default function LevelResultScreen() {
         </Animated.View>
       </SafeAreaView>
     </MaxWidthContainer>
-  )
+  );
 }
 
-function ExpectItem({ text, color, icon }: { text: string; color: string; icon: string }) {
+function ExpectItem({
+  text,
+  color,
+  icon,
+}: {
+  text: string;
+  color: string;
+  icon: string;
+}) {
   return (
     <View style={styles.expectItem}>
-      <LinearGradient
-        colors={[color, `${color}CC`]}
-        style={styles.expectIcon}
-      >
+      <LinearGradient colors={[color, `${color}CC`]} style={styles.expectIcon}>
         <Ionicons name={icon as any} size={14} color="#fff" />
       </LinearGradient>
       <Text style={styles.expectText}>{text}</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
 
   topBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingHorizontal: 24,
     paddingTop: 8,
   },
-  stepRow: { flexDirection: 'row', gap: 6 },
+  stepRow: { flexDirection: "row", gap: 6 },
   stepDot: {
     width: 8,
     height: 8,
@@ -250,7 +274,7 @@ const styles = StyleSheet.create({
   },
 
   // Badge
-  badgeWrapper: { alignSelf: 'flex-start' },
+  badgeWrapper: { alignSelf: "flex-start" },
   badge: {
     borderRadius: radii.xl,
     paddingHorizontal: 28,
@@ -262,14 +286,14 @@ const styles = StyleSheet.create({
   levelCode: {
     fontFamily: fonts.serif,
     fontSize: 72,
-    color: '#fff',
+    color: "#fff",
     letterSpacing: -2,
     lineHeight: 76,
   },
   levelName: {
     fontFamily: fonts.sansMedium,
     fontSize: 18,
-    color: 'rgba(255,255,255,0.7)',
+    color: "rgba(255,255,255,0.7)",
     letterSpacing: 0.2,
   },
 
@@ -295,10 +319,10 @@ const styles = StyleSheet.create({
     color: colors.inkLight,
     letterSpacing: 1.5,
   },
-  fieldTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  fieldTags: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
   tag: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 6,
     paddingHorizontal: 12,
     paddingVertical: 7,
@@ -327,13 +351,13 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
   expectList: { gap: 12 },
-  expectItem: { flexDirection: 'row', gap: 12, alignItems: 'center' },
+  expectItem: { flexDirection: "row", gap: 12, alignItems: "center" },
   expectIcon: {
     width: 28,
     height: 28,
     borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   expectText: {
     fontFamily: fonts.sans,
@@ -354,9 +378,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bg,
   },
   primaryBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     gap: 8,
     paddingVertical: 16,
     borderRadius: radii.md,
@@ -365,9 +389,9 @@ const styles = StyleSheet.create({
   primaryLabel: {
     fontFamily: fonts.sansSemiBold,
     fontSize: 15,
-    color: '#fff',
+    color: "#fff",
   },
-  ghostBtn: { alignItems: 'center', paddingVertical: 10 },
+  ghostBtn: { alignItems: "center", paddingVertical: 10 },
   ghostLabel: {
     fontFamily: fonts.sansMedium,
     fontSize: 14,
@@ -377,6 +401,6 @@ const styles = StyleSheet.create({
     fontFamily: fonts.sansMedium,
     fontSize: 12,
     color: colors.inkLight,
-    textAlign: 'center',
+    textAlign: "center",
   },
-})
+});

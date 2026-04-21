@@ -1,5 +1,5 @@
-import * as Notifications from 'expo-notifications'
-import type { Word } from '@/types'
+import * as Notifications from "expo-notifications";
+import type { Word } from "@/types";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -7,25 +7,28 @@ Notifications.setNotificationHandler({
     shouldPlaySound: false,
     shouldSetBadge: false,
   }),
-})
+});
 
 /** Request notification permissions */
 export async function requestPermissions(): Promise<boolean> {
   try {
-    const { status } = await Notifications.requestPermissionsAsync()
-    return status === 'granted'
+    const { status } = await Notifications.requestPermissionsAsync();
+    return status === "granted";
   } catch (error) {
-    throw new Error(`[notificationService.requestPermissions] ${error}`)
+    throw new Error(`[notificationService.requestPermissions] ${error}`);
   }
 }
 
 /** Schedule daily word reminder notification */
-export async function scheduleDailyReminder(hour = 9, minute = 0): Promise<void> {
+export async function scheduleDailyReminder(
+  hour = 9,
+  minute = 0,
+): Promise<void> {
   try {
-    await Notifications.cancelAllScheduledNotificationsAsync()
+    await Notifications.cancelAllScheduledNotificationsAsync();
     await Notifications.scheduleNotificationAsync({
       content: {
-        title: 'Your daily words are ready',
+        title: "Your daily words are ready",
         body: "5 new words picked just for you. Let's learn!",
       },
       trigger: {
@@ -33,9 +36,9 @@ export async function scheduleDailyReminder(hour = 9, minute = 0): Promise<void>
         minute,
         repeats: true,
       },
-    })
+    });
   } catch (error) {
-    throw new Error(`[notificationService.scheduleDailyReminder] ${error}`)
+    throw new Error(`[notificationService.scheduleDailyReminder] ${error}`);
   }
 }
 
@@ -49,8 +52,8 @@ export async function showWordNotification(word: Word): Promise<void> {
         data: { wordId: word.id },
       },
       trigger: null,
-    })
+    });
   } catch (error) {
-    throw new Error(`[notificationService.showWordNotification] ${error}`)
+    throw new Error(`[notificationService.showWordNotification] ${error}`);
   }
 }

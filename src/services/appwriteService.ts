@@ -104,7 +104,10 @@ export async function createUserDocument(
     voiceStyleId: string;
   },
 ) {
-  return getDatabases().createDocument(DB_ID, COLLECTIONS.USERS, userId, userData);
+  return getDatabases().createDocument(DB_ID, COLLECTIONS.USERS, userId, {
+    ...userData,
+    fields: JSON.stringify(userData.fields),
+  });
 }
 
 /** Get a user profile document from Appwrite DB */
@@ -115,6 +118,13 @@ export async function getUserDocument(userId: string) {
       COLLECTIONS.USERS,
       userId,
     );
+    if (doc && typeof doc.fields === "string") {
+      try {
+        doc.fields = JSON.parse(doc.fields);
+      } catch (e) {
+        doc.fields = [];
+      }
+    }
     return doc;
   } catch {
     return null;
@@ -132,11 +142,15 @@ export async function updateUserDocument(
     voiceStyleId: string;
   }>,
 ) {
+  const payload: any = { ...updates };
+  if (payload.fields && Array.isArray(payload.fields)) {
+    payload.fields = JSON.stringify(payload.fields);
+  }
   return getDatabases().updateDocument(
     DB_ID,
     COLLECTIONS.USERS,
     userId,
-    updates,
+    payload,
   );
 }
 

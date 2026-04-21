@@ -173,6 +173,13 @@ export default function WelcomeScreen() {
 
           {/* CTAs */}
           <Animated.View style={[styles.actions, buttonsStyle]}>
+            <Button
+              label="Bypass Onboarding (Dev)"
+              onPress={() => router.replace("/(tabs)/home")}
+              variant="ghost"
+              size="lg"
+              fullWidth
+            />
             {isReturning ? (
               <>
                 <Pressable onPress={() => router.push("/(onboarding)/auth/login")}>
