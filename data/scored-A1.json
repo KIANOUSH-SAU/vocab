@@ -1,0 +1,7910 @@
+[
+  {
+    "word": "a",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 10,
+    "notes": "Basic English indefinite article used universally across all contexts."
+  },
+  {
+    "word": "an indefinite article",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 5,
+    "notes": "Grammatical term primarily relevant in language teaching and education contexts."
+  },
+  {
+    "word": "about",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Common preposition and adverb used in everyday general communication."
+  },
+  {
+    "word": "above",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Used across fields to indicate position or exceeding a value or threshold."
+  },
+  {
+    "word": "across",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "General preposition indicating movement or position from one side to another."
+  },
+  {
+    "word": "action",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 6,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Widely used term especially prominent in legal proceedings and sports contexts."
+  },
+  {
+    "word": "activity",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 3,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Frequently used in health, sports, and education to describe tasks or exercises."
+  },
+  {
+    "word": "actor",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily refers to a performing arts professional but used loosely in other fields."
+  },
+  {
+    "word": "actress",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to a female performer in theater or film with limited professional field relevance."
+  },
+  {
+    "word": "add",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb used in mathematics, engineering, and everyday instructional language."
+  },
+  {
+    "word": "address",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Used in legal and administrative contexts to refer to location or to formally speak to an issue."
+  },
+  {
+    "word": "adult",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 6,
+      "law": 6,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Important in health, law, and education when distinguishing age groups or legal status."
+  },
+  {
+    "word": "advice",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 7,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in legal and health professions where professional guidance is provided."
+  },
+  {
+    "word": "afraid",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Common emotional vocabulary relevant in health and educational support contexts."
+  },
+  {
+    "word": "after",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic preposition of time used universally in professional and everyday communication."
+  },
+  {
+    "word": "afternoon",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common time expression used in scheduling and daily professional communication."
+  },
+  {
+    "word": "again",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Basic adverb indicating repetition used universally in everyday communication."
+  },
+  {
+    "word": "age",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 7,
+      "law": 6,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Relevant in health assessments, legal eligibility, and sports classification contexts."
+  },
+  {
+    "word": "ago",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common time expression used in medical histories and legal documentation."
+  },
+  {
+    "word": "agree",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 7,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Especially important in legal and negotiation contexts for reaching mutual understanding."
+  },
+  {
+    "word": "air",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Relevant in engineering systems and health contexts such as air quality and respiratory care."
+  },
+  {
+    "word": "airport",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to transportation infrastructure commonly encountered in professional travel."
+  },
+  {
+    "word": "all",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Universal determiner and pronoun used across all professional and everyday contexts."
+  },
+  {
+    "word": "also",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Common linking adverb used to add information in any professional communication."
+  },
+  {
+    "word": "always",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Frequency adverb used universally to describe consistent actions or requirements."
+  },
+  {
+    "word": "amazing",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Informal adjective of enthusiasm more common in casual and educational communication."
+  },
+  {
+    "word": "and",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 10,
+    "notes": "Most fundamental English conjunction used universally in all forms of communication."
+  },
+  {
+    "word": "angry",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Emotional vocabulary relevant in health, conflict resolution, and educational settings."
+  },
+  {
+    "word": "animal",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Used in health sciences, biology education, and certain sports and legal contexts."
+  },
+  {
+    "word": "another",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Common determiner and pronoun used universally in professional and everyday language."
+  },
+  {
+    "word": "answer",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in education and legal contexts for responding to questions or charges."
+  },
+  {
+    "word": "any",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Basic determiner and pronoun used universally in questions and negative statements."
+  },
+  {
+    "word": "anyone",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 4,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Indefinite pronoun frequently used in legal language and general communication."
+  },
+  {
+    "word": "anything",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common indefinite pronoun used in everyday and professional conversational contexts."
+  },
+  {
+    "word": "apartment",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 4,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common in real estate law and everyday residential communication contexts."
+  },
+  {
+    "word": "apple",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday noun used in nutrition, basic education, and general vocabulary."
+  },
+  {
+    "word": "april",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Name of the fourth month used universally in scheduling and date references."
+  },
+  {
+    "word": "area",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in engineering for spatial measurement and widely used across other fields."
+  },
+  {
+    "word": "arm",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 7,
+      "law": 2,
+      "sports": 6,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Central anatomical term in health and sports medicine and used in engineering mechanisms."
+  },
+  {
+    "word": "around",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Common preposition and adverb of location or approximation used in everyday communication."
+  },
+  {
+    "word": "arrive",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb describing reaching a destination used widely in professional and daily life."
+  },
+  {
+    "word": "bill",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 8,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Primarily used in legal and financial contexts to refer to proposed legislation or invoices."
+  },
+  {
+    "word": "bird",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 6,
+    "notes": "General everyday vocabulary with minor relevance in biology or nature education."
+  },
+  {
+    "word": "birthday",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Common social and personal vocabulary used across all everyday contexts."
+  },
+  {
+    "word": "black",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "General color term with broad everyday and professional usage."
+  },
+  {
+    "word": "blog",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to an online journal or informational website relevant in digital communication."
+  },
+  {
+    "word": "blonde",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 5,
+    "notes": "Descriptive term for hair color used primarily in everyday personal descriptions."
+  },
+  {
+    "word": "blue",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common color term with broad everyday and some technical applications."
+  },
+  {
+    "word": "boat",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 1,
+      "law": 2,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to a watercraft relevant in marine engineering and water sports."
+  },
+  {
+    "word": "body",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 9,
+      "law": 5,
+      "sports": 7,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in health and sports contexts referring to the human physical form."
+  },
+  {
+    "word": "book",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 9
+    },
+    "usabilityScore": 10,
+    "notes": "Essential educational vocabulary referring to a written or printed publication."
+  },
+  {
+    "word": "boot",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to footwear or a computer startup process relevant in IT and sports."
+  },
+  {
+    "word": "bored",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common emotional state descriptor useful in everyday and educational communication."
+  },
+  {
+    "word": "boring",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Describes something uninteresting and is widely used in everyday conversation."
+  },
+  {
+    "word": "born",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to the event of birth relevant in medical records and legal documents."
+  },
+  {
+    "word": "both",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency function word used across all professional and everyday contexts."
+  },
+  {
+    "word": "bottle",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 2,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday object relevant in health for medication and sports for hydration."
+  },
+  {
+    "word": "box",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a container or the sport of boxing depending on context."
+  },
+  {
+    "word": "boy",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Basic vocabulary referring to a male child used widely in education and daily life."
+  },
+  {
+    "word": "boyfriend",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common personal relationship term used in everyday social communication."
+  },
+  {
+    "word": "bread",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Basic food item relevant in nutrition and health discussions."
+  },
+  {
+    "word": "break",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 3,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Versatile word referring to a pause or fracture used across many professional fields."
+  },
+  {
+    "word": "breakfast",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 6,
+      "law": 1,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to the first meal of the day relevant in nutrition and sports performance."
+  },
+  {
+    "word": "bring",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency action verb used in all everyday and professional communication."
+  },
+  {
+    "word": "brother",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common family relationship term used in everyday personal and social contexts."
+  },
+  {
+    "word": "brown",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "General color term with broad everyday usage across multiple contexts."
+  },
+  {
+    "word": "build",
+    "fieldRelevance": {
+      "engineering": 9,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in engineering referring to the construction or creation of structures."
+  },
+  {
+    "word": "building",
+    "fieldRelevance": {
+      "engineering": 9,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Essential engineering and architecture term referring to a constructed structure."
+  },
+  {
+    "word": "bus",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common transportation vocabulary used widely in everyday urban communication."
+  },
+  {
+    "word": "business",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Broadly relevant professional term referring to commercial or organizational activities."
+  },
+  {
+    "word": "busy",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Common adjective describing a full schedule used across all professional settings."
+  },
+  {
+    "word": "but",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential conjunction used to introduce contrast in all forms of communication."
+  },
+  {
+    "word": "butter",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common food item relevant in nutrition and everyday cooking contexts."
+  },
+  {
+    "word": "buy",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency everyday verb referring to purchasing goods or services."
+  },
+  {
+    "word": "by",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Versatile preposition used in all professional and everyday communication contexts."
+  },
+  {
+    "word": "bye",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 9,
+    "notes": "Informal farewell exclamation used universally in everyday social interaction."
+  },
+  {
+    "word": "cafe",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a small restaurant or coffee shop common in everyday social vocabulary."
+  },
+  {
+    "word": "cake",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common food item used in everyday social and nutritional contexts."
+  },
+  {
+    "word": "call",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency verb referring to telephoning or naming someone across all fields."
+  },
+  {
+    "word": "camera",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a device for capturing images relevant in media, security, and education."
+  },
+  {
+    "word": "can",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential modal verb expressing ability or permission used universally in English."
+  },
+  {
+    "word": "cannot",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "A fundamental negation form used across all communication contexts."
+  },
+  {
+    "word": "capital",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 6,
+      "sports": 2,
+      "education": 6
+    },
+    "usabilityScore": 7,
+    "notes": "Used in finance, law, and geography to denote principal cities or funds."
+  },
+  {
+    "word": "car",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday transportation word with relevance to automotive engineering."
+  },
+  {
+    "word": "card",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Widely used for identification, payment, and record-keeping across fields."
+  },
+  {
+    "word": "career",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to a professional path or occupation, relevant in all workplace contexts."
+  },
+  {
+    "word": "carrot",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "sports": 4,
+      "law": 1,
+      "education": 2
+    },
+    "usabilityScore": 5,
+    "notes": "A common vegetable relevant primarily to nutrition and health contexts."
+  },
+  {
+    "word": "carry",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "A basic action verb used widely in physical and operational contexts."
+  },
+  {
+    "word": "cat",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 6,
+    "notes": "A common domestic animal, relevant in veterinary and basic educational settings."
+  },
+  {
+    "word": "cd",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 4,
+    "notes": "Refers to a compact disc, a largely outdated media storage format."
+  },
+  {
+    "word": "cent",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "A basic monetary unit used in financial and everyday commercial contexts."
+  },
+  {
+    "word": "centre",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 4,
+      "sports": 6,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a focal point or facility used across many professional domains."
+  },
+  {
+    "word": "century",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 7,
+    "notes": "A unit of 100 years, commonly used in historical and educational contexts."
+  },
+  {
+    "word": "chair",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 1,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to seating furniture or a leadership role in meetings and governance."
+  },
+  {
+    "word": "change",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 5,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "A highly versatile word used to describe transformation or substitution in all fields."
+  },
+  {
+    "word": "chart",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 7,
+      "law": 5,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a visual data representation, widely used in technical and medical settings."
+  },
+  {
+    "word": "cheap",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Describes low cost, commonly used in everyday consumer and commercial contexts."
+  },
+  {
+    "word": "check",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 6,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Means to verify or inspect, a critical action in technical and professional workflows."
+  },
+  {
+    "word": "cheese",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "A dairy food item relevant mainly to nutrition and everyday vocabulary."
+  },
+  {
+    "word": "chicken",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "A common food and farm animal used in nutrition and everyday conversation."
+  },
+  {
+    "word": "child",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 6,
+      "law": 6,
+      "sports": 4,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Central to education, law, and healthcare when addressing young individuals."
+  },
+  {
+    "word": "chocolate",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "A popular food item relevant to nutrition, wellness, and everyday social contexts."
+  },
+  {
+    "word": "choose",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "A basic decision-making verb widely applicable in all professional and daily contexts."
+  },
+  {
+    "word": "cinema",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 1,
+      "law": 2,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 6,
+    "notes": "Refers to a movie theater, used in everyday leisure and cultural education."
+  },
+  {
+    "word": "city",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "A basic geographical term relevant to urban planning, law, and general communication."
+  },
+  {
+    "word": "class",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 5,
+      "sports": 4,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Central to education and also used to denote categories or social groupings."
+  },
+  {
+    "word": "classroom",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 10
+    },
+    "usabilityScore": 8,
+    "notes": "The primary physical learning environment, core vocabulary in educational settings."
+  },
+  {
+    "word": "clean",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 8,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant to health and hygiene, and used broadly in maintenance contexts."
+  },
+  {
+    "word": "climb",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "sports": 7,
+      "law": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to ascending a surface, commonly used in sports and physical activity contexts."
+  },
+  {
+    "word": "clock",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "A timekeeping device relevant to scheduling and time-sensitive professional tasks."
+  },
+  {
+    "word": "close",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "A versatile word meaning to shut or to be near, used universally in communication."
+  },
+  {
+    "word": "clothes",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to garments, relevant to personal safety, sports uniforms, and daily life."
+  },
+  {
+    "word": "club",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 8,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to an organized group or sports implement, highly relevant in sports contexts."
+  },
+  {
+    "word": "coat",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to an outer garment or a surface covering layer in technical applications."
+  },
+  {
+    "word": "coffee",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "A popular beverage relevant to nutrition discussions and everyday social interaction."
+  },
+  {
+    "word": "cold",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 7,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Describes low temperature or a common illness, widely used in health and daily life."
+  },
+  {
+    "word": "college",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "An institution of higher education, central to academic and career development contexts."
+  },
+  {
+    "word": "colour",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to visual hue, used in design, education, and everyday descriptive language."
+  },
+  {
+    "word": "come",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "A fundamental movement verb essential for basic everyday English communication."
+  },
+  {
+    "word": "common",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Describes something widespread or shared, widely used across professional domains."
+  },
+  {
+    "word": "company",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 7,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to a business organization, highly relevant in professional and legal contexts."
+  },
+  {
+    "word": "compare",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "Widely used in academic and analytical contexts across many fields."
+  },
+  {
+    "word": "complete",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 6,
+      "law": 7,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Used broadly to indicate finishing tasks or fulfilling requirements in professional settings."
+  },
+  {
+    "word": "computer",
+    "fieldRelevance": {
+      "engineering": 9,
+      "health": 6,
+      "law": 5,
+      "sports": 4,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in engineering and technology, widely used in everyday professional life."
+  },
+  {
+    "word": "concert",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 6,
+    "notes": "Primarily related to music and entertainment, with limited professional field relevance."
+  },
+  {
+    "word": "conversation",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 5,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "General communication term especially relevant in education and interpersonal professional contexts."
+  },
+  {
+    "word": "cook",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday word most relevant to health and nutrition contexts."
+  },
+  {
+    "word": "cooking",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Everyday vocabulary related to food preparation, with some relevance to health and nutrition."
+  },
+  {
+    "word": "cool",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Informal everyday word with minor technical relevance in engineering for temperature or design."
+  },
+  {
+    "word": "correct",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 7,
+      "sports": 5,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant in education and law for accuracy and error correction."
+  },
+  {
+    "word": "cost",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 6,
+      "law": 7,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Essential business and economic term used across all professional fields."
+  },
+  {
+    "word": "could",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common modal verb used in polite requests and hypothetical statements in all contexts."
+  },
+  {
+    "word": "country",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 6,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "General vocabulary used in discussions of geography, policy, and international contexts."
+  },
+  {
+    "word": "course",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 5,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant in education for academic programs and also used across professional fields."
+  },
+  {
+    "word": "cousin",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 4,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "General family vocabulary with some relevance in legal contexts such as inheritance law."
+  },
+  {
+    "word": "cow",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 6,
+    "notes": "Basic vocabulary related to agriculture and animal husbandry."
+  },
+  {
+    "word": "cream",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common in everyday contexts and health for food and skincare products."
+  },
+  {
+    "word": "create",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Broadly used action verb relevant to design, innovation, and educational content development."
+  },
+  {
+    "word": "culture",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Important in education and social sciences for discussing societal values and practices."
+  },
+  {
+    "word": "cup",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday word also used in sports for trophy or competition awards."
+  },
+  {
+    "word": "customer",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Essential business vocabulary used across service-oriented professional fields."
+  },
+  {
+    "word": "cut",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 7,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common action word with technical relevance in engineering and medical procedures."
+  },
+  {
+    "word": "even",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Common adverb and adjective used for emphasis or to describe uniform surfaces in engineering."
+  },
+  {
+    "word": "evening",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic time-of-day vocabulary used in general everyday communication."
+  },
+  {
+    "word": "event",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 8,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used term especially important in sports for competitions and in law for incidents."
+  },
+  {
+    "word": "ever",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common adverb used in questions and comparisons across everyday and professional communication."
+  },
+  {
+    "word": "every",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Essential determiner used universally in professional and everyday English communication."
+  },
+  {
+    "word": "everybody",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Common pronoun used in general communication and group-oriented professional contexts."
+  },
+  {
+    "word": "everyone",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Commonly used pronoun in inclusive communication and professional announcements."
+  },
+  {
+    "word": "everything",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "General pronoun used in comprehensive statements across everyday and professional communication."
+  },
+  {
+    "word": "exam",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 5,
+      "sports": 2,
+      "education": 10
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in education and health for assessments and medical examinations."
+  },
+  {
+    "word": "example",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 3,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Essential in education and professional explanation for illustrating concepts and arguments."
+  },
+  {
+    "word": "excited",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common emotional vocabulary used in everyday and motivational professional contexts."
+  },
+  {
+    "word": "exciting",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Descriptive word commonly used in sports commentary and general motivational contexts."
+  },
+  {
+    "word": "exercise",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 9,
+      "law": 4,
+      "sports": 9,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in health and sports for physical activity and practice drills."
+  },
+  {
+    "word": "expensive",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective used in budget discussions and cost evaluations across professional fields."
+  },
+  {
+    "word": "explain",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 7,
+      "sports": 4,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Highly useful in education and law for clarifying concepts, instructions, and arguments."
+  },
+  {
+    "word": "extra",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 4,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common adjective used to describe additional resources or effort across professional contexts."
+  },
+  {
+    "word": "eye",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 8,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Core anatomy vocabulary especially relevant in health and medical professional contexts."
+  },
+  {
+    "word": "face",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 7,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common word used both as anatomy vocabulary in health and as a general action verb."
+  },
+  {
+    "word": "fact",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 8,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Essential vocabulary in law and education for presenting evidence and verified information."
+  },
+  {
+    "word": "fall",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Commonly used in everyday contexts and has safety relevance in health and engineering."
+  },
+  {
+    "word": "false",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 7,
+      "sports": 2,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Important in logic, legal contexts, and academic assessment."
+  },
+  {
+    "word": "family",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 6,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Universal everyday word with relevance in health and legal family matters."
+  },
+  {
+    "word": "famous",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "General vocabulary word often used in sports and cultural discussions."
+  },
+  {
+    "word": "fantastic",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Informal positive expression used broadly in everyday communication."
+  },
+  {
+    "word": "far",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Basic spatial and descriptive word used across all everyday contexts."
+  },
+  {
+    "word": "farm",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Relates to agriculture and is common in general and educational vocabulary."
+  },
+  {
+    "word": "farmer",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to agricultural workers and is common in general vocabulary lessons."
+  },
+  {
+    "word": "fast",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 2,
+      "sports": 8,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in sports and widely used in everyday communication."
+  },
+  {
+    "word": "fat",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 8,
+      "law": 1,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Highly relevant in health and nutrition contexts."
+  },
+  {
+    "word": "father",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Basic family vocabulary with relevance in legal family law contexts."
+  },
+  {
+    "word": "favourite",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday word used to express personal preferences."
+  },
+  {
+    "word": "february",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Basic calendar vocabulary essential for all professional scheduling."
+  },
+  {
+    "word": "feel",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 7,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Important in health contexts for describing symptoms and widely used generally."
+  },
+  {
+    "word": "feeling",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 7,
+      "law": 3,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Key vocabulary in health and emotional wellbeing discussions."
+  },
+  {
+    "word": "festival",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Used in cultural and educational contexts to describe celebrations."
+  },
+  {
+    "word": "few",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Essential quantifier used across all professional and everyday contexts."
+  },
+  {
+    "word": "fifteen number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number vocabulary essential for all professional and everyday use."
+  },
+  {
+    "word": "fifth number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Ordinal number used broadly in ranking, legal, and educational contexts."
+  },
+  {
+    "word": "fifty number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number vocabulary essential for everyday and professional communication."
+  },
+  {
+    "word": "fill",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in professional contexts such as filling forms or containers."
+  },
+  {
+    "word": "film",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common cultural vocabulary used in education and everyday leisure contexts."
+  },
+  {
+    "word": "final",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 7,
+      "sports": 7,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Important in legal decisions, sports competitions, and academic examinations."
+  },
+  {
+    "word": "find",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency verb essential across all professional and everyday contexts."
+  },
+  {
+    "word": "fine",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 7,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Has specific legal meaning as a penalty and is also common in general use."
+  },
+  {
+    "word": "finish",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 3,
+      "sports": 8,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in sports and widely used in professional and daily contexts."
+  },
+  {
+    "word": "fire",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 5,
+      "law": 4,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Critical safety and engineering term also used broadly in everyday language."
+  },
+  {
+    "word": "first",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 7,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential ordinal word used across all fields and everyday communication."
+  },
+  {
+    "word": "fish",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common food and nutrition vocabulary with relevance in health contexts."
+  },
+  {
+    "word": "five number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental number vocabulary required in all everyday and professional situations."
+  },
+  {
+    "word": "flat",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Used in engineering for surfaces and in everyday British English for apartment."
+  },
+  {
+    "word": "flight",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Important in aviation engineering and common in everyday travel vocabulary."
+  },
+  {
+    "word": "floor",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common in construction and engineering and widely used in everyday contexts."
+  },
+  {
+    "word": "flower",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Basic nature vocabulary commonly taught in early education and general use."
+  },
+  {
+    "word": "fly",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Important in aviation engineering and used broadly in everyday communication."
+  },
+  {
+    "word": "follow",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in instructions, procedures, and educational directions."
+  },
+  {
+    "word": "food",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 8,
+      "law": 2,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in health and nutrition and essential everyday vocabulary."
+  },
+  {
+    "word": "foot",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 2,
+      "sports": 7,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Key anatomy term in health and sports and a unit of measurement in engineering."
+  },
+  {
+    "word": "football",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 2,
+      "sports": 10,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Core sports vocabulary referring to one of the world's most popular sports."
+  },
+  {
+    "word": "for",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Essential high-frequency preposition used universally across all contexts."
+  },
+  {
+    "word": "forget",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "General everyday verb relevant to memory and recall across all contexts."
+  },
+  {
+    "word": "form",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 8,
+      "sports": 4,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in legal, educational, and administrative contexts for documents."
+  },
+  {
+    "word": "forty number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number used universally in measurements, scores, and quantities."
+  },
+  {
+    "word": "four number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Fundamental number essential in all fields for counting and reference."
+  },
+  {
+    "word": "fourteen number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number used in everyday counting, dates, and quantities."
+  },
+  {
+    "word": "fourth number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Ordinal number used for sequencing in legal, sports, and general contexts."
+  },
+  {
+    "word": "free",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 6,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common word with legal connotations of freedom and everyday use for cost."
+  },
+  {
+    "word": "friday",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Day of the week essential for scheduling and everyday communication."
+  },
+  {
+    "word": "friend",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Core social vocabulary used universally in everyday personal communication."
+  },
+  {
+    "word": "friendly",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 3,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Describes positive interpersonal behavior relevant in professional and social settings."
+  },
+  {
+    "word": "from",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Essential preposition used universally in all forms of communication."
+  },
+  {
+    "word": "front",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common directional term used in spatial, sports, and everyday contexts."
+  },
+  {
+    "word": "fruit",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 7,
+      "law": 1,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Primarily relevant to health and nutrition in dietary and wellness contexts."
+  },
+  {
+    "word": "full",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective describing capacity or completeness across many situations."
+  },
+  {
+    "word": "fun",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Everyday word describing enjoyment, especially relevant in sports and education."
+  },
+  {
+    "word": "funny",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common adjective describing humor or strangeness in everyday communication."
+  },
+  {
+    "word": "future",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used across fields for planning and discussing upcoming events or trends."
+  },
+  {
+    "word": "game",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 9,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in sports and education, widely used in everyday contexts."
+  },
+  {
+    "word": "garden",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Common everyday word referring to outdoor green spaces for leisure or cultivation."
+  },
+  {
+    "word": "geography",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 6,
+    "notes": "Primarily an academic subject taught in educational settings and relevant to planning."
+  },
+  {
+    "word": "get",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Extremely common versatile verb essential in all everyday communication."
+  },
+  {
+    "word": "girl",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 3,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Basic everyday vocabulary referring to a female child or young person."
+  },
+  {
+    "word": "girlfriend",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common social vocabulary referring to a romantic female partner in everyday life."
+  },
+  {
+    "word": "give",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential high-frequency verb used universally in instructions and communication."
+  },
+  {
+    "word": "glass",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 4,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common material in engineering and everyday use for containers and construction."
+  },
+  {
+    "word": "go",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "One of the most frequently used verbs in everyday English communication."
+  },
+  {
+    "word": "good",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental adjective used universally to express quality or approval."
+  },
+  {
+    "word": "goodbye exclam./n.",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Essential social expression used when parting in all everyday interactions."
+  },
+  {
+    "word": "grandfather",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 3,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic family vocabulary used in personal, medical, and social contexts."
+  },
+  {
+    "word": "grandmother",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 3,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic family vocabulary used in personal, medical, and social contexts."
+  },
+  {
+    "word": "grandparent",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 4,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Family term relevant in health, legal, and educational discussions about family."
+  },
+  {
+    "word": "great",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Common adjective expressing high quality or enthusiasm in everyday communication."
+  },
+  {
+    "word": "green",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Basic color word also used in environmental and sports field contexts."
+  },
+  {
+    "word": "grey",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic color word used in descriptions across everyday and professional contexts."
+  },
+  {
+    "word": "group",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 4,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used term for collections of people or things across all professional fields."
+  },
+  {
+    "word": "grow",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 3,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb used for development and increase across health, education, and business."
+  },
+  {
+    "word": "guess",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday verb used for estimating or predicting without full information."
+  },
+  {
+    "word": "guitar",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 6,
+    "notes": "Musical instrument with limited professional relevance outside arts education."
+  },
+  {
+    "word": "gym",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 7,
+      "law": 1,
+      "sports": 8,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Core vocabulary in health and sports contexts referring to a fitness facility."
+  },
+  {
+    "word": "hair",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 6,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common word relevant in health and forensic contexts as well as everyday life."
+  },
+  {
+    "word": "half",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common in everyday measurement, time, and scoring contexts across many fields."
+  },
+  {
+    "word": "hand",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to the body part or action of giving, relevant in health and general communication."
+  },
+  {
+    "word": "happen",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "General verb used to describe events or occurrences in any professional context."
+  },
+  {
+    "word": "happy",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common emotional expression used widely in everyday and professional communication."
+  },
+  {
+    "word": "hard",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Describes difficulty or physical properties, used broadly across many domains."
+  },
+  {
+    "word": "hat",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "Refers to a common clothing item with limited professional domain specificity."
+  },
+  {
+    "word": "hate",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Expresses strong dislike, occasionally relevant in legal and psychological contexts."
+  },
+  {
+    "word": "have",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "One of the most fundamental auxiliary and main verbs in English grammar."
+  },
+  {
+    "word": "have to",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential modal expression indicating obligation, critical in professional instructions."
+  },
+  {
+    "word": "he",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic third-person singular pronoun essential for all communication contexts."
+  },
+  {
+    "word": "head",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to the body part or a leadership position across various professional fields."
+  },
+  {
+    "word": "health",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 10,
+      "law": 4,
+      "sports": 7,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in healthcare and wellness, also relevant in sports and education."
+  },
+  {
+    "word": "healthy",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 10,
+      "law": 3,
+      "sports": 8,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Primarily a health and wellness term also widely used in sports and lifestyle contexts."
+  },
+  {
+    "word": "hear",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 5,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to the sense of hearing, relevant in health, law testimony, and communication."
+  },
+  {
+    "word": "hello",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Universal greeting used in all social and professional interactions."
+  },
+  {
+    "word": "help",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 5,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental word for assistance, essential across all professional and social contexts."
+  },
+  {
+    "word": "her",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic third-person singular feminine pronoun essential in all communication."
+  },
+  {
+    "word": "here",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Common adverb of place used universally in everyday and professional communication."
+  },
+  {
+    "word": "hey",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Informal greeting or attention-getter used in casual and some professional settings."
+  },
+  {
+    "word": "hi",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Very common informal greeting used broadly in everyday and professional interactions."
+  },
+  {
+    "word": "high",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 3,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Describes elevation, intensity, or level, widely used in engineering, health, and sports."
+  },
+  {
+    "word": "him",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic third-person singular masculine pronoun essential in all communication contexts."
+  },
+  {
+    "word": "his",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Possessive pronoun essential for basic communication in all professional settings."
+  },
+  {
+    "word": "history",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to past events or records, especially important in education, law, and healthcare."
+  },
+  {
+    "word": "hobby",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to leisure activities, commonly discussed in personal and educational contexts."
+  },
+  {
+    "word": "holiday",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to days off or vacations, relevant in workplace and educational scheduling."
+  },
+  {
+    "word": "home",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Refers to one's place of residence, widely used in everyday and professional communication."
+  },
+  {
+    "word": "homework",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 9
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily an educational term referring to assignments completed outside the classroom."
+  },
+  {
+    "word": "hope",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Expresses expectation or desire, used widely in personal and professional communication."
+  },
+  {
+    "word": "horse",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 5,
+    "notes": "Refers to the animal, most relevant in equestrian sports and veterinary health contexts."
+  },
+  {
+    "word": "hospital",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 10,
+      "law": 4,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Core healthcare vocabulary referring to a medical facility for treatment and care."
+  },
+  {
+    "word": "hot",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Describes high temperature, relevant in engineering, health safety, and everyday use."
+  },
+  {
+    "word": "hotel",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a lodging facility, commonly used in travel and professional event contexts."
+  },
+  {
+    "word": "hour",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Basic unit of time essential in scheduling and professional communication across all fields."
+  },
+  {
+    "word": "house",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to a residential building, relevant in engineering, real estate, and everyday life."
+  },
+  {
+    "word": "how",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental question word used to ask about manner or method in all communication contexts."
+  },
+  {
+    "word": "however",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Connective word indicating contrast, important in formal writing and professional documents."
+  },
+  {
+    "word": "hundred",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number word essential for quantities and measurements in all professional contexts."
+  },
+  {
+    "word": "hungry",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Describes the physical sensation of needing food, relevant in health and daily communication."
+  },
+  {
+    "word": "husband",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a male spouse, commonly used in legal, medical, and personal communication contexts."
+  },
+  {
+    "word": "i",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 10,
+    "notes": "Basic first-person pronoun essential in all communication contexts."
+  },
+  {
+    "word": "ice",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 1,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Commonly used in health/sports contexts such as injury treatment and winter sports."
+  },
+  {
+    "word": "ice cream",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 6,
+    "notes": "Everyday food item with minimal professional field relevance."
+  },
+  {
+    "word": "idea",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used across all professional fields when discussing concepts and proposals."
+  },
+  {
+    "word": "if",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 7,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Essential conditional conjunction used extensively in legal and professional reasoning."
+  },
+  {
+    "word": "imagine",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 7,
+    "notes": "Most relevant in education and creative problem-solving contexts."
+  },
+  {
+    "word": "important",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 7,
+      "law": 7,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Universal adjective used across all professional fields to highlight significance."
+  },
+  {
+    "word": "improve",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 7,
+      "law": 5,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Key term in performance, health outcomes, and professional development contexts."
+  },
+  {
+    "word": "in",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental preposition used universally in all professional and everyday communication."
+  },
+  {
+    "word": "include",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 7,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Frequently used in legal documents, reports, and professional descriptions."
+  },
+  {
+    "word": "information",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 7,
+      "law": 7,
+      "sports": 5,
+      "education": 8
+    },
+    "usabilityScore": 10,
+    "notes": "Core term used across all professional fields for data and knowledge sharing."
+  },
+  {
+    "word": "interest",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Used in legal and financial contexts as well as general professional communication."
+  },
+  {
+    "word": "interested",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common adjective used in everyday and professional communication to express engagement."
+  },
+  {
+    "word": "interesting",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "General descriptive adjective used broadly in communication and education."
+  },
+  {
+    "word": "internet",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant in modern engineering, education, and digital communication contexts."
+  },
+  {
+    "word": "interview",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Widely used in professional hiring processes and journalistic or legal contexts."
+  },
+  {
+    "word": "into",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Common preposition used universally in everyday and professional communication."
+  },
+  {
+    "word": "introduce",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Frequently used in professional presentations and educational settings."
+  },
+  {
+    "word": "island",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 5,
+    "notes": "Primarily a geographical term with limited direct professional field relevance."
+  },
+  {
+    "word": "it",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential pronoun used universally in all forms of communication."
+  },
+  {
+    "word": "its",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Possessive pronoun critical for formal writing especially in legal and technical documents."
+  },
+  {
+    "word": "jacket",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 1
+    },
+    "usabilityScore": 6,
+    "notes": "Common clothing item with limited professional field relevance."
+  },
+  {
+    "word": "january",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic calendar term used universally in scheduling and professional communication."
+  },
+  {
+    "word": "jeans",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 5,
+    "notes": "Everyday clothing item with no significant professional field relevance."
+  },
+  {
+    "word": "job",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Universal term for employment used across all professional and everyday contexts."
+  },
+  {
+    "word": "join",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Commonly used in sports team contexts and general professional collaboration."
+  },
+  {
+    "word": "journey",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Used both literally for travel and metaphorically in health and education contexts."
+  },
+  {
+    "word": "juice",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 3,
+      "education": 1
+    },
+    "usabilityScore": 6,
+    "notes": "Common food and beverage term relevant to health and nutrition discussions."
+  },
+  {
+    "word": "july",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic calendar term used universally in scheduling and professional communication."
+  },
+  {
+    "word": "june",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic calendar term used universally in scheduling and professional communication."
+  },
+  {
+    "word": "just",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common adverb with notable use in legal contexts meaning fair or rightful."
+  },
+  {
+    "word": "keep",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used verb in health maintenance and sports performance contexts."
+  },
+  {
+    "word": "key",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Used across fields to denote something essential or critically important."
+  },
+  {
+    "word": "kilometre",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 4,
+      "law": 3,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Standard unit of distance especially relevant in engineering and sports contexts."
+  },
+  {
+    "word": "kind",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Used to describe types of things or to express compassion especially in health and education."
+  },
+  {
+    "word": "kitchen",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 1,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "Common domestic space term with some relevance to health and nutrition fields."
+  },
+  {
+    "word": "know",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental verb used universally across all professional and everyday communication."
+  },
+  {
+    "word": "land",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 6,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Important in engineering and legal contexts relating to property and terrain."
+  },
+  {
+    "word": "language",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Core term in education and linguistics with relevance across professional communication."
+  },
+  {
+    "word": "large",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common descriptive adjective used broadly in professional and everyday contexts."
+  },
+  {
+    "word": "last",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 5,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used across contexts to indicate final position or duration."
+  },
+  {
+    "word": "late",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday word referring to time or delay in any professional setting."
+  },
+  {
+    "word": "later",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "General temporal word used universally to indicate a subsequent time."
+  },
+  {
+    "word": "laugh",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily a social and emotional expression with limited domain-specific use."
+  },
+  {
+    "word": "learn",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 10
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in education and broadly relevant to all professional development."
+  },
+  {
+    "word": "leave",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common word used in everyday contexts including legal leave entitlements."
+  },
+  {
+    "word": "left",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 3,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Used for direction in engineering, anatomy, and sports contexts."
+  },
+  {
+    "word": "leg",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 7,
+      "law": 2,
+      "sports": 8,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Highly relevant in health and sports as a key body part and anatomical term."
+  },
+  {
+    "word": "lesson",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 4,
+      "education": 10
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in education referring to a unit of teaching or instruction."
+  },
+  {
+    "word": "let",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common functional word with notable use in legal permissive language."
+  },
+  {
+    "word": "letter",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 6,
+      "sports": 2,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Important in law for formal correspondence and in education for literacy."
+  },
+  {
+    "word": "library",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 5,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Central to education and research, also used in engineering for code libraries."
+  },
+  {
+    "word": "lie",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 6,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant in law regarding truthfulness and in health for patient positioning."
+  },
+  {
+    "word": "life",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 8,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Broadly used across fields, especially health in terms of quality of life."
+  },
+  {
+    "word": "light",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 5,
+      "law": 2,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in engineering and physics, also used descriptively across all fields."
+  },
+  {
+    "word": "adj.",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 6
+    },
+    "usabilityScore": 4,
+    "notes": "Grammatical abbreviation for adjective, primarily relevant in language and education contexts."
+  },
+  {
+    "word": "like",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Extremely common everyday word used for comparison, preference, and informal speech."
+  },
+  {
+    "word": "line",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in engineering and geometry, widely used across many professional contexts."
+  },
+  {
+    "word": "lion",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 5,
+    "notes": "Common animal name primarily used in general vocabulary and educational contexts."
+  },
+  {
+    "word": "list",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Universally used across all professional fields for organizing information."
+  },
+  {
+    "word": "listen",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 4,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 10,
+    "notes": "Essential communication skill emphasized in education and health consultations."
+  },
+  {
+    "word": "little",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday adjective indicating small size or quantity across all contexts."
+  },
+  {
+    "word": "live",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Broadly used word relating to residence, being alive, or real-time events."
+  },
+  {
+    "word": "local",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Widely used across fields to describe something specific to a particular area."
+  },
+  {
+    "word": "long",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common descriptor for physical length or duration used across all professional fields."
+  },
+  {
+    "word": "look",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Very common everyday verb for visual observation used in all contexts."
+  },
+  {
+    "word": "lose",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 8,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant in sports for competition outcomes and broadly used elsewhere."
+  },
+  {
+    "word": "lot",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common informal quantifier used widely in everyday professional communication."
+  },
+  {
+    "word": "love",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 2,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "General emotional term with relevance in health and social communication contexts."
+  },
+  {
+    "word": "lunch",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday word referring to the midday meal in any professional setting."
+  },
+  {
+    "word": "no one",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common negative pronoun used in everyday speech and legal statements."
+  },
+  {
+    "word": "nobody",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common negative pronoun equivalent to no one, used broadly in communication."
+  },
+  {
+    "word": "north",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 7,
+    "notes": "Directional term most relevant in engineering, geography, and navigation contexts."
+  },
+  {
+    "word": "nose",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 7,
+      "law": 2,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Key anatomical term most relevant in health and medical professional contexts."
+  },
+  {
+    "word": "not",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential negation word used universally across all professional and everyday contexts."
+  },
+  {
+    "word": "note",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 6,
+      "law": 6,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used for written records across health, law, and education settings."
+  },
+  {
+    "word": "nothing",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common negative pronoun used broadly in everyday and professional communication."
+  },
+  {
+    "word": "november",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Name of the eleventh month used universally for scheduling and record-keeping."
+  },
+  {
+    "word": "now",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Extremely common temporal adverb used universally in all professional contexts."
+  },
+  {
+    "word": "number",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 6,
+      "law": 6,
+      "sports": 6,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Core term used across all fields for quantification, identification, and data."
+  },
+  {
+    "word": "nurse",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 10,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Core healthcare professional role, central to medical and clinical settings."
+  },
+  {
+    "word": "object",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 5,
+      "sports": 2,
+      "education": 6
+    },
+    "usabilityScore": 7,
+    "notes": "Used broadly in engineering, law, and education to refer to things or to raise objections."
+  },
+  {
+    "word": "o'clock",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Everyday time-telling expression with general use across all contexts."
+  },
+  {
+    "word": "october",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "A calendar month used universally in scheduling and date references."
+  },
+  {
+    "word": "of",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "One of the most common prepositions in English, essential in all professional writing."
+  },
+  {
+    "word": "off",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common particle and adverb used in everyday and professional communication."
+  },
+  {
+    "word": "office",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to a workplace or administrative space, widely used in professional settings."
+  },
+  {
+    "word": "often",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "A frequency adverb essential for describing habitual actions in any context."
+  },
+  {
+    "word": "oh",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 8,
+    "notes": "A common exclamation used in everyday spoken communication across all situations."
+  },
+  {
+    "word": "ok",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Ubiquitous informal expression of agreement or acceptance in daily communication."
+  },
+  {
+    "word": "old",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective describing age, relevant in health assessments and everyday use."
+  },
+  {
+    "word": "on",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency preposition used in virtually all professional and everyday contexts."
+  },
+  {
+    "word": "once",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Frequency adverb and conjunction commonly used in instructions and legal language."
+  },
+  {
+    "word": "one",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental number and determiner used universally in all fields and everyday speech."
+  },
+  {
+    "word": "onion",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "A common vegetable relevant to nutrition, cooking, and basic everyday vocabulary."
+  },
+  {
+    "word": "online",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to internet-based activities, increasingly important in education and remote work."
+  },
+  {
+    "word": "only",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "A common adverb and adjective used to indicate restriction or limitation in any context."
+  },
+  {
+    "word": "open",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Versatile adjective and verb used in instructions, access, and communication broadly."
+  },
+  {
+    "word": "opinion",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 6,
+      "sports": 2,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Particularly relevant in law and education for expressing views and arguments."
+  },
+  {
+    "word": "opposite",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 7,
+    "notes": "Used to describe contrast or direction, common in education and spatial descriptions."
+  },
+  {
+    "word": "or",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential coordinating conjunction used across all fields in writing and speech."
+  },
+  {
+    "word": "orange",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 1,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a common fruit and color, useful in nutrition and basic everyday vocabulary."
+  },
+  {
+    "word": "order",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 7,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Used in legal contexts for court orders and broadly for sequencing and commands."
+  },
+  {
+    "word": "other",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Common determiner and pronoun used universally to refer to additional or different items."
+  },
+  {
+    "word": "our",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic possessive pronoun essential in all professional and everyday communication."
+  },
+  {
+    "word": "out",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common adverb and particle widely used in everyday and sports-related contexts."
+  },
+  {
+    "word": "outside",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Used to describe location or exclusion, relevant in sports and general communication."
+  },
+  {
+    "word": "over",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common preposition and adverb describing position or completion across many contexts."
+  },
+  {
+    "word": "own",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Used to indicate possession, especially relevant in legal ownership contexts."
+  },
+  {
+    "word": "page",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 1,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a document page, particularly relevant in legal and educational settings."
+  },
+  {
+    "word": "paint",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Used in engineering for surface coatings and in education for art activities."
+  },
+  {
+    "word": "painting",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 1,
+      "law": 2,
+      "sports": 1,
+      "education": 6
+    },
+    "usabilityScore": 6,
+    "notes": "Refers to a work of art or the act of applying paint, most relevant in arts education."
+  },
+  {
+    "word": "pair",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a set of two, commonly used in education for pair work and everyday contexts."
+  },
+  {
+    "word": "paper",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 1,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to both a writing material and academic documents, essential in education and law."
+  },
+  {
+    "word": "paragraph",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 5,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "A unit of written text especially important in education and legal document drafting."
+  },
+  {
+    "word": "parent",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 5,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Relevant in education, health, and law when discussing family roles and responsibilities."
+  },
+  {
+    "word": "park",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a public outdoor space, common in sports, recreation, and everyday contexts."
+  },
+  {
+    "word": "part",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used to refer to components in engineering and sections in general contexts."
+  },
+  {
+    "word": "partner",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Used in law for business partnerships and broadly for collaborative relationships."
+  },
+  {
+    "word": "party",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 7,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "In law refers to a party in a case; also commonly used for social gatherings."
+  },
+  {
+    "word": "passport",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 6,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily relevant to legal identification and international travel contexts."
+  },
+  {
+    "word": "past",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "General temporal word with heightened relevance in education and legal history."
+  },
+  {
+    "word": "pay",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 6,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in professional and financial contexts across all fields."
+  },
+  {
+    "word": "pen",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday writing tool most relevant in educational and office settings."
+  },
+  {
+    "word": "pencil",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 1,
+      "law": 2,
+      "sports": 1,
+      "education": 6
+    },
+    "usabilityScore": 7,
+    "notes": "Common writing and drafting tool especially used in engineering and education."
+  },
+  {
+    "word": "people",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Universal high-frequency word used across all professional and everyday contexts."
+  },
+  {
+    "word": "pepper",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "Common food and spice word with minor relevance to health and nutrition."
+  },
+  {
+    "word": "perfect",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "General evaluative adjective used across professional and academic contexts."
+  },
+  {
+    "word": "period",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Used in health, legal timelines, education scheduling, and technical documentation."
+  },
+  {
+    "word": "person",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 7,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Core everyday word with strong relevance in legal and health professional contexts."
+  },
+  {
+    "word": "personal",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 7,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Frequently used in legal, health, and professional privacy-related contexts."
+  },
+  {
+    "word": "phone",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Universal communication tool highly relevant in all modern professional settings."
+  },
+  {
+    "word": "photo",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 5,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common informal term for photograph used widely in professional and personal contexts."
+  },
+  {
+    "word": "photograph",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 6,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Formal term for image capture relevant in legal documentation and media contexts."
+  },
+  {
+    "word": "phrase",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "Core linguistics and language teaching term most relevant in educational settings."
+  },
+  {
+    "word": "piano",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 5
+    },
+    "usabilityScore": 5,
+    "notes": "Musical instrument term primarily relevant in arts and music education contexts."
+  },
+  {
+    "word": "picture",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday word for visual representations used across many professional fields."
+  },
+  {
+    "word": "piece",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "General word for a portion or component widely used in engineering and everyday speech."
+  },
+  {
+    "word": "pig",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 5,
+    "notes": "Common animal word with minor relevance to agriculture, health, and basic education."
+  },
+  {
+    "word": "pink",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 1,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 6,
+    "notes": "Basic color term with limited professional relevance beyond design and education."
+  },
+  {
+    "word": "place",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency general word used in location, instruction, and professional contexts."
+  },
+  {
+    "word": "plan",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 6,
+      "law": 6,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core professional term for structured approaches used heavily in engineering and management."
+  },
+  {
+    "word": "plane",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to aircraft or flat geometric surface relevant in engineering and travel contexts."
+  },
+  {
+    "word": "plant",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 4,
+      "law": 3,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to industrial facilities or vegetation with strong relevance in engineering contexts."
+  },
+  {
+    "word": "play",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 2,
+      "sports": 9,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core sports and education term also used in child development and health contexts."
+  },
+  {
+    "word": "player",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 10,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Central sports vocabulary term also used in educational games and team contexts."
+  },
+  {
+    "word": "please",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Essential polite expression used universally in professional and social communication."
+  },
+  {
+    "word": "point",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 4,
+      "law": 5,
+      "sports": 7,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Versatile word for scoring, argument, or location used across many professional fields."
+  },
+  {
+    "word": "police",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 9,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Core law enforcement term most relevant to legal and public safety contexts."
+  },
+  {
+    "word": "policeman",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 8,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Refers specifically to a male law enforcement officer in legal and civic contexts."
+  },
+  {
+    "word": "pool",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 3,
+      "sports": 7,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant to aquatic sports, health facilities, and engineering water management."
+  },
+  {
+    "word": "poor",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Common evaluative and socioeconomic term used broadly across professional contexts."
+  },
+  {
+    "word": "popular",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "General descriptive term widely used in education, media, and sports commentary."
+  },
+  {
+    "word": "positive",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 7,
+      "law": 4,
+      "sports": 6,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in health diagnostics, sports psychology, and professional evaluations."
+  },
+  {
+    "word": "possible",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency modal adjective used in professional planning and communication contexts."
+  },
+  {
+    "word": "post",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Used for mail, online content, and job positions across professional contexts."
+  },
+  {
+    "word": "potato",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 6,
+    "notes": "Common food item with relevance to nutrition, health, and basic vocabulary education."
+  },
+  {
+    "word": "pound",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to currency or unit of weight used in engineering, trade, and everyday contexts."
+  },
+  {
+    "word": "practice",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 7,
+      "law": 8,
+      "sports": 8,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core noun across law, health, sports, and education referring to professional or training activity."
+  },
+  {
+    "word": "practise",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 7,
+      "sports": 8,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "British English verb form of practice most relevant in sports, law, and educational training."
+  },
+  {
+    "word": "prefer",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "General verb used across all contexts to express choice or preference."
+  },
+  {
+    "word": "prepare",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 6,
+      "sports": 6,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used across professions to indicate readiness or planning."
+  },
+  {
+    "word": "present",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Common in educational and professional settings for delivering information."
+  },
+  {
+    "word": "pretty",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Informal intensifier or adjective used in everyday conversational English."
+  },
+  {
+    "word": "price",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common in commerce and everyday transactions across all fields."
+  },
+  {
+    "word": "probably",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "General adverb expressing likelihood used in everyday communication."
+  },
+  {
+    "word": "problem",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 6,
+      "law": 6,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary across all professional domains for identifying issues."
+  },
+  {
+    "word": "product",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Primarily used in engineering, manufacturing, and business contexts."
+  },
+  {
+    "word": "programme",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 5,
+      "sports": 6,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Frequently used in education and project management to describe structured plans."
+  },
+  {
+    "word": "project",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core term in engineering and education for planned tasks or assignments."
+  },
+  {
+    "word": "purple",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 1,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 6,
+    "notes": "Basic color vocabulary with minimal domain-specific relevance."
+  },
+  {
+    "word": "put",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency basic verb used in everyday instructions and directions."
+  },
+  {
+    "word": "quarter",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Used in sports scoring, finance, and time measurement across many fields."
+  },
+  {
+    "word": "question",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 7,
+      "sports": 3,
+      "education": 8
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in education and law for inquiry and examination."
+  },
+  {
+    "word": "quick",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 3,
+      "sports": 6,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective describing speed used broadly in everyday communication."
+  },
+  {
+    "word": "quickly",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 3,
+      "sports": 7,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Adverb of speed commonly used in sports and everyday instructions."
+  },
+  {
+    "word": "quiet",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 4,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Used in health and educational settings to describe calm or silent environments."
+  },
+  {
+    "word": "quite",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "General intensifier used in formal and informal everyday communication."
+  },
+  {
+    "word": "radio",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant to communications engineering and everyday media consumption."
+  },
+  {
+    "word": "rain",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic weather vocabulary particularly relevant in outdoor sports contexts."
+  },
+  {
+    "word": "read",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental literacy skill especially central to education and law."
+  },
+  {
+    "word": "reader",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 7
+    },
+    "usabilityScore": 7,
+    "notes": "Commonly used in educational and publishing contexts."
+  },
+  {
+    "word": "reading",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Core skill and activity in educational and professional environments."
+  },
+  {
+    "word": "ready",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 4,
+      "sports": 7,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency adjective used across all fields to indicate preparedness."
+  },
+  {
+    "word": "real",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective used for emphasis or authenticity in everyday communication."
+  },
+  {
+    "word": "really",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Informal intensifier widely used in everyday conversational English."
+  },
+  {
+    "word": "reason",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 7,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Important in law and education for explaining cause or justification."
+  },
+  {
+    "word": "red",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic color vocabulary with some relevance to health warning signs and sports."
+  },
+  {
+    "word": "relax",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 7,
+      "law": 2,
+      "sports": 6,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Primarily used in health and sports recovery contexts."
+  },
+  {
+    "word": "remember",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Commonly used in education and health contexts for recall and compliance."
+  },
+  {
+    "word": "repeat",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 4,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Used in education and training to reinforce learning or practice."
+  },
+  {
+    "word": "report",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 7,
+      "law": 7,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core professional vocabulary for documenting and communicating findings."
+  },
+  {
+    "word": "restaurant",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Everyday vocabulary for dining establishments with minimal domain relevance."
+  },
+  {
+    "word": "result",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 7,
+      "law": 6,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "High-utility term used across all fields for outcomes and findings."
+  },
+  {
+    "word": "return",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Versatile verb used in law, sports, and everyday professional communication."
+  },
+  {
+    "word": "rice",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 5,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Basic food vocabulary with some relevance to health and nutrition contexts."
+  },
+  {
+    "word": "rich",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Common adjective describing wealth or abundance used in everyday contexts."
+  },
+  {
+    "word": "ride",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 6,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common verb in sports and transportation contexts."
+  },
+  {
+    "word": "right",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 7,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in law for entitlements and widely used as a general adjective."
+  },
+  {
+    "word": "river",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 2,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant to civil engineering and environmental studies contexts."
+  },
+  {
+    "word": "road",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Primarily relevant to civil and transport engineering contexts."
+  },
+  {
+    "word": "room",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 3,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "General term used across many environments including hospitals and schools."
+  },
+  {
+    "word": "routine",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 7,
+      "law": 4,
+      "sports": 8,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Especially important in health and sports for describing regular practices."
+  },
+  {
+    "word": "rule",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 9,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Core vocabulary in law, sports, and education for governing behavior."
+  },
+  {
+    "word": "run",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 2,
+      "sports": 9,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Primarily a sports and physical activity term but widely used generally."
+  },
+  {
+    "word": "sad",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 6,
+      "law": 2,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Basic emotional vocabulary most relevant in health and counseling contexts."
+  },
+  {
+    "word": "salad",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common food item relevant to nutrition and sports diet planning."
+  },
+  {
+    "word": "salt",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 6,
+      "law": 1,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant in health and nutrition contexts as well as chemical engineering."
+  },
+  {
+    "word": "same",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 6,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency function word used in comparisons across all fields."
+  },
+  {
+    "word": "sandwich",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Everyday food vocabulary with minor relevance to nutrition and sports diet."
+  },
+  {
+    "word": "saturday",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 6,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Basic time vocabulary especially useful in scheduling and sports events."
+  },
+  {
+    "word": "say",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Extremely common communication verb used universally across all contexts."
+  },
+  {
+    "word": "school",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 4,
+      "education": 10
+    },
+    "usabilityScore": 10,
+    "notes": "Core vocabulary in education contexts and widely understood by all learners."
+  },
+  {
+    "word": "science",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 6,
+      "law": 3,
+      "sports": 3,
+      "education": 9
+    },
+    "usabilityScore": 8,
+    "notes": "Central to education and engineering fields and academic discourse."
+  },
+  {
+    "word": "scientist",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 2,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to a professional in scientific research relevant to education and engineering."
+  },
+  {
+    "word": "sea",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant to marine and civil engineering as well as water sports."
+  },
+  {
+    "word": "second",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 7,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Used as a unit of time and ordinal number across all professional fields."
+  },
+  {
+    "word": "section",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 6,
+      "law": 8,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Common structural term used in documents, laws, and technical drawings."
+  },
+  {
+    "word": "see",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "One of the most common English verbs used universally in communication."
+  },
+  {
+    "word": "sell",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common commercial verb with relevance to business and contract law."
+  },
+  {
+    "word": "send",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency communication verb used broadly in professional correspondence."
+  },
+  {
+    "word": "sentence",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 8,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 8,
+    "notes": "Core term in both legal judgments and language education contexts."
+  },
+  {
+    "word": "september",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Basic calendar vocabulary with particular relevance to academic year scheduling."
+  },
+  {
+    "word": "seven number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 3,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number vocabulary essential for everyday counting and communication."
+  },
+  {
+    "word": "seventeen number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number vocabulary important for foundational numeracy in education."
+  },
+  {
+    "word": "seventy number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number vocabulary useful in ages, quantities, and general communication."
+  },
+  {
+    "word": "share",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 6,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Used in legal and financial contexts as well as collaborative education settings."
+  },
+  {
+    "word": "she",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential pronoun used universally in all spoken and written communication."
+  },
+  {
+    "word": "sheep",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 5,
+    "notes": "Basic animal vocabulary with limited professional relevance outside agriculture."
+  },
+  {
+    "word": "shirt",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common clothing item with some relevance to sports uniforms and dress codes."
+  },
+  {
+    "word": "shoe",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 1,
+      "sports": 6,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common clothing vocabulary with notable relevance in sports equipment contexts."
+  },
+  {
+    "word": "shop",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Everyday commercial vocabulary used broadly in daily life communication."
+  },
+  {
+    "word": "shopping",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday activity vocabulary useful for general daily communication."
+  },
+  {
+    "word": "short",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency descriptive adjective used across all everyday and professional contexts."
+  },
+  {
+    "word": "should",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 7,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Essential modal verb for expressing recommendations and obligations across all fields."
+  },
+  {
+    "word": "show",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb used in demonstrations and presentations across all professional settings."
+  },
+  {
+    "word": "shower",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 1,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Relevant to health hygiene and sports facility vocabulary."
+  },
+  {
+    "word": "sick",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 8,
+      "law": 3,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Core health vocabulary widely used in medical and everyday communication."
+  },
+  {
+    "word": "similar",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 6,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Important comparative term used in technical writing and academic analysis."
+  },
+  {
+    "word": "sing",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 6,
+    "notes": "Primarily a performing arts and music education term with limited professional use."
+  },
+  {
+    "word": "singer",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 6,
+    "notes": "Primarily relates to performing arts and entertainment contexts."
+  },
+  {
+    "word": "sister",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 3,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common family relationship term used in everyday and some professional contexts."
+  },
+  {
+    "word": "sit",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Basic everyday verb relevant across general and some professional settings."
+  },
+  {
+    "word": "situation",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 6,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "General term used across many professional fields to describe circumstances or conditions."
+  },
+  {
+    "word": "six number",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number with universal relevance in all professional and everyday contexts."
+  },
+  {
+    "word": "sixteen number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number useful in everyday counting and general professional communication."
+  },
+  {
+    "word": "sixty number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "Basic number commonly used in time, measurement, and general professional contexts."
+  },
+  {
+    "word": "skill",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 5,
+      "sports": 7,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used across all professions to describe learned abilities and competencies."
+  },
+  {
+    "word": "skirt",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 5,
+    "notes": "Refers to a clothing item with limited professional field relevance."
+  },
+  {
+    "word": "sleep",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 8,
+      "law": 1,
+      "sports": 6,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Highly relevant in health and sports recovery contexts and everyday communication."
+  },
+  {
+    "word": "slow",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common adjective describing speed or pace across everyday and professional contexts."
+  },
+  {
+    "word": "small",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental adjective describing size used universally in all contexts."
+  },
+  {
+    "word": "snake",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 5,
+    "notes": "Refers to a reptile with limited professional relevance outside biology or health."
+  },
+  {
+    "word": "snow",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 1,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Weather-related term relevant in engineering, outdoor sports, and everyday conversation."
+  },
+  {
+    "word": "so",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency connective word essential for everyday and professional communication."
+  },
+  {
+    "word": "some",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential determiner used universally in all forms of communication."
+  },
+  {
+    "word": "somebody",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common indefinite pronoun used in everyday and informal professional communication."
+  },
+  {
+    "word": "someone",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used indefinite pronoun important in everyday and professional conversations."
+  },
+  {
+    "word": "something",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential indefinite pronoun used universally across all contexts."
+  },
+  {
+    "word": "sometimes",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common adverb of frequency used in everyday and professional communication."
+  },
+  {
+    "word": "son",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Basic family relationship term used in everyday and some legal contexts."
+  },
+  {
+    "word": "song",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 7,
+    "notes": "Relates to music and is particularly useful in educational and cultural contexts."
+  },
+  {
+    "word": "soon",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common adverb of time essential for everyday and professional scheduling communication."
+  },
+  {
+    "word": "sorry",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 3,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Important social expression used universally in polite professional and everyday interaction."
+  },
+  {
+    "word": "sound",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Used in engineering acoustics, health diagnostics, and general everyday communication."
+  },
+  {
+    "word": "soup",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 4,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common food item with relevance mainly in health and nutrition contexts."
+  },
+  {
+    "word": "south",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Directional term used in geography, navigation, engineering, and everyday orientation."
+  },
+  {
+    "word": "space",
+    "fieldRelevance": {
+      "engineering": 7,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Important in engineering and architecture contexts referring to area or outer space."
+  },
+  {
+    "word": "speak",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental communication verb used extensively across all professional and everyday contexts."
+  },
+  {
+    "word": "special",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used adjective indicating something distinct or unique across all fields."
+  },
+  {
+    "word": "spell",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily relevant in education for literacy and language learning contexts."
+  },
+  {
+    "word": "spelling",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 1,
+      "education": 9
+    },
+    "usabilityScore": 7,
+    "notes": "Core vocabulary in education and language learning professional contexts."
+  },
+  {
+    "word": "spend",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 4,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common verb related to time or money used broadly in professional and everyday contexts."
+  },
+  {
+    "word": "sport",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 6,
+      "law": 2,
+      "sports": 10,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Core vocabulary in sports and health fields, widely used in everyday conversation."
+  },
+  {
+    "word": "spring",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 1,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to a season or mechanical component relevant in engineering and general contexts."
+  },
+  {
+    "word": "stand",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 4,
+      "sports": 5,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb with physical and figurative meanings across everyday and professional use."
+  },
+  {
+    "word": "star",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 1,
+      "law": 1,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to celestial bodies or fame, relevant in science, education, and entertainment."
+  },
+  {
+    "word": "start",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 6,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental verb used universally across all professional and everyday contexts."
+  },
+  {
+    "word": "tomato",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 5,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 6,
+    "notes": "Common food item most relevant in health, nutrition, and everyday cooking contexts."
+  },
+  {
+    "word": "tomorrow",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential time reference word used universally in all everyday and professional contexts."
+  },
+  {
+    "word": "tonight",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 3,
+      "education": 1
+    },
+    "usabilityScore": 8,
+    "notes": "Common time reference word used in everyday scheduling and informal communication."
+  },
+  {
+    "word": "too",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Basic adverb used universally to indicate addition or excess in everyday speech."
+  },
+  {
+    "word": "tooth",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 7,
+      "law": 1,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Most relevant in health and dental contexts for describing oral anatomy."
+  },
+  {
+    "word": "topic",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used in academic and professional discussions, especially in education."
+  },
+  {
+    "word": "tourist",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common in travel and hospitality contexts for describing visiting individuals."
+  },
+  {
+    "word": "town",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Basic geographical term used in everyday communication and location descriptions."
+  },
+  {
+    "word": "traffic",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 3,
+      "law": 4,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Relevant to civil engineering and law, commonly used in daily urban life."
+  },
+  {
+    "word": "train",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to both rail transport and the act of practicing skills in sports contexts."
+  },
+  {
+    "word": "travel",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Universal everyday word describing movement between places for any purpose."
+  },
+  {
+    "word": "tree",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Basic nature vocabulary relevant to environmental engineering and general education."
+  },
+  {
+    "word": "trip",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common everyday word for a short journey used across many contexts."
+  },
+  {
+    "word": "trousers",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Basic clothing vocabulary used in everyday personal and professional dress contexts."
+  },
+  {
+    "word": "true",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Fundamental adjective used across all fields to affirm accuracy or correctness."
+  },
+  {
+    "word": "try",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency verb used universally to express attempts or efforts in any domain."
+  },
+  {
+    "word": "t-shirt",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Basic everyday clothing item especially common in casual and sports settings."
+  },
+  {
+    "word": "tuesday",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Essential day-of-the-week vocabulary needed for scheduling in all professional fields."
+  },
+  {
+    "word": "turn",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Versatile verb and noun used in directions, sports plays, and procedural instructions."
+  },
+  {
+    "word": "tv",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday abbreviation for television used in casual and media contexts."
+  },
+  {
+    "word": "twelve number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Basic number essential for counting, scheduling, and measurement across all fields."
+  },
+  {
+    "word": "twenty number",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Fundamental number used in quantities, scores, ages, and measurements universally."
+  },
+  {
+    "word": "twice",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 8,
+    "notes": "Common frequency adverb used in instructions, medical dosage, and training routines."
+  },
+  {
+    "word": "two number",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 3,
+      "sports": 4,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Most basic number essential for all counting and quantification across every field."
+  },
+  {
+    "word": "type",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Widely used to categorize and classify things across technical and general contexts."
+  },
+  {
+    "word": "umbrella",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 1,
+      "law": 2,
+      "sports": 2,
+      "education": 1
+    },
+    "usabilityScore": 7,
+    "notes": "Common everyday object word also used metaphorically in legal and policy contexts."
+  },
+  {
+    "word": "uncle",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Basic family relationship vocabulary used in personal and social communication."
+  },
+  {
+    "word": "under",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Essential preposition indicating position or subordination used widely across fields."
+  },
+  {
+    "word": "understand",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 3,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Critical communication verb used across all professional and educational interactions."
+  },
+  {
+    "word": "university",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Core educational institution term highly relevant to academic and professional contexts."
+  },
+  {
+    "word": "until",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Essential conjunction for expressing time limits used frequently in legal and daily contexts."
+  },
+  {
+    "word": "up",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 2,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental directional adverb and particle used in countless everyday expressions."
+  },
+  {
+    "word": "upstairs",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 2,
+      "law": 1,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common directional word used in everyday navigation within buildings."
+  },
+  {
+    "word": "us",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Basic first-person plural pronoun essential for all professional and personal communication."
+  },
+  {
+    "word": "use",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "High-frequency verb and noun fundamental to instructions and communication in all fields."
+  },
+  {
+    "word": "useful",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 4,
+      "sports": 3,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Common evaluative adjective used across all domains to describe practical value."
+  },
+  {
+    "word": "usually",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "High-frequency frequency adverb used to describe habitual actions in everyday speech."
+  },
+  {
+    "word": "vacation",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Common everyday word for a period of rest or travel away from work or school."
+  },
+  {
+    "word": "vegetable",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 6,
+      "law": 1,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Basic food vocabulary especially relevant in health, nutrition, and sports diet contexts."
+  },
+  {
+    "word": "very",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Extremely high-frequency intensifier adverb used universally across all communication."
+  },
+  {
+    "word": "video",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 3,
+      "law": 4,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Common modern media term used in education, law evidence, and sports analysis."
+  },
+  {
+    "word": "village",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Basic geographical and community vocabulary used in social and educational contexts."
+  },
+  {
+    "word": "visit",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 4,
+      "sports": 3,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Common in everyday and professional contexts involving travel or appointments."
+  },
+  {
+    "word": "visitor",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "Refers to a person coming to a place, relevant across service and institutional settings."
+  },
+  {
+    "word": "wait",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 4,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Universal everyday word used in queues, appointments, and processes."
+  },
+  {
+    "word": "waiter",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 2,
+      "education": 1
+    },
+    "usabilityScore": 7,
+    "notes": "Primarily refers to a food service professional in restaurant settings."
+  },
+  {
+    "word": "wake",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Common everyday word related to rousing from sleep or alertness."
+  },
+  {
+    "word": "walk",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 6,
+      "law": 2,
+      "sports": 6,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Everyday movement verb with notable relevance in health and sports contexts."
+  },
+  {
+    "word": "wall",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Primarily relevant in construction and engineering as a structural element."
+  },
+  {
+    "word": "want",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental everyday verb expressing desire or intention across all contexts."
+  },
+  {
+    "word": "warm",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 1,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Used in weather, health, and physical training contexts to describe temperature."
+  },
+  {
+    "word": "wash",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 7,
+      "law": 1,
+      "sports": 4,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Especially relevant in health and hygiene contexts for cleaning purposes."
+  },
+  {
+    "word": "watch",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Common verb meaning to observe, also a noun for a timepiece."
+  },
+  {
+    "word": "water",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 7,
+      "law": 2,
+      "sports": 5,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Essential everyday noun with strong relevance in health, engineering, and sports."
+  },
+  {
+    "word": "way",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Highly versatile word used across all fields to mean method, direction, or manner."
+  },
+  {
+    "word": "we",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Basic first-person plural pronoun essential in all professional and everyday communication."
+  },
+  {
+    "word": "wear",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 3,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common verb related to clothing, with relevance to safety gear and uniforms."
+  },
+  {
+    "word": "weather",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 2,
+      "sports": 6,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Relevant in outdoor sports, construction planning, and everyday conversation."
+  },
+  {
+    "word": "website",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 4,
+      "law": 4,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "Modern everyday term for an online presence used across all professional fields."
+  },
+  {
+    "word": "wednesday",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Day of the week essential for scheduling in all professional and daily contexts."
+  },
+  {
+    "word": "week",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Fundamental time unit used universally for planning and scheduling."
+  },
+  {
+    "word": "weekend",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Common time reference used for rest, events, and recreational sports scheduling."
+  },
+  {
+    "word": "welcome",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 4
+    },
+    "usabilityScore": 9,
+    "notes": "Common greeting exclamation and verb used in hospitality and professional settings."
+  },
+  {
+    "word": "well",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 5,
+      "law": 3,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 10,
+    "notes": "Multipurpose word used as an adverb, adjective, and discourse marker across contexts."
+  },
+  {
+    "word": "west",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 2,
+      "law": 2,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Directional term used in navigation, geography, and engineering contexts."
+  },
+  {
+    "word": "what",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 2,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Core interrogative pronoun essential for communication in all contexts."
+  },
+  {
+    "word": "when",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Essential interrogative and conjunction for time-related questions and clauses."
+  },
+  {
+    "word": "where",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Core interrogative pronoun for location, used universally in all contexts."
+  },
+  {
+    "word": "which",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Interrogative and relative pronoun used for specifying choices, notably in legal language."
+  },
+  {
+    "word": "white",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 2,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Basic color adjective used in descriptions across everyday and professional settings."
+  },
+  {
+    "word": "who",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 4,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Core interrogative and relative pronoun essential in all communication contexts."
+  },
+  {
+    "word": "why",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 4
+    },
+    "usabilityScore": 10,
+    "notes": "Essential interrogative used for reasoning and explanation across all fields."
+  },
+  {
+    "word": "wife",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 4,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 7,
+    "notes": "Common family relationship term with particular relevance in legal and social contexts."
+  },
+  {
+    "word": "will",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 6,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Auxiliary verb for future tense and a legal document for asset distribution."
+  },
+  {
+    "word": "win",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 2,
+      "sports": 8,
+      "education": 3
+    },
+    "usabilityScore": 8,
+    "notes": "Core sports vocabulary referring to achieving victory in a competition."
+  },
+  {
+    "word": "window",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 2,
+      "law": 2,
+      "sports": 1,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Common noun referring to an opening in a structure or a software interface."
+  },
+  {
+    "word": "wine",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 3,
+      "law": 2,
+      "sports": 1,
+      "education": 1
+    },
+    "usabilityScore": 6,
+    "notes": "Everyday beverage term with some relevance to health and hospitality contexts."
+  },
+  {
+    "word": "winter",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 1,
+      "sports": 5,
+      "education": 2
+    },
+    "usabilityScore": 8,
+    "notes": "Seasonal term relevant to weather-dependent sports, engineering, and health planning."
+  },
+  {
+    "word": "with",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 3,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 10,
+    "notes": "Essential preposition used universally across all communication contexts."
+  },
+  {
+    "word": "without",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 3,
+      "law": 4,
+      "sports": 2,
+      "education": 2
+    },
+    "usabilityScore": 9,
+    "notes": "Common preposition indicating absence, frequently used in legal and procedural language."
+  },
+  {
+    "word": "woman",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 4,
+      "law": 3,
+      "sports": 4,
+      "education": 3
+    },
+    "usabilityScore": 9,
+    "notes": "Basic noun referring to an adult female, used across all social and professional contexts."
+  },
+  {
+    "word": "wonderful",
+    "fieldRelevance": {
+      "engineering": 1,
+      "health": 2,
+      "law": 1,
+      "sports": 3,
+      "education": 3
+    },
+    "usabilityScore": 7,
+    "notes": "Positive descriptive adjective used in everyday and motivational communication."
+  },
+  {
+    "word": "word",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 2,
+      "education": 8
+    },
+    "usabilityScore": 9,
+    "notes": "Primarily relevant to language, communication, and educational contexts."
+  },
+  {
+    "word": "work",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 6,
+      "law": 6,
+      "sports": 6,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "Universally important across all professional fields as a core action and concept."
+  },
+  {
+    "word": "worker",
+    "fieldRelevance": {
+      "engineering": 8,
+      "health": 7,
+      "law": 7,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "Refers to a person employed in a trade, industry, or profession."
+  },
+  {
+    "word": "world",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 5,
+      "education": 6
+    },
+    "usabilityScore": 9,
+    "notes": "A broad general term used across all domains to refer to global contexts."
+  },
+  {
+    "word": "would",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 7,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "A modal verb essential for polite requests, conditionals, and formal communication."
+  },
+  {
+    "word": "write",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 7,
+      "sports": 3,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Especially relevant in legal drafting, academic, and educational settings."
+  },
+  {
+    "word": "writer",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 3,
+      "law": 5,
+      "sports": 3,
+      "education": 8
+    },
+    "usabilityScore": 7,
+    "notes": "Refers to a person who produces written content, most relevant in education and media."
+  },
+  {
+    "word": "writing",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 5,
+      "law": 8,
+      "sports": 3,
+      "education": 9
+    },
+    "usabilityScore": 9,
+    "notes": "Core to legal documentation, academic work, and professional communication."
+  },
+  {
+    "word": "wrong",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 6,
+      "law": 8,
+      "sports": 5,
+      "education": 7
+    },
+    "usabilityScore": 9,
+    "notes": "Used across fields to indicate errors, faults, or ethical/legal violations."
+  },
+  {
+    "word": "yeah",
+    "fieldRelevance": {
+      "engineering": 2,
+      "health": 2,
+      "law": 1,
+      "sports": 3,
+      "education": 2
+    },
+    "usabilityScore": 7,
+    "notes": "Informal spoken affirmation common in casual everyday conversation."
+  },
+  {
+    "word": "year",
+    "fieldRelevance": {
+      "engineering": 6,
+      "health": 7,
+      "law": 7,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 10,
+    "notes": "A fundamental time unit used universally across all professional and daily contexts."
+  },
+  {
+    "word": "yellow",
+    "fieldRelevance": {
+      "engineering": 5,
+      "health": 4,
+      "law": 3,
+      "sports": 5,
+      "education": 5
+    },
+    "usabilityScore": 8,
+    "notes": "A basic color term with some relevance to safety signage in engineering and sports."
+  },
+  {
+    "word": "yes",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 10,
+    "notes": "A fundamental affirmative response used universally in all forms of communication."
+  },
+  {
+    "word": "yesterday",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 4,
+      "law": 5,
+      "sports": 4,
+      "education": 5
+    },
+    "usabilityScore": 9,
+    "notes": "A basic time reference word essential for everyday and professional communication."
+  },
+  {
+    "word": "you",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "A fundamental pronoun essential for direct address in all forms of communication."
+  },
+  {
+    "word": "young",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 4,
+      "sports": 7,
+      "education": 7
+    },
+    "usabilityScore": 8,
+    "notes": "Used across health, sports, and education to describe age groups or demographics."
+  },
+  {
+    "word": "your",
+    "fieldRelevance": {
+      "engineering": 4,
+      "health": 5,
+      "law": 5,
+      "sports": 4,
+      "education": 6
+    },
+    "usabilityScore": 10,
+    "notes": "A possessive pronoun essential for addressing individuals in any professional context."
+  },
+  {
+    "word": "yourself",
+    "fieldRelevance": {
+      "engineering": 3,
+      "health": 6,
+      "law": 4,
+      "sports": 6,
+      "education": 6
+    },
+    "usabilityScore": 8,
+    "notes": "A reflexive pronoun commonly used in health, sports coaching, and self-directed learning."
+  }
+]

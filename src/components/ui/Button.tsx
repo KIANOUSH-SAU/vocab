@@ -1,20 +1,21 @@
-import { Pressable, Text, StyleSheet, ActivityIndicator, View } from 'react-native'
+import { Pressable, Text, StyleSheet, ActivityIndicator, View, Image, ImageSourcePropType } from 'react-native'
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated'
-import { colors, spacing, radii, typography, shadows } from '@constants/theme'
+import { colors, spacing, radii, shadows, springConfigs } from '@constants/theme'
 
 type IconLibrary = 'Ionicons' | 'MaterialCommunityIcons'
 
 interface ButtonIcon {
-  library: IconLibrary
-  name: string
+  library?: IconLibrary
+  name?: string
   position?: 'left' | 'right'
+  source?: ImageSourcePropType
 }
 
 interface Props {
   label: string
   onPress: () => void
-  variant?: 'primary' | 'secondary' | 'ghost'
+  variant?: 'primary' | 'secondary' | 'ghost' | 'apple' | 'google'
   size?: 'sm' | 'md' | 'lg'
   icon?: ButtonIcon
   disabled?: boolean
@@ -32,8 +33,8 @@ const IconMap = {
 
 const SIZE_STYLES = {
   sm: { paddingVertical: 8, paddingHorizontal: spacing[4], fontSize: 14 },
-  md: { paddingVertical: 14, paddingHorizontal: spacing[6], fontSize: 16 },
-  lg: { paddingVertical: spacing[4], paddingHorizontal: spacing[8], fontSize: 18 },
+  md: { paddingVertical: 14, paddingHorizontal: spacing[6], fontSize: 15 },
+  lg: { paddingVertical: spacing[4], paddingHorizontal: spacing[8], fontSize: 15 },
 } as const
 
 const ICON_SIZES = { sm: 16, md: 18, lg: 20 } as const
@@ -56,11 +57,11 @@ export function Button({
   }))
 
   const handlePressIn = () => {
-    scale.value = withSpring(0.97, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(0.97, springConfigs.snappy)
   }
 
   const handlePressOut = () => {
-    scale.value = withSpring(1, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(1, springConfigs.snappy)
   }
 
   const sizeStyle = SIZE_STYLES[size]
@@ -71,24 +72,39 @@ export function Button({
     primary: styles.primaryContainer,
     secondary: styles.secondaryContainer,
     ghost: styles.ghostContainer,
+    apple: styles.appleContainer,
+    google: styles.googleContainer,
   }
 
   const textColors = {
     primary: '#FFFFFF',
-    secondary: colors.textPrimary,
-    ghost: colors.textSecondary,
+    secondary: colors.ink,
+    ghost: colors.ink2,
+    apple: '#000000',
+    google: '#000000',
   }
 
   const renderIcon = () => {
     if (!icon) return null
-    const IconComponent = IconMap[icon.library]
-    return (
-      <IconComponent
-        name={icon.name as never}
-        size={iconSize}
-        color={textColors[variant]}
-      />
-    )
+    if (icon.source) {
+      return (
+        <Image
+          source={icon.source}
+          style={{ width: iconSize + 2, height: iconSize + 2, resizeMode: 'contain' }}
+        />
+      )
+    }
+    if (icon.library && icon.name) {
+      const IconComponent = IconMap[icon.library]
+      return (
+        <IconComponent
+          name={icon.name as never}
+          size={iconSize}
+          color={textColors[variant]}
+        />
+      )
+    }
+    return null
   }
 
   return (
@@ -134,13 +150,13 @@ export function Button({
 
 const styles = StyleSheet.create({
   base: {
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     minHeight: 44,
     alignItems: 'center',
     justifyContent: 'center',
   },
   primaryContainer: {
-    backgroundColor: colors.primaryGreen,
+    backgroundColor: colors.ink,
   },
   secondaryContainer: {
     backgroundColor: 'transparent',
@@ -150,13 +166,22 @@ const styles = StyleSheet.create({
   ghostContainer: {
     backgroundColor: 'transparent',
   },
+  appleContainer: {
+    backgroundColor: colors.borderSoft,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  googleContainer: {
+    backgroundColor: colors.card,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
   content: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing[2],
   },
   label: {
-    ...typography.bodyMedium,
     fontWeight: '600',
   },
   fullWidth: {
