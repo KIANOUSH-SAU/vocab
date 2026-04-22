@@ -72,13 +72,19 @@ export const useUserStore = create<UserState & UserActions>()(
 
       clearPendingOnboardingData: () => set({ pendingOnboardingData: null }),
 
-      logout: () =>
+      logout: () => {
+        const { useWordStore } = require("./wordStore");
+        const { useProgressStore } = require("./progressStore");
+        useWordStore.getState().reset();
+        useProgressStore.getState().reset();
+
         set((state) => ({
           user: null,
           isAuthenticated: false,
           // Preserve lastLoggedInEmail for returning user detection
           lastLoggedInEmail: state.lastLoggedInEmail,
-        })),
+        }));
+      },
 
       reset: () => set(initialState),
     }),

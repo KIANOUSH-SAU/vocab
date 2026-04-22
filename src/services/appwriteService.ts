@@ -7,7 +7,7 @@ export const DB_ID = process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID ?? "";
 
 export const COLLECTIONS = {
   WORDS: "words",
-  USER_WORDS: "userWords",
+  USER_WORDS: "userwords",
   USERS: "users",
 } as const;
 

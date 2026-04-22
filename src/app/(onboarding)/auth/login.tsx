@@ -1,18 +1,25 @@
-import { useState } from 'react'
-import { View, Text, TextInput, StyleSheet, ScrollView, Pressable } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
-import { Ionicons } from '@expo/vector-icons'
-import { LinearGradient } from 'expo-linear-gradient'
-import { useAuthForm } from '@hooks/useAuthForm'
-import { useUserStore } from '@store/userStore'
-import { colors, spacing, radii, shadows, fonts } from '@constants/theme'
-import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
-import { BackButton } from '@components/ui/BackButton'
-import { Button } from '@components/ui/Button'
+import { useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  ScrollView,
+  Pressable,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
+import { useAuthForm } from "@hooks/useAuthForm";
+import { useUserStore } from "@store/userStore";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
+import { BackButton } from "@components/ui/BackButton";
+import { Button } from "@components/ui/Button";
 
 export default function LoginScreen() {
-  const lastLoggedInEmail = useUserStore((s) => s.lastLoggedInEmail)
+  const lastLoggedInEmail = useUserStore((s) => s.lastLoggedInEmail);
   const {
     email,
     setEmail,
@@ -23,17 +30,19 @@ export default function LoginScreen() {
     isLoading,
     handleLogin,
     handleOAuth,
-  } = useAuthForm()
+  } = useAuthForm();
 
   // Use last email as default if user hasn't typed anything
-  const [hasEditedEmail, setHasEditedEmail] = useState(false)
-  const displayEmail = hasEditedEmail ? email : (email || lastLoggedInEmail || '')
+  const [hasEditedEmail, setHasEditedEmail] = useState(false);
+  const displayEmail = hasEditedEmail
+    ? email
+    : email || lastLoggedInEmail || "";
 
   const onEmailChange = (v: string) => {
-    setHasEditedEmail(true)
-    setEmail(v)
-    clearError()
-  }
+    setHasEditedEmail(true);
+    setEmail(v);
+    clearError();
+  };
 
   return (
     <MaxWidthContainer>
@@ -46,7 +55,7 @@ export default function LoginScreen() {
           <BackButton onPress={() => router.back()} />
 
           <View style={styles.header}>
-            <Text style={styles.title}>Welcome{'\n'}back</Text>
+            <Text style={styles.title}>Welcome{"\n"}back</Text>
             <Text style={styles.subtitle}>
               Log in to continue your learning journey
             </Text>
@@ -54,7 +63,11 @@ export default function LoginScreen() {
 
           {error && (
             <View style={styles.errorBox}>
-              <Ionicons name="alert-circle" size={16} color={colors.coralText} />
+              <Ionicons
+                name="alert-circle"
+                size={16}
+                color={colors.coralText}
+              />
               <Text style={styles.errorText}>{error}</Text>
             </View>
           )}
@@ -79,7 +92,10 @@ export default function LoginScreen() {
               <TextInput
                 style={styles.input}
                 value={password}
-                onChangeText={(v) => { setPassword(v); clearError() }}
+                onChangeText={(v) => {
+                  setPassword(v);
+                  clearError();
+                }}
                 placeholder="Your password"
                 placeholderTextColor={colors.inkLight}
                 secureTextEntry
@@ -93,13 +109,15 @@ export default function LoginScreen() {
             disabled={isLoading}
           >
             <LinearGradient
-              colors={[colors.ink, '#27272A']}
+              colors={[colors.ink, "#27272A"]}
               style={[styles.primaryBtn, isLoading && { opacity: 0.6 }]}
             >
               <Text style={styles.primaryLabel}>
-                {isLoading ? 'Logging in...' : 'Log In'}
+                {isLoading ? "Logging in..." : "Log In"}
               </Text>
-              {!isLoading && <Ionicons name="arrow-forward" size={18} color="#fff" />}
+              {!isLoading && (
+                <Ionicons name="arrow-forward" size={18} color="#fff" />
+              )}
             </LinearGradient>
           </Pressable>
 
@@ -112,24 +130,30 @@ export default function LoginScreen() {
           <View style={styles.oauthRow}>
             <Button
               label="Continue with Google"
-              onPress={() => handleOAuth('google')}
+              onPress={() => handleOAuth("google")}
               variant="google"
               size="lg"
               fullWidth
-              icon={{ source: require('../../../../assets/images/google-icon.png'), position: 'left' }}
+              icon={{
+                source: require("../../../../assets/images/google-icon.png"),
+                position: "left",
+              }}
             />
           </View>
 
-          <Pressable onPress={() => router.replace('/(onboarding)/auth/signup')} style={styles.switchLink}>
+          <Pressable
+            onPress={() => router.replace("/(onboarding)/auth/signup")}
+            style={styles.switchLink}
+          >
             <Text style={styles.switchText}>
-              Don't have an account?{' '}
+              Don't have an account?{" "}
               <Text style={styles.switchHighlight}>Sign up</Text>
             </Text>
           </Pressable>
         </ScrollView>
       </SafeAreaView>
     </MaxWidthContainer>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -154,8 +178,8 @@ const styles = StyleSheet.create({
     lineHeight: 23,
   },
   errorBox: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
     backgroundColor: colors.coralSoft,
     borderRadius: radii.md,
@@ -188,9 +212,9 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
   primaryBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     gap: 8,
     paddingVertical: 16,
     borderRadius: radii.md,
@@ -199,11 +223,11 @@ const styles = StyleSheet.create({
   primaryLabel: {
     fontFamily: fonts.sansSemiBold,
     fontSize: 15,
-    color: '#fff',
+    color: "#fff",
   },
   divider: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 12,
   },
   dividerLine: { flex: 1, height: 1, backgroundColor: colors.border },
@@ -213,7 +237,7 @@ const styles = StyleSheet.create({
     color: colors.inkLight,
   },
   oauthRow: { gap: 12 },
-  switchLink: { alignSelf: 'center', paddingVertical: 8 },
+  switchLink: { alignSelf: "center", paddingVertical: 8 },
   switchText: {
     fontFamily: fonts.sans,
     fontSize: 14,
@@ -223,4 +247,4 @@ const styles = StyleSheet.create({
     fontFamily: fonts.sansSemiBold,
     color: colors.iris,
   },
-})
+});

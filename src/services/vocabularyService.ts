@@ -46,19 +46,33 @@ export async function fetchWordsByLevelAndField(
 
   try {
     const db = getDatabases();
-    const response = await db.listDocuments(DB_ID, COLLECTIONS.WORDS, [
+    
+    // Use an OR query if multiple fields are selected so Appwrite matches ANY field
+    const fieldQueries = fields.map(f => Query.contains("fields", [f]));
+    const mainQuery = [
       Query.equal("level", level),
-      Query.contains("fields", fields),
       Query.orderDesc("usabilityScore"),
-      Query.limit(100),
-    ]);
+      Query.limit(100)
+    ];
+    
+    if (fieldQueries.length > 1) {
+      mainQuery.push(Query.or(fieldQueries));
+    } else if (fieldQueries.length === 1) {
+      mainQuery.push(fieldQueries[0]);
+    }
+
+    console.log(`[vocabularyService] Fetching from DB for level: ${level}, fields: ${fields}`);
+    const response = await db.listDocuments(DB_ID, COLLECTIONS.WORDS, mainQuery);
+    console.log(`[vocabularyService] DB returned ${response.documents.length} words`);
     return response.documents.map(mapDocToWord);
   } catch (error) {
     console.warn(
       "[vocabularyService] Appwrite fetch failed, using mock data.",
       error,
     );
-    return filterMockWords(level, fields);
+    const mocked = filterMockWords(level, fields);
+    console.log(`[vocabularyService] Mock data fallback returned ${mocked.length} words`);
+    return mocked;
   }
 }
 
@@ -114,21 +128,23 @@ export async function upsertUserWord(userWord: UserWord): Promise<UserWord> {
   try {
     const db = getDatabases();
     if (userWord.id) {
+      const { id, ...data } = userWord;
       const doc = await db.updateDocument(
         DB_ID,
         COLLECTIONS.USER_WORDS,
-        userWord.id,
-        userWord,
+        id,
+        data,
       );
-      return doc as unknown as UserWord;
+      return { ...userWord, id: doc.$id };
     } else {
+      const { id, ...data } = userWord;
       const doc = await db.createDocument(
         DB_ID,
         COLLECTIONS.USER_WORDS,
         "unique()",
-        userWord,
+        data,
       );
-      return doc as unknown as UserWord;
+      return { ...userWord, id: doc.$id };
     }
   } catch (error) {
     throw new Error(`[vocabularyService.upsertUserWord] ${error}`);

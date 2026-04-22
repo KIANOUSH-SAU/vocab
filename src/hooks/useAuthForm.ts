@@ -141,7 +141,21 @@ export function useAuthForm() {
     if (!fields || fields.length === 0) {
       router.replace("/(onboarding)/interests");
     } else {
-      router.replace("/(tabs)/home");
+      try {
+        const { fetchUserWords } = require("@services/vocabularyService");
+        const { useProgressStore } = require("@store/progressStore");
+        const existingWords = await fetchUserWords(appwriteUser.$id);
+
+        if (existingWords && existingWords.length > 0) {
+          existingWords.forEach((uw: any) =>
+            useProgressStore.getState().updateUserWord(uw),
+          );
+        }
+        router.replace("/(tabs)/home");
+      } catch (err) {
+        console.error("Failed to load existing user words", err);
+        router.replace("/(tabs)/home");
+      }
     }
   };
 

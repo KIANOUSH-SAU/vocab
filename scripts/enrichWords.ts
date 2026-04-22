@@ -299,9 +299,7 @@ async function main() {
   for (const [field, count] of Object.entries(fieldCounts)) {
     console.log(`   ${field.padEnd(14)} ${count}`);
   }
-  console.log(
-    `\nNext step: npm run pipeline:seed -- --level ${level}\n`,
-  );
+  console.log(`\nNext step: npm run pipeline:seed -- --level ${level}\n`);
 }
 
 main().catch((err) => {

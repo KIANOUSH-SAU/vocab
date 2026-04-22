@@ -103,17 +103,17 @@ export default function LevelResultScreen() {
     }
   }, [isGuest, isAuthenticated, level, fieldList, user]);
 
-  const goToLogin = useCallback(() => {
-    if (isAuthenticated) {
-      router.replace("/(tabs)/home");
-    } else {
-      setPendingOnboardingData({
-        level: level ?? "A1",
-        fields: fieldList,
-      });
-      router.push("/(onboarding)/auth/login");
-    }
-  }, [isAuthenticated, level, fieldList]);
+  // const goToLogin = useCallback(() => {
+  //   if (isAuthenticated) {
+  //     router.replace("/(tabs)/home");
+  //   } else {
+  //     setPendingOnboardingData({
+  //       level: level ?? "A1",
+  //       fields: fieldList,
+  //     });
+  //     router.push("/(onboarding)/auth/login");
+  //   }
+  // }, [isAuthenticated, level, fieldList]);
 
   return (
     <MaxWidthContainer>
@@ -214,14 +214,15 @@ export default function LevelResultScreen() {
               <Ionicons name="arrow-forward" size={18} color="#fff" />
             </LinearGradient>
           </Pressable>
-          {isGuest && !isAuthenticated ? (
+          {isGuest && !isAuthenticated && (
             <Text style={styles.guestNote}>
               Progress saved locally · Create an account anytime
             </Text>
-          ) : isAuthenticated ? null : (
-            <Pressable onPress={goToLogin} style={styles.ghostBtn}>
-              <Text style={styles.ghostLabel}>I already have an account</Text>
-            </Pressable>
+            // ) : isAuthenticated ? null : (
+            //   <Pressable onPress={goToLogin} style={styles.ghostBtn}>
+            //     <Text style={styles.ghostLabel}>I already have an account</Text>
+            //   </Pressable>
+            // )}
           )}
         </Animated.View>
       </SafeAreaView>
