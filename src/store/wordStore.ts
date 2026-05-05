@@ -2,12 +2,14 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { Word } from "@/types";
+import { todayString } from "@utils/dateUtils";
 
 interface WordState {
   todaysWords: Word[];
   wordCache: Record<string, Word>;
   audioCache: Record<string, string>;
   lastFetchedDate: string | null;
+  isDailySessionCompleted: boolean;
 }
 
 interface WordActions {
@@ -15,6 +17,7 @@ interface WordActions {
   cacheWord: (word: Word) => void;
   cacheAudio: (key: string, uri: string) => void;
   clearDailyCache: () => void;
+  setDailySessionCompleted: (status: boolean) => void;
   reset: () => void;
 }
 
@@ -23,6 +26,7 @@ const initialState: WordState = {
   wordCache: {},
   audioCache: {},
   lastFetchedDate: null,
+  isDailySessionCompleted: false,
 };
 
 export const useWordStore = create<WordState & WordActions>()(
@@ -31,9 +35,17 @@ export const useWordStore = create<WordState & WordActions>()(
       ...initialState,
 
       setTodaysWords: (words) =>
-        set({
-          todaysWords: words,
-          lastFetchedDate: new Date().toISOString().split("T")[0],
+        set((state) => {
+          const newCache = { ...state.wordCache };
+          for (const w of words) {
+            newCache[w.id] = w;
+          }
+          return {
+            todaysWords: words,
+            lastFetchedDate: todayString(),
+            isDailySessionCompleted: false,
+            wordCache: newCache,
+          };
         }),
 
       cacheWord: (word) =>
@@ -44,7 +56,9 @@ export const useWordStore = create<WordState & WordActions>()(
       cacheAudio: (key, uri) =>
         set((state) => ({ audioCache: { ...state.audioCache, [key]: uri } })),
 
-      clearDailyCache: () => set({ todaysWords: [], lastFetchedDate: null }),
+      clearDailyCache: () => set({ todaysWords: [], lastFetchedDate: null, isDailySessionCompleted: false }),
+
+      setDailySessionCompleted: (status) => set({ isDailySessionCompleted: status }),
 
       reset: () => set(initialState),
     }),
@@ -54,7 +68,25 @@ export const useWordStore = create<WordState & WordActions>()(
       partialize: (state) => ({
         wordCache: state.wordCache,
         audioCache: state.audioCache,
+        // Persist daily session state too so an app restart on the same day
+        // keeps the "All done" UI and the in-progress 5-word set intact.
+        todaysWords: state.todaysWords,
+        lastFetchedDate: state.lastFetchedDate,
+        isDailySessionCompleted: state.isDailySessionCompleted,
       }),
+      onRehydrateStorage: () => (state) => {
+        // One-time migration: backfill wordCache from todaysWords for
+        // users who had words persisted before we started caching them.
+        if (!state) return;
+        const { todaysWords, wordCache } = state;
+        if (todaysWords.length > 0 && Object.keys(wordCache).length === 0) {
+          const patched: Record<string, Word> = {};
+          for (const w of todaysWords) {
+            patched[w.id] = w;
+          }
+          useWordStore.setState({ wordCache: patched });
+        }
+      },
     },
   ),
 );

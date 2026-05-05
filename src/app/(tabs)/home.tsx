@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
@@ -13,165 +13,520 @@ import Animated, {
   withSpring,
   withDelay,
   Easing,
+  interpolate,
 } from "react-native-reanimated";
 import { useCurrentUser, useIsGuest } from "@store/userStore";
-import { useStreak } from "@store/progressStore";
+import { useWordStore } from "@store/wordStore";
+import { useProgressStore, useStreak } from "@store/progressStore";
 import { useDailyWord } from "@hooks/useDailyWord";
 import { useAudio } from "@hooks/useAudio";
-import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { useTabFocusSync } from "@hooks/useRemoteSync";
+import { colors, radii, shadows, fonts } from "@constants/theme";
 import { AccentBlob } from "@components/ui/AccentBlob";
 import { SectionLabel } from "@components/ui/SectionLabel";
 import { AnimatedFire } from "@components/ui/AnimatedFire";
+import {
+  todayString,
+  toDateString,
+  buildCurrentWeekDates,
+} from "@utils/dateUtils";
 
-// Mock data
-const MOCK_PROGRESS = {
-  sessionsCompleted: 2,
-  weeklyGoal: 3,
-  wordsMastered: 14,
-  totalWords: 50,
-};
+// ─── Helpers ──────────────────────────────────────────────────
+
+const DAY_LABELS = ["M", "T", "W", "T", "F", "S", "S"];
+const DAY_COLORS = [
+  "#7C5CFC", // Mon: Iris
+  "#10B981", // Tue: Emerald
+  "#F59E0B", // Wed: Amber
+  "#38BDF8", // Thu: Sky
+  "#EF4444", // Fri: Red
+  "#FB7185", // Sat: Rose
+  "#8B5CF6", // Sun: Violet
+];
+
+function getGreeting(firstName?: string | null): string {
+  const h = new Date().getHours();
+  const base =
+    h < 5
+      ? "Still up"
+      : h < 12
+        ? "Good morning"
+        : h < 18
+          ? "Good afternoon"
+          : "Good evening";
+  return firstName ? `${base}, ${firstName}` : base;
+}
+
+function getFormattedDate(): string {
+  return new Date().toLocaleDateString(undefined, {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+// ─── Daily CTA (shown when today's session isn't done yet) ────
+
+function DailyCTA({ streak }: { streak: number }) {
+  const press = useSharedValue(1);
+  const onPressIn = () => {
+    press.value = withSpring(0.97, { damping: 15, stiffness: 300 });
+  };
+  const onPressOut = () => {
+    press.value = withSpring(1, { damping: 15, stiffness: 300 });
+  };
+  const style = useAnimatedStyle(() => ({
+    transform: [{ scale: press.value }],
+  }));
+
+  const headline =
+    streak > 0 ? "Keep your streak alive" : "Start today's session";
+  const subline =
+    streak > 0
+      ? `Complete today's 5 words to reach day ${streak + 1}`
+      : "Just 5 words to ignite your first streak";
+
+  return (
+    <Animated.View style={style}>
+      <Pressable
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => router.push("/learning/session")}
+        style={ctaStyles.touchable}
+      >
+        <LinearGradient
+          colors={["#18181B", "#3F3F46"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={ctaStyles.gradient}
+        >
+          <View style={ctaStyles.glow} />
+          <View style={ctaStyles.content}>
+            <View style={ctaStyles.textCol}>
+              <Text style={ctaStyles.label}>TODAY'S SESSION</Text>
+              <Text style={ctaStyles.title}>{headline}</Text>
+              <Text style={ctaStyles.subtitle}>{subline}</Text>
+            </View>
+            <View style={ctaStyles.arrowCircle}>
+              <Ionicons name="arrow-forward" size={22} color={colors.ink} />
+            </View>
+          </View>
+        </LinearGradient>
+      </Pressable>
+    </Animated.View>
+  );
+}
+
+const ctaStyles = StyleSheet.create({
+  touchable: {
+    borderRadius: radii.xl,
+    overflow: "hidden",
+    ...shadows.float,
+  },
+  gradient: {
+    borderRadius: radii.xl,
+    padding: 20,
+    overflow: "hidden",
+  },
+  glow: {
+    position: "absolute",
+    top: -40,
+    right: -40,
+    width: 160,
+    height: 160,
+    borderRadius: 80,
+    backgroundColor: "#7C5CFC",
+    opacity: 0.25,
+  },
+  content: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 16,
+  },
+  textCol: { flex: 1, gap: 4 },
+  label: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 11,
+    color: "rgba(255,255,255,0.65)",
+    letterSpacing: 1.5,
+  },
+  title: {
+    fontFamily: fonts.serif,
+    fontSize: 22,
+    color: "#FFFFFF",
+    letterSpacing: -0.5,
+    marginTop: 2,
+  },
+  subtitle: {
+    fontFamily: fonts.sans,
+    fontSize: 13,
+    color: "rgba(255,255,255,0.7)",
+    marginTop: 2,
+  },
+  arrowCircle: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+    ...shadows.sm,
+  },
+});
 
 // ─── Streak Flame Widget ──────────────────────────────────────
 
 function StreakWidget({ count }: { count: number }) {
-  const DAYS = ["M", "T", "W", "T", "F", "S", "S"];
-  const today = new Date().getDay(); // 0=Sun
-  const dayIndex = today === 0 ? 6 : today - 1;
+  const isDailySessionCompleted = useWordStore(
+    (s) => s.isDailySessionCompleted,
+  );
+  const lastActiveDate = useProgressStore((s) => s.lastActiveDate);
+
+  const todayStr = todayString();
+  // Recompute the week and yesterday when todayStr changes (e.g. midnight
+  // rollover causes a re-render that gets a different todayStr).
+  const weekDates = useMemo(() => buildCurrentWeekDates(), [todayStr]);
+  const yesterdayStr = useMemo(() => {
+    const y = new Date();
+    y.setDate(y.getDate() - 1);
+    return toDateString(y);
+  }, [todayStr]);
+
+  // The stored streak only mutates on activity, so a user who missed a day
+  // could still have a stale count > 0. Re-validate against lastActiveDate:
+  //  - ends today     → streak is current
+  //  - ends yesterday → streak is alive but today isn't done yet
+  //  - older          → streak is broken, treat as 0
+  const { displayCount, streakStart, streakEnd } = useMemo(() => {
+    if (!count || !lastActiveDate) {
+      return { displayCount: 0, streakStart: null, streakEnd: null };
+    }
+
+    let end: string | null = null;
+    if (lastActiveDate === todayStr) end = todayStr;
+    else if (lastActiveDate === yesterdayStr) end = yesterdayStr;
+
+    if (!end) {
+      return { displayCount: 0, streakStart: null, streakEnd: null };
+    }
+
+    const startDate = new Date(end);
+    startDate.setDate(startDate.getDate() - (count - 1));
+    return {
+      displayCount: count,
+      streakStart: toDateString(startDate),
+      streakEnd: end,
+    };
+  }, [count, lastActiveDate, todayStr, yesterdayStr]);
+
+  const weeklyHits = weekDates.reduce((acc, d) => {
+    const s = toDateString(d);
+    return (
+      acc +
+      (streakStart && streakEnd && s >= streakStart && s <= streakEnd ? 1 : 0)
+    );
+  }, 0);
+
+  const todayCompleted = isDailySessionCompleted && lastActiveDate === todayStr;
+
+  const pulseScale = useSharedValue(1);
+  useEffect(() => {
+    pulseScale.value = withRepeat(
+      withSequence(
+        withTiming(1.12, { duration: 900, easing: Easing.inOut(Easing.ease) }),
+        withTiming(1, { duration: 900, easing: Easing.inOut(Easing.ease) }),
+      ),
+      -1,
+      true,
+    );
+  }, []);
+  const pulseStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: pulseScale.value }],
+  }));
 
   return (
-    <LinearGradient
-      colors={["#FF8C00", "#FF6B00", "#E85D04"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-      style={streakStyles.container}
-    >
-      {/* Inner radial glow approximation */}
-      <View style={streakStyles.innerGlow} />
+    <View style={streakStyles.container}>
+      <View style={streakStyles.softGlow} />
 
-      {/* Animated SVG Fire */}
-      <AnimatedFire size={80} />
+      <View style={streakStyles.headerRow}>
+        <View style={streakStyles.fireWrapper}>
+          <AnimatedFire size={36} />
+        </View>
 
-      <Text style={streakStyles.count}>{count}</Text>
-      <Text style={streakStyles.label}>DAY STREAK</Text>
+        <View style={streakStyles.countCol}>
+          <View style={streakStyles.countLine}>
+            <Text style={streakStyles.count}>{displayCount}</Text>
+            <Text style={streakStyles.countUnit}>
+              {displayCount === 1 ? "day" : "days"}
+            </Text>
+          </View>
+          <Text style={streakStyles.subtitle}>
+            {todayCompleted
+              ? "Today locked in — nice."
+              : displayCount > 0
+                ? "Finish today to keep the fire."
+                : "Start a session to spark one."}
+          </Text>
+        </View>
+
+        <View style={streakStyles.weekChip}>
+          <Text style={streakStyles.weekChipValue}>{weeklyHits}/7</Text>
+          <Text style={streakStyles.weekChipLabel}>this week</Text>
+        </View>
+      </View>
 
       <View style={streakStyles.dotsRow}>
-        {DAYS.map((d, i) => {
-          const state =
-            i < dayIndex ? "done" : i === dayIndex ? "today" : "future";
+        {weekDates.map((d, i) => {
+          const dStr = toDateString(d);
+          const isToday = dStr === todayStr;
+          const isFuture = dStr > todayStr;
+          const isInStreak = !!(
+            streakStart &&
+            streakEnd &&
+            dStr >= streakStart &&
+            dStr <= streakEnd
+          );
+
+          const color = DAY_COLORS[i];
+          const todayPending = isToday && !todayCompleted;
+
+          const dotBaseStyle = isInStreak
+            ? { backgroundColor: color, borderWidth: 0 }
+            : todayPending
+              ? {
+                  backgroundColor: colors.card,
+                  borderWidth: 2,
+                  borderColor: color,
+                }
+              : isFuture
+                ? { backgroundColor: colors.borderSoft, borderWidth: 0 }
+                : { backgroundColor: colors.borderSoft, borderWidth: 0 };
+
+          const textColor = isInStreak
+            ? "#FFFFFF"
+            : todayPending
+              ? color
+              : colors.inkLight;
+
           return (
-            <View
-              key={i}
-              style={[
-                streakStyles.dot,
-                state === "done" && streakStyles.dotDone,
-                state === "today" && streakStyles.dotToday,
-                state === "future" && streakStyles.dotFuture,
-              ]}
-            >
-              <Text
+            <View key={i} style={streakStyles.dotSlot}>
+              <Animated.View
                 style={[
-                  streakStyles.dotText,
-                  state === "done" && streakStyles.dotTextDone,
-                  state === "today" && streakStyles.dotTextToday,
+                  streakStyles.dot,
+                  dotBaseStyle,
+                  isInStreak && streakStyles.dotShadow,
+                  todayPending && pulseStyle,
                 ]}
               >
-                {d}
-              </Text>
+                <Text style={[streakStyles.dotText, { color: textColor }]}>
+                  {DAY_LABELS[i]}
+                </Text>
+              </Animated.View>
+              {isToday && <View style={streakStyles.todayMark} />}
             </View>
           );
         })}
       </View>
-    </LinearGradient>
+    </View>
   );
 }
 
 const streakStyles = StyleSheet.create({
   container: {
-    borderRadius: 32,
-    padding: 28,
-    paddingHorizontal: 24,
-    alignItems: "center",
-    gap: 4,
-    position: "relative",
+    backgroundColor: colors.card,
+    borderRadius: radii.xl,
+    padding: 20,
+    gap: 18,
     overflow: "hidden",
-    shadowColor: "#FF6B00",
-    shadowOffset: { width: 0, height: 16 },
-    shadowOpacity: 0.3,
-    shadowRadius: 48,
-    elevation: 16,
+    ...shadows.card,
   },
-  innerGlow: {
+  softGlow: {
     position: "absolute",
-    top: "10%",
-    left: "25%",
-    width: "50%",
-    aspectRatio: 1,
-    borderRadius: 999,
-    backgroundColor: "rgba(255, 200, 50, 0.25)",
+    top: -60,
+    right: -60,
+    width: 180,
+    height: 180,
+    borderRadius: 90,
+    backgroundColor: "#FBBF24",
+    opacity: 0.08,
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  fireWrapper: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: colors.amberSoft,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  countCol: {
+    flex: 1,
+    gap: 2,
+  },
+  countLine: {
+    flexDirection: "row",
+    alignItems: "baseline",
+    gap: 6,
   },
   count: {
     fontFamily: fonts.serif,
-    fontSize: 56,
-    color: "#FFFFFF",
-    textAlign: "center",
-    textShadowColor: "rgba(0,0,0,0.2)",
-    textShadowOffset: { width: 0, height: 2 },
-    textShadowRadius: 12,
-    lineHeight: 56,
+    fontSize: 32,
+    color: colors.ink,
+    letterSpacing: -1,
+    lineHeight: 36,
   },
-  label: {
+  countUnit: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 14,
+    color: colors.ink2,
+  },
+  subtitle: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    color: colors.ink2,
+  },
+  weekChip: {
+    backgroundColor: colors.borderSoft,
+    borderRadius: radii.sm,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    alignItems: "center",
+    gap: 2,
+  },
+  weekChipValue: {
     fontFamily: fonts.sansBold,
     fontSize: 14,
-    color: "rgba(255, 255, 255, 0.9)",
-    letterSpacing: 1,
-    textTransform: "uppercase",
-    textAlign: "center",
-    marginBottom: 20,
+    color: colors.ink,
+    letterSpacing: -0.3,
   },
-  dotsRow: { flexDirection: "row", gap: 6 },
+  weekChipLabel: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 9,
+    color: colors.ink2,
+    letterSpacing: 0.6,
+    textTransform: "uppercase",
+  },
+  dotsRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 2,
+  },
+  dotSlot: {
+    alignItems: "center",
+    gap: 6,
+  },
   dot: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.15)",
   },
-  dotDone: {
-    backgroundColor: "rgba(255, 255, 255, 0.35)",
-    shadowColor: "#FFC832",
-    shadowOpacity: 0.3,
-    shadowRadius: 12,
-  },
-  dotToday: {
-    backgroundColor: "#FFFFFF",
-    shadowColor: "#FFFFFF",
-    shadowOpacity: 0.4,
-    shadowRadius: 16,
-    transform: [{ scale: 1.1 }],
-  },
-  dotFuture: {
-    backgroundColor: "rgba(255, 255, 255, 0.15)",
+  dotShadow: {
+    shadowColor: "#18181B",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.18,
+    shadowRadius: 8,
+    elevation: 3,
   },
   dotText: {
     fontFamily: fonts.sansBold,
-    fontSize: 11,
-    color: "rgba(255, 255, 255, 0.7)",
+    fontSize: 12,
   },
-  dotTextDone: {
-    color: "#FFFFFF",
-  },
-  dotTextToday: {
-    color: "#E85D04",
+  todayMark: {
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.ink,
   },
 });
 
 // ─── Word of the Day Card (Blob Style) ────────────────────────
 
+// Three small green dots scaling in sequence (stagger). All dots share the
+// same cycle length, so once each one's initial delay elapses they remain
+// offset by `LIVE_STAGGER_MS` forever — creating a continuous wave.
+const LIVE_DOT_SIZE = 6;
+const LIVE_DOT_GAP = 4;
+const LIVE_CYCLE_MS = 2000;
+const LIVE_STAGGER_MS = 400;
+const LIVE_PEAK_SCALE = 1.9;
+
+function LiveDot({ delay }: { delay: number }) {
+  const scale = useSharedValue(1);
+
+  useEffect(() => {
+    scale.value = withDelay(
+      delay,
+      withRepeat(
+        withSequence(
+          withTiming(LIVE_PEAK_SCALE, {
+            duration: LIVE_CYCLE_MS / 6,
+            easing: Easing.inOut(Easing.ease),
+          }),
+          withTiming(1, {
+            duration: LIVE_CYCLE_MS,
+            easing: Easing.inOut(Easing.ease),
+          }),
+        ),
+        -1,
+        false,
+      ),
+    );
+  }, []);
+
+  const dotStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+    opacity: interpolate(scale.value, [1, LIVE_PEAK_SCALE], [0.45, 1]),
+  }));
+
+  return <Animated.View style={[liveDotStyles.dot, dotStyle]} />;
+}
+
+function LiveDotPill() {
+  return (
+    <View style={liveDotStyles.row}>
+      <LiveDot delay={0} />
+      <LiveDot delay={LIVE_STAGGER_MS} />
+      <LiveDot delay={LIVE_STAGGER_MS * 2} />
+    </View>
+  );
+}
+
+const liveDotStyles = StyleSheet.create({
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: LIVE_DOT_GAP,
+  },
+  dot: {
+    width: LIVE_DOT_SIZE,
+    height: LIVE_DOT_SIZE,
+    borderRadius: LIVE_DOT_SIZE / 2,
+    backgroundColor: "#10B981",
+  },
+});
+
 function WordOfDayCard() {
   const { words } = useDailyWord();
   const { play } = useAudio();
   const word = words[0];
+
+  const playScale = useSharedValue(1);
+  const onPlayIn = () => {
+    playScale.value = withSpring(0.92, { damping: 12, stiffness: 280 });
+  };
+  const onPlayOut = () => {
+    playScale.value = withSpring(1, { damping: 12, stiffness: 280 });
+  };
+  const playStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: playScale.value }],
+  }));
 
   const w = word ?? {
     word: "Resilient",
@@ -179,27 +534,68 @@ function WordOfDayCard() {
     definition:
       "Able to withstand or recover quickly from difficult conditions",
     partOfSpeech: "adjective",
-    fields: ["engineering"],
   };
 
   return (
     <View style={wotdStyles.wrapper}>
-      <AccentBlob placement="top-right" />
+      <AccentBlob placement="top-right" colorTheme="purple" opacity={0.18} />
+      <AccentBlob
+        placement="bottom-left"
+        colorTheme="blue"
+        opacity={0.12}
+        size={160}
+      />
       <View style={wotdStyles.card}>
-        <Text style={wotdStyles.label}>WORD OF THE DAY</Text>
-        <Text style={wotdStyles.word}>{w.word}</Text>
-        <Text style={wotdStyles.phonetic}>{w.phonetic}</Text>
-        <View style={wotdStyles.divider} />
-        <Text style={wotdStyles.definition}>{w.definition}</Text>
-        <View style={wotdStyles.footer}>
-          <View style={wotdStyles.fieldChip}>
-            <Text style={wotdStyles.fieldText}>
-              {(w.fields?.[0] ?? "general").charAt(0).toUpperCase() +
-                (w.fields?.[0] ?? "general").slice(1)}
-            </Text>
+        <View style={wotdStyles.topRow}>
+          {(w as any).partOfSpeech && (
+            <View style={wotdStyles.posChip}>
+              <Text style={wotdStyles.posText}>{(w as any).partOfSpeech}</Text>
+            </View>
+          )}
+          <LiveDotPill />
+        </View>
+
+        <View style={wotdStyles.wordRow}>
+          <View style={wotdStyles.wordCol}>
+            <View style={wotdStyles.wordLine}>
+              <Text
+                style={wotdStyles.word}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+              >
+                {w.word}
+              </Text>
+              {w.phonetic ? (
+                <Text style={wotdStyles.phonetic} numberOfLines={1}>
+                  {w.phonetic}
+                </Text>
+              ) : null}
+            </View>
           </View>
-          <Pressable style={wotdStyles.playBtn} onPress={() => play(w.word)}>
-            <Ionicons name="play" size={14} color="#fff" />
+          <Animated.View style={playStyle}>
+            <Pressable
+              onPressIn={onPlayIn}
+              onPressOut={onPlayOut}
+              onPress={() => play(w.word)}
+              style={wotdStyles.playBtn}
+              hitSlop={8}
+            >
+              <Ionicons name="play" size={14} color="#fff" />
+            </Pressable>
+          </Animated.View>
+        </View>
+
+        <View style={wotdStyles.divider} />
+
+        <Text style={wotdStyles.definition}>{w.definition}</Text>
+
+        <View style={wotdStyles.footer}>
+          <Pressable
+            onPress={() => router.push("/celebExplains")}
+            style={wotdStyles.learnMore}
+          >
+            <Text style={wotdStyles.learnMoreText}>Learn more</Text>
+            <Ionicons name="arrow-forward" size={14} color={colors.iris} />
           </Pressable>
         </View>
       </View>
@@ -211,85 +607,159 @@ const wotdStyles = StyleSheet.create({
   wrapper: { position: "relative" },
   card: {
     backgroundColor: colors.card,
-    borderRadius: 24,
+    borderRadius: radii.xl,
     padding: 24,
-    gap: 10,
+    gap: 8,
     shadowColor: "#7C5CFC",
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.12,
-    shadowRadius: 32,
-    elevation: 8,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.15,
+    shadowRadius: 36,
+    elevation: 10,
   },
-  label: {
-    fontFamily: fonts.sansSemiBold,
+  topRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  posChip: {
+    backgroundColor: colors.irisSoft,
+    borderRadius: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  posText: {
+    fontFamily: fonts.sansMedium,
     fontSize: 11,
-    color: colors.ink2,
-    letterSpacing: 1.5,
-    textTransform: "uppercase",
+    color: colors.iris,
+    textTransform: "lowercase",
+  },
+  wordRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 12,
+    marginVertical: 4,
+  },
+  wordCol: {
+    flex: 1,
+    minWidth: 0, // lets the inner row shrink instead of pushing the play button
+  },
+  wordLine: {
+    flexDirection: "row",
+    alignItems: "baseline",
+    flexWrap: "wrap",
+    columnGap: 10,
+    rowGap: 2,
   },
   word: {
     fontFamily: fonts.serif,
-    fontSize: 30,
+    fontSize: 36,
     color: colors.ink,
-    letterSpacing: -0.5,
+    letterSpacing: -1,
+    lineHeight: 42,
+    flexShrink: 1,
   },
-  phonetic: { fontFamily: fonts.mono, fontSize: 13, color: colors.iris },
-  divider: { height: 1, backgroundColor: colors.border, marginVertical: 4 },
+  phonetic: {
+    fontFamily: fonts.mono,
+    fontSize: 13,
+    color: colors.iris,
+    flexShrink: 1,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: colors.border,
+    marginVertical: 8,
+  },
   definition: {
     fontFamily: fonts.sans,
-    fontSize: 14,
+    fontSize: 15,
     color: colors.ink2,
-    lineHeight: 21,
+    lineHeight: 22,
   },
   footer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginTop: 6,
+    marginTop: 10,
   },
-  fieldChip: {
-    backgroundColor: colors.irisSoft,
-    borderRadius: 6,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
+  learnMore: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
   },
-  fieldText: { fontFamily: fonts.sansMedium, fontSize: 12, color: colors.iris },
+  learnMoreText: {
+    fontFamily: fonts.sansSemiBold,
+    fontSize: 13,
+    color: colors.iris,
+  },
   playBtn: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
+    width: 38,
+    height: 38,
+    borderRadius: 19,
     backgroundColor: colors.ink,
     alignItems: "center",
     justifyContent: "center",
+    ...shadows.button,
   },
 });
 
 // ─── Progress Section ─────────────────────────────────────────
 
 function ProgressSection() {
-  const { sessionsCompleted, weeklyGoal, wordsMastered, totalWords } =
-    MOCK_PROGRESS;
+  const userWords = useProgressStore((s) => s.userWords);
+  const wordCache = useWordStore((s) => s.wordCache);
+
+  const { mastered, learning, struggling } = useMemo(() => {
+    // Only count words that actually exist in the words collection
+    const all = Object.values(userWords).filter((w) => wordCache[w.wordId]);
+    const mastered = all.filter((w) => w.status === "mastered").length;
+    const struggling = all.filter((w) => {
+      if (w.status !== "learning") return false;
+      const total = w.totalAttempts;
+      if (total < 3) return false;
+      const correct = Number(w.correctAttempts);
+      return correct / total < 0.5;
+    }).length;
+    const learning =
+      all.filter((w) => w.status === "learning" || w.status === "new").length -
+      struggling;
+    return { mastered, learning: Math.max(0, learning), struggling };
+  }, [userWords, wordCache]);
 
   return (
     <View style={progStyles.wrapper}>
-      <AccentBlob placement="bottom-left" />
+      <AccentBlob placement="bottom-left" colorTheme="green" opacity={0.18} />
       <View style={progStyles.container}>
         <View style={progStyles.row}>
           <ProgressCard
-            label="Weekly Goal"
-            value={sessionsCompleted}
-            total={weeklyGoal}
-            gradient={["#2DD4A8", "#059669"]}
-            icon="checkmark-circle"
-          />
-          <ProgressCard
-            label="Mastery"
-            value={wordsMastered}
-            total={totalWords}
+            label="Mastered"
+            value={mastered}
             gradient={["#7C5CFC", "#5B3FD4"]}
             icon="school"
+            color="#7C5CFC"
+            delay={0}
+          />
+          <ProgressCard
+            label="Learning"
+            value={learning}
+            gradient={["#10B981", "#059669"]}
+            icon="book"
+            color="#10B981"
+            delay={120}
+          />
+          <ProgressCard
+            label="Struggling"
+            value={struggling}
+            gradient={["#F59E0B", "#D97706"]}
+            icon="flame"
+            color="#F59E0B"
+            delay={240}
           />
         </View>
+        <Text style={progStyles.hint}>
+          Words added on the Review page count as Learning.
+        </Text>
       </View>
     </View>
   );
@@ -298,17 +768,27 @@ function ProgressSection() {
 function ProgressCard({
   label,
   value,
-  total,
   gradient,
   icon,
+  color,
+  delay = 0,
 }: {
   label: string;
   value: number;
-  total: number;
   gradient: [string, string];
   icon: string;
+  color: string;
+  delay?: number;
 }) {
-  const pct = total > 0 ? Math.min(value / total, 1) : 0;
+  const countVal = useSharedValue(0);
+  useEffect(() => {
+    countVal.value = withDelay(
+      delay,
+      withTiming(value, { duration: 800, easing: Easing.out(Easing.cubic) }),
+    );
+  }, [value, delay]);
+
+  const animatedCount = useAnimatedStyle(() => ({})); // trigger re-render
 
   return (
     <View style={progStyles.card}>
@@ -318,54 +798,52 @@ function ProgressCard({
         end={{ x: 1, y: 1 }}
         style={progStyles.iconBg}
       >
-        <Ionicons name={icon as any} size={18} color="#fff" />
+        <Ionicons name={icon as any} size={16} color="#fff" />
       </LinearGradient>
+
+      <Text style={[progStyles.cardValue, { color }]}>{value}</Text>
       <Text style={progStyles.cardLabel}>{label}</Text>
-      <Text style={progStyles.cardValue}>
-        {value}
-        <Text style={progStyles.cardTotal}>/{total}</Text>
-      </Text>
-      <View style={progStyles.track}>
-        <LinearGradient
-          colors={gradient}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={[progStyles.fill, { width: `${pct * 100}%` }]}
-        />
-      </View>
     </View>
   );
 }
 
 const progStyles = StyleSheet.create({
   wrapper: { position: "relative" },
-  container: { gap: 12, position: "relative" },
-  row: { flexDirection: "row", gap: 12 },
+  container: { gap: 8, position: "relative" },
+  row: { flexDirection: "row", gap: 10 },
   card: {
     flex: 1,
     backgroundColor: colors.card,
     borderRadius: radii.lg,
-    padding: 16,
-    gap: 8,
+    padding: 14,
+    gap: 4,
     ...shadows.card,
   },
   iconBg: {
-    width: 32,
-    height: 32,
-    borderRadius: 10,
+    width: 30,
+    height: 30,
+    borderRadius: 9,
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: 6,
   },
-  cardLabel: { fontFamily: fonts.sansMedium, fontSize: 13, color: colors.ink2 },
-  cardValue: { fontFamily: fonts.sansBold, fontSize: 24, color: colors.ink },
-  cardTotal: { fontFamily: fonts.sans, fontSize: 16, color: colors.inkLight },
-  track: {
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: colors.borderSoft,
-    overflow: "hidden",
+  cardValue: {
+    fontFamily: fonts.sansBold,
+    fontSize: 28,
+    letterSpacing: -0.5,
   },
-  fill: { height: "100%", borderRadius: 3 },
+  cardLabel: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 12,
+    color: colors.ink2,
+  },
+  hint: {
+    fontFamily: fonts.sans,
+    fontSize: 11,
+    color: colors.inkLight,
+    textAlign: "center",
+    marginTop: 4,
+  },
 });
 
 // ─── Module Cards ─────────────────────────────────────────────
@@ -373,55 +851,81 @@ const progStyles = StyleSheet.create({
 function ModuleCards() {
   return (
     <View style={modStyles.wrapper}>
-      <AccentBlob placement="bottom-right" />
+      <AccentBlob placement="bottom-right" colorTheme="orange" opacity={0.12} />
       <View style={modStyles.container}>
-        <Pressable
+        <ModuleCard
           onPress={() => router.push("/modules/pronunciation")}
-          style={modStyles.card}
-        >
-          <LinearGradient
-            colors={[colors.iris, colors.irisDeeper]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={modStyles.gradient}
-          >
-            <View style={modStyles.inner}>
-              <View style={modStyles.text}>
-                <Text style={modStyles.title}>Pronounce like a Pro</Text>
-                <Text style={modStyles.subtitle}>Audio & phonics practice</Text>
-              </View>
-              <View style={modStyles.iconCircle}>
-                <Ionicons name="mic" size={22} color={colors.iris} />
-              </View>
-            </View>
-          </LinearGradient>
-        </Pressable>
-
-        <Pressable
+          title="Pronounce like a Pro"
+          subtitle="Audio & phonics practice"
+          icon="mic"
+          gradient={[colors.iris, colors.irisDeeper]}
+          iconColor={colors.iris}
+        />
+        <ModuleCard
           onPress={() => router.push("/modules/letters")}
-          style={modStyles.card}
-        >
-          <LinearGradient
-            colors={["#38BDF8", "#0284C7"]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={modStyles.gradient}
-          >
-            <View style={modStyles.inner}>
-              <View style={modStyles.text}>
-                <Text style={modStyles.title}>Letters Overseas</Text>
-                <Text style={modStyles.subtitle}>
-                  Professional emails & writing
-                </Text>
-              </View>
-              <View style={modStyles.iconCircle}>
-                <Ionicons name="mail" size={22} color="#0284C7" />
-              </View>
-            </View>
-          </LinearGradient>
-        </Pressable>
+          title="Letters Overseas"
+          subtitle="Professional emails & writing"
+          icon="mail"
+          gradient={["#38BDF8", "#0284C7"]}
+          iconColor="#0284C7"
+        />
       </View>
     </View>
+  );
+}
+
+function ModuleCard({
+  onPress,
+  title,
+  subtitle,
+  icon,
+  gradient,
+  iconColor,
+}: {
+  onPress: () => void;
+  title: string;
+  subtitle: string;
+  icon: string;
+  gradient: [string, string];
+  iconColor: string;
+}) {
+  const scale = useSharedValue(1);
+  const onIn = () => {
+    scale.value = withSpring(0.98, { damping: 15, stiffness: 300 });
+  };
+  const onOut = () => {
+    scale.value = withSpring(1, { damping: 15, stiffness: 300 });
+  };
+  const style = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+  }));
+
+  return (
+    <Animated.View style={style}>
+      <Pressable
+        onPressIn={onIn}
+        onPressOut={onOut}
+        onPress={onPress}
+        style={modStyles.card}
+      >
+        <LinearGradient
+          colors={gradient}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={modStyles.gradient}
+        >
+          <View style={modStyles.inner}>
+            <View style={modStyles.text}>
+              <Text style={modStyles.title}>{title}</Text>
+              <Text style={modStyles.subtitle}>{subtitle}</Text>
+            </View>
+            <View style={modStyles.iconCircle}>
+              <Ionicons name={icon as any} size={22} color={iconColor} />
+            </View>
+          </View>
+        </LinearGradient>
+      </Pressable>
+    </Animated.View>
   );
 }
 
@@ -447,7 +951,7 @@ const modStyles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 14,
-    backgroundColor: "rgba(255,255,255,0.9)",
+    backgroundColor: "rgba(255,255,255,0.92)",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -456,9 +960,18 @@ const modStyles = StyleSheet.create({
 // ─── Main Home Screen ─────────────────────────────────────────
 
 export default function HomeScreen() {
+  useTabFocusSync();
   const user = useCurrentUser();
   const isGuest = useIsGuest();
   const streak = useStreak();
+  const isDailySessionCompleted = useWordStore(
+    (s) => s.isDailySessionCompleted,
+  );
+  const lastActiveDate = useProgressStore((s) => s.lastActiveDate);
+
+  const firstName = user?.name ? user.name.split(" ")[0] : null;
+  const todayCompleted =
+    isDailySessionCompleted && lastActiveDate === todayString();
 
   return (
     <SafeAreaView style={styles.container}>
@@ -467,24 +980,40 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
       >
         {/* Greeting */}
-        <Text style={styles.greeting}>
-          {user?.name ? `Hello, ${user.name}` : "Good morning"}
-        </Text>
+        <View style={styles.header}>
+          <Text style={styles.dateLabel}>{getFormattedDate()}</Text>
+          <Text style={styles.greeting}>{getGreeting(firstName)}</Text>
+        </View>
+
         {/* Guest banner */}
         {isGuest && (
           <Pressable
             style={styles.guestAlert}
             onPress={() => router.push("/(onboarding)/auth/signup")}
           >
-            <Ionicons name="alert-circle" size={20} color={colors.amberText} />
+            <View style={styles.guestIconWrap}>
+              <Ionicons
+                name="alert-circle"
+                size={18}
+                color={colors.amberText}
+              />
+            </View>
             <Text style={styles.guestAlertText}>
               Create an account to save your progress
             </Text>
+            <Ionicons
+              name="chevron-forward"
+              size={16}
+              color={colors.amberText}
+            />
           </Pressable>
         )}
 
         {/* Streak Widget */}
         <StreakWidget count={streak} />
+
+        {/* Daily CTA (only when today's session isn't done) */}
+        {!todayCompleted && <DailyCTA streak={streak} />}
 
         {/* Word of the Day */}
         <View style={styles.section}>
@@ -512,28 +1041,48 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   content: { padding: 14, gap: 20, paddingBottom: 100 },
 
+  header: {
+    gap: 4,
+    marginTop: 4,
+  },
+  dateLabel: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 12,
+    color: colors.ink2,
+    letterSpacing: 0.8,
+    textTransform: "uppercase",
+  },
   greeting: {
     fontFamily: fonts.serif,
-    fontSize: 28,
+    fontSize: 30,
     color: colors.ink,
-    letterSpacing: -0.5,
+    letterSpacing: -0.7,
+    lineHeight: 36,
   },
 
   guestAlert: {
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: colors.amberSoft,
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     paddingVertical: 12,
-    borderRadius: radii.sm,
-    marginBottom: 24,
-    gap: 12,
+    borderRadius: radii.md,
+    gap: 10,
     borderWidth: 1,
     borderColor: "#FDE68A",
   },
+  guestIconWrap: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: "#FEF3C7",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   guestAlertText: {
+    flex: 1,
     fontFamily: fonts.sansMedium,
-    fontSize: 14,
+    fontSize: 13,
     color: colors.amberText,
   },
 

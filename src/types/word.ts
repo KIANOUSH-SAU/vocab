@@ -1,5 +1,3 @@
-export type Field = "engineering" | "health" | "law" | "sports" | "education";
-
 export type Level = "A1" | "A2" | "B1" | "B2" | "C1";
 
 export type PartOfSpeech = "noun" | "verb" | "adjective" | "adverb" | "other";
@@ -16,8 +14,8 @@ export interface Word {
   definition: string;
   exampleSentence: string;
   contextPassage: string;
+  distractors?: string[];
   level: Level;
-  fields: Field[];
   usabilityScore: number;
   audioUrl?: string;
 }
@@ -30,7 +28,7 @@ export interface UserWord {
   nextReviewDate: string;
   intervalIndex: IntervalIndex;
   totalAttempts: number;
-  correctAttempts: number | string; // WARNING: Stored as 'text' in Appwrite DB
+  correctAttempts: number;
 }
 
 export interface WordScore {

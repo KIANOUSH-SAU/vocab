@@ -29,9 +29,10 @@ import Animated, {
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { Ionicons } from "@expo/vector-icons";
 import { BackButton } from "@components/ui/BackButton";
-import { useTodaysWords } from "@store/wordStore";
+import { useWordStore, useTodaysWords } from "@store/wordStore";
 import { useExerciseSession } from "@hooks/useExerciseSession";
 import { useProgressStore } from "@store/progressStore";
+import { useCurrentUser } from "@store/userStore";
 import type { Word } from "@/types";
 import {
   colors,
@@ -399,11 +400,18 @@ function MultipleChoiceExercise({
 
   // Build 4 options: 1 correct + 3 distractors
   const options = useMemo(() => {
-    const distractorPool = allWords
-      .filter((w) => w.id !== word.id)
-      .map((w) => w.definition);
+    let distractorPool = word.distractors ? [...word.distractors] : [];
 
-    // If not enough unique distractors, add modified versions
+    // Fallback: if missing semantic distractors, pick from other words
+    if (distractorPool.length < 3) {
+      const otherDefs = allWords
+        .filter((w) => w.id !== word.id)
+        .map((w) => w.definition);
+      const shuffledOthers = [...otherDefs].sort(() => Math.random() - 0.5);
+      distractorPool = [...distractorPool, ...shuffledOthers].slice(0, 3);
+    }
+
+    // If STILL not enough unique distractors, add modified versions
     while (distractorPool.length < 3) {
       const base =
         distractorPool.length > 0
@@ -521,7 +529,16 @@ function SwipeExercise({
         isTrue: true,
       };
     }
-    // Pick a wrong definition from another word
+    
+    // Pick a wrong definition from semantic distractors if available
+    if (word.distractors && word.distractors.length > 0) {
+      return {
+        premise: word.distractors[Math.floor(Math.random() * word.distractors.length)],
+        isTrue: false,
+      };
+    }
+
+    // Fallback: Pick a wrong definition from another word
     const others = allWords.filter((w) => w.id !== word.id);
     const wrongWord =
       others.length > 0
@@ -531,7 +548,7 @@ function SwipeExercise({
       premise: wrongWord ? wrongWord.definition : "An unknown meaning",
       isTrue: false,
     };
-  }, [word.id]);
+  }, [word.id, word.distractors]);
 
   const translateX = useSharedValue(0);
   const startX = useSharedValue(0);
@@ -908,15 +925,13 @@ const explanationStyles = StyleSheet.create({
 function ResultsScreen({
   stats,
 }: {
-  stats: { correct: number; wrong: number; skipped: number; totalCards: number; durationMs: number };
+  stats: { correct: number; wrong: number; skipped: number; totalCards: number };
 }) {
-  const checkAndUpdateStreak = useProgressStore(
-    (s) => s.checkAndUpdateStreak
-  );
   const setSessionStats = useProgressStore((s) => s.setSessionStats);
 
+  // Streak is updated by the page-level effect when isComplete flips to true
+  // (see SessionScreen below). We only persist stats here.
   useEffect(() => {
-    checkAndUpdateStreak();
     setSessionStats(stats);
   }, []);
 
@@ -924,10 +939,6 @@ function ResultsScreen({
     stats.totalCards > 0
       ? Math.round((stats.correct / stats.totalCards) * 100)
       : 0;
-  const minutes = Math.floor(stats.durationMs / 60000);
-  const seconds = Math.floor((stats.durationMs % 60000) / 1000);
-  const timeStr =
-    minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
 
   // Animate the score circle
   const scoreProgress = useSharedValue(0);
@@ -997,13 +1008,6 @@ function ResultsScreen({
             />
             <Text style={resultStyles.statValue}>{stats.skipped}</Text>
             <Text style={resultStyles.statLabel}>Skipped</Text>
-          </View>
-          <View style={resultStyles.statItem}>
-            <View
-              style={[resultStyles.statDot, { backgroundColor: colors.iris }]}
-            />
-            <Text style={resultStyles.statValue}>{timeStr}</Text>
-            <Text style={resultStyles.statLabel}>Time</Text>
           </View>
         </View>
 
@@ -1194,7 +1198,19 @@ export default function LearningSession() {
   const progressPercent =
     progress.total > 0 ? (progress.completed / progress.total) * 100 : 0;
 
-  // Empty state
+  const { checkAndUpdateStreak } = useProgressStore();
+  const { setDailySessionCompleted } = useWordStore();
+
+  const user = useCurrentUser();
+
+  useEffect(() => {
+    if (isComplete) {
+      setDailySessionCompleted(true);
+      checkAndUpdateStreak(user?.id);
+    }
+  }, [isComplete, user?.id]);
+
+  // Loading state
   if (todaysWords.length === 0) {
     return (
       <LinearGradient

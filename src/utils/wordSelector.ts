@@ -6,14 +6,13 @@ export function selectDailyWords(
   allWords: Word[],
   userWords: Record<string, UserWord>,
   userLevel: Level,
-  userFields: Field[],
   limit?: number
 ): Word[] {
   const newLimit = limit ?? NEW_WORDS_PER_DAY
   const reviewLimit = limit ? 0 : REVIEW_WORDS_PER_DAY
 
   const levelWords = allWords.filter(
-    w => w.level === userLevel && w.fields.some(f => userFields.includes(f))
+    w => w.level === userLevel
   )
 
   const masteredIds = new Set(

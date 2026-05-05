@@ -16,8 +16,7 @@ import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
 import { BackButton } from "@components/ui/BackButton";
 
 export default function PlacementTestScreen() {
-  const { fields, guest } = useLocalSearchParams<{
-    fields: string;
+  const { guest } = useLocalSearchParams<{
     guest: string;
   }>();
   const {
@@ -58,7 +57,6 @@ export default function PlacementTestScreen() {
         pathname: "/(onboarding)/level-result",
         params: {
           level: classifiedLevel,
-          fields,
           guest,
         },
       });

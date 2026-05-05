@@ -1,0 +1,3254 @@
+{
+  "ability": {
+    "word": "ability",
+    "definition": "The skill or power to do something well.",
+    "exampleSentence": "She has the ability to speak three languages.",
+    "contextPassage": "We use 'ability' to talk about what a person can do. For example, a good swimmer has the ability to swim fast."
+  },
+  "able": {
+    "word": "able",
+    "definition": "Having the skill or power to do something.",
+    "exampleSentence": "He was able to finish his homework before dinner.",
+    "contextPassage": "We often say someone is 'able to' do something. It means they can do it without a big problem."
+  },
+  "abroad": {
+    "word": "abroad",
+    "definition": "In or to a country that is not your own country.",
+    "exampleSentence": "My sister is going to study abroad next year.",
+    "contextPassage": "People go abroad for work, travel, or school. Living abroad means you live in a different country."
+  },
+  "accept": {
+    "word": "accept",
+    "definition": "To say yes to something that someone gives or offers you.",
+    "exampleSentence": "She accepted the gift from her friend with a smile.",
+    "contextPassage": "You can accept an invitation to a party or a job offer. When you accept something, you agree to take it."
+  },
+  "accident": {
+    "word": "accident",
+    "definition": "A bad thing that happens by chance and that nobody planned.",
+    "exampleSentence": "He had a car accident on the way to work.",
+    "contextPassage": "Accidents can happen at home, on the road, or at school. We say something was an accident when nobody wanted it to happen."
+  },
+  "according to": {
+    "word": "according to",
+    "definition": "As said by someone, or as shown in something.",
+    "exampleSentence": "According to the news, it will rain tomorrow.",
+    "contextPassage": "We use 'according to' before a person or source of information. For example, according to my teacher, the test is on Friday."
+  },
+  "act": {
+    "word": "act",
+    "definition": "Something that a person does; an action.",
+    "exampleSentence": "Helping the old woman was a kind act.",
+    "contextPassage": "An act is one thing that a person does. A kind act, like sharing food, can make someone very happy."
+  },
+  "active": {
+    "word": "active",
+    "definition": "Doing many things and moving around a lot.",
+    "exampleSentence": "My grandfather is very active and walks every day.",
+    "contextPassage": "An active person does not sit still for a long time. Playing sports or working in the garden are good ways to stay active."
+  },
+  "actually": {
+    "word": "actually",
+    "definition": "Used to say what is really true, sometimes to show surprise.",
+    "exampleSentence": "I thought the film was short, but it was actually very long.",
+    "contextPassage": "We use 'actually' to show that the real situation is different. For example, you can say the food looks bad but it is actually delicious."
+  },
+  "adult": {
+    "word": "adult",
+    "definition": "A person who is fully grown and is no longer a child.",
+    "exampleSentence": "Only adults can buy tickets for that event.",
+    "contextPassage": "In most countries, a person becomes an adult at the age of eighteen. Adults can make their own decisions and live alone."
+  },
+  "advantage": {
+    "word": "advantage",
+    "definition": "Something that helps you more than other people or things.",
+    "exampleSentence": "Speaking English is a big advantage when you travel.",
+    "contextPassage": "An advantage gives you a better chance to do well. For example, being tall is an advantage in basketball."
+  },
+  "adventure": {
+    "word": "adventure",
+    "definition": "An exciting or dangerous experience in a new place or situation.",
+    "exampleSentence": "Their trip to the jungle was a real adventure.",
+    "contextPassage": "People who like adventures enjoy trying new and exciting things. Hiking in the mountains or sailing the sea can be a great adventure."
+  },
+  "advertise": {
+    "word": "advertise",
+    "definition": "To tell many people about something, like a product or event, so they know about it.",
+    "exampleSentence": "The shop will advertise its big sale on social media.",
+    "contextPassage": "Companies advertise to get more customers. You can advertise a job, a product, or an event."
+  },
+  "advertisement": {
+    "word": "advertisement",
+    "definition": "A message that tells people about a product or service so they will buy it.",
+    "exampleSentence": "I saw an advertisement for new shoes on TV last night.",
+    "contextPassage": "Advertisements appear on TV, online, and in magazines. A common short word for advertisement is 'ad'."
+  },
+  "advertising": {
+    "word": "advertising",
+    "definition": "The activity of telling many people about a product or service to get them to buy it.",
+    "exampleSentence": "The company is advertising its new drink on the radio.",
+    "contextPassage": "Advertising helps businesses find new customers. You will see advertising almost everywhere you go."
+  },
+  "against": {
+    "word": "against",
+    "definition": "Moving or going in the opposite direction to something.",
+    "exampleSentence": "It was hard to walk against the strong wind today.",
+    "contextPassage": "You can use 'against' to talk about direction or opposition. For example, swimming against a current is very difficult."
+  },
+  "airline": {
+    "word": "airline",
+    "definition": "A company that uses planes to carry people or goods from place to place.",
+    "exampleSentence": "We booked our tickets with a cheap airline last week.",
+    "contextPassage": "An airline flies to many different cities and countries. You check in at the airport before your airline flight."
+  },
+  "alive": {
+    "word": "alive",
+    "definition": "Still living and not dead.",
+    "exampleSentence": "The small plant is still alive after the cold winter.",
+    "contextPassage": "You can use 'alive' to talk about people, animals, or plants. The opposite of alive is dead."
+  },
+  "allow": {
+    "word": "allow",
+    "definition": "To say that someone can do something or have something.",
+    "exampleSentence": "The teacher will allow us to use a dictionary in the test.",
+    "contextPassage": "Parents allow or do not allow their children to do things. Rules at work or school also allow or stop certain actions."
+  },
+  "almost": {
+    "word": "almost",
+    "definition": "Very close to something but not quite there or not exactly.",
+    "exampleSentence": "I almost missed the bus to school this morning.",
+    "contextPassage": "Use 'almost' when something is very close to being true. For example, the bag is almost full means a little space is left."
+  },
+  "alone": {
+    "word": "alone",
+    "definition": "Without any other people; by yourself.",
+    "exampleSentence": "She sat alone at a table in the café.",
+    "contextPassage": "Being alone means no one else is with you. Some people enjoy time alone, but others feel lonely."
+  },
+  "along": {
+    "word": "along",
+    "definition": "Moving forward or going together with someone or something.",
+    "exampleSentence": "Come along with us to the market this afternoon.",
+    "contextPassage": "You can bring someone along when you go somewhere. 'Along' is often used with verbs like come, bring, or walk."
+  },
+  "already": {
+    "word": "already",
+    "definition": "Something that happened before now or before you expected it.",
+    "exampleSentence": "I was surprised because she had already finished her homework.",
+    "contextPassage": "Use 'already' to show that something happened sooner than expected. For example, the train already left means it left before you arrived."
+  },
+  "although": {
+    "word": "although",
+    "definition": "Used to introduce a fact that makes the other part of the sentence surprising.",
+    "exampleSentence": "Although it was raining, we went to the park.",
+    "contextPassage": "Use 'although' to connect two ideas that seem opposite. For example, although he was tired, he kept working."
+  },
+  "among": {
+    "word": "among",
+    "definition": "In a group of people or things, mixed together with them.",
+    "exampleSentence": "She found her keys among the books on the table.",
+    "contextPassage": "You can use 'among' when something is inside a group. For example, one student among thirty classmates."
+  },
+  "amount": {
+    "word": "amount",
+    "definition": "How much of something there is in total.",
+    "exampleSentence": "I was surprised by the large amount of food on the table.",
+    "contextPassage": "Use 'amount' for things you cannot count, like water or money. For example, a small amount of sugar."
+  },
+  "ancient": {
+    "word": "ancient",
+    "definition": "A person who is very, very old.",
+    "exampleSentence": "The ancient sat quietly in the corner of the room.",
+    "contextPassage": "This word is not very common as a noun. People more often use it as an adjective to describe old things."
+  },
+  "ankle": {
+    "word": "ankle",
+    "definition": "The joint between your foot and your leg.",
+    "exampleSentence": "She hurt her ankle when she fell on the stairs.",
+    "contextPassage": "The ankle helps you walk and move your foot up and down. You can twist your ankle if you step the wrong way."
+  },
+  "any more": {
+    "word": "any more",
+    "definition": "Used to say something has stopped or no longer happens.",
+    "exampleSentence": "He doesn't play football any more.",
+    "contextPassage": "Use 'any more' in negative sentences to show a change. For example, she doesn't live here any more."
+  },
+  "anyway": {
+    "word": "anyway",
+    "definition": "Used to say something is true or happens even so.",
+    "exampleSentence": "It was raining, but we went to the park anyway.",
+    "contextPassage": "'Anyway' can also go back to a topic in a conversation. For example, anyway, let me tell you what happened."
+  },
+  "anywhere": {
+    "word": "anywhere",
+    "definition": "In, at, or to any place.",
+    "exampleSentence": "I can't find my phone anywhere in the house.",
+    "contextPassage": "Use 'anywhere' in questions and negative sentences. For example, did you go anywhere last weekend?"
+  },
+  "app": {
+    "word": "app",
+    "definition": "A small program you use on a phone or tablet.",
+    "exampleSentence": "I downloaded a new app to learn Spanish on my phone.",
+    "contextPassage": "Apps can help you with many things like maps, music, or shopping. You can find free apps in an app store."
+  },
+  "appear": {
+    "word": "appear",
+    "definition": "To become visible or come into view.",
+    "exampleSentence": "A cat suddenly appeared from behind the wall.",
+    "contextPassage": "'Appear' means something or someone comes so you can see them. For example, the sun appeared after the rain stopped."
+  },
+  "argue": {
+    "word": "argue",
+    "definition": "To disagree with someone and talk in an angry way.",
+    "exampleSentence": "The two brothers argued about the TV remote.",
+    "contextPassage": "When people argue, they each say why they think they are right. You can argue with a friend or a family member."
+  },
+  "argument": {
+    "word": "argument",
+    "definition": "An angry talk between people who do not agree.",
+    "exampleSentence": "They had a big argument about money last night.",
+    "contextPassage": "An argument happens when two or more people strongly disagree. After an argument, people sometimes feel sad or angry."
+  },
+  "army": {
+    "word": "army",
+    "definition": "A large group of soldiers who fight on land.",
+    "exampleSentence": "The army moved into the town early in the morning.",
+    "contextPassage": "A country's army protects the country on the ground. Soldiers train hard before they join the army."
+  },
+  "arrange": {
+    "word": "arrange",
+    "definition": "To plan or organize something so it is ready or in order.",
+    "exampleSentence": "She will arrange the chairs in a circle for the meeting.",
+    "contextPassage": "You can arrange a party or a trip before it happens. People also arrange flowers in a vase."
+  },
+  "asleep": {
+    "word": "asleep",
+    "definition": "In the state of sleeping; not awake.",
+    "exampleSentence": "The baby was asleep in her room by eight o'clock.",
+    "contextPassage": "You fall asleep when you stop being awake. People are often asleep at night."
+  },
+  "assistant": {
+    "word": "assistant",
+    "definition": "A person who helps someone else with their work or tasks.",
+    "exampleSentence": "The assistant helped the doctor with the patient.",
+    "contextPassage": "An assistant works with another person to make their job easier. You can find an assistant in offices, shops, and hospitals."
+  },
+  "attack": {
+    "word": "attack",
+    "definition": "A sudden act of violence against a person or place.",
+    "exampleSentence": "The dog made a sudden attack on the smaller animal.",
+    "contextPassage": "An attack can happen in a war or in the street. People try to stay safe and prevent attacks."
+  },
+  "attention": {
+    "word": "attention",
+    "definition": "When you focus your mind on something and listen or watch carefully.",
+    "exampleSentence": "The teacher asked the students to pay attention to the board.",
+    "contextPassage": "You give your attention when you listen carefully to someone. It is hard to pay attention when there is a lot of noise."
+  },
+  "attractive": {
+    "word": "attractive",
+    "definition": "Nice to look at or pleasing in some way.",
+    "exampleSentence": "The shop window looked very attractive with its colorful display.",
+    "contextPassage": "People often say a place or a person is attractive when they like what they see. Bright colors and good design can make something attractive."
+  },
+  "audience": {
+    "word": "audience",
+    "definition": "A group of people who watch or listen to a show, speech, or performance.",
+    "exampleSentence": "The audience clapped loudly at the end of the concert.",
+    "contextPassage": "An audience can be big or small. People in the audience sit together and watch the same thing."
+  },
+  "author": {
+    "word": "author",
+    "definition": "A person who writes a book or story.",
+    "exampleSentence": "My favorite author wrote a new book last year.",
+    "contextPassage": "An author spends a lot of time writing stories or books. Some authors write for children and some write for adults."
+  },
+  "available": {
+    "word": "available",
+    "definition": "Ready to use or possible to get at this time.",
+    "exampleSentence": "The doctor is available to see you on Monday afternoon.",
+    "contextPassage": "Something available is not busy or taken. You can ask if a room or a person is available before you make a plan."
+  },
+  "average": {
+    "word": "average",
+    "definition": "A number you get by adding amounts together and dividing by how many there are.",
+    "exampleSentence": "The average score in the test was seventy out of one hundred.",
+    "contextPassage": "You can find the average of a group of numbers. Teachers often calculate the average score of their students."
+  },
+  "avoid": {
+    "word": "avoid",
+    "definition": "To stay away from someone or something on purpose.",
+    "exampleSentence": "She tried to avoid eating too much sugar every day.",
+    "contextPassage": "People avoid things that are dangerous or bad for them. You can also avoid a person if you do not want to see them."
+  },
+  "award": {
+    "word": "award",
+    "definition": "A prize or honor given to someone for doing something well.",
+    "exampleSentence": "She received an award for being the best student this year.",
+    "contextPassage": "Schools and companies often give awards to people who work hard. Winning an award makes most people feel very proud."
+  },
+  "awful": {
+    "word": "awful",
+    "definition": "Very bad or very unpleasant.",
+    "exampleSentence": "The weather was awful during our trip last week.",
+    "contextPassage": "You can use awful to describe food, weather, or a bad experience. People often say 'That's awful!' when they hear bad news."
+  },
+  "background": {
+    "word": "background",
+    "definition": "The family, place, and experiences from a person's past life.",
+    "exampleSentence": "She has a background in cooking from her home country.",
+    "contextPassage": "You can ask someone about their background to learn where they grew up. People from different backgrounds have different traditions and habits."
+  },
+  "badly": {
+    "word": "badly",
+    "definition": "In a sick or unwell way; not feeling good in the body.",
+    "exampleSentence": "He looked badly after spending three days in bed.",
+    "contextPassage": "You can say someone looks or feels badly when they are not well. This word describes how a person feels when they are sick."
+  },
+  "bar": {
+    "word": "bar",
+    "definition": "A long, hard, straight piece of metal or wood.",
+    "exampleSentence": "He used an iron bar to open the old gate.",
+    "contextPassage": "A bar can be made of metal, wood, or another hard material. It is usually much longer than it is wide."
+  },
+  "baseball": {
+    "word": "baseball",
+    "definition": "A sport where players hit a ball with a bat and run around four bases to score points.",
+    "exampleSentence": "We watched a baseball game at the stadium on Saturday.",
+    "contextPassage": "Baseball is very popular in the United States and Japan. Two teams of nine players each take turns hitting and fielding."
+  },
+  "based": {
+    "word": "based",
+    "definition": "To use something as the starting point or main idea for something else.",
+    "exampleSentence": "The movie was based on a true story from the 1980s.",
+    "contextPassage": "You often say a book or film is based on something real or on another story. It means the main idea came from that thing."
+  },
+  "basketball": {
+    "word": "basketball",
+    "definition": "A sport where two teams of five players try to throw a ball through a hoop to score points.",
+    "exampleSentence": "My brother plays basketball with his friends every Saturday.",
+    "contextPassage": "In basketball, the team with the most points at the end wins the game. Players dribble, pass, and shoot the ball to score."
+  },
+  "bean": {
+    "word": "bean",
+    "definition": "A small seed that grows in a long pod and is used as food.",
+    "exampleSentence": "She added some beans to the soup for dinner tonight.",
+    "contextPassage": "Beans are a healthy food that many people eat every day. You can buy them fresh, dried, or in a can at the shop."
+  },
+  "bear": {
+    "word": "bear",
+    "definition": "A large, heavy wild animal with thick fur and a short tail.",
+    "exampleSentence": "We saw a big brown bear near the river in the forest.",
+    "contextPassage": "Bears eat both plants and animals because they are omnivores. They usually sleep through the cold winter months."
+  },
+  "beat": {
+    "word": "beat",
+    "definition": "A single hit or knock that makes a sound.",
+    "exampleSentence": "I heard one loud beat on the drum before the music started.",
+    "contextPassage": "A beat is the sound you hear when something hits another thing once. Drums make a clear beat when someone hits them."
+  },
+  "beef": {
+    "word": "beef",
+    "definition": "The meat that comes from a cow or bull, used as food.",
+    "exampleSentence": "My dad grilled some beef for dinner last Sunday evening.",
+    "contextPassage": "Beef is a common type of meat in many countries around the world. You can cook it in many ways, like frying, boiling, or grilling."
+  },
+  "behave": {
+    "word": "behave",
+    "definition": "To act in a good and polite way toward other people.",
+    "exampleSentence": "The children will behave well at the school event tomorrow.",
+    "contextPassage": "Parents often tell their children to behave when they are in a public place. It means you should be polite and follow the rules."
+  },
+  "belong": {
+    "word": "belong",
+    "definition": "To be in the right place for something.",
+    "exampleSentence": "This book belongs on the shelf in my room.",
+    "contextPassage": "You can use 'belong' to say where something should go. For example, plates belong in the kitchen."
+  },
+  "belt": {
+    "word": "belt",
+    "definition": "A long, thin piece of cloth or leather that you wear around your waist.",
+    "exampleSentence": "He wore a brown belt with his blue jeans.",
+    "contextPassage": "People wear a belt to keep their trousers up. You can also wear a belt to look nice."
+  },
+  "best": {
+    "word": "best",
+    "definition": "The greatest effort that a person is able to give.",
+    "exampleSentence": "She did her best on the school test.",
+    "contextPassage": "You can say 'do your best' when you try as hard as you can. It means you gave all your effort."
+  },
+  "better": {
+    "word": "better",
+    "definition": "A person who is more skilled or stronger than another person.",
+    "exampleSentence": "He met his better at the chess competition.",
+    "contextPassage": "You can use 'better' to talk about someone who is more able than you. It is not a very common use of this word."
+  },
+  "between": {
+    "word": "between",
+    "definition": "A short, thick needle with a small eye, used for sewing heavy cloth.",
+    "exampleSentence": "She used a between to sew the thick fabric together.",
+    "contextPassage": "A between is a type of sewing needle. People use it when the cloth is very thick or hard to push through."
+  },
+  "billion number": {
+    "word": "billion number",
+    "definition": "The number one thousand million, written as 1,000,000,000.",
+    "exampleSentence": "There are about eight billion people in the world.",
+    "contextPassage": "We use 'billion' for very large numbers. You often see it in news about money or world population."
+  },
+  "bin": {
+    "word": "bin",
+    "definition": "A large container used to keep or store things.",
+    "exampleSentence": "She put the old papers in the bin.",
+    "contextPassage": "People use a bin to throw away rubbish. You can also use a bin to store food or other items."
+  },
+  "biology": {
+    "word": "biology",
+    "definition": "The school subject or science about living things like animals and plants.",
+    "exampleSentence": "We learned about plants in our biology class today.",
+    "contextPassage": "Biology is a science subject at school. Students study animals, plants, and the human body in biology."
+  },
+  "birth": {
+    "word": "birth",
+    "definition": "The time when a baby comes out and starts its life.",
+    "exampleSentence": "The birth of her baby happened in the hospital.",
+    "contextPassage": "We use 'birth' to talk about when a person or animal is born. Your date of birth is the day you were born."
+  },
+  "biscuit": {
+    "word": "biscuit",
+    "definition": "A small, flat, baked food that is sweet and usually hard or crisp.",
+    "exampleSentence": "She had a biscuit and a cup of tea.",
+    "contextPassage": "People eat biscuits as a snack. You can dip a biscuit in your tea or coffee."
+  },
+  "bit": {
+    "word": "bit",
+    "definition": "A small piece of metal that goes in a horse's mouth to help control it.",
+    "exampleSentence": "The rider put the bit in the horse's mouth.",
+    "contextPassage": "A bit is part of a horse's equipment. The rider holds the reins, which are connected to the bit."
+  },
+  "blank": {
+    "word": "blank",
+    "definition": "An empty space on a page where you need to write something.",
+    "exampleSentence": "Please write your name in the blank on the form.",
+    "contextPassage": "You will see blanks on tests and forms. You need to fill in the blank with the correct word or information."
+  },
+  "blood": {
+    "word": "blood",
+    "definition": "A member of a street gang called the Bloods in Los Angeles.",
+    "exampleSentence": "The police said he was a Blood from Los Angeles.",
+    "contextPassage": "The Bloods is a gang from Los Angeles, USA. Members of this gang are called Bloods."
+  },
+  "blow": {
+    "word": "blow",
+    "definition": "A strong movement of wind or air.",
+    "exampleSentence": "A strong blow knocked the umbrella out of my hand.",
+    "contextPassage": "A blow can happen during a storm or bad weather. It can move small objects and make it hard to walk outside."
+  },
+  "board": {
+    "word": "board",
+    "definition": "A flat, thin, and long piece of wood or similar material.",
+    "exampleSentence": "He nailed a board to the wall to fix the hole.",
+    "contextPassage": "People use boards to build houses, floors, and furniture. A board is usually flat and hard."
+  },
+  "boil": {
+    "word": "boil",
+    "definition": "A painful red lump on the skin filled with a yellow liquid.",
+    "exampleSentence": "She had a boil on her neck and it really hurt.",
+    "contextPassage": "A boil is caused by an infection under the skin. A doctor can help you treat a bad boil."
+  },
+  "bone": {
+    "word": "bone",
+    "definition": "A hard white part inside the body of a person or animal.",
+    "exampleSentence": "He broke a bone in his hand during the game.",
+    "contextPassage": "Bones give your body its shape and help you move. Drinking milk is good for strong bones."
+  },
+  "borrow": {
+    "word": "borrow",
+    "definition": "The curve or slope on a surface that makes a ball move sideways.",
+    "exampleSentence": "He did not see the borrow on the green and missed the hole.",
+    "contextPassage": "In golf, a borrow is the slope on the grass near the hole. Players check the borrow before they hit the ball."
+  },
+  "boss": {
+    "word": "boss",
+    "definition": "A person who is in charge of other people at work.",
+    "exampleSentence": "My boss told me to finish the report by Friday.",
+    "contextPassage": "A boss tells workers what to do and checks their work. In a big company, there can be many bosses."
+  },
+  "bottom": {
+    "word": "bottom",
+    "definition": "The lowest part of something.",
+    "exampleSentence": "She found her keys at the bottom of her bag.",
+    "contextPassage": "The bottom is the part that is furthest down. You can talk about the bottom of a box, a hill, or a page."
+  },
+  "bowl": {
+    "word": "bowl",
+    "definition": "A round, open container used to hold food or other things.",
+    "exampleSentence": "She put the soup into a big bowl on the table.",
+    "contextPassage": "People use bowls for food like soup, salad, and cereal. A bowl is usually wider at the top than at the bottom."
+  },
+  "brain": {
+    "word": "brain",
+    "definition": "The part inside your head that controls your body and your thoughts.",
+    "exampleSentence": "The doctor said the brain needs rest after an injury.",
+    "contextPassage": "Your brain helps you think, remember, and feel things. It also controls how your body moves."
+  },
+  "bridge": {
+    "word": "bridge",
+    "definition": "A structure built over a river or road so people can cross it.",
+    "exampleSentence": "We walked across the old bridge over the river.",
+    "contextPassage": "A bridge connects two places separated by water or a road. Some bridges are very long and carry cars and trains."
+  },
+  "bright": {
+    "word": "bright",
+    "definition": "A flat brush with a short head used by artists to paint with oil or acrylic.",
+    "exampleSentence": "She used a bright to paint thick lines on the canvas.",
+    "contextPassage": "A bright is a type of brush used in painting. Artists choose a bright when they want short, strong brush strokes."
+  },
+  "cooker": {
+    "word": "cooker",
+    "definition": "A machine in the kitchen that you use to heat and cook food.",
+    "exampleSentence": "She put the soup on the cooker to heat it up.",
+    "contextPassage": "A cooker can use gas or electricity to cook food. Most families use a cooker every day to make meals."
+  },
+  "copy": {
+    "word": "copy",
+    "definition": "Something that looks exactly the same as another thing.",
+    "exampleSentence": "She made a copy of the letter for her records.",
+    "contextPassage": "You can make a copy of a document at school or at work. A copy looks the same as the original thing."
+  },
+  "corner": {
+    "word": "corner",
+    "definition": "The place where two lines or two walls meet.",
+    "exampleSentence": "He put the lamp in the corner of the room.",
+    "contextPassage": "A corner is where two streets or two walls meet. You can find a corner inside a room or outside on a street."
+  },
+  "correctly": {
+    "word": "correctly",
+    "definition": "In a way that is right and without mistakes.",
+    "exampleSentence": "She answered all the questions correctly on the test.",
+    "contextPassage": "When you do something correctly, you do it the right way. Your teacher will tell you if you answered correctly."
+  },
+  "count": {
+    "word": "count",
+    "definition": "The act of adding up a number of things to find the total.",
+    "exampleSentence": "The teacher did a count of all the students in the class.",
+    "contextPassage": "A count helps you find out how many things there are. You can do a count of people, items, or anything else."
+  },
+  "couple": {
+    "word": "couple",
+    "definition": "Two people who are in a romantic relationship together.",
+    "exampleSentence": "The couple walked hand in hand in the park.",
+    "contextPassage": "A couple often spends a lot of time together. They go on dates and do activities together."
+  },
+  "cover": {
+    "word": "cover",
+    "definition": "A flat piece that goes on top of a pot or box to close it.",
+    "exampleSentence": "She put the cover on the pot to keep the food warm.",
+    "contextPassage": "A cover keeps food warm and stops dirt from getting in. You can find a cover on a pot, a box, or a jar."
+  },
+  "crazy": {
+    "word": "crazy",
+    "definition": "A person who behaves in a very strange or unusual way.",
+    "exampleSentence": "People on the street thought he was a crazy.",
+    "contextPassage": "Someone called a crazy acts in ways that seem very different from normal. This word is informal and some people find it unkind."
+  },
+  "creative": {
+    "word": "creative",
+    "definition": "A person whose job is to make new and original ideas, for example in advertising.",
+    "exampleSentence": "The agency hired a creative to design the new advertisement.",
+    "contextPassage": "A creative thinks of new ideas for posters, videos, or other media. They work with a team to make interesting content."
+  },
+  "crime": {
+    "word": "crime",
+    "definition": "Something that a person does that breaks the law.",
+    "exampleSentence": "Stealing money from a shop is a crime.",
+    "contextPassage": "When someone does a crime, the police can arrest them. A crime can be small, like stealing, or very serious."
+  },
+  "criminal": {
+    "word": "criminal",
+    "definition": "A person who has done something that breaks the law.",
+    "exampleSentence": "The police caught the criminal near the bank.",
+    "contextPassage": "A criminal is someone who did a crime. They can go to court and may have to go to prison."
+  },
+  "cross": {
+    "word": "cross",
+    "definition": "A shape made by one straight line going over another straight line.",
+    "exampleSentence": "She drew a cross on the paper to mark the answer.",
+    "contextPassage": "A cross looks like a plus sign or the letter X. People use a cross to mark something or as a symbol."
+  },
+  "crowd": {
+    "word": "crowd",
+    "definition": "A large group of people in the same place at the same time.",
+    "exampleSentence": "A big crowd waited outside the stadium before the game.",
+    "contextPassage": "You often see a crowd at concerts or markets. The word crowd means many people together in one place."
+  },
+  "crowded": {
+    "word": "crowded",
+    "definition": "To move forward by pushing other people out of the way.",
+    "exampleSentence": "People crowded toward the exit at the end of the show.",
+    "contextPassage": "When everyone wants to leave at the same time, people crowd the doors. You can also say people crowded around something they wanted to see."
+  },
+  "cry": {
+    "word": "cry",
+    "definition": "The act of letting tears fall from your eyes because you feel sad or upset.",
+    "exampleSentence": "She had a long cry after she heard the bad news.",
+    "contextPassage": "A cry can happen when you feel very sad or hurt. Sometimes people have a good cry and feel better after."
+  },
+  "cupboard": {
+    "word": "cupboard",
+    "definition": "A piece of furniture with doors and shelves for storing food or dishes.",
+    "exampleSentence": "She put the clean plates back in the cupboard after dinner.",
+    "contextPassage": "A cupboard is common in a kitchen or bedroom. You can open a cupboard to find cups, food, or other things."
+  },
+  "curly": {
+    "word": "curly",
+    "definition": "A person or animal that has hair which grows in round, spiral shapes.",
+    "exampleSentence": "The little curly ran into the room with her hair bouncing.",
+    "contextPassage": "People sometimes call a child or pet with curly hair a curly. It is a friendly and informal word."
+  },
+  "cycle": {
+    "word": "cycle",
+    "definition": "A set of events that happen again and again in the same order.",
+    "exampleSentence": "The cycle of the seasons goes from spring to winter and back again.",
+    "contextPassage": "A cycle always ends and then starts again from the beginning. The water cycle and the sleep cycle are common examples."
+  },
+  "daily": {
+    "word": "daily",
+    "definition": "Something that happens or is done every single day.",
+    "exampleSentence": "Reading the news is a daily habit for many people.",
+    "contextPassage": "A daily routine includes things like eating breakfast and brushing your teeth. If something is daily, you do it or see it every day."
+  },
+  "danger": {
+    "word": "danger",
+    "definition": "A situation where something bad or harmful could happen to you.",
+    "exampleSentence": "The sign warned drivers about the danger on the icy road.",
+    "contextPassage": "You are in danger when something around you could hurt you. It is important to stay away from danger and stay safe."
+  },
+  "data": {
+    "word": "data",
+    "definition": "Information or numbers that you collect to learn about something.",
+    "exampleSentence": "The teacher looked at the test data to see how students did.",
+    "contextPassage": "Data can be numbers, answers, or facts collected from a study or survey. Computers store and read large amounts of data very quickly."
+  },
+  "dead": {
+    "word": "dead",
+    "definition": "The people who have already died and are no longer alive.",
+    "exampleSentence": "The town built a monument to honor the dead from the old war.",
+    "contextPassage": "We often use the dead to talk about people who lived before us. People may visit cemeteries to remember the dead."
+  },
+  "deal": {
+    "word": "deal",
+    "definition": "A share or part of something that is given or divided between people.",
+    "exampleSentence": "Each child got a fair deal of the candy from the bag.",
+    "contextPassage": "A deal is a portion of something shared between two or more people. You can also use deal to talk about an agreement between people."
+  },
+  "dear": {
+    "word": "dear",
+    "definition": "A word you say to show surprise, worry, or a little shock about something.",
+    "exampleSentence": "Oh dear, I forgot my keys inside the house again!",
+    "contextPassage": "People say dear when something small goes wrong or is surprising. It is a very common and gentle way to show you are worried or surprised."
+  },
+  "dear exclam.": {
+    "word": "dear exclam.",
+    "definition": "A word you say when you are surprised or a little worried about something.",
+    "exampleSentence": "Oh dear, I forgot my keys at home again.",
+    "contextPassage": "People say 'oh dear' when something small goes wrong. It shows they are surprised or sad about it."
+  },
+  "death": {
+    "word": "death",
+    "definition": "The end of a person's or animal's life; when something stops living.",
+    "exampleSentence": "The death of her cat made her very sad.",
+    "contextPassage": "We talk about death when a person or animal stops living. It is the opposite of birth."
+  },
+  "decision": {
+    "word": "decision",
+    "definition": "A choice you make after thinking about something.",
+    "exampleSentence": "She made a decision to move to a new city.",
+    "contextPassage": "You make a decision when you choose between two or more things. It can be a big or small choice."
+  },
+  "deep": {
+    "word": "deep",
+    "definition": "The deep part of the ocean or a lake, far below the surface.",
+    "exampleSentence": "Strange fish live in the deep of the ocean.",
+    "contextPassage": "We use the deep to talk about the lowest, darkest part of the sea. Very few people have seen the deep."
+  },
+  "definitely": {
+    "word": "definitely",
+    "definition": "Without any doubt; for sure.",
+    "exampleSentence": "She will definitely come to the party tonight.",
+    "contextPassage": "You say definitely when you are completely sure about something. It is stronger than saying probably or maybe."
+  },
+  "degree": {
+    "word": "degree",
+    "definition": "A certificate you get from a university after you finish your studies.",
+    "exampleSentence": "He got a degree in business from the university.",
+    "contextPassage": "Students study for several years to get a degree. A degree shows that you finished a course at university."
+  },
+  "dentist": {
+    "word": "dentist",
+    "definition": "A doctor who takes care of your teeth.",
+    "exampleSentence": "I went to the dentist because my tooth hurt.",
+    "contextPassage": "A dentist checks your teeth and fixes problems. You should visit a dentist at least once a year."
+  },
+  "department": {
+    "word": "department",
+    "definition": "One part or section of a large place like a store or company.",
+    "exampleSentence": "She works in the sales department at her office.",
+    "contextPassage": "Big stores and companies have many departments. Each department does a different job or sells different things."
+  },
+  "depend": {
+    "word": "depend",
+    "definition": "To need something or someone to be true or to happen first.",
+    "exampleSentence": "The price will depend on the size you choose.",
+    "contextPassage": "We use depend on to say that one thing changes because of another. For example, your plans can depend on the weather."
+  },
+  "desert": {
+    "word": "desert",
+    "definition": "A punishment or reward that someone truly earns by what they did.",
+    "exampleSentence": "The bad man got his just deserts in the end.",
+    "contextPassage": "We use deserts to say someone got what they deserved. It is usually used in the phrase just deserts."
+  },
+  "designer": {
+    "word": "designer",
+    "definition": "A person whose job is to plan how something will look or work.",
+    "exampleSentence": "The designer made a beautiful cover for the new book.",
+    "contextPassage": "A designer can work on clothes, buildings, or websites. They plan the look of things before they are made."
+  },
+  "destroy": {
+    "word": "destroy",
+    "definition": "To damage something so badly that it cannot be used or fixed.",
+    "exampleSentence": "The big fire destroyed several houses on our street.",
+    "contextPassage": "When something is destroyed, it is completely broken or gone. A storm can destroy buildings and trees."
+  },
+  "detective": {
+    "word": "detective",
+    "definition": "A police officer who tries to find out who did a crime.",
+    "exampleSentence": "The detective found important clues at the scene.",
+    "contextPassage": "A detective looks for evidence and talks to people to solve a crime. You can also see detectives as characters in films and books."
+  },
+  "develop": {
+    "word": "develop",
+    "definition": "To grow or get better over time.",
+    "exampleSentence": "She will develop her cooking skills at the new class.",
+    "contextPassage": "People develop new skills when they practice a lot. A city can also develop and get bigger over the years."
+  },
+  "device": {
+    "word": "device",
+    "definition": "A small machine or tool made to do a specific job.",
+    "exampleSentence": "He used a device to measure the temperature outside.",
+    "contextPassage": "A phone is a device you use to call and message people. Many devices need batteries or electricity to work."
+  },
+  "diary": {
+    "word": "diary",
+    "definition": "A book where you write about things that happen each day.",
+    "exampleSentence": "She wrote about her trip in her diary last night.",
+    "contextPassage": "Some people write in their diary every evening before bed. A diary is a good way to remember important moments."
+  },
+  "differently": {
+    "word": "differently",
+    "definition": "In a way that is not the same as before or as others.",
+    "exampleSentence": "He answered the question differently from his classmates.",
+    "contextPassage": "You can try to do something differently if it does not work. Two people can look at the same thing differently."
+  },
+  "digital": {
+    "word": "digital",
+    "definition": "A digital version of something that exists online or on a screen.",
+    "exampleSentence": "I bought the digital version of the book online.",
+    "contextPassage": "A digital copy is easy to store on your phone or computer. Many newspapers now have a digital option you can read anywhere."
+  },
+  "direct": {
+    "word": "direct",
+    "definition": "To tell people what to do and where to go to reach a goal.",
+    "exampleSentence": "The manager will direct the team during the big project.",
+    "contextPassage": "A teacher can direct students to the right answer with questions. It is important to direct people clearly so they are not confused."
+  },
+  "direction": {
+    "word": "direction",
+    "definition": "The way you need to go to reach a place.",
+    "exampleSentence": "She walked in the wrong direction and got lost.",
+    "contextPassage": "You can use a map to find the right direction. North, south, east, and west are names for different directions."
+  },
+  "director": {
+    "word": "director",
+    "definition": "A person who is in charge of a project, company, or film.",
+    "exampleSentence": "The director told the actors where to stand on stage.",
+    "contextPassage": "A film director makes decisions about how a movie will look. A director at a company is responsible for an important part of the work."
+  },
+  "disagree": {
+    "word": "disagree",
+    "definition": "To have a different opinion from someone else.",
+    "exampleSentence": "My friend and I disagree about which film is the best.",
+    "contextPassage": "It is normal to disagree with people sometimes. You can disagree with someone and still be polite and friendly."
+  },
+  "disappear": {
+    "word": "disappear",
+    "definition": "To stop being visible or to go away suddenly.",
+    "exampleSentence": "The cat disappeared behind the big bush in the garden.",
+    "contextPassage": "The sun will disappear behind the clouds when it gets cloudy. Things can disappear quickly if you are not careful with them."
+  },
+  "disaster": {
+    "word": "disaster",
+    "definition": "A very bad event that causes a lot of damage or harm to people.",
+    "exampleSentence": "The big storm was a disaster for the small town.",
+    "contextPassage": "A flood or earthquake can be a natural disaster. After a disaster, people often help each other to rebuild their homes."
+  },
+  "discover": {
+    "word": "discover",
+    "definition": "To find or learn about something for the first time.",
+    "exampleSentence": "She was happy to discover a new café near her house.",
+    "contextPassage": "Children love to discover new things when they explore outside. Scientists discover new plants and animals every year."
+  },
+  "discovery": {
+    "word": "discovery",
+    "definition": "Something new that someone finds or learns for the first time.",
+    "exampleSentence": "The discovery of gold in the river was very exciting.",
+    "contextPassage": "Scientists make discoveries when they find something nobody knew before. A discovery can change the way people think about the world."
+  },
+  "discussion": {
+    "word": "discussion",
+    "definition": "A talk between two or more people about a topic.",
+    "exampleSentence": "We had a discussion about our plans for the weekend.",
+    "contextPassage": "A discussion is when people share their ideas and listen to others. Teachers often ask students to have a discussion in class."
+  },
+  "disease": {
+    "word": "disease",
+    "definition": "A serious illness that makes a person, animal, or plant very sick.",
+    "exampleSentence": "The doctor said he had a disease and needed medicine.",
+    "contextPassage": "A disease can spread from one person to another. Some diseases are very dangerous, but doctors can treat many of them."
+  },
+  "distance": {
+    "word": "distance",
+    "definition": "The amount of space between two places or things.",
+    "exampleSentence": "The distance between the two towns is about 50 kilometres.",
+    "contextPassage": "You can measure distance in kilometres or miles. A long distance means two places are very far apart."
+  },
+  "divorced": {
+    "word": "divorced",
+    "definition": "To legally end a marriage so two people are no longer husband and wife.",
+    "exampleSentence": "Her parents divorced when she was ten years old.",
+    "contextPassage": "When two people divorce, they stop being married. After they divorced, they both lived in different houses."
+  },
+  "document": {
+    "word": "document",
+    "definition": "An official paper or file that shows important information.",
+    "exampleSentence": "She needed to sign the document before she could travel.",
+    "contextPassage": "A passport is an important travel document. You should keep your documents in a safe place."
+  },
+  "double": {
+    "word": "double",
+    "definition": "Two times the amount or size of something.",
+    "exampleSentence": "He asked for a double portion of rice at the restaurant.",
+    "contextPassage": "Double means you have two times more of something. If the price is double, you pay two times the normal amount."
+  },
+  "download": {
+    "word": "download",
+    "definition": "A file that you copy from the internet to your computer or phone.",
+    "exampleSentence": "The download of the new app only took a few seconds.",
+    "contextPassage": "You can find free downloads on many websites. After the download is finished, you can open the file on your device."
+  },
+  "downstairs": {
+    "word": "downstairs",
+    "definition": "The lower floor of a building, closer to the ground.",
+    "exampleSentence": "The kitchen and living room are downstairs in our house.",
+    "contextPassage": "Downstairs is the part of the house on the ground floor. She went downstairs to get a glass of water."
+  },
+  "drama": {
+    "word": "drama",
+    "definition": "A story written for actors to perform on stage or on TV.",
+    "exampleSentence": "We watched a drama about a family living in a small town.",
+    "contextPassage": "A drama tells a story through the words and actions of the actors. Many people enjoy watching dramas on television in the evening."
+  },
+  "drawing": {
+    "word": "drawing",
+    "definition": "A picture made by moving a pen or pencil on paper.",
+    "exampleSentence": "She made a drawing of her dog in art class.",
+    "contextPassage": "A drawing can show people, places, or things. You can make a drawing with a pencil, pen, or coloured markers."
+  },
+  "dream": {
+    "word": "dream",
+    "definition": "Pictures and events that you see in your mind while you are sleeping.",
+    "exampleSentence": "He had a dream about flying over a big city.",
+    "contextPassage": "Most people have dreams every night when they sleep. Some dreams feel very real, but they are not really happening."
+  },
+  "drive": {
+    "word": "drive",
+    "definition": "A strong feeling inside you that makes you want to work hard and reach your goals.",
+    "exampleSentence": "She has a lot of drive and never gives up easily.",
+    "contextPassage": "We use drive to describe someone very motivated and ambitious. You might say a good worker has real drive."
+  },
+  "driving": {
+    "word": "driving",
+    "definition": "To push or move something forward by using force or power.",
+    "exampleSentence": "The strong wind is driving the leaves across the street.",
+    "contextPassage": "We use driving when something causes movement or change. For example, wind can drive rain against a window."
+  },
+  "drop": {
+    "word": "drop",
+    "definition": "A very small, round piece of liquid that falls from something.",
+    "exampleSentence": "A drop of water fell from the tap onto the floor.",
+    "contextPassage": "We often talk about drops of rain or drops of medicine. A drop is very small, just one tiny bit of liquid."
+  },
+  "drug": {
+    "word": "drug",
+    "definition": "A substance that a doctor gives you to help your body feel better or fight illness.",
+    "exampleSentence": "The doctor gave her a drug to help with the pain.",
+    "contextPassage": "Drugs can come as pills, liquids, or injections. You usually get a drug from a doctor or a pharmacy."
+  },
+  "dry": {
+    "word": "dry",
+    "definition": "The time when something loses its water and becomes dry.",
+    "exampleSentence": "The dry of the clothes took a long time in the cold weather.",
+    "contextPassage": "We often talk about the dry of wet things like clothes or hair. A warm room helps the dry happen faster."
+  },
+  "earn": {
+    "word": "earn",
+    "definition": "To get money or a reward because you worked hard for it.",
+    "exampleSentence": "She will earn more money at her new job.",
+    "contextPassage": "You earn money by doing work or helping others. You can also earn respect or praise by doing something well."
+  },
+  "earth": {
+    "word": "earth",
+    "definition": "The planet where all people, animals, and plants live.",
+    "exampleSentence": "The Earth travels around the sun every year.",
+    "contextPassage": "Earth is the third planet from the sun in our solar system. It is the only planet we know that has life on it."
+  },
+  "easily": {
+    "word": "easily",
+    "definition": "In a way that feels comfortable and without any worry or trouble.",
+    "exampleSentence": "She fell asleep easily after her long day at work.",
+    "contextPassage": "We use easily to say something did not take much effort. For example, he easily found the answer to the question."
+  },
+  "education": {
+    "word": "education",
+    "definition": "The way people learn new things, skills, and knowledge at school or in life.",
+    "exampleSentence": "A good education will help you find a better job.",
+    "contextPassage": "Education usually happens in schools and universities. Parents and teachers are both important parts of a child's education."
+  },
+  "either": {
+    "word": "either",
+    "definition": "Used after a negative sentence to mean also or as well.",
+    "exampleSentence": "He doesn't like coffee, and I don't either.",
+    "contextPassage": "We use either at the end of a negative sentence to agree. For example, she can't swim, and her brother can't either."
+  },
+  "electric": {
+    "word": "electric",
+    "definition": "The supply of electricity that comes into your home or building.",
+    "exampleSentence": "We didn't have the electric for two hours after the storm.",
+    "contextPassage": "People sometimes say the electric when they mean the electricity in their home. Paying for the electric is a regular monthly cost."
+  },
+  "electrical": {
+    "word": "electrical",
+    "definition": "A person whose job is to plan and work with electrical systems and equipment.",
+    "exampleSentence": "They called an electrical to check the wiring in the building.",
+    "contextPassage": "An electrical works with complex power systems in buildings or factories. This job needs special training and knowledge."
+  },
+  "electricity": {
+    "word": "electricity",
+    "definition": "The power that moves through wires and makes lights and machines work.",
+    "exampleSentence": "The electricity went off during the big storm last night.",
+    "contextPassage": "We use electricity every day to power our lights and phones. Without electricity, the TV and fridge will not work."
+  },
+  "electronic": {
+    "word": "electronic",
+    "definition": "Using or controlled by very small electrical parts inside a device.",
+    "exampleSentence": "She got a new electronic watch for her birthday.",
+    "contextPassage": "Electronic devices like phones and laptops need power to work. Stores sell many electronic products, such as tablets and cameras."
+  },
+  "employee": {
+    "word": "employee",
+    "definition": "A person who works for a company or another person and gets paid.",
+    "exampleSentence": "The new employee started work at the office on Monday.",
+    "contextPassage": "Every employee at the shop wears a blue uniform. The manager said all employees will get a day off next week."
+  },
+  "employer": {
+    "word": "employer",
+    "definition": "A person or company that pays workers to do a job.",
+    "exampleSentence": "Her employer gave her a bonus at the end of the year.",
+    "contextPassage": "A good employer treats workers fairly and pays them on time. You can ask your employer for more hours if you want to earn more money."
+  },
+  "empty": {
+    "word": "empty",
+    "definition": "A bottle or other container that has nothing left inside it.",
+    "exampleSentence": "Please put the empties in the recycling bin outside.",
+    "contextPassage": "After the party, there were many empties on the table. We collected all the empties and took them to the shop."
+  },
+  "ending": {
+    "word": "ending",
+    "definition": "The last part of something, like a story or a film.",
+    "exampleSentence": "I really liked the happy ending of that movie.",
+    "contextPassage": "The ending of the book surprised everyone in the class. A good ending makes you feel that the story is finished."
+  },
+  "energy": {
+    "word": "energy",
+    "definition": "The power or strength you need to do things and stay active.",
+    "exampleSentence": "I had no energy after walking all day in the city.",
+    "contextPassage": "Eating a good breakfast will give you energy for the morning. Children usually have a lot of energy and love to run and play."
+  },
+  "engine": {
+    "word": "engine",
+    "definition": "The part of a car, train, or other machine that makes it move.",
+    "exampleSentence": "The car would not start because the engine was broken.",
+    "contextPassage": "A mechanic will check the engine to find the problem. The train engine makes a loud noise when it leaves the station."
+  },
+  "engineer": {
+    "word": "engineer",
+    "definition": "A person whose job is to design, build, or fix machines and structures.",
+    "exampleSentence": "The engineer fixed the broken bridge in three days.",
+    "contextPassage": "You need to study for many years to become an engineer. Engineers design things like roads, buildings, and machines."
+  },
+  "enter": {
+    "word": "enter",
+    "definition": "The key on a computer keyboard that you press to confirm or start something.",
+    "exampleSentence": "Press enter after you type in your password.",
+    "contextPassage": "You can press the enter key to send your message. If you hit enter by mistake, you can sometimes undo the action."
+  },
+  "essay": {
+    "word": "essay",
+    "definition": "A piece of writing where you share your ideas about one topic.",
+    "exampleSentence": "The teacher asked us to write an essay about our hometown.",
+    "contextPassage": "A good essay has a clear beginning, middle, and end. Students often write essays at school to show what they have learned."
+  },
+  "everyday": {
+    "word": "everyday",
+    "definition": "A normal, regular day with nothing special happening.",
+    "exampleSentence": "Monday felt like just another everyday with nothing new.",
+    "contextPassage": "On an everyday, she wakes up, goes to work, and cooks dinner. Not every day is exciting — most days are just a normal everyday."
+  },
+  "everywhere": {
+    "word": "everywhere",
+    "definition": "In all places, or in every place.",
+    "exampleSentence": "She looked everywhere but could not find her keys.",
+    "contextPassage": "You can use 'everywhere' to talk about all the places in an area. For example, there were flowers everywhere in the park."
+  },
+  "exact": {
+    "word": "exact",
+    "definition": "To force someone to give or do something they do not want to give or do.",
+    "exampleSentence": "The boss exacted a promise from every worker on the team.",
+    "contextPassage": "When someone exacts something, they make another person do it or pay it. It often happens when someone has power over another person."
+  },
+  "exactly": {
+    "word": "exactly",
+    "definition": "In a way that is completely correct, with no mistakes or changes.",
+    "exampleSentence": "She cut the paper to exactly the right size for the frame.",
+    "contextPassage": "You use 'exactly' to say something is 100% correct or true. For example, that is exactly what I wanted to say."
+  },
+  "excellent": {
+    "word": "excellent",
+    "definition": "Very good, much better than most other things.",
+    "exampleSentence": "The students got excellent results on their English test.",
+    "contextPassage": "You use 'excellent' to show you are very happy with something. A teacher might say 'excellent work' to a student who did very well."
+  },
+  "except": {
+    "word": "except",
+    "definition": "To leave someone or something out of a group or rule.",
+    "exampleSentence": "The teacher excepted Tom from the homework because he was sick.",
+    "contextPassage": "When you except someone, you say the rule or plan does not include them. This word is often used in formal or official situations."
+  },
+  "exist": {
+    "word": "exist",
+    "definition": "To be real and present in the world.",
+    "exampleSentence": "Dinosaurs did not exist when people first lived on Earth.",
+    "contextPassage": "You use 'exist' to talk about whether something is real or alive. For example, some people think that life exists on other planets."
+  },
+  "expect": {
+    "word": "expect",
+    "definition": "To think something will happen in the future.",
+    "exampleSentence": "I expect my friend will arrive at the station around noon.",
+    "contextPassage": "You use 'expect' when you feel sure or fairly sure about something coming. For example, she expected the bus to be late again today."
+  },
+  "experience": {
+    "word": "experience",
+    "definition": "Something that happens to you and that you feel or learn from.",
+    "exampleSentence": "Living in a new country was a big experience for her.",
+    "contextPassage": "An experience can be good or bad, but it always teaches you something. Many people say travelling to new places is a great experience."
+  },
+  "expert": {
+    "word": "expert",
+    "definition": "A person who knows a lot about one subject or can do something very well.",
+    "exampleSentence": "We called an expert to fix the problem with our computer.",
+    "contextPassage": "An expert usually has many years of study or work in one area. For example, a cooking expert can show you how to make difficult meals."
+  },
+  "explanation": {
+    "word": "explanation",
+    "definition": "Words that help you understand why something happened or how something works.",
+    "exampleSentence": "The teacher gave a clear explanation of the new grammar rule.",
+    "contextPassage": "You ask for an explanation when you do not understand something. A good explanation uses simple words and examples to make things clear."
+  },
+  "extremely": {
+    "word": "extremely",
+    "definition": "Very, very much, more than usual or more than expected.",
+    "exampleSentence": "It was extremely cold outside, so we stayed inside all day.",
+    "contextPassage": "You use 'extremely' to make an adjective stronger than 'very'. For example, the food at that restaurant was extremely good."
+  },
+  "factory": {
+    "word": "factory",
+    "definition": "A large building where people or machines make products in big numbers.",
+    "exampleSentence": "My uncle works in a factory that makes shoes every day.",
+    "contextPassage": "Factories often have many workers and big machines inside them. Many things you buy in shops, like clothes and food, come from a factory."
+  },
+  "fail": {
+    "word": "fail",
+    "definition": "To not do something well enough, or to not pass a test.",
+    "exampleSentence": "She studied hard because she did not want to fail the exam.",
+    "contextPassage": "You can fail a test if you do not prepare well. If you fail, you can try again next time."
+  },
+  "fair": {
+    "word": "fair",
+    "definition": "Something that treats everyone in an equal and right way.",
+    "exampleSentence": "The teacher made sure the rules were fair for every student.",
+    "contextPassage": "People feel happy when things are fair. It is not fair if one person gets more than others for no reason."
+  },
+  "fall": {
+    "word": "fall",
+    "definition": "The movement of something dropping down to a lower place.",
+    "exampleSentence": "The fall from the ladder hurt his leg badly.",
+    "contextPassage": "A fall can happen very quickly and without warning. You should be careful on wet floors to avoid a fall."
+  },
+  "fan": {
+    "word": "fan",
+    "definition": "A flat object you hold and wave by hand to move air and cool yourself.",
+    "exampleSentence": "She used a fan to cool her face on the hot day.",
+    "contextPassage": "A fan is useful when the weather is very warm. You open it up and wave it back and forth near your face."
+  },
+  "farm": {
+    "word": "farm",
+    "definition": "A piece of land where people grow food or keep animals.",
+    "exampleSentence": "My grandfather lives on a farm with many cows and chickens.",
+    "contextPassage": "Farms can be very large or quite small. People on a farm work hard every day to grow food."
+  },
+  "farming": {
+    "word": "farming",
+    "definition": "To grow crops or keep animals on a farm as work.",
+    "exampleSentence": "His family has been farming this land for many years.",
+    "contextPassage": "Farming is hard physical work done outside. People who farm need to know about soil, plants, and animals."
+  },
+  "fashion": {
+    "word": "fashion",
+    "definition": "A popular style of clothes or other things that many people like right now.",
+    "exampleSentence": "She always wears the latest fashion from the shops.",
+    "contextPassage": "Fashion changes very often, sometimes every season. Something that is popular today may not be in fashion next year."
+  },
+  "fat": {
+    "word": "fat",
+    "definition": "A soft substance stored in the body of animals and people that holds energy.",
+    "exampleSentence": "The doctor said he should eat less fat in his meals.",
+    "contextPassage": "Your body stores fat to use later as energy. Foods like butter and oil contain a lot of fat."
+  },
+  "fear": {
+    "word": "fear",
+    "definition": "A very strong and unpleasant feeling you get when you think something bad will happen.",
+    "exampleSentence": "She felt great fear when she heard the loud noise outside.",
+    "contextPassage": "Fear can make your heart beat very fast. Many people have a fear of things like spiders or the dark."
+  },
+  "feed": {
+    "word": "feed",
+    "definition": "Food that is given to animals to eat.",
+    "exampleSentence": "The farmer put feed in the bucket for the horses.",
+    "contextPassage": "Animals on a farm need feed every day. Chickens, cows, and pigs all eat different kinds of feed."
+  },
+  "female": {
+    "word": "female",
+    "definition": "A person or animal that belongs to the sex that can have babies.",
+    "exampleSentence": "The vet said the cat is female and will have kittens soon.",
+    "contextPassage": "Female animals often take care of their young ones. In many forms, you need to say if you are male or female."
+  },
+  "fiction": {
+    "word": "fiction",
+    "definition": "Books and stories about people and events that are not real.",
+    "exampleSentence": "She loves reading fiction because the stories are very exciting.",
+    "contextPassage": "Fiction comes from a writer's imagination, not from real life. Novels and short stories are common types of fiction."
+  },
+  "field": {
+    "word": "field",
+    "definition": "A large open area of land with grass or crops and no buildings or trees.",
+    "exampleSentence": "The children played football in the big green field.",
+    "contextPassage": "A field is usually outside in the countryside. Farmers grow food in fields."
+  },
+  "fight": {
+    "word": "fight",
+    "definition": "To use your body or weapons against another person to hurt them.",
+    "exampleSentence": "Two boys started to fight in the school yard.",
+    "contextPassage": "People fight when they are very angry. In a war, soldiers fight against each other."
+  },
+  "film": {
+    "word": "film",
+    "definition": "A very thin layer of something that covers a surface.",
+    "exampleSentence": "There was a thin film of oil on top of the water.",
+    "contextPassage": "A film can cover food or a liquid. You can sometimes see a film of dust on old furniture."
+  },
+  "final": {
+    "word": "final",
+    "definition": "The last and most important test at the end of a school class or course.",
+    "exampleSentence": "She studied very hard for her English final.",
+    "contextPassage": "Students take a final at the end of the school year. A good score on the final is very important."
+  },
+  "finally": {
+    "word": "finally",
+    "definition": "After a long time or after many other things, at the end.",
+    "exampleSentence": "We waited for one hour and the bus finally came.",
+    "contextPassage": "You use finally when something takes a long time to happen. It often shows you are happy or relieved that something is done."
+  },
+  "finger": {
+    "word": "finger",
+    "definition": "One of the four long thin parts of your hand, not including your thumb.",
+    "exampleSentence": "She cut her finger while she was cooking dinner.",
+    "contextPassage": "People use their fingers to hold and touch things. You have four fingers and one thumb on each hand."
+  },
+  "finish": {
+    "word": "finish",
+    "definition": "The end of something, when it stops or is complete.",
+    "exampleSentence": "Everyone cheered at the finish of the race.",
+    "contextPassage": "A finish comes at the very end of something. The finish of a race is the line runners cross last."
+  },
+  "firstly": {
+    "word": "firstly",
+    "definition": "Used to introduce the first thing in a list of points or reasons.",
+    "exampleSentence": "Firstly, you need to write your name on the paper.",
+    "contextPassage": "People use firstly when they have two or more points to say. You can say firstly, then secondly, then thirdly."
+  },
+  "fishing": {
+    "word": "fishing",
+    "definition": "The activity of trying to catch fish from a river, lake, or the sea.",
+    "exampleSentence": "My dad goes fishing at the lake every Saturday morning.",
+    "contextPassage": "Fishing is a popular hobby for many people. You need a fishing rod and some water to go fishing."
+  },
+  "fit": {
+    "word": "fit",
+    "definition": "How well something matches or works with something else in size or shape.",
+    "exampleSentence": "I tried on the jacket but the fit was too small.",
+    "contextPassage": "You talk about the fit of clothes when you try them on. A good fit means the item is the right size for you."
+  },
+  "fix": {
+    "word": "fix",
+    "definition": "Something you do to repair a broken or wrong thing and make it work again.",
+    "exampleSentence": "The plumber did a quick fix on the broken pipe.",
+    "contextPassage": "A fix solves a problem with something that is broken. Sometimes a fix is fast, but some fixes take a long time."
+  },
+  "flat": {
+    "word": "flat",
+    "definition": "A large area of land that is very smooth and has no hills or high parts.",
+    "exampleSentence": "We drove across a wide flat of dry land all day.",
+    "contextPassage": "A flat is very easy to walk or drive across. Some deserts and farmland areas are large flats."
+  },
+  "flu": {
+    "word": "flu",
+    "definition": "An illness that makes you feel very tired, hot, and sick, like a bad cold.",
+    "exampleSentence": "She stayed home because she had the flu.",
+    "contextPassage": "The flu is common in winter. You should rest and drink water when you have it."
+  },
+  "fly": {
+    "word": "fly",
+    "definition": "A very small insect with two wings that flies around food and rubbish.",
+    "exampleSentence": "A fly landed on my sandwich at the park.",
+    "contextPassage": "Flies are often found near food and rubbish bins. They are very small and move very fast."
+  },
+  "flying": {
+    "word": "flying",
+    "definition": "Moving through the air, like a bird or a plane.",
+    "exampleSentence": "The bird was flying over the tall trees.",
+    "contextPassage": "You can use flying to describe something moving through the air. Birds and planes are both flying when they are in the air."
+  },
+  "following": {
+    "word": "following",
+    "definition": "Going behind someone or something in the same direction.",
+    "exampleSentence": "The dog was following its owner down the street.",
+    "contextPassage": "You can say one person is following another when they walk behind them. A shadow also follows you everywhere you go."
+  },
+  "foreign": {
+    "word": "foreign",
+    "definition": "A person who comes from a different country.",
+    "exampleSentence": "A foreign student joined our class last week.",
+    "contextPassage": "We use foreign to talk about things or people from other countries. For example, a foreign language is one from another country."
+  },
+  "forest": {
+    "word": "forest",
+    "definition": "A very large area of land with many trees growing close together.",
+    "exampleSentence": "We went for a walk in the dark green forest.",
+    "contextPassage": "A forest is bigger than a small group of trees. Many wild animals live in forests."
+  },
+  "fork": {
+    "word": "fork",
+    "definition": "A tool with a long handle and sharp points, used to pick up food or dig in the ground.",
+    "exampleSentence": "She used a fork to eat her pasta.",
+    "contextPassage": "A fork is part of a set of tools used for eating. You usually see a fork, knife, and spoon on a dinner table."
+  },
+  "forward": {
+    "word": "forward",
+    "definition": "A player in some team sports who plays at the front and tries to score.",
+    "exampleSentence": "He played as a forward in the football match.",
+    "contextPassage": "A forward is close to the other team's goal. Their main job is to attack and score points."
+  },
+  "free": {
+    "word": "free",
+    "definition": "Something you can have or do without paying any money.",
+    "exampleSentence": "The coffee at the hotel was free every morning.",
+    "contextPassage": "When something is free, you do not need to pay for it. Free things are often given to customers as a gift."
+  },
+  "fresh": {
+    "word": "fresh",
+    "definition": "Food or water that is new, clean, and not old or bad.",
+    "exampleSentence": "I bought fresh bread from the bakery this morning.",
+    "contextPassage": "Fresh food has not been kept for a long time. Fresh water is clean water that is good to drink."
+  },
+  "fridge": {
+    "word": "fridge",
+    "definition": "A machine in the kitchen that keeps food cold and fresh.",
+    "exampleSentence": "He put the milk back in the fridge after breakfast.",
+    "contextPassage": "Most people keep food like milk, fruit, and vegetables in the fridge. It keeps food cold so it stays good for longer."
+  },
+  "frog": {
+    "word": "frog",
+    "definition": "A small animal with soft wet skin and long back legs that it uses to jump.",
+    "exampleSentence": "We saw a small green frog near the pond.",
+    "contextPassage": "Frogs live near water and can jump very far. They make a loud sound, especially at night."
+  },
+  "furniture": {
+    "word": "furniture",
+    "definition": "The big objects in a room that you use or sit on, like tables, chairs, and beds.",
+    "exampleSentence": "We bought new furniture for the living room.",
+    "contextPassage": "Furniture makes a room comfortable and useful. A sofa and a desk are common pieces of furniture."
+  },
+  "future": {
+    "word": "future",
+    "definition": "The time that has not happened yet; what will come later.",
+    "exampleSentence": "She wants to be a doctor in the future.",
+    "contextPassage": "We talk about the future when we make plans or dreams. You can use words like 'will' or 'going to' when you talk about the future."
+  },
+  "gallery": {
+    "word": "gallery",
+    "definition": "A building or room where people go to look at paintings and art.",
+    "exampleSentence": "We visited a gallery and saw many beautiful paintings.",
+    "contextPassage": "A gallery usually shows art to the public. Some galleries are free, and some you have to pay to enter."
+  },
+  "gas": {
+    "word": "gas",
+    "definition": "Something that is not a liquid or solid, like air, and fills any space around it.",
+    "exampleSentence": "The balloon is full of gas and floats in the air.",
+    "contextPassage": "Gas has no fixed shape and spreads out easily. Some homes use gas to heat water or cook food."
+  },
+  "gate": {
+    "word": "gate",
+    "definition": "A door in a wall or fence outside that you open to go in or out.",
+    "exampleSentence": "Please close the gate so the dog cannot run away.",
+    "contextPassage": "A gate is usually at the front of a garden or yard. You often need to open a gate to enter a building or park."
+  },
+  "gift": {
+    "word": "gift",
+    "definition": "Something you give to another person for free, to make them happy.",
+    "exampleSentence": "She gave him a gift for his birthday.",
+    "contextPassage": "People often give gifts on special days like birthdays or holidays. A gift does not have to be expensive to make someone feel good."
+  },
+  "goal": {
+    "word": "goal",
+    "definition": "Something important that you want to do or achieve.",
+    "exampleSentence": "His goal is to learn English this year.",
+    "contextPassage": "A goal gives you something to work towards. Many people set goals at the start of a new year."
+  },
+  "god": {
+    "word": "god",
+    "definition": "A very powerful being that people believe created the world and controls everything.",
+    "exampleSentence": "Many people pray to God every day.",
+    "contextPassage": "Different religions have different ideas about God. Some people believe in one God, and some believe in many gods."
+  },
+  "gold": {
+    "word": "gold",
+    "definition": "A shiny yellow metal that is very valuable and used to make jewellery.",
+    "exampleSentence": "She wore a beautiful ring made of gold.",
+    "contextPassage": "Gold is one of the most expensive metals in the world. People also use gold to make medals and coins."
+  },
+  "golf": {
+    "word": "golf",
+    "definition": "A sport where you hit a small ball into holes in the ground using a stick.",
+    "exampleSentence": "My dad plays golf every Sunday morning.",
+    "contextPassage": "A golf course usually has eighteen holes. Players try to hit the ball into each hole using as few hits as possible."
+  },
+  "grass": {
+    "word": "grass",
+    "definition": "The short green plants that cover the ground in gardens and parks.",
+    "exampleSentence": "The children sat on the grass in the park.",
+    "contextPassage": "Grass is the green ground cover you see in gardens and fields. People cut grass to keep it short and tidy."
+  },
+  "greet": {
+    "word": "greet",
+    "definition": "To say hello to someone in a friendly way when you meet them.",
+    "exampleSentence": "She went to the door to greet her guests.",
+    "contextPassage": "You can greet someone with a smile, a wave, or a handshake. It is polite to greet people when they arrive at your home."
+  },
+  "ground": {
+    "word": "ground",
+    "definition": "The flat surface under your feet outside, made of soil or rock.",
+    "exampleSentence": "The children sat on the ground and ate their lunch.",
+    "contextPassage": "We use 'ground' to talk about the surface outside, not inside a building. The dog dug a hole in the ground near the tree."
+  },
+  "guest": {
+    "word": "guest",
+    "definition": "A person who stays at someone's home or goes to a party because they got an invitation.",
+    "exampleSentence": "We have a guest staying at our house this weekend.",
+    "contextPassage": "A guest is someone you invite, not someone who lives with you. My mum cooked a big dinner for our guests."
+  },
+  "guide": {
+    "word": "guide",
+    "definition": "A person whose job is to show visitors around a place and tell them about it.",
+    "exampleSentence": "The guide showed us around the old castle.",
+    "contextPassage": "You often find a guide at museums, cities, or nature parks. Our guide told us many interesting things about the city."
+  },
+  "gun": {
+    "word": "gun",
+    "definition": "A weapon that shoots small metal objects very fast and can hurt people.",
+    "exampleSentence": "The police officer carried a gun on his belt.",
+    "contextPassage": "Guns are used by soldiers and police officers. In some countries, people are not allowed to have a gun."
+  },
+  "guy": {
+    "word": "guy",
+    "definition": "An informal word for a man or a boy.",
+    "exampleSentence": "That guy over there is my neighbour.",
+    "contextPassage": "We often use 'guy' in friendly, everyday conversation. You can also say 'guys' to talk to a group of people."
+  },
+  "habit": {
+    "word": "habit",
+    "definition": "Something you do often and almost every day without thinking about it.",
+    "exampleSentence": "She has a habit of drinking coffee every morning.",
+    "contextPassage": "A habit can be good or bad, like exercising or eating too much sugar. It is hard to stop a habit after a long time."
+  },
+  "half": {
+    "word": "half",
+    "definition": "One of two equal parts of something.",
+    "exampleSentence": "I ate half of the pizza and saved the rest.",
+    "contextPassage": "We use 'half' to talk about dividing things into two equal pieces. Half an hour means thirty minutes."
+  },
+  "hall": {
+    "word": "hall",
+    "definition": "A room or space just inside the front door of a building.",
+    "exampleSentence": "Please leave your shoes in the hall.",
+    "contextPassage": "The hall is the first room you walk into when you enter a house. We also use 'hall' for a large room where people meet or have events."
+  },
+  "happily": {
+    "word": "happily",
+    "definition": "Used to say that something is lucky or good news.",
+    "exampleSentence": "Happily, the weather was nice on the day of our trip.",
+    "contextPassage": "We use 'happily' to show that something good happened by luck. Happily, nobody was hurt in the accident."
+  },
+  "have auxiliary": {
+    "word": "have auxiliary",
+    "definition": "A word used with another verb to show that something happened in the past or is finished.",
+    "exampleSentence": "I have already eaten my dinner tonight.",
+    "contextPassage": "We use 'have' before a past participle to make the present perfect. For example, you can say she has finished her homework."
+  },
+  "headache": {
+    "word": "headache",
+    "definition": "A pain that you feel inside your head.",
+    "exampleSentence": "I have a headache so I will rest at home today.",
+    "contextPassage": "A headache can happen when you are tired or stressed. Many people take medicine to help a headache go away."
+  },
+  "heart": {
+    "word": "heart",
+    "definition": "The part inside your chest that pumps blood around your body.",
+    "exampleSentence": "The doctor listened to his heart during the check-up.",
+    "contextPassage": "Your heart beats faster when you run or feel scared. We also use 'heart' to talk about feelings, like love."
+  },
+  "heat": {
+    "word": "heat",
+    "definition": "The feeling of something being very warm or hot.",
+    "exampleSentence": "The heat from the sun made everyone feel very tired.",
+    "contextPassage": "Heat can come from the sun, a fire, or an oven. On hot days, people drink water to stay cool in the heat."
+  },
+  "heavy": {
+    "word": "heavy",
+    "definition": "A bad person in a story who does wrong or harmful things.",
+    "exampleSentence": "The heavy in the movie stole money from the town.",
+    "contextPassage": "In stories and films, the heavy is the main bad character. The heavy often tries to stop the hero from winning."
+  },
+  "height": {
+    "word": "height",
+    "definition": "How tall something is from the bottom to the top.",
+    "exampleSentence": "The teacher measured the height of each student in class.",
+    "contextPassage": "You can measure the height of a person, a building, or a tree. A very tall building has a great height."
+  },
+  "helpful": {
+    "word": "helpful",
+    "definition": "Ready to give help or support to other people.",
+    "exampleSentence": "My neighbor was helpful when I moved into my new house.",
+    "contextPassage": "A helpful person makes things easier for others. It is always good to be helpful to your friends and family."
+  },
+  "hero": {
+    "word": "hero",
+    "definition": "A person who does something very brave to help others.",
+    "exampleSentence": "The firefighter was a hero after he saved the child.",
+    "contextPassage": "A hero is often someone who acts without thinking about their own safety. Many stories and films have a hero who fights against bad people."
+  },
+  "hers": {
+    "word": "hers",
+    "definition": "Something that belongs to a girl or woman.",
+    "exampleSentence": "That red bag on the chair is hers.",
+    "contextPassage": "We use hers to show that something belongs to a female. For example, if a girl owns a book, you can say the book is hers."
+  },
+  "herself": {
+    "word": "herself",
+    "definition": "Used to talk about a girl or woman doing something alone or as the subject of the sentence.",
+    "exampleSentence": "She painted the whole room herself without any help.",
+    "contextPassage": "We use herself when the same woman is both doing and receiving the action. For example, she hurt herself means she caused the pain."
+  },
+  "hide": {
+    "word": "hide",
+    "definition": "To put something in a place where other people cannot find or see it.",
+    "exampleSentence": "She decided to hide the birthday gift under the bed.",
+    "contextPassage": "People often hide presents before a birthday or holiday. You can also hide yourself by going behind a wall or a tree."
+  },
+  "high": {
+    "word": "high",
+    "definition": "A place or point that is far above the ground or other things.",
+    "exampleSentence": "The plane flew to a new high above the clouds.",
+    "contextPassage": "A high can be a physical place, like the top of a mountain. People feel happy when they reach a high point in their work or sport."
+  },
+  "hill": {
+    "word": "hill",
+    "definition": "A raised area of land that is smaller than a mountain.",
+    "exampleSentence": "The children ran up the hill to fly their kite.",
+    "contextPassage": "A hill is higher than the flat land around it but not as big as a mountain. People often walk or ride bikes up and down hills."
+  },
+  "himself": {
+    "word": "himself",
+    "definition": "Used to talk about a man or boy doing something alone or as the subject of the sentence.",
+    "exampleSentence": "He made a big sandwich for himself after school.",
+    "contextPassage": "We use himself when the same man is both doing and receiving the action. For example, he hurt himself means he caused the pain."
+  },
+  "hit": {
+    "word": "hit",
+    "definition": "A strong knock when one thing strikes another thing.",
+    "exampleSentence": "The bat gave the ball a hard hit across the field.",
+    "contextPassage": "A hit happens when something moves fast and touches another object. In sports like baseball, a good hit can send the ball very far."
+  },
+  "hockey": {
+    "word": "hockey",
+    "definition": "A sport played on ice where two teams try to put a small round object into the other team's net.",
+    "exampleSentence": "My brother plays hockey every Saturday at the ice rink.",
+    "contextPassage": "Hockey players use long sticks to hit the puck. It is a very fast and popular sport in cold countries."
+  },
+  "hold": {
+    "word": "hold",
+    "definition": "When you hold something, you keep it firmly in your hand.",
+    "exampleSentence": "She had a tight hold on her bag on the busy bus.",
+    "contextPassage": "You can keep a hold on something so it does not fall. A strong hold means you are gripping something very firmly."
+  },
+  "hole": {
+    "word": "hole",
+    "definition": "An empty space or opening in something solid.",
+    "exampleSentence": "There is a big hole in my sock near the toe.",
+    "contextPassage": "A hole can go all the way through something, like in paper. You can also dig a hole in the ground outside."
+  },
+  "hope": {
+    "word": "hope",
+    "definition": "To want something good to happen and believe it is possible.",
+    "exampleSentence": "I hope the weather will be sunny for our picnic tomorrow.",
+    "contextPassage": "People often hope for good news or a good result. You can say you hope something will happen in the future."
+  },
+  "huge": {
+    "word": "huge",
+    "definition": "Something that is very, very big in size.",
+    "exampleSentence": "They live in a huge house with ten bedrooms.",
+    "contextPassage": "You can use huge to talk about big buildings, animals, or crowds. It means something is much bigger than normal."
+  },
+  "human": {
+    "word": "human",
+    "definition": "A person, a man, a woman, or a child.",
+    "exampleSentence": "Every human needs water and food to stay alive.",
+    "contextPassage": "We use the word human to talk about people in general. Humans are different from animals because they can speak and think in complex ways."
+  },
+  "hurt": {
+    "word": "hurt",
+    "definition": "A bad feeling inside you after someone does or says something unkind.",
+    "exampleSentence": "She felt a deep hurt after her friend forgot her birthday.",
+    "contextPassage": "Hurt is the sad or painful feeling you get from unkind words or actions. This kind of hurt is not a physical pain but an emotional one."
+  },
+  "ill": {
+    "word": "ill",
+    "definition": "Problems or bad things that cause trouble or sadness for people.",
+    "exampleSentence": "The town faced many ills after the old factory closed down.",
+    "contextPassage": "Ills are difficult problems that affect a group of people. You often see this word used in the plural form, like social ills."
+  },
+  "illness": {
+    "word": "illness",
+    "definition": "A sickness or health problem that makes your body or mind feel bad.",
+    "exampleSentence": "He missed a week of school because of a serious illness.",
+    "contextPassage": "An illness can be short, like a cold, or long, like a heart problem. When you have an illness, you often need to see a doctor."
+  },
+  "image": {
+    "word": "image",
+    "definition": "A picture or photo of something or someone.",
+    "exampleSentence": "She saved a beautiful image of the sunset on her phone.",
+    "contextPassage": "An image can be a photo, a drawing, or a picture on a screen. You can share images with friends online very easily today."
+  },
+  "lock": {
+    "word": "lock",
+    "definition": "A small metal object on a door or box that you need a key to open.",
+    "exampleSentence": "He put a new lock on the front door of his house.",
+    "contextPassage": "You use a lock to keep a door or bag safe and closed. You need the right key to open a lock."
+  },
+  "lorry": {
+    "word": "lorry",
+    "definition": "A large road vehicle used to carry and move heavy goods from place to place.",
+    "exampleSentence": "A big lorry stopped outside the shop to deliver new boxes.",
+    "contextPassage": "Lorry is the word used mainly in British English. In American English, people call the same vehicle a truck."
+  },
+  "lost": {
+    "word": "lost",
+    "definition": "You lost something when you had it before but you do not have it now.",
+    "exampleSentence": "She lost her keys on the way to school.",
+    "contextPassage": "You can lose things like money, a phone, or a bag. People often say they lost something when they cannot find it."
+  },
+  "loud": {
+    "word": "loud",
+    "definition": "A loud is a strong, high sound that is easy to hear.",
+    "exampleSentence": "There was a loud from the kitchen that scared everyone.",
+    "contextPassage": "A loud can come from music, traffic, or a crowd. It is the opposite of a quiet sound."
+  },
+  "loudly": {
+    "word": "loudly",
+    "definition": "When you do something loudly, you make a lot of noise and people can easily hear you.",
+    "exampleSentence": "The children laughed loudly during the funny movie.",
+    "contextPassage": "People often speak loudly in noisy places so others can hear them. You can also sing, cry, or clap loudly."
+  },
+  "lovely": {
+    "word": "lovely",
+    "definition": "A lovely is a person who looks very attractive and beautiful.",
+    "exampleSentence": "The photographer took pictures of the lovelies at the fashion show.",
+    "contextPassage": "The word lovely is often used to talk about models or beautiful people. It can also describe someone who looks very nice."
+  },
+  "low": {
+    "word": "low",
+    "definition": "A low is a point or time when something is at its smallest or worst level.",
+    "exampleSentence": "The temperature reached a new low last night.",
+    "contextPassage": "You can talk about a low in weather, prices, or feelings. A low is the opposite of a high."
+  },
+  "luck": {
+    "word": "luck",
+    "definition": "Luck is when something good happens to you by chance and not because you planned it.",
+    "exampleSentence": "He found twenty dollars on the street — what luck!",
+    "contextPassage": "People often wish each other good luck before a test or a game. Luck is something you cannot control."
+  },
+  "lucky": {
+    "word": "lucky",
+    "definition": "A lucky person has good things happen to them by chance.",
+    "exampleSentence": "She was lucky to find a seat on the busy train.",
+    "contextPassage": "People say you are lucky when something good happens without a reason. You can feel lucky when you win something or avoid a problem."
+  },
+  "mail": {
+    "word": "mail",
+    "definition": "A mail is a bag or wallet used to carry letters and packages.",
+    "exampleSentence": "The worker picked up the heavy mail full of letters.",
+    "contextPassage": "A mail bag is used to move post from one place to another. Postal workers often carry a mail bag on their route."
+  },
+  "male": {
+    "word": "male",
+    "definition": "A male is a person or animal that is a boy or a man.",
+    "exampleSentence": "The doctor said the baby was a male.",
+    "contextPassage": "The word male can describe a person, an animal, or a bird. It is the opposite of female."
+  },
+  "manage": {
+    "word": "manage",
+    "definition": "A manage is the act of looking after or controlling something or someone.",
+    "exampleSentence": "Good manage of the shop helped it grow quickly.",
+    "contextPassage": "A manage means keeping things organised and running well. It is the work of making sure everything goes the right way."
+  },
+  "manager": {
+    "word": "manager",
+    "definition": "A manager is a person whose job is to be in charge of a business, a team, or a place.",
+    "exampleSentence": "The manager opened the store every morning at nine.",
+    "contextPassage": "A manager makes decisions and helps workers do their jobs well. You can find a manager in a shop, a restaurant, or a sports team."
+  },
+  "mark": {
+    "word": "mark",
+    "definition": "A mark is a line or area that shows where something begins or ends.",
+    "exampleSentence": "The referee checked that the ball crossed the mark.",
+    "contextPassage": "A mark can show a border or a dividing line on the ground. People use marks to know where one area stops and another one starts."
+  },
+  "marry": {
+    "word": "marry",
+    "definition": "To become the husband or wife of someone you love.",
+    "exampleSentence": "She will marry her boyfriend next summer.",
+    "contextPassage": "People often marry in a church or a garden. You can also get married at a local office."
+  },
+  "mathematics": {
+    "word": "mathematics",
+    "definition": "The school subject where you study numbers, shapes, and how they work together.",
+    "exampleSentence": "Mathematics is her favourite subject at school.",
+    "contextPassage": "You use mathematics to add, subtract, and solve problems. It is an important subject in every school."
+  },
+  "maths": {
+    "word": "maths",
+    "definition": "The short word for mathematics, the study of numbers and shapes.",
+    "exampleSentence": "He is really good at maths this year.",
+    "contextPassage": "Many students find maths difficult at first. Teachers use games to make maths more fun."
+  },
+  "matter": {
+    "word": "matter",
+    "definition": "The physical material that everything around us is made of.",
+    "exampleSentence": "Water is a type of matter that we drink every day.",
+    "contextPassage": "All objects are made of matter. Solids, liquids, and gases are all types of matter."
+  },
+  "may": {
+    "word": "may",
+    "definition": "Used to say that something is possible or allowed.",
+    "exampleSentence": "You may leave the classroom after the test.",
+    "contextPassage": "We use may to ask for permission politely. You can also use may to say something is possible."
+  },
+  "medical": {
+    "word": "medical",
+    "definition": "A check-up where a doctor looks at your body to see if you are healthy.",
+    "exampleSentence": "He had a medical before starting his new job.",
+    "contextPassage": "A medical can include simple tests like checking your heart. Doctors do a medical to find any health problems early."
+  },
+  "medicine": {
+    "word": "medicine",
+    "definition": "A pill, liquid, or tablet that helps your body get better when you are sick.",
+    "exampleSentence": "The doctor gave her medicine for her bad cold.",
+    "contextPassage": "You should take medicine at the right time each day. Always follow the doctor's instructions when you take medicine."
+  },
+  "memory": {
+    "word": "memory",
+    "definition": "The ability to remember things that happened in the past.",
+    "exampleSentence": "My grandfather has a very good memory for names.",
+    "contextPassage": "A good memory helps you learn new words faster. Some games are good for training your memory."
+  },
+  "metal": {
+    "word": "metal",
+    "definition": "A hard, strong material like iron, gold, or steel.",
+    "exampleSentence": "The chair legs are made of metal.",
+    "contextPassage": "Metal is used to build cars, bridges, and tools. It is usually shiny and can feel cold to touch."
+  },
+  "middle": {
+    "word": "middle",
+    "definition": "The part that is at the centre, not at the start or the end.",
+    "exampleSentence": "She sat in the middle of the back row.",
+    "contextPassage": "The middle of a room is the area farthest from the walls. You can cut something in the middle to make two equal parts."
+  },
+  "might": {
+    "word": "might",
+    "definition": "Great power or strength that a person or group has.",
+    "exampleSentence": "The soldiers fought with all their might.",
+    "contextPassage": "People with great might can do very hard physical things. In stories, kings and heroes often show their might in battle."
+  },
+  "mind": {
+    "word": "mind",
+    "definition": "The part of you that thinks, remembers, and makes decisions.",
+    "exampleSentence": "She has a very quick mind and learns fast.",
+    "contextPassage": "Your mind helps you solve problems and make choices. Reading books is a great way to keep your mind active."
+  },
+  "mine": {
+    "word": "mine",
+    "definition": "The thing or things that belong to me, not to anyone else.",
+    "exampleSentence": "That blue bag is mine, not yours.",
+    "contextPassage": "You use 'mine' so you do not have to repeat a noun. For example, you can say 'your car and mine'."
+  },
+  "mirror": {
+    "word": "mirror",
+    "definition": "A flat glass object that shows you your own face and body when you look at it.",
+    "exampleSentence": "She looked in the mirror before leaving the house.",
+    "contextPassage": "People use a mirror to check how they look. You can find a mirror in a bathroom or bedroom."
+  },
+  "missing": {
+    "word": "missing",
+    "definition": "To fail to hit or reach something you are aiming at.",
+    "exampleSentence": "He kicked the ball but kept missing the goal.",
+    "contextPassage": "A player can be missing the target again and again. This word is often used in sports."
+  },
+  "mobile": {
+    "word": "mobile",
+    "definition": "A decoration made of small objects hanging on strings that move in the air.",
+    "exampleSentence": "There was a colorful mobile hanging above the baby's bed.",
+    "contextPassage": "Mobiles are popular in children's rooms. The small objects move when there is wind or air."
+  },
+  "monkey": {
+    "word": "monkey",
+    "definition": "A small wild animal with a long tail that climbs trees and lives in hot places.",
+    "exampleSentence": "We saw a monkey jumping between the trees at the zoo.",
+    "contextPassage": "Monkeys are very active and playful animals. They eat fruit and live in groups."
+  },
+  "moon": {
+    "word": "moon",
+    "definition": "The large round object in the sky that goes around the Earth and shines at night.",
+    "exampleSentence": "The moon was very bright and round last night.",
+    "contextPassage": "You can see the moon in the sky after dark. It looks different each week of the month."
+  },
+  "mostly": {
+    "word": "mostly",
+    "definition": "Almost all of the time, or almost all of something.",
+    "exampleSentence": "The students in the class were mostly from the same city.",
+    "contextPassage": "You use 'mostly' to say that something is true in most cases. For example, the weather is mostly warm in summer."
+  },
+  "motorcycle": {
+    "word": "motorcycle",
+    "definition": "A fast two-wheeled vehicle with an engine that one or two people can ride.",
+    "exampleSentence": "My brother rides his motorcycle to work every day.",
+    "contextPassage": "A motorcycle goes faster than a bicycle. You need a special driving licence to ride one."
+  },
+  "musical": {
+    "word": "musical",
+    "definition": "A show or film where people sing and dance to tell a story.",
+    "exampleSentence": "We went to see a musical at the theatre last Saturday.",
+    "contextPassage": "Musicals are popular in big cities. The actors in a musical sing many songs during the show."
+  },
+  "musician": {
+    "word": "musician",
+    "definition": "A person who plays a musical instrument or sings as a job or hobby.",
+    "exampleSentence": "The musician played the guitar on the small outdoor stage.",
+    "contextPassage": "A musician can perform alone or with a group. Some musicians play at weddings or concerts."
+  },
+  "myself": {
+    "word": "myself",
+    "definition": "Used when you are the person doing something and also the person it happens to.",
+    "exampleSentence": "I made myself a cup of tea this morning.",
+    "contextPassage": "You use 'myself' to show that you did something without help. For example, 'I fixed the chair myself'."
+  },
+  "narrow": {
+    "word": "narrow",
+    "definition": "A thin passage of water that connects two larger areas of water.",
+    "exampleSentence": "The boat moved slowly through the narrow between the two islands.",
+    "contextPassage": "A narrow can be difficult to sail through. Sailors have to be careful in narrow passages."
+  },
+  "national": {
+    "word": "national",
+    "definition": "A person who belongs to a particular country.",
+    "exampleSentence": "She is a French national living in London.",
+    "contextPassage": "A national has the rights of their home country. You need a passport to show you are a national of your country."
+  },
+  "nature": {
+    "word": "nature",
+    "definition": "All the plants, animals, and land that exist outside of cities and towns.",
+    "exampleSentence": "We walked in the forest and enjoyed the nature around us.",
+    "contextPassage": "Nature includes trees, rivers, mountains, and wild animals. Many people go outside to relax and spend time in nature."
+  },
+  "nearly": {
+    "word": "nearly",
+    "definition": "Almost, but not completely or not quite.",
+    "exampleSentence": "I nearly missed the bus this morning.",
+    "contextPassage": "You use nearly when something is very close to being true. For example, it is nearly eight o'clock means a few minutes before eight."
+  },
+  "neck": {
+    "word": "neck",
+    "definition": "The part of your body between your head and your shoulders.",
+    "exampleSentence": "She wore a beautiful necklace around her neck.",
+    "contextPassage": "Your neck lets you turn your head left and right. If you sit at a computer too long, your neck can hurt."
+  },
+  "neither": {
+    "word": "neither",
+    "definition": "Also not; used to say the same negative thing about a second person or thing.",
+    "exampleSentence": "I don't like coffee, and neither does my sister.",
+    "contextPassage": "You use neither after someone says something negative. It shows that the same is true for you or someone else."
+  },
+  "nervous": {
+    "word": "nervous",
+    "definition": "Feeling worried or a little scared about something.",
+    "exampleSentence": "She felt nervous before her job interview.",
+    "contextPassage": "People often feel nervous before a big test or a new experience. When you are nervous, your heart can beat faster."
+  },
+  "noise": {
+    "word": "noise",
+    "definition": "A sound that is loud or not pleasant to hear.",
+    "exampleSentence": "The traffic outside made a lot of noise all night.",
+    "contextPassage": "Noise can make it hard to sleep or think clearly. People sometimes use earplugs to block out noise."
+  },
+  "noisy": {
+    "word": "noisy",
+    "definition": "Making a lot of loud or unpleasant sounds.",
+    "exampleSentence": "The classroom was very noisy before the teacher arrived.",
+    "contextPassage": "A noisy place can be hard to work in. Busy restaurants and markets are often very noisy."
+  },
+  "none": {
+    "word": "none",
+    "definition": "Not one; not any amount of something.",
+    "exampleSentence": "I wanted some cake, but there was none left.",
+    "contextPassage": "You use none to say that there is zero of something. For example, none of my friends came to the party."
+  },
+  "normal": {
+    "word": "normal",
+    "definition": "Something that is usual or expected, not special or different.",
+    "exampleSentence": "It is normal to feel tired after a long day.",
+    "contextPassage": "When something is normal, it happens in a regular or common way. For example, cold weather in winter is normal in many places."
+  },
+  "normally": {
+    "word": "normally",
+    "definition": "In the usual way; most of the time.",
+    "exampleSentence": "I normally wake up at seven o'clock every morning.",
+    "contextPassage": "You use normally to talk about what you usually do. For example, she normally takes the bus to work."
+  },
+  "notice": {
+    "word": "notice",
+    "definition": "When you see or become aware of something around you.",
+    "exampleSentence": "Did you notice the new paint on the walls?",
+    "contextPassage": "You notice something when you pay attention to it. Sometimes you notice small changes that other people miss."
+  },
+  "nowhere": {
+    "word": "nowhere",
+    "definition": "Not in any place; not going to any place.",
+    "exampleSentence": "I had no map, so I went nowhere new.",
+    "contextPassage": "You can use 'nowhere' when you did not go to any place. For example, you stayed home all day and went nowhere."
+  },
+  "nut": {
+    "word": "nut",
+    "definition": "A small, hard seed with a hard shell that you can often eat.",
+    "exampleSentence": "She put a nut in her mouth and started to chew.",
+    "contextPassage": "Nuts grow on trees and plants. Almonds, walnuts, and peanuts are common types of nuts."
+  },
+  "ocean": {
+    "word": "ocean",
+    "definition": "A very large area of salt water between continents.",
+    "exampleSentence": "The ship sailed across the ocean for many days.",
+    "contextPassage": "The Pacific and Atlantic are large oceans. Oceans cover most of the Earth's surface."
+  },
+  "offer": {
+    "word": "offer",
+    "definition": "Something you say to give or do something for someone.",
+    "exampleSentence": "He made an offer to help me move the boxes.",
+    "contextPassage": "You can accept or reject an offer. A shop can make a special offer with a lower price."
+  },
+  "officer": {
+    "word": "officer",
+    "definition": "A person with an important and official job, like in the police or army.",
+    "exampleSentence": "The police officer stopped the car on the road.",
+    "contextPassage": "An officer has the power to give orders to others. You can find officers in the police, the army, or the government."
+  },
+  "oil": {
+    "word": "oil",
+    "definition": "A thick liquid fat used for cooking or for machines.",
+    "exampleSentence": "She put some oil in the pan before cooking the fish.",
+    "contextPassage": "Olive oil and sunflower oil are common in cooking. Machines also need oil to work well and smoothly."
+  },
+  "onto": {
+    "word": "onto",
+    "definition": "Moving to a position on top of or on something.",
+    "exampleSentence": "The cat jumped onto the table and sat down.",
+    "contextPassage": "You use 'onto' to show movement toward a surface. For example, you can step onto a bus or climb onto a chair."
+  },
+  "ordinary": {
+    "word": "ordinary",
+    "definition": "Normal and not special or different from others.",
+    "exampleSentence": "It was just an ordinary day at school for me.",
+    "contextPassage": "Ordinary things are common and happen every day. The opposite of ordinary is special or unusual."
+  },
+  "organize": {
+    "word": "organize",
+    "definition": "To plan and arrange things so they work well together.",
+    "exampleSentence": "She will organize all the books on the shelf today.",
+    "contextPassage": "You can organize a meeting, a party, or your room. When you organize things, you put them in a clear and useful order."
+  },
+  "ourselves": {
+    "word": "ourselves",
+    "definition": "Used when we do something to ourselves or by ourselves.",
+    "exampleSentence": "We cooked the dinner ourselves without any help.",
+    "contextPassage": "You use 'ourselves' when the subject and the object are both 'we'. For example, we enjoyed ourselves at the party."
+  },
+  "oven": {
+    "word": "oven",
+    "definition": "A box inside a cooker that gets hot and is used for baking or heating food.",
+    "exampleSentence": "She put the cake in the oven for thirty minutes.",
+    "contextPassage": "You bake bread and cook pizza in an oven. Always be careful because the oven gets very hot inside."
+  },
+  "own": {
+    "word": "own",
+    "definition": "Belonging to you and not to anyone else.",
+    "exampleSentence": "He has his own room in the new apartment.",
+    "contextPassage": "You use 'own' to show something belongs to that person. For example, she has her own car and drives to work."
+  },
+  "owner": {
+    "word": "owner",
+    "definition": "A person who has something that belongs to them.",
+    "exampleSentence": "The owner of the dog came to the park.",
+    "contextPassage": "You can ask the owner if you want to buy the shop. The owner is responsible for the building."
+  },
+  "pack": {
+    "word": "pack",
+    "definition": "A bag or bundle of things you carry on your back.",
+    "exampleSentence": "She put her clothes in a pack for the trip.",
+    "contextPassage": "Hikers often use a pack to carry food and water. A pack can be heavy if it has too many things inside."
+  },
+  "pain": {
+    "word": "pain",
+    "definition": "A bad feeling in your body when you are hurt or sick.",
+    "exampleSentence": "He felt a strong pain in his leg after the fall.",
+    "contextPassage": "Pain can come from an injury or illness. You can take medicine to help with pain."
+  },
+  "painter": {
+    "word": "painter",
+    "definition": "A person whose job is to make pictures using paint.",
+    "exampleSentence": "The painter made a beautiful picture of the sea.",
+    "contextPassage": "A painter uses brushes and colors to create art. Some painters sell their pictures in galleries."
+  },
+  "palace": {
+    "word": "palace",
+    "definition": "A very large and grand building where a king or queen lives.",
+    "exampleSentence": "The tourists took photos of the old palace.",
+    "contextPassage": "A palace is usually very big and beautiful. Many palaces are open for visitors to see inside."
+  },
+  "pants": {
+    "word": "pants",
+    "definition": "A piece of clothing that covers your legs and goes up to your waist.",
+    "exampleSentence": "He wore blue pants and a white shirt to work.",
+    "contextPassage": "Pants come in many styles and colors. You can wear pants in cold weather to keep your legs warm."
+  },
+  "parking": {
+    "word": "parking",
+    "definition": "The act of stopping and leaving a car in a place.",
+    "exampleSentence": "She found a parking space near the shop.",
+    "contextPassage": "Parking in the city can be very difficult. Some places have a parking fee that you need to pay."
+  },
+  "pass": {
+    "word": "pass",
+    "definition": "To move past something or someone, or to give something to a person.",
+    "exampleSentence": "Can you pass me the salt, please?",
+    "contextPassage": "You can pass another car on the road carefully. Students need to pass an exam to get a grade."
+  },
+  "passenger": {
+    "word": "passenger",
+    "definition": "A person who travels in a car, bus, train, or plane but does not drive it.",
+    "exampleSentence": "The passenger sat by the window on the train.",
+    "contextPassage": "A passenger does not control the vehicle. There were many passengers on the bus this morning."
+  },
+  "past": {
+    "word": "past",
+    "definition": "The time that already happened before now.",
+    "exampleSentence": "In the past, people did not have mobile phones.",
+    "contextPassage": "We use 'past' to talk about things that are finished. You can learn a lot from events in the past."
+  },
+  "patient": {
+    "word": "patient",
+    "definition": "A person who gets medical care from a doctor or nurse.",
+    "exampleSentence": "The patient waited in the doctor's office.",
+    "contextPassage": "A patient can stay in the hospital when they are very sick. Doctors and nurses help every patient feel better."
+  },
+  "pattern": {
+    "word": "pattern",
+    "definition": "A design with repeated shapes or colors on something.",
+    "exampleSentence": "Her dress had a pretty flower pattern on it.",
+    "contextPassage": "You can find patterns on clothes, wallpaper, and rugs. A pattern usually repeats the same shape many times."
+  },
+  "pay": {
+    "word": "pay",
+    "definition": "The money you get from your job for the work you do.",
+    "exampleSentence": "She gets her pay at the end of every month.",
+    "contextPassage": "Pay is the money your boss gives you for working. People often check their pay to make sure the amount is correct."
+  },
+  "peace": {
+    "word": "peace",
+    "definition": "A quiet and calm time when there is no fighting or trouble.",
+    "exampleSentence": "The two countries signed an agreement to keep the peace.",
+    "contextPassage": "Peace means no war and no violence between people or countries. People feel safe and happy when there is peace around them."
+  },
+  "penny": {
+    "word": "penny",
+    "definition": "A small coin with a low value, used in the UK and some other countries.",
+    "exampleSentence": "She found an old penny on the floor near the door.",
+    "contextPassage": "A penny is worth very little money on its own. In the UK, people use pennies to pay for small things or make exact change."
+  },
+  "per": {
+    "word": "per",
+    "definition": "For each one, used to show a rate or amount.",
+    "exampleSentence": "The bus ticket costs two dollars per person.",
+    "contextPassage": "You use per when you talk about a price or amount for one thing. For example, you can say how much something costs per day or per hour."
+  },
+  "per cent": {
+    "word": "per cent",
+    "definition": "A number that shows how many parts out of one hundred something is.",
+    "exampleSentence": "Fifty per cent of the students passed the test.",
+    "contextPassage": "Per cent means out of one hundred. You often see per cent used with numbers to talk about discounts, results, or statistics."
+  },
+  "perhaps": {
+    "word": "perhaps",
+    "definition": "A word that means something might happen but you are not sure.",
+    "exampleSentence": "Perhaps we will go to the beach tomorrow if it is sunny.",
+    "contextPassage": "You use perhaps when you are not certain about something. It is a polite way to say that something is possible but not definite."
+  },
+  "permission": {
+    "word": "permission",
+    "definition": "When someone in charge says it is okay for you to do something.",
+    "exampleSentence": "She asked her teacher for permission to leave the classroom early.",
+    "contextPassage": "You need permission from someone who has authority, like a parent or boss. Without permission, you are not allowed to do the thing you want to do."
+  },
+  "pet": {
+    "word": "pet",
+    "definition": "An animal that you keep at home and take care of as a friend.",
+    "exampleSentence": "My pet cat sleeps on my bed every night.",
+    "contextPassage": "Common pets include dogs, cats, rabbits, and fish. People love their pets and give them food, water, and attention every day."
+  },
+  "petrol": {
+    "word": "petrol",
+    "definition": "A liquid fuel that people put in cars and other vehicles to make them go.",
+    "exampleSentence": "He stopped at the garage to buy some petrol for his car.",
+    "contextPassage": "Cars need petrol to run, so drivers fill up their tank at a petrol station. Petrol prices can go up and down from week to week."
+  },
+  "photograph": {
+    "word": "photograph",
+    "definition": "A picture taken with a camera that shows a real person, place, or thing.",
+    "exampleSentence": "She took a photograph of her family at the party.",
+    "contextPassage": "You can take a photograph with a camera or a phone. People often save their photographs to remember happy moments in their life."
+  },
+  "physics": {
+    "word": "physics",
+    "definition": "A school subject where you learn about energy, light, sound, and how things move.",
+    "exampleSentence": "We learned about electricity in our physics class today.",
+    "contextPassage": "Physics helps you understand how the world around you works. It is one of the science subjects that students study at school."
+  },
+  "pick": {
+    "word": "pick",
+    "definition": "A heavy tool with a sharp metal point, used to break hard ground or rock.",
+    "exampleSentence": "The worker used a pick to break up the old road.",
+    "contextPassage": "A pick is a tool that workers use outside for hard jobs. It has a long handle and a sharp metal head that hits the ground hard."
+  },
+  "pilot": {
+    "word": "pilot",
+    "definition": "A person who flies an airplane or controls a large boat.",
+    "exampleSentence": "The pilot landed the plane safely at the airport.",
+    "contextPassage": "A pilot works in the sky or on the water. We use this word for the person in control of the vehicle."
+  },
+  "planet": {
+    "word": "planet",
+    "definition": "A very large, round object in space that moves around a star.",
+    "exampleSentence": "Earth is the planet where all people live.",
+    "contextPassage": "Our sun has eight planets moving around it. Mars and Jupiter are also planets in our solar system."
+  },
+  "plant": {
+    "word": "plant",
+    "definition": "A living thing that grows in soil and is not an animal, like a flower or grass.",
+    "exampleSentence": "She put a small plant on her bedroom window.",
+    "contextPassage": "Plants need water and light to grow. Trees and flowers are both types of plants."
+  },
+  "plastic": {
+    "word": "plastic",
+    "definition": "A light, strong material made by people, used to make many everyday objects.",
+    "exampleSentence": "He carried his lunch in a plastic bag.",
+    "contextPassage": "Many bottles and toys are made of plastic. Plastic is cheap and easy to make into different shapes."
+  },
+  "plate": {
+    "word": "plate",
+    "definition": "A flat, round dish that you put food on to eat.",
+    "exampleSentence": "She put the hot pasta on a clean plate.",
+    "contextPassage": "We use a plate at every meal. You can wash plates in the sink or in a dishwasher."
+  },
+  "platform": {
+    "word": "platform",
+    "definition": "A raised flat area where people stand, for example at a train station or on a stage.",
+    "exampleSentence": "We waited on the platform for the next train.",
+    "contextPassage": "At a train station, you stand on the platform to get on the train. A singer can also perform on a platform in front of an audience."
+  },
+  "pleased": {
+    "word": "pleased",
+    "definition": "Feeling happy because something good happened or someone did something nice.",
+    "exampleSentence": "She was very pleased with her test results.",
+    "contextPassage": "You can say you are pleased when you feel satisfied and happy. For example, a teacher is pleased when students do well."
+  },
+  "pocket": {
+    "word": "pocket",
+    "definition": "A small bag sewn into clothing where you can keep small things.",
+    "exampleSentence": "He put his keys in his jacket pocket.",
+    "contextPassage": "Most trousers and jackets have pockets. You can keep your phone or some money in a pocket."
+  },
+  "polite": {
+    "word": "polite",
+    "definition": "Behaving in a kind and respectful way to other people.",
+    "exampleSentence": "She was very polite and said thank you to everyone.",
+    "contextPassage": "It is polite to say please and thank you. Teachers and parents often tell children to be polite."
+  },
+  "pollution": {
+    "word": "pollution",
+    "definition": "Dirty or harmful things added to air, water, or land that make it bad for living things.",
+    "exampleSentence": "The river had a lot of pollution from the old factory.",
+    "contextPassage": "Cars and factories can cause air pollution. Pollution is bad for animals, plants, and people."
+  },
+  "pop": {
+    "word": "pop",
+    "definition": "A short, loud sound like the sound a bottle makes when you open it.",
+    "exampleSentence": "The balloon made a loud pop when it burst.",
+    "contextPassage": "You can hear a pop when you open a fizzy drink bottle. It is a quick, sharp sound that happens very fast."
+  },
+  "population": {
+    "word": "population",
+    "definition": "The total number of people who live in a place, like a city or country.",
+    "exampleSentence": "The population of that city is about one million people.",
+    "contextPassage": "A big country usually has a large population. You can talk about the population of a town, country, or the whole world."
+  },
+  "poster": {
+    "word": "poster",
+    "definition": "A large picture or notice that you put on a wall.",
+    "exampleSentence": "She put a poster of her favourite singer on her bedroom wall.",
+    "contextPassage": "Posters are often used to tell people about events or concerts. You can also use a poster to decorate your room."
+  },
+  "power": {
+    "word": "power",
+    "definition": "The ability or strength to do something.",
+    "exampleSentence": "The strong wind cut the power to our house last night.",
+    "contextPassage": "People often talk about power when electricity stops working. You can also use this word to describe how strong a person or machine is."
+  },
+  "present": {
+    "word": "present",
+    "definition": "The time that is happening now, not the past or future.",
+    "exampleSentence": "It is important to think about the present, not just the future.",
+    "contextPassage": "People use the word present to talk about what is happening right now. For example, at the present time, she is studying English."
+  },
+  "president": {
+    "word": "president",
+    "definition": "The leader of a country or a large organisation.",
+    "exampleSentence": "The president gave a speech to the whole country on TV.",
+    "contextPassage": "In many countries, people vote to choose their president. The president is usually the most important person in the government."
+  },
+  "print": {
+    "word": "print",
+    "definition": "Words or pictures that are made on paper by a machine.",
+    "exampleSentence": "I like to read the news in print, not on my phone.",
+    "contextPassage": "Books, newspapers, and magazines are all types of print. Some people say that print is less popular today because of the internet."
+  },
+  "printer": {
+    "word": "printer",
+    "definition": "A machine that puts words or pictures onto paper.",
+    "exampleSentence": "I used the printer to make a copy of my homework.",
+    "contextPassage": "Many offices and homes have a printer near the computer. You need ink inside the printer to make it work."
+  },
+  "prison": {
+    "word": "prison",
+    "definition": "A building where people must stay as a punishment for a crime.",
+    "exampleSentence": "The judge sent the man to prison for three years.",
+    "contextPassage": "People who break serious laws can go to prison. Guards work at a prison to make sure no one leaves."
+  },
+  "prize": {
+    "word": "prize",
+    "definition": "Something valuable that you get when you win a competition.",
+    "exampleSentence": "She won first prize in the school drawing competition.",
+    "contextPassage": "Prizes can be money, a trophy, or a gift. Many people enter competitions because they want to win a prize."
+  },
+  "professor": {
+    "word": "professor",
+    "definition": "A senior teacher at a university who knows a lot about one subject.",
+    "exampleSentence": "The professor taught us about history every Monday morning.",
+    "contextPassage": "Students at university often call their teacher a professor. A professor usually does a lot of research about their subject."
+  },
+  "profile": {
+    "word": "profile",
+    "definition": "A short description of a person that gives basic information about them.",
+    "exampleSentence": "She wrote a short profile about herself on the website.",
+    "contextPassage": "Many social media websites ask you to create a profile. Your profile usually includes your name, photo, and some facts about you."
+  },
+  "program": {
+    "word": "program",
+    "definition": "A plan with a set of activities organised in order.",
+    "exampleSentence": "The school started a new program to help students learn maths.",
+    "contextPassage": "A program usually has a clear goal and a list of steps. Many companies and schools create programs to teach new skills."
+  },
+  "promise": {
+    "word": "promise",
+    "definition": "When you tell someone that you will definitely do something.",
+    "exampleSentence": "He made a promise to call his mum every Sunday.",
+    "contextPassage": "When you make a promise, people expect you to keep it. It is important not to break a promise because it can hurt trust."
+  },
+  "pronounce": {
+    "word": "pronounce",
+    "definition": "To say officially that something is true or decided.",
+    "exampleSentence": "The judge will pronounce his decision in the morning.",
+    "contextPassage": "A doctor can pronounce someone healthy after a check. A leader can pronounce a new rule for everyone."
+  },
+  "pub": {
+    "word": "pub",
+    "definition": "A place where people can buy and drink alcohol and food.",
+    "exampleSentence": "We met our friends at the pub after work.",
+    "contextPassage": "A pub is a common place to meet friends in the UK. Many pubs also serve hot food and show sports on TV."
+  },
+  "public": {
+    "word": "public",
+    "definition": "All the people in a country or area together.",
+    "exampleSentence": "The park is open to the public every day.",
+    "contextPassage": "The public can use free services like libraries and parks. Politicians often listen to what the public wants."
+  },
+  "pull": {
+    "word": "pull",
+    "definition": "The act of using force to move something toward you.",
+    "exampleSentence": "He gave the rope a strong pull to open the door.",
+    "contextPassage": "A pull is the opposite of a push. You need a good pull to open a heavy drawer."
+  },
+  "push": {
+    "word": "push",
+    "definition": "The act of pressing something away from you with force.",
+    "exampleSentence": "She gave the box a push and it moved across the floor.",
+    "contextPassage": "A push helps you move heavy things without lifting them. One strong push was enough to open the gate."
+  },
+  "queen": {
+    "word": "queen",
+    "definition": "A woman who rules a country, or the wife of a king.",
+    "exampleSentence": "The queen visited the city and people came to see her.",
+    "contextPassage": "A queen can rule a country for many years. People often cheer when the queen appears in public."
+  },
+  "quietly": {
+    "word": "quietly",
+    "definition": "In a way that makes little or no noise.",
+    "exampleSentence": "She walked quietly into the room so no one woke up.",
+    "contextPassage": "You should speak quietly in a library. The children quietly sat down when the teacher came in."
+  },
+  "race": {
+    "word": "race",
+    "definition": "A competition to see who can finish first.",
+    "exampleSentence": "Tom won the race and got a gold medal.",
+    "contextPassage": "A race can be between people, cars, or animals. Everyone was excited to watch the final race at the stadium."
+  },
+  "railway": {
+    "word": "railway",
+    "definition": "A system of tracks and trains that carry people or goods.",
+    "exampleSentence": "We took the railway to travel to the next city.",
+    "contextPassage": "A railway station is where trains stop to pick up passengers. Many people use the railway every day to get to work."
+  },
+  "raise": {
+    "word": "raise",
+    "definition": "An increase in the amount of money you earn at work.",
+    "exampleSentence": "She was very happy when she got a raise at work.",
+    "contextPassage": "A raise means your employer pays you more money. Many workers ask for a raise after one year in a job."
+  },
+  "reach": {
+    "word": "reach",
+    "definition": "The act of stretching your arm to touch or get something.",
+    "exampleSentence": "She needed a chair to reach the top shelf.",
+    "contextPassage": "A long reach helps you get things that are high up. The child stood on a step to make her reach longer."
+  },
+  "receive": {
+    "word": "receive",
+    "definition": "The act of getting data or a signal sent to you.",
+    "exampleSentence": "The phone showed a message about a receive error.",
+    "contextPassage": "A receive happens when your device gets information from another. You can check the receive status in your app settings."
+  },
+  "recent": {
+    "word": "recent",
+    "definition": "Something that happened not long ago, close to now.",
+    "exampleSentence": "Did you see the recent news about the big storm?",
+    "contextPassage": "You use 'recent' to talk about things that happened in the last few days or weeks. A common phrase is 'recent news' or 'recent changes'."
+  },
+  "recently": {
+    "word": "recently",
+    "definition": "Not long ago, a short time before now.",
+    "exampleSentence": "I recently bought a new phone at the mall.",
+    "contextPassage": "You use 'recently' with past actions that happened very close to today. For example, 'I recently started a new job.'"
+  },
+  "reception": {
+    "word": "reception",
+    "definition": "The area near the front door of a hotel or office where people check in or ask for help.",
+    "exampleSentence": "Please leave your key at the reception when you check out.",
+    "contextPassage": "Hotels and offices usually have a reception desk. The person working there can answer your questions."
+  },
+  "recipe": {
+    "word": "recipe",
+    "definition": "A list of food items and steps that tell you how to make a meal.",
+    "exampleSentence": "My mother gave me a recipe for chocolate cake.",
+    "contextPassage": "You follow a recipe step by step to cook something. Recipes tell you what ingredients you need and how long to cook them."
+  },
+  "recognize": {
+    "word": "recognize",
+    "definition": "To see someone or something and know who or what they are from before.",
+    "exampleSentence": "I did not recognize my old friend at first.",
+    "contextPassage": "You recognize someone because you have seen them before. It can be hard to recognize people after a long time."
+  },
+  "recommend": {
+    "word": "recommend",
+    "definition": "To tell someone that a thing or place is good and they should try it.",
+    "exampleSentence": "Can you recommend a good restaurant near here?",
+    "contextPassage": "Friends often recommend movies, books, or places to each other. When you recommend something, you think other people will like it too."
+  },
+  "record": {
+    "word": "record",
+    "definition": "A round, flat disc that plays music on a special machine.",
+    "exampleSentence": "My grandfather has many old records in his living room.",
+    "contextPassage": "People played records before CDs and music apps became popular. You need a record player to listen to a record."
+  },
+  "recording": {
+    "word": "recording",
+    "definition": "Saving sound or video so you can listen to or watch it again later.",
+    "exampleSentence": "She is recording the concert on her phone right now.",
+    "contextPassage": "You can make a recording of a song, a class, or a meeting. A recording lets you go back and listen again."
+  },
+  "recycle": {
+    "word": "recycle",
+    "definition": "The act of putting used things through a process so they can be used again.",
+    "exampleSentence": "We did a recycle of all the old paper from the office.",
+    "contextPassage": "A recycle of bottles and cans helps the environment. Many cities have a recycle programme for people at home."
+  },
+  "reduce": {
+    "word": "reduce",
+    "definition": "To make something smaller in size or amount than it was before.",
+    "exampleSentence": "We need to reduce the amount of sugar in our food.",
+    "contextPassage": "You can reduce waste by buying less. Turning off lights helps reduce your electricity bill."
+  },
+  "refuse": {
+    "word": "refuse",
+    "definition": "Old or unwanted things that people throw away; rubbish or trash.",
+    "exampleSentence": "The workers collected the refuse from every street in town.",
+    "contextPassage": "Refuse is taken away by rubbish trucks. Cities have rules about where and when to leave your refuse outside."
+  },
+  "region": {
+    "word": "region",
+    "definition": "A large area of land that has something special about it, like its weather or culture.",
+    "exampleSentence": "This region gets a lot of snow in the winter.",
+    "contextPassage": "A country can have many different regions. People in the same region often share the same food and traditions."
+  },
+  "regular": {
+    "word": "regular",
+    "definition": "A soldier who works full-time in the main army, not a part-time soldier.",
+    "exampleSentence": "The regular trained every day at the army base.",
+    "contextPassage": "A regular is a full-time soldier in the national army. People sometimes use this word to show the difference between full-time and part-time soldiers."
+  },
+  "relationship": {
+    "word": "relationship",
+    "definition": "The way two people or things are connected to each other.",
+    "exampleSentence": "She has a good relationship with her teacher.",
+    "contextPassage": "You can use relationship to talk about family, friends, or work. People often ask about the relationship between two things or two people."
+  },
+  "remove": {
+    "word": "remove",
+    "definition": "The action of taking something away from a place.",
+    "exampleSentence": "The remove of the old chairs took about one hour.",
+    "contextPassage": "Remove as a noun means the act of taking something away. You can talk about the remove of dirt, furniture, or other things."
+  },
+  "repair": {
+    "word": "repair",
+    "definition": "The work you do to fix something that is broken or damaged.",
+    "exampleSentence": "The repair of the old bike cost twenty dollars.",
+    "contextPassage": "You can use repair to talk about fixing a car, a house, or a machine. People often say the repair was fast or very expensive."
+  },
+  "replace": {
+    "word": "replace",
+    "definition": "To put something back in the place where it was before.",
+    "exampleSentence": "She will replace the book on the shelf after reading it.",
+    "contextPassage": "You replace something when you put it back where it was. You can also replace something old with something new."
+  },
+  "reply": {
+    "word": "reply",
+    "definition": "Something you say or write back to someone after they speak or write to you.",
+    "exampleSentence": "I got a reply to my email this morning.",
+    "contextPassage": "A reply can be a spoken answer or a written message. People often wait for a reply after they send a letter or an email."
+  },
+  "report": {
+    "word": "report",
+    "definition": "A piece of writing or spoken information that tells people about something that happened.",
+    "exampleSentence": "The teacher read the report about the school trip.",
+    "contextPassage": "A report can be written by a student, a journalist, or a worker. Reports are often about news, school work, or things at a job."
+  },
+  "reporter": {
+    "word": "reporter",
+    "definition": "A person whose job is to find news and tell people about it.",
+    "exampleSentence": "The reporter talked to people after the big storm.",
+    "contextPassage": "A reporter works for a newspaper, a TV channel, or a website. Reporters go to places where something happens and write or talk about it."
+  },
+  "request": {
+    "word": "request",
+    "definition": "When you ask for something in a polite way.",
+    "exampleSentence": "She made a request for a window seat on the plane.",
+    "contextPassage": "A request is a polite way to ask for something you need or want. People make requests at hotels, restaurants, or at work."
+  },
+  "research": {
+    "word": "research",
+    "definition": "The work of studying a topic carefully to find new information.",
+    "exampleSentence": "The doctor did research to find a better medicine.",
+    "contextPassage": "Research means looking carefully at a topic to learn more about it. Students and scientists do research to find answers to their questions."
+  },
+  "respond": {
+    "word": "respond",
+    "definition": "To say or do something as an answer to what someone said or did.",
+    "exampleSentence": "She did not respond to my question in class.",
+    "contextPassage": "You respond when you answer a person or react to something. You can respond by speaking, writing, or doing something."
+  },
+  "response": {
+    "word": "response",
+    "definition": "Something you say, write, or do as an answer to someone or something.",
+    "exampleSentence": "His response to the question was very short.",
+    "contextPassage": "A response can be spoken or written. People give a response after a question, a letter, or a problem."
+  },
+  "rest": {
+    "word": "rest",
+    "definition": "The time when you stop working or doing something and relax.",
+    "exampleSentence": "She sat down to rest after a long walk.",
+    "contextPassage": "You need rest when you feel tired. A short rest can help you feel better."
+  },
+  "review": {
+    "word": "review",
+    "definition": "A piece of writing that gives your opinion about a book, film, or restaurant.",
+    "exampleSentence": "She wrote a review about the new restaurant in town.",
+    "contextPassage": "People often read reviews before they choose a film to watch. A good review can help others decide what to buy."
+  },
+  "ride": {
+    "word": "ride",
+    "definition": "A trip on a bicycle, horse, or in a vehicle.",
+    "exampleSentence": "We went for a ride in the car on Sunday.",
+    "contextPassage": "A bike ride is a great way to enjoy the park. The ride to the city took about one hour."
+  },
+  "ring": {
+    "word": "ring",
+    "definition": "A small round object that you wear on your finger.",
+    "exampleSentence": "She got a gold ring as a birthday gift.",
+    "contextPassage": "People often wear a ring on their wedding day. A ring can be made of gold or silver."
+  },
+  "rise": {
+    "word": "rise",
+    "definition": "To move up from a lower place to a higher place.",
+    "exampleSentence": "The sun will rise at six o'clock tomorrow morning.",
+    "contextPassage": "Hot air rises to the top of a room. The water level in the river rose after the rain."
+  },
+  "rock": {
+    "word": "rock",
+    "definition": "A hard, natural material that you find in the ground or on mountains.",
+    "exampleSentence": "He picked up a small rock from the ground.",
+    "contextPassage": "Some beaches have rocks instead of sand. Rocks can be many different sizes and colors."
+  },
+  "role": {
+    "word": "role",
+    "definition": "The character that an actor plays in a film or a play.",
+    "exampleSentence": "She played the role of the queen in the school play.",
+    "contextPassage": "The main role in a film is called the lead role. He practiced a lot to prepare for his role."
+  },
+  "roof": {
+    "word": "roof",
+    "definition": "The top part of a building that covers it from outside.",
+    "exampleSentence": "There is a cat sitting on the roof of our house.",
+    "contextPassage": "A roof keeps the rain out of a building. The strong wind damaged the roof last night."
+  },
+  "round": {
+    "word": "round",
+    "definition": "Moving in a circle or going around something.",
+    "exampleSentence": "The children ran round the tree in the garden.",
+    "contextPassage": "The Earth moves round the sun every year. She looked round the room to find her bag."
+  },
+  "route": {
+    "word": "route",
+    "definition": "The path or road you take to get from one place to another.",
+    "exampleSentence": "We took a different route to avoid the traffic.",
+    "contextPassage": "The bus route goes through the city center. You can choose a short or long route to school."
+  },
+  "rubbish": {
+    "word": "rubbish",
+    "definition": "Things that you do not need and throw away.",
+    "exampleSentence": "Please put the rubbish in the bin outside.",
+    "contextPassage": "It is important to throw your rubbish in the correct place. The rubbish truck comes every Monday morning."
+  },
+  "rude": {
+    "word": "rude",
+    "definition": "Not polite and not kind to other people.",
+    "exampleSentence": "It is rude to talk loudly on the phone in a quiet place.",
+    "contextPassage": "Some people are rude because they are in a bad mood. It is never nice to be rude to others."
+  },
+  "runner": {
+    "word": "runner",
+    "definition": "A person who moves fast on their feet, often in a race or for exercise.",
+    "exampleSentence": "The runner crossed the finish line first.",
+    "contextPassage": "A runner trains every day to stay fast and healthy. You can see runners in parks early in the morning."
+  },
+  "running": {
+    "word": "running",
+    "definition": "Moving fast on your feet, faster than walking.",
+    "exampleSentence": "She is running to catch the bus.",
+    "contextPassage": "Running is good exercise for your body. Many people go running in the morning before work."
+  },
+  "sadly": {
+    "word": "sadly",
+    "definition": "In a way that shows you feel unhappy or upset.",
+    "exampleSentence": "He sadly said goodbye to his old friends.",
+    "contextPassage": "You say something sadly when you feel bad about it. She sadly told us the dog was gone."
+  },
+  "speech": {
+    "word": "speech",
+    "definition": "The ability to say words and talk to other people.",
+    "exampleSentence": "The teacher gave a short speech to the class.",
+    "contextPassage": "A speech is when one person talks to a group. People often give a speech at a wedding or school event."
+  },
+  "speed": {
+    "word": "speed",
+    "definition": "How fast something or someone moves.",
+    "exampleSentence": "The car moved at a very high speed.",
+    "contextPassage": "Speed tells you how quickly something travels. A fast train has a higher speed than a slow bus."
+  },
+  "spider": {
+    "word": "spider",
+    "definition": "A small animal with eight legs that often makes a web to catch food.",
+    "exampleSentence": "There is a big spider on the wall.",
+    "contextPassage": "A spider builds its web in corners or between trees. Many people are scared when they see a spider."
+  },
+  "spoon": {
+    "word": "spoon",
+    "definition": "A small tool with a round part and a long handle, used to eat or mix food.",
+    "exampleSentence": "She used a spoon to eat her soup.",
+    "contextPassage": "You use a spoon to eat soft or liquid food. People also use a spoon to stir coffee or tea."
+  },
+  "square": {
+    "word": "square",
+    "definition": "A flat shape with four equal sides and four equal corners.",
+    "exampleSentence": "She drew a square on the paper.",
+    "contextPassage": "A square looks like a box shape with all sides the same length. A chessboard is made of small squares."
+  },
+  "stage": {
+    "word": "stage",
+    "definition": "One part or step in a longer process or activity.",
+    "exampleSentence": "We are at the first stage of the project.",
+    "contextPassage": "A stage is one section in something that has many parts. You move to the next stage when the first one is done."
+  },
+  "stair": {
+    "word": "stair",
+    "definition": "One single step that is part of a set of steps going up or down.",
+    "exampleSentence": "She slipped on the top stair.",
+    "contextPassage": "A stair is one of the steps you walk on to go up a building. You go up or down one stair at a time."
+  },
+  "stamp": {
+    "word": "stamp",
+    "definition": "A strong hit of your foot on the ground.",
+    "exampleSentence": "He gave a loud stamp with his foot.",
+    "contextPassage": "You stamp when you hit the floor hard with your foot. Children sometimes stamp their feet when they are angry."
+  },
+  "stay": {
+    "word": "stay",
+    "definition": "A period of time you spend in one place.",
+    "exampleSentence": "We had a short stay at the hotel.",
+    "contextPassage": "A stay can be a few days or a few weeks in one place. She enjoyed her stay with her grandparents last summer."
+  },
+  "steal": {
+    "word": "steal",
+    "definition": "When someone takes something that belongs to another person without asking.",
+    "exampleSentence": "Someone tried to steal my bag at the bus stop.",
+    "contextPassage": "A steal is the act of taking something that is not yours. It is wrong and can get you in trouble with the police."
+  },
+  "step": {
+    "word": "step",
+    "definition": "The movement you make when you lift one foot and put it down in a new place.",
+    "exampleSentence": "She took one small step toward the open door.",
+    "contextPassage": "You take steps when you walk from one place to another. Be careful on wet floors because each step can be slippery."
+  },
+  "stomach": {
+    "word": "stomach",
+    "definition": "The part inside your body that holds food after you eat it.",
+    "exampleSentence": "My stomach hurts because I ate too much pizza.",
+    "contextPassage": "Your stomach breaks down food after you swallow it. When you are hungry, your stomach can make a loud noise."
+  },
+  "stone": {
+    "word": "stone",
+    "definition": "A small hard piece of rock that you can find on the ground.",
+    "exampleSentence": "He picked up a smooth stone near the river.",
+    "contextPassage": "Stones come in many sizes and colors. People sometimes use stones to build walls or paths in a garden."
+  },
+  "store": {
+    "word": "store",
+    "definition": "A place where you can go to buy things.",
+    "exampleSentence": "I went to the store to buy milk and bread.",
+    "contextPassage": "A store keeps many different items for people to buy. You can find food, clothes, or toys in different kinds of stores."
+  },
+  "storm": {
+    "word": "storm",
+    "definition": "Very bad weather with strong wind, heavy rain, or thunder.",
+    "exampleSentence": "A big storm hit the town last night.",
+    "contextPassage": "During a storm, it is safer to stay inside your house. A storm can bring heavy rain and strong winds that break trees."
+  },
+  "straight": {
+    "word": "straight",
+    "definition": "A part of a road or path that goes forward with no turns or bends.",
+    "exampleSentence": "The car drove fast along the long straight.",
+    "contextPassage": "A straight part of the road is easy and safe to drive on. After the straight, the road turned sharply to the left."
+  },
+  "strange": {
+    "word": "strange",
+    "definition": "Something that is very different from what you know or expect.",
+    "exampleSentence": "There was a strange smell coming from the kitchen.",
+    "contextPassage": "When something feels strange, it is unusual or hard to understand. People often look twice at something strange because it surprises them."
+  },
+  "stupid": {
+    "word": "stupid",
+    "definition": "A person who does not think clearly or makes very foolish choices.",
+    "exampleSentence": "Don't be a stupid and walk home alone at night.",
+    "contextPassage": "Calling someone a stupid is not very kind. It means you think that person made a very silly or careless decision."
+  },
+  "such": {
+    "word": "such",
+    "definition": "Something that is very similar to another thing you already know.",
+    "exampleSentence": "I have never seen such a beautiful flower before.",
+    "contextPassage": "You use such to point to something and compare it to other things. It helps you show how big, small, good, or bad something is."
+  },
+  "suddenly": {
+    "word": "suddenly",
+    "definition": "When something happens very fast and you did not expect it.",
+    "exampleSentence": "The dog suddenly ran across the busy road.",
+    "contextPassage": "When something happens suddenly, there is no warning before it. People are often surprised because it happens so fast."
+  },
+  "suggest": {
+    "word": "suggest",
+    "definition": "To give someone an idea or option without telling them what to do.",
+    "exampleSentence": "My friend suggested a good restaurant near the park.",
+    "contextPassage": "When you suggest something, you share an idea for another person to think about. You do not force them to do it."
+  },
+  "suggestion": {
+    "word": "suggestion",
+    "definition": "An idea that you share with someone to help them decide something.",
+    "exampleSentence": "She made a suggestion for a new place to eat.",
+    "contextPassage": "You can make a suggestion when someone needs help choosing. A suggestion is not an order, so people can say no."
+  },
+  "suit": {
+    "word": "suit",
+    "definition": "A set of matching clothes, usually a jacket and trousers or a skirt, worn together.",
+    "exampleSentence": "He wore a dark blue suit to the job interview.",
+    "contextPassage": "People often wear a suit to work in an office. You can also wear a suit to a wedding or a formal event."
+  },
+  "support": {
+    "word": "support",
+    "definition": "Help or care that you give to someone who needs it.",
+    "exampleSentence": "She gave her friend a lot of support after the bad news.",
+    "contextPassage": "Support can be words, money, or just being there for someone. Friends and family often give support in hard times."
+  },
+  "suppose": {
+    "word": "suppose",
+    "definition": "To think that something is probably true, but you are not completely sure.",
+    "exampleSentence": "I suppose the shops will be closed on Sunday.",
+    "contextPassage": "You use suppose when you are guessing about something. It shows that you are not one hundred percent sure."
+  },
+  "surprise": {
+    "word": "surprise",
+    "definition": "Something that happens that you did not expect at all.",
+    "exampleSentence": "The birthday party was a big surprise for her.",
+    "contextPassage": "A surprise can make you feel happy or sometimes worried. People plan surprise parties to make someone feel special."
+  },
+  "surprised": {
+    "word": "surprised",
+    "definition": "To make someone feel shocked or happy because something unexpected happened.",
+    "exampleSentence": "The gift surprised her and she started to smile.",
+    "contextPassage": "You can be surprised by good or bad news. People often look wide-eyed when something surprises them."
+  },
+  "surprising": {
+    "word": "surprising",
+    "definition": "Making you feel shocked because you did not expect it at all.",
+    "exampleSentence": "It was surprising to see snow in April.",
+    "contextPassage": "You call something surprising when it is very different from what you expected. Surprising news can be good or bad."
+  },
+  "sweet": {
+    "word": "sweet",
+    "definition": "The pleasant taste that sugar or honey has in your mouth.",
+    "exampleSentence": "The cake had a lovely sweet taste.",
+    "contextPassage": "Sweet is the opposite of sour or bitter. Fruits like mangoes and strawberries have a sweet taste."
+  },
+  "system": {
+    "word": "system",
+    "definition": "A group of things or parts that work together in an organised way.",
+    "exampleSentence": "The school uses a new system to mark student work.",
+    "contextPassage": "A system helps things run in an organised and clear way. Computers, schools, and hospitals all use different systems."
+  },
+  "tablet": {
+    "word": "tablet",
+    "definition": "A small flat device with a screen that you can use like a computer.",
+    "exampleSentence": "She used her tablet to watch videos at home.",
+    "contextPassage": "A tablet is easy to carry because it is light and flat. Many children use a tablet for school work or games."
+  },
+  "task": {
+    "word": "task",
+    "definition": "A piece of work that you need to do or finish.",
+    "exampleSentence": "The teacher gave the students a reading task to finish.",
+    "contextPassage": "A task can be big or small depending on the job. You often have a list of tasks to complete during the day."
+  },
+  "taste": {
+    "word": "taste",
+    "definition": "The feeling you get on your tongue when you eat or drink something.",
+    "exampleSentence": "The soup had a strong and spicy taste.",
+    "contextPassage": "Common tastes are sweet, sour, salty, and bitter. Different foods and drinks have very different tastes."
+  },
+  "teaching": {
+    "word": "teaching",
+    "definition": "An idea or rule that a religion or belief tells people to follow.",
+    "exampleSentence": "The teachings of the church say we should help others.",
+    "contextPassage": "People often follow the teachings of their religion every day. A leader or holy book usually shares these teachings with others."
+  },
+  "technology": {
+    "word": "technology",
+    "definition": "Tools, machines, and methods that people use to do things more easily.",
+    "exampleSentence": "New technology makes it easy to talk to people far away.",
+    "contextPassage": "We use technology like phones and computers every day. Technology helps us work, learn, and have fun faster."
+  },
+  "teenage": {
+    "word": "teenage",
+    "definition": "Related to a person who is between 13 and 19 years old.",
+    "exampleSentence": "My teenage sister loves listening to music on her phone.",
+    "contextPassage": "Teenage years are a time when young people grow and change a lot. Many teenage boys and girls enjoy spending time with their friends."
+  },
+  "temperature": {
+    "word": "temperature",
+    "definition": "A number that shows how hot or cold something is.",
+    "exampleSentence": "The temperature outside is very low today, so wear a coat.",
+    "contextPassage": "You can check the temperature with a thermometer. In summer, the temperature often gets very high."
+  },
+  "text": {
+    "word": "text",
+    "definition": "Words that are written on paper or on a screen.",
+    "exampleSentence": "I read the text on the page to find the answer.",
+    "contextPassage": "A book, a sign, or a message can all have text. Text on a phone screen is very easy to read and send."
+  },
+  "themselves": {
+    "word": "themselves",
+    "definition": "Used to talk about the same group of people you already mentioned.",
+    "exampleSentence": "The children made the cake themselves without any help.",
+    "contextPassage": "We use themselves to show that a group did something alone. For example, the students cleaned the room themselves after class."
+  },
+  "thick": {
+    "word": "thick",
+    "definition": "The part of a situation that is the most busy or difficult.",
+    "exampleSentence": "She stayed calm in the thick of the busy market.",
+    "contextPassage": "We say someone is in the thick of things when everything is very busy. This means they are right in the most active part of something."
+  },
+  "thief": {
+    "word": "thief",
+    "definition": "A person who takes something that does not belong to them.",
+    "exampleSentence": "A thief took my bag from the table at the café.",
+    "contextPassage": "A thief usually takes things without the owner knowing. The police will try to find the thief and get the things back."
+  },
+  "thin": {
+    "word": "thin",
+    "definition": "Something that has a small distance between its two sides.",
+    "exampleSentence": "The thin piece of paper tore very easily in my hands.",
+    "contextPassage": "A thin object does not have much space between its two flat sides. Ice in spring can be very thin and not safe to walk on."
+  },
+  "thinking": {
+    "word": "thinking",
+    "definition": "The action of using your mind to have ideas or solve a problem.",
+    "exampleSentence": "Good thinking helped her find the answer to the hard question.",
+    "contextPassage": "Thinking carefully before you speak is always a good idea. We also use the word thinking to talk about someone's opinions or ideas."
+  },
+  "third": {
+    "word": "third",
+    "definition": "The one that comes after the second in order or position.",
+    "exampleSentence": "She finished in third place in the school running race.",
+    "contextPassage": "Third means number three in a list or order. For example, March is the third month of the year."
+  },
+  "thought": {
+    "word": "thought",
+    "definition": "An idea or something that comes into your mind when you think.",
+    "exampleSentence": "I had a good thought about how to fix the problem.",
+    "contextPassage": "A thought can come to you at any time, even at night. We often share our thoughts with friends to talk about ideas together."
+  },
+  "throw": {
+    "word": "throw",
+    "definition": "To send something through the air using your hand.",
+    "exampleSentence": "She will throw the ball to her friend in the park.",
+    "contextPassage": "You can throw a ball, a stone, or a frisbee. People often throw things when they play sports or games."
+  },
+  "tidy": {
+    "word": "tidy",
+    "definition": "Clean and organised, with everything in the right place.",
+    "exampleSentence": "Please tidy your room before dinner tonight.",
+    "contextPassage": "A tidy room or desk is easy to work in. The opposite of tidy is messy."
+  },
+  "tie": {
+    "word": "tie",
+    "definition": "To join two ends of something together with a knot.",
+    "exampleSentence": "He tied his shoelaces before going to school.",
+    "contextPassage": "You can tie a rope, a ribbon, or your shoes. You make a knot to keep things together."
+  },
+  "tip": {
+    "word": "tip",
+    "definition": "The pointed or narrow end at the top of something.",
+    "exampleSentence": "She touched the tip of her ear gently.",
+    "contextPassage": "Many things have a tip, like a finger, a pencil, or an ear. The tip is usually the small end of something."
+  },
+  "tool": {
+    "word": "tool",
+    "definition": "An object you use to help you do a job or task.",
+    "exampleSentence": "He used a hammer and other tools to fix the shelf.",
+    "contextPassage": "A tool can be a hammer, a screwdriver, or a saw. Tools make it easier to build or repair things."
+  },
+  "top": {
+    "word": "top",
+    "definition": "The highest part of something.",
+    "exampleSentence": "There is a lot of snow at the top of the mountain.",
+    "contextPassage": "You can talk about the top of a building, a tree, or a hill. The top is the part that is furthest up."
+  },
+  "touch": {
+    "word": "touch",
+    "definition": "To put your hand or fingers on something.",
+    "exampleSentence": "The little girl touched the soft cat very carefully.",
+    "contextPassage": "You touch things to feel if they are hot, cold, soft, or hard. Please do not touch things in a museum."
+  },
+  "tour": {
+    "word": "tour",
+    "definition": "A trip where you visit different places in a building or area.",
+    "exampleSentence": "We went on a tour of the old castle yesterday.",
+    "contextPassage": "You can take a tour of a city, a museum, or a famous building. A guide often shows you around on a tour."
+  },
+  "tourism": {
+    "word": "tourism",
+    "definition": "The activity of travelling to visit new places for fun or interest.",
+    "exampleSentence": "Tourism is very important for this small beach town.",
+    "contextPassage": "Many countries earn a lot of money from tourism. People who visit other places for holidays are called tourists."
+  },
+  "towards": {
+    "word": "towards",
+    "definition": "In the direction of something or someone.",
+    "exampleSentence": "The dog ran towards the children in the garden.",
+    "contextPassage": "You move towards something when you go closer to it. She walked towards the door to leave the room."
+  },
+  "towel": {
+    "word": "towel",
+    "definition": "A soft piece of cloth you use to dry your body or hands.",
+    "exampleSentence": "She used a big towel to dry herself after the shower.",
+    "contextPassage": "You find towels in the bathroom or at the beach. A towel is usually made of soft cotton material."
+  },
+  "tower": {
+    "word": "tower",
+    "definition": "A very tall, narrow building or structure.",
+    "exampleSentence": "We could see the tall tower from far away in the city.",
+    "contextPassage": "A tower can be part of a castle or a church. Some towers are very famous, like the Eiffel Tower in Paris."
+  },
+  "toy": {
+    "word": "toy",
+    "definition": "An object that a child plays with for fun.",
+    "exampleSentence": "She got a new toy for her birthday.",
+    "contextPassage": "Children love to play with toys at home or at school. A toy can be a car, a doll, or a ball."
+  },
+  "track": {
+    "word": "track",
+    "definition": "A mark or line left on the ground by a person, animal, or vehicle.",
+    "exampleSentence": "We saw animal tracks in the mud near the river.",
+    "contextPassage": "When it snows, you can see tracks in the snow. Animals leave tracks when they walk on soft ground."
+  },
+  "tradition": {
+    "word": "tradition",
+    "definition": "Something that people do every year or on special days because their family has always done it.",
+    "exampleSentence": "It is a tradition to eat cake on your birthday.",
+    "contextPassage": "Many families have traditions at Christmas or New Year. A tradition is passed from parents to children over many years."
+  },
+  "traditional": {
+    "word": "traditional",
+    "definition": "A person who likes old customs and does not want things to change.",
+    "exampleSentence": "My grandfather is a traditional and loves old holidays.",
+    "contextPassage": "A traditional person likes to do things the old way. They often follow the same rules and habits as their parents did."
+  },
+  "trainer": {
+    "word": "trainer",
+    "definition": "A person who teaches someone how to do a sport or skill.",
+    "exampleSentence": "My trainer taught me how to swim faster.",
+    "contextPassage": "A trainer helps you get better at something you want to learn. Many sports teams have a trainer who works with the players every day."
+  },
+  "training": {
+    "word": "training",
+    "definition": "To practise a sport or skill to get better at it.",
+    "exampleSentence": "She is training hard for the big race next month.",
+    "contextPassage": "Training helps your body and mind become stronger. Athletes go training every day to prepare for competitions."
+  },
+  "transport": {
+    "word": "transport",
+    "definition": "The act of moving people or things from one place to another.",
+    "exampleSentence": "The transport of the boxes took two hours by van.",
+    "contextPassage": "Buses and trains are a common type of transport in cities. Good transport helps people get to work or school quickly."
+  },
+  "traveller": {
+    "word": "traveller",
+    "definition": "A person who moves from place to place and does not live in one fixed home.",
+    "exampleSentence": "The traveller set up a small camp near the road.",
+    "contextPassage": "Some travellers move around with their family in caravans. They often stop in different places and do not stay long."
+  },
+  "trouble": {
+    "word": "trouble",
+    "definition": "A difficult or dangerous situation that causes worry or problems.",
+    "exampleSentence": "The heavy rain caused a lot of trouble in our town.",
+    "contextPassage": "If you are in trouble, it is good to ask someone for help. Trouble can happen at school, at home, or outside."
+  },
+  "truck": {
+    "word": "truck",
+    "definition": "A large vehicle used to carry heavy things from one place to another.",
+    "exampleSentence": "The driver parked the big truck outside the shop.",
+    "contextPassage": "Trucks carry food, furniture, and other heavy goods on the road. You often see trucks on the motorway going to different cities."
+  },
+  "twin": {
+    "word": "twin",
+    "definition": "One of two children who were born at the same time to the same mother.",
+    "exampleSentence": "My twin sister and I look exactly the same.",
+    "contextPassage": "Twins are often very close and do many things together. Some twins look the same, but others can look very different."
+  },
+  "typical": {
+    "word": "typical",
+    "definition": "Something that is normal or usual for a person, place, or situation.",
+    "exampleSentence": "A typical day for me starts with breakfast at seven.",
+    "contextPassage": "A typical weekend for many people includes rest and family time. When something is typical, it happens often and is not a surprise."
+  },
+  "underground": {
+    "word": "underground",
+    "definition": "A train that travels under the ground in a city.",
+    "exampleSentence": "I took the underground to get to work faster.",
+    "contextPassage": "The underground is very busy in big cities. Many people use it every day to travel around."
+  },
+  "understanding": {
+    "word": "understanding",
+    "definition": "To know what something means or how something works.",
+    "exampleSentence": "She is understanding the new words in her textbook.",
+    "contextPassage": "Understanding a new language takes time and practice. It helps to listen and read every day."
+  },
+  "unfortunately": {
+    "word": "unfortunately",
+    "definition": "Used to say that something bad or sad happened.",
+    "exampleSentence": "Unfortunately, we missed the last bus home tonight.",
+    "contextPassage": "You can use unfortunately at the start of a sentence. It shows that you feel sorry about the news."
+  },
+  "unhappy": {
+    "word": "unhappy",
+    "definition": "A person who does not feel happy or good inside.",
+    "exampleSentence": "She was an unhappy child who had no friends at school.",
+    "contextPassage": "An unhappy person often looks sad or quiet. A kind word can sometimes help them feel better."
+  },
+  "uniform": {
+    "word": "uniform",
+    "definition": "A set of clothes that shows you belong to a group or school.",
+    "exampleSentence": "All the students wear a blue uniform to school.",
+    "contextPassage": "Police officers and nurses often wear a uniform at work. It helps other people know who they are."
+  },
+  "unit": {
+    "word": "unit",
+    "definition": "A single thing that is part of a larger group or amount.",
+    "exampleSentence": "We finished the first unit of our English course today.",
+    "contextPassage": "A unit can be one part of a book or a course. Teachers often use the word unit to talk about one section."
+  },
+  "united": {
+    "word": "united",
+    "definition": "To join people or groups together to make one team or group.",
+    "exampleSentence": "The two small teams united to win the big game.",
+    "contextPassage": "When people are united, they work together well. It is easier to solve problems when everyone is united."
+  },
+  "unusual": {
+    "word": "unusual",
+    "definition": "Something that is not normal or does not happen very often.",
+    "exampleSentence": "She saw an unusual bird in her garden this morning.",
+    "contextPassage": "An unusual thing is different from what you see every day. People often stop and look at something unusual."
+  },
+  "upstairs": {
+    "word": "upstairs",
+    "definition": "The upper floor or floors of a building.",
+    "exampleSentence": "The bedrooms are in the upstairs of our house.",
+    "contextPassage": "Many houses have a downstairs and an upstairs. You walk up the stairs to reach the upstairs."
+  },
+  "used to": {
+    "word": "used to",
+    "definition": "Used to talk about something you did regularly in the past but do not do now.",
+    "exampleSentence": "I used to walk to school when I was young.",
+    "contextPassage": "You can use used to with any verb to talk about the past. For example, she used to live in Paris."
+  },
+  "user": {
+    "word": "user",
+    "definition": "A person who uses something, like a phone, app, or service.",
+    "exampleSentence": "Every user needs a password to open the app.",
+    "contextPassage": "A user is someone who uses a product or website. Companies want their users to be happy with the service."
+  },
+  "usual": {
+    "word": "usual",
+    "definition": "The normal or common way that something is or happens.",
+    "exampleSentence": "She ordered her usual coffee at the café this morning.",
+    "contextPassage": "When something is the usual, it happens most of the time. You can say as usual to mean the same as always."
+  },
+  "valley": {
+    "word": "valley",
+    "definition": "A low area of land between hills or mountains, often with a river in it.",
+    "exampleSentence": "The small village sat quietly in the green valley below.",
+    "contextPassage": "A valley often has a river running through it. Farmers like to grow food in valleys because the land is flat."
+  },
+  "van": {
+    "word": "van",
+    "definition": "A vehicle bigger than a car but smaller than a truck, used to carry things or people.",
+    "exampleSentence": "The driver loaded all the boxes into the white van.",
+    "contextPassage": "People use vans to move furniture or deliver packages. A van has a large empty space inside at the back."
+  },
+  "variety": {
+    "word": "variety",
+    "definition": "When there are many different types of something in one place or group.",
+    "exampleSentence": "The market sold a great variety of fresh fruits and vegetables.",
+    "contextPassage": "Having variety means you have many different choices. A variety of foods helps you eat in a healthy way."
+  },
+  "vehicle": {
+    "word": "vehicle",
+    "definition": "Something with an engine that people use to travel or move things from place to place.",
+    "exampleSentence": "A car is the most common vehicle people use every day.",
+    "contextPassage": "Buses, trucks, and motorcycles are all types of vehicles. A vehicle needs fuel to move down the road."
+  },
+  "view": {
+    "word": "view",
+    "definition": "What you can see from a place, especially something nice or wide to look at.",
+    "exampleSentence": "We had a beautiful view of the ocean from our hotel room.",
+    "contextPassage": "A good view often makes a place feel special. People like to sit by the window to enjoy the view outside."
+  },
+  "virus": {
+    "word": "virus",
+    "definition": "A very tiny thing that can get inside your body and make you sick.",
+    "exampleSentence": "She stayed home because she had a bad virus last week.",
+    "contextPassage": "A virus can spread from person to person very easily. Washing your hands often helps stop a virus from spreading."
+  },
+  "voice": {
+    "word": "voice",
+    "definition": "The sound a person makes when they speak or sing.",
+    "exampleSentence": "She has a very clear and beautiful singing voice.",
+    "contextPassage": "Your voice can sound loud or quiet depending on how you speak. Teachers often use a loud voice so all students can hear them."
+  },
+  "war": {
+    "word": "war",
+    "definition": "A large fight between two or more countries using armies and weapons.",
+    "exampleSentence": "Many people lost their homes during the long war.",
+    "contextPassage": "A war can last for many years and hurt many people. Countries sometimes talk to each other to try to stop a war."
+  },
+  "wash": {
+    "word": "wash",
+    "definition": "The act of cleaning something with water and usually soap.",
+    "exampleSentence": "I gave the dirty car a quick wash this morning.",
+    "contextPassage": "A wash can be done by hand or by a machine. Clothes often need a wash after you wear them outside."
+  },
+  "washing": {
+    "word": "washing",
+    "definition": "To clean something using water and usually soap.",
+    "exampleSentence": "She is washing the dishes in the kitchen sink right now.",
+    "contextPassage": "Washing your hands before eating is very important. Many people spend time washing clothes at home every week."
+  },
+  "wave": {
+    "word": "wave",
+    "definition": "To move your hand back and forth in the air to say hello or goodbye to someone.",
+    "exampleSentence": "He stood at the door and waved goodbye to his friend.",
+    "contextPassage": "People often wave when they see someone they know far away. A wave is a friendly and simple way to say hello."
+  },
+  "weak": {
+    "word": "weak",
+    "definition": "Not having much strength or power to do hard things.",
+    "exampleSentence": "She felt very weak after being sick for three days.",
+    "contextPassage": "A weak person may find it hard to carry heavy things. After a long run, your legs can feel tired and weak."
+  },
+  "web": {
+    "word": "web",
+    "definition": "A system of pages and information you can look at on the internet.",
+    "exampleSentence": "She found a good recipe on the web.",
+    "contextPassage": "People use the web every day to find information. You can shop, learn, and watch videos on the web."
+  },
+  "wedding": {
+    "word": "wedding",
+    "definition": "A ceremony where two people get married.",
+    "exampleSentence": "My sister had a beautiful wedding last summer.",
+    "contextPassage": "People often invite family and friends to a wedding. After the wedding, everyone eats and dances together."
+  },
+  "weight": {
+    "word": "weight",
+    "definition": "How heavy something or someone is.",
+    "exampleSentence": "The doctor checked my weight at the hospital.",
+    "contextPassage": "You can measure your weight on a scale. Some people check their weight every week."
+  },
+  "welcome": {
+    "word": "welcome",
+    "definition": "A warm and friendly greeting when someone arrives.",
+    "exampleSentence": "The hotel gave us a very warm welcome.",
+    "contextPassage": "A good welcome makes people feel happy and comfortable. The host gave every guest a friendly welcome at the door."
+  },
+  "wet": {
+    "word": "wet",
+    "definition": "Water or another liquid that makes something not dry.",
+    "exampleSentence": "There was wet on the floor after the rain.",
+    "contextPassage": "You should dry your clothes if there is wet on them. A towel is useful for removing wet from your hands."
+  },
+  "wheel": {
+    "word": "wheel",
+    "definition": "A round object that turns and helps things move.",
+    "exampleSentence": "The wheel on my bike was broken yesterday.",
+    "contextPassage": "Cars and buses need wheels to move on the road. A wheel turns around a central point to make movement easy."
+  },
+  "while": {
+    "word": "while",
+    "definition": "A period of time, usually not very long.",
+    "exampleSentence": "Please wait here for a short while.",
+    "contextPassage": "I was gone for a while, but I came back soon. After a while, the bus finally arrived at the stop."
+  },
+  "whole": {
+    "word": "whole",
+    "definition": "Something that is complete, with no parts missing.",
+    "exampleSentence": "She ate the whole pizza by herself.",
+    "contextPassage": "When you look at the whole picture, it makes more sense. He read the whole book in just two days."
+  },
+  "whose": {
+    "word": "whose",
+    "definition": "A word used to ask which person something belongs to.",
+    "exampleSentence": "Whose bag is on the table?",
+    "contextPassage": "You use whose to find out the owner of something. For example, you can ask whose phone is ringing."
+  },
+  "wide": {
+    "word": "wide",
+    "definition": "In cricket, a ball that goes too far from the player to hit.",
+    "exampleSentence": "The bowler threw a wide, so the other team got a point.",
+    "contextPassage": "A wide gives the batting team one extra run. The umpire uses an arm signal to show the players it was a wide."
+  },
+  "wild": {
+    "word": "wild",
+    "definition": "The natural state of an animal that lives free and is not kept by people.",
+    "exampleSentence": "The lion lived in the wild all its life.",
+    "contextPassage": "Animals in the wild find their own food and water. Some animals are hard to see because they live deep in the wild."
+  },
+  "wind": {
+    "word": "wind",
+    "definition": "Air that moves, usually outdoors.",
+    "exampleSentence": "A strong wind blew my hat off today.",
+    "contextPassage": "Wind can be soft and gentle or very strong. On windy days, people often wear a coat or jacket outside."
+  },
+  "winner": {
+    "word": "winner",
+    "definition": "A person who wins a game, race, or competition.",
+    "exampleSentence": "The winner of the race got a gold medal.",
+    "contextPassage": "You can use 'winner' to talk about sports or games. The winner usually gets a prize or trophy."
+  },
+  "wish": {
+    "word": "wish",
+    "definition": "A strong feeling that you want something to happen.",
+    "exampleSentence": "She made a wish before she blew out the candles.",
+    "contextPassage": "People often talk about wishes on birthdays or special days. You can say 'I wish I had more time.'"
+  },
+  "wood": {
+    "word": "wood",
+    "definition": "The hard material that comes from the inside of trees.",
+    "exampleSentence": "They used wood to build a small house in the forest.",
+    "contextPassage": "Wood is a very common building material. People also burn wood to make a fire and stay warm."
+  },
+  "wooden": {
+    "word": "wooden",
+    "definition": "Made from the hard material that comes from trees.",
+    "exampleSentence": "She sat on a wooden chair at the kitchen table.",
+    "contextPassage": "Many old houses have wooden floors. Wooden furniture like tables and beds is very popular."
+  },
+  "working": {
+    "word": "working",
+    "definition": "The way something operates or does its job.",
+    "exampleSentence": "The workings of the old clock were very interesting to see.",
+    "contextPassage": "This word is often used in the plural form. You can talk about the workings of a machine or a system."
+  },
+  "worried": {
+    "word": "worried",
+    "definition": "Feeling afraid or unhappy because something bad might happen.",
+    "exampleSentence": "She was worried because her son came home very late.",
+    "contextPassage": "You can say 'I am worried about my exam tomorrow.' A worried person often cannot sleep well at night."
+  },
+  "worry": {
+    "word": "worry",
+    "definition": "A feeling of fear or anxiety about something bad that might happen.",
+    "exampleSentence": "His biggest worry was that he would miss the last train.",
+    "contextPassage": "Worry is a strong and uncomfortable feeling. You can say 'I have a lot of worries at work right now.'"
+  },
+  "worse": {
+    "word": "worse",
+    "definition": "More bad than something or someone else.",
+    "exampleSentence": "The weather today is worse than it was yesterday.",
+    "contextPassage": "You use 'worse' to compare two bad things. For example, a cold is bad, but the flu is worse."
+  },
+  "worst": {
+    "word": "worst",
+    "definition": "The most bad of all things or people in a group.",
+    "exampleSentence": "That was the worst meal I ever ate at a restaurant.",
+    "contextPassage": "You use 'worst' when something is more bad than everything else. You can say 'This is the worst day of my life.'"
+  },
+  "wow exclam.": {
+    "word": "wow exclam.",
+    "definition": "Something you say when you are very surprised or very impressed.",
+    "exampleSentence": "Wow, that is a really beautiful dress!",
+    "contextPassage": "People say 'wow' when they see or hear something amazing. It is a very common word in everyday spoken English."
+  },
+  "yet": {
+    "word": "yet",
+    "definition": "Used in negative sentences to say something has not happened up to now.",
+    "exampleSentence": "I have not eaten breakfast yet this morning.",
+    "contextPassage": "'Yet' often goes at the end of a sentence. You can ask 'Are you ready yet?' to check if someone is done."
+  },
+  "yours": {
+    "word": "yours",
+    "definition": "Used to talk about something that belongs to you.",
+    "exampleSentence": "This blue bag is mine and the red one is yours.",
+    "contextPassage": "You use 'yours' so you do not have to repeat the noun. For example, you can say 'My phone is old but yours is new.'"
+  },
+  "zero number": {
+    "word": "zero number",
+    "definition": "The number 0. It means there is nothing or none of something.",
+    "exampleSentence": "The score was zero at the end of the game.",
+    "contextPassage": "We use zero to show that there is no amount of something. For example, zero degrees is very cold weather."
+  }
+}

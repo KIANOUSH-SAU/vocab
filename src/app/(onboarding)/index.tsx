@@ -13,11 +13,12 @@ import Animated, {
   withSequence,
   Easing,
 } from "react-native-reanimated";
-import { FIELDS } from "@constants/fields";
+const DOT_COLORS = ["#3B82F6", "#10B981", "#8B5CF6", "#F59E0B", "#EF4444"];
 import { useUserStore } from "@store/userStore";
 import {
   getCurrentSession,
   createUserDocument,
+  getUserDocument,
   getAccount,
   isAppwriteConfigured,
 } from "@services/appwriteService";
@@ -112,28 +113,47 @@ export default function WelcomeScreen() {
 
         const session = await getCurrentSession();
         if (session) {
-          // Create user document (non-blocking — may already exist)
+          // Fetch user document to get existing progress
+          let dbUser: any = null;
           try {
-            await createUserDocument(session.$id, {
-              name: session.name || "",
-              email: session.email,
-              level: "A1",
-              fields: [],
-              voiceStyleId: "",
-            });
+            dbUser = await getUserDocument(session.$id);
           } catch {
-            /* document may already exist */
+            /* document fetch failed */
+          }
+
+          if (!dbUser) {
+            // Create user document if it doesn't exist
+            try {
+              await createUserDocument(session.$id, {
+                name: session.name || "",
+                email: session.email,
+                level: "A1",
+                voiceStyleId: "",
+              });
+            } catch {
+              /* document may already exist */
+            }
           }
 
           setUser({
             id: session.$id,
-            name: session.name || "",
+            name: session.name || (dbUser?.name ?? ""),
             email: session.email,
-            level: "A1",
-            fields: [],
-            voiceStyleId: "",
+            level: (dbUser?.level ?? "A1") as any,
+            voiceStyleId: dbUser?.voiceStyleId ?? "",
             isGuest: false,
+            avatarFileId: dbUser?.avatarFileId ?? null,
           });
+
+          // Hydrate streak from remote
+          if (dbUser?.streak != null || dbUser?.lastActiveDate != null) {
+            const { useProgressStore } = require("@store/progressStore");
+            useProgressStore.getState().hydrateFromRemote(
+              dbUser.streak ?? 0,
+              dbUser.lastActiveDate ?? null,
+            );
+          }
+
           router.replace("/(tabs)/home");
         }
       }
@@ -153,8 +173,8 @@ export default function WelcomeScreen() {
         <View style={styles.inner}>
           {/* Field dots */}
           <Animated.View style={[styles.iconsRow, dotsStyle]}>
-            {FIELDS.map((f, i) => (
-              <AnimatedDot key={f.id} color={f.color} index={i} />
+            {DOT_COLORS.map((color, i) => (
+              <AnimatedDot key={`dot-${i}`} color={color} index={i} />
             ))}
           </Animated.View>
 
@@ -193,7 +213,7 @@ export default function WelcomeScreen() {
                 </Pressable>
                 <Button
                   label="Start fresh"
-                  onPress={() => router.push("/(onboarding)/interests")}
+                  onPress={() => router.push("/(onboarding)/placement-test")}
                   variant="ghost"
                   size="lg"
                   fullWidth
@@ -201,7 +221,7 @@ export default function WelcomeScreen() {
               </>
             ) : (
               <>
-                <Pressable onPress={() => router.push("/(onboarding)/interests")}>
+                <Pressable onPress={() => router.push("/(onboarding)/placement-test")}>
                   <LinearGradient
                     colors={[colors.ink, '#27272A']}
                     style={styles.primaryBtn}
@@ -236,7 +256,7 @@ export default function WelcomeScreen() {
                 <Pressable
                   onPress={() =>
                     router.push({
-                      pathname: "/(onboarding)/interests",
+                      pathname: "/(onboarding)/placement-test",
                       params: { guest: "true" },
                     })
                   }

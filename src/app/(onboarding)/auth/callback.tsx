@@ -23,7 +23,7 @@ export default function AuthCallbackScreen() {
   useEffect(() => {
     async function handleCallback() {
       if (!isAppwriteConfigured) {
-        router.replace("/(onboarding)/");
+        router.replace("/(onboarding)");
         return;
       }
 
@@ -32,15 +32,15 @@ export default function AuthCallbackScreen() {
         if (session) {
           const state = useUserStore.getState();
           const onboardingData = state.pendingOnboardingData;
+          const pendingOnboardingData = state.pendingOnboardingData;
 
           // Create user document (non-blocking — may already exist)
           try {
             await createUserDocument(session.$id, {
               name: session.name || "",
               email: session.email,
-              level: onboardingData?.level ?? state.user?.level ?? "A1",
-              fields: onboardingData?.fields ?? state.user?.fields ?? [],
-              voiceStyleId: state.user?.voiceStyleId ?? "",
+              level: pendingOnboardingData?.level || "A1",
+              voiceStyleId: "",
             });
           } catch {
             /* document may already exist */
@@ -50,19 +50,18 @@ export default function AuthCallbackScreen() {
             id: session.$id,
             name: session.name || "",
             email: session.email,
-            level: onboardingData?.level ?? state.user?.level ?? "A1",
-            fields: onboardingData?.fields ?? state.user?.fields ?? [],
-            voiceStyleId: state.user?.voiceStyleId ?? "",
+            level: pendingOnboardingData?.level || "A1",
+            voiceStyleId: "",
             isGuest: false,
           });
 
           state.clearPendingOnboardingData();
           router.replace("/(tabs)/home");
         } else {
-          router.replace("/(onboarding)/");
+          router.replace("/(onboarding)");
         }
       } catch {
-        router.replace("/(onboarding)/");
+        router.replace("/(onboarding)");
       }
     }
 

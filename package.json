@@ -12,6 +12,9 @@
     "pipeline:score": "node --env-file=.env --import tsx scripts/scoreWords.ts",
     "pipeline:enrich": "node --env-file=.env --import tsx scripts/enrichWords.ts",
     "pipeline:seed": "node --env-file=.env --import tsx scripts/seedAppwrite.ts",
+    "pipeline:wipe": "node --env-file=.env --import tsx scripts/wipeWords.ts",
+    "pipeline:sift": "node --env-file=.env --import tsx scripts/wordSifter.ts",
+    "pipeline:fix": "node --env-file=.env --import tsx scripts/wordFixer.ts",
     "pipeline:build-test": "node --env-file=.env --import tsx scripts/buildPlacementTest.ts"
   },
   "dependencies": {
@@ -31,6 +34,7 @@
     "expo-constants": "~17.0.3",
     "expo-file-system": "~18.0.4",
     "expo-font": "~13.0.1",
+    "expo-image-picker": "~16.0.6",
     "expo-linear-gradient": "~14.0.2",
     "expo-linking": "~7.0.3",
     "expo-notifications": "~0.29.9",

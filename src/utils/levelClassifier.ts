@@ -47,7 +47,3 @@ export function evaluateVocabPhase2(
   return adjustLevel(provisionalLevel, -1);
 }
 
-export function evaluateReadingPhase(vocabLevel: Level, score: number): Level {
-  if (score >= 2) return vocabLevel;
-  return adjustLevel(vocabLevel, -1);
-}

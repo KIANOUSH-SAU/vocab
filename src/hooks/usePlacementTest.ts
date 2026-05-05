@@ -4,7 +4,6 @@ import {
   scoreAnswers,
   evaluateVocabPhase1,
   evaluateVocabPhase2,
-  evaluateReadingPhase,
 } from "@utils/levelClassifier";
 import type { Level } from "@/types";
 
@@ -55,16 +54,6 @@ function getVocabQuestions(
     }
   }
   return selected;
-}
-
-function getReadingQuestions(
-  level: Level,
-  count: number,
-  excludeIds: Set<string>,
-) {
-  return PLACEMENT_QUESTIONS.filter(
-    (q) => q.skill === "reading" && q.level === level && !excludeIds.has(q.id),
-  ).slice(0, count);
 }
 
 export function usePlacementTest(): UsePlacementTestReturn {
@@ -122,17 +111,17 @@ export function usePlacementTest(): UsePlacementTestReturn {
         );
         finalVocabRef.current = newLevel;
 
-        // Start Reading Phase
+        // Start Phase 3
         const excludeMap = new Set(newAnswers.map((a) => a.questionId));
         setQueue((prev) => [
           ...prev,
-          ...getReadingQuestions(newLevel, 4, excludeMap),
+          ...getVocabQuestions(newLevel, 4, excludeMap),
         ]);
       } else if (nextIndex === 10) {
         // Finish
         const score = scoreAnswers(newAnswers.slice(6, 10));
-        const finalReading = evaluateReadingPhase(finalVocabRef.current, score);
-        setClassifiedLevel(finalReading);
+        const finalLevel = evaluateVocabPhase2(finalVocabRef.current, score);
+        setClassifiedLevel(finalLevel);
       }
     },
     [currentIndex, queue, answers],

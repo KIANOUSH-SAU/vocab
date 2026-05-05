@@ -2,11 +2,10 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { User, VoiceStyle } from "@/types";
-import type { Level, Field } from "@/types";
+import type { Level } from "@/types";
 
 interface PendingOnboardingData {
   level: Level;
-  fields: Field[];
 }
 
 interface UserState {

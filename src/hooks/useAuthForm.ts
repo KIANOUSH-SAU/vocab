@@ -97,10 +97,12 @@ export function useAuthForm() {
       throw new Error("Failed to get user after authentication.");
 
     let dbUser: {
-      fields: string[];
       level?: string;
       voiceStyleId?: string;
       name?: string;
+      streak?: number;
+      lastActiveDate?: string | null;
+      avatarFileId?: string | null;
     } | null = null;
     try {
       dbUser = (await getUserDocument(appwriteUser.$id)) as any;
@@ -118,44 +120,44 @@ export function useAuthForm() {
       onboardingData?.level ??
       useUserStore.getState().user?.level ??
       "A1") as Level;
-    const fields = (dbUser?.fields ??
-      onboardingData?.fields ??
-      useUserStore.getState().user?.fields ??
-      []) as Field[];
 
     setUser({
       id: appwriteUser.$id,
       name: appwriteUser.name || name,
       email: appwriteUser.email,
       level,
-      fields,
-      voiceStyleId:
-        dbUser?.voiceStyleId ??
-        useUserStore.getState().user?.voiceStyleId ??
-        "",
+      voiceStyleId: "",
       isGuest: false,
+      avatarFileId: dbUser?.avatarFileId ?? null,
     });
 
     clearPendingOnboardingData();
 
-    if (!fields || fields.length === 0) {
-      router.replace("/(onboarding)/interests");
-    } else {
-      try {
-        const { fetchUserWords } = require("@services/vocabularyService");
-        const { useProgressStore } = require("@store/progressStore");
-        const existingWords = await fetchUserWords(appwriteUser.$id);
+    try {
+      const { fetchUserWords } = require("@services/vocabularyService");
+      const { useProgressStore } = require("@store/progressStore");
+      const existingWords = await fetchUserWords(appwriteUser.$id);
 
-        if (existingWords && existingWords.length > 0) {
-          existingWords.forEach((uw: any) =>
-            useProgressStore.getState().updateUserWord(uw),
-          );
-        }
-        router.replace("/(tabs)/home");
-      } catch (err) {
-        console.error("Failed to load existing user words", err);
-        router.replace("/(tabs)/home");
+      if (existingWords && existingWords.length > 0) {
+        existingWords.forEach((uw: any) =>
+          useProgressStore.getState().updateUserWord(uw),
+        );
       }
+
+      // Hydrate streak from remote so multi-device users stay in sync
+      if (dbUser?.streak != null || dbUser?.lastActiveDate != null) {
+        useProgressStore
+          .getState()
+          .hydrateFromRemote(
+            (dbUser as any).streak ?? 0,
+            (dbUser as any).lastActiveDate ?? null,
+          );
+      }
+
+      router.replace("/(tabs)/home");
+    } catch (err) {
+      console.error("Failed to load existing user words", err);
+      router.replace("/(tabs)/home");
     }
   };
 
@@ -189,13 +191,13 @@ export function useAuthForm() {
       // Create user document in DB
       const session = await getCurrentSession();
       if (session) {
-        const onboardingData = useUserStore.getState().pendingOnboardingData;
+        const pendingOnboardingData =
+          useUserStore.getState().pendingOnboardingData;
         try {
           await createUserDocument(session.$id, {
             name: name.trim(),
             email: email.trim(),
-            level: onboardingData?.level ?? "A1",
-            fields: onboardingData?.fields ?? [],
+            level: pendingOnboardingData?.level ?? "A1",
             voiceStyleId: "",
           });
         } catch (err) {
@@ -296,16 +298,19 @@ export function useAuthForm() {
           // Create user document for new OAuth users (non-blocking)
           const session = await getCurrentSession();
           if (session) {
-            const onboardingData =
+            const pendingOnboardingData =
               useUserStore.getState().pendingOnboardingData;
             try {
-              await createUserDocument(session.$id, {
-                name: session.name || "",
-                email: session.email,
-                level: onboardingData?.level ?? "A1",
-                fields: onboardingData?.fields ?? [],
-                voiceStyleId: "",
-              });
+              // Check if document exists and needs data
+              const existingDoc = await getUserDocument(session.$id);
+              if (!existingDoc) {
+                await createUserDocument(session.$id, {
+                  name: session.name || "",
+                  email: session.email,
+                  level: pendingOnboardingData?.level ?? "A1",
+                  voiceStyleId: "",
+                });
+              }
             } catch (err) {
               console.error(
                 "[Auth] Failed to create user document after OAuth signup:",

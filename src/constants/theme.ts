@@ -44,14 +44,6 @@ export const colors = {
   error: '#FB7185',
   warning: '#FBBF24',
 
-  // Field accent colors
-  fields: {
-    engineering: '#3B82F6',
-    health: '#10B981',
-    law: '#8B5CF6',
-    sports: '#F59E0B',
-    education: '#EF4444',
-  },
 } as const
 
 export const spacing = {

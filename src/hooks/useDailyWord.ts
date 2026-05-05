@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useCurrentUser } from "@store/userStore";
 import { useWordStore } from "@store/wordStore";
 import { useProgressStore } from "@store/progressStore";
-import { fetchWordsByLevelAndField } from "@services/vocabularyService";
+import { fetchWordsByLevel } from "@services/vocabularyService";
 import { selectDailyWords } from "@utils/wordSelector";
 import { isToday } from "@utils/dateUtils";
 import type { Word } from "@/types";
@@ -18,15 +18,30 @@ interface UseDailyWordReturn {
 export function useDailyWord(): UseDailyWordReturn {
   const user = useCurrentUser();
   console.log(user);
-  const { todaysWords, lastFetchedDate, setTodaysWords } = useWordStore();
+  const {
+    todaysWords,
+    lastFetchedDate,
+    setTodaysWords,
+    isDailySessionCompleted,
+  } = useWordStore();
   const { userWords } = useProgressStore();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const load = async () => {
     if (!user) return;
-    if (lastFetchedDate && isToday(lastFetchedDate) && todaysWords.length > 0) {
-      console.log("Word cominng from cache");
+
+    const cachedFromToday = !!lastFetchedDate && isToday(lastFetchedDate);
+
+    // Continue an in-progress session, but only if it was started today —
+    // otherwise yesterday's stale 5 words would get reused.
+    if (cachedFromToday && todaysWords.length > 0 && !isDailySessionCompleted) {
+      console.log("Using pending uncompleted session");
+      return;
+    }
+
+    if (cachedFromToday && isDailySessionCompleted) {
+      console.log("Word coming from cache (session already completed today)");
       return;
     }
 
@@ -35,15 +50,9 @@ export function useDailyWord(): UseDailyWordReturn {
 
     try {
       console.log("----------------------------------");
-      const allWords = await fetchWordsByLevelAndField(user.level, user.fields);
+      const allWords = await fetchWordsByLevel(user.level);
       const limit = user.isGuest ? GUEST_WORDS_LIMIT : undefined;
-      const selected = selectDailyWords(
-        allWords,
-        userWords,
-        user.level,
-        user.fields,
-        limit,
-      );
+      const selected = selectDailyWords(allWords, userWords, user.level, limit);
 
       console.log(
         `[useDailyWord] selectDailyWords returned ${selected.length} words to process`,
@@ -64,7 +73,7 @@ export function useDailyWord(): UseDailyWordReturn {
             nextReviewDate: uw?.nextReviewDate || new Date().toISOString(),
             intervalIndex: (uw?.intervalIndex ?? 0) as any,
             totalAttempts: uw?.totalAttempts || 0,
-            correctAttempts: uw?.correctAttempts || "0",
+            correctAttempts: Number(uw?.correctAttempts) || 0,
           };
 
           if (user.id !== "guest") {

@@ -17,21 +17,21 @@ const TAB_ICONS: Record<string, { active: string; inactive: string }> = {
   home: { active: 'home', inactive: 'home-outline' },
   learn: { active: 'book', inactive: 'book-outline' },
   review: { active: 'refresh', inactive: 'refresh-outline' },
-  stats: { active: 'stats-chart', inactive: 'stats-chart-outline' },
+  profile: { active: 'person', inactive: 'person-outline' },
 }
 
 const TAB_LABELS: Record<string, string> = {
   home: 'Home',
   learn: 'Learn',
   review: 'Review',
-  stats: 'Stats',
+  profile: 'Profile',
 }
 
 const TAB_THEME_COLORS: Record<string, string> = {
   home: '#8B5CF6',
   learn: '#10B981',
   review: '#F59E0B',
-  stats: '#0EA5E9',
+  profile: '#0EA5E9',
 }
 
 function TabItem({

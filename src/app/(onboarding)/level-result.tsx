@@ -14,11 +14,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { useUserStore } from "@store/userStore";
 import { updateUserDocument } from "@services/appwriteService";
 import { LEVELS } from "@constants/levels";
-import { FIELDS } from "@constants/fields";
 import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
 import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
 import { BackButton } from "@components/ui/BackButton";
-import type { Level, Field } from "@/types";
+import type { Level } from "@/types";
 
 const LEVEL_GRADIENTS: Record<Level, [string, string]> = {
   A1: [colors.irisLight, colors.iris],
@@ -29,9 +28,8 @@ const LEVEL_GRADIENTS: Record<Level, [string, string]> = {
 };
 
 export default function LevelResultScreen() {
-  const { level, fields, guest } = useLocalSearchParams<{
+  const { level, guest } = useLocalSearchParams<{
     level: Level;
-    fields: string;
     guest: string;
   }>();
   const isGuest = guest === "true";
@@ -39,8 +37,6 @@ export default function LevelResultScreen() {
   const isAuthenticated = user && !user.isGuest;
 
   const levelMeta = LEVELS.find((l) => l.id === level) ?? LEVELS[0];
-  const fieldList = (fields?.split(",").filter(Boolean) ?? []) as Field[];
-  const fieldMetas = FIELDS.filter((f) => fieldList.includes(f.id));
   const gradient = LEVEL_GRADIENTS[level ?? "A1"];
 
   // Entrance animations
@@ -74,7 +70,6 @@ export default function LevelResultScreen() {
         id: "guest",
         name: "Guest",
         level: level ?? "A1",
-        fields: fieldList,
         voiceStyleId: "",
         isGuest: true,
       });
@@ -83,12 +78,10 @@ export default function LevelResultScreen() {
       setUser({
         ...user!,
         level: level ?? "A1",
-        fields: fieldList,
       });
       try {
         await updateUserDocument(user!.id, {
           level: level ?? "A1",
-          fields: fieldList,
         });
       } catch (e) {
         console.error("Failed to update remote user document", e);
@@ -97,11 +90,10 @@ export default function LevelResultScreen() {
     } else {
       setPendingOnboardingData({
         level: level ?? "A1",
-        fields: fieldList,
       });
       router.push("/(onboarding)/auth/signup");
     }
-  }, [isGuest, isAuthenticated, level, fieldList, user]);
+  }, [isGuest, isAuthenticated, level, user]);
 
   // const goToLogin = useCallback(() => {
   //   if (isAuthenticated) {
@@ -109,7 +101,6 @@ export default function LevelResultScreen() {
   //   } else {
   //     setPendingOnboardingData({
   //       level: level ?? "A1",
-  //       fields: fieldList,
   //     });
   //     router.push("/(onboarding)/auth/login");
   //   }
@@ -150,35 +141,11 @@ export default function LevelResultScreen() {
             <Text style={styles.resultHeading}>Your English level</Text>
             <Text style={styles.description}>{levelMeta.description}</Text>
 
-            {/* Fields */}
-            <View style={styles.fieldSection}>
-              <Text style={styles.fieldLabel}>YOUR SELECTED FIELDS</Text>
-              <View style={styles.fieldTags}>
-                {fieldMetas.map((f) => (
-                  <View
-                    key={f.id}
-                    style={[
-                      styles.tag,
-                      { borderColor: f.color, backgroundColor: `${f.color}10` },
-                    ]}
-                  >
-                    <View
-                      style={[styles.tagDot, { backgroundColor: f.color }]}
-                    />
-                    <Text style={[styles.tagText, { color: f.color }]}>
-                      {f.label}
-                    </Text>
-                  </View>
-                ))}
-              </View>
-            </View>
-
-            {/* What to expect */}
             <View style={styles.expectCard}>
               <Text style={styles.expectTitle}>What happens next</Text>
               <View style={styles.expectList}>
                 <ExpectItem
-                  text="5 words selected daily, just for your field"
+                  text="3 words selected daily, customized for your level"
                   color={colors.iris}
                   icon="book"
                 />
@@ -312,8 +279,6 @@ const styles = StyleSheet.create({
     lineHeight: 26,
   },
 
-  // Fields
-  fieldSection: { gap: 12 },
   fieldLabel: {
     fontFamily: fonts.sansSemiBold,
     fontSize: 11,
