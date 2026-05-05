@@ -1,57 +1,184 @@
-import { useEffect } from 'react'
-import { View, Text, StyleSheet, Platform } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
+import { useEffect } from "react";
+import { View, Text, StyleSheet, Platform, Pressable } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   withDelay,
-} from 'react-native-reanimated'
-import { FIELDS } from '@constants/fields'
-import { colors, spacing, radii, typography } from '@constants/theme'
-import { MaxWidthContainer } from '@components/ui/MaxWidthContainer'
-import { IconCircle } from '@components/ui/IconCircle'
-import { Button } from '@components/ui/Button'
+  withRepeat,
+  withSequence,
+  Easing,
+} from "react-native-reanimated";
+const DOT_COLORS = ["#3B82F6", "#10B981", "#8B5CF6", "#F59E0B", "#EF4444"];
+import { useUserStore } from "@store/userStore";
+import {
+  getCurrentSession,
+  createUserDocument,
+  getUserDocument,
+  getAccount,
+  isAppwriteConfigured,
+} from "@services/appwriteService";
+import * as WebBrowser from "expo-web-browser";
+import { makeRedirectUri } from "expo-auth-session";
+import { OAuthProvider } from "react-native-appwrite";
+import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
+import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
+import { Button } from "@components/ui/Button";
 
 function useFadeUp(delay = 0) {
-  const opacity = useSharedValue(0)
-  const translateY = useSharedValue(28)
+  const opacity = useSharedValue(0);
+  const translateY = useSharedValue(28);
   useEffect(() => {
-    opacity.value = withDelay(delay, withTiming(1, { duration: 600 }))
-    translateY.value = withDelay(delay, withTiming(0, { duration: 600 }))
-  }, [])
+    opacity.value = withDelay(delay, withTiming(1, { duration: 600 }));
+    translateY.value = withDelay(delay, withTiming(0, { duration: 600 }));
+  }, []);
   return useAnimatedStyle(() => ({
     opacity: opacity.value,
     transform: [{ translateY: translateY.value }],
-  }))
+  }));
 }
 
+function AnimatedDot({ color, index }: { color: string; index: number }) {
+  const translateY = useSharedValue(0);
+
+  useEffect(() => {
+    translateY.value = withDelay(
+      600 + index * 150,
+      withRepeat(
+        withSequence(
+          withTiming(-14, { duration: 600, easing: Easing.inOut(Easing.ease) }),
+          withTiming(0, { duration: 600, easing: Easing.inOut(Easing.ease) }),
+        ),
+        -1,
+        true,
+      ),
+    );
+  }, []);
+
+  const style = useAnimatedStyle(() => ({
+    transform: [{ translateY: translateY.value }],
+    backgroundColor: color,
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    shadowColor: color,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 4,
+  }));
+
+  return <Animated.View style={style} />;
+}
+
+WebBrowser.maybeCompleteAuthSession();
+
 export default function WelcomeScreen() {
-  const dotsStyle = useFadeUp(0)
-  const wordmarkStyle = useFadeUp(120)
-  const taglineStyle = useFadeUp(240)
-  const buttonsStyle = useFadeUp(360)
+  const lastLoggedInEmail = useUserStore((s) => s.lastLoggedInEmail);
+  const setUser = useUserStore((s) => s.setUser);
+  const isReturning = Boolean(lastLoggedInEmail);
+
+  const handleOAuth = async (provider: "google" | "apple") => {
+    if (!isAppwriteConfigured) return;
+    try {
+      const redirectUri = makeRedirectUri({ path: "/(tabs)/home" });
+      const providerEnum =
+        provider === "google" ? OAuthProvider.Google : OAuthProvider.Apple;
+      const acc = getAccount();
+
+      const loginUrl = await acc.createOAuth2Token(
+        providerEnum,
+        redirectUri,
+        redirectUri,
+      );
+      if (!loginUrl) return;
+
+      const result = await WebBrowser.openAuthSessionAsync(
+        loginUrl.toString(),
+        redirectUri,
+      );
+
+      if (result.type === "success" && result.url) {
+        const url = new URL(result.url);
+        const userId = url.searchParams.get("userId");
+        const secret = url.searchParams.get("secret");
+        if (!userId || !secret) return;
+
+        // Exchange the OAuth token for a session
+        await acc.createSession(userId, secret);
+
+        const session = await getCurrentSession();
+        if (session) {
+          // Fetch user document to get existing progress
+          let dbUser: any = null;
+          try {
+            dbUser = await getUserDocument(session.$id);
+          } catch {
+            /* document fetch failed */
+          }
+
+          if (!dbUser) {
+            // Create user document if it doesn't exist
+            try {
+              await createUserDocument(session.$id, {
+                name: session.name || "",
+                email: session.email,
+                level: "A1",
+                voiceStyleId: "",
+              });
+            } catch {
+              /* document may already exist */
+            }
+          }
+
+          setUser({
+            id: session.$id,
+            name: session.name || (dbUser?.name ?? ""),
+            email: session.email,
+            level: (dbUser?.level ?? "A1") as any,
+            voiceStyleId: dbUser?.voiceStyleId ?? "",
+            isGuest: false,
+            avatarFileId: dbUser?.avatarFileId ?? null,
+          });
+
+          // Hydrate streak from remote
+          if (dbUser?.streak != null || dbUser?.lastActiveDate != null) {
+            const { useProgressStore } = require("@store/progressStore");
+            useProgressStore.getState().hydrateFromRemote(
+              dbUser.streak ?? 0,
+              dbUser.lastActiveDate ?? null,
+            );
+          }
+
+          router.replace("/(tabs)/home");
+        }
+      }
+    } catch {
+      // User cancelled or OAuth failed — silent
+    }
+  };
+
+  const dotsStyle = useFadeUp(0);
+  const wordmarkStyle = useFadeUp(120);
+  const taglineStyle = useFadeUp(240);
+  const buttonsStyle = useFadeUp(360);
 
   return (
     <MaxWidthContainer>
       <SafeAreaView style={styles.container}>
         <View style={styles.inner}>
-
-          {/* Top — field icons */}
+          {/* Field dots */}
           <Animated.View style={[styles.iconsRow, dotsStyle]}>
-            {FIELDS.map((f) => (
-              <IconCircle
-                key={f.id}
-                library={f.icon.library}
-                name={f.icon.name}
-                color={f.color}
-                size="sm"
-              />
+            {DOT_COLORS.map((color, i) => (
+              <AnimatedDot key={`dot-${i}`} color={color} index={i} />
             ))}
           </Animated.View>
 
-          {/* Middle — wordmark + tagline */}
+          {/* Hero */}
           <View style={styles.hero}>
             <Animated.View style={wordmarkStyle}>
               <Text style={styles.wordmark}>
@@ -60,67 +187,131 @@ export default function WelcomeScreen() {
             </Animated.View>
 
             <Animated.Text style={[styles.tagline, taglineStyle]}>
-              Learn the words that{'\n'}matter for your career.
+              Learn the words that{"\n"}matter for your career.
             </Animated.Text>
           </View>
 
-          {/* Bottom — CTAs */}
+          {/* CTAs */}
           <Animated.View style={[styles.actions, buttonsStyle]}>
             <Button
-              label="Get Started"
-              onPress={() => router.push('/(onboarding)/interests')}
-              variant="primary"
-              size="lg"
-              fullWidth
-              icon={{ library: 'Ionicons', name: 'arrow-forward', position: 'right' }}
-            />
-            <Button
-              label="Try 3 words for free"
-              onPress={() =>
-                router.push({ pathname: '/(onboarding)/interests', params: { guest: 'true' } })
-              }
+              label="Bypass Onboarding (Dev)"
+              onPress={() => router.replace("/(tabs)/home")}
               variant="ghost"
               size="lg"
               fullWidth
             />
+            {isReturning ? (
+              <>
+                <Pressable onPress={() => router.push("/(onboarding)/auth/login")}>
+                  <LinearGradient
+                    colors={[colors.ink, '#27272A']}
+                    style={styles.primaryBtn}
+                  >
+                    <Text style={styles.primaryLabel}>Go to your account</Text>
+                    <Ionicons name="arrow-forward" size={18} color="#fff" />
+                  </LinearGradient>
+                </Pressable>
+                <Button
+                  label="Start fresh"
+                  onPress={() => router.push("/(onboarding)/placement-test")}
+                  variant="ghost"
+                  size="lg"
+                  fullWidth
+                />
+              </>
+            ) : (
+              <>
+                <Pressable onPress={() => router.push("/(onboarding)/placement-test")}>
+                  <LinearGradient
+                    colors={[colors.ink, '#27272A']}
+                    style={styles.primaryBtn}
+                  >
+                    <Text style={styles.primaryLabel}>Get Started</Text>
+                    <Ionicons name="arrow-forward" size={18} color="#fff" />
+                  </LinearGradient>
+                </Pressable>
+                <Button
+                  label="Continue with Google"
+                  onPress={() => handleOAuth("google")}
+                  variant="google"
+                  size="lg"
+                  fullWidth
+                  icon={{
+                    source: require("../../../assets/images/google-icon.png"),
+                    position: "left",
+                  }}
+                />
+                <Button
+                  label="Continue with Apple"
+                  onPress={() => handleOAuth("apple")}
+                  variant="apple"
+                  size="lg"
+                  fullWidth
+                  icon={{
+                    library: "Ionicons",
+                    name: "logo-apple",
+                    position: "left",
+                  }}
+                />
+                <Pressable
+                  onPress={() =>
+                    router.push({
+                      pathname: "/(onboarding)/placement-test",
+                      params: { guest: "true" },
+                    })
+                  }
+                  style={styles.guestLink}
+                >
+                  <Text style={styles.guestText}>
+                    Try 3 words for free <Text style={styles.guestArrow}>→</Text>
+                  </Text>
+                </Pressable>
+              </>
+            )}
           </Animated.View>
-
         </View>
       </SafeAreaView>
     </MaxWidthContainer>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+  container: { flex: 1, backgroundColor: colors.bg },
   inner: {
     flex: 1,
-    paddingHorizontal: spacing[6],
-    paddingTop: spacing[8],
-    paddingBottom: spacing[6],
-    justifyContent: 'space-between',
+    paddingHorizontal: 24,
+    paddingTop: 32,
+    paddingBottom: 24,
+    justifyContent: "space-between",
   },
-
-  // Icons
-  iconsRow: { flexDirection: 'row', gap: spacing[3] },
-
-  // Hero
-  hero: { gap: spacing[4] },
+  iconsRow: { flexDirection: "row", gap: 12 },
+  hero: { gap: 16 },
   wordmark: {
-    fontSize: Platform.OS === 'web' ? 72 : 64,
-    fontWeight: '800',
-    color: colors.textPrimary,
+    fontFamily: fonts.serif,
+    fontSize: Platform.OS === "web" ? 72 : 64,
+    color: colors.ink,
     letterSpacing: -2,
-    lineHeight: Platform.OS === 'web' ? 80 : 72,
+    lineHeight: Platform.OS === "web" ? 80 : 72,
   },
-  period: { color: '#3B82F6' },
+  period: { color: colors.iris },
   tagline: {
-    ...typography.heading3,
-    color: colors.textSecondary,
+    fontFamily: fonts.sans,
+    fontSize: 18,
+    color: colors.ink2,
     lineHeight: 30,
-    fontWeight: '400',
   },
-
-  // Actions
-  actions: { gap: spacing[3] },
-})
+  actions: { gap: 12 },
+  primaryBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: radii.md,
+    ...shadows.button,
+  },
+  primaryLabel: { fontFamily: fonts.sansSemiBold, fontSize: 15, color: '#fff' },
+  guestLink: { alignItems: 'center', paddingVertical: 12 },
+  guestText: { fontFamily: fonts.sansMedium, fontSize: 14, color: colors.ink2 },
+  guestArrow: { color: colors.iris },
+});

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#000',
+    backgroundColor: colors.border,
   },
   container: {
     flex: 1,

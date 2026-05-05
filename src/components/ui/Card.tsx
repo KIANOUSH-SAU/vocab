@@ -1,6 +1,6 @@
 import { View, Pressable, StyleSheet } from 'react-native'
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated'
-import { colors, spacing, radii, shadows } from '@constants/theme'
+import { colors, spacing, radii, shadows, springConfigs } from '@constants/theme'
 
 interface Props {
   children: React.ReactNode
@@ -13,9 +13,9 @@ interface Props {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
 
 const VARIANT_STYLES = {
-  default: { bg: colors.surface, shadow: shadows.soft, borderWidth: 0, borderColor: 'transparent' },
-  elevated: { bg: colors.elevated, shadow: shadows.card, borderWidth: 0, borderColor: 'transparent' },
-  outlined: { bg: colors.surface, shadow: null, borderWidth: 1, borderColor: colors.border },
+  default: { bg: colors.card, shadow: shadows.sm, borderWidth: 0, borderColor: 'transparent' },
+  elevated: { bg: colors.card, shadow: shadows.card, borderWidth: 0, borderColor: 'transparent' },
+  outlined: { bg: colors.card, shadow: null, borderWidth: 1, borderColor: colors.border },
 } as const
 
 export function Card({
@@ -32,11 +32,11 @@ export function Card({
   }))
 
   const handlePressIn = () => {
-    scale.value = withSpring(0.98, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(0.98, springConfigs.snappy)
   }
 
   const handlePressOut = () => {
-    scale.value = withSpring(1, { damping: 20, stiffness: 300 })
+    scale.value = withSpring(1, springConfigs.snappy)
   }
 
   const v = VARIANT_STYLES[variant]
@@ -75,7 +75,7 @@ export function Card({
 
 const styles = StyleSheet.create({
   card: {
-    borderRadius: radii.card,
+    borderRadius: radii.lg,
     overflow: 'hidden',
   },
 })

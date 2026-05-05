@@ -37,5 +37,4 @@ export interface SessionStats {
   wrong: number
   skipped: number
   totalCards: number
-  durationMs: number
 }

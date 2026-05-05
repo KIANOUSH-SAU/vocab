@@ -1,18 +1,20 @@
-import type { Field, Level } from './word'
+import type { Level } from "./word";
 
 export interface User {
-  id: string
-  name: string
-  email?: string
-  level: Level
-  fields: Field[]
-  voiceStyleId: string
-  isGuest: boolean
+  id: string;
+  name: string;
+  email?: string;
+  level: Level;
+  voiceStyleId: string;
+  isGuest: boolean;
+  streak?: number;
+  lastActiveDate?: string | null;
+  avatarFileId?: string | null;
 }
 
 export interface VoiceStyle {
-  id: string
-  name: string
-  previewUrl?: string
-  category: string
+  id: string;
+  name: string;
+  previewUrl?: string;
+  category: string;
 }

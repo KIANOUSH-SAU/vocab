@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback } from 'react'
 import type { Word, ExerciseCard, ExerciseType, SessionStats } from '@/types'
 import { useSpacedRepetition } from './useSpacedRepetition'
 import { generateWrongAnswerExplanation } from '@services/aiService'
@@ -39,11 +39,10 @@ export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
   const [index, setIndex] = useState(0)
   const [stats, setStats] = useState<SessionStats>({
     correct: 0, wrong: 0, skipped: 0,
-    totalCards: queue.length, durationMs: 0,
+    totalCards: queue.length,
   })
   const [explanation, setExplanation] = useState<string | null>(null)
   const [isExplaining, setIsExplaining] = useState(false)
-  const startTime = useRef(Date.now())
   const { recordAnswer } = useSpacedRepetition()
   const { play } = useAudio()
   const user = useCurrentUser()
@@ -95,7 +94,7 @@ export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
     currentCard,
     progress: { completed: index, total: queue.length },
     isComplete,
-    sessionStats: { ...stats, durationMs: Date.now() - startTime.current },
+    sessionStats: stats,
     explanation,
     isExplaining,
     onCorrect,

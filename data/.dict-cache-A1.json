@@ -1,0 +1,2752 @@
+{
+  "about": {
+    "phonetic": "/əˈbɛʊt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Moving around; astir."
+  },
+  "above": {
+    "phonetic": "/əˈbʌv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Heaven."
+  },
+  "across": {
+    "phonetic": "/əˈkɹɑs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(crosswords, often in combination) A word that runs horizontally in the completed puzzle grid or its associated clue."
+  },
+  "actor": {
+    "phonetic": "/ˈæk.tə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who performs, plays a part in a theatrical play or film."
+  },
+  "actress": {
+    "phonetic": "/ˈak.tɹəs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A female who performs on the stage or in films."
+  },
+  "add": {
+    "phonetic": "/æd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act or instance of adding."
+  },
+  "address": {
+    "phonetic": "/æˈdɹɛs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Direction."
+  },
+  "afraid": {
+    "phonetic": "/əˈfɹeɪd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "(usually used predicatively, not attributively, be afraid) Impressed with fear or apprehension; in fear."
+  },
+  "after": {
+    "phonetic": "/ˈæf.tə(ɹ)/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Later; second (of two); next, following, subsequent"
+  },
+  "afternoon": {
+    "phonetic": "/af.təɾˈnʉːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The part of the day from noon or lunchtime until sunset, evening, or suppertime or 6pm."
+  },
+  "again": {
+    "phonetic": "/əˈɡeɪn/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Another time; once more."
+  },
+  "age": {
+    "phonetic": "/eɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The whole duration of a being, whether animal, plant, or other kind, being alive."
+  },
+  "ago": {
+    "phonetic": "/əˈɡəʊ/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Gone; gone by; gone away; passed; passed away."
+  },
+  "air": {
+    "phonetic": "/ˈɛə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The substance constituting earth's atmosphere, particularly:"
+  },
+  "airport": {
+    "phonetic": "/ˈɛə.pɔːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An airfield (an area designated for the takeoff and landing of aircraft), including one or more runways and (for commercial airports) one or more passenger terminals."
+  },
+  "all": {
+    "phonetic": "/ɔːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(with a possessive pronoun) Everything that one is capable of."
+  },
+  "also": {
+    "phonetic": "/ˈɔːl.səʊ/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(focus) In addition; besides; as well; further; too."
+  },
+  "always": {
+    "phonetic": "/ˈɔː(l).weɪz/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "At all times; throughout all time; since the beginning."
+  },
+  "and": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "In rhythm, the second half of a divided beat."
+  },
+  "angry": {
+    "phonetic": "/ˈæŋ.ɡɹi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Displaying or feeling anger."
+  },
+  "animal": {
+    "phonetic": "/ˈænɪməl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "In scientific usage, a multicellular organism that is usually mobile, whose cells are not encased in a rigid cell wall (distinguishing it from plants and fungi) and which derives energy solely from the consumption of other organisms (distinguishing it from plants)."
+  },
+  "another": {
+    "phonetic": "/æˈnʌð.ə(ɹ)/",
+    "partOfSpeech": "other",
+    "rawDefinition": "An additional one of the same kind."
+  },
+  "answer": {
+    "phonetic": "/ˈan.sə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A response or reply; something said or done in reaction to a statement or question."
+  },
+  "any": {
+    "phonetic": "/ˈæni/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "To even the slightest extent, at all."
+  },
+  "around": {
+    "phonetic": "/əˈɹaʊnd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "(with the verb \"to be\") Present in the vicinity."
+  },
+  "arrive": {
+    "phonetic": "/əˈɹaɪv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To reach; to get to a certain place."
+  },
+  "art": {
+    "phonetic": "/ɑːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The conscious production or arrangement of sounds, colours, forms, movements, or other elements in a manner that affects the senses and emotions, usually specifically the production of the beautiful in a graphic or plastic medium."
+  },
+  "artist": {
+    "phonetic": "/ˈɑːtɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who creates art."
+  },
+  "as": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "To such an extent or degree; to the same extent or degree."
+  },
+  "ask": {
+    "phonetic": "/ˈask/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act or instance of asking."
+  },
+  "at": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To reply to or talk to someone, either online or face-to-face. (from the practice of targeting a message or reply to someone online by writing @name)"
+  },
+  "august": {
+    "phonetic": "/ɔːˈɡʌst/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Awe-inspiring, majestic, noble, venerable."
+  },
+  "aunt": {
+    "phonetic": "/ɑ(ː)nt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The sister or sister-in-law of one’s parent."
+  },
+  "autumn": {
+    "phonetic": "/ˈɔːtəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Traditionally the third of the four seasons, when deciduous trees lose their leaves; typically regarded as being from September 24 to December 22 in parts of the Northern Hemisphere, and the months of March, April and May in the Southern Hemisphere."
+  },
+  "away": {
+    "phonetic": "/əˈweɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To depart; to go to another place."
+  },
+  "baby": {
+    "phonetic": "/ˈbeɪbi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A very young human, particularly from birth to a couple of years old or until walking is fully mastered."
+  },
+  "back": {
+    "phonetic": "/bæk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The rear of the body, especially the part between the neck and the end of the spine and opposite the chest and belly."
+  },
+  "bad": {
+    "phonetic": "/bæːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Error, mistake."
+  },
+  "bag": {
+    "phonetic": "/ˈbæːɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A flexible container made of cloth, paper, plastic, etc."
+  },
+  "ball": {
+    "phonetic": "/bɔːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A solid or hollow sphere, or roughly spherical mass."
+  },
+  "banana": {
+    "phonetic": "/bəˈnɑːnə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An elongated curved tropical fruit that grows in bunches and has a creamy flesh and a smooth skin."
+  },
+  "band": {
+    "phonetic": "/bænd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A strip of material used for strengthening or coupling."
+  },
+  "bank": {
+    "phonetic": "/bæŋk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An institution where one can place and borrow money and take care of financial affairs."
+  },
+  "bath": {
+    "phonetic": "/bɐːθ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A tub or pool which is used for bathing: bathtub."
+  },
+  "bathroom": {
+    "phonetic": "/ˈbæθ.ɹuːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A room containing a shower and/or bathtub, and (typically but not necessarily) a toilet."
+  },
+  "beach": {
+    "phonetic": "/biːt͡ʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The shore of a body of water, especially when sandy or pebbly."
+  },
+  "beautiful": {
+    "phonetic": "/ˈbjuːtɪfəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who is beautiful. Can be used as a term of address."
+  },
+  "because": {
+    "phonetic": "/bɪˈkɒz/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "For the reason (that)."
+  },
+  "best": {
+    "phonetic": "/ˈbɛst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The supreme effort one can make, or has made."
+  },
+  "better": {
+    "phonetic": "[ˈbeɾə]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An entity, usually animate, deemed superior to another; one who has a claim to precedence; a superior."
+  },
+  "between": {
+    "phonetic": "/bɪˈtwiːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A kind of needle, shorter than a sharp, with a small rounded eye, used for making fine stitches on heavy fabrics."
+  },
+  "bicycle": {
+    "phonetic": "/ˈbaɪsɪkl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vehicle that has two wheels, one behind the other, a steering handle, and a saddle seat or seats and is usually propelled by the action of a rider’s feet upon pedals."
+  },
+  "big": {
+    "phonetic": "/bɪɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone or something that is large in stature"
+  },
+  "bike": {
+    "phonetic": "[bɐɪk]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vehicle that has two wheels, one behind the other, a steering handle, and a saddle seat or seats and is usually propelled by the action of a rider’s feet upon pedals."
+  },
+  "bill": {
+    "phonetic": "/bɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of various bladed or pointed hand weapons, originally designating an Anglo-Saxon sword, and later a weapon of infantry, especially in the 14th and 15th centuries, commonly consisting of a broad, heavy, double-edged, hook-shaped blade, with a short pike at the back and another at the top, attached to the end of a long staff."
+  },
+  "bird": {
+    "phonetic": "/bɜd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A member of the class of animals Aves in the phylum Chordata, characterized by being warm-blooded, having feathers and wings usually capable of flight, and laying eggs."
+  },
+  "birthday": {
+    "phonetic": "/ˈbɜːθ.deɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The anniversary of the day on which someone is born."
+  },
+  "black": {
+    "phonetic": "/blak/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The colour/color perceived in the absence of light, but also when no light is reflected, but rather absorbed."
+  },
+  "blog": {
+    "phonetic": "/blɑɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A website that allows users to reflect, share opinions, and discuss various topics in the form of an online journal, sometimes letting readers comment on their posts. Most blogs are written in a slightly informal tone (personal journals, news, businesses, etc.)"
+  },
+  "blonde": {
+    "phonetic": "/blɒnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A pale yellowish (golden brown) color, especially said of hair color."
+  },
+  "blue": {
+    "phonetic": "/bluː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The colour of the clear sky or the deep sea, between green and violet in the visible spectrum, and one of the primary additive colours for transmitted light; the colour obtained by subtracting red and green from white light using magenta and cyan filters; or any colour resembling this."
+  },
+  "boat": {
+    "phonetic": "/bəʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A craft used for transportation of goods, fishing, racing, recreational cruising, or military use on or in the water, propelled by oars or outboard motor or inboard motor or by wind."
+  },
+  "body": {
+    "phonetic": "/ˈbɒdi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Physical frame."
+  },
+  "book": {
+    "phonetic": "/buːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A collection of sheets of paper bound together to hinge at one edge, containing printed or written material, pictures, etc."
+  },
+  "boot": {
+    "phonetic": "/buːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A heavy shoe that covers part of the leg."
+  },
+  "bored": {
+    "phonetic": "/bɔːd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To inspire boredom in somebody."
+  },
+  "boring": {
+    "phonetic": "/ˈbɔːɹɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To inspire boredom in somebody."
+  },
+  "born": {
+    "phonetic": "/ˈbɔːn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To carry or convey, literally or figuratively."
+  },
+  "both": {
+    "phonetic": "/bəʊθ/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Each of the two, or of the two kinds."
+  },
+  "bottle": {
+    "phonetic": "/ˈbɑ.təl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A container, typically made of glass or plastic and having a tapered neck, used primarily for holding liquids."
+  },
+  "box": {
+    "phonetic": "/bɒks/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Senses relating to a three-dimensional object or space."
+  },
+  "boy": {
+    "phonetic": "/bɔːə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A young male."
+  },
+  "boyfriend": {
+    "phonetic": "/ˈbɔɪfɹənd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A male partner in an unmarried romantic relationship."
+  },
+  "bread": {
+    "phonetic": "/bɹeːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A foodstuff made by baking dough made from cereals."
+  },
+  "break": {
+    "phonetic": "/bɹeɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of breaking something into two or more pieces."
+  },
+  "building": {
+    "phonetic": "/ˈbɪl.dɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or process by which something is built; construction."
+  },
+  "bus": {
+    "phonetic": "/bɐs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A motor vehicle for transporting large numbers of people along roads."
+  },
+  "busy": {
+    "phonetic": "/ˈbɪzi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A police officer."
+  },
+  "but": {
+    "phonetic": "/bʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance or example of using the word \"but\"."
+  },
+  "butter": {
+    "phonetic": "/ˈbʊtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A soft, fatty foodstuff made by churning the cream of milk (generally cow's milk)."
+  },
+  "buy": {
+    "phonetic": "/baɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something which is bought; a purchase."
+  },
+  "by": {
+    "phonetic": "/baɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A flying insect, of the clade Anthophila within the hymenopteran superfamily Apoidea, known for its organised societies (though only a minority have them), for collecting pollen and (in some species) producing wax and honey."
+  },
+  "cafe": {
+    "phonetic": "/ˈkæfeɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A convenience store, originally one that sold coffee and similar basic items."
+  },
+  "cake": {
+    "phonetic": "/keɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rich, sweet dessert food, typically made of flour, sugar and eggs and baked in an oven, and often covered in icing."
+  },
+  "call": {
+    "phonetic": "/kɔːɫ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A telephone conversation."
+  },
+  "camera": {
+    "phonetic": "/ˈkæməɹə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A device for taking still or moving pictures or photographs."
+  },
+  "can": {
+    "phonetic": "/ˈkæn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(auxiliary verb, defective) To know how to; to be able to."
+  },
+  "cannot": {
+    "phonetic": "/kəˈnɑt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that cannot be done."
+  },
+  "car": {
+    "phonetic": "/kɑː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation."
+  },
+  "card": {
+    "phonetic": "/kaːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A playing card."
+  },
+  "carrot": {
+    "phonetic": "/ˈkæɹ.ət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vegetable with a nutritious, juicy, sweet root that is often orange in colour, Daucus carota, especially the subspecies sativus in the family Apiaceae."
+  },
+  "carry": {
+    "phonetic": "/ˈkæ.ɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A manner of transporting or lifting something; the grip or position in which something is carried."
+  },
+  "cat": {
+    "phonetic": "/kat/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An animal of the family Felidae:"
+  },
+  "cent": {
+    "phonetic": "/sɛnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(money) A subunit of currency equal to one-hundredth of the main unit of currency in many countries. Symbol: ¢."
+  },
+  "centre": {
+    "phonetic": "/ˈsen.tə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The point in the interior of a circle that is equidistant from all points on the circumference."
+  },
+  "chair": {
+    "phonetic": "/t͡ʃɛə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An item of furniture used to sit on or in, comprising a seat, legs, back, and sometimes arm rests, for use by one person. Compare stool, couch, sofa, settee, loveseat and bench."
+  },
+  "change": {
+    "phonetic": "/tʃeɪndʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of becoming different."
+  },
+  "chocolate": {
+    "phonetic": "/ˈt͡ʃɔk(ə)lət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A food made from ground roasted cocoa beans."
+  },
+  "choose": {
+    "phonetic": "/t͡ʃuːz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To pick; to make the choice of; to select."
+  },
+  "cinema": {
+    "phonetic": "/ˈsɪn.ɪ.mɑː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A movie theatre, a movie house"
+  },
+  "city": {
+    "phonetic": "/sɪtɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large settlement, bigger than a town; sometimes with a specific legal definition, depending on the place."
+  },
+  "class": {
+    "phonetic": "/klas/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group, collection, category or set sharing characteristics or attributes."
+  },
+  "classroom": {
+    "phonetic": "/ˈklɑːsɹʊm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A room, often in a school, where classes take place"
+  },
+  "clean": {
+    "phonetic": "/kleːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Removal of dirt."
+  },
+  "climb": {
+    "phonetic": "/klaɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of climbing."
+  },
+  "clock": {
+    "phonetic": "/klɒk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instrument used to measure or keep track of time; a non-portable timepiece."
+  },
+  "close": {
+    "phonetic": "/kləʊz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An end or conclusion."
+  },
+  "clothes": {
+    "phonetic": "/kləʊ(ð)z/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A woven fabric such as used in dressing, decorating, cleaning or other practical use."
+  },
+  "club": {
+    "phonetic": "/klʌb/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An association of members joining together for some common purpose, especially sports or recreation."
+  },
+  "coat": {
+    "phonetic": "/kəʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An outer garment covering the upper torso and arms.Wp"
+  },
+  "coffee": {
+    "phonetic": "/ˈkɑ.fi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A beverage made by infusing the beans of the coffee plant in hot water."
+  },
+  "cold": {
+    "phonetic": "/kɔʊld/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "(of a thing) Having a low temperature."
+  },
+  "college": {
+    "phonetic": "/ˈkɒlɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A corporate group; a group of colleagues."
+  },
+  "colour": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The spectral composition of visible light"
+  },
+  "come": {
+    "phonetic": "/kʌm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Coming, arrival; approach."
+  },
+  "computer": {
+    "phonetic": "/kəmˈpjuːtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person employed to perform computations; one who computes."
+  },
+  "concert": {
+    "phonetic": "/ˈkɒnsət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Agreement in a design or plan; union formed by mutual communication of opinions and views; accordance in a scheme; harmony; simultaneous action."
+  },
+  "cook": {
+    "phonetic": "/kuːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who prepares food."
+  },
+  "cooking": {
+    "phonetic": "/ˈkʊ.kɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To prepare (food) for eating by heating it, often by combining it with other ingredients."
+  },
+  "cool": {
+    "phonetic": "/kuːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A moderate or refreshing state of cold; moderate temperature of the air between hot and cold; coolness."
+  },
+  "correct": {
+    "phonetic": "/kəˈɹɛkt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Free from error; true; accurate."
+  },
+  "cost": {
+    "phonetic": "/ˈkɑst/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To incur a charge of; to require payment of a (specified) price."
+  },
+  "cup": {
+    "phonetic": "/kʌp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A concave vessel for drinking from, usually made of opaque material (as opposed to a glass) and with a handle."
+  },
+  "customer": {
+    "phonetic": "/ˈkʌstəmə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A patron, a client; one who purchases or receives a product or service from a business or merchant, or intends to do so."
+  },
+  "cut": {
+    "phonetic": "/kʌt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of cutting."
+  },
+  "evening": {
+    "phonetic": "/ˈivnɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The time of the day between dusk and night, when it gets dark."
+  },
+  "everybody": {
+    "phonetic": "/ˈɛvɹibɒdi/",
+    "partOfSpeech": "other",
+    "rawDefinition": "All people."
+  },
+  "everyone": {
+    "phonetic": "/ˈɛv.ɹi.wʌn/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Every person."
+  },
+  "everything": {
+    "phonetic": "/ˈɛvɹiθɪŋ/",
+    "partOfSpeech": "other",
+    "rawDefinition": "All the things under discussion."
+  },
+  "exam": {
+    "phonetic": "/ɛɡˈzæm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of examining."
+  },
+  "example": {
+    "phonetic": "/əɡˈzæmpl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is representative of all such things in a group."
+  },
+  "excited": {
+    "phonetic": "/ɪkˈsaɪtɪd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To stir the emotions of."
+  },
+  "exciting": {
+    "phonetic": "/ɪkˈsaɪtɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To stir the emotions of."
+  },
+  "exercise": {
+    "phonetic": "/ˈɛk.sə.saɪz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any activity designed to develop or hone a skill or ability."
+  },
+  "expensive": {
+    "phonetic": "/ɛkˈspɛnsɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Given to expending a lot of money; profligate, lavish."
+  },
+  "eye": {
+    "phonetic": "/aɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An organ through which animals see (perceive surroundings via light)."
+  },
+  "face": {
+    "phonetic": "/feɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The front part of the head of a human or other animal, featuring the eyes, nose and mouth, and the surrounding area."
+  },
+  "fall": {
+    "phonetic": "/fɔːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of moving to a lower position under the effect of gravity."
+  },
+  "false": {
+    "phonetic": "/fɒls/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of two options on a true-or-false test."
+  },
+  "family": {
+    "phonetic": "/ˈfɛm(ɘ)li/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group of people who are closely related to one another (by blood, marriage or adoption); kin; for example, a set of parents and their children; an immediate family."
+  },
+  "famous": {
+    "phonetic": "/ˈfeɪməs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make famous; to bring renown to."
+  },
+  "fantastic": {
+    "phonetic": "/fænˈtæstɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fanciful or whimsical person."
+  },
+  "far": {
+    "phonetic": "/fɑː/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Distant; remote in space."
+  },
+  "farm": {
+    "phonetic": "/fɑːɹm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place where agricultural and similar activities take place, especially the growing of crops or the raising of livestock."
+  },
+  "farmer": {
+    "phonetic": "/fɑːmə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who works the land and/or who keeps livestock, especially on a farm."
+  },
+  "fast": {
+    "phonetic": "/fɑːst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A train that calls at only some stations it passes between its origin and destination, typically just the principal stations"
+  },
+  "fat": {
+    "phonetic": "/fæt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A specialized animal tissue with a high oil content, used for long-term storage of energy."
+  },
+  "father": {
+    "phonetic": "/ˈfaːðə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A (generally human) male who begets a child."
+  },
+  "fill": {
+    "phonetic": "/fɪl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To occupy fully, to take up all of."
+  },
+  "film": {
+    "phonetic": "[ˈfɪlm̩]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A thin layer of some substance; a pellicle; a membranous covering, causing opacity."
+  },
+  "find": {
+    "phonetic": "/faɪnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything that is found (usually valuable), as objects on an archeological site or a person with talent."
+  },
+  "fine": {
+    "phonetic": "/fæːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Fine champagne; French brandy."
+  },
+  "finish": {
+    "phonetic": "/ˈfɪnɪʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An end; the end of anything."
+  },
+  "fire": {
+    "phonetic": "/ˈfɑeə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A (usually self-sustaining) chemical reaction involving the bonding of oxygen with carbon or other fuel, with the production of heat and the presence of flame or smouldering."
+  },
+  "first": {
+    "phonetic": "/fɪrst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The person or thing in the first position."
+  },
+  "fish": {
+    "phonetic": "/fɪʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A cold-blooded vertebrate animal that lives in water, moving with the help of fins and breathing with gills."
+  },
+  "flat": {
+    "phonetic": "/flæt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An area of level ground."
+  },
+  "flight": {
+    "phonetic": "/flaɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of flying."
+  },
+  "floor": {
+    "phonetic": "/flɔː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The interior bottom or surface of a house or building; the supporting surface of a room."
+  },
+  "flower": {
+    "phonetic": "/ˈflaʊ.ə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A colorful, conspicuous structure associated with angiosperms, frequently scented and attracting various insects, and which may or may not be used for sexual reproduction."
+  },
+  "fly": {
+    "phonetic": "/flaɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any insect of the order Diptera; characterized by having two wings (except for some wingless species), also called true flies."
+  },
+  "follow": {
+    "phonetic": "/ˈfɒləʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(sometimes attributive) In billiards and similar games, a stroke causing a ball to follow another ball after hitting it."
+  },
+  "food": {
+    "phonetic": "/fuːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any solid substance that can be consumed by living organisms, especially by eating, in order to sustain life."
+  },
+  "foot": {
+    "phonetic": "[fʊt̚]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A biological structure found in many animals that is used for locomotion and that is frequently a separate organ at the terminal part of the leg."
+  },
+  "football": {
+    "phonetic": "[fʷʊʔt̚bɑɫ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(general) A sport played on foot in which teams attempt to get a ball into a goal or zone defended by the other team."
+  },
+  "forget": {
+    "phonetic": "/fəˈɡɛt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To lose remembrance of."
+  },
+  "friend": {
+    "phonetic": "/fɹɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person other than a family member, spouse or lover whose company one enjoys and towards whom one feels affection."
+  },
+  "friendly": {
+    "phonetic": "/ˈfɹɛndli/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A game which is of no consequence in terms of ranking, betting etc."
+  },
+  "from": {
+    "phonetic": "/fɹɒm/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Used to indicate source or provenance."
+  },
+  "front": {
+    "phonetic": "/fɹʌnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The foremost side of something or the end that faces the direction it normally moves."
+  },
+  "fruit": {
+    "phonetic": "/fɹuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(often in the plural) In general, a product of plant growth useful to man or animals."
+  },
+  "full": {
+    "phonetic": "/fʊl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Containing the maximum possible amount that can fit in the space available."
+  },
+  "fun": {
+    "phonetic": "/fʊn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Amusement, enjoyment or pleasure"
+  },
+  "funny": {
+    "phonetic": "/ˈfʊnɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A joke."
+  },
+  "game": {
+    "phonetic": "/ɡeɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A playful or competitive activity."
+  },
+  "garden": {
+    "phonetic": "/ˈɡɑːdn̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An outdoor area containing one or more types of plants, usually plants grown for food or ornamental purposes."
+  },
+  "get": {
+    "phonetic": "/ɡɛt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Offspring."
+  },
+  "girl": {
+    "phonetic": "/ɡɵːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A female child, adolescent, or a young woman."
+  },
+  "girlfriend": {
+    "phonetic": "/ˈɡɜːlfɹɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A female partner in an unmarried romantic relationship."
+  },
+  "give": {
+    "phonetic": "/ɡɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The amount of bending that something undergoes when a force is applied to it; a tendency to yield under pressure; resilence."
+  },
+  "glass": {
+    "phonetic": "/ɡlɑːs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To apply fibreglass to."
+  },
+  "go": {
+    "phonetic": "/ɡəʉ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of going."
+  },
+  "good": {
+    "phonetic": "/ɡʊ(d)/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "(of people)"
+  },
+  "grandfather": {
+    "phonetic": "/ˈɡɹæn(d)ˌfɑːðə(r)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A father of someone's parent."
+  },
+  "grandmother": {
+    "phonetic": "/ˈɡɹæn(d)ˌmʌðə(r)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A mother of someone's parent."
+  },
+  "grandparent": {
+    "phonetic": "/ˈɡɹæn(d)pæɹənt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To be, or act as, a grandfather to."
+  },
+  "great": {
+    "phonetic": "/ɡɹeɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person of major significance, accomplishment or acclaim."
+  },
+  "green": {
+    "phonetic": "/ɡɹiːn/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having green as its color."
+  },
+  "grey": {
+    "phonetic": "/ɡɹeɪ/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a color."
+  },
+  "group": {
+    "phonetic": "/ɡɹuːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A number of things or persons being in some relation to one another."
+  },
+  "guess": {
+    "phonetic": "/ɡɛs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To reach a partly (or totally) unqualified conclusion."
+  },
+  "guitar": {
+    "phonetic": "/ɡɪˈtɑː(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A stringed musical instrument, of European origin, usually with a fretted fingerboard and six strings, played with the fingers or a plectrum (guitar pick)."
+  },
+  "hard": {
+    "phonetic": "/hɑːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A firm or paved beach or slope convenient for hauling vessels out of the water."
+  },
+  "hat": {
+    "phonetic": "[hat]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A covering for the head, often in the approximate form of a cone or a cylinder closed at its top end, and sometimes having a brim and other decoration."
+  },
+  "hate": {
+    "phonetic": "/heɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An object of hatred."
+  },
+  "have": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A wealthy or privileged person."
+  },
+  "he": {
+    "phonetic": "/hi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The game of tag, or it, in which the player attempting to catch the others is called \"he\"."
+  },
+  "head": {
+    "phonetic": "/hɛd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The part of the body of an animal or human which contains the brain, mouth and main sense organs."
+  },
+  "healthy": {
+    "phonetic": "/ˈhɛl.θi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Enjoying health and vigor of body, mind, or spirit: well."
+  },
+  "hear": {
+    "phonetic": "/hɪə(ɹ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(stative) To perceive sounds through the ear."
+  },
+  "help": {
+    "phonetic": "/hɛlp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Action given to provide assistance; aid."
+  },
+  "her": {
+    "phonetic": "/ə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A female person or animal."
+  },
+  "here": {
+    "phonetic": "/hiːɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(abstract) This place; this location."
+  },
+  "high": {
+    "phonetic": "/haɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A high point or position, literally or figuratively; an elevated place; a superior region; a height; the sky; heaven."
+  },
+  "him": {
+    "phonetic": "/əm/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Honorific alternative letter-case form of him, sometimes used when referring to God or another important figure who is understood from context."
+  },
+  "his": {
+    "phonetic": "/ˈhɪz/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Honorific alternative letter-case form of his, sometimes used when referring to God or another important figure who is understood from context."
+  },
+  "hobby": {
+    "phonetic": "/ˈhɒ.bi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An activity that one enjoys doing in one's spare time."
+  },
+  "holiday": {
+    "phonetic": "/ˈhɒlɪdeɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A day on which a festival, religious event, or national celebration is traditionally observed."
+  },
+  "home": {
+    "phonetic": "/(h)əʊm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A dwelling."
+  },
+  "homework": {
+    "phonetic": "/ˈhəʊmˌwɜːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Work that is done at home, especially school exercises assigned by a teacher."
+  },
+  "hope": {
+    "phonetic": "/həʊp/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To want something to happen, with a sense of expectation that it might."
+  },
+  "horse": {
+    "phonetic": "/hɔːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of several animals related to Equus ferus caballus."
+  },
+  "hospital": {
+    "phonetic": "/ˈhɒs.pɪ.tl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large medical facility, usually in a building with multiple floors, where seriously ill or injured patients are given extensive medical and/or surgical treatment."
+  },
+  "hot": {
+    "phonetic": "/hɒt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(with up) To heat; to make or become hot."
+  },
+  "hotel": {
+    "phonetic": "/(h)əʊˈtɛl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large town house or mansion; a grand private residence, especially in France."
+  },
+  "i": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The name of the Latin-script letter I."
+  },
+  "ice": {
+    "phonetic": "[ʌɪs]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Water in frozen (solid) form."
+  },
+  "ice cream": {
+    "phonetic": "/ˌaɪsˈkɹiːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A dessert made from frozen sweetened cream or a similar substance, usually flavoured."
+  },
+  "idea": {
+    "phonetic": "/ɑeˈdiə̯/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An abstract archetype of a given thing, compared to which real-life examples are seen as imperfect approximations; pure essence, as opposed to actual examples."
+  },
+  "if": {
+    "phonetic": "/ɪf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An uncertainty, possibility, condition, doubt etc."
+  },
+  "in": {
+    "phonetic": "/ɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A position of power or influence, or a way to get it."
+  },
+  "interested": {
+    "phonetic": "/ˈɪntəɹɛstəd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To engage the attention of; to awaken interest in; to excite emotion or passion in, in behalf of a person or thing."
+  },
+  "interesting": {
+    "phonetic": "/ˈɪnt(ə)ɹɛstɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To engage the attention of; to awaken interest in; to excite emotion or passion in, in behalf of a person or thing."
+  },
+  "internet": {
+    "phonetic": "/ˈɪntəˌnɛt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any set of computer networks that communicate using the Internet Protocol. (An intranet.)"
+  },
+  "into": {
+    "phonetic": "/ˈɪn.tuː/",
+    "partOfSpeech": "other",
+    "rawDefinition": "To or towards the inside of."
+  },
+  "introduce": {
+    "phonetic": "/ˌɪntɹəˈdjuːs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(of people) To cause (someone) to be acquainted (with someone else)."
+  },
+  "island": {
+    "phonetic": "/ˈaɪ̯lənd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A contiguous area of land, smaller than a continent, totally surrounded by water."
+  },
+  "it": {
+    "phonetic": "/ɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who is neither a he nor a she; a creature; a dehumanized being."
+  },
+  "its": {
+    "phonetic": "/ɪts/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who is neither a he nor a she; a creature; a dehumanized being."
+  },
+  "jacket": {
+    "phonetic": "/ˈd͡ʒæk.ɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A piece of clothing worn on the upper body outside a shirt or blouse, often waist length to thigh length."
+  },
+  "jeans": {
+    "phonetic": "/d͡ʒiːnz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Denim."
+  },
+  "job": {
+    "phonetic": "/d͡ʒɒb/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A task."
+  },
+  "join": {
+    "phonetic": "/ˈdʒɔɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An intersection of piping or wiring; an interconnect."
+  },
+  "juice": {
+    "phonetic": "/d͡ʒuːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A liquid from a plant, especially fruit."
+  },
+  "just": {
+    "phonetic": "/d͡ʒʌst/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Factually right, correct; factual."
+  },
+  "land": {
+    "phonetic": "/lænd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The part of Earth which is not covered by oceans or other bodies of water."
+  },
+  "language": {
+    "phonetic": "[ˈleɪŋɡwɪd͡ʒ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A body of words, and set of methods of combining them (called a grammar), understood by a community and used as a form of communication."
+  },
+  "large": {
+    "phonetic": "/ˈlɑːd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An old musical note, equal to two longas, four breves, or eight semibreves."
+  },
+  "last": {
+    "phonetic": "/last/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Final, ultimate, coming after all others of its kind."
+  },
+  "late": {
+    "phonetic": "/leɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A shift (scheduled work period) that takes place late in the day or at night."
+  },
+  "later": {
+    "phonetic": "/ˈleɪtə/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Near the end of a period of time."
+  },
+  "laugh": {
+    "phonetic": "/laːf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An expression of mirth particular to the human species; the sound heard in laughing; laughter."
+  },
+  "learn": {
+    "phonetic": "/lɜːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of learning something"
+  },
+  "leave": {
+    "phonetic": "/liːv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To have a consequence or remnant."
+  },
+  "left": {
+    "phonetic": "/lɛft/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The left side or direction."
+  },
+  "leg": {
+    "phonetic": "/leɪɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A limb or appendage that an animal uses for support or locomotion."
+  },
+  "lesson": {
+    "phonetic": "/ˈlɛsn̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A section of learning or teaching into which a wider learning content is divided."
+  },
+  "let": {
+    "phonetic": "/lɛt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The allowing of possession of a property etc. in exchange for rent."
+  },
+  "letter": {
+    "phonetic": "/-ɾə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A symbol in an alphabet."
+  },
+  "library": {
+    "phonetic": "/ˈlaɪbɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An institution which holds books and/or other forms of media for use by the public or qualified people often lending them out, as well as providing various other services for its users."
+  },
+  "life": {
+    "phonetic": "/laɪf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of organisms preceding their death, characterized by biological processes such as metabolism and reproduction and distinguishing them from inanimate objects; the state of being alive and living."
+  },
+  "light": {
+    "phonetic": "/lʌɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Visible electromagnetic radiation. The human eye can typically detect radiation (light) in the wavelength range of about 400 to 750 nanometers. Nearby shorter and longer wavelength ranges, although not visible, are commonly called ultraviolet and infrared light."
+  },
+  "like": {
+    "phonetic": "/laɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(usually in the plural) Something that a person likes (prefers)."
+  },
+  "line": {
+    "phonetic": "/laɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A path through two or more points (compare ‘segment’); a continuous mark, including as made by a pen; any path, curved or straight."
+  },
+  "lion": {
+    "phonetic": "/ˈlaɪən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A big cat, Panthera leo, native to Africa, India and formerly much of Europe."
+  },
+  "list": {
+    "phonetic": "/lɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A strip of fabric, especially from the edge of a piece of cloth."
+  },
+  "listen": {
+    "phonetic": "/ˈlɪs.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of listening."
+  },
+  "little": {
+    "phonetic": "/ˈlɪ.ɾɫ̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A small amount."
+  },
+  "live": {
+    "phonetic": "/lɪv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To be alive; to have life."
+  },
+  "long": {
+    "phonetic": "/ˈlɔːŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A long vowel."
+  },
+  "lose": {
+    "phonetic": "/luːz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To cause (something) to cease to be in one's possession or capability due to unfortunate or unknown circumstances, events or reasons."
+  },
+  "north": {
+    "phonetic": "/noːθ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of the four major compass points, specifically 0°, directed toward the North Pole, and conventionally upwards on a map, abbreviated as N."
+  },
+  "nose": {
+    "phonetic": "/nəʊz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A protuberance on the face housing the nostrils, which are used to breathe or smell."
+  },
+  "not": {
+    "phonetic": "/nɒt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A unary operation on logical values that changes true to false, and false to true."
+  },
+  "note": {
+    "phonetic": "/nəʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(heading) A symbol or annotation."
+  },
+  "nothing": {
+    "phonetic": "/ˈnʌθɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something trifling, or of no consequence or importance."
+  },
+  "now": {
+    "phonetic": "/naʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The present time."
+  },
+  "number": {
+    "phonetic": "/ˈnʌmbə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An abstract entity used to describe quantity."
+  },
+  "nurse": {
+    "phonetic": "/nɜːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A wet nurse."
+  },
+  "o'clock": {
+    "phonetic": "/əʊˈklɒk/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(modifying a numeral, one to twelve) In conjunction with a numeral, indicates the time within a twelve-hour period (midnight to noon or noon to midnight), specifically the time when the hour hand of a clock points precisely to the symbol or marking corresponding to the designated numeral."
+  },
+  "of": {
+    "phonetic": "/ɔv/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Expressing distance or motion."
+  },
+  "off": {
+    "phonetic": "/ɔːf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(usually in phrases such as 'from the off', 'at the off', etc.) Beginning; starting point."
+  },
+  "office": {
+    "phonetic": "/ˈɑfɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A ceremonial duty or service, particularly:"
+  },
+  "often": {
+    "phonetic": "/ˈɑf(t)ən/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Frequent."
+  },
+  "old": {
+    "phonetic": "/ˈɒʊld/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(with the, invariable plural only) People who are old; old beings; the older generation, taken as a group."
+  },
+  "on": {
+    "phonetic": "/ɒn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To switch on"
+  },
+  "once": {
+    "phonetic": "/wɒn(t)s/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(frequency) One and only one time."
+  },
+  "onion": {
+    "phonetic": "/ˈʌŋjɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A monocotyledonous plant (Allium cepa), allied to garlic, used as vegetable and spice."
+  },
+  "online": {
+    "phonetic": "/ɒnˈlaɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To bring (a system, etc.) online; to promote to an active or running state."
+  },
+  "only": {
+    "phonetic": "/ˈəʊn.li/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An only child."
+  },
+  "open": {
+    "phonetic": "/ˈəʊ.pən/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Not closed"
+  },
+  "or": {
+    "phonetic": "/ɔː(ɹ)/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Connects at least two alternative words, phrases, clauses, sentences, etc. each of which could make a passage true. In English, this is the \"inclusive or.\" The \"exclusive or\" is formed by \"either [...] or\"."
+  },
+  "orange": {
+    "phonetic": "/ˈɔɹɪ̈nd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An evergreen tree of the genus Citrus such as Citrus sinensis."
+  },
+  "order": {
+    "phonetic": "/ˈɔːdə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Arrangement, disposition, or sequence."
+  },
+  "own": {
+    "phonetic": "/ˈəʊn/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Belonging to; possessed; proper to. Often marks a possessive determiner as reflexive, referring back to the subject of the clause or sentence."
+  },
+  "page": {
+    "phonetic": "/peɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of the many pieces of paper bound together within a book or similar document."
+  },
+  "paint": {
+    "phonetic": "/peɪnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A substance that is applied as a liquid or paste, and dries into a solid coating that protects or adds color/colour to an object or surface to which it has been applied."
+  },
+  "painting": {
+    "phonetic": "/ˈpeɪn.tɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To apply paint to."
+  },
+  "pair": {
+    "phonetic": "/pɛə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Two similar or identical things taken together; often followed by of."
+  },
+  "paper": {
+    "phonetic": "/ˈpeɪpə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sheet material used for writing on or printing on (or as a non-waterproof container), usually made by draining cellulose fibres from a suspension in water."
+  },
+  "parent": {
+    "phonetic": "/ˈpɛəɹənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of the two persons from whom one is immediately biologically descended; a mother or father."
+  },
+  "park": {
+    "phonetic": "[paːk]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An area of land set aside for environment preservation or recreation."
+  },
+  "part": {
+    "phonetic": "/pɐːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A portion; a component."
+  },
+  "partner": {
+    "phonetic": "/ˈpɐːtnə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who is associated with another in a common activity or interest."
+  },
+  "party": {
+    "phonetic": "/ˈpɑ(ː)ɾi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or group of people constituting a particular side in a contract or legal action."
+  },
+  "passport": {
+    "phonetic": "/ˈpɑːspɔːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An official document normally used for international journeys, which proves the identity and nationality of the person for whom it was issued."
+  },
+  "pay": {
+    "phonetic": "/peɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Money given in return for work; salary or wages."
+  },
+  "pen": {
+    "phonetic": "/pɛn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An enclosure (enclosed area) used to contain domesticated animals, especially sheep or cattle."
+  },
+  "pencil": {
+    "phonetic": "/ˈpɛnsɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A paintbrush."
+  },
+  "people": {
+    "phonetic": "/ˈpiːpəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Used as plural of person; a body of human beings considered generally or collectively; a group of two or more persons."
+  },
+  "pepper": {
+    "phonetic": "/ˈpɛpə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A plant of the family Piperaceae."
+  },
+  "person": {
+    "phonetic": "/ˈpɜːsən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An individual; usually a human being."
+  },
+  "phone": {
+    "phonetic": "/fəʊ̯n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A device for transmitting conversations and other sounds in real time across distances, now often a small portable unit also capable of running software etc."
+  },
+  "photo": {
+    "phonetic": "/ˈfəʊ.təʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A photograph."
+  },
+  "photograph": {
+    "phonetic": "/ˈfəʊ.tə.ˌɡɹɑːf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A picture created by projecting an image onto a photosensitive surface such as a chemically treated plate or film, CCD receptor, etc."
+  },
+  "piano": {
+    "phonetic": "/piˈænoʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A percussive keyboard musical instrument, usually ranging over seven octaves, with white and black colored keys, played by pressing these keys, causing hammers to strike strings"
+  },
+  "picture": {
+    "phonetic": "/ˈpɪktʃə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A representation of anything (as a person, a landscape, a building) upon canvas, paper, or other surface, by drawing, painting, printing, photography, etc."
+  },
+  "plant": {
+    "phonetic": "/plænt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An organism that is not an animal, especially an organism capable of photosynthesis. Typically a small or herbaceous organism of this kind, rather than a tree."
+  },
+  "play": {
+    "phonetic": "/pleɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Activity for amusement only, especially among the young."
+  },
+  "player": {
+    "phonetic": "/ˈpleɪə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One that plays"
+  },
+  "police": {
+    "phonetic": "[pəˈliːs]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A civil force granted the legal authority for law enforcement and maintaining public order."
+  },
+  "policeman": {
+    "phonetic": "/pəˈliːsmən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who enforces."
+  },
+  "pool": {
+    "phonetic": "/pul/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A small and rather deep collection of (usually) fresh water, as one supplied by a spring, or occurring in the course of a stream; a reservoir for water."
+  },
+  "poor": {
+    "phonetic": "/poː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(with \"the\") Those who have little or no possessions or money, taken as a group."
+  },
+  "post": {
+    "phonetic": "/pəʊst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A long dowel or plank protruding from the ground; a fencepost; a lightpost."
+  },
+  "potato": {
+    "phonetic": "/pəˈteɪ.təʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The tuber of a plant, Solanum tuberosum, eaten as a starchy vegetable, particularly in the Americas and Europe; this plant."
+  },
+  "pound": {
+    "phonetic": "/paʊnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A unit of mass equal to 16 avoirdupois ounces (= 453.592 37 g). Today this value is the most common meaning of \"pound\" as a unit of weight."
+  },
+  "prefer": {
+    "phonetic": "/pɹɪˈfɜː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To be in the habit of choosing something rather than something else; to favor; to like better."
+  },
+  "pretty": {
+    "phonetic": "/ˈpɹɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A pretty person; a term of address to a pretty person."
+  },
+  "price": {
+    "phonetic": "/pɹaɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The cost required to gain possession of something."
+  },
+  "problem": {
+    "phonetic": "/ˈpɹɒbləm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A difficulty that has to be resolved or dealt with."
+  },
+  "programme": {
+    "phonetic": "/ˈpɹəʊɡɹæm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A set of structured activities."
+  },
+  "purple": {
+    "phonetic": "/ˈpɜː(ɹ).pəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A colour/color that is a dark blend of red and blue; dark magenta."
+  },
+  "put": {
+    "phonetic": "/pʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A right to sell something at a predetermined price."
+  },
+  "quarter": {
+    "phonetic": "/ˈkoː.tɘ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fourth part of something."
+  },
+  "question": {
+    "phonetic": "/ˈkwɛstjən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sentence, phrase or word which asks for information, reply or response; an interrogative."
+  },
+  "quick": {
+    "phonetic": "/kwɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Raw or sensitive flesh, especially that underneath finger and toe nails."
+  },
+  "quickly": {
+    "phonetic": "/ˈkwɪkli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Rapidly; with speed; fast."
+  },
+  "quiet": {
+    "phonetic": "/ˈkwaɪ.ət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The absence of sound; quietness."
+  },
+  "radio": {
+    "phonetic": "/ˈɹeɪdiˌəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The technology that allows for the transmission of sound or other signals by modulation of electromagnetic waves."
+  },
+  "rain": {
+    "phonetic": "/ɹeɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Condensed water falling from a cloud."
+  },
+  "read": {
+    "phonetic": "/ɹiːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A reading or an act of reading, especially an actor's part of a play."
+  },
+  "reading": {
+    "phonetic": "/ˈɹidiŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To look at and interpret letters or other information that is written."
+  },
+  "repeat": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An iteration; a repetition."
+  },
+  "restaurant": {
+    "phonetic": "/ˈɹɛs.t(ə).ɹ(ə)nt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An eating establishment in which diners are served food, usually by waiters at their tables but sometimes (as in a fast food restaurant) at a counter."
+  },
+  "rice": {
+    "phonetic": "/ɹaɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Cereal plants, Oryza sativa of the grass family whose seeds are used as food."
+  },
+  "rich": {
+    "phonetic": "/ɹɪt͡ʃ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To enrich."
+  },
+  "ride": {
+    "phonetic": "/ɹaɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of riding."
+  },
+  "right": {
+    "phonetic": "/ˈɹaɪt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Straight, not bent."
+  },
+  "river": {
+    "phonetic": "/ˈɹɪvə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large and often winding stream which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea."
+  },
+  "road": {
+    "phonetic": "/ɹəʊd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A way used for travelling between places, originally one wide enough to allow foot passengers and horses to travel, now (US) usually one surfaced with asphalt or concrete and designed to accommodate many vehicles travelling in both directions. In the UK both senses are heard: a country road is the same as a country lane."
+  },
+  "room": {
+    "phonetic": "/ɹuːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Opportunity or scope (to do something)."
+  },
+  "rule": {
+    "phonetic": "/ɹuːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A regulation, law, guideline."
+  },
+  "run": {
+    "phonetic": "/ɹʊn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To run."
+  },
+  "sad": {
+    "phonetic": "/sæd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make melancholy; to sadden or grieve (someone)."
+  },
+  "salad": {
+    "phonetic": "/ˈsæləd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A food made primarily of a mixture of raw or cold ingredients, typically vegetables, usually served with a dressing such as vinegar or mayonnaise."
+  },
+  "salt": {
+    "phonetic": "/sɔlt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A common substance, chemically consisting mainly of sodium chloride (NaCl), used extensively as a condiment and preservative."
+  },
+  "same": {
+    "phonetic": "/seɪm/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Not different or other; not another or others; not different as regards self; selfsame; identical."
+  },
+  "sandwich": {
+    "phonetic": "/ˈsæmwɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A dish or foodstuff where two or more slices of bread serve as the wrapper or container of some other food."
+  },
+  "say": {
+    "phonetic": "/seɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A chance to speak; the right or power to influence or make a decision."
+  },
+  "school": {
+    "phonetic": "/skuːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(collective) A group of fish or a group of marine mammals such as porpoises, dolphins, or whales."
+  },
+  "science": {
+    "phonetic": "/ˈsaɪəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A particular discipline or branch of learning, especially one dealing with measurable or systematic principles rather than intuition or natural ability."
+  },
+  "sea": {
+    "phonetic": "/siː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large body of salt water."
+  },
+  "second": {
+    "phonetic": "/ˈsɛkɪnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is number two in a series."
+  },
+  "see": {
+    "phonetic": "/siː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(stative) To perceive or detect with the eyes, or as if by sight."
+  },
+  "sell": {
+    "phonetic": "/sɛl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of selling."
+  },
+  "send": {
+    "phonetic": "/sɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The rising motion of water as a wave passes; a surge; the upward angular displacement of a vessel, opposed to pitch, the correlative downward movement."
+  },
+  "sentence": {
+    "phonetic": "[ˈsɛntn̩t͡s]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The decision or judgement of a jury or court; a verdict."
+  },
+  "shoe": {
+    "phonetic": "/ʃuː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A protective covering for the foot, with a bottom part composed of thick leather or plastic sole and often a thicker heel, and a softer upper part made of leather or synthetic material. Shoes generally do not extend above the ankle, as opposed to boots, which do."
+  },
+  "shop": {
+    "phonetic": "/ʃɒp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An establishment that sells goods or services to the public; originally only a physical location, but now a virtual establishment as well."
+  },
+  "shopping": {
+    "phonetic": "/ˈʃɒpɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To visit stores or shops to browse or explore merchandise, especially with the intention of buying such merchandise."
+  },
+  "short": {
+    "phonetic": "/ʃoːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A short circuit."
+  },
+  "should": {
+    "phonetic": "/ʃʊd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(modal, auxiliary verb, defective) Used before a verb to indicate the simple future tense in the first person singular or plural."
+  },
+  "show": {
+    "phonetic": "/ʃəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A play, dance, or other entertainment."
+  },
+  "shower": {
+    "phonetic": "/ˈʃaʊ.ə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A brief fall of precipitation (spell of rain, or a similar fall of snow, sleet, or cascade)."
+  },
+  "sick": {
+    "phonetic": "/sɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Sick people in general as a group."
+  },
+  "sing": {
+    "phonetic": "/sɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A gathering at which people sing songs."
+  },
+  "singer": {
+    "phonetic": "/ˈsɪŋə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who sings, often professionally."
+  },
+  "sister": {
+    "phonetic": "/ˈsɪs.tə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A daughter of the same parents as another person; a female sibling."
+  },
+  "sit": {
+    "phonetic": "/sɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Subsidence of the roof of a coal mine."
+  },
+  "skirt": {
+    "phonetic": "/skɜːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An article of clothing, usually worn by women and girls, that hangs from the waist and covers the lower part of the body."
+  },
+  "sleep": {
+    "phonetic": "/sliːp/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To rest in a state of reduced consciousness."
+  },
+  "slow": {
+    "phonetic": "/sləʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who is slow; a sluggard."
+  },
+  "small": {
+    "phonetic": "/smoːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any part of something that is smaller or slimmer than the rest, now usually with anatomical reference to the back."
+  },
+  "snake": {
+    "phonetic": "/ˈsneɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A legless reptile of the sub-order Serpentes with a long, thin body and a fork-shaped tongue."
+  },
+  "snow": {
+    "phonetic": "/snəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The frozen, crystalline state of water that falls as precipitation."
+  },
+  "so": {
+    "phonetic": "/səʊ/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "True, accurate."
+  },
+  "some": {
+    "phonetic": "/sɐm/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Of a measurement: approximately, roughly."
+  },
+  "song": {
+    "phonetic": "/sɒŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A musical composition with lyrics for voice or voices, performed by singing."
+  },
+  "soon": {
+    "phonetic": "/suːn/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Short in length of time from the present."
+  },
+  "sorry": {
+    "phonetic": "/ˈsɔɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of saying sorry; an apology."
+  },
+  "sound": {
+    "phonetic": "/saʊnd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Healthy."
+  },
+  "soup": {
+    "phonetic": "/suːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of various dishes commonly made by combining liquids, such as water or stock with other ingredients, such as meat and vegetables, that contribute flavor and texture."
+  },
+  "south": {
+    "phonetic": "/sæoθ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of the four major compass points, specifically 180°, directed toward the South Pole, and conventionally downwards on a map, abbreviated as S."
+  },
+  "speak": {
+    "phonetic": "/spiːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A low class bar, a speakeasy."
+  },
+  "special": {
+    "phonetic": "/ˈspɛ.ʃəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A reduction in consumer cost (usually for a limited time) for items or services rendered."
+  },
+  "spell": {
+    "phonetic": "/spɛl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Words or a formula supposed to have magical powers."
+  },
+  "spelling": {
+    "phonetic": "/ˈspɛlɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put under the influence of a spell; to affect by a spell; to bewitch; to fascinate; to charm."
+  },
+  "spend": {
+    "phonetic": "/spɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Amount of money spent (during a period); expenditure."
+  },
+  "sport": {
+    "phonetic": "/spɔːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any activity that uses physical exertion or skills competitively under a set of rules that is not based on aesthetics."
+  },
+  "spring": {
+    "phonetic": "/spɹɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To weaken, as a joint, ligament, or muscle, by sudden and excessive exertion, as by wrenching; to overstrain, or stretch injuriously, but without luxation"
+  },
+  "stand": {
+    "phonetic": "/stænd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of standing."
+  },
+  "star": {
+    "phonetic": "/stɑː(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any small luminous dot appearing in the cloudless portion of the night sky, especially with a fixed location relative to other such dots."
+  },
+  "start": {
+    "phonetic": "/stɑːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The beginning of an activity."
+  },
+  "tomato": {
+    "phonetic": "[tʰə̥ˈmɐːtʰɐʉ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A widely cultivated plant, Solanum lycopersicum, having edible fruit."
+  },
+  "tomorrow": {
+    "phonetic": "/təˈmɔɹoʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The day after the present day."
+  },
+  "tonight": {
+    "phonetic": "/təˈnaɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The nighttime of the current day or date; this night."
+  },
+  "too": {
+    "phonetic": "/tuː/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(focus) Likewise."
+  },
+  "tooth": {
+    "phonetic": "/tuːθ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A hard, calcareous structure present in the mouth of many vertebrate animals, generally used for eating."
+  },
+  "tourist": {
+    "phonetic": "/ˈtʊəɹɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who travels for pleasure rather than for business."
+  },
+  "town": {
+    "phonetic": "/taʊn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A settlement; an area with residential districts, shops and amenities, and its own local government; especially one larger than a village and smaller than a city."
+  },
+  "traffic": {
+    "phonetic": "/ˈtɹæfɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Pedestrians or vehicles on roads, or the flux or passage thereof."
+  },
+  "train": {
+    "phonetic": "/tɹeɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Elongated portion."
+  },
+  "travel": {
+    "phonetic": "/ˈtɹævəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of traveling; passage from place to place."
+  },
+  "tree": {
+    "phonetic": "/tɹiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Fast growing function based on Kruskal's tree theorem."
+  },
+  "turn": {
+    "phonetic": "/tɜːn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(heading) to make a non-linear physical movement."
+  },
+  "tv": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The assessed value of an asset from which the tax owing is computed."
+  },
+  "twice": {
+    "phonetic": "/twaɪs/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Two times."
+  },
+  "umbrella": {
+    "phonetic": "/ʌmˈbɹɛlə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Cloth-covered frame used for protection against rain or sun."
+  },
+  "uncle": {
+    "phonetic": "/ˈʌŋ.kəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The brother or brother-in-law of one’s parent."
+  },
+  "under": {
+    "phonetic": "/ˈʊndə/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Being lower; being beneath something."
+  },
+  "understand": {
+    "phonetic": "/ˌɞndəɹˈstand/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To grasp a concept fully and thoroughly, especially (of words, statements, art, etc.) to be aware of the meaning of and (of people) to be aware of the intent of."
+  },
+  "university": {
+    "phonetic": "/juːnɪˈvɜːsətiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Institution of higher education (typically accepting students from the age of about 17 or 18, depending on country, but in some exceptional cases able to take younger students) where subjects are studied and researched in depth and degrees are offered."
+  },
+  "until": {
+    "phonetic": "/ənˈtɪl/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Up to the time of (something happening)."
+  },
+  "up": {
+    "phonetic": "/ap/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The direction opposed to the pull of gravity."
+  },
+  "upstairs": {
+    "phonetic": "/ˈʌpˌstɛəz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An upper storey."
+  },
+  "us": {
+    "phonetic": "/əs/",
+    "partOfSpeech": "other",
+    "rawDefinition": "(personal) Me and at least one other person; the objective case of we."
+  },
+  "use": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of using."
+  },
+  "useful": {
+    "phonetic": "/ˈjuːsfəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a practical or beneficial use."
+  },
+  "usually": {
+    "phonetic": "/ˈjuːʒju(ə)li/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Most of the time; less than always, but more than occasionally."
+  },
+  "vacation": {
+    "phonetic": "/veɪˈkeɪʃ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Freedom from some business or activity."
+  },
+  "vegetable": {
+    "phonetic": "/ˈvɛd͡ʒtəbəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any plant."
+  },
+  "very": {
+    "phonetic": "/ˈvɛɹi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "True, real, actual."
+  },
+  "video": {
+    "phonetic": "/ˈvɪ.di.əʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Television, television show, movie."
+  },
+  "village": {
+    "phonetic": "/ˈvɪlɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rural habitation of size between a hamlet and a town."
+  },
+  "visit": {
+    "phonetic": "/ˈvɪzɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A single act of visiting."
+  },
+  "visitor": {
+    "phonetic": "/ˈvɪzɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who visits someone else; someone staying as a guest."
+  },
+  "wait": {
+    "phonetic": "/weɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A delay."
+  },
+  "waiter": {
+    "phonetic": "/ˈweɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A male or female attendant who serves customers at their tables in a restaurant, café or similar."
+  },
+  "wake": {
+    "phonetic": "/ˈweɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of waking, or state of being awake."
+  },
+  "walk": {
+    "phonetic": "/wɔːk/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To move on the feet by alternately setting each foot (or pair or group of feet, in the case of animals with four or more feet) forward, with at least one foot on the ground at all times. Compare run."
+  },
+  "way": {
+    "phonetic": "/weɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(heading) To do with a place or places."
+  },
+  "we": {
+    "phonetic": "/wiː/",
+    "partOfSpeech": "other",
+    "rawDefinition": "(personal) The speakers/writers, or the speaker/writer and at least one other person (not the person being addressed). (This is the exclusive we.)"
+  },
+  "wear": {
+    "phonetic": "/wɛə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(in combination) clothing"
+  },
+  "weather": {
+    "phonetic": "/ˈwɛðə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The short term state of the atmosphere at a specific time and place, including the temperature, relative humidity, cloud cover, precipitation, wind, etc."
+  },
+  "website": {
+    "phonetic": "/ˈwɛbˌsaɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A collection of interlinked web pages on the World Wide Web that are typically accessible from the same base URL and reside on the same server."
+  },
+  "week": {
+    "phonetic": "/wiːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any period of seven consecutive days."
+  },
+  "weekend": {
+    "phonetic": "/wiːˈkɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The break in the working week, usually two days including the traditional holy or sabbath day. Thus in western countries, Saturday and Sunday."
+  },
+  "welcome": {
+    "phonetic": "/ˈwɛlkəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of greeting someone’s arrival, especially by saying \"Welcome!\"; reception."
+  },
+  "well": {
+    "phonetic": "/wɛl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "In good health."
+  },
+  "west": {
+    "phonetic": "/wɛst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of the four principal compass points, specifically 270°, conventionally directed to the left on maps; the direction of the setting sun at an equinox, abbreviated as W."
+  },
+  "what": {
+    "phonetic": "/wɔt/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(Singlish) Used to contradict an underlying assumption held by the interlocutor."
+  },
+  "when": {
+    "phonetic": "/ʍɛn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The time at which something happens."
+  },
+  "where": {
+    "phonetic": "/wɛə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The place in which something happens."
+  },
+  "which": {
+    "phonetic": "/wɪt͡ʃ/",
+    "partOfSpeech": "other",
+    "rawDefinition": "(interrogative) What one or ones (of those mentioned or implied)."
+  },
+  "white": {
+    "phonetic": "/waɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The color/colour of snow or milk; the colour of light containing equal amounts of all visible wavelengths."
+  },
+  "who": {
+    "phonetic": "/huː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person under discussion; a question of which person."
+  },
+  "why": {
+    "phonetic": "/waɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Reason"
+  },
+  "wife": {
+    "phonetic": "/waɪf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A married woman, especially in relation to her spouse."
+  },
+  "will": {
+    "phonetic": "/wɪl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(now uncommon or literary) To wish, desire (something)."
+  },
+  "win": {
+    "phonetic": "/wɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To conquer, defeat."
+  },
+  "window": {
+    "phonetic": "/ˈwɪndəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The inedible parts of a grain-producing plant."
+  },
+  "word": {
+    "phonetic": "/wɜːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morpheme.)"
+  },
+  "work": {
+    "phonetic": "/wɜːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(heading) Employment."
+  },
+  "worker": {
+    "phonetic": "/ˈwɜː.kə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who performs labor for a living, especially manual labor."
+  },
+  "world": {
+    "phonetic": "/wɝld/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(with \"the\") Human collective existence; existence in general."
+  },
+  "would": {
+    "phonetic": "/wʊd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that would happen, or would be the case, under different circumstances; a potentiality."
+  },
+  "write": {
+    "phonetic": "/ɹaɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or style of writing."
+  },
+  "writer": {
+    "phonetic": "/ˈɹaɪ.tə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who writes, or produces literary work."
+  },
+  "writing": {
+    "phonetic": "/ˈɹaɪtɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Graphism of symbols such as letters that express some meaning."
+  },
+  "wrong": {
+    "phonetic": "/ɹɒŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is immoral or not good."
+  },
+  "yeah": {
+    "phonetic": "/ˈjæ.ə/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Expressing joy, celebration, glee, etc."
+  },
+  "year": {
+    "phonetic": "/jɪə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A solar year, the time it takes the Earth to complete one revolution of the Sun (between 365.24 and 365.26 days depending on the point of reference)."
+  },
+  "yellow": {
+    "phonetic": "/jɛlə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The colour of gold, butter, or a lemon; the colour obtained by mixing green and red light, or by subtracting blue from white light."
+  },
+  "yes": {
+    "phonetic": "/jɛs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An affirmative expression; an answer that shows agreement or acceptance."
+  },
+  "yesterday": {
+    "phonetic": "/ˈjɛstədeɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The day immediately before today; one day ago."
+  },
+  "you": {
+    "phonetic": "/jʉː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To address (a person) using the pronoun you (in the past, especially to use you rather than thou, when you was considered more formal)."
+  },
+  "young": {
+    "phonetic": "/jʌŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "People who are young; young people, collectively; youth."
+  },
+  "yourself": {
+    "phonetic": "/jɔːˈsɛlf/",
+    "partOfSpeech": "other",
+    "rawDefinition": "(reflexive pronoun) Your own self (singular)."
+  },
+  "anyone": {
+    "phonetic": "/ˈæniˌwʌn/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Any person; anybody."
+  },
+  "anything": {
+    "phonetic": "/ˈɛ.nə.θɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone or something of importance."
+  },
+  "apartment": {
+    "phonetic": "/əˈpɑːt.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A complete domicile occupying only part of a building, especially one for rent; a flat."
+  },
+  "apple": {
+    "phonetic": "/ˈæp.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates."
+  },
+  "arm": {
+    "phonetic": "/ɑːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The portion of the upper human appendage, from the shoulder to the wrist and sometimes including the hand."
+  },
+  "bed": {
+    "phonetic": "/bed/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A piece of furniture, usually flat and soft, on which to rest or sleep."
+  },
+  "bedroom": {
+    "phonetic": "/ˈbɛdɹʊm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A room in a house where a bed is kept for sleeping."
+  },
+  "beer": {
+    "phonetic": "/bɛə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An alcoholic drink fermented from starch material, commonly barley malt, often with hops or some other substance to impart a bitter flavor."
+  },
+  "before": {
+    "phonetic": "/bɪˈfɔː/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "At an earlier time."
+  },
+  "behind": {
+    "phonetic": "/bəˈhaɪnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The rear, back-end"
+  },
+  "below": {
+    "phonetic": "/bɪˈləʊ/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a lower place."
+  },
+  "breakfast": {
+    "phonetic": "/ˈbɹɛkfəst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The first meal of the day, usually eaten in the morning."
+  },
+  "bring": {
+    "phonetic": "/ˈbɹɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(ditransitive) To transport toward somebody/somewhere."
+  },
+  "brother": {
+    "phonetic": "/ˈbɹɐðɘ(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Son of the same parents as another person."
+  },
+  "brown": {
+    "phonetic": "/bɹaʊn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A colour like that of chocolate or coffee."
+  },
+  "build": {
+    "phonetic": "/bɪld/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The physique of a human body; constitution or structure of a human body."
+  },
+  "cheap": {
+    "phonetic": "/t͡ʃiːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Trade; traffic; chaffer; chaffering."
+  },
+  "check": {
+    "phonetic": "/t͡ʃɛk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A situation in which the king is directly threatened by an opposing piece."
+  },
+  "cheese": {
+    "phonetic": "/t͡ʃiz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A dairy product made from curdled or cultured milk."
+  },
+  "chicken": {
+    "phonetic": "/ˈt͡ʃɪkɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A domestic fowl, Gallus gallus, especially when young."
+  },
+  "child": {
+    "phonetic": "/t͡ʃaɪld/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who has not yet reached adulthood, whether natural (puberty), cultural (initiation), or legal (majority)"
+  },
+  "could": {
+    "phonetic": "/kʊd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(auxiliary verb, defective) To know how to; to be able to."
+  },
+  "country": {
+    "phonetic": "/ˈkɐntɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(chiefly British) An area of land; a district, region."
+  },
+  "course": {
+    "phonetic": "/kɔːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sequence of events."
+  },
+  "cousin": {
+    "phonetic": "/ˈkʌz.n̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The child of a person's uncle or aunt; a first cousin."
+  },
+  "cow": {
+    "phonetic": "/kaʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(properly) An adult female of the species Bos taurus, especially one that has calved."
+  },
+  "cream": {
+    "phonetic": "/kɹiːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The butterfat/milkfat part of milk which rises to the top; this part when separated from the remainder."
+  },
+  "festival": {
+    "phonetic": "/ˈfɛstəvəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An event or community gathering, usually staged by a local community, which centers on some theme, sometimes on some unique aspect of the community."
+  },
+  "few": {
+    "phonetic": "/fjuː/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Few people, few things."
+  },
+  "free": {
+    "phonetic": "/fɹiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Free transfer"
+  },
+  "gym": {
+    "phonetic": "/dʒɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sports facility specialized for lifting weights and exercise."
+  },
+  "hair": {
+    "phonetic": "/heː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A pigmented filament of keratin which grows from a follicle on the skin of humans and other mammals."
+  },
+  "half": {
+    "phonetic": "/hɑːf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One of two usually roughly equal parts into which anything may be divided, or considered as divided."
+  },
+  "hand": {
+    "phonetic": "/hænd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The part of the forelimb below the forearm or wrist in a human, and the corresponding part in many other animals."
+  },
+  "happen": {
+    "phonetic": "/ˈhæpən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To occur or take place."
+  },
+  "happy": {
+    "phonetic": "/ˈhæpiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A happy event, thing, person, etc."
+  },
+  "hour": {
+    "phonetic": "/ˈaʊɚ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A time period of sixty minutes; one twenty-fourth of a day."
+  },
+  "house": {
+    "phonetic": "/hʌʊs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A structure built or serving as an abode of human beings."
+  },
+  "how": {
+    "phonetic": "/hæŏ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The means by which something is accomplished."
+  },
+  "hungry": {
+    "phonetic": "/ˈhʌŋ.ɡɹi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Affected by hunger; desiring of food; having a physical need for food."
+  },
+  "husband": {
+    "phonetic": "/ˈhʌz.bənd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The master of a house; the head of a family; a householder."
+  },
+  "know": {
+    "phonetic": "/nəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Knowledge; the state of knowing."
+  },
+  "lot": {
+    "phonetic": "/lɒt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large quantity or number; a great deal."
+  },
+  "love": {
+    "phonetic": "/lʊv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Strong affection."
+  },
+  "lunch": {
+    "phonetic": "/lʌnt͡ʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A light meal usually eaten around midday, notably when not as main meal of the day."
+  },
+  "no one": {
+    "phonetic": "/ˈnəʊ wʌn/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Used in contrast to anyone, someone or everyone: not one person; nobody."
+  },
+  "nobody": {
+    "phonetic": "/ˈnəʊ.bɒ.di/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who is not important or well-known."
+  },
+  "other": {
+    "phonetic": "/ˈɐðə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An other, another (person, etc), more often rendered as another."
+  },
+  "out": {
+    "phonetic": "/æɔt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A means of exit, escape, reprieve, etc."
+  },
+  "outside": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The part of something that faces out; the outer surface."
+  },
+  "over": {
+    "phonetic": "/ˈəʊ.və(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A set of six legal balls bowled."
+  },
+  "piece": {
+    "phonetic": "/piːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A part of a larger whole, usually in such a form that it is able to be separated from other parts."
+  },
+  "pig": {
+    "phonetic": "/ˈpɪɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of several intelligent mammalian species of the genus Sus, having cloven hooves, bristles and a nose adapted for digging; especially the domesticated animal Sus scrofa."
+  },
+  "pink": {
+    "phonetic": "/pɪŋk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The common minnow, Phoxinus phoxinus."
+  },
+  "place": {
+    "phonetic": "/pleɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(physical) An area; somewhere within an area."
+  },
+  "plan": {
+    "phonetic": "/plæn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A drawing showing technical details of a building, machine, etc., with unwanted details omitted, and often using symbols rather than detailed drawing to represent doors, valves, etc."
+  },
+  "plane": {
+    "phonetic": "/pleɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A level or flat surface."
+  },
+  "ready": {
+    "phonetic": "/ˈɹɛdi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Ready money; cash"
+  },
+  "real": {
+    "phonetic": "/ɹiːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A commodity; see realty."
+  },
+  "really": {
+    "phonetic": "/ˈɹɪəli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a way or manner that is real, not unreal."
+  },
+  "red": {
+    "phonetic": "/ɹɛd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of a range of colours having the longest wavelengths, 670 nm, of the visible spectrum; a primary additive colour for transmitted light: the colour obtained by subtracting green and blue from white light using magenta and yellow filters; the colour of blood, ripe strawberries, etc."
+  },
+  "she": {
+    "phonetic": "/ʃiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A female."
+  },
+  "sheep": {
+    "phonetic": "/ʃiːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A woolly ruminant of the genus Ovis."
+  },
+  "shirt": {
+    "phonetic": "/ʃɜːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An article of clothing that is worn on the upper part of the body, and often has sleeves, either long or short, that cover the arms."
+  },
+  "somebody": {
+    "phonetic": "/ˈsʌmbədɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A recognised or important person, a celebrity."
+  },
+  "someone": {
+    "phonetic": "/ˈsʌmwʌn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A partially specified but unnamed person."
+  },
+  "something": {
+    "phonetic": "/ˈsamθɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An object whose nature is yet to be defined."
+  },
+  "sometimes": {
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Former; sometime."
+  },
+  "son": {
+    "phonetic": "/sɒn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One's male offspring."
+  },
+  "trip": {
+    "phonetic": "/tɹɪp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A journey; an excursion or jaunt"
+  },
+  "trousers": {
+    "phonetic": "/ˈtɹaʊzəz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An article of clothing that covers the part of the body between the waist and the ankles or knees, and is divided into a separate part for each leg."
+  },
+  "true": {
+    "phonetic": "/tɹuː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being in alignment."
+  },
+  "try": {
+    "phonetic": "/tɹaɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An attempt."
+  },
+  "t-shirt": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A lightweight shirt without buttons, usually with short sleeves and no collar. Often made of cotton and frequently bears a picture or slogan."
+  },
+  "wall": {
+    "phonetic": "/wɔːl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rampart of earth, stones etc. built up for defensive purposes."
+  },
+  "want": {
+    "phonetic": "/wɔnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A desire, wish, longing."
+  },
+  "warm": {
+    "phonetic": "/wɔːm/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a temperature slightly higher than usual, but still pleasant; mildly hot."
+  },
+  "wash": {
+    "phonetic": "/wɑʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process or an instance of washing or being washed by water or other liquid."
+  },
+  "watch": {
+    "phonetic": "/wɒt͡ʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A portable or wearable timepiece."
+  },
+  "water": {
+    "phonetic": "/ˈwoːtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam."
+  },
+  "wine": {
+    "phonetic": "/waɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An alcoholic beverage made by fermenting the juice of grapes."
+  }
+}

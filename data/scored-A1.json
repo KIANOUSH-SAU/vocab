@@ -1,0 +1,4190 @@
+[
+  {
+    "word": "a, an indefinite article",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental articles in English, used constantly before singular nouns."
+  },
+  {
+    "word": "about",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common preposition and adverb used to introduce topics or approximate quantities."
+  },
+  {
+    "word": "above",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common preposition describing position, often used in everyday descriptions of location."
+  },
+  {
+    "word": "across",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Preposition used to describe movement or position from one side to another."
+  },
+  {
+    "word": "action",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "More abstract noun that A1 learners rarely need; better suited to A2 or B1 contexts."
+  },
+  {
+    "word": "activity",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Fairly common word but often appears in A2 learner materials rather than true A1 core content."
+  },
+  {
+    "word": "actor",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Simple, concrete noun frequently used when talking about films and television."
+  },
+  {
+    "word": "actress",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Feminine form of actor, commonly encountered when discussing films and celebrities."
+  },
+  {
+    "word": "add",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic verb used in everyday contexts like cooking, maths, and social media."
+  },
+  {
+    "word": "address",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential noun for giving personal information such as where someone lives."
+  },
+  {
+    "word": "adult",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Used to distinguish grown-ups from children, but not a core A1 survival word."
+  },
+  {
+    "word": "advice",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Uncountable noun for recommendations; the concept is useful but typically introduced at A2."
+  },
+  {
+    "word": "afraid",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective for expressing fear, frequently taught in early learner vocabulary sets."
+  },
+  {
+    "word": "after",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very high-frequency preposition and conjunction used to sequence events in time."
+  },
+  {
+    "word": "afternoon",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core time word used daily when arranging meetings or describing parts of the day."
+  },
+  {
+    "word": "again",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Extremely common adverb used to indicate repetition in everyday conversation."
+  },
+  {
+    "word": "age",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential noun for basic personal information, as in asking or stating how old someone is."
+  },
+  {
+    "word": "ago",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common time adverb used with simple past to say when something happened."
+  },
+  {
+    "word": "agree",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Useful verb but expressing agreement in nuanced ways is more typical of A2 learners."
+  },
+  {
+    "word": "air",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic noun encountered in everyday contexts like weather, travel, and simple science."
+  },
+  {
+    "word": "airport",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core travel vocabulary that A1 learners need immediately for real-world situations."
+  },
+  {
+    "word": "all",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most frequently used determiners and pronouns in everyday English."
+  },
+  {
+    "word": "also",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common linking adverb used to add information, found constantly in basic texts."
+  },
+  {
+    "word": "always",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core frequency adverb essential for describing habits and routines at A1 level."
+  },
+  {
+    "word": "amazing",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Popular informal adjective for expressing strong enthusiasm, more typical of A2 usage."
+  },
+  {
+    "word": "and",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "The most basic coordinating conjunction, used to join words, phrases, and clauses."
+  },
+  {
+    "word": "angry",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective for a basic emotion, essential for elementary personal expression."
+  },
+  {
+    "word": "animal",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun frequently used when talking about pets, nature, and basic topics."
+  },
+  {
+    "word": "another",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common determiner and pronoun used to refer to an additional or different item."
+  },
+  {
+    "word": "answer",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency noun and verb used constantly in classroom and everyday communication."
+  },
+  {
+    "word": "any",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core determiner and pronoun used in questions and negatives at the most basic level."
+  },
+  {
+    "word": "anyone",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common indefinite pronoun used in questions and negatives in simple everyday sentences."
+  },
+  {
+    "word": "anything",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common indefinite pronoun found in basic questions and negative sentences."
+  },
+  {
+    "word": "apartment",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential vocabulary for talking about homes and accommodation at A1 level."
+  },
+  {
+    "word": "apple",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Classic early-learner vocabulary item representing food and everyday objects."
+  },
+  {
+    "word": "april",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "One of the twelve months, which are core A1 vocabulary for dates and personal information."
+  },
+  {
+    "word": "area",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Somewhat abstract noun for a region or zone, more naturally introduced at A2 level."
+  },
+  {
+    "word": "arm",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic body part noun that is standard A1 vocabulary for describing the human body."
+  },
+  {
+    "word": "around",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common preposition and adverb used to describe position, movement, or approximate amounts."
+  },
+  {
+    "word": "arrive",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential travel and daily-life verb used when talking about reaching a destination."
+  },
+  {
+    "word": "art",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun used in school and hobby contexts at beginner level."
+  },
+  {
+    "word": "article",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "Refers to a piece of writing or a grammar term, more relevant at B1+."
+  },
+  {
+    "word": "artist",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Simple noun for a person who makes art, common in introductory topics."
+  },
+  {
+    "word": "as",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very frequent function word used in comparisons and time expressions."
+  },
+  {
+    "word": "ask",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb for making requests or questions, essential at A1."
+  },
+  {
+    "word": "at",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "High-frequency preposition used for location and time expressions."
+  },
+  {
+    "word": "august",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Name of the eighth month, learned when studying months of the year."
+  },
+  {
+    "word": "aunt",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic family vocabulary word introduced in early A1 family topics."
+  },
+  {
+    "word": "autumn",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "One of the four seasons, commonly taught in A1 weather and time topics."
+  },
+  {
+    "word": "away",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adverb used in everyday phrases like 'go away' or 'far away'."
+  },
+  {
+    "word": "baby",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Everyday noun for a very young child, frequently encountered in daily life."
+  },
+  {
+    "word": "back",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency word used as noun, adverb, and adjective in many contexts."
+  },
+  {
+    "word": "bad",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective used constantly to describe negative qualities or situations."
+  },
+  {
+    "word": "bag",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common everyday noun for a container learners encounter constantly."
+  },
+  {
+    "word": "ball",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun related to sports and play, introduced very early at A1."
+  },
+  {
+    "word": "banana",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common fruit name taught in food and shopping vocabulary at A1."
+  },
+  {
+    "word": "band",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun for a music group, encountered in everyday conversation."
+  },
+  {
+    "word": "bank",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Everyday noun for a financial institution, relevant in daily life contexts."
+  },
+  {
+    "word": "bath",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic noun for washing activity, taught in home and daily routine topics."
+  },
+  {
+    "word": "bathroom",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential room name needed immediately in everyday and travel situations."
+  },
+  {
+    "word": "be",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "The most fundamental verb in English, absolutely essential at A1."
+  },
+  {
+    "word": "beach",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun for a seaside location, frequently used in holiday and weather topics."
+  },
+  {
+    "word": "beautiful",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective for describing people, places, and things positively."
+  },
+  {
+    "word": "because",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential conjunction used to give reasons, very frequent in basic communication."
+  },
+  {
+    "word": "become",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Linking verb expressing change of state, more naturally encountered at A2–B1."
+  },
+  {
+    "word": "bed",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun for a piece of furniture, essential in home and daily routine topics."
+  },
+  {
+    "word": "bedroom",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic room name used constantly when describing homes and daily life."
+  },
+  {
+    "word": "beer",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common drink vocabulary encountered in social and restaurant situations."
+  },
+  {
+    "word": "before",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "High-frequency preposition and conjunction used for time sequencing."
+  },
+  {
+    "word": "begin",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Slightly formal verb for starting; A1 learners more typically use 'start'."
+  },
+  {
+    "word": "beginning",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Noun referring to the start of something, slightly more abstract for A1."
+  },
+  {
+    "word": "behind",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common preposition of place taught in basic position and direction vocabulary."
+  },
+  {
+    "word": "believe",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Expresses opinion and faith, more naturally introduced at A2 level."
+  },
+  {
+    "word": "below",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Preposition of position taught alongside above, under, and over at A1."
+  },
+  {
+    "word": "best",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Superlative adjective used constantly in everyday comparisons and opinions."
+  },
+  {
+    "word": "better",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Comparative adjective used very frequently in everyday comparisons."
+  },
+  {
+    "word": "between",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common preposition of place and time introduced in early A1 lessons."
+  },
+  {
+    "word": "bicycle",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun for a two-wheeled vehicle, taught in transport vocabulary."
+  },
+  {
+    "word": "big",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective for size, one of the first descriptive words taught at A1."
+  },
+  {
+    "word": "bike",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Informal and very common word for bicycle, frequently used in daily speech."
+  },
+  {
+    "word": "bill",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used in restaurants and shops when asking for the amount to pay."
+  },
+  {
+    "word": "bird",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common animal noun encountered in everyday nature and children's contexts."
+  },
+  {
+    "word": "birthday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential social word used in greetings and celebrations from the very start of learning."
+  },
+  {
+    "word": "black",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core colour adjective used constantly to describe objects and clothing."
+  },
+  {
+    "word": "blog",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common internet term familiar to modern learners through everyday digital life."
+  },
+  {
+    "word": "blonde",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Basic adjective used to describe hair colour in simple personal descriptions."
+  },
+  {
+    "word": "blue",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core colour adjective used constantly to describe objects, sky, and clothing."
+  },
+  {
+    "word": "boat",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common transport noun appearing in basic travel and picture-description tasks."
+  },
+  {
+    "word": "body",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential noun taught early when learning parts of the human form."
+  },
+  {
+    "word": "book",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun found in school, home, and shopping contexts constantly."
+  },
+  {
+    "word": "boot",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common clothing/footwear noun used when talking about what people wear."
+  },
+  {
+    "word": "bored",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Simple adjective used to express a basic feeling in everyday conversation."
+  },
+  {
+    "word": "boring",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe uninteresting activities, lessons, or films."
+  },
+  {
+    "word": "born",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential word used in the very common question and answer about place and date of birth."
+  },
+  {
+    "word": "both",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Simple determiner used to refer to two people or things together."
+  },
+  {
+    "word": "bottle",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Everyday container noun used when ordering drinks or shopping."
+  },
+  {
+    "word": "box",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common container noun used in shopping, storage, and everyday description contexts."
+  },
+  {
+    "word": "boy",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun for referring to a male child, met constantly in stories and conversation."
+  },
+  {
+    "word": "boyfriend",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common relationship word used early in personal introductions and descriptions."
+  },
+  {
+    "word": "bread",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core food noun used daily in shopping, meals, and restaurant contexts."
+  },
+  {
+    "word": "break",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb used for rest periods and for something stopping or being damaged."
+  },
+  {
+    "word": "breakfast",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential meal noun introduced very early when talking about daily routines."
+  },
+  {
+    "word": "bring",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core action verb used in everyday instructions and requests from the start."
+  },
+  {
+    "word": "brother",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core family noun used constantly when talking about family members."
+  },
+  {
+    "word": "brown",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core colour adjective used to describe hair, eyes, food, and objects."
+  },
+  {
+    "word": "build",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common verb used to talk about constructing houses, things, or cities."
+  },
+  {
+    "word": "building",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Everyday noun used when describing towns, giving directions, and locations."
+  },
+  {
+    "word": "bus",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core transport noun used constantly in travel, directions, and daily routine topics."
+  },
+  {
+    "word": "business",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "More relevant to A2-B1 contexts; too abstract for typical A1 communication needs."
+  },
+  {
+    "word": "busy",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to explain why someone cannot meet or talk."
+  },
+  {
+    "word": "but",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core conjunction introduced at A1 to connect contrasting ideas in simple sentences."
+  },
+  {
+    "word": "butter",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common food noun used in shopping and breakfast contexts."
+  },
+  {
+    "word": "buy",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb used in shopping and everyday transactions from the very beginning."
+  },
+  {
+    "word": "by",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "High-frequency preposition used to indicate location, means of transport, and deadlines."
+  },
+  {
+    "word": "bye exclam.",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential informal farewell expression used constantly in spoken interaction."
+  },
+  {
+    "word": "cafe",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common place noun used when talking about meeting friends and ordering food and drinks."
+  },
+  {
+    "word": "cake",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core food noun strongly associated with birthdays and celebrations at A1 level."
+  },
+  {
+    "word": "call",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb and noun used for phone communication and addressing people by name."
+  },
+  {
+    "word": "camera",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common everyday object noun used in tourism and technology topics at A1."
+  },
+  {
+    "word": "can",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential modal verb for ability and permission, introduced from the very first lessons."
+  },
+  {
+    "word": "cannot",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential negative modal contraction used constantly in everyday speech and writing."
+  },
+  {
+    "word": "capital",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Usually encountered in geography or formal contexts, more typical at A2-B1."
+  },
+  {
+    "word": "car",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun for a common mode of transport."
+  },
+  {
+    "word": "card",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Used in everyday contexts like birthday cards, credit cards, and playing cards."
+  },
+  {
+    "word": "career",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More relevant to adult life discussions, typically introduced at A2-B1 level."
+  },
+  {
+    "word": "carrot",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common food vocabulary typically taught early in beginner learner materials."
+  },
+  {
+    "word": "carry",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic action verb frequently used in everyday physical and practical situations."
+  },
+  {
+    "word": "cat",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "One of the most common pet nouns introduced at the very beginning of English learning."
+  },
+  {
+    "word": "cd",
+    "usabilityScore": 3,
+    "levelFit": "above",
+    "notes": "Outdated technology term now rarely encountered in modern everyday communication."
+  },
+  {
+    "word": "cent",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic money vocabulary relevant to shopping and everyday transactions."
+  },
+  {
+    "word": "centre",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used for locations like shopping centres and town centres."
+  },
+  {
+    "word": "century",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "More relevant to history and academic contexts, better suited for A2-B1 learners."
+  },
+  {
+    "word": "chair",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday furniture noun introduced in early beginner classroom vocabulary."
+  },
+  {
+    "word": "change",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency word used as both a noun and verb in many everyday situations."
+  },
+  {
+    "word": "chart",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "More academic or business-oriented term, typically introduced at A2-B1 level."
+  },
+  {
+    "word": "cheap",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective frequently used when shopping or comparing prices."
+  },
+  {
+    "word": "check",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Everyday verb used in practical situations like checking answers or a bill."
+  },
+  {
+    "word": "cheese",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic food noun commonly taught in early beginner food and shopping vocabulary."
+  },
+  {
+    "word": "chicken",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common food noun taught early in beginner food and restaurant vocabulary."
+  },
+  {
+    "word": "child",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun used constantly when talking about family and people."
+  },
+  {
+    "word": "chocolate",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Popular food word easily recognised and frequently encountered by beginners."
+  },
+  {
+    "word": "choose",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common everyday verb used when making decisions or selections."
+  },
+  {
+    "word": "cinema",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common leisure venue noun typically introduced in early free-time vocabulary topics."
+  },
+  {
+    "word": "city",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core geography and everyday noun used when talking about where people live."
+  },
+  {
+    "word": "class",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential noun for learners as it relates directly to their own learning environment."
+  },
+  {
+    "word": "classroom",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Highly relevant A1 noun as it describes the learner's immediate learning environment."
+  },
+  {
+    "word": "clean",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common everyday adjective and verb used in household and daily life contexts."
+  },
+  {
+    "word": "climb",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common action verb used for stairs, mountains, and physical activities."
+  },
+  {
+    "word": "clock",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential everyday noun introduced when teaching time vocabulary to beginners."
+  },
+  {
+    "word": "close",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency word used as both an adjective meaning near and a verb meaning to shut."
+  },
+  {
+    "word": "clothes",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun used in shopping, getting dressed, and describing appearance."
+  },
+  {
+    "word": "club",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used for social groups, sports clubs, and leisure activities."
+  },
+  {
+    "word": "coat",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic clothing noun commonly introduced in early beginner clothing vocabulary."
+  },
+  {
+    "word": "coffee",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common drink noun used constantly in cafes and everyday social situations."
+  },
+  {
+    "word": "cold",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential adjective used for weather, temperature, and health topics."
+  },
+  {
+    "word": "college",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun for an educational institution, relevant in school and study contexts."
+  },
+  {
+    "word": "colour",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core beginner vocabulary topic taught in almost every A1 course from the start."
+  },
+  {
+    "word": "come",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental and high-frequency verbs in everyday English."
+  },
+  {
+    "word": "common",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Slightly abstract adjective more typically encountered and useful from A2 onwards."
+  },
+  {
+    "word": "company",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Often used in business or adult work contexts, more naturally introduced at A2-B1."
+  },
+  {
+    "word": "compare",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "Used to show similarities and differences; more typical in B1+ academic or analytical contexts."
+  },
+  {
+    "word": "complete",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Can mean 'finish' or 'whole'; learners encounter it in instructions but it suits A2-B1 better."
+  },
+  {
+    "word": "computer",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential everyday technology word that A1 learners encounter constantly in daily life."
+  },
+  {
+    "word": "concert",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common leisure/entertainment word that appears frequently in beginner topic sets about free time."
+  },
+  {
+    "word": "conversation",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "The concept is A1 but the word itself is longer and more typical in A2-B1 language learning contexts."
+  },
+  {
+    "word": "cook",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb and noun relating to food preparation, very common in A1 materials."
+  },
+  {
+    "word": "cooking",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common hobby/activity noun frequently seen in A1 topics about daily routines and interests."
+  },
+  {
+    "word": "cool",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Used both for temperature and informally to mean 'great'; very frequent in casual A1 speech."
+  },
+  {
+    "word": "correct",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective meaning 'right'; frequently used in classroom and everyday checking contexts."
+  },
+  {
+    "word": "cost",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential word for shopping and money topics, very common in A1 everyday situations."
+  },
+  {
+    "word": "could",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core modal verb for past ability and polite requests, fundamental at A1 level."
+  },
+  {
+    "word": "country",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Key noun for talking about nationalities and places, a staple A1 topic word."
+  },
+  {
+    "word": "course",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used in phrases like 'of course' and to talk about classes; both uses appear at A1."
+  },
+  {
+    "word": "cousin",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic family vocabulary word that appears in A1 family and personal information topics."
+  },
+  {
+    "word": "cow",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Simple animal noun that appears in A1 vocabulary lists, especially in farm or food contexts."
+  },
+  {
+    "word": "cream",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common food and everyday product word encountered in A1 shopping and food topics."
+  },
+  {
+    "word": "create",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More formal verb better suited to A2-B1; beginners more likely to use 'make' instead."
+  },
+  {
+    "word": "culture",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Abstract noun more appropriate for B1+ discussions about society and customs."
+  },
+  {
+    "word": "cup",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential everyday noun for drinks and kitchenware, very common in A1 daily life topics."
+  },
+  {
+    "word": "customer",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun in shopping and service contexts, frequently encountered in A1 role-play scenarios."
+  },
+  {
+    "word": "cut",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic everyday verb used in cooking, crafts, and general actions; core A1 vocabulary."
+  },
+  {
+    "word": "even",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "As an adverb it adds emphasis in complex ways that are better suited to A2-B1 learners."
+  },
+  {
+    "word": "evening",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core time-of-day word essential for daily routines, greetings, and schedules at A1."
+  },
+  {
+    "word": "event",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Somewhat formal noun for occasions; A1 learners more typically use simpler words like 'party'."
+  },
+  {
+    "word": "ever",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Common in questions like 'Have you ever...?' but present perfect context places it better at A2."
+  },
+  {
+    "word": "every",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core determiner used constantly in describing routines and habits at A1 level."
+  },
+  {
+    "word": "everybody",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common indefinite pronoun used in everyday speech to refer to all people in a group."
+  },
+  {
+    "word": "everyone",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very frequent pronoun in everyday conversation; A1 learners encounter it in simple statements."
+  },
+  {
+    "word": "everything",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common pronoun used in everyday A1 speech to refer to all things in a general way."
+  },
+  {
+    "word": "exam",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Key word in school and study contexts, very familiar to A1 learners from their own experience."
+  },
+  {
+    "word": "example",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Frequently used in classroom instructions and explanations, essential for A1 learners."
+  },
+  {
+    "word": "excited",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective for expressing feelings, a staple of A1 emotions vocabulary."
+  },
+  {
+    "word": "exciting",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe activities and events; frequently appears in A1 materials."
+  },
+  {
+    "word": "exercise",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Used for physical activity and school tasks; both meanings are common in A1 topics."
+  },
+  {
+    "word": "expensive",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Key adjective for shopping and money topics, very common in A1 everyday conversations."
+  },
+  {
+    "word": "explain",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Useful verb but the concept of explaining in English is more naturally practiced at A2-B1."
+  },
+  {
+    "word": "extra",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Used to mean 'additional'; common enough but typically appears more at A2 and above."
+  },
+  {
+    "word": "eye",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential body part vocabulary that appears in A1 topics about describing people and health."
+  },
+  {
+    "word": "face",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core body part word used in descriptions and everyday expressions, fundamental at A1."
+  },
+  {
+    "word": "fact",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More abstract noun suited to A2-B1; A1 learners rarely need to discuss 'facts' explicitly."
+  },
+  {
+    "word": "fall",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb and noun used to describe dropping or autumn season, met frequently in everyday contexts."
+  },
+  {
+    "word": "false",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic adjective meaning not true, commonly seen in true/false exercises and everyday speech."
+  },
+  {
+    "word": "family",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core A1 noun used constantly when talking about relatives and home life."
+  },
+  {
+    "word": "famous",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe well-known people or places, frequently appears in beginner topics."
+  },
+  {
+    "word": "fantastic",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common positive adjective used in informal speech to express enthusiasm or approval."
+  },
+  {
+    "word": "far",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core adjective and adverb used when talking about distance, very common in everyday questions."
+  },
+  {
+    "word": "farm",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic noun referring to agricultural land, commonly introduced in A1 topic vocabulary sets."
+  },
+  {
+    "word": "farmer",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common occupation noun introduced early in vocabulary sets about jobs and rural life."
+  },
+  {
+    "word": "fast",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency adjective and adverb describing speed, used constantly in everyday communication."
+  },
+  {
+    "word": "fat",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic adjective describing body size, commonly encountered in beginner descriptive vocabulary."
+  },
+  {
+    "word": "father",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word used constantly when talking about relatives and personal life."
+  },
+  {
+    "word": "favourite",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common adjective used in beginner topics like food, colours and hobbies to express preferences."
+  },
+  {
+    "word": "february",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "One of the twelve months, core calendar vocabulary introduced at A1 level."
+  },
+  {
+    "word": "feel",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb used to describe physical sensations and emotions in everyday conversation."
+  },
+  {
+    "word": "feeling",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb form used to talk about emotions, frequently encountered at beginner level."
+  },
+  {
+    "word": "festival",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun referring to cultural or music events, often introduced in A1 topic units on celebrations."
+  },
+  {
+    "word": "few",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core quantifier meaning a small number, used very frequently in everyday speech and writing."
+  },
+  {
+    "word": "fifteen number",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic number word that A1 learners must know for counting, telling time and giving ages."
+  },
+  {
+    "word": "fifth number",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic ordinal number used for dates, sequences and lists, core A1 vocabulary."
+  },
+  {
+    "word": "fifty number",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential number word used for prices, ages and quantities in everyday communication."
+  },
+  {
+    "word": "fill",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb meaning to make something full, frequently used in everyday instructions and tasks."
+  },
+  {
+    "word": "film",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency noun for movies, used constantly in conversations about hobbies and entertainment."
+  },
+  {
+    "word": "final",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Adjective meaning last or conclusive, more typical of A2 contexts such as sport or exams."
+  },
+  {
+    "word": "find",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb used constantly in everyday situations to mean discover or locate something."
+  },
+  {
+    "word": "fine",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective and response word used in greetings and to indicate something is acceptable."
+  },
+  {
+    "word": "finish",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb meaning to complete something, used constantly in daily routines and instructions."
+  },
+  {
+    "word": "fire",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb encountered in safety vocabulary, household contexts and everyday descriptions."
+  },
+  {
+    "word": "first",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core ordinal number and adverb used constantly in sequences, instructions and storytelling."
+  },
+  {
+    "word": "fish",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun and verb related to food and activity, introduced very early in A1 vocabulary sets."
+  },
+  {
+    "word": "five number",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most basic numbers, essential for counting, telling time and everyday communication."
+  },
+  {
+    "word": "flat",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun for an apartment and adjective describing a level surface, both frequently used at A1."
+  },
+  {
+    "word": "flight",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about travel and airports, a standard A1 travel topic word."
+  },
+  {
+    "word": "floor",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core noun referring to the surface underfoot or a level in a building, very common in daily life."
+  },
+  {
+    "word": "flower",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun introduced early in nature and garden vocabulary sets at A1 level."
+  },
+  {
+    "word": "fly",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb used when talking about air travel and birds, very common at beginner level."
+  },
+  {
+    "word": "follow",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb used in instructions, directions and social media contexts, frequently met at A1."
+  },
+  {
+    "word": "food",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core A1 noun used constantly in conversations about eating, shopping and daily routines."
+  },
+  {
+    "word": "foot",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic body part noun used in health, sport and measurement contexts at A1 level."
+  },
+  {
+    "word": "football",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very high-frequency noun for the world's most popular sport, introduced at the earliest learner levels."
+  },
+  {
+    "word": "for",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core preposition used constantly to indicate purpose, duration and recipient in everyday English."
+  },
+  {
+    "word": "forget",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common verb used in everyday situations like forgetting names or items."
+  },
+  {
+    "word": "form",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Often used in administrative or written contexts, more typical at A2-B1."
+  },
+  {
+    "word": "forty number",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic number learners need for age, price, and quantity in daily life."
+  },
+  {
+    "word": "four number",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core number essential for counting, time, and everyday communication."
+  },
+  {
+    "word": "fourteen number",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic number used for age, dates, and quantities at beginner level."
+  },
+  {
+    "word": "fourth number",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic ordinal number used for dates, floors, and simple sequences."
+  },
+  {
+    "word": "free",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective meaning no cost or available, met constantly in daily life."
+  },
+  {
+    "word": "friday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core day of the week that beginners learn immediately for scheduling and conversation."
+  },
+  {
+    "word": "friend",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential everyday noun used constantly when talking about people in one's life."
+  },
+  {
+    "word": "friendly",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe people in everyday social contexts."
+  },
+  {
+    "word": "from",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core preposition used constantly to indicate origin, direction, and source."
+  },
+  {
+    "word": "front",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun and adjective used for directions and describing position."
+  },
+  {
+    "word": "fruit",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential food vocabulary word encountered in shopping, menus, and daily conversation."
+  },
+  {
+    "word": "full",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective used to describe containers, meals, and capacity."
+  },
+  {
+    "word": "fun",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday word used to describe enjoyable activities and experiences."
+  },
+  {
+    "word": "funny",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective used to describe humour in everyday conversation."
+  },
+  {
+    "word": "future",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Concept is slightly abstract and more naturally introduced at A2 level."
+  },
+  {
+    "word": "game",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential everyday noun used for sports, board games, and digital games."
+  },
+  {
+    "word": "garden",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for an outdoor space, frequently used in home and nature contexts."
+  },
+  {
+    "word": "geography",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "School subject term that is useful but more naturally encountered at A2 level."
+  },
+  {
+    "word": "get",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely high-frequency verb with many everyday meanings like obtain, become, and arrive."
+  },
+  {
+    "word": "girl",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun used constantly to refer to female children and young people."
+  },
+  {
+    "word": "girlfriend",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in everyday conversation about personal relationships."
+  },
+  {
+    "word": "give",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential high-frequency verb used constantly in everyday requests and actions."
+  },
+  {
+    "word": "glass",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun referring to a drinking vessel or material, met in daily life."
+  },
+  {
+    "word": "go",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental verbs in English, used constantly for movement and activity."
+  },
+  {
+    "word": "good",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Absolutely core adjective used in nearly every conversation and context."
+  },
+  {
+    "word": "goodbye exclam./n.",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential farewell expression that is one of the very first words beginners learn."
+  },
+  {
+    "word": "grandfather",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word introduced very early in beginner courses."
+  },
+  {
+    "word": "grandmother",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word introduced very early in beginner courses."
+  },
+  {
+    "word": "grandparent",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common family term used as a general reference to grandparents in everyday speech."
+  },
+  {
+    "word": "great",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common adjective used to express enthusiasm and approval in daily conversation."
+  },
+  {
+    "word": "green",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core colour word that learners need immediately for describing objects and surroundings."
+  },
+  {
+    "word": "grey",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common colour word used to describe everyday objects, weather, and appearance."
+  },
+  {
+    "word": "group",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in classroom, social, and everyday organisational contexts."
+  },
+  {
+    "word": "grow",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Useful verb but its range of meanings makes it slightly better suited to A2."
+  },
+  {
+    "word": "guess",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used in games, conversation, and everyday situations of uncertainty."
+  },
+  {
+    "word": "guitar",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common musical instrument word used when talking about hobbies and music."
+  },
+  {
+    "word": "gym",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in everyday conversation about fitness and leisure activities."
+  },
+  {
+    "word": "hair",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential vocabulary for describing people's appearance, used constantly at beginner level."
+  },
+  {
+    "word": "half",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used in everyday contexts like telling time ('half past') and dividing things."
+  },
+  {
+    "word": "hand",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core body part word encountered constantly in daily life and basic instructions."
+  },
+  {
+    "word": "happen",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common verb used to describe events in everyday conversation."
+  },
+  {
+    "word": "happy",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective for expressing feelings, used constantly in greetings and daily talk."
+  },
+  {
+    "word": "hard",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective meaning difficult or firm, frequently used in everyday speech."
+  },
+  {
+    "word": "hat",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic clothing item word introduced early in vocabulary lessons."
+  },
+  {
+    "word": "hate",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb for expressing strong dislike, frequently used by learners talking about preferences."
+  },
+  {
+    "word": "have",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most essential verbs in English, used for possession and forming tenses."
+  },
+  {
+    "word": "have to",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core modal expression for obligation, essential for everyday communication at A1."
+  },
+  {
+    "word": "he",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental subject pronoun encountered in virtually every conversation and text."
+  },
+  {
+    "word": "head",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic body part word used frequently in everyday descriptions and instructions."
+  },
+  {
+    "word": "health",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Somewhat abstract noun more commonly explored at A2 and above in meaningful contexts."
+  },
+  {
+    "word": "healthy",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used in everyday topics like food and lifestyle at A1 level."
+  },
+  {
+    "word": "hear",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core sensory verb used constantly in everyday communication and listening activities."
+  },
+  {
+    "word": "hello exclam./n.",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "The most basic greeting word, one of the very first words any learner encounters."
+  },
+  {
+    "word": "help",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential word for asking and offering assistance, used constantly in daily interaction."
+  },
+  {
+    "word": "her",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core pronoun used as both object and possessive, fundamental to basic sentences."
+  },
+  {
+    "word": "here",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic adverb of place used constantly in everyday directions and conversation."
+  },
+  {
+    "word": "hey exclam.",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common informal greeting or attention-getter used widely in spoken English."
+  },
+  {
+    "word": "hi exclam.",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "The most common informal greeting, one of the first words learners encounter."
+  },
+  {
+    "word": "high",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective describing height or level, used in everyday descriptions."
+  },
+  {
+    "word": "him",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core object pronoun essential for basic sentence construction at A1."
+  },
+  {
+    "word": "his",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental possessive pronoun used constantly in everyday sentences."
+  },
+  {
+    "word": "history",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "More commonly a school subject topic at A2; the concept can be abstract for A1 learners."
+  },
+  {
+    "word": "hobby",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common topic in A1 learner materials when talking about free time and interests."
+  },
+  {
+    "word": "holiday",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun used frequently in everyday conversation about time off and travel."
+  },
+  {
+    "word": "home",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core everyday word used constantly when talking about where people live and return to."
+  },
+  {
+    "word": "homework",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very familiar word for learners in school contexts, used daily in educational settings."
+  },
+  {
+    "word": "hope",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb and noun used in everyday expressions of wishes and expectations."
+  },
+  {
+    "word": "horse",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic animal vocabulary word typically introduced in early A1 vocabulary sets."
+  },
+  {
+    "word": "hospital",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Important everyday place word used when discussing health and emergencies."
+  },
+  {
+    "word": "hot",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective used constantly when describing temperature of weather, food, and objects."
+  },
+  {
+    "word": "hotel",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common place word encountered frequently in travel and everyday topics at A1."
+  },
+  {
+    "word": "hour",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential time word used constantly when telling time and scheduling."
+  },
+  {
+    "word": "house",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun for describing where people live, used constantly at A1."
+  },
+  {
+    "word": "how",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental question word used in countless everyday expressions and questions."
+  },
+  {
+    "word": "however",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "Formal linking adverb more appropriate for written or structured speech at B1 and above."
+  },
+  {
+    "word": "hundred number",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential number word needed for prices, quantities, and everyday numeracy at A1."
+  },
+  {
+    "word": "hungry",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core adjective for expressing a basic need, used very frequently in everyday conversation."
+  },
+  {
+    "word": "husband",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common family vocabulary word used when talking about relationships and family members."
+  },
+  {
+    "word": "i",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Most basic subject pronoun, used in virtually every sentence a learner produces."
+  },
+  {
+    "word": "ice",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun encountered in everyday contexts like drinks and weather."
+  },
+  {
+    "word": "ice cream",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very familiar food item that beginners learn early in vocabulary sets."
+  },
+  {
+    "word": "idea",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in simple expressions like 'good idea' or 'I have an idea'."
+  },
+  {
+    "word": "if",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential conjunction for forming basic conditional sentences at beginner level."
+  },
+  {
+    "word": "imagine",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Somewhat abstract verb more naturally introduced at A2 or higher levels."
+  },
+  {
+    "word": "important",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Useful adjective but the concept and usage typically emerge more at A2 level."
+  },
+  {
+    "word": "improve",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Action verb implying progress; more typical in A2 or B1 learning contexts."
+  },
+  {
+    "word": "in",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core preposition of place and time met constantly in beginner-level input."
+  },
+  {
+    "word": "include",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Formal verb more suited to A2–B1 as it requires understanding of set relationships."
+  },
+  {
+    "word": "information",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Useful noun but its abstract nature and spelling make it better suited to A2."
+  },
+  {
+    "word": "interest",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Used as both noun and verb; the nuance involved makes it more of an A2 item."
+  },
+  {
+    "word": "interested",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective in phrases like 'I am interested in' taught at A1."
+  },
+  {
+    "word": "interesting",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "High-frequency adjective used to describe topics, people, and activities at A1."
+  },
+  {
+    "word": "internet",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Everyday noun that modern A1 learners encounter immediately in digital contexts."
+  },
+  {
+    "word": "interview",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Relevant noun but typically introduced at A2 in job or media contexts."
+  },
+  {
+    "word": "into",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common preposition of movement learned alongside basic verbs like 'go' and 'put'."
+  },
+  {
+    "word": "introduce",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Key verb for social situations; 'introduce yourself' is a classic A1 task."
+  },
+  {
+    "word": "island",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Simple geography noun often seen in A1 reading passages and picture descriptions."
+  },
+  {
+    "word": "it",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential third-person pronoun used constantly to refer to things and ideas."
+  },
+  {
+    "word": "its",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic possessive determiner needed very early to describe ownership of things."
+  },
+  {
+    "word": "jacket",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common clothing item typically taught in A1 vocabulary sets about clothes."
+  },
+  {
+    "word": "january",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "First month of the year; months are core A1 vocabulary for dates and time."
+  },
+  {
+    "word": "jeans",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very familiar clothing word introduced early in topics about fashion and appearance."
+  },
+  {
+    "word": "job",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency noun used when talking about work and daily life at A1."
+  },
+  {
+    "word": "join",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Simple verb used in contexts like joining a club or group, suitable for A1."
+  },
+  {
+    "word": "journey",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Slightly formal travel noun; A1 learners more commonly use 'trip' or 'travel'."
+  },
+  {
+    "word": "juice",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common food and drink word introduced in early A1 topics about eating and shopping."
+  },
+  {
+    "word": "july",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Month name; all twelve months are standard A1 vocabulary for calendars and dates."
+  },
+  {
+    "word": "june",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Month name learned as part of the core A1 set for talking about dates and seasons."
+  },
+  {
+    "word": "just",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very high-frequency adverb used in simple statements and requests at A1 level."
+  },
+  {
+    "word": "keep",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used in basic instructions and everyday expressions like 'keep it'."
+  },
+  {
+    "word": "key",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Everyday concrete noun (door key) learned early; metaphorical use comes later."
+  },
+  {
+    "word": "kilometre",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic unit of distance used when talking about travel and geography at A1."
+  },
+  {
+    "word": "kind",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used both as an adjective meaning nice and a noun meaning type, both useful at A1."
+  },
+  {
+    "word": "kitchen",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core room name taught in A1 topics about the home and daily routines."
+  },
+  {
+    "word": "know",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential high-frequency verb used constantly in basic statements and questions."
+  },
+  {
+    "word": "land",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Simple noun for geography topics and also used as a verb for planes at A1."
+  },
+  {
+    "word": "language",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Key noun for talking about English, learning, and nationalities at A1 level."
+  },
+  {
+    "word": "large",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common size adjective used to describe objects, places, and quantities at A1."
+  },
+  {
+    "word": "last",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common adjective/adverb used in everyday contexts like 'last night' or 'last week'."
+  },
+  {
+    "word": "late",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Frequently used adjective/adverb to describe arriving after the expected time."
+  },
+  {
+    "word": "later",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Common adverb used to refer to a time after the present, as in 'see you later'."
+  },
+  {
+    "word": "laugh",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common everyday verb describing a natural reaction to something funny."
+  },
+  {
+    "word": "learn",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb especially relevant for A1 learners in classroom and daily contexts."
+  },
+  {
+    "word": "leave",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb meaning to go away from a place or to let something remain."
+  },
+  {
+    "word": "left",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential directional word used constantly for giving and following directions."
+  },
+  {
+    "word": "leg",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic body part noun that appears in early vocabulary and health-related contexts."
+  },
+  {
+    "word": "lesson",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Highly relevant noun for A1 learners in school and learning contexts."
+  },
+  {
+    "word": "let",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb used to express permission, as in 'let me help you'."
+  },
+  {
+    "word": "letter",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Used both for written correspondence and the letters of the alphabet."
+  },
+  {
+    "word": "library",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common public building noun frequently taught in early vocabulary lists."
+  },
+  {
+    "word": "lie",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Can mean to recline or to tell an untruth; multiple meanings may confuse A1 learners."
+  },
+  {
+    "word": "life",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core noun appearing in many basic expressions and everyday conversations."
+  },
+  {
+    "word": "light",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency word used as noun, adjective, and verb in many daily situations."
+  },
+  {
+    "word": "adj.",
+    "usabilityScore": 1,
+    "levelFit": "above",
+    "notes": "This is a grammatical abbreviation, not a vocabulary word; belongs in reference materials only."
+  },
+  {
+    "word": "like",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most essential verbs/prepositions at A1 for expressing preferences and comparisons."
+  },
+  {
+    "word": "line",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in contexts like standing in a line or drawing a line."
+  },
+  {
+    "word": "lion",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Well-known animal noun frequently introduced in early vocabulary sets for beginners."
+  },
+  {
+    "word": "list",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Practical everyday noun used in shopping, school, and organizational contexts."
+  },
+  {
+    "word": "listen",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb used constantly in classroom instructions and everyday communication."
+  },
+  {
+    "word": "little",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common adjective/adverb meaning small in size or amount, used daily."
+  },
+  {
+    "word": "live",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential verb for talking about where one resides, a top-priority A1 word."
+  },
+  {
+    "word": "local",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Adjective meaning nearby or of the area; slightly abstract concept for A1 learners."
+  },
+  {
+    "word": "long",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic descriptive adjective used for size, distance, and time at A1 level."
+  },
+  {
+    "word": "look",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most frequent verbs in English, used in countless everyday expressions."
+  },
+  {
+    "word": "lose",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used when something cannot be found or a game is not won."
+  },
+  {
+    "word": "lot",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Extremely common in the phrase 'a lot of', essential for expressing quantity at A1."
+  },
+  {
+    "word": "love",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core verb and noun expressing strong liking or affection, used constantly at A1."
+  },
+  {
+    "word": "lunch",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential meal-time noun introduced very early in A1 vocabulary for daily routines."
+  },
+  {
+    "word": "no one",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common indefinite pronoun meaning nobody, used in simple everyday statements."
+  },
+  {
+    "word": "nobody",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common pronoun equivalent to 'no one', frequently used in basic negative sentences."
+  },
+  {
+    "word": "north",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic directional word used in giving locations and simple geography contexts."
+  },
+  {
+    "word": "nose",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic body part noun taught early in A1 vocabulary sets."
+  },
+  {
+    "word": "not",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Absolutely essential adverb for forming negative sentences, used in every conversation."
+  },
+  {
+    "word": "note",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun meaning a short written message or a musical sound."
+  },
+  {
+    "word": "nothing",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common pronoun used in everyday sentences to indicate absence of anything."
+  },
+  {
+    "word": "november",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "One of the twelve months, routinely taught as part of A1 calendar vocabulary."
+  },
+  {
+    "word": "now",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential adverb indicating the present moment, used constantly in daily speech."
+  },
+  {
+    "word": "number",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun used for counting, phone numbers, and addresses, critical at A1 level."
+  },
+  {
+    "word": "nurse",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common job title encountered in health and everyday contexts."
+  },
+  {
+    "word": "object",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "As a noun meaning 'thing' it appears, but the concept and usage can be ambiguous for A1 learners."
+  },
+  {
+    "word": "o'clock",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential for telling the time, one of the first structures A1 learners study."
+  },
+  {
+    "word": "october",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "One of the twelve months, core vocabulary for dates and calendars at A1."
+  },
+  {
+    "word": "of",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely high-frequency preposition used in countless everyday structures."
+  },
+  {
+    "word": "off",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adverb/preposition used in basic phrases like 'turn off' and 'day off'."
+  },
+  {
+    "word": "office",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun for a workplace setting, frequently seen in A1 dialogues."
+  },
+  {
+    "word": "often",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core frequency adverb used when talking about routines and habits."
+  },
+  {
+    "word": "oh exclam.",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common spoken exclamation expressing surprise or understanding in everyday conversation."
+  },
+  {
+    "word": "ok exclam.,",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most frequently used expressions of agreement or acknowledgement in spoken English."
+  },
+  {
+    "word": "old",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective used to describe age of people and things at A1 level."
+  },
+  {
+    "word": "on",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "High-frequency preposition for place, time, and many fixed expressions."
+  },
+  {
+    "word": "once",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used to express frequency or to mean 'one time', common in everyday speech."
+  },
+  {
+    "word": "one number/det.,",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental number and determiner, one of the first words any A1 learner acquires."
+  },
+  {
+    "word": "onion",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common food item frequently appearing in A1 food and shopping topics."
+  },
+  {
+    "word": "online",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective/adverb in modern everyday life and digital communication."
+  },
+  {
+    "word": "only",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency adverb used to limit or restrict meaning in simple sentences."
+  },
+  {
+    "word": "open",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective and verb used in everyday situations like shops and doors."
+  },
+  {
+    "word": "opinion",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Useful but slightly abstract noun more typical of A2 and above discussions."
+  },
+  {
+    "word": "opposite",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Used for directions and antonyms but can be conceptually challenging for A1 learners."
+  },
+  {
+    "word": "or",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential conjunction connecting alternatives, used constantly in basic communication."
+  },
+  {
+    "word": "orange",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common fruit and colour word, both meanings appear in A1 topics."
+  },
+  {
+    "word": "order",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb and noun used when asking for food or things in shops and restaurants."
+  },
+  {
+    "word": "other",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency determiner and pronoun used in basic comparisons and descriptions."
+  },
+  {
+    "word": "our",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core possessive determiner introduced very early in A1 pronoun sets."
+  },
+  {
+    "word": "out",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common adverb and particle appearing in many basic everyday expressions."
+  },
+  {
+    "word": "outside",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adverb and preposition for describing location, used in everyday A1 contexts."
+  },
+  {
+    "word": "over",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common preposition and adverb for position and quantity in everyday speech."
+  },
+  {
+    "word": "own",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used as an adjective to show possession, appears in simple A1 structures."
+  },
+  {
+    "word": "page",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Everyday noun used constantly in classroom and reading contexts at A1."
+  },
+  {
+    "word": "paint",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common verb and noun related to art and home activities, suitable at A1."
+  },
+  {
+    "word": "painting",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun for an artwork or activity, typically encountered in A1 art topics."
+  },
+  {
+    "word": "pair",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Useful noun for talking about two matching items like shoes or socks."
+  },
+  {
+    "word": "paper",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common everyday noun for the material and for newspapers, core at A1."
+  },
+  {
+    "word": "paragraph",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More of an academic writing term, unlikely to be needed in everyday A1 communication."
+  },
+  {
+    "word": "parent",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word encountered in A1 topics about family and home."
+  },
+  {
+    "word": "park",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb for an outdoor space, frequently used in A1 topics."
+  },
+  {
+    "word": "part",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun meaning a section or piece, used in everyday A1 conversations."
+  },
+  {
+    "word": "partner",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Used to refer to a romantic partner or classroom partner, common in A1 materials."
+  },
+  {
+    "word": "party",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun for a social celebration, frequently introduced in A1 social topics."
+  },
+  {
+    "word": "passport",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Essential travel document word commonly introduced in A1 identity and travel topics."
+  },
+  {
+    "word": "past",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Used as preposition or adjective referring to time, but grammar concepts can be tricky for A1 learners."
+  },
+  {
+    "word": "pay",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb used in shops and transactions, very frequently encountered at A1."
+  },
+  {
+    "word": "pen",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic classroom object word that A1 learners encounter immediately in early lessons."
+  },
+  {
+    "word": "pencil",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Fundamental classroom vocabulary introduced in the very first lessons for A1 learners."
+  },
+  {
+    "word": "people",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely common plural noun referring to persons, used constantly in everyday A1 contexts."
+  },
+  {
+    "word": "pepper",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common food/condiment word introduced in food and shopping topics at A1 level."
+  },
+  {
+    "word": "perfect",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Used as adjective meaning flawless; somewhat abstract for A1 but heard in everyday praise."
+  },
+  {
+    "word": "period",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "Refers to a span of time or punctuation mark; conceptually better suited for B1 learners."
+  },
+  {
+    "word": "person",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun for referring to an individual, used constantly across all A1 topics."
+  },
+  {
+    "word": "personal",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Adjective meaning private or individual; more common in formal contexts beyond A1 level."
+  },
+  {
+    "word": "phone",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential everyday object and verb that A1 learners encounter from the very beginning."
+  },
+  {
+    "word": "photo",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Informal shortening of photograph, very common in everyday A1 conversation and social topics."
+  },
+  {
+    "word": "photograph",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Standard noun for a picture taken by a camera, introduced in A1 hobbies and family topics."
+  },
+  {
+    "word": "phrase",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "Linguistic term more relevant to language learning contexts than everyday A1 communication."
+  },
+  {
+    "word": "piano",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common musical instrument word introduced in A1 hobbies and free time topics."
+  },
+  {
+    "word": "picture",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common word for an image or photo, used frequently in A1 descriptions and daily life."
+  },
+  {
+    "word": "piece",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun meaning a portion of something, used in food and everyday A1 contexts."
+  },
+  {
+    "word": "pig",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic farm animal vocabulary introduced early in A1 animal and nature topics."
+  },
+  {
+    "word": "pink",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core colour word that A1 learners typically study in one of their first vocabulary sets."
+  },
+  {
+    "word": "place",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency noun and verb used in directions, locations and everyday A1 conversation."
+  },
+  {
+    "word": "plan",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb for arrangements, used in A1 topics about daily routines and future."
+  },
+  {
+    "word": "plane",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic travel vocabulary word for an aircraft, commonly introduced in A1 transport topics."
+  },
+  {
+    "word": "plant",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for a living green organism, introduced in A1 home, garden and nature topics."
+  },
+  {
+    "word": "play",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core verb and noun used for sports, games and activities, essential at A1 level."
+  },
+  {
+    "word": "player",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for someone who plays a sport or game, used in A1 sports and hobbies topics."
+  },
+  {
+    "word": "please exclam.",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental politeness word taught from the very first A1 lesson in requests and manners."
+  },
+  {
+    "word": "point",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Has multiple meanings including to indicate or a score; abstract senses are better suited for A2-B1."
+  },
+  {
+    "word": "police",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common collective noun for law enforcement, introduced in A1 community and safety topics."
+  },
+  {
+    "word": "policeman",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic community worker vocabulary introduced in A1 jobs and people in society topics."
+  },
+  {
+    "word": "pool",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for a swimming pool, frequently used in A1 leisure and sports contexts."
+  },
+  {
+    "word": "poor",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic adjective meaning not having money, introduced in A1 descriptions of people and situations."
+  },
+  {
+    "word": "popular",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Adjective meaning well-liked; straightforward but more naturally at home in A2 contexts."
+  },
+  {
+    "word": "positive",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Adjective with abstract meaning that is better suited to A2-B1 learners in most contexts."
+  },
+  {
+    "word": "possible",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Useful adjective but the concept and typical usage patterns are more appropriate for A2 learners."
+  },
+  {
+    "word": "post",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for mail and verb for sending, introduced in A1 communication and everyday life topics."
+  },
+  {
+    "word": "potato",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common food vocabulary word introduced in A1 food, shopping and meals topics."
+  },
+  {
+    "word": "pound",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Key currency word for British English, essential in A1 shopping and money topics."
+  },
+  {
+    "word": "practice",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Noun referring to repeated exercise to improve a skill; the spelling distinction from practise suits A2."
+  },
+  {
+    "word": "practise",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "British English verb form of practice; the spelling distinction makes it more appropriate for A2 learners."
+  },
+  {
+    "word": "prefer",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Used to express personal likes when comparing two things, common in simple conversations."
+  },
+  {
+    "word": "prepare",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Slightly more complex verb often appearing at A2, though encountered in basic instructions."
+  },
+  {
+    "word": "present",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Has multiple meanings (gift, time, to show) which can confuse A1 learners; better suited to A2."
+  },
+  {
+    "word": "pretty",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective meaning attractive and informal adverb meaning quite, heard frequently in everyday speech."
+  },
+  {
+    "word": "price",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential word for shopping and transactions, encountered constantly in daily life."
+  },
+  {
+    "word": "probably",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Adverb of probability that A1 learners will hear but may find difficult to use correctly themselves."
+  },
+  {
+    "word": "problem",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common noun used across all situations, including the set phrase 'no problem'."
+  },
+  {
+    "word": "product",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "More typical in commercial or academic contexts, better suited to A2 or higher."
+  },
+  {
+    "word": "programme",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common in everyday contexts like TV programmes and school timetables, familiar to A1 learners."
+  },
+  {
+    "word": "project",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Often encountered in school or work contexts, making it more appropriate for A2 learners."
+  },
+  {
+    "word": "purple",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic colour word taught early in A1 alongside other core colours."
+  },
+  {
+    "word": "put",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb used constantly to describe placing objects, essential at A1."
+  },
+  {
+    "word": "quarter",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Useful for telling the time and basic maths, introduced early in A1 materials."
+  },
+  {
+    "word": "question",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core word used in classroom and everyday communication from the very start of learning."
+  },
+  {
+    "word": "quick",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective describing speed, used frequently in everyday instructions and conversation."
+  },
+  {
+    "word": "quickly",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic adverb of manner taught alongside quick, common in simple instructions."
+  },
+  {
+    "word": "quiet",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common adjective used in classrooms, homes and public spaces constantly."
+  },
+  {
+    "word": "quite",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Adverb of degree whose meaning differs between British and American English, can confuse A1 learners."
+  },
+  {
+    "word": "radio",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common everyday noun for a familiar household device, easily recognised by A1 learners."
+  },
+  {
+    "word": "rain",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core weather vocabulary introduced at A1, used constantly in everyday small talk."
+  },
+  {
+    "word": "read",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Fundamental everyday verb taught at the very beginning of English learning."
+  },
+  {
+    "word": "reader",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More specific noun typically encountered in educational contexts, less essential at A1."
+  },
+  {
+    "word": "reading",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun and gerund referring to a key everyday activity and school subject."
+  },
+  {
+    "word": "ready",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency adjective used constantly in daily routines and spoken instructions."
+  },
+  {
+    "word": "real",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to distinguish genuine things from fake ones, heard frequently in conversation."
+  },
+  {
+    "word": "really",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Very high-frequency adverb used for emphasis in everyday speech, essential at A1."
+  },
+  {
+    "word": "reason",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Abstract noun that typically appears in A2 contexts when explaining cause and effect."
+  },
+  {
+    "word": "red",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core basic colour word among the first vocabulary items taught at A1."
+  },
+  {
+    "word": "relax",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used when talking about free time and leisure activities at A1."
+  },
+  {
+    "word": "remember",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb used constantly in instructions, reminders and everyday conversation."
+  },
+  {
+    "word": "repeat",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb in classroom language, as in 'please repeat that', very familiar to A1 learners."
+  },
+  {
+    "word": "report",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More common in academic or professional writing contexts, better suited to A2 or B1."
+  },
+  {
+    "word": "restaurant",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential everyday vocabulary for eating out, introduced very early in A1 courses."
+  },
+  {
+    "word": "result",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "More abstract noun often used in academic or formal contexts, better suited to A2."
+  },
+  {
+    "word": "return",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Can mean come back or give back, and the multiple senses may challenge A1 learners."
+  },
+  {
+    "word": "rice",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic food vocabulary taught early at A1, encountered constantly in everyday dining contexts."
+  },
+  {
+    "word": "rich",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective for describing wealth, introduced early as a simple opposite of poor."
+  },
+  {
+    "word": "ride",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb for bikes, horses and vehicles, used frequently in everyday A1 conversations."
+  },
+  {
+    "word": "right",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "High-frequency word used both as an adjective meaning correct and as a direction, essential at A1."
+  },
+  {
+    "word": "river",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core geography and nature vocabulary introduced at A1, used in descriptions and stories."
+  },
+  {
+    "word": "road",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about travel and directions."
+  },
+  {
+    "word": "room",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun used to describe parts of a home or building."
+  },
+  {
+    "word": "routine",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More abstract concept better suited for A2 when describing daily habits."
+  },
+  {
+    "word": "rule",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in school, games, and everyday social contexts."
+  },
+  {
+    "word": "run",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core action verb used constantly in physical activity and daily life."
+  },
+  {
+    "word": "sad",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic emotion adjective learned very early when describing feelings."
+  },
+  {
+    "word": "salad",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common food noun frequently encountered in restaurants and menus."
+  },
+  {
+    "word": "salt",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Everyday kitchen noun used when talking about food and cooking."
+  },
+  {
+    "word": "same",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core adjective used constantly when comparing things."
+  },
+  {
+    "word": "sandwich",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common food noun used when ordering food or describing meals."
+  },
+  {
+    "word": "saturday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core day of the week learned as part of basic calendar vocabulary."
+  },
+  {
+    "word": "say",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most frequently used verbs in everyday spoken English."
+  },
+  {
+    "word": "school",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core noun that A1 learners encounter immediately in learning materials."
+  },
+  {
+    "word": "science",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common school subject noun introduced early in educational contexts."
+  },
+  {
+    "word": "scientist",
+    "usabilityScore": 4,
+    "levelFit": "above",
+    "notes": "More specific occupational noun better suited for A2 vocabulary building."
+  },
+  {
+    "word": "sea",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about nature, travel, and holidays."
+  },
+  {
+    "word": "second",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core ordinal number and time unit used constantly in daily conversation."
+  },
+  {
+    "word": "section",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More formal noun better suited for A2 reading and writing contexts."
+  },
+  {
+    "word": "see",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental verbs used in almost every conversation."
+  },
+  {
+    "word": "sell",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used in shopping and market contexts at basic level."
+  },
+  {
+    "word": "send",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core verb used constantly for messages, emails, and packages."
+  },
+  {
+    "word": "sentence",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Basic grammar term introduced early in language learning materials."
+  },
+  {
+    "word": "september",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core month of the year learned as part of basic calendar vocabulary."
+  },
+  {
+    "word": "seven number",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core number that is one of the first things taught at A1 level."
+  },
+  {
+    "word": "seventeen number",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic teen number learned early as part of foundational number vocabulary."
+  },
+  {
+    "word": "seventy number",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Tens number learned as part of essential number vocabulary at A1."
+  },
+  {
+    "word": "share",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "More nuanced verb with multiple meanings better consolidated at A2 level."
+  },
+  {
+    "word": "she",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core pronoun introduced on the very first day of English learning."
+  },
+  {
+    "word": "sheep",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Basic animal noun commonly found in A1 vocabulary and picture books."
+  },
+  {
+    "word": "shirt",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core clothing noun used when describing what people are wearing."
+  },
+  {
+    "word": "shoe",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core clothing/accessory noun learned early in everyday vocabulary sets."
+  },
+  {
+    "word": "shop",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core noun and verb used constantly when talking about buying things."
+  },
+  {
+    "word": "shopping",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common activity noun used in everyday conversation about daily life."
+  },
+  {
+    "word": "short",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adjective used to describe height, length, and duration."
+  },
+  {
+    "word": "should",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common modal verb used for giving advice and making suggestions."
+  },
+  {
+    "word": "show",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core verb used when directing attention and a noun for performances."
+  },
+  {
+    "word": "shower",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun used when describing daily hygiene routines at home."
+  },
+  {
+    "word": "sick",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core adjective used to describe feeling unwell in everyday situations."
+  },
+  {
+    "word": "similar",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More sophisticated comparing adjective better suited for A2 level."
+  },
+  {
+    "word": "sing",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common action verb used in music, entertainment, and everyday contexts."
+  },
+  {
+    "word": "singer",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about music and performers."
+  },
+  {
+    "word": "sister",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word encountered very frequently in everyday conversation."
+  },
+  {
+    "word": "sit",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic everyday verb used in classroom and daily instructions constantly."
+  },
+  {
+    "word": "situation",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "Abstract noun more typical of B1+ contexts and formal communication."
+  },
+  {
+    "word": "six number",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core number word essential for counting and everyday communication."
+  },
+  {
+    "word": "sixteen number",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic number word needed for ages, quantities and everyday reference."
+  },
+  {
+    "word": "sixty number",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common number used for ages, prices and time expressions."
+  },
+  {
+    "word": "skill",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More suited to A2-B1 contexts when discussing abilities and work."
+  },
+  {
+    "word": "skirt",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic clothing vocabulary commonly taught in A1 coursebooks."
+  },
+  {
+    "word": "sleep",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb and noun used in daily routine descriptions."
+  },
+  {
+    "word": "slow",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic adjective used constantly to describe speed and pace."
+  },
+  {
+    "word": "small",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core adjective used to describe size in virtually all everyday contexts."
+  },
+  {
+    "word": "snake",
+    "usabilityScore": 5,
+    "levelFit": "perfect",
+    "notes": "Common animal word often introduced in A1 vocabulary sets."
+  },
+  {
+    "word": "snow",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic weather vocabulary word encountered frequently in everyday talk."
+  },
+  {
+    "word": "so",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely high-frequency linking word used in almost all spoken and written English."
+  },
+  {
+    "word": "some",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core determiner used constantly with uncountable and plural nouns."
+  },
+  {
+    "word": "somebody",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common indefinite pronoun used in everyday spoken English."
+  },
+  {
+    "word": "someone",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Very common indefinite pronoun used frequently in everyday conversation."
+  },
+  {
+    "word": "something",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency indefinite pronoun essential for basic everyday communication."
+  },
+  {
+    "word": "sometimes",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core adverb of frequency taught early and used constantly in daily talk."
+  },
+  {
+    "word": "son",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic family vocabulary word used frequently in everyday conversation."
+  },
+  {
+    "word": "song",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about music in everyday contexts."
+  },
+  {
+    "word": "soon",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "High-frequency adverb used in everyday conversation about future events."
+  },
+  {
+    "word": "sorry",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential social expression used constantly for apologies and politeness."
+  },
+  {
+    "word": "sound",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun and verb used in everyday descriptions and conversation."
+  },
+  {
+    "word": "soup",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic food vocabulary word commonly introduced in A1 coursebooks."
+  },
+  {
+    "word": "south",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic direction word used in everyday geography and giving directions."
+  },
+  {
+    "word": "space",
+    "usabilityScore": 6,
+    "levelFit": "above",
+    "notes": "Can mean outer space or room/area; the abstract uses are better suited to A2+."
+  },
+  {
+    "word": "speak",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb essential for talking about language and communication."
+  },
+  {
+    "word": "special",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used in everyday situations to describe occasions or items."
+  },
+  {
+    "word": "spell",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Essential classroom verb used constantly when learning and practicing English."
+  },
+  {
+    "word": "spelling",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common classroom noun frequently used in A1 language learning contexts."
+  },
+  {
+    "word": "spend",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used for talking about money and time in everyday life."
+  },
+  {
+    "word": "sport",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core topic word used constantly in everyday conversation and coursebooks."
+  },
+  {
+    "word": "spring",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic season word introduced early in A1 vocabulary sets."
+  },
+  {
+    "word": "stand",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic everyday verb used in physical instructions and daily situations."
+  },
+  {
+    "word": "star",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used for night sky and famous people in everyday talk."
+  },
+  {
+    "word": "start",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency everyday verb used constantly in instructions and conversation."
+  },
+  {
+    "word": "tomato",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common food vocabulary word frequently introduced in A1 coursebooks."
+  },
+  {
+    "word": "tomorrow",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core time expression used constantly when talking about future plans."
+  },
+  {
+    "word": "tonight",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Common time expression used in everyday plans and conversations."
+  },
+  {
+    "word": "too",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Very frequent adverb meaning 'also' or 'excessively', used constantly in daily speech."
+  },
+  {
+    "word": "tooth",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic body part word commonly introduced in early learner vocabulary sets."
+  },
+  {
+    "word": "topic",
+    "usabilityScore": 5,
+    "levelFit": "above",
+    "notes": "More of an academic or discussion word, better suited to B1 level learners."
+  },
+  {
+    "word": "tourist",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun encountered in travel contexts and everyday A1 situations."
+  },
+  {
+    "word": "town",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic place word used to describe where people live or visit."
+  },
+  {
+    "word": "traffic",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used when talking about roads, transport, and daily commuting."
+  },
+  {
+    "word": "train",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core transport vocabulary word met very frequently at beginner level."
+  },
+  {
+    "word": "travel",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic verb and noun used in everyday talk about moving between places."
+  },
+  {
+    "word": "tree",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common nature word introduced early in beginner vocabulary lists."
+  },
+  {
+    "word": "trip",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Everyday noun used to describe short journeys or excursions."
+  },
+  {
+    "word": "trousers",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core clothing vocabulary item commonly taught at A1 level."
+  },
+  {
+    "word": "true",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic adjective used constantly in everyday statements and responses."
+  },
+  {
+    "word": "try",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb used in a wide range of everyday situations."
+  },
+  {
+    "word": "t-shirt",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common clothing item word encountered frequently in daily life and learner materials."
+  },
+  {
+    "word": "tuesday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core day-of-the-week vocabulary essential for scheduling and daily conversation."
+  },
+  {
+    "word": "turn",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb used in directions, instructions, and everyday actions."
+  },
+  {
+    "word": "tv",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely common everyday word for television, used constantly by beginners."
+  },
+  {
+    "word": "twelve number",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core number word essential for telling time, dates, and basic counting."
+  },
+  {
+    "word": "twenty number",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential number word used in ages, prices, dates, and everyday quantities."
+  },
+  {
+    "word": "twice",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common frequency adverb used to express something happening two times."
+  },
+  {
+    "word": "two number",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental number words, used in virtually every context."
+  },
+  {
+    "word": "type",
+    "usabilityScore": 7,
+    "levelFit": "above",
+    "notes": "Can mean 'kind/sort' or 'to type on keyboard'; the noun sense is more A2-B1 level."
+  },
+  {
+    "word": "umbrella",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common everyday object word introduced when talking about weather at A1."
+  },
+  {
+    "word": "uncle",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core family vocabulary word taught at the very beginning of English learning."
+  },
+  {
+    "word": "under",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Basic preposition of place used constantly to describe positions of objects."
+  },
+  {
+    "word": "understand",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential verb for communication, used constantly even from the very first lessons."
+  },
+  {
+    "word": "university",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun for a place of higher education, frequently encountered at A1."
+  },
+  {
+    "word": "until",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common preposition and conjunction used to express time limits in everyday speech."
+  },
+  {
+    "word": "up",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Very high-frequency preposition and adverb used in countless everyday expressions."
+  },
+  {
+    "word": "upstairs",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common place adverb used when describing movement or location within a building."
+  },
+  {
+    "word": "us",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core pronoun used constantly as the object form of 'we' in everyday speech."
+  },
+  {
+    "word": "use",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely high-frequency verb essential for describing actions with objects or tools."
+  },
+  {
+    "word": "useful",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe the practical value of objects or information."
+  },
+  {
+    "word": "usually",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency adverb used to describe habitual actions in everyday conversation."
+  },
+  {
+    "word": "vacation",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common noun for holiday time off, widely used especially in American English contexts."
+  },
+  {
+    "word": "vegetable",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core food vocabulary word introduced early when talking about eating and shopping."
+  },
+  {
+    "word": "very",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Extremely high-frequency intensifier adverb used constantly in everyday speech."
+  },
+  {
+    "word": "video",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common modern word used when talking about media, phones, and the internet."
+  },
+  {
+    "word": "village",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common place word used to describe a small settlement, often taught alongside 'town' and 'city'."
+  },
+  {
+    "word": "visit",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb used when going to see a place or person."
+  },
+  {
+    "word": "visitor",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Noun referring to someone who visits a place or person."
+  },
+  {
+    "word": "wait",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb used constantly in daily situations like queues and appointments."
+  },
+  {
+    "word": "waiter",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in restaurant contexts when ordering food."
+  },
+  {
+    "word": "wake",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core daily verb typically used in phrases like 'wake up' in morning routines."
+  },
+  {
+    "word": "walk",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common verb for describing movement on foot in everyday contexts."
+  },
+  {
+    "word": "wall",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic noun used to describe a structural part of a room or building."
+  },
+  {
+    "word": "want",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core verb used constantly to express desires and requests at A1 level."
+  },
+  {
+    "word": "warm",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe temperature of weather, food, or objects."
+  },
+  {
+    "word": "wash",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Core daily routine verb used when talking about cleaning oneself or objects."
+  },
+  {
+    "word": "watch",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency verb and noun used for telling time and viewing media."
+  },
+  {
+    "word": "water",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential everyday noun and one of the most basic vocabulary items at A1."
+  },
+  {
+    "word": "way",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common noun used when asking for directions or describing how to do something."
+  },
+  {
+    "word": "we",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core subject pronoun used constantly in basic everyday communication."
+  },
+  {
+    "word": "wear",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common verb used when talking about clothes in everyday conversation."
+  },
+  {
+    "word": "weather",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common noun used in one of the most typical A1 conversation topics."
+  },
+  {
+    "word": "website",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common modern noun used in everyday digital contexts and giving information."
+  },
+  {
+    "word": "wednesday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential day-of-the-week noun needed for basic scheduling and calendar talk."
+  },
+  {
+    "word": "week",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core time expression used constantly when planning and talking about schedules."
+  },
+  {
+    "word": "weekend",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common noun used when talking about free time and social plans."
+  },
+  {
+    "word": "welcome",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core exclamation and adjective used in greetings and polite responses like 'you're welcome'."
+  },
+  {
+    "word": "well",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency adverb and discourse marker used in responses and descriptions of health."
+  },
+  {
+    "word": "west",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Basic direction word used when giving or following directions."
+  },
+  {
+    "word": "what",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential question word used constantly in basic questions at A1 level."
+  },
+  {
+    "word": "when",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core question word used in almost every type of basic daily conversation."
+  },
+  {
+    "word": "where",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Essential question word used constantly when asking about location and directions."
+  },
+  {
+    "word": "which",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common question word used when choosing between options in everyday situations."
+  },
+  {
+    "word": "white",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic colour adjective used when describing objects, clothes, and food."
+  },
+  {
+    "word": "who",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core question word used to ask about people in everyday conversation."
+  },
+  {
+    "word": "why",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential question word used to ask for reasons in basic daily communication."
+  },
+  {
+    "word": "wife",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common family vocabulary noun used when talking about relationships and family."
+  },
+  {
+    "word": "will",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core modal verb used to talk about future plans and intentions at A1 level."
+  },
+  {
+    "word": "win",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common verb used in contexts of games, sports, and competitions."
+  },
+  {
+    "word": "window",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic everyday noun used to describe part of a room, house, or vehicle."
+  },
+  {
+    "word": "wine",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun used in restaurant and social dining contexts."
+  },
+  {
+    "word": "winter",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic season noun used when talking about weather and time of year."
+  },
+  {
+    "word": "with",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core preposition used constantly to show accompaniment and association."
+  },
+  {
+    "word": "without",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Common preposition used to express absence or lack of something."
+  },
+  {
+    "word": "woman",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core everyday noun used to refer to an adult female person."
+  },
+  {
+    "word": "wonderful",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common positive adjective used to express strong approval or admiration."
+  },
+  {
+    "word": "word",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common noun used constantly in language learning and everyday conversation."
+  },
+  {
+    "word": "work",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core everyday verb and noun referring to employment or tasks."
+  },
+  {
+    "word": "worker",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common noun referring to a person who works, often used in basic descriptions."
+  },
+  {
+    "word": "world",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "High-frequency noun used in everyday topics like geography and general conversation."
+  },
+  {
+    "word": "would",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core modal verb used for requests, offers, and polite expressions at A1 level."
+  },
+  {
+    "word": "write",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core verb learned early in language study for basic literacy and communication tasks."
+  },
+  {
+    "word": "writer",
+    "usabilityScore": 6,
+    "levelFit": "perfect",
+    "notes": "Common noun for a person who writes, often introduced when discussing jobs and hobbies."
+  },
+  {
+    "word": "writing",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Frequently encountered noun and gerund in school and everyday communication contexts."
+  },
+  {
+    "word": "wrong",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Essential adjective used constantly to express errors or disagreement in daily life."
+  },
+  {
+    "word": "yeah",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Very common informal exclamation equivalent to yes, heard constantly in spoken English."
+  },
+  {
+    "word": "year",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core time word used constantly when discussing dates, age, and schedules."
+  },
+  {
+    "word": "yellow",
+    "usabilityScore": 8,
+    "levelFit": "perfect",
+    "notes": "Basic colour word introduced very early in A1 vocabulary sets."
+  },
+  {
+    "word": "yes",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most fundamental response words in English, essential at A1."
+  },
+  {
+    "word": "yesterday",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Core time adverb used frequently when talking about past events in simple conversations."
+  },
+  {
+    "word": "you",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "One of the most essential pronouns in English, used in virtually every conversation."
+  },
+  {
+    "word": "young",
+    "usabilityScore": 9,
+    "levelFit": "perfect",
+    "notes": "Common adjective used to describe age, appearing frequently in everyday descriptions."
+  },
+  {
+    "word": "your",
+    "usabilityScore": 10,
+    "levelFit": "perfect",
+    "notes": "Core possessive determiner used constantly in basic questions and everyday interactions."
+  },
+  {
+    "word": "yourself",
+    "usabilityScore": 7,
+    "levelFit": "perfect",
+    "notes": "Common reflexive pronoun introduced at A1 in phrases like 'help yourself' or 'tell me about yourself'."
+  }
+]

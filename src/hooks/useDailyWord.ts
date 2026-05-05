@@ -1,54 +1,112 @@
-import { useEffect, useState } from 'react'
-import { useCurrentUser } from '@store/userStore'
-import { useWordStore } from '@store/wordStore'
-import { useProgressStore } from '@store/progressStore'
-import { fetchWordsByLevelAndField } from '@services/vocabularyService'
-import { selectDailyWords } from '@utils/wordSelector'
-import { isToday } from '@utils/dateUtils'
-import type { Word } from '@/types'
-import { GUEST_WORDS_LIMIT } from '@constants/spacedRepetition'
+import { useEffect, useState } from "react";
+import { useCurrentUser } from "@store/userStore";
+import { useWordStore } from "@store/wordStore";
+import { useProgressStore } from "@store/progressStore";
+import { fetchWordsByLevel } from "@services/vocabularyService";
+import { selectDailyWords } from "@utils/wordSelector";
+import { isToday } from "@utils/dateUtils";
+import type { Word } from "@/types";
+import { GUEST_WORDS_LIMIT } from "@constants/spacedRepetition";
 
 interface UseDailyWordReturn {
-  words: Word[]
-  isLoading: boolean
-  error: string | null
-  refresh: () => void
+  words: Word[];
+  isLoading: boolean;
+  error: string | null;
+  refresh: () => void;
 }
 
 export function useDailyWord(): UseDailyWordReturn {
-  const user = useCurrentUser()
-  const { todaysWords, lastFetchedDate, setTodaysWords } = useWordStore()
-  const { userWords } = useProgressStore()
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const user = useCurrentUser();
+  console.log(user);
+  const {
+    todaysWords,
+    lastFetchedDate,
+    setTodaysWords,
+    isDailySessionCompleted,
+  } = useWordStore();
+  const { userWords } = useProgressStore();
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const load = async () => {
-    if (!user) return
-    if (lastFetchedDate && isToday(lastFetchedDate) && todaysWords.length > 0) return
+    if (!user) return;
 
-    setIsLoading(true)
-    setError(null)
+    const cachedFromToday = !!lastFetchedDate && isToday(lastFetchedDate);
+
+    // Continue an in-progress session, but only if it was started today —
+    // otherwise yesterday's stale 5 words would get reused.
+    if (cachedFromToday && todaysWords.length > 0 && !isDailySessionCompleted) {
+      console.log("Using pending uncompleted session");
+      return;
+    }
+
+    if (cachedFromToday && isDailySessionCompleted) {
+      console.log("Word coming from cache (session already completed today)");
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
 
     try {
-      const allWords = await fetchWordsByLevelAndField(user.level, user.fields)
-      const limit = user.isGuest ? GUEST_WORDS_LIMIT : undefined
-      const selected = selectDailyWords(allWords, userWords, user.level, user.fields, limit)
-      setTodaysWords(selected)
+      console.log("----------------------------------");
+      const allWords = await fetchWordsByLevel(user.level);
+      const limit = user.isGuest ? GUEST_WORDS_LIMIT : undefined;
+      const selected = selectDailyWords(allWords, userWords, user.level, limit);
+
+      console.log(
+        `[useDailyWord] selectDailyWords returned ${selected.length} words to process`,
+      );
+
+      // Promote purely 'new' selections to 'learning'
+      const { updateUserWord } = useProgressStore.getState();
+      const { upsertUserWord } = require("@services/vocabularyService");
+
+      for (const w of selected) {
+        console.log("Loop is working for populating userwords");
+        const uw = userWords[w.id];
+        if (!uw || uw.status === "new") {
+          const payload = {
+            userId: user.id || "guest",
+            wordId: w.id,
+            status: "learning" as const,
+            nextReviewDate: uw?.nextReviewDate || new Date().toISOString(),
+            intervalIndex: (uw?.intervalIndex ?? 0) as any,
+            totalAttempts: uw?.totalAttempts || 0,
+            correctAttempts: Number(uw?.correctAttempts) || 0,
+          };
+
+          if (user.id !== "guest") {
+            upsertUserWord({ ...payload, id: uw?.id || "" })
+              .then((savedWord: any) => updateUserWord(savedWord))
+              .catch((err: any) =>
+                console.warn("Failed to create/upgrade word to learning:", err),
+              );
+          } else {
+            updateUserWord({
+              ...payload,
+              id: uw?.id || Math.random().toString().slice(2),
+            });
+          }
+        }
+      }
+
+      setTodaysWords(selected);
     } catch (e) {
-      setError('Failed to load today\'s words. Please try again.')
+      setError("Failed to load today's words. Please try again.");
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
-    load()
-  }, [user?.id])
+    load();
+  }, [user?.id]);
 
   return {
     words: todaysWords,
     isLoading,
     error,
     refresh: load,
-  }
+  };
 }

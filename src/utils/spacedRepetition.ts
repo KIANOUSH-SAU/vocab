@@ -31,12 +31,12 @@ export function getWordStatusAfterAnswer(
     status,
     intervalIndex,
     nextReviewDate: getNextReviewDate(intervalIndex),
-    totalAttempts: current.totalAttempts + 1,
-    correctAttempts: current.correctAttempts + (correct ? 1 : 0),
+    totalAttempts: Number(current.totalAttempts) + 1,
+    correctAttempts: Number(current.correctAttempts) + (correct ? 1 : 0),
   }
 }
 
 export function getAccuracyPercent(userWord: UserWord): number {
   if (userWord.totalAttempts === 0) return 0
-  return Math.round((userWord.correctAttempts / userWord.totalAttempts) * 100)
+  return Math.round((Number(userWord.correctAttempts) / Number(userWord.totalAttempts)) * 100)
 }
