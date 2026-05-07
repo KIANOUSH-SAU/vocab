@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Audio } from "expo-av";
 import * as Speech from "expo-speech";
-import { generateSpeech } from "@services/ttsService";
+import { generateSpeech, getCustomVoiceId } from "@services/ttsService";
 import { useCurrentUser } from "@store/userStore";
 import { useWordStore } from "@store/wordStore";
 
@@ -47,13 +47,23 @@ export function useAudio(): UseAudioReturn {
       setAudioState("loading");
 
       try {
-        const voiceId = user?.voiceStyleId;
+        // Use custom voice ID as fallback if user's voiceStyleId is empty
+        const voiceId = user?.voiceStyleId || getCustomVoiceId() || "";
         const key = cacheKey ?? `tts-${text.slice(0, 20)}`;
         let uri = cacheKey ? audioCache[key] : undefined;
 
+        console.log('[Audio] ====== PLAY START ======')
+        console.log('[Audio] User:', user)
+        console.log('[Audio] User Voice ID (raw):', user?.voiceStyleId)
+        console.log('[Audio] Custom Voice ID:', getCustomVoiceId())
+        console.log('[Audio] Final Voice ID:', voiceId)
+        console.log('[Audio] Has Cache Entry:', !!uri)
+
         if (!uri && voiceId) {
           try {
+            console.log('[Audio] Calling generateSpeech...')
             uri = await generateSpeech(text, voiceId);
+            console.log('[Audio] Got URI:', uri)
             if (cacheKey && uri) cacheAudio(key, uri);
           } catch (err) {
             console.warn(

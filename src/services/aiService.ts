@@ -3,6 +3,7 @@ import type { Word, Field, Level, WordScore, PartOfSpeech } from '@/types'
 
 const anthropic = new Anthropic({
   apiKey: process.env.EXPO_PUBLIC_CLAUDE_API_KEY,
+   dangerouslyAllowBrowser: true,
 })
 
 /** Score a batch of words for field relevance and usability (preprocessing script use only) */

@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { router } from "expo-router";
 import { useUserStore } from "@store/userStore";
 import { useProgressStore } from "@store/progressStore";
+import { getCustomVoiceId } from "@services/ttsService";
 import {
   signUp,
   login,
@@ -126,7 +127,7 @@ export function useAuthForm() {
       name: appwriteUser.name || name,
       email: appwriteUser.email,
       level,
-      voiceStyleId: "",
+      voiceStyleId: getCustomVoiceId() ?? "",
       isGuest: false,
       avatarFileId: dbUser?.avatarFileId ?? null,
     });
@@ -198,7 +199,7 @@ export function useAuthForm() {
             name: name.trim(),
             email: email.trim(),
             level: pendingOnboardingData?.level ?? "A1",
-            voiceStyleId: "",
+            voiceStyleId: getCustomVoiceId() ?? "",
           });
         } catch (err) {
           console.error(

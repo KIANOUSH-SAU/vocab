@@ -13,6 +13,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { useUserStore } from "@store/userStore";
 import { updateUserDocument } from "@services/appwriteService";
+import { getCustomVoiceId } from "@services/ttsService";
 import { LEVELS } from "@constants/levels";
 import { colors, spacing, radii, shadows, fonts } from "@constants/theme";
 import { MaxWidthContainer } from "@components/ui/MaxWidthContainer";
@@ -70,7 +71,7 @@ export default function LevelResultScreen() {
         id: "guest",
         name: "Guest",
         level: level ?? "A1",
-        voiceStyleId: "",
+        voiceStyleId: getCustomVoiceId() ?? "",
         isGuest: true,
       });
       router.replace("/(tabs)/home");
