@@ -585,6 +585,22 @@ export default function ProfileScreen() {
         <View style={styles.section}>
           <SectionLabel title="ACCOUNT" />
           <Pressable
+            onPress={() => {
+              useWordStore.getState().reset()
+              alert("Cache cleared! Please go to the Learn tab to fetch fresh words.")
+            }}
+            style={({ pressed }) => [
+              styles.logoutBtn,
+              pressed && { opacity: 0.85 },
+              { backgroundColor: colors.irisSoft, marginBottom: 8 }
+            ]}
+          >
+            <Ionicons name="refresh-outline" size={18} color={colors.iris} />
+            <Text style={[styles.logoutText, { color: colors.iris }]}>
+              Sync Latest Words
+            </Text>
+          </Pressable>
+          <Pressable
             onPress={handleLogout}
             disabled={isLoggingOut}
             style={({ pressed }) => [

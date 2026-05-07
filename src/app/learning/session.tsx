@@ -1204,11 +1204,15 @@ export default function LearningSession() {
   const user = useCurrentUser();
 
   useEffect(() => {
-    if (isComplete) {
+    // Guard against the empty-queue race: if a user navigates here before
+    // todaysWords is populated, useExerciseSession could otherwise report
+    // isComplete=true with zero cards answered, which would falsely set
+    // lastActiveDate / sessionDates on Appwrite.
+    if (isComplete && todaysWords.length > 0) {
       setDailySessionCompleted(true);
       checkAndUpdateStreak(user?.id);
     }
-  }, [isComplete, user?.id]);
+  }, [isComplete, user?.id, todaysWords.length]);
 
   // Loading state
   if (todaysWords.length === 0) {

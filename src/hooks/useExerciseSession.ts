@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import type { Word, ExerciseCard, ExerciseType, SessionStats } from '@/types'
 import { useSpacedRepetition } from './useSpacedRepetition'
 import { generateWrongAnswerExplanation } from '@services/aiService'
@@ -13,7 +13,7 @@ const EXERCISE_TYPES: ExerciseType[] = [
 
 function buildQueue(words: Word[]): ExerciseCard[] {
   return words.flatMap((word, i) =>
-    EXERCISE_TYPES.slice(0, 2).map((type, j) => ({
+    ['swipe' as ExerciseType].map((type, j) => ({
       id: `${word.id}-${j}`,
       type,
       word,
@@ -35,7 +35,11 @@ interface UseExerciseSessionReturn {
 }
 
 export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
-  const [queue] = useState(() => buildQueue(words))
+  // Rebuild the queue whenever the source words actually change (e.g. when
+  // the screen mounts before useDailyWord has populated todaysWords). Without
+  // this, an empty initial queue would lock the session into a permanent
+  // "complete" state and prematurely flip isDailySessionCompleted.
+  const queue = useMemo(() => buildQueue(words), [words])
   const [index, setIndex] = useState(0)
   const [stats, setStats] = useState<SessionStats>({
     correct: 0, wrong: 0, skipped: 0,
@@ -48,7 +52,9 @@ export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
   const user = useCurrentUser()
 
   const currentCard = index < queue.length ? queue[index] : null
-  const isComplete = index >= queue.length
+  // An empty queue must NOT count as "complete" — that path would mark the
+  // daily session done without the user ever answering a card.
+  const isComplete = queue.length > 0 && index >= queue.length
 
   const advance = useCallback(() => setIndex((i) => i + 1), [])
 

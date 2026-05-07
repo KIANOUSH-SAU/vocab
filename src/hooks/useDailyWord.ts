@@ -40,9 +40,23 @@ export function useDailyWord(): UseDailyWordReturn {
       return;
     }
 
-    if (cachedFromToday && isDailySessionCompleted) {
+    // Skip the network only when we already have a complete word list to
+    // show. If todaysWords is empty (e.g. a previous run wrote an empty
+    // array, or the persisted cache got corrupted by an earlier bug), fall
+    // through to fetch so the user is never stuck on an empty Learn tab.
+    if (
+      cachedFromToday &&
+      isDailySessionCompleted &&
+      todaysWords.length > 0
+    ) {
       console.log("Word coming from cache (session already completed today)");
       return;
+    }
+
+    // Self-heal: a stale "completed" flag with no words is impossible by
+    // construction, so clear it before refetching.
+    if (isDailySessionCompleted && todaysWords.length === 0) {
+      useWordStore.getState().setDailySessionCompleted(false);
     }
 
     setIsLoading(true);

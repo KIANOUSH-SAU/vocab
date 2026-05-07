@@ -4,17 +4,18 @@
  *
  *   1. Missing phonetics  — phonetic field is empty or missing
  *   2. Nonsensical words   — multi-word entries that aren't real vocabulary
- *                            (e.g. "five number", "go bus")
  *   3. Missing content     — definition, exampleSentence, or contextPassage
  *                            are empty / too short to be useful
  *
- * Flagged words are deleted from BOTH the `words` and `userwords` collections
- * so they're fully purged from the app.
+ * It ALSO verifies the part of speech and content with Claude AI.
+ * If a word passes basic checks, Claude determines the most common part of speech,
+ * generates a level-appropriate definition, example, and context.
+ * The word document is then updated in Appwrite and marked as `aiVerified: true`.
  *
  * Usage:
  *   npx tsx scripts/wordSifter.ts                       # audit all levels
  *   npx tsx scripts/wordSifter.ts --level A1            # audit only A1
- *   npx tsx scripts/wordSifter.ts --dry-run             # preview, no deletes
+ *   npx tsx scripts/wordSifter.ts --dry-run             # preview, no deletes/updates
  *   npx tsx scripts/wordSifter.ts --level A1 --yes      # skip confirmation
  *   npx tsx scripts/wordSifter.ts --keep-log            # save report to data/
  *
@@ -23,9 +24,11 @@
  *   APPWRITE_PROJECT_ID      (or EXPO_PUBLIC_APPWRITE_PROJECT_ID)
  *   APPWRITE_DATABASE_ID     (or EXPO_PUBLIC_APPWRITE_DATABASE_ID)
  *   APPWRITE_API_KEY         (server-side key — NOT EXPO_PUBLIC)
+ *   ANTHROPIC_API_KEY        (or EXPO_PUBLIC_CLAUDE_API_KEY)
  */
 
 import { Client, Databases, Query } from "node-appwrite";
+import Anthropic from "@anthropic-ai/sdk";
 import * as readline from "readline";
 import * as fs from "fs";
 import * as path from "path";
@@ -39,6 +42,33 @@ const WORDS_COLLECTION = process.env.APPWRITE_WORDS_COLLECTION_ID || "words";
 const USER_WORDS_COLLECTION =
   process.env.APPWRITE_USER_WORDS_COLLECTION_ID || "userwords";
 const PAGE_SIZE = 100;
+const CONTEXT_BATCH_SIZE = 10;
+const MAX_CLAUDE_RETRIES = 4;
+const MAX_APPWRITE_RETRIES = 4;
+
+const LEVEL_RULES: Record<string, string> = {
+  A1: `A1 learners know ~500 of the most common English words. Rules:
+- Use ONLY the simplest everyday words (is, has, go, see, eat, big, small, good, bad, me, you, it, this, that).
+- Sentences should be 5-8 words, mostly present simple. Avoid relative clauses.
+- No idioms, no phrasal verbs, no abstract nouns.
+- Definitions should read like they were written for a 6-year-old.`,
+  A2: `A2 learners know ~1000 common words. Rules:
+- Everyday vocabulary only. Simple past and future ("will", "going to") are fine.
+- Sentences 8-12 words. One clause per sentence, no nested clauses.
+- Avoid idioms and academic language.`,
+  B1: `B1 learners know ~2000 words. Rules:
+- Use normal conversational vocabulary. Compound sentences are fine.
+- Modals (can, should, might) and common phrasal verbs are OK.
+- Avoid rare or technical vocabulary. Keep sentences ≤ 20 words.`,
+  B2: `B2 learners know ~4000 words. Rules:
+- Full range of everyday vocabulary + some abstract/academic words.
+- Complex sentences, subordinate clauses, passive voice are fine.
+- Avoid highly formal legal / scientific jargon unless the word itself is specialized.`,
+  C1: `C1 learners are advanced. Rules:
+- Use a wide vocabulary including less common synonyms and nuanced terms.
+- Complex sentence structures, collocations, and register variation are expected.
+- Definitions can explain connotation and typical contexts. Avoid dumbing things down.`,
+};
 
 // ─── Reason codes ────────────────────────────────────────────────────────────
 
@@ -56,6 +86,13 @@ interface FlaggedWord {
   level: string;
   phonetic: string;
   reasons: FlagReason[];
+}
+
+interface VerifyWord {
+  id: string;
+  word: string;
+  level: string;
+  partOfSpeech: string;
 }
 
 // ─── CLI args ────────────────────────────────────────────────────────────────
@@ -120,114 +157,43 @@ function createClient() {
   return { databases: new Databases(client), dbId };
 }
 
-// ─── Quality checks ──────────────────────────────────────────────────────────
-
-/**
- * Well-known multi-word vocabulary that should NOT be flagged:
- * phrasal verbs, compound nouns, fixed expressions.
- */
-const ALLOWED_MULTI_WORD = new Set([
-  // Common phrasal verbs
-  "pick up",
-  "give up",
-  "look for",
-  "look up",
-  "come back",
-  "go back",
-  "get up",
-  "get on",
-  "get off",
-  "get out",
-  "get in",
-  "turn on",
-  "turn off",
-  "take off",
-  "put on",
-  "put down",
-  "put up",
-  "come in",
-  "go out",
-  "sit down",
-  "stand up",
-  "wake up",
-  "find out",
-  "work out",
-  "make up",
-  "break down",
-  "set up",
-  "run out",
-  "carry on",
-  "hang out",
-  "show up",
-  "bring up",
-  "point out",
-  "give back",
-  "come up",
-  "go on",
-  "take on",
-  "take up",
-  "let down",
-  "look after",
-  "look out",
-  "call off",
-  "shut down",
-  "throw away",
-  "check in",
-  "check out",
-  "grow up",
-  "pass out",
-  "slow down",
-  "speed up",
-  "sign up",
-  "log in",
-  "log out",
-  "sign in",
-  "sign out",
-  // Common compound nouns / fixed phrases
-  "ice cream",
-  "living room",
-  "post office",
-  "traffic light",
-  "bus stop",
-  "airport",
-  "high school",
-  "credit card",
-  "shopping center",
-  "washing machine",
-  "remote control",
-  "cell phone",
-  "coffee shop",
-  "swimming pool",
-  "parking lot",
-  "bus station",
-  "train station",
-  "fire station",
-  "police station",
-  "of course",
-  "a lot",
-  "as well",
-  "each other",
-  "in fact",
-  "at least",
-  "at first",
-  "so far",
-]);
-
-/**
- * Check if a word entry is a nonsensical multi-word expression.
- * Returns true if the word contains spaces and is NOT in our allowlist.
- */
-function isNonsensicalMultiWord(word: string): boolean {
-  const trimmed = word.trim().toLowerCase();
-  if (!trimmed.includes(" ")) return false; // single word — fine
-  if (ALLOWED_MULTI_WORD.has(trimmed)) return false; // known phrase — fine
-  return true; // multi-word and not recognized — flag it
+function createAnthropic() {
+  const apiKey =
+    process.env.ANTHROPIC_API_KEY || process.env.EXPO_PUBLIC_CLAUDE_API_KEY;
+  if (!apiKey) {
+    console.error(
+      "Missing required environment variable: ANTHROPIC_API_KEY or EXPO_PUBLIC_CLAUDE_API_KEY",
+    );
+    process.exit(1);
+  }
+  return new Anthropic({ apiKey });
 }
 
-/**
- * Run all quality checks against a word document.
- * Returns an array of reasons it should be flagged, or empty if it passes.
- */
+// ─── Quality checks ──────────────────────────────────────────────────────────
+
+const ALLOWED_MULTI_WORD = new Set([
+  "pick up", "give up", "look for", "look up", "come back", "go back", "get up",
+  "get on", "get off", "get out", "get in", "turn on", "turn off", "take off",
+  "put on", "put down", "put up", "come in", "go out", "sit down", "stand up",
+  "wake up", "find out", "work out", "make up", "break down", "set up", "run out",
+  "carry on", "hang out", "show up", "bring up", "point out", "give back", "come up",
+  "go on", "take on", "take up", "let down", "look after", "look out", "call off",
+  "shut down", "throw away", "check in", "check out", "grow up", "pass out",
+  "slow down", "speed up", "sign up", "log in", "log out", "sign in", "sign out",
+  "ice cream", "living room", "post office", "traffic light", "bus stop", "airport",
+  "high school", "credit card", "shopping center", "washing machine", "remote control",
+  "cell phone", "coffee shop", "swimming pool", "parking lot", "bus station",
+  "train station", "fire station", "police station", "of course", "a lot", "as well",
+  "each other", "in fact", "at least", "at first", "so far",
+]);
+
+function isNonsensicalMultiWord(word: string): boolean {
+  const trimmed = word.trim().toLowerCase();
+  if (!trimmed.includes(" ")) return false;
+  if (ALLOWED_MULTI_WORD.has(trimmed)) return false;
+  return true;
+}
+
 function auditWord(doc: Record<string, any>): FlagReason[] {
   const reasons: FlagReason[] = [];
 
@@ -237,35 +203,17 @@ function auditWord(doc: Record<string, any>): FlagReason[] {
   const example = (doc.exampleSentence ?? "").trim();
   const context = (doc.contextPassage ?? "").trim();
 
-  // 1. Missing phonetics
-  if (!phonetic || phonetic === "/.../") {
-    reasons.push("missing_phonetic");
-  }
-
-  // 2. Nonsensical multi-word entry
-  if (isNonsensicalMultiWord(word)) {
-    reasons.push("nonsensical_word");
-  }
-
-  // 3. Missing core content
-  if (!definition) {
-    reasons.push("missing_definition");
-  } else if (definition.length < 10) {
-    reasons.push("too_short_definition");
-  }
-
-  if (!example) {
-    reasons.push("missing_example");
-  }
-
-  if (!context) {
-    reasons.push("missing_context");
-  }
+  if (!phonetic || phonetic === "/.../") reasons.push("missing_phonetic");
+  if (isNonsensicalMultiWord(word)) reasons.push("nonsensical_word");
+  if (!definition) reasons.push("missing_definition");
+  else if (definition.length < 10) reasons.push("too_short_definition");
+  if (!example) reasons.push("missing_example");
+  if (!context) reasons.push("missing_context");
 
   return reasons;
 }
 
-// ─── Confirmation prompt ─────────────────────────────────────────────────────
+// ─── Confirmation & Retry ────────────────────────────────────────────────────
 
 function confirm(question: string): Promise<boolean> {
   const rl = readline.createInterface({
@@ -280,34 +228,78 @@ function confirm(question: string): Promise<boolean> {
   });
 }
 
-// ─── Retry helper ────────────────────────────────────────────────────────────
-
-const MAX_RETRIES = 4;
-
-async function withRetry<T>(fn: () => Promise<T>, label: string): Promise<T> {
+async function withRetry<T>(fn: () => Promise<T>, label: string, isAppwrite = true): Promise<T> {
   let lastErr: any = null;
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+  const max = isAppwrite ? MAX_APPWRITE_RETRIES : MAX_CLAUDE_RETRIES;
+  for (let attempt = 1; attempt <= max; attempt++) {
     try {
       return await fn();
     } catch (err: any) {
       lastErr = err;
-      const code = err?.code ?? err?.response?.code;
+      const code = isAppwrite ? (err?.code ?? err?.response?.code) : (err?.status ?? err?.response?.status);
       const isTransient =
         code === undefined ||
         code === 429 ||
         code === 500 ||
         code === 502 ||
         code === 503 ||
-        code === 504;
-      if (!isTransient || attempt >= MAX_RETRIES) throw err;
-      const delay = 1000 * Math.pow(2, attempt - 1);
-      console.warn(
-        `  ${label} attempt ${attempt}/${MAX_RETRIES} failed (code ${code ?? "network"}). Retrying in ${delay / 1000}s...`,
-      );
+        code === 504 ||
+        code === 529;
+      if (!isTransient || attempt >= max) throw err;
+      const delay = (isAppwrite ? 1000 : 2000) * Math.pow(2, attempt - 1);
+      console.warn(`  ${label} attempt ${attempt}/${max} failed (code ${code ?? "network"}). Retrying in ${delay / 1000}s...`);
       await new Promise((r) => setTimeout(r, delay));
     }
   }
   throw lastErr ?? new Error("unreachable");
+}
+
+function extractJsonArray(text: string): any[] | null {
+  const match = text.match(/\[[\s\S]*\]/);
+  if (!match) return null;
+  try {
+    const parsed = JSON.parse(match[0]);
+    return Array.isArray(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+// ─── AI Verification ─────────────────────────────────────────────────────────
+
+async function verifyWithClaude(anthropic: Anthropic, words: VerifyWord[], level: string): Promise<any[]> {
+  const wordList = words
+    .map((w) => `- "${w.word}" (current part of speech: ${w.partOfSpeech})`)
+    .join("\n");
+
+  const prompt = `You are a vocabulary content writer for an English learning app. Your output is for CEFR ${level} learners.
+
+${LEVEL_RULES[level]}
+
+For each word below, do the following:
+1. Determine the MOST COMMON part of speech for the word (e.g., "get" is mostly used as a "verb").
+2. Use the most common part of speech. If the current part of speech is already a common/valid part of speech for the word, you can keep it, but if it is usually used as a different part of speech (like "get" is mostly a verb, not a noun), change it to the most common one.
+3. Generate a level-appropriate definition, exampleSentence, contextPassage, and 3 distractors using the MOST COMMON part of speech.
+
+Output ONLY a JSON array, no markdown fences, no commentary. You MUST return exactly ${words.length} items, one per input word, in the SAME order.
+Return format:
+[{"word":"...","partOfSpeech":"...","definition":"...","exampleSentence":"...","contextPassage":"...","distractors":["...","...","..."]}]
+
+Words:
+${wordList}`;
+
+  const text = await withRetry(async () => {
+    const msg = await anthropic.messages.create({
+      model: "claude-sonnet-4-6",
+      max_tokens: 4096,
+      messages: [{ role: "user", content: prompt }],
+    });
+    const block = msg.content[0];
+    return block && block.type === "text" ? block.text : "";
+  }, `Claude batch for ${level}`, false);
+
+  const parsed = extractJsonArray(text);
+  return parsed || [];
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
@@ -315,12 +307,13 @@ async function withRetry<T>(fn: () => Promise<T>, label: string): Promise<T> {
 async function main() {
   const { level, dryRun, yes, keepLog } = parseArgs();
   const { databases, dbId } = createClient();
+  const anthropic = createAnthropic();
 
   const scopeLabel = level ? `level ${level}` : "ALL LEVELS";
 
-  console.log(`\n🔍 Word Sifter — auditing ${scopeLabel}`);
+  console.log(`\n🔍 Word Sifter — auditing and verifying ${scopeLabel}`);
   console.log(`   Collections: ${WORDS_COLLECTION}, ${USER_WORDS_COLLECTION}`);
-  if (dryRun) console.log("   MODE: dry run (no deletes)\n");
+  if (dryRun) console.log("   MODE: dry run (no deletes or updates)\n");
   else console.log("");
 
   // ── Step 1: Fetch all word documents ──────────────────────────────────────
@@ -349,191 +342,197 @@ async function main() {
 
   console.log(`  Found ${allDocs.length} word(s) in scope.\n`);
 
-  // ── Step 2: Audit each word ───────────────────────────────────────────────
+  // ── Step 2: Basic Audit & Separate for AI Verification ────────────────────
 
-  const flagged: FlaggedWord[] = [];
+  const flaggedForDelete: FlaggedWord[] = [];
+  const queuedForAI: Record<string, VerifyWord[]> = {};
 
   for (const doc of allDocs) {
     const reasons = auditWord(doc);
     if (reasons.length > 0) {
-      flagged.push({
+      flaggedForDelete.push({
         id: doc.$id,
         word: doc.word ?? "(unknown)",
         level: doc.level ?? "?",
         phonetic: doc.phonetic ?? "",
         reasons,
       });
+    } else if (doc.aiVerified !== true) { // Needs verification
+      const lvl = doc.level ?? "B1";
+      if (!queuedForAI[lvl]) queuedForAI[lvl] = [];
+      queuedForAI[lvl].push({
+        id: doc.$id,
+        word: doc.word ?? "",
+        level: lvl,
+        partOfSpeech: doc.partOfSpeech ?? "other",
+      });
     }
   }
 
-  // ── Step 3: Report ────────────────────────────────────────────────────────
+  const aiTotalCount = Object.values(queuedForAI).reduce((sum, arr) => sum + arr.length, 0);
+
+  // ── Step 3: Delete Report ─────────────────────────────────────────────────
 
   console.log("═══════════════════════════════════════════════════");
-  console.log("  AUDIT RESULTS");
+  console.log("  BASIC AUDIT RESULTS (For Deletion)");
   console.log("═══════════════════════════════════════════════════\n");
   console.log(`  Total words scanned: ${allDocs.length}`);
-  console.log(`  Clean:               ${allDocs.length - flagged.length}`);
-  console.log(`  Flagged for removal: ${flagged.length}\n`);
+  console.log(`  Flagged for removal: ${flaggedForDelete.length}`);
+  console.log(`  Queued for AI check: ${aiTotalCount}\n`);
 
-  if (flagged.length === 0) {
-    console.log("  ✅ All words passed quality checks. Nothing to purge.\n");
-    return;
-  }
-
-  // Breakdown by reason
-  const reasonCounts: Record<FlagReason, number> = {
-    missing_phonetic: 0,
-    nonsensical_word: 0,
-    missing_definition: 0,
-    missing_example: 0,
-    missing_context: 0,
-    too_short_definition: 0,
-  };
-  for (const f of flagged) {
-    for (const r of f.reasons) reasonCounts[r]++;
-  }
-
-  console.log("  Reason breakdown:");
-  const reasonLabels: Record<FlagReason, string> = {
-    missing_phonetic: "Missing phonetic",
-    nonsensical_word: "Nonsensical / multi-word",
-    missing_definition: "Missing definition",
-    missing_example: "Missing example sentence",
-    missing_context: "Missing context passage",
-    too_short_definition: "Too-short definition",
-  };
-  for (const [reason, count] of Object.entries(reasonCounts)) {
-    if (count > 0) {
-      const label = reasonLabels[reason as FlagReason];
-      console.log(`    ${label.padEnd(28)} ${count}`);
+  if (flaggedForDelete.length > 0) {
+    console.log("  ── Words flagged for deletion ──\n");
+    const byLevel: Record<string, FlaggedWord[]> = {};
+    for (const f of flaggedForDelete) {
+      (byLevel[f.level] ??= []).push(f);
+    }
+    for (const [lvl, words] of Object.entries(byLevel).sort()) {
+      console.log(`  [${lvl}] ${words.length} word(s):`);
+      for (const w of words) {
+        const reasonStr = w.reasons.join(", ");
+        console.log(`    • ${w.word}  →  ${reasonStr}`);
+      }
+      console.log("");
     }
   }
 
-  // Print flagged words grouped by reason
-  console.log("\n  ── Flagged words ──\n");
-
-  // Group by primary reason for cleaner output
-  const byLevel: Record<string, FlaggedWord[]> = {};
-  for (const f of flagged) {
-    (byLevel[f.level] ??= []).push(f);
-  }
-
-  for (const [lvl, words] of Object.entries(byLevel).sort()) {
-    console.log(`  [${lvl}] ${words.length} word(s):`);
-    for (const w of words) {
-      const reasonStr = w.reasons.map((r) => reasonLabels[r]).join(", ");
-      const phoneticStr = w.phonetic ? ` ${w.phonetic}` : "";
-      console.log(`    • ${w.word}${phoneticStr}  →  ${reasonStr}`);
-    }
-    console.log("");
-  }
-
-  // ── Save log if requested ─────────────────────────────────────────────────
-
-  if (keepLog) {
-    const logPath = path.join(
-      __dirname,
-      `../data/sift-report-${level ?? "all"}-${Date.now()}.json`,
-    );
+  if (keepLog && flaggedForDelete.length > 0) {
+    const logPath = path.join(__dirname, `../data/sift-report-${level ?? "all"}-${Date.now()}.json`);
     fs.mkdirSync(path.dirname(logPath), { recursive: true });
-    fs.writeFileSync(logPath, JSON.stringify(flagged, null, 2));
+    fs.writeFileSync(logPath, JSON.stringify(flaggedForDelete, null, 2));
     console.log(`  📄 Report saved: ${logPath}\n`);
   }
 
-  // ── Step 4: Purge (unless dry run) ────────────────────────────────────────
-
-  if (dryRun) {
-    console.log(
-      `  DRY RUN — ${flagged.length} word(s) would be purged. No changes made.\n`,
-    );
-    return;
-  }
-
-  if (!yes) {
-    const ok = await confirm(
-      `\n⚠️   This will permanently delete ${flagged.length} word(s) and their ` +
-        `associated userword records.\n    Type "yes" to proceed: `,
-    );
+  // Confirm execution
+  if (!dryRun && !yes && (flaggedForDelete.length > 0 || aiTotalCount > 0)) {
+    const msg = `\n⚠️   This will permanently delete ${flaggedForDelete.length} word(s) and update ${aiTotalCount} word(s) via Claude AI.\n    Type "yes" to proceed: `;
+    const ok = await confirm(msg);
     if (!ok) {
       console.log("    Aborted.\n");
       return;
     }
   }
 
-  const stats = {
-    wordsDeleted: 0,
-    wordsFailed: 0,
-    userWordsDeleted: 0,
-    userWordsFailed: 0,
-  };
+  // ── Step 4: Purge Flagged Words ───────────────────────────────────────────
 
-  for (let i = 0; i < flagged.length; i++) {
-    const f = flagged[i];
+  const deleteStats = { wordsDeleted: 0, wordsFailed: 0, userWordsDeleted: 0, userWordsFailed: 0 };
 
-    // Delete associated userword records first
-    try {
-      let uwCursor: string | undefined;
-      while (true) {
-        const uwQueries: any[] = [
-          Query.equal("wordId", f.id),
-          Query.limit(PAGE_SIZE),
-        ];
-        if (uwCursor) uwQueries.push(Query.cursorAfter(uwCursor));
-
-        const uwPage = await withRetry(
-          () => databases.listDocuments(dbId, USER_WORDS_COLLECTION, uwQueries),
-          `list userwords for "${f.word}"`,
-        );
-
-        for (const uw of uwPage.documents) {
-          try {
-            await withRetry(
-              () =>
-                databases.deleteDocument(dbId, USER_WORDS_COLLECTION, uw.$id),
-              `delete userword ${uw.$id}`,
-            );
-            stats.userWordsDeleted++;
-          } catch (err: any) {
-            stats.userWordsFailed++;
-            console.error(
-              `\n  Failed to delete userword ${uw.$id}: ${err.message}`,
-            );
+  if (flaggedForDelete.length > 0 && !dryRun) {
+    console.log(`  Deleting ${flaggedForDelete.length} words...`);
+    for (let i = 0; i < flaggedForDelete.length; i++) {
+      const f = flaggedForDelete[i];
+      // Delete userwords
+      try {
+        let uwCursor: string | undefined;
+        while (true) {
+          const uwQueries: any[] = [Query.equal("wordId", f.id), Query.limit(PAGE_SIZE)];
+          if (uwCursor) uwQueries.push(Query.cursorAfter(uwCursor));
+          const uwPage = await withRetry(() => databases.listDocuments(dbId, USER_WORDS_COLLECTION, uwQueries), `list userwords for "${f.word}"`);
+          for (const uw of uwPage.documents) {
+            try {
+              await withRetry(() => databases.deleteDocument(dbId, USER_WORDS_COLLECTION, uw.$id), `delete userword ${uw.$id}`);
+              deleteStats.userWordsDeleted++;
+            } catch (err: any) {
+              deleteStats.userWordsFailed++;
+              console.error(`\n  Failed to delete userword ${uw.$id}: ${err.message}`);
+            }
           }
+          if (uwPage.documents.length < PAGE_SIZE) break;
+          uwCursor = undefined;
+        }
+      } catch (err: any) {
+        console.warn(`\n  ⚠️ Could not query userwords for "${f.word}": ${err.message}`);
+      }
+      // Delete word
+      try {
+        await withRetry(() => databases.deleteDocument(dbId, WORDS_COLLECTION, f.id), `delete "${f.word}"`);
+        deleteStats.wordsDeleted++;
+      } catch (err: any) {
+        deleteStats.wordsFailed++;
+        console.error(`\n  Failed to delete word "${f.word}": ${err.message}`);
+      }
+      if ((i + 1) % 5 === 0 || i === flaggedForDelete.length - 1) process.stdout.write(`  ${i + 1}/${flaggedForDelete.length} deleted...\r`);
+    }
+    console.log("\n");
+  } else if (dryRun && flaggedForDelete.length > 0) {
+    console.log(`  [DRY RUN] Would delete ${flaggedForDelete.length} words.\n`);
+  }
+
+  // ── Step 5: AI Verification & Update ──────────────────────────────────────
+
+  const updateStats = { updated: 0, failed: 0 };
+
+  if (aiTotalCount > 0) {
+    console.log("═══════════════════════════════════════════════════");
+    console.log("  AI VERIFICATION & UPDATES");
+    console.log("═══════════════════════════════════════════════════\n");
+
+    for (const [lvl, words] of Object.entries(queuedForAI)) {
+      console.log(`  Processing ${words.length} words for level ${lvl}...`);
+      
+      for (let i = 0; i < words.length; i += CONTEXT_BATCH_SIZE) {
+        const batch = words.slice(i, i + CONTEXT_BATCH_SIZE);
+        const batchNum = Math.floor(i / CONTEXT_BATCH_SIZE) + 1;
+        const totalBatches = Math.ceil(words.length / CONTEXT_BATCH_SIZE);
+        console.log(`    Batch ${batchNum}/${totalBatches}...`);
+
+        if (dryRun) {
+          console.log(`    [DRY RUN] Would verify: ${batch.map(w => w.word).join(", ")}`);
+          continue;
         }
 
-        if (uwPage.documents.length < PAGE_SIZE) break;
-        // Re-query from the top since we deleted documents
-        uwCursor = undefined;
+        try {
+          const aiResults = await verifyWithClaude(anthropic, batch, lvl);
+          
+          for (let j = 0; j < aiResults.length; j++) {
+            const result = aiResults[j];
+            const original = batch.find(w => w.word.toLowerCase() === (result.word ?? "").toLowerCase());
+            if (!original) {
+              console.warn(`      ⚠️  Claude returned a word not in the batch: ${result.word}`);
+              continue;
+            }
+
+            // Verify all fields are present
+            const isComplete = result.definition && result.exampleSentence && result.contextPassage && Array.isArray(result.distractors) && result.distractors.length === 3;
+            if (!isComplete) {
+              console.warn(`      ⚠️  Claude returned incomplete data for "${original.word}". Skipping update.`);
+              continue;
+            }
+
+            try {
+              await withRetry(() => databases.updateDocument(dbId, WORDS_COLLECTION, original.id, {
+                partOfSpeech: result.partOfSpeech || original.partOfSpeech,
+                definition: result.definition,
+                exampleSentence: result.exampleSentence,
+                contextPassage: result.contextPassage,
+                distractors: result.distractors,
+                aiVerified: true,
+              }), `update word "${original.word}"`);
+              updateStats.updated++;
+            } catch (err: any) {
+              updateStats.failed++;
+              console.error(`      ❌ Failed to update "${original.word}": ${err.message}`);
+            }
+          }
+        } catch (err: any) {
+          console.error(`    ❌ AI Batch failed entirely: ${err.message}`);
+        }
+
+        if (i + CONTEXT_BATCH_SIZE < words.length) {
+          await new Promise((r) => setTimeout(r, 1000));
+        }
       }
-    } catch (err: any) {
-      // If the userwords query itself fails, log but continue to word deletion
-      console.warn(
-        `\n  ⚠️ Could not query userwords for "${f.word}": ${err.message}`,
-      );
-    }
-
-    // Delete the word document
-    try {
-      await withRetry(
-        () => databases.deleteDocument(dbId, WORDS_COLLECTION, f.id),
-        `delete "${f.word}"`,
-      );
-      stats.wordsDeleted++;
-    } catch (err: any) {
-      stats.wordsFailed++;
-      console.error(`\n  Failed to delete word "${f.word}": ${err.message}`);
-    }
-
-    if ((i + 1) % 5 === 0 || i === flagged.length - 1) {
-      process.stdout.write(`  ${i + 1}/${flagged.length} processed...\r`);
     }
   }
 
-  console.log(`\n\n✅ Sift complete!`);
-  console.log(`   Words deleted:      ${stats.wordsDeleted}`);
-  console.log(`   Words failed:       ${stats.wordsFailed}`);
-  console.log(`   UserWords deleted:  ${stats.userWordsDeleted}`);
-  console.log(`   UserWords failed:   ${stats.userWordsFailed}\n`);
+  // ── Step 6: Summary ───────────────────────────────────────────────────────
+
+  console.log(`\n✅ Sift & Verify complete!`);
+  if (!dryRun) {
+    console.log(`   Words deleted:      ${deleteStats.wordsDeleted} (${deleteStats.wordsFailed} failed)`);
+    console.log(`   UserWords deleted:  ${deleteStats.userWordsDeleted} (${deleteStats.userWordsFailed} failed)`);
+    console.log(`   Words AI Updated:   ${updateStats.updated} (${updateStats.failed} failed)\n`);
+  }
 }
 
 main().catch((err) => {
