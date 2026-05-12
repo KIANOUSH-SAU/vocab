@@ -1,6 +1,7 @@
 import * as FileSystem from 'expo-file-system'
 import type { VoiceStyle } from '@/types'
 import { Platform } from 'react-native'
+import { getModelForVoice, DEFAULT_VOICE } from '@constants/voiceOptions'
 
 const BASE_URL = 'https://api.elevenlabs.io/v1'
 const API_KEY = process.env.EXPO_PUBLIC_ELEVENLABS_API_KEY!
@@ -33,9 +34,12 @@ export async function generateSpeech(
   options?: { modelId?: string }
 ): Promise<string> {
   try {
-    // Use custom model if this is a custom voice and model is configured
+    // Resolve the model: check the voice options registry first, then fall
+    // back to the legacy single-env-var check for backward compatibility.
+    const registeredModel = getModelForVoice(voiceId)
     const isCustomVoice = CUSTOM_VOICE_ID && voiceId === CUSTOM_VOICE_ID
-    const modelId = isCustomVoice && CUSTOM_MODEL_ID ? CUSTOM_MODEL_ID : 'eleven_turbo_v2_5'
+    const legacyModel = isCustomVoice && CUSTOM_MODEL_ID ? CUSTOM_MODEL_ID : 'eleven_turbo_v2_5'
+    const modelId = registeredModel !== 'eleven_turbo_v2_5' ? registeredModel : legacyModel
 
     // DEBUG LOGGING
     console.log('[TTS] ====== GENERATION START ======')
@@ -49,7 +53,7 @@ export async function generateSpeech(
     console.log('[TTS] Request body:', {
       text: text.slice(0, 300),
       model_id: options?.modelId || modelId,
-      voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+      voice_settings: { stability: 0.85, similarity_boost: 0.75 },
     })
 
     const response = await fetch(`${BASE_URL}/text-to-speech/${voiceId}`, {
@@ -61,7 +65,7 @@ export async function generateSpeech(
       body: JSON.stringify({
         text: text.slice(0, 300),
         model_id: options?.modelId || modelId,
-        voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+        voice_settings: { stability: 0.85, similarity_boost: 0.75 },
       }),
     })
 
