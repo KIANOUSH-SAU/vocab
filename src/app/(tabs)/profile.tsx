@@ -22,12 +22,14 @@ import {
 import { useTabFocusSync } from '@hooks/useRemoteSync'
 import { useAvatarUpload, useAvatarUrl } from '@hooks/useAvatarUpload'
 import { useEditProfile } from '@hooks/useEditProfile'
-import { logoutSession, isAppwriteConfigured } from '@services/appwriteService'
+import { logoutSession, isAppwriteConfigured, updateUserDocument } from '@services/appwriteService'
 import { useWordStore } from '@store/wordStore'
 import { colors, radii, shadows, fonts, spacing } from '@constants/theme'
 import { AccentBlob } from '@components/ui/AccentBlob'
 import { SectionLabel } from '@components/ui/SectionLabel'
 import { SessionCalendar } from '@components/profile/SessionCalendar'
+import { VoiceSelector } from '@components/profile/VoiceSelector'
+import { DEFAULT_VOICE } from '@constants/voiceOptions'
 import {
   EditFieldModal,
   type EditFieldConfig,
@@ -468,10 +470,24 @@ export default function ProfileScreen() {
   const streak = useStreak()
   const sessionDates = useSessionDates()
   const logout = useUserStore((s) => s.logout)
+  const updateVoiceStyle = useUserStore((s) => s.updateVoiceStyle)
   const { editName, editEmail } = useEditProfile()
   const wordCache = useWordStore((s) => s.wordCache)
   const [isLoggingOut, setIsLoggingOut] = useState(false)
   const [editConfig, setEditConfig] = useState<EditFieldConfig | null>(null)
+
+  const handleVoiceSelect = async (voiceId: string) => {
+    // Update locally (Zustand)
+    updateVoiceStyle(voiceId)
+    // Persist to Appwrite
+    if (user && isAppwriteConfigured) {
+      try {
+        await updateUserDocument(user.id, { voiceStyleId: voiceId })
+      } catch (err) {
+        console.warn('[Profile] Failed to persist voice preference:', err)
+      }
+    }
+  }
 
   const mastered = useMemo(
     () =>
@@ -556,6 +572,16 @@ export default function ProfileScreen() {
               onPress={() => router.push('/(onboarding)/placement-test')}
             />
           </View>
+        </View>
+
+        {/* Voice style */}
+        <View style={styles.section}>
+          <AccentBlob placement="top-right" colorTheme="blue" />
+          <SectionLabel title="VOICE STYLE" />
+          <VoiceSelector
+            selectedVoiceId={user.voiceStyleId || DEFAULT_VOICE.id}
+            onSelectVoice={handleVoiceSelect}
+          />
         </View>
 
         {/* Stats grid */}
