@@ -2,6 +2,7 @@ import { useState, useCallback, useRef } from 'react'
 import {
   View,
   Text,
+  Image,
   StyleSheet,
   Pressable,
   ScrollView,
@@ -88,9 +89,9 @@ function VoiceCard({
       <View style={cardStyles.avatarWrap}>
         <LinearGradient
           colors={isSelected ? [colors.iris, colors.irisDeeper] : option.avatarColors as unknown as [string, string]}
-          style={cardStyles.avatar}
+          style={cardStyles.avatarRing}
         >
-          <Text style={cardStyles.avatarText}>{option.avatar}</Text>
+          <Image source={option.avatar} style={cardStyles.avatarImg} />
         </LinearGradient>
         {isSelected && <CheckBadge />}
       </View>
@@ -163,15 +164,19 @@ const cardStyles = StyleSheet.create({
     position: 'relative',
     marginBottom: spacing[1],
   },
-  avatar: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
+  avatarRing: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 3,
   },
-  avatarText: {
-    fontSize: 24,
+  avatarImg: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: colors.borderSoft,
   },
   label: {
     fontFamily: fonts.sansSemiBold,
