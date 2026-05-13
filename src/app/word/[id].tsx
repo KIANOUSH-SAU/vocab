@@ -12,7 +12,7 @@ import { SectionBadge } from '@components/ui/SectionBadge'
 export default function WordDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>()
   const word = useWordById(id)
-  const { state, play } = useAudio()
+  const { state, play, stop } = useAudio()
 
   if (!word) {
     return (
@@ -54,7 +54,7 @@ export default function WordDetailScreen() {
               <Text style={styles.passage}>{word.contextPassage}</Text>
               <Button
                 label={state === 'loading' ? 'Loading...' : state === 'playing' ? 'Stop' : 'Hear it'}
-                onPress={() => play(word.contextPassage, `passage-${word.id}`)}
+                onPress={() => state === 'playing' ? stop() : play(word.contextPassage, `passage-${word.id}`)}
                 variant="secondary"
                 size="sm"
                 icon={{

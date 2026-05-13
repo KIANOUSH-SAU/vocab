@@ -6,6 +6,7 @@ import {
   StyleSheet,
   FlatList,
   Pressable,
+  useWindowDimensions,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
@@ -177,9 +178,9 @@ const chipStyles = StyleSheet.create({
   chipTextActive: { color: "#fff", fontWeight: "600" },
 });
 
-// ─── Word Row ─────────────────────────────────────────────────
+// ─── Word Card (Cube) ─────────────────────────────────────────
 
-function WordRow({ word, userWord }: { word: Word; userWord: UserWord }) {
+function WordCard({ word, userWord, cardWidth }: { word: Word; userWord: UserWord; cardWidth: number }) {
   const correctNum =
     typeof userWord.correctAttempts === "string"
       ? parseInt(userWord.correctAttempts, 10) || 0
@@ -190,57 +191,79 @@ function WordRow({ word, userWord }: { word: Word; userWord: UserWord }) {
   return (
     <Pressable
       onPress={() => router.push(`/word/${word.id}`)}
-      style={rowStyles.container}
+      style={({ pressed }) => [
+        cardStyles.cube,
+        { width: cardWidth },
+        pressed && { opacity: 0.85, transform: [{ scale: 0.97 }] },
+      ]}
     >
-      <View style={rowStyles.main}>
-        <View style={rowStyles.topRow}>
-          <Text style={rowStyles.word}>{word.word}</Text>
-          <StatusBadge status={userWord.status} isStruggling={isStruggling} />
-        </View>
-        <View style={rowStyles.midRow}>
-          <Text style={rowStyles.phonetic}>{word.phonetic}</Text>
-          <Text style={rowStyles.level}>{word.level}</Text>
-        </View>
-        <Text style={rowStyles.definition} numberOfLines={1}>
-          {word.definition}
+      <View style={cardStyles.cubeTop}>
+        <Text style={cardStyles.cubeWord} numberOfLines={1}>
+          {word.word}
         </Text>
+        <StatusBadge status={userWord.status} isStruggling={isStruggling} />
       </View>
-      <MasteryMeter
-        intervalIndex={userWord.intervalIndex}
-        isStruggling={isStruggling}
-      />
+
+      <Text style={cardStyles.cubeDefinition} numberOfLines={2}>
+        {word.definition}
+      </Text>
+
+      <View style={cardStyles.cubeBottom}>
+        <MasteryMeter
+          intervalIndex={userWord.intervalIndex}
+          isStruggling={isStruggling}
+        />
+        <Text style={cardStyles.cubeTap}>Tap for more</Text>
+      </View>
     </Pressable>
   );
 }
 
-const rowStyles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+const cardStyles = StyleSheet.create({
+  cube: {
     backgroundColor: colors.card,
     borderRadius: radii.lg,
-    padding: 16,
-    gap: 12,
+    padding: 12,
+    gap: 8,
+    justifyContent: "space-between",
+    minHeight: 140,
     ...shadows.sm,
   },
-  main: { flex: 1, gap: 4 },
-  topRow: {
+  cubeTop: {
+    gap: 6,
+  },
+  cubeWord: {
+    fontFamily: fonts.sansBold,
+    fontSize: 15,
+    color: colors.ink,
+    letterSpacing: -0.2,
+  },
+  cubeDefinition: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    color: colors.ink2,
+    lineHeight: 17,
+    flex: 1,
+  },
+  cubeBottom: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    marginTop: 4,
   },
-  word: { fontFamily: fonts.sansBold, fontSize: 16, color: colors.ink },
-  midRow: { flexDirection: "row", alignItems: "center", gap: 8 },
-  phonetic: { fontFamily: fonts.mono, fontSize: 12, color: colors.iris },
-  level: { fontFamily: fonts.monoMedium, fontSize: 11, color: colors.inkLight },
-  definition: { fontFamily: fonts.sans, fontSize: 13, color: colors.ink2 },
+  cubeTap: {
+    fontFamily: fonts.sansMedium,
+    fontSize: 10,
+    color: colors.inkLight,
+    letterSpacing: 0.3,
+  },
 });
 
 // ─── Main Review Screen ───────────────────────────────────────
 
 export default function ReviewScreen() {
   useTabFocusSync();
+  const { width: screenWidth } = useWindowDimensions();
   const storeUserWords = useUserWords();
   const wordCache = useWordStore((s) => s.wordCache);
   const todaysWords = useWordStore((s) => s.todaysWords);
@@ -250,6 +273,9 @@ export default function ReviewScreen() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [addOpen, setAddOpen] = useState(false);
+
+  //  columns with 14px horizontal padding + 8px gap between cards
+  const cardW = (screenWidth - 14 * 2 - 8) / 1;
 
   const vault = useMemo(() => {
     const entries = Object.values(storeUserWords);
@@ -333,8 +359,10 @@ export default function ReviewScreen() {
       <FlatList
         data={filtered}
         keyExtractor={(item) => item.word.id}
+        numColumns={2}
+        columnWrapperStyle={{ gap: 8 }}
         renderItem={({ item }) => (
-          <WordRow word={item.word} userWord={item.userWord} />
+          <WordCard word={item.word} userWord={item.userWord} cardWidth={cardW} />
         )}
         contentContainerStyle={styles.list}
         ItemSeparatorComponent={() => <View style={{ height: 8 }} />}
