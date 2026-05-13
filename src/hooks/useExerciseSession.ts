@@ -48,7 +48,7 @@ export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
   const [explanation, setExplanation] = useState<string | null>(null)
   const [isExplaining, setIsExplaining] = useState(false)
   const { recordAnswer } = useSpacedRepetition()
-  const { play } = useAudio()
+  const { play, stop } = useAudio()
   const user = useCurrentUser()
 
   const currentCard = index < queue.length ? queue[index] : null
@@ -92,9 +92,10 @@ export function useExerciseSession(words: Word[]): UseExerciseSessionReturn {
   }, [advance])
 
   const dismissExplanation = useCallback(() => {
+    stop()
     setExplanation(null)
     advance()
-  }, [advance])
+  }, [advance, stop])
 
   return {
     currentCard,

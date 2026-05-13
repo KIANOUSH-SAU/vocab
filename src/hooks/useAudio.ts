@@ -112,5 +112,16 @@ export function useAudio(): UseAudioReturn {
     if (lastTextRef.current) play(lastTextRef.current);
   }, [play]);
 
+  // Clean up audio on unmount
+  useEffect(() => {
+    return () => {
+      if (soundRef.current) {
+        soundRef.current.stopAsync().catch(() => {});
+        soundRef.current.unloadAsync().catch(() => {});
+      }
+      Speech.stop();
+    };
+  }, []);
+
   return { state: audioState, play, stop, replay };
 }

@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { router } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import Animated, {
   useSharedValue,
@@ -33,6 +33,7 @@ import { useWordStore, useTodaysWords } from "@store/wordStore";
 import { useExerciseSession } from "@hooks/useExerciseSession";
 import { useProgressStore } from "@store/progressStore";
 import { useCurrentUser } from "@store/userStore";
+import { isWordDueToday } from "@utils/spacedRepetition";
 import type { Word } from "@/types";
 import {
   colors,
@@ -1179,8 +1180,19 @@ function EmptyState() {
 // ─── Main Session Screen ─────────────────────────────────────
 
 export default function LearningSession() {
+  const { mode } = useLocalSearchParams<{ mode?: string }>();
   const todaysWords = useTodaysWords();
-  const session = useExerciseSession(todaysWords);
+  const { userWords } = useProgressStore();
+  const wordCache = useWordStore((s) => s.wordCache);
+
+  const reviewWords = useMemo(() => {
+    return Object.values(userWords)
+      .filter((uw) => uw.status === "learning" && isWordDueToday(uw) && wordCache[uw.wordId])
+      .map((uw) => wordCache[uw.wordId]!);
+  }, [userWords, wordCache]);
+
+  const sessionWords = mode === "review" ? reviewWords : todaysWords;
+  const session = useExerciseSession(sessionWords);
 
   const {
     currentCard,
@@ -1208,14 +1220,14 @@ export default function LearningSession() {
     // todaysWords is populated, useExerciseSession could otherwise report
     // isComplete=true with zero cards answered, which would falsely set
     // lastActiveDate / sessionDates on Appwrite.
-    if (isComplete && todaysWords.length > 0) {
+    if (mode !== "review" && isComplete && todaysWords.length > 0) {
       setDailySessionCompleted(true);
       checkAndUpdateStreak(user?.id);
     }
-  }, [isComplete, user?.id, todaysWords.length]);
+  }, [isComplete, user?.id, todaysWords.length, mode]);
 
   // Loading state
-  if (todaysWords.length === 0) {
+  if (sessionWords.length === 0) {
     return (
       <LinearGradient
         colors={["#F5F0FF", colors.bg]}
@@ -1286,7 +1298,7 @@ export default function LearningSession() {
           <MultipleChoiceExercise
             key={currentCard.id}
             word={currentCard.word}
-            allWords={todaysWords}
+            allWords={sessionWords}
             onCorrect={onCorrect}
             onWrong={onWrong}
           />
@@ -1296,7 +1308,7 @@ export default function LearningSession() {
           <SwipeExercise
             key={currentCard.id}
             word={currentCard.word}
-            allWords={todaysWords}
+            allWords={sessionWords}
             onCorrect={onCorrect}
             onWrong={onWrong}
           />
@@ -1309,7 +1321,7 @@ export default function LearningSession() {
             <MultipleChoiceExercise
               key={currentCard.id}
               word={currentCard.word}
-              allWords={todaysWords}
+              allWords={sessionWords}
               onCorrect={onCorrect}
               onWrong={onWrong}
             />
