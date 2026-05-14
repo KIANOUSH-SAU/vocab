@@ -461,30 +461,36 @@ function ReviewCard({ count }: { count: number }) {
 
   return (
     <Animated.View style={glowStyle}>
-      <LinearGradient
-        colors={[colors.iris, colors.irisLight, colors.iris]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={reviewStyles.gradientBorder}
+      <Pressable 
+        onPress={() => router.push({ pathname: "/learning/session", params: { mode: "review" } })}
+        disabled={count === 0}
+        style={({ pressed }) => [pressed && { opacity: 0.85 }]}
       >
-        <View style={reviewStyles.inner}>
-          <View style={reviewStyles.left}>
-            <LinearGradient
-              colors={[colors.iris, colors.irisDeeper]}
-              style={reviewStyles.iconBg}
-            >
-              <Ionicons name="refresh" size={18} color="#fff" />
-            </LinearGradient>
-            <View style={reviewStyles.textBlock}>
-              <Text style={reviewStyles.count}>{count} words to review</Text>
-              <Text style={reviewStyles.hint}>Spaced repetition queue</Text>
+        <LinearGradient
+          colors={[colors.iris, colors.irisLight, colors.iris]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={[reviewStyles.gradientBorder, count === 0 && { opacity: 0.5 }]}
+        >
+          <View style={reviewStyles.inner}>
+            <View style={reviewStyles.left}>
+              <LinearGradient
+                colors={[colors.iris, colors.irisDeeper]}
+                style={reviewStyles.iconBg}
+              >
+                <Ionicons name="refresh" size={18} color="#fff" />
+              </LinearGradient>
+              <View style={reviewStyles.textBlock}>
+                <Text style={reviewStyles.count}>{count} words to review</Text>
+                <Text style={reviewStyles.hint}>Spaced repetition queue</Text>
+              </View>
+            </View>
+            <View style={reviewStyles.arrow}>
+              <Ionicons name="chevron-forward" size={18} color={colors.iris} />
             </View>
           </View>
-          <View style={reviewStyles.arrow}>
-            <Ionicons name="chevron-forward" size={18} color={colors.iris} />
-          </View>
-        </View>
-      </LinearGradient>
+        </LinearGradient>
+      </Pressable>
     </Animated.View>
   );
 }

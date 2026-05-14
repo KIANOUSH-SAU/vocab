@@ -40,7 +40,7 @@ export function WordDetailsCard({ word }: { word: Word }) {
         <Text style={styles.sectionBody}>{word.exampleSentence}</Text>
       </View>
 
-      <Pressable onPress={() => play(word.word)}>
+      <Pressable onPress={() => play(word.exampleSentence)}>
         <LinearGradient
           colors={[colors.irisSoft, colors.irisWash]}
           start={{ x: 0, y: 0 }}
@@ -50,7 +50,7 @@ export function WordDetailsCard({ word }: { word: Word }) {
           <View style={styles.playCircle}>
             <Ionicons name="volume-high" size={16} color="#fff" />
           </View>
-          <Text style={styles.pronounceText}>Tap to hear pronunciation</Text>
+          <Text style={styles.pronounceText}>Tap to hear example</Text>
         </LinearGradient>
       </Pressable>
 

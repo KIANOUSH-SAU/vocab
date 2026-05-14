@@ -2,6 +2,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { Audio } from "expo-av";
 import * as Speech from "expo-speech";
 import { generateSpeech, getCustomVoiceId } from "@services/ttsService";
+import { getModelForVoice } from "@constants/voiceOptions";
 import { useCurrentUser } from "@store/userStore";
 import { useWordStore } from "@store/wordStore";
 
@@ -62,7 +63,9 @@ export function useAudio(): UseAudioReturn {
         if (!uri && voiceId) {
           try {
             console.log('[Audio] Calling generateSpeech...')
-            uri = await generateSpeech(text, voiceId);
+            uri = await generateSpeech(text, voiceId, {
+              modelId: getModelForVoice(voiceId),
+            });
             console.log('[Audio] Got URI:', uri)
             if (cacheKey && uri) cacheAudio(key, uri);
           } catch (err) {
@@ -108,6 +111,17 @@ export function useAudio(): UseAudioReturn {
   const replay = useCallback(() => {
     if (lastTextRef.current) play(lastTextRef.current);
   }, [play]);
+
+  // Clean up audio on unmount
+  useEffect(() => {
+    return () => {
+      if (soundRef.current) {
+        soundRef.current.stopAsync().catch(() => {});
+        soundRef.current.unloadAsync().catch(() => {});
+      }
+      Speech.stop();
+    };
+  }, []);
 
   return { state: audioState, play, stop, replay };
 }
