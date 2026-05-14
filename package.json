@@ -15,6 +15,7 @@
     "pipeline:wipe": "node --env-file=.env --import tsx scripts/wipeWords.ts",
     "pipeline:sift": "node --env-file=.env --import tsx scripts/wordSifter.ts",
     "pipeline:fix": "node --env-file=.env --import tsx scripts/wordFixer.ts",
+    "pipeline:doctor": "node --env-file=.env --import tsx scripts/wordDoctor.ts",
     "pipeline:build-test": "node --env-file=.env --import tsx scripts/buildPlacementTest.ts"
   },
   "dependencies": {

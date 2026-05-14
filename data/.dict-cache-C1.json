@@ -1,0 +1,5022 @@
+{
+  "abolish": {
+    "phonetic": "/əˈbɒlɪʃ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To end a law, system, institution, custom or practice."
+  },
+  "abortion": {
+    "phonetic": "/əˈbɔɹ.ʃn̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The expulsion from the womb of a foetus or embryo before it is fully developed, with loss of the foetus; either naturally as a spontaneous abortion (now usually called a miscarriage), or deliberately as an induced abortion."
+  },
+  "absurd": {
+    "phonetic": "/æbˈzɝd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An absurdity."
+  },
+  "abundance": {
+    "phonetic": "/əˈbʌn.dn̩s/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A large quantity; many."
+  },
+  "accelerate": {
+    "phonetic": "/æk.ˈsɛl.ə.ˌɹeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To cause to move faster; to quicken the motion of; to add to the speed of."
+  },
+  "accessible": {
+    "phonetic": "/əkˈsɛs.ə.bəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Easy of access or approach."
+  },
+  "accomplishment": {
+    "phonetic": "/ə.ˈkʌm.plɪʃ.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of accomplishing; completion; fulfilment."
+  },
+  "accordance": {
+    "phonetic": "/ə.ˈkɔɹd.əns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Agreement; harmony; conformity; compliance."
+  },
+  "accordingly": {
+    "phonetic": "/əˈkɔː(ɹ).dɪŋ.li/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(manner) Agreeably; correspondingly; suitably"
+  },
+  "accountability": {
+    "phonetic": "/ə.ˌkaʊn.tə.ˈbɪl.ət.i/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being accountable; liability to be called on to render an account; accountableness; responsible for; answerable for."
+  },
+  "accountable": {
+    "phonetic": "/ə.ˈkaʊn.tə.bəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Obliged, when called upon, to answer (for one’s deeds); answerable."
+  },
+  "accumulate": {
+    "phonetic": "/əˈkjuːmjʊˌleɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To heap up in a mass; to pile up; to collect or bring together (either literally or figuratively)"
+  },
+  "accumulation": {
+    "phonetic": "/ə.ˌkjuːm.jə.ˈleɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of amassing or gathering, as into a pile."
+  },
+  "accusation": {
+    "phonetic": "/ˌæk.jə.ˈzeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of accusing."
+  },
+  "accused": {
+    "phonetic": "/ə.ˈkjuzd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To find fault with, blame, censure"
+  },
+  "acquisition": {
+    "phonetic": "/æ.kwɪ.ˈzɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or process of acquiring."
+  },
+  "activation": {
+    "phonetic": "/æktɪˈveɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Making active and effective; bringing into a state of activity."
+  },
+  "activist": {
+    "phonetic": "/ˈæk.tɪ.vɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who is politically active in the role of a citizen; especially, one who campaigns for change."
+  },
+  "acute": {
+    "phonetic": "/əˈkjuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who has the acute form of a disorder, such as schizophrenia."
+  },
+  "adaptation": {
+    "phonetic": "/ˌædæpˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of adapting something or becoming adapted to a situation; adjustment, modification."
+  },
+  "adhere": {
+    "phonetic": "/ædˈhiɹ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To stick fast or cleave, as a glutinous substance does; to become joined or united."
+  },
+  "adjacent": {
+    "phonetic": "/əˈdʒeɪ.sənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that lies next to something else, especially the side of a right triangle that is neither the hypotenuse nor the opposite."
+  },
+  "adjustment": {
+    "phonetic": "/əˈdʒʌst.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The action of adjusting something"
+  },
+  "administer": {
+    "phonetic": "/ədˈmɪnɪstɚ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To cause to ingest (a drug), either by openly offering or through deceit."
+  },
+  "administrative": {
+    "phonetic": "/ədˈmɪ.nɪs.tɹəˌtɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to administering or administration."
+  },
+  "administrator": {
+    "phonetic": "/ədˈmɪnɪstɹeɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who administers affairs; one who directs, manages, executes, or dispenses, whether in civil, judicial, political, or ecclesiastical affairs; a manager"
+  },
+  "admission": {
+    "phonetic": "/ædˈmɪʃ.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or practice of admitting."
+  },
+  "adolescent": {
+    "phonetic": "/ˌædəˈlɛsənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who is in adolescence; someone who has reached puberty but is not yet an adult."
+  },
+  "adoption": {
+    "phonetic": "/əˈdɒp.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of adopting."
+  },
+  "adverse": {
+    "phonetic": "/ədˈvɜ(ɹ)s/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Unfavorable; antagonistic in purpose or effect; hostile; actively opposing one's interests or wishes; contrary to one's welfare; acting against; working in an opposing direction."
+  },
+  "advocate": {
+    "phonetic": "/ˈæd.və.keɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone whose job is to speak for someone's case in a court of law; a counsel."
+  },
+  "aesthetic": {
+    "phonetic": "/iːs.ˈθe.tɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The study of art or beauty."
+  },
+  "aftermath": {
+    "phonetic": "/ˈæf.təˌmæθ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A second mowing; the grass which grows after the first crop of hay in the same season."
+  },
+  "aggression": {
+    "phonetic": "/əˈɡɹɛʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of initiating hostilities or invasion."
+  },
+  "agricultural": {
+    "phonetic": "/ˌæɡɹɪˈkʌltjʊəɹəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A product or commodity from agriculture."
+  },
+  "aide": {
+    "phonetic": "/eɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An assistant."
+  },
+  "albeit": {
+    "phonetic": "/ɔːlˈbiː.ɪt/",
+    "partOfSpeech": "other",
+    "rawDefinition": "Although, despite (it) being."
+  },
+  "allegedly": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "According to someone's allegation."
+  },
+  "alliance": {
+    "phonetic": "/əˈlaɪ.əns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being allied."
+  },
+  "allocate": {
+    "phonetic": "/ˈæl.ə.keɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To set aside for a purpose."
+  },
+  "allocation": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process or procedure for allocating things, especially money or other resources."
+  },
+  "allowance": {
+    "phonetic": "/əˈlaʊəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Permission; granting, conceding, or admitting"
+  },
+  "ally": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person, group, or state (etc) which is associated with another for a common cause; one united to another by treaty or common purpose; a confederate."
+  },
+  "ambassador": {
+    "phonetic": "/æmˈbæs.ə.də(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A minister of the highest rank sent to a foreign court to represent there his sovereign or country. (Sometimes called ambassador-in-residence)"
+  },
+  "amend": {
+    "phonetic": "/əˈmɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(usually in the plural) An act of righting a wrong; compensation."
+  },
+  "amendment": {
+    "phonetic": "/ʌˈmɛnd.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An alteration or change for the better; correction of a fault or of faults; reformation of life by quitting vices."
+  },
+  "amid": {
+    "phonetic": "/əˈmɪd/",
+    "partOfSpeech": "other",
+    "rawDefinition": "In the middle of; in the center of; surrounded by."
+  },
+  "analogy": {
+    "phonetic": "/əˈnæləd͡ʒi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A relationship of resemblance or equivalence between two situations, people, or objects, especially when used as a basis for explanation or extrapolation."
+  },
+  "anonymous": {
+    "phonetic": "/əˈnɒnəməs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Lacking a name; not named, for example an animal not assigned to any species."
+  },
+  "apparatus": {
+    "phonetic": "/æpəˈɹɑːtəs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The entirety of means whereby a specific production is made existent or task accomplished."
+  },
+  "appetite": {
+    "phonetic": "/ˈæp.ə.taɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Desire to eat food or consume drink."
+  },
+  "applicable": {
+    "phonetic": "/əˈplɪkəbəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Suitable for application, relevant"
+  },
+  "appreciation": {
+    "phonetic": "/əˌpɹiː.ʃiˈeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fair valuation or estimate of merit, worth, weight, etc.; recognition of excellence."
+  },
+  "arbitrary": {
+    "phonetic": "/ˈɑɹ.bɪ.tɹɛ(ə).ɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything arbitrary, such as an arithmetical value or a fee."
+  },
+  "architectural": {
+    "phonetic": "/ˌɑɹkɪˈtɛktjəɹəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pertaining to architecture."
+  },
+  "archive": {
+    "phonetic": "/ˈɑɹkaɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place for storing earlier, and often historical, material. An archive usually contains documents (letters, records, newspapers, etc.) or other types of media kept for historical interest."
+  },
+  "arena": {
+    "phonetic": "/əˈɹiːnə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An enclosed area, often outdoor, for the presentation of sporting events (sports arena) or other spectacular events; earthen area, often oval, specifically for rodeos (North America) or circular area for bullfights (especially Hispanic America)."
+  },
+  "arguably": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "As can be supported or proven by sound logical deduction, evidence, and precedent."
+  },
+  "array": {
+    "phonetic": "/əˈɹeɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Clothing and ornamentation."
+  },
+  "articulate": {
+    "phonetic": "/ɑː(ɹ)ˈtɪk.jʊ.lət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An animal of the subkingdom Articulata."
+  },
+  "aspiration": {
+    "phonetic": "/ˌæspəˈɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of aspiring or ardently desiring; an ardent wish or desire, chiefly after what is elevated or spiritual (with common adjunct adpositions being to and of)."
+  },
+  "aspire": {
+    "phonetic": "/əˈspaɪə(ɹ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To have a strong desire or ambition to achieve something."
+  },
+  "assassination": {
+    "phonetic": "/əˌsæs.ɪ.ˈneɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The murder of a person, especially for political reasons or for personal gain."
+  },
+  "assault": {
+    "phonetic": "/əˈsɔːlt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A violent onset or attack with physical means, for example blows, weapons, etc."
+  },
+  "atrocity": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An extremely cruel act; a horrid act of injustice."
+  },
+  "attain": {
+    "phonetic": "/əˈteɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To gain (an object or desired result)."
+  },
+  "attorney": {
+    "phonetic": "/əˈtɜː(ɹ)ni/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A lawyer; one who advises or represents others in legal matters as a profession."
+  },
+  "attribute": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A characteristic or quality of a thing."
+  },
+  "audit": {
+    "phonetic": "/ɔː.dɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A judicial examination."
+  },
+  "authentic": {
+    "phonetic": "/ɒ.ˈθɛn.tɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of the same origin as claimed; genuine."
+  },
+  "authorize": {
+    "phonetic": "/ˈɑθəɹaɪz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To grant (someone) the permission or power necessary to do (something)."
+  },
+  "autonomy": {
+    "phonetic": "/ɑˈtɑnəmi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Self-government; freedom to act or function independently."
+  },
+  "availability": {
+    "phonetic": "[əˌveɪləˈbɪlɪtɪ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being available."
+  },
+  "await": {
+    "phonetic": "/əˈwɛɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A waiting for; ambush."
+  },
+  "backdrop": {
+    "phonetic": "/ˈbæk.dɹɒp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A decorated cloth hung at the back of a stage."
+  },
+  "backing": {
+    "phonetic": "/ˈbæk.ɪŋ(ɡ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To go in the reverse direction."
+  },
+  "backup": {
+    "phonetic": "/ˈbækˌʌp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A reserve or substitute."
+  },
+  "bail": {
+    "phonetic": "/beɪ̯l/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Security, usually a sum of money, exchanged for the release of an arrested person as a guarantee of that person's appearance for trial."
+  },
+  "ballot": {
+    "phonetic": "/ˈbalət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Originally, a small ball placed in a container to cast a vote; now, by extension, a piece of paper or card used for this purpose, or some other means used to signify a vote."
+  },
+  "banner": {
+    "phonetic": "/ˈbænə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A flag or standard used by a military commander, monarch or nation."
+  },
+  "bass": {
+    "phonetic": "/beɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A low spectrum of sound tones."
+  },
+  "battlefield": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The area where a land battle is or was fought, which is not necessarily a field."
+  },
+  "beam": {
+    "phonetic": "/biːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any large piece of timber or iron long in proportion to its thickness, and prepared for use."
+  },
+  "beloved": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To please."
+  },
+  "benchmark": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A standard by which something is evaluated or measured."
+  },
+  "beneficiary": {
+    "phonetic": "/ˌbɛn.əˈfɪʃ.əɹ.i/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who benefits or receives an advantage."
+  },
+  "betray": {
+    "phonetic": "/bəˈtɹeɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To deliver into the hands of an enemy by treachery or fraud, in violation of trust; to give up treacherously or faithlessly."
+  },
+  "bind": {
+    "phonetic": "/baɪnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which binds or ties."
+  },
+  "boom": {
+    "phonetic": "/buːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A low-pitched, resonant sound, such as of an explosion."
+  },
+  "boundary": {
+    "phonetic": "/ˈbaʊndɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The dividing line or location between two areas."
+  },
+  "breach": {
+    "phonetic": "[bɹiːtʃ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A gap or opening made by breaking or battering, as in a wall, fortification or levee / embankment; the space between the parts of a solid body rent by violence"
+  },
+  "breakdown": {
+    "phonetic": "/ˈbɹeɪkdaʊn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A failure, particularly mechanical; something that has failed"
+  },
+  "breakthrough": {
+    "phonetic": "/ˈbɹeɪkθɹuː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An advance through and past enemy lines."
+  },
+  "breed": {
+    "phonetic": "/bɹiːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "All animals or plants of the same species or subspecies."
+  },
+  "brutal": {
+    "phonetic": "/ˈbɹuːtəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Savagely violent, vicious, ruthless, or cruel"
+  },
+  "buck": {
+    "phonetic": "/bʌk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A male deer, antelope, sheep, goat, rabbit, hare, and sometimes the male of other animals such as the hamster, ferret and shad."
+  },
+  "buffer": {
+    "phonetic": "/ˈbafə(ɹ)/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of the color of buff leather, a brownish yellow."
+  },
+  "bulk": {
+    "phonetic": "/bʌlk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Size, specifically, volume."
+  },
+  "burden": {
+    "phonetic": "/ˈbɜːdn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A heavy load."
+  },
+  "bureaucracy": {
+    "phonetic": "/bjʊəˈɹɒkɹəsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Government by bureaus or their administrators or officers."
+  },
+  "burial": {
+    "phonetic": "/ˈbɛɹɪəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of burying; interment"
+  },
+  "canvas": {
+    "phonetic": "/ˈkæn.vəs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A type of coarse cloth, woven from hemp, useful for making sails and tents or as a surface for paintings."
+  },
+  "capability": {
+    "phonetic": "/keɪpəˈbɪləti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The power or ability to generate an outcome"
+  },
+  "capitalism": {
+    "phonetic": "/ˈkapɪt(ə)lɪz(ə)m/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A socio-economic system based on private ownership of resources or capital."
+  },
+  "capitalist": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who is a supporter of capitalism."
+  },
+  "cargo": {
+    "phonetic": "/ˈkɑːɡəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Freight carried by a ship, aircraft, or motor vehicle."
+  },
+  "carriage": {
+    "phonetic": "/ˈkæɹɪdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of conveying; carrying."
+  },
+  "carve": {
+    "phonetic": "/kɑːv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A carucate."
+  },
+  "casualty": {
+    "phonetic": "/ˈkaʒ(ʊ)əlti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that happens by chance, especially an unfortunate event; an accident, a disaster."
+  },
+  "catalogue": {
+    "phonetic": "/ˈkætəlɑɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A systematic list of names, books, pictures etc."
+  },
+  "cater": {
+    "phonetic": "/ˈkeɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Caterer"
+  },
+  "caution": {
+    "phonetic": "/ˈkɔːʃ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Precept or warning against evil or danger of any kind; exhortation to wariness; advice; injunction; prudence in regard to danger; provident care"
+  },
+  "cease": {
+    "phonetic": "/siːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Cessation; extinction (see without cease)."
+  },
+  "circulate": {
+    "phonetic": "/ˈsɚˌkju.leɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To move in circles or through a circuit"
+  },
+  "circulation": {
+    "phonetic": "/ˌsɜː(ɹ).kjʊˈleɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of moving in a circle, or in a course which brings the moving body to the place where its motion began."
+  },
+  "citizenship": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The status of being a citizen, in its various senses."
+  },
+  "civic": {
+    "phonetic": "/ˈsɪvɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, relating to, or belonging to a city, a citizen, or citizenship; municipal or civil."
+  },
+  "civilian": {
+    "phonetic": "/sɪˈvɪljən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person following the pursuits of civil life, especially one who is not an active member of the armed forces."
+  },
+  "clarity": {
+    "phonetic": "/ˈklæɹ.ə.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state or measure of being clear, either in appearance, thought or style; lucidity."
+  },
+  "clash": {
+    "phonetic": "/klaʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A loud sound, like the crashing together of metal objects."
+  },
+  "classification": {
+    "phonetic": "/ˌklæsɪfɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of forming into a class or classes; a distribution into groups, as classes, orders, families, etc., according to some common relations or attributes."
+  },
+  "cling": {
+    "phonetic": "/ˈklɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Fruit (especially peach) whose flesh adheres strongly to the pit."
+  },
+  "clinical": {
+    "phonetic": "/ˈklɪnɪkəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A medical student's session spent in a real-world nursing environment."
+  },
+  "closure": {
+    "phonetic": "/ˈkləʊ.ʒə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An event or occurrence that signifies an ending."
+  },
+  "cluster": {
+    "phonetic": "/ˈklʌstə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group or bunch of several discrete items that are close to each other."
+  },
+  "coalition": {
+    "phonetic": "/koʊəˈlɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A temporary group or union of organizations, usually formed for a particular advantage."
+  },
+  "cognitive": {
+    "phonetic": "/ˈkɒɡnɪtɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Cognate."
+  },
+  "coincide": {
+    "phonetic": "/ˌkoʊɪnˈsaɪd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To occupy exactly the same space."
+  },
+  "collaborate": {
+    "phonetic": "/kəˈlabəɹeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To work together with others to achieve a common goal."
+  },
+  "collaboration": {
+    "phonetic": "/kəˌlæbəˈɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of collaborating."
+  },
+  "collective": {
+    "phonetic": "/kəˈlɛktɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A farm owned by a collection of people"
+  },
+  "collision": {
+    "phonetic": "/kəˈlɪʒən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of colliding."
+  },
+  "colonial": {
+    "phonetic": "/kəˈləʊ.ni.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person from a country that is or was controlled by another."
+  },
+  "columnist": {
+    "phonetic": "/ˈkɒ.lə.mɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A regular writer of a column, such as in a magazine or newspaper"
+  },
+  "combat": {
+    "phonetic": "/ˈkɒmˌbæt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A battle, a fight (often one in which weapons are used)."
+  },
+  "commence": {
+    "phonetic": "/kəˈmɛns/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To begin, start."
+  },
+  "commentary": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A series of comments or annotations; especially, a book of explanations or expositions on the whole or a part of some other work"
+  },
+  "commentator": {
+    "phonetic": "/ˈkɑmənˌteɪtəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who comments; especially someone who is paid to give his/her opinions in the media about current affairs, sports, etc."
+  },
+  "commerce": {
+    "phonetic": "/kɒˈmɜːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The exchange or buying and selling of commodities; especially the exchange of merchandise, on a large scale, between different places or communities; extended trade or traffic."
+  },
+  "commissioner": {
+    "phonetic": "/kəˈmɪʃənə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A member of a commission."
+  },
+  "commodity": {
+    "phonetic": "/kəˈmɒdəti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything movable (a good) that is bought and sold."
+  },
+  "communist": {
+    "phonetic": "/ˈkɒ.mjʊ.nɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An advocate of a society based on the common ownership of property; a proponent of communism."
+  },
+  "companion": {
+    "phonetic": "/kəmˈpænjən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A friend, acquaintance, or partner; someone with whom one spends time or keeps company"
+  },
+  "compensation": {
+    "phonetic": "/ˌkɒmpɛnˈseɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or principle of compensating."
+  },
+  "competence": {
+    "phonetic": "/ˈkɒmpətəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality or state of being competent, i.e. able or suitable for a general role."
+  },
+  "competent": {
+    "phonetic": "/ˈkɒmpətənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having sufficient skill, knowledge, ability, or qualifications."
+  },
+  "compile": {
+    "phonetic": "/kəmpʌɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of compiling code."
+  },
+  "complement": {
+    "phonetic": "/ˈkɒmpləmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A protective substance that exists in the serum or other bodily fluid and is capable of killing microorganisms; complement."
+  },
+  "complexity": {
+    "phonetic": "/kəmˈplɛk.sɪ.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being complex; intricacy; entanglement."
+  },
+  "compliance": {
+    "phonetic": "/kəmˈplaɪəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of complying."
+  },
+  "complication": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or process of complicating."
+  },
+  "comply": {
+    "phonetic": "/kəmˈplaɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To yield assent; to accord; to acquiesce, agree, consent; to adapt oneself, to conform."
+  },
+  "composition": {
+    "phonetic": "/ˌkɒmpəˈzɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of putting together; assembly."
+  },
+  "compromise": {
+    "phonetic": "/ˈkɒmpɹəˌmaɪz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The settlement of differences by arbitration or by consent reached by mutual concessions."
+  },
+  "compute": {
+    "phonetic": "/kəmˈpjuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Computational power"
+  },
+  "conceal": {
+    "phonetic": "/kənˈsiːl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To hide something from view or from public knowledge, to try to keep something secret."
+  },
+  "concede": {
+    "phonetic": "/kənˈsiːd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To yield or suffer; to surrender; to grant"
+  },
+  "conceive": {
+    "phonetic": "/kənˈsiːv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To develop an idea; to form in the mind; to plan; to devise; to originate."
+  },
+  "conception": {
+    "phonetic": "/kənˈsɛpʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of conceiving."
+  },
+  "concession": {
+    "phonetic": "/kənˈsɛʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of conceding."
+  },
+  "condemn": {
+    "phonetic": "/kənˈdɛm/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To strongly criticise or denounce; to excoriate the perpetrators of."
+  },
+  "confer": {
+    "phonetic": "/kənˈfɜː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To grant as a possession; to bestow."
+  },
+  "confession": {
+    "phonetic": "/kənˈfɛʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The open admittance of having done something (especially something bad)."
+  },
+  "configuration": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Form, as depending on the relative disposition of the parts of a thing's shape; figure; form factor."
+  },
+  "confine": {
+    "phonetic": "/ˈkɒnfaɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(chiefly in the plural) A boundary or limit."
+  },
+  "confront": {
+    "phonetic": "/kɒnˈfɹɒnt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To stand or meet facing, especially in competition, hostility or defiance; to come face to face with"
+  },
+  "confrontation": {
+    "phonetic": "/ˌkɒnfɹənˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of confronting or challenging another, especially face to face."
+  },
+  "conscience": {
+    "phonetic": "/kɒnʃəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The moral sense of right and wrong, chiefly as it affects one's own behaviour."
+  },
+  "consciousness": {
+    "phonetic": "/ˈkɒnʃəsnəs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being conscious or aware; awareness."
+  },
+  "consecutive": {
+    "phonetic": "/kɒnsɛkjʊtɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sequence of notes or chords that results from repeated shifts in pitch of the same interval."
+  },
+  "consensus": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A process of decision-making that seeks widespread agreement among group members."
+  },
+  "consent": {
+    "phonetic": "/kənˈsɛnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Voluntary agreement or permission."
+  },
+  "conserve": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Wilderness where human development is prohibited."
+  },
+  "constitutional": {
+    "phonetic": "/ˌkɒnstɪˈtjuːʃənəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A walk that is taken regularly for good health and wellbeing."
+  },
+  "constraint": {
+    "phonetic": "/kənˈstɹeɪnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that constrains; a restriction."
+  },
+  "consultation": {
+    "phonetic": "/ˌkɒnsl̩ˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of consulting."
+  },
+  "contemplate": {
+    "phonetic": "/ˈkɒn.təmˌpleɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To look at on all sides or in all its aspects; to view or consider with continued attention; to regard with deliberate care; to meditate on; to study, ponder, or consider."
+  },
+  "contempt": {
+    "phonetic": "/kənˈtɛmpt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state or act of contemning; the feeling or attitude of regarding someone or something as inferior, base, or worthless; scorn, disdain."
+  },
+  "contend": {
+    "phonetic": "/kənˈtɛnd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To strive in opposition; to contest; to dispute; to vie; to quarrel; to fight."
+  },
+  "contender": {
+    "phonetic": "/kənˈtɛn.dɚ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who competes with one or more other people."
+  },
+  "contention": {
+    "phonetic": "/kənˈtɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Argument, contest, debate, strife, struggle."
+  },
+  "continually": {
+    "phonetic": "/kənˈtɪnjuəli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a continual manner; non-stop."
+  },
+  "contractor": {
+    "phonetic": "/ˈkɒnˌtɹæk.tə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or company that builds or improves buildings."
+  },
+  "contradiction": {
+    "phonetic": "/ˌkɒntɹəˈdɪkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of contradicting."
+  },
+  "contrary": {
+    "phonetic": "/ˈkɒntɹəɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The opposite."
+  },
+  "contributor": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A benefactor; someone who donates to charity or some cause."
+  },
+  "conversion": {
+    "phonetic": "/-ʒ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of converting something or someone."
+  },
+  "convict": {
+    "phonetic": "/ˈkɒnvɪkt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person convicted of a crime by a judicial body."
+  },
+  "conviction": {
+    "phonetic": "/kənˈvɪkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A firmly held belief."
+  },
+  "cooperative": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A type of company that is owned partially or wholly by its employees, customers or tenants."
+  },
+  "coordinate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A number representing the position of a point along a line, arc, or similar one-dimensional figure."
+  },
+  "coordination": {
+    "phonetic": "/koʊˌɔɹdɪˈneɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of coordinating, making different people or things work together for a goal or effect."
+  },
+  "coordinator": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who coordinates."
+  },
+  "copyright": {
+    "phonetic": "/ˈkɒpiˌɹaɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The right by law to be the entity which determines who may publish, copy and distribute a piece of writing, music, picture or other work of authorship."
+  },
+  "correlate": {
+    "phonetic": "/ˈkɒɹələt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Either of a pair of things related by a correlation; a correlative."
+  },
+  "correlation": {
+    "phonetic": "/kɒɹəˈleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A reciprocal, parallel or complementary relationship between two or more comparable objects."
+  },
+  "correspond": {
+    "phonetic": "/ˌkɒɹəˈspɒnd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(constructed with to) To be equivalent or similar in character, quantity, quality, origin, structure, function etc."
+  },
+  "correspondence": {
+    "phonetic": "/ˌkɒɹɪˈspɒndəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Friendly discussion."
+  },
+  "correspondent": {
+    "phonetic": "/ˌkɒɹɪˈspɒndənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone who or something which corresponds."
+  },
+  "corresponding": {
+    "phonetic": "/ˌkɒɹəˈspɒndɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(constructed with to) To be equivalent or similar in character, quantity, quality, origin, structure, function etc."
+  },
+  "corrupt": {
+    "phonetic": "/kəˈɹʌpt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make corrupt; to change from good to bad; to draw away from the right path; to deprave; to pervert."
+  },
+  "corruption": {
+    "phonetic": "/kəˈɹʌpʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of corrupting or of impairing integrity, virtue, or moral principle; the state of being corrupted or debased; loss of purity or integrity"
+  },
+  "costly": {
+    "phonetic": "/ˈkɒst.li/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of high cost; expensive."
+  },
+  "courtesy": {
+    "phonetic": "/ˈkɜːtəsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Polite behavior."
+  },
+  "credibility": {
+    "phonetic": "/kɹɛd.ə.ˈbɪ.ɫɪ.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Reputation impacting one's ability to be believed."
+  },
+  "credible": {
+    "phonetic": "/ˈkɹɛdəbl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Believable or plausible."
+  },
+  "critique": {
+    "phonetic": "/kɹɪˈtiːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The art of criticism."
+  },
+  "crude": {
+    "phonetic": "/kɹʉd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any substance in its natural state."
+  },
+  "cult": {
+    "phonetic": "/kʌlt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group or sect of people with a deviant religious, philosophical or cultural identity, often existing on the margins of society or exploitative towards its members."
+  },
+  "cultivate": {
+    "phonetic": "/ˈkʌltɪveɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To grow plants, notably crops"
+  },
+  "custody": {
+    "phonetic": "/ˈkʌstədiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The legal right to take care of something or somebody, especially children."
+  },
+  "cutting": {
+    "phonetic": "/ˈkʌtɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(heading) To incise, to cut into the surface of something."
+  },
+  "cynical": {
+    "phonetic": "/ˈsɪnɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to the belief that human actions are motivated only or primarily by base desires or selfishness."
+  },
+  "debris": {
+    "phonetic": "/ˈdeɪbɹiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Rubble, wreckage, scattered remains of something destroyed."
+  },
+  "debut": {
+    "phonetic": "/dəˈbʉː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A performer's first performance to the public, in sport, the arts or some other area."
+  },
+  "decision-making": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of reaching a decision."
+  },
+  "decisive": {
+    "phonetic": "/dɪˈsaɪsɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having the power or quality of deciding a question or controversy; putting an end to contest or controversy; final; conclusive."
+  },
+  "declaration": {
+    "phonetic": "/ˌdɛkləˈɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A written or oral indication of a fact, opinion, or belief."
+  },
+  "dedicated": {
+    "phonetic": "/ˈdɛdɪkeɪtəd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To set apart for a deity or for religious purposes; consecrate."
+  },
+  "dedication": {
+    "phonetic": "/ˌdɛdɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of dedicating or the state of being dedicated."
+  },
+  "deem": {
+    "phonetic": "/diːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An opinion, a judgment, a surmise."
+  },
+  "default": {
+    "phonetic": "/dɪˈfɔːlt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The condition of failing to meet an obligation."
+  },
+  "defect": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fault or malfunction."
+  },
+  "deficiency": {
+    "phonetic": "/dɪˈfɪʃənsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Inadequacy or incompleteness."
+  },
+  "deficit": {
+    "phonetic": "/ˈdɛfɪsɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Deficiency in amount or quality; a falling short; lack."
+  },
+  "defy": {
+    "phonetic": "/dɪˈfaɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A challenge."
+  },
+  "delegate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person authorized to act as representative for another; a deputy"
+  },
+  "delegation": {
+    "phonetic": "/dɛlɪˈɡeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of delegating."
+  },
+  "denial": {
+    "phonetic": "/dɪˈnaɪ.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The negation in logic."
+  },
+  "denounce": {
+    "phonetic": "/diˈnaʊns/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make known in a formal manner; to proclaim; to announce; to declare."
+  },
+  "density": {
+    "phonetic": "/ˈdɛn.sə.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A measure of the mass of matter contained by a unit volume."
+  },
+  "dependence": {
+    "phonetic": "/dɪˈpɛndəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being dependent, of relying upon another."
+  },
+  "descent": {
+    "phonetic": "/dɪˈsɛnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of descending; act of coming down."
+  },
+  "designate": {
+    "phonetic": "/ˈdɛzɪɡ.neɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To mark out and make known; to point out; to indicate; to show; to distinguish by marks or description"
+  },
+  "detain": {
+    "phonetic": "/dɪˈteɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To keep someone from proceeding by holding them back or making claims on their attention."
+  },
+  "detection": {
+    "phonetic": "/dəˈtɛkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of detecting or sensing something; discovering something that was hidden or disguised."
+  },
+  "detention": {
+    "phonetic": "/dɪˈtɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of detaining or the state of being detained."
+  },
+  "deteriorate": {
+    "phonetic": "/dɪˈtɪəɹɪəɹeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make worse; to make inferior in quality or value; to impair."
+  },
+  "devastate": {
+    "phonetic": "/ˈdɛvəsteɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To ruin many or all things over a large area, such as most or all buildings of a city, or cities of a region, or trees of a forest."
+  },
+  "devise": {
+    "phonetic": "/dɪˈvaɪz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of leaving real property in a will."
+  },
+  "diagnose": {
+    "phonetic": "/daɪəɡˈnəʊz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To determine which disease is causing a sick person's signs and symptoms; to find the diagnosis."
+  },
+  "diagnosis": {
+    "phonetic": "/daɪəɡˈnəʊsɪs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To determine which disease is causing a sick person's signs and symptoms; to find the diagnosis."
+  },
+  "dictate": {
+    "phonetic": "/ˈdɪkˌteɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An order or command."
+  },
+  "dictator": {
+    "phonetic": "/dɪkˈteɪtə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A totalitarian leader of a country, nation, or government."
+  },
+  "differentiate": {
+    "phonetic": "/dɪf.əˈɹɛn.ʃi.eɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that has been differentiated or stratified."
+  },
+  "dignity": {
+    "phonetic": "/ˈdɪɡnɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being dignified or worthy of esteem: elevation of mind or character."
+  },
+  "dilemma": {
+    "phonetic": "/daɪˈlɛmə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A circumstance in which a choice must be made between two or more alternatives that seem equally undesirable."
+  },
+  "dimension": {
+    "phonetic": "/daɪˈmɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A single aspect of a given thing."
+  },
+  "diminish": {
+    "phonetic": "/dɪˈmɪnɪʃ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make smaller."
+  },
+  "diplomat": {
+    "phonetic": "/ˈdɪ.plə.mæt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person, such as an ambassador, who is accredited to represent a government officially in its relations with other governments or international organisations"
+  },
+  "diplomatic": {
+    "phonetic": "/ˌdɪpləˈmætɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The science of diplomas, or the art of deciphering ancient writings and determining their age, authenticity, etc.; paleography."
+  },
+  "disastrous": {
+    "phonetic": "/dɪˈzɑːstɹəs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of the nature of a disaster; calamitous."
+  },
+  "discard": {
+    "phonetic": "/ˈdɪskɑːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything discarded."
+  },
+  "discharge": {
+    "phonetic": "/ˈdɪstʃɑːdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Pus or exudate (other than blood) from a wound or orifice, usually due to infection or pathology."
+  },
+  "disclose": {
+    "phonetic": "/dɪsˈkləʊz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A disclosure."
+  },
+  "disclosure": {
+    "phonetic": "/dɪsˈkləʊʒə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of revealing something."
+  },
+  "discourse": {
+    "phonetic": "/dɪsˈkɔː(ɹ)s/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Verbal exchange, conversation."
+  },
+  "discretion": {
+    "phonetic": "/dɪˈskɹɛʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being discreet or circumspect."
+  },
+  "discrimination": {
+    "phonetic": "/dɪskɹɪmɪˈneɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Discernment, the act of discriminating, discerning, distinguishing, noting or perceiving differences between things, with intent to understand rightly and make correct decisions."
+  },
+  "dismissal": {
+    "phonetic": "[dɪsˈmɪsəɫ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of sending someone away."
+  },
+  "displace": {
+    "phonetic": "/dɪsˈpleɪs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put out of place; to disarrange."
+  },
+  "disposal": {
+    "phonetic": "[dɪsˈpəʊzəɫ]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An arrangement, categorization or classification of things."
+  },
+  "dispose": {
+    "phonetic": "/dɪˈspəʊz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The disposal or management of something."
+  },
+  "dispute": {
+    "phonetic": "/ˈdɪs.pjuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An argument or disagreement, a failure to agree."
+  },
+  "distort": {
+    "phonetic": "/dɪsˈtɔːt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To bring something out of shape, to misshape."
+  },
+  "distress": {
+    "phonetic": "/dɪˈstɹɛs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(Cause of) discomfort."
+  },
+  "disturbing": {
+    "phonetic": "/dɪsˈtɜːbɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To confuse a quiet, constant state or a calm, continuous flow, in particular: thoughts, actions or liquids."
+  },
+  "divert": {
+    "phonetic": "/daɪˈvɜːt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To turn aside from a course."
+  },
+  "divine": {
+    "phonetic": "/dɪˈvaɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One skilled in divinity; a theologian."
+  },
+  "doctrine": {
+    "phonetic": "/ˈdɒktɹɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A belief or tenet, especially about philosophical or theological matters."
+  },
+  "documentation": {
+    "phonetic": "/ˌdɒkjʊmənˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something transposed from a thought to a document; the written account of an idea."
+  },
+  "domain": {
+    "phonetic": "/dəʊˈmeɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A geographic area owned or controlled by a single person or organization."
+  },
+  "dominance": {
+    "phonetic": "/ˈdɒmɪnəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being dominant; of prime importance; supremacy."
+  },
+  "donor": {
+    "phonetic": "/ˈdəʊnə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who makes a donation."
+  },
+  "drift": {
+    "phonetic": "/dɹɪft/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(physical) Movement; that which moves or is moved."
+  },
+  "dual": {
+    "phonetic": "/ˈdjuː.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Of an item that is one of a pair, the other item in the pair."
+  },
+  "dub": {
+    "phonetic": "/dʌb/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To confer knighthood; the conclusion of the ceremony was marked by a tap on the shoulder with a sword."
+  },
+  "dynamic": {
+    "phonetic": "/daɪˈnæ.mɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A characteristic or manner of an interaction; a behavior."
+  },
+  "earnings": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Wages, money earned, income."
+  },
+  "ecological": {
+    "phonetic": "/ˌiːkəˈlɒd͡ʒɪkl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Relating to ecology, the interrelationships of organisms and their environment."
+  },
+  "educator": {
+    "phonetic": "/ˈɛdjʊkeɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person distinguished for his/her educational work, a teacher."
+  },
+  "effectiveness": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The property of being effective, of achieving results."
+  },
+  "efficiency": {
+    "phonetic": "/ɪˈfɪʃn̩si/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The extent to which time is well used for the intended task."
+  },
+  "elaborate": {
+    "phonetic": "/ɪˈlæbəɹeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To develop in detail or complexity"
+  },
+  "electoral": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Relating to or composed of electors."
+  },
+  "elevate": {
+    "phonetic": "/ˈɛləveɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To raise (something) to a higher position."
+  },
+  "eligible": {
+    "phonetic": "/ˈɛlɪdʒəb(ə)l/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who is eligible."
+  },
+  "elite": {
+    "phonetic": "/eɪˈliːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A special group or social class of people which have a superior intellectual, social or economic status as, the elite of society."
+  },
+  "embark": {
+    "phonetic": "/ɛmˈbɑːk/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To get on a boat or ship or (outside the USA) an aeroplane."
+  },
+  "embed": {
+    "phonetic": "/əmˈbɛd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An embedded reporter or journalist, such as a war reporter assigned to and travelling with a military unit, or a political reporter assigned to follow and report on the campaign of a candidate."
+  },
+  "embody": {
+    "phonetic": "/ɪmˈbɒdi/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To represent in a physical or concrete form; to incarnate or personify."
+  },
+  "emergence": {
+    "phonetic": "/ɪˈmɜːdʒ(ə)ns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of rising out of a fluid, or coming forth from envelopment or concealment, or of rising into view; sudden uprising or appearance."
+  },
+  "empirical": {
+    "phonetic": "/ɪmˈpɪɹɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pertaining to or based on experience."
+  },
+  "empower": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To give permission, power, or the legal right to do something."
+  },
+  "enact": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Purpose; determination"
+  },
+  "encompass": {
+    "phonetic": "/ɛnˈkʌm.pəs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To form a circle around; to encircle."
+  },
+  "encouragement": {
+    "phonetic": "[ɪnˈkʌɹɪdʒmənt]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of encouraging"
+  },
+  "endeavour": {
+    "phonetic": "/ɪnˈdɛv.ə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sincere attempt; a determined or assiduous effort towards a specific goal; assiduous or persistent activity."
+  },
+  "engagement": {
+    "phonetic": "/ɪnˈɡeɪd͡ʒ.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An appointment, especially to speak or perform."
+  },
+  "engaging": {
+    "phonetic": "/ɪnˈɡeɪd͡ʒɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(heading) To interact socially."
+  },
+  "enquire": {
+    "phonetic": "/ɪŋˈkwaɪə/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make an enquiry."
+  },
+  "enrich": {
+    "phonetic": "/ɪnˈɹɪt͡ʃ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To enhance."
+  },
+  "ensue": {
+    "phonetic": "/ɛnˈsjʉː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To follow (a leader, inclination etc.)."
+  },
+  "enterprise": {
+    "phonetic": "/ˈɛntɚˌpɹaɪz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A company, business, organization, or other purposeful endeavor."
+  },
+  "enthusiast": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person filled with or guided by enthusiasm."
+  },
+  "entitle": {
+    "phonetic": "/ənˈtaɪtəl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To give a title to."
+  },
+  "entity": {
+    "phonetic": "/ˈen.tɪ.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which has a distinct existence as an individual unit. Often used for organisations which have no physical form."
+  },
+  "epidemic": {
+    "phonetic": "/ˌɛpɪˈdɛmɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A widespread disease that affects many individuals in a population."
+  },
+  "equation": {
+    "phonetic": "/ɪˈkweɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or process of equating two or more things, or the state of those things being equal (that is, identical)."
+  },
+  "erect": {
+    "phonetic": "/ɪˈɹɛkt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Upright; vertical or reaching broadly upwards."
+  },
+  "escalate": {
+    "phonetic": "/ˈɛs.kə.leɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To increase (something) in extent or intensity; to intensify or step up."
+  },
+  "essence": {
+    "phonetic": "/ˈɛsəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The inherent nature of a thing or idea."
+  },
+  "establishment": {
+    "phonetic": "/ɪˈstæblɪʃmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of establishing; a ratifying or ordaining; settlement; confirmation."
+  },
+  "eternal": {
+    "phonetic": "/ɪˈtɜːnəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who lives forever; an immortal."
+  },
+  "evacuate": {
+    "phonetic": "/ɪˈvæk.ju.eɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To leave or withdraw from; to quit; to retire from"
+  },
+  "evoke": {
+    "phonetic": "/ɪˈvəʊk/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To call out; to draw out or bring forth."
+  },
+  "evolutionary": {
+    "phonetic": "/ˌevəˈl(j)uːʃənɹi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to the biological theory of evolution."
+  },
+  "excess": {
+    "phonetic": "/əkˈsɛs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of surpassing or going beyond limits; the being of a measure beyond sufficiency, necessity, or duty; that which exceeds what is usual or proper"
+  },
+  "exclusion": {
+    "phonetic": "/ɪksˈkluːʒən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of excluding or shutting out; removal from consideration or taking part."
+  },
+  "exclusive": {
+    "phonetic": "/ɪkˈsklu.sɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Information (or an artefact) that is granted or obtained exclusively."
+  },
+  "exclusively": {
+    "phonetic": "/ɪkˈskluːsɪvli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(focus) to the exclusion of anything or anyone else; solely or entirely"
+  },
+  "execute": {
+    "phonetic": "/ˈɛksɪˌkjuːt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To kill as punishment for capital crimes."
+  },
+  "execution": {
+    "phonetic": "/ˌek.sɪˈkjuː.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act, manner or style of executing (actions, maneuvers, performances)."
+  },
+  "exert": {
+    "phonetic": "/ɪɡˈzɜːt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put in vigorous action."
+  },
+  "exile": {
+    "phonetic": "/ˈɛkˌsaɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being banished from one's home or country."
+  },
+  "expenditure": {
+    "phonetic": "/ɛkˈspɛndɪt͡ʃə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Act of expending or paying out."
+  },
+  "experimental": {
+    "phonetic": "/ɨkspɛɹəˈmɛntəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The subject of an experiment."
+  },
+  "expire": {
+    "phonetic": "/ɛkˈspaɪ.ə(ɹ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To die."
+  },
+  "extremist": {
+    "phonetic": "/ɛkˈstɹiːmɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who holds extreme views, especially one who advocates such views; a radical or fanatic."
+  },
+  "facilitate": {
+    "phonetic": "/fəˈsɪləteɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make easy or easier."
+  },
+  "faction": {
+    "phonetic": "/ˈfæk.ʃn̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group of people, especially within a political organization, which expresses a shared belief or opinion different from people who are not part of the group."
+  },
+  "faculty": {
+    "phonetic": "/ˈfæ.kəl.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The academic staff at schools, colleges, universities or not-for-profit research institutes, as opposed to the students or support staff."
+  },
+  "fairness": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The property of being fair or equitable."
+  },
+  "fatal": {
+    "phonetic": "[ˈfeɪ.ɾɫ̩]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fatality; an event that leads to death."
+  },
+  "favourable": {
+    "phonetic": "/ˈfeɪv(ə)ɹəbəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pleasing, encouraging or approving."
+  },
+  "feat": {
+    "phonetic": "/fiːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A relatively rare or difficult accomplishment."
+  },
+  "feminist": {
+    "phonetic": "/ˈfɛmənɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An advocate of feminism; a person who believes in bringing about the equality of the sexes (of women and men) in all aspects of public and private life"
+  },
+  "fibre": {
+    "phonetic": "/ˈfaɪ.bə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A single piece of a given material, elongated and roughly round in cross-section, often twisted with other fibres to form thread."
+  },
+  "fierce": {
+    "phonetic": "/fɪəs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Exceedingly violent, severe, ferocious, cruel or savage."
+  },
+  "film-maker": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A producer or director of films/movies."
+  },
+  "filter": {
+    "phonetic": "/ˈfɪltə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A device which separates a suspended, dissolved, or particulate matter from a fluid, solution, or other substance; any device that separates one substance from another."
+  },
+  "firearm": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A personal weapon that uses explosive powder to propel a projectile often made of lead."
+  },
+  "fixture": {
+    "phonetic": "/ˈfɪkstʃə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is fixed in place, especially a permanent appliance or other item of personal property that is considered part of a house and is sold with it; compare fitting, furnishing."
+  },
+  "flaw": {
+    "phonetic": "/ˈflɔː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A flake, fragment, or shiver."
+  },
+  "flawed": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a flaw or imperfection."
+  },
+  "flee": {
+    "phonetic": "/fliː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To run away; to escape."
+  },
+  "fleet": {
+    "phonetic": "/fliːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A group of vessels or vehicles."
+  },
+  "flesh": {
+    "phonetic": "/flɛʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The soft tissue of the body, especially muscle and fat."
+  },
+  "flexibility": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being flexible; suppleness; pliability."
+  },
+  "flourish": {
+    "phonetic": "/ˈflʌ.ɹɪʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A dramatic gesture such as the waving of a flag."
+  },
+  "fluid": {
+    "phonetic": "/ˈfluːɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any substance which can flow with relative ease, tends to assume the shape of its container, and obeys Bernoulli's principle; a liquid, gas or plasma."
+  },
+  "footage": {
+    "phonetic": "/ˈfʊtɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An amount of film or tape that has been used to record something."
+  },
+  "foreigner": {
+    "phonetic": "/ˈfɒɹ.ɪ.nə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person from a foreign country."
+  },
+  "forge": {
+    "phonetic": "/fɔːd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Furnace or hearth where metals are heated prior to hammering them into shape."
+  },
+  "formula": {
+    "phonetic": "/ˈfɔː.mjʊ.lə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any mathematical rule expressed symbolically."
+  },
+  "formulate": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To reduce to, or express in, a formula; to put in a clear and definite form of statement or expression."
+  },
+  "forthcoming": {
+    "phonetic": "/fɔːθˈkʌmɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of coming forth."
+  },
+  "foster": {
+    "phonetic": "/ˈfɒstə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A foster parent."
+  },
+  "franchise": {
+    "phonetic": "/ˈfɹænt͡ʃaɪ̯z/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The right to vote at a public election or referendum; see: suffrage, suffragette."
+  },
+  "frankly": {
+    "phonetic": "/ˈfɹæŋkli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(manner) In a frank, open or (too) honest manner."
+  },
+  "functional": {
+    "phonetic": "/ˈfʌŋk(t)ʃnəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A function that takes a function as its argument; More precisely: A function y=f(x) whose argument x varies in a space of (real valued, complex valued) functions and whose value belongs to a monodimensional space. An example: the definite integration of integrable real functions in a real interval."
+  },
+  "fundraising": {
+    "phonetic": "/ˈfʌndˌɹeɪzɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of collecting money by requesting donations from individuals and businesses."
+  },
+  "glory": {
+    "phonetic": "/ˈɡlo(ː)ɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Great or overwhelming beauty or splendour."
+  },
+  "governance": {
+    "phonetic": "/ˈɡʌvənəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process, or the power, of governing; government or administration."
+  },
+  "grace": {
+    "phonetic": "/ɡɹeɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Charming, pleasing qualities."
+  },
+  "grasp": {
+    "phonetic": "/ɡɹɑːsp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(sometimes figurative) Grip."
+  },
+  "grave": {
+    "phonetic": "/ɡɹeɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An excavation in the earth as a place of burial"
+  },
+  "gravity": {
+    "phonetic": "/ˈɡɹævɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state or condition of having weight; weight; heaviness."
+  },
+  "grid": {
+    "phonetic": "/ɡɹɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rectangular array of squares or rectangles of equal size, such as in a crossword puzzle."
+  },
+  "grief": {
+    "phonetic": "/ɡɹiːf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Suffering, hardship."
+  },
+  "grind": {
+    "phonetic": "/ˈɡɹaɪnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of reducing to powder, or of sharpening, by friction."
+  },
+  "grip": {
+    "phonetic": "/ɡɹɪp/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To take hold of, particularly with the hand."
+  },
+  "gross": {
+    "phonetic": "/ɡɹəʊs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Twelve dozen = 144."
+  },
+  "guerrilla": {
+    "phonetic": "/ɡəˈɹɪlə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A soldier in a small independent group, fighting against the government or regular forces by surprise raids."
+  },
+  "gut": {
+    "phonetic": "/ɡʌt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The alimentary canal, especially the intestine."
+  },
+  "hail": {
+    "phonetic": "/heɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Balls or pieces of ice falling as precipitation, often in connection with a thunderstorm."
+  },
+  "halt": {
+    "phonetic": "/hɔːlt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To limp; move with a limping gait."
+  },
+  "handling": {
+    "phonetic": "/ˈhændlɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A touching, controlling, managing, using, take care of, etc., with the hand or hands, or as with the hands."
+  },
+  "harassment": {
+    "phonetic": "/həˈɹæsmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Persistent attacks and criticism causing worry and distress."
+  },
+  "harmony": {
+    "phonetic": "/ˈhɑːməni/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Agreement or accord."
+  },
+  "hatred": {
+    "phonetic": "/ˈheɪtɹɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Strong aversion; intense dislike"
+  },
+  "haunt": {
+    "phonetic": "/hænt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place at which one is regularly found; a habitation or hangout."
+  },
+  "hazard": {
+    "phonetic": "/ˈhazəd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The chance of suffering harm; danger, peril, risk of loss."
+  },
+  "heighten": {
+    "phonetic": "/ˈhaɪtən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make high; to raise higher; to elevate."
+  },
+  "heritage": {
+    "phonetic": "/ˈhɛɹɪtɪd͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An inheritance; property that may be inherited."
+  },
+  "hierarchy": {
+    "phonetic": "/ˈhaɪ.ə.ɹɑː(ɹ).ki/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A body of authoritative officials organized in nested ranks."
+  },
+  "high-profile": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Important or well publicized."
+  },
+  "homeland": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The country that one regards as home."
+  },
+  "hook": {
+    "phonetic": "/huːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rod bent into a curved shape, typically with one end free and the other end secured to a rope or other attachment."
+  },
+  "horizon": {
+    "phonetic": "/həˈɹaɪzən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The visible horizontal line or point (in all directions) that appears to connect the Earth to the sky."
+  },
+  "hydrogen": {
+    "phonetic": "/ˈhaɪdɹədʒ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The lightest chemical element (symbol H), with an atomic number of 1 and atomic weight of 1.00794."
+  },
+  "identification": {
+    "phonetic": "/aɪˌdɛntɪfɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of identifying, or proving to be the same."
+  },
+  "ideological": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or pertaining to an ideology."
+  },
+  "ideology": {
+    "phonetic": "/ˌaɪ.diːˈɒl.ə.d͡ʒiː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Doctrine, philosophy, body of beliefs or principles belonging to an individual or group."
+  },
+  "ignorance": {
+    "phonetic": "/ˈɪɡnəɹəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The condition of being uninformed or uneducated. Lack of knowledge or information."
+  },
+  "imagery": {
+    "phonetic": "/-ədʒɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The work of one who makes images or visible representation of objects."
+  },
+  "immense": {
+    "phonetic": "/ɪˈmɛns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Immense extent or expanse; immensity"
+  },
+  "imminent": {
+    "phonetic": "/ˈɪmɪnənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "About to happen, occur, or take place very soon, especially of something which won't last long."
+  },
+  "implementation": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of moving an idea from concept to reality. In business, engineering and other fields, implementation refers to the building process rather than the design process."
+  },
+  "imprison": {
+    "phonetic": "/ɪmˈpɹɪzən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put in or as if in prison; confine."
+  },
+  "imprisonment": {
+    "phonetic": "/ɪmˈpɹɪzn̩.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A confinement in a place, especially a prison or a jail, as punishment for a crime."
+  },
+  "inability": {
+    "phonetic": "/ˌɪnəˈbɪlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Lack of the ability to do something; incapability."
+  },
+  "inadequate": {
+    "phonetic": "/ɪnˈædəkwɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An individual who is inadequate."
+  },
+  "inappropriate": {
+    "phonetic": "/ˌɪnəˈpɹəʊpɹi.ət/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Not appropriate; not suitable for the situation, time, or place."
+  },
+  "incidence": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of something happening; occurrence."
+  },
+  "inclined": {
+    "phonetic": "/ɪnˈklaɪnd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To bend or move (something) out of a given plane or direction, often the horizontal or vertical."
+  },
+  "inclusion": {
+    "phonetic": "/ɪnˈkluːʒən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An addition or annex to a group, set, or total."
+  },
+  "incur": {
+    "phonetic": "/ɪnˈkəː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To bring upon oneself or expose oneself to, especially something inconvenient, harmful, or onerous; to become liable or subject to"
+  },
+  "indicator": {
+    "phonetic": "/ˈɪn.dɪ.ˌkeɪ.tə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A pointer or index that indicates something."
+  },
+  "indigenous": {
+    "phonetic": "/ɪnˈdɪdʒɪnəs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Born or originating in, native to a land or region, especially before an intrusion."
+  },
+  "induce": {
+    "phonetic": "/ɪnˈdjuːs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To lead by persuasion or influence; incite or prevail upon."
+  },
+  "indulge": {
+    "phonetic": "/ɪnˈdʌldʒ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(often followed by \"in\"): To yield to a temptation or desire."
+  },
+  "inequality": {
+    "phonetic": "/ˌɪnɪˈkwɒlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An unfair, not equal, state."
+  },
+  "infamous": {
+    "phonetic": "/ˈɪnfəməs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a bad reputation, disreputable; notoriously bad, unpleasant or evil; widely known, especially for something bad."
+  },
+  "inflict": {
+    "phonetic": "/ɪnˈflɪkt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To thrust upon; to impose."
+  },
+  "influential": {
+    "phonetic": "/ɪnfluˈɛnʃəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who has influence"
+  },
+  "inherent": {
+    "phonetic": "/ɪnˈhɛɹənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Naturally as part or consequence of something."
+  },
+  "inhibit": {
+    "phonetic": "/ɪnˈhɪbɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To hold in or hold back; to keep in check; restrain."
+  },
+  "initiate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A new member of an organization."
+  },
+  "injustice": {
+    "phonetic": "/ɪnˈdʒʌs.tɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Absence of justice; unjustice."
+  },
+  "inmate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person confined to an institution such as a prison (as a convict) or hospital (as a patient)."
+  },
+  "insufficient": {
+    "phonetic": "/ɪnsəˈfɪʃənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Not sufficient."
+  },
+  "intact": {
+    "phonetic": "/ɪnˈtækt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Left complete or whole; not touched, defiled, sullied or otherwise damaged"
+  },
+  "intake": {
+    "phonetic": "/ˈɪnteɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The place where water, air or other fluid is taken into a pipe or conduit; opposed to outlet."
+  },
+  "integral": {
+    "phonetic": "/ˈɪntɪɡɹəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A number, the limit of the sums computed in a process in which the domain of a function is divided into small subsets and a possibly nominal value of the function on each subset is multiplied by the measure of that subset, all these products then being summed."
+  },
+  "integrated": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To form into one whole; to make entire; to complete; to renew; to restore; to perfect."
+  },
+  "integration": {
+    "phonetic": "/ɪntəˈɡɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or process of making whole or entire."
+  },
+  "integrity": {
+    "phonetic": "/ɪnˈtɛɡɹəti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Steadfast adherence to a strict moral or ethical code."
+  },
+  "intellectual": {
+    "phonetic": "/ˌɪntəˈlɛk(t)ʃʊəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An intelligent, learned person, especially one who discourses about learned matters."
+  },
+  "intensify": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To render more intense"
+  },
+  "intensity": {
+    "phonetic": "/ɪnˈtɛnsɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being intense."
+  },
+  "intensive": {
+    "phonetic": "/ɪnˈtɛnsɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Form of a word with a stronger or more forceful sense than the root on which the intensive is built."
+  },
+  "intent": {
+    "phonetic": "/ɪnˈtɛnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A purpose; something that is intended."
+  },
+  "interactive": {
+    "phonetic": "/ɪntɚˈæktɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A feature (as in a museum) that can be interacted with."
+  },
+  "interface": {
+    "phonetic": "/ˈɪntəfeɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The point of interconnection or contact between entities."
+  },
+  "interfere": {
+    "phonetic": "/ˌɪntəˈfɪə/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To get involved or involve oneself, causing disturbance."
+  },
+  "interference": {
+    "phonetic": "/ˌɪntəɹˈfiɹɨns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of interfering with something, or something that interferes."
+  },
+  "interim": {
+    "phonetic": "/ˈɪntəɹɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A transitional or temporary period between other events."
+  },
+  "interior": {
+    "phonetic": "/ɪnˈtɪəɹɪə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The inside of a building, container, cavern, or other enclosed structure."
+  },
+  "intermediate": {
+    "phonetic": "/ɪntə(ɹ)ˈmidi.ət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything in an intermediate position."
+  },
+  "intervene": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To become involved in a situation, so as to alter or prevent an action."
+  },
+  "intervention": {
+    "phonetic": "/ɪntəˈvɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The action of intervening; interfering in some course of events."
+  },
+  "intimate": {
+    "phonetic": "/ˈɪn.tɪ.mət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A very close friend."
+  },
+  "intriguing": {
+    "phonetic": "/ɪnˈtɹiːɡɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To conceive or carry out a secret plan intended to harm; to form a plot or scheme."
+  },
+  "investigator": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who investigates."
+  },
+  "invoke": {
+    "phonetic": "/ɪnˈvoʊk/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To call upon (a person, a god) for help, assistance or guidance."
+  },
+  "involvement": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of involving, or the state of being involved."
+  },
+  "ironic": {
+    "phonetic": "/aɪˈɹɒn.ɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Characterized by or constituting (any kind of) irony."
+  },
+  "ironically": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(manner) In an ironic manner; in a way displaying irony."
+  },
+  "irony": {
+    "phonetic": "/ˈaɪə.ɹən.i/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A statement that, when taken in context, may actually mean something different from, or the opposite of, what is written literally; the use of words expressing something other than their literal intention, often in a humorous context."
+  },
+  "landmark": {
+    "phonetic": "/ˈlændmɑɹk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An object that marks the boundary of a piece of land (usually a stone, or a tree)."
+  },
+  "large-scale": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Large in amount, scope or extent."
+  },
+  "latter": {
+    "phonetic": "/ˈlæt̬.əɹ/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Relating to or being the second of two items."
+  },
+  "lawsuit": {
+    "phonetic": "/ˈlɔˌs(j)ut/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "In civil law, a case where two or more people disagree and one or more of the parties take the case to a court for resolution."
+  },
+  "layout": {
+    "phonetic": "/ˈleɪ.aʊt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A structured arrangement of items within certain limits."
+  },
+  "leap": {
+    "phonetic": "/liːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of leaping or jumping."
+  },
+  "legacy": {
+    "phonetic": "/ˈleɪɡəsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Money or property bequeathed to someone in a will."
+  },
+  "legendary": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A collection of legends, in particular of lives of saints."
+  },
+  "legislation": {
+    "phonetic": "/ˌlɛd͡ʒɪsˈleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of legislating; preparation and enactment of laws; the laws enacted."
+  },
+  "legislative": {
+    "phonetic": "/ˈlɛ.dʒɪ.slə.tɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That branch of government which is responsible for making, or having the power to make, a law or laws."
+  },
+  "legislature": {
+    "phonetic": "/ˈlɛdʒɪsləˌtʃʊə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A governmental body with the power to make, amend and repeal laws."
+  },
+  "legitimate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person born to a legally married couple."
+  },
+  "lengthy": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having length; long and overextended, especially in time rather than dimension."
+  },
+  "lesbian": {
+    "phonetic": "/ˈlɛzbi.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A homosexual woman, one who is mostly or exclusively sexually or romantically attracted to other women."
+  },
+  "lesser": {
+    "phonetic": "/ˈlɛsə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A thing that is of smaller size, value, importance etc."
+  },
+  "lethal": {
+    "phonetic": "/ˈliː.θəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any weapon that causes death."
+  },
+  "liable": {
+    "phonetic": "/ˈlaɪ̯əbəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Bound or obliged in law or equity; responsible; answerable."
+  },
+  "liberal": {
+    "phonetic": "/ˈlɪbɹəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One with liberal views, supporting individual liberty (see Wikipedia's article on Liberalism)."
+  },
+  "liberation": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of liberating or the state of being liberated."
+  },
+  "liberty": {
+    "phonetic": "/ˈlɪbɚti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The condition of being free from control or restrictions."
+  },
+  "lifelong": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Extending for the entire duration of life."
+  },
+  "likelihood": {
+    "phonetic": "/ˈlaɪklihʊd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The probability of a specified outcome; the chance of something happening; probability; the state or degree of being probable."
+  },
+  "limb": {
+    "phonetic": "/lɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A major appendage of human or animal, used for locomotion (such as an arm, leg or wing)."
+  },
+  "linear": {
+    "phonetic": "/ˈlɪn.i.ə/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having the form of a line; straight or roughly straight; following a direct course."
+  },
+  "line-up": {
+    "phonetic": "/ˈlaɪn.ʌp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A physical or photographic queue of people allegedly involved in a crime, allowing a witness to identify them"
+  },
+  "linger": {
+    "phonetic": "/ˈlɪŋɡə/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To stay or remain in a place or situation, especially as if unwilling to depart or not easily able to do so; to loiter."
+  },
+  "listing": {
+    "phonetic": "/ˈlɪstɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To create or recite a list."
+  },
+  "literacy": {
+    "phonetic": "/ˈlɪt.ɹə.si/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The ability to read and write."
+  },
+  "lobby": {
+    "phonetic": "/lɒbi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An entryway or reception area; vestibule; passageway; corridor."
+  },
+  "logic": {
+    "phonetic": "/ˈlɒdʒɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A method of human thought that involves thinking in a linear, step-by-step manner about how a problem can be solved. Logic is the basis of many principles including the scientific method."
+  },
+  "long-standing": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having existed for a long time."
+  },
+  "long-time": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having endured for a long period of time."
+  },
+  "loom": {
+    "phonetic": "/luːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A utensil; tool; a weapon; (usually in compound) an article in general."
+  },
+  "loop": {
+    "phonetic": "/luːp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A length of thread, line or rope that is doubled over to make an opening."
+  },
+  "mainland": {
+    "phonetic": "/ˈmeɪ̪nlənd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The continent; the principal land, as distinguished from islands or a peninsula."
+  },
+  "mainstream": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The principal current in a flow, such as a river or flow of air"
+  },
+  "maintenance": {
+    "phonetic": "/ˈmeɪnt(ə)nəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Actions performed to keep some machine or system functioning or in service."
+  },
+  "mandate": {
+    "phonetic": "/ˈmæn.deɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An official or authoritative command; an order or injunction; a commission; a judicial precept."
+  },
+  "mandatory": {
+    "phonetic": "/ˈmæn.də.t(ə)ɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sign or line that require the path of the disc to be above, below or to one side of it."
+  },
+  "manifest": {
+    "phonetic": "/ˈmæn.ə.fɛst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A list or invoice of the passengers or goods being carried by a commercial vehicle or ship."
+  },
+  "manipulate": {
+    "phonetic": "/məˈnɪpjʊleɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To move, arrange or operate something using the hands"
+  },
+  "manipulation": {
+    "phonetic": "/məˌnɪp.juˈleɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The practice of manipulating or the state of being manipulated."
+  },
+  "manuscript": {
+    "phonetic": "/ˈmænjəˌskɹɪpt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A book, composition or any other document, written by hand (or manually typewritten), not mechanically reproduced."
+  },
+  "marginal": {
+    "phonetic": "/ˈmɑːˌdʒɪn.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is marginal."
+  },
+  "marine": {
+    "phonetic": "/məˈɹiːn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A soldier, normally a member of a marine corps, trained to serve on board or from a ship"
+  },
+  "marketplace": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An open area in a town housing a public market."
+  },
+  "massacre": {
+    "phonetic": "/ˈmæs.ə.kə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The killing of a considerable number (usually limited to people) where little or no resistance can be made, with indiscriminate violence, without necessity, and contrary to civilized norms."
+  },
+  "mature": {
+    "phonetic": "/məˈtjʊə/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Fully developed; grown up in terms of physical appearance, behaviour or thinking; ripe."
+  },
+  "maximize": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make as large as possible"
+  },
+  "meaningful": {
+    "phonetic": "/ˈminɪŋfʊl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having meaning, significant."
+  },
+  "meantime": {
+    "phonetic": "/ˈmiːntaɪm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The time spent waiting for another event; time in between."
+  },
+  "medieval": {
+    "phonetic": "/mɪd.ˈiː.vəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Someone living in the Middle Ages."
+  },
+  "meditation": {
+    "phonetic": "/mɛdɪˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A devotional exercise of, or leading to contemplation."
+  },
+  "melody": {
+    "phonetic": "/ˈmel.ə.di/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Tune; sequence of notes that makes up a musical phrase"
+  },
+  "memo": {
+    "phonetic": "/ˈmɛməʊ̯/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A short note; a memorandum."
+  },
+  "memoir": {
+    "phonetic": "/ˈmɛmˌwɑː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An autobiography; a book describing the personal experiences of an author."
+  },
+  "memorial": {
+    "phonetic": "/məˈmoʊɹi.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Memory; recollection."
+  },
+  "mentor": {
+    "phonetic": "/ˈmɛn.tɔː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A wise and trusted counselor or teacher"
+  },
+  "merchant": {
+    "phonetic": "/ˈmɜːtʃənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who traffics in commodities for profit."
+  },
+  "mercy": {
+    "phonetic": "/ˈmɜːsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Relenting; forbearance to cause or allow harm to another."
+  },
+  "mere": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A body of standing water, such as a lake or a pond. More specifically, it can refer to a lake that is broad in relation to its depth. Also included in place names such as Windermere."
+  },
+  "merely": {
+    "phonetic": "/ˈmɪəli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Wholly, entirely."
+  },
+  "merge": {
+    "phonetic": "/mɜːdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The joining together of multiple sources."
+  },
+  "merger": {
+    "phonetic": "/ˈmɜːdʒə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One that merges."
+  },
+  "militia": {
+    "phonetic": "/məˈlɪʃə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An army of trained civilians, which may be an official reserve army, called upon in time of need, the entire able-bodied population of a state which may also be called upon, or a private force not under government control."
+  },
+  "minimal": {
+    "phonetic": "/mɪnəməl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "The smallest possible amount, quantity, or degree."
+  },
+  "minimize": {
+    "phonetic": "/ˈmɪn.ə.maɪz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make (something) as small or as insignificant as possible."
+  },
+  "misleading": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To lead astray, in a false direction."
+  },
+  "mobility": {
+    "phonetic": "/mə(ʊ)ˈbɪlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The ability to move; capacity for movement."
+  },
+  "mobilize": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make something mobile."
+  },
+  "moderate": {
+    "phonetic": "/ˈmɑdəɹeɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who holds an intermediate position between extremes, as in politics."
+  },
+  "modification": {
+    "phonetic": "/ˌmɒdɪfɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The form of existence belonging to a particular object, entity etc.; a mode of being."
+  },
+  "momentum": {
+    "phonetic": "/ˌmoʊˈmɛntəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Of a body in motion: the tendency of a body to maintain its inertial motion; the product of its mass and velocity."
+  },
+  "monopoly": {
+    "phonetic": "/məˈnɒpəˌli/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A situation, by legal privilege or other agreement, in which solely one party (company, cartel etc.) exclusively provides a particular product or service, dominating that market and generally exerting powerful control over it."
+  },
+  "morality": {
+    "phonetic": "/məˈɹælɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Recognition of the distinction between good and evil or between right and wrong; respect for and obedience to the rules of right conduct; the mental disposition or characteristic of behaving in a manner intended to produce morally good results."
+  },
+  "motorist": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who drives a motor vehicle."
+  },
+  "municipal": {
+    "phonetic": "/mjuˈnɪsɪpəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A financial instrument issued by a municipality."
+  },
+  "mutual": {
+    "phonetic": "/ˈmjuːt͡ʃuəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A mutual fund."
+  },
+  "namely": {
+    "phonetic": "/ˈneɪmli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Specifically; that is to say."
+  },
+  "nationwide": {
+    "phonetic": "/ˌneɪ.ʃənˈwaɪd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Extending throughout an entire nation."
+  },
+  "naval": {
+    "phonetic": "/ˈneɪvəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to a navy."
+  },
+  "niche": {
+    "phonetic": "/niːʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A cavity, hollow, or recess, generally within the thickness of a wall, for a statue, bust, or other erect ornament. Hence, any similar position, literal or figurative."
+  },
+  "nominate": {
+    "phonetic": "/ˈnɒm.ə.neɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To name someone as a candidate for a particular role or position, including that of an office."
+  },
+  "nomination": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act or instance of nominating."
+  },
+  "nominee": {
+    "phonetic": "/ˌnɒmɪˈniː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person named, or designated, by another, to any office, duty, or position; one nominated, or proposed, by others for office or for election to office."
+  },
+  "nonetheless": {
+    "phonetic": "/ˌnʌnðəˈlɛs/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Nevertheless."
+  },
+  "non-profit": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An organization that exists for reasons other than to make a profit, such as a charitable, educational or service organization."
+  },
+  "notable": {
+    "phonetic": "/ˈnəʊtəbl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or thing of distinction."
+  },
+  "notably": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(focus) As a pointed example; in a notable manner."
+  },
+  "notify": {
+    "phonetic": "/ˈnoʊtɪfaɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To give (someone) notice (of some event)."
+  },
+  "notorious": {
+    "phonetic": "/nəʊˈtɔːɹɪəs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Widely known, especially for something negative; infamous."
+  },
+  "novel": {
+    "phonetic": "/ˈnɒvl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Newly made, formed or evolved; having no precedent; of recent origin; new."
+  },
+  "offering": {
+    "phonetic": "/ˈɑfəɹɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To propose or express one's willingness (to do something)."
+  },
+  "offspring": {
+    "phonetic": "/ˈɒfspɹɪŋ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person's daughter(s) and/or son(s); a person's children."
+  },
+  "operational": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to operations, especially military operations."
+  },
+  "opt": {
+    "phonetic": "/ɒpt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To choose; select."
+  },
+  "optical": {
+    "phonetic": "/ˈɒptɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, or relating to sight; visual."
+  },
+  "optimism": {
+    "phonetic": "/ˈɒptɪmɪzəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A tendency to expect the best, or at least, a favourable outcome"
+  },
+  "oral": {
+    "phonetic": "/ˈɒɹəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A spoken test or examination, particularly in a language class."
+  },
+  "organizational": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, relating to, or produced by an organization."
+  },
+  "orientation": {
+    "phonetic": "/ˌɔɹiɛnˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The determination of the relative position of something or someone."
+  },
+  "originate": {
+    "phonetic": "/əˈɹɪdʒɪneɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To cause to be, to bring into existence; to produce, initiate."
+  },
+  "outbreak": {
+    "phonetic": "/ˈaʊtbɹeɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An eruption; the sudden appearance of a rash, disease, etc."
+  },
+  "outlet": {
+    "phonetic": "/ˈaʊtlɛt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vent or similar passage to allow the escape of something."
+  },
+  "outlook": {
+    "phonetic": "/ˈaʊtˌlʊk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place from which something can be viewed."
+  },
+  "outrage": {
+    "phonetic": "/ˈæot.ɹæed͡ʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An excessively violent or vicious attack; an atrocity."
+  },
+  "outsider": {
+    "phonetic": "/ˌaʊtˈsaɪdəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who is not part of a community or organization."
+  },
+  "overlook": {
+    "phonetic": "/əʊvəˈlʊk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vista or point that gives a beautiful view."
+  },
+  "overly": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Superficial; not thorough; careless, negligent, inattentive."
+  },
+  "oversee": {
+    "phonetic": "/əʊvə(ɹ)siː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To survey, look at something in a wide angle."
+  },
+  "overturn": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A turning over or upside-down; inversion."
+  },
+  "overwhelm": {
+    "phonetic": "/ˌovɚˈʍɛlm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state or condition of being overwhelmed."
+  },
+  "overwhelming": {
+    "phonetic": "/ˌəʊvəˈwɛlmɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To engulf, surge over and submerge."
+  },
+  "parameter": {
+    "phonetic": "/pəˈɹæm.ɪ.tə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A value kept constant during an experiment, equation, calculation or similar, but varied over other versions of the experiment, equation, calculation, etc."
+  },
+  "parental": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person fulfilling a parental role."
+  },
+  "parish": {
+    "phonetic": "/ˈpæɹɪʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "In the Anglican, Eastern Orthodox, Lutheran and Roman Catholic Church, an administrative part of a diocese that has its own church."
+  },
+  "parliamentary": {
+    "phonetic": "/ˌpɑːləˈmentəɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A parliamentary train."
+  },
+  "partial": {
+    "phonetic": "/ˈpɑːʃəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A partial derivative: a derivative with respect to one independent variable of a function in multiple variables while holding the other variables constant."
+  },
+  "partially": {
+    "phonetic": "/ˈpɑːʃəli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "To a partial degree or extent, incompletely."
+  },
+  "passive": {
+    "phonetic": "/ˈpæs.ɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(grammar) The passive voice of verbs."
+  },
+  "pastor": {
+    "phonetic": "/ˈpɑːstə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A shepherd; someone who tends to a flock of animals."
+  },
+  "patent": {
+    "phonetic": "/ˈpeɪtənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A declaration issued by a government agency declaring someone the inventor of a new invention and having the privilege of stopping others from making, using or selling the claimed invention; a letter patent."
+  },
+  "pathway": {
+    "phonetic": "/ˈpæθˌweɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A footpath or other path or track."
+  },
+  "personnel": {
+    "phonetic": "/-el/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Employees; office staff."
+  },
+  "petition": {
+    "phonetic": "/pəˈtɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A formal, written request made to an official person or organized body, often containing many signatures."
+  },
+  "philosophical": {
+    "phonetic": "/ˌfɪləˈsɒfɪkl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, or pertaining to, philosophy."
+  },
+  "physician": {
+    "phonetic": "/fɪˈzɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A practitioner of physic, i.e. a specialist in internal medicine, especially as opposed to a surgeon; a practitioner who treats with medication rather than with surgery."
+  },
+  "pioneer": {
+    "phonetic": "/ˌpaɪəˈnɪəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who goes before, as into the wilderness, preparing the way for others to follow."
+  },
+  "pipeline": {
+    "phonetic": "/ˈpaɪpˌlaɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A conduit made of pipes used to convey water, gas or petroleum etc."
+  },
+  "plea": {
+    "phonetic": "/pliː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An appeal, petition, urgent prayer or entreaty."
+  },
+  "plead": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To present (an argument or a plea), especially in a legal case."
+  },
+  "pledge": {
+    "phonetic": "/plɛdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A solemn promise to do something."
+  },
+  "plunge": {
+    "phonetic": "/plʌndʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of plunging or submerging"
+  },
+  "poll": {
+    "phonetic": "/pɔl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A survey of people, usually statistically analyzed to gauge wider public opinion."
+  },
+  "portfolio": {
+    "phonetic": "/-əʊl.jəʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A case for carrying papers, drawings, photographs, maps and other flat documents."
+  },
+  "portray": {
+    "phonetic": "/pɔɹˈtɹeɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To paint or draw the likeness of."
+  },
+  "postpone": {
+    "phonetic": "/poʊstˈpoʊn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To delay or put off an event, appointment etc."
+  },
+  "post-war": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pertaining to a period of time immediately following the end of a war; where there is a cessation of conflict."
+  },
+  "practitioner": {
+    "phonetic": "/pɹækˈtɪʃənə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who practices a profession or art, especially law or medicine."
+  },
+  "preach": {
+    "phonetic": "/pɹiːt͡ʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A religious discourse."
+  },
+  "precedent": {
+    "phonetic": "/pɹɪˈsiː.dənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act in the past which may be used as an example to help decide the outcome of similar instances in the future."
+  },
+  "precision": {
+    "phonetic": "/pɹɪˈsɪ.ʒ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being precise or exact; exactness."
+  },
+  "predator": {
+    "phonetic": "/ˈpɹɛd.ə.təɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any animal or other organism that hunts and kills other organisms (their prey), primarily for food."
+  },
+  "predecessor": {
+    "phonetic": "/ˈpɹiːdɪsɛsɚ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who precedes; one who has preceded another in any state, position, office, etc.; one whom another follows or comes after, in any office or position."
+  },
+  "predominantly": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a predominant manner. Most commonly or frequently by a large margin."
+  },
+  "prejudice": {
+    "phonetic": "/ˈpɹɛd͡ʒədɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An adverse judgment or opinion formed beforehand or without knowledge of the facts."
+  },
+  "preliminary": {
+    "phonetic": "/pɹɪˈlɪmɪnəɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A preparation for a main matter; an introduction."
+  },
+  "premier": {
+    "phonetic": "/ˈpɹemjə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(Westminster system) The head of government in parliament and leader of the cabinet."
+  },
+  "preservation": {
+    "phonetic": "/pɹɛ.zɝˈveɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of preserving; care to preserve; act of keeping from destruction, decay or any ill."
+  },
+  "preside": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To act as president or chairperson."
+  },
+  "presidency": {
+    "phonetic": "/ˈpɹezɪdənsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The office or role of president."
+  },
+  "presidential": {
+    "phonetic": "/pɹɛzɪˈdɛnʃ(ə)l/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pertaining to a president or presidency."
+  },
+  "prestigious": {
+    "phonetic": "/pɹə-/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of high prestige."
+  },
+  "presumably": {
+    "phonetic": "/pɹɪˈzjuːməbli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Able to be sensibly presumed"
+  },
+  "presume": {
+    "phonetic": "/pɹɪˈzjuːm/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "With infinitive object: to be so presumptuous as (to do something) without proper authority or permission."
+  },
+  "prevail": {
+    "phonetic": "/pɹɪˈveɪl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To be superior in strength, dominance, influence or frequency; to have or gain the advantage over others; to have the upper hand; to outnumber others."
+  },
+  "prevalence": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality or condition of being prevalent; wide extension or spread."
+  },
+  "prevention": {
+    "phonetic": "/pɹɪˈvɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of preventing or hindering; obstruction of action, access, or approach; thwarting."
+  },
+  "prey": {
+    "phonetic": "/pɹeɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything, as goods, etc., taken or got by violence; anything taken by force from an enemy in war"
+  },
+  "principal": {
+    "phonetic": "/ˈpɹɪnsəpəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The money originally invested or loaned, on which basis interest and returns are calculated."
+  },
+  "privatization": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The transfer of a company or organization from government to private ownership and control."
+  },
+  "privilege": {
+    "phonetic": "/ˈpɹɪv(ɪ)lɪdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(ecclesiastical law) An exemption from certain laws granted by the Pope."
+  },
+  "probe": {
+    "phonetic": "/pɹəʊb/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any of various medical instruments used to explore wounds, organs, etc."
+  },
+  "problematic": {
+    "phonetic": "/ˌpɹɒbləˈmætɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(chiefly in the plural) A problem or difficulty in a particular field of study."
+  },
+  "proceedings": {
+    "phonetic": "/pɹəˈsiːd.ɪŋz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of one who proceeds, or who prosecutes a design or transaction"
+  },
+  "proceeds": {
+    "phonetic": "/ˈpɹəʊsiːdz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To move, pass, or go forward or onward; to advance; to carry on"
+  },
+  "processing": {
+    "phonetic": "/ˈpɹəʊsɛsɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To perform a particular process on a thing."
+  },
+  "processor": {
+    "phonetic": "/ˈpɹəʊˌsɛsə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or institution who processes things (foods, photos, applications, etc.)."
+  },
+  "proclaim": {
+    "phonetic": "/pɹoʊˈkleɪm/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To announce or declare."
+  },
+  "productivity": {
+    "phonetic": "/ˌpɹɒdʌkˈtɪvəti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being productive, fertile or efficient"
+  },
+  "profitable": {
+    "phonetic": "/ˈpɹɒfɪtəbl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Producing a profit."
+  },
+  "profound": {
+    "phonetic": "/pɹəˈfaʊnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The deep; the sea; the ocean."
+  },
+  "projection": {
+    "phonetic": "/pɹəˈdʒɛkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something which projects, protrudes, juts out, sticks out, or stands out."
+  },
+  "prominent": {
+    "phonetic": "/ˈpɹɒmɪnənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Standing out, or projecting; jutting; protuberant"
+  },
+  "pronounced": {
+    "phonetic": "/pɹəˈnaʊnst/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To declare formally, officially or ceremoniously."
+  },
+  "propaganda": {
+    "phonetic": "[ˌpɹɒp.ə.ˈɡæn.də]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A concerted set of messages aimed at influencing the opinions or behavior of large numbers of people."
+  },
+  "prosperity": {
+    "phonetic": "/pɹɒˈspɛɹ.ɪ.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The condition of being prosperous, of having good fortune"
+  },
+  "protocol": {
+    "phonetic": "/ˈpɹəʊtəˌkɒl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The minutes, or official record, of a negotiation or transaction; especially a document drawn up officially which forms the legal basis for subsequent agreements based on it."
+  },
+  "province": {
+    "phonetic": "/ˈpɹɒvɪns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A region of the earth or of a continent; a district or country."
+  },
+  "provincial": {
+    "phonetic": "/pɹɒvinʃəl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person belonging to a province; one who is provincial."
+  },
+  "provision": {
+    "phonetic": "/pɹəˈvɪʒ.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An item of goods or supplies, especially food, obtained for future use."
+  },
+  "provoke": {
+    "phonetic": "/pɹəˈvəʊk/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To cause someone to become annoyed or angry."
+  },
+  "psychiatric": {
+    "phonetic": "/ˌsaɪ.ki.ˈæt.ɹɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, or relating to, psychiatry."
+  },
+  "query": {
+    "phonetic": "/ˈkwɪə.ɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A question, an inquiry (US), an enquiry (UK)."
+  },
+  "quest": {
+    "phonetic": "/kwɛst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A journey or effort in pursuit of a goal (often lengthy, ambitious, or fervent); a mission."
+  },
+  "quota": {
+    "phonetic": "/ˈkwoʊtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A proportional part or share; the share or proportion assigned to each in a division."
+  },
+  "radical": {
+    "phonetic": "/ˈɹædɪkəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(historical: 19th-century Britain) A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism)."
+  },
+  "raid": {
+    "phonetic": "/ɹeɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A quick hostile or predatory incursion or invasion in a battle."
+  },
+  "rally": {
+    "phonetic": "/ˈɹæ.li/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A public gathering or mass meeting that is not mainly a protest and is organized to inspire enthusiasm for a cause."
+  },
+  "ratio": {
+    "phonetic": "/ˈɹeɪ.ʃi.əʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A number representing a comparison between two named things."
+  },
+  "rational": {
+    "phonetic": "/ˈɹæʃ(ə)nəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A rational number: a number that can be expressed as the quotient of two integers."
+  },
+  "readily": {
+    "phonetic": "/ˈɹɛdɪli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Without unwillingness or hesitation; showing readiness."
+  },
+  "realization": {
+    "phonetic": "/ˌɹiə-/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of realizing."
+  },
+  "realm": {
+    "phonetic": "/ɹɛlm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An abstract sphere of influence, real or imagined."
+  },
+  "reasoning": {
+    "phonetic": "/ˈɹiːzənɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To deduce or come to a conclusion by being rational"
+  },
+  "reassure": {
+    "phonetic": "/ɹiəˈʃʊə(ɹ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To assure anew; to restore confidence to; to free from fear or self-doubt."
+  },
+  "rebellion": {
+    "phonetic": "/ɹɪˈbɛl.i.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Armed resistance to an established government or ruler."
+  },
+  "recipient": {
+    "phonetic": "/ɹəˈsɪp.i.ənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who receives."
+  },
+  "reconstruction": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A thing that has been reconstructed or restored to an earlier state."
+  },
+  "recount": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Narration, account, description, rendering"
+  },
+  "referendum": {
+    "phonetic": "/ˌɹɛfəˈɹɛndəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A direct popular vote on a proposed law or constitutional amendment. The adposition on is usually used before the related subject of the vote."
+  },
+  "refuge": {
+    "phonetic": "/ˈɹɛfjuːdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A state of safety, protection or shelter."
+  },
+  "refusal": {
+    "phonetic": "/ɹɪˈfjuːzl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of refusing."
+  },
+  "regain": {
+    "phonetic": "/ɹiːˈɡeɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To get back; to recover possession of."
+  },
+  "regardless": {
+    "phonetic": "/ɹɪˈɡɑːd.lɪs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having no regard; heedless; careless."
+  },
+  "rejection": {
+    "phonetic": "/ɹəˈdʒɛkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of rejecting."
+  },
+  "relevance": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The property or state of being relevant or pertinent."
+  },
+  "reliability": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being reliable, dependable or trustworthy."
+  },
+  "reluctant": {
+    "phonetic": "/ɹɪˈlʌktənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Opposing; offering resistance (to)."
+  },
+  "remainder": {
+    "phonetic": "/ɹəˈmeɪndə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A part or parts remaining after some has/have been removed."
+  },
+  "remains": {
+    "phonetic": "/ɹɪˈmeɪnz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(chiefly in the plural) That which is left; relic; remainder."
+  },
+  "remedy": {
+    "phonetic": "/ˈɹɛmədi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that corrects or counteracts."
+  },
+  "removal": {
+    "phonetic": "/ɹəˈmuːvəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of moving, or the fact of being removed."
+  },
+  "render": {
+    "phonetic": "/ˈɹɛn.də/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Stucco or plaster applied to walls (mostly to outside masonry walls)."
+  },
+  "renowned": {
+    "phonetic": "/ɹɪˈnaʊnd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Famous, celebrated, or well-known."
+  },
+  "replacement": {
+    "phonetic": "/ɹɪˈpleɪsmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or thing that takes the place of another; a substitute."
+  },
+  "reportedly": {
+    "phonetic": "/ɹɪˈpɔːtɪdli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "According to reports or rumors; supposedly."
+  },
+  "representation": {
+    "phonetic": "/ˌɹɛp.ɹə.zɛn.ˈteɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which represents something else."
+  },
+  "reproduce": {
+    "phonetic": "/ˌɹi.pɹoʊˈdjus/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To produce an image or copy of."
+  },
+  "reproduction": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of reproducing new individuals biologically."
+  },
+  "resemble": {
+    "phonetic": "/ɹɪˈzɛmb(ə)l/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To be like or similar to (something); to represent as similar."
+  },
+  "reside": {
+    "phonetic": "/ɹɪˈzaɪd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To dwell permanently or for a considerable time; to have a settled abode for a time; to remain for a long time."
+  },
+  "residence": {
+    "phonetic": "/ˈɹɛz.ɪ.dəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The place where one lives; one's home."
+  },
+  "residential": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A trip during which people temporarily live together."
+  },
+  "resignation": {
+    "phonetic": "/ɹɛzɪɡˈneɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of resigning."
+  },
+  "resistance": {
+    "phonetic": "/ɹɪˈzɪstəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of resisting, or the capacity to resist."
+  },
+  "respective": {
+    "phonetic": "/ɹɪˈspɛktɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Relating to particular persons or things, each to each; particular; own."
+  },
+  "respectively": {
+    "phonetic": "/ɹɪˈspɛktɪvli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a relative manner; often used when comparing lists, where the term denotes that the items in the lists correspond to each other in the order they are given."
+  },
+  "restoration": {
+    "phonetic": "/ɹɛstəˈɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of bringing an object back to its original state; the process of restoring something."
+  },
+  "restraint": {
+    "phonetic": "/ɹɪˈstɹeɪnt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that restrains, ties, fastens or secures"
+  },
+  "resume": {
+    "phonetic": "/ɹəˈzjuːm/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To take back possession of (something)."
+  },
+  "retreat": {
+    "phonetic": "/ɹəˈtɹiːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of pulling back or withdrawing, as from something dangerous, or unpleasant."
+  },
+  "retrieve": {
+    "phonetic": "/ɹiˈtɹiv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A retrieval"
+  },
+  "revelation": {
+    "phonetic": "/ɹɛvəˈleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of revealing or disclosing."
+  },
+  "revenge": {
+    "phonetic": "/ɹɪˈvɛndʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any form of personal retaliatory action against an individual, institution, or group for some alleged or perceived harm or injustice."
+  },
+  "reverse": {
+    "phonetic": "/ɹɪˈvɜːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The opposite of something."
+  },
+  "revival": {
+    "phonetic": "/ɹɪˈvaɪvəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of reviving, or the state of being revived"
+  },
+  "revive": {
+    "phonetic": "/ɹɪˈvaɪv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To return to life; to become reanimated or reinvigorated."
+  },
+  "revolutionary": {
+    "phonetic": "/-ˈljuː-/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A revolutionist; a person who revolts."
+  },
+  "rhetoric": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The art of using language, especially public speaking, as a means to persuade."
+  },
+  "riot": {
+    "phonetic": "/ˈɹaɪ.ət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Wanton or unrestrained behavior; uproar; tumult."
+  },
+  "ritual": {
+    "phonetic": "/ˈɹɪ.tʃu.əl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Rite; a repeated set of actions"
+  },
+  "robust": {
+    "phonetic": "/ɹəʊˈbʌst/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Evincing strength and health; strong."
+  },
+  "sacrifice": {
+    "phonetic": "/ˈsækɹɪfaɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The offering of anything to a god; a consecratory rite."
+  },
+  "sanction": {
+    "phonetic": "/ˈsæŋkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An approval, by an authority, generally one that makes something valid."
+  },
+  "scattered": {
+    "phonetic": "/ˈskætəd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To (cause to) separate and go in different directions; to disperse."
+  },
+  "sceptical": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having, or expressing doubt; questioning."
+  },
+  "scope": {
+    "phonetic": "/ˈskoʊp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The breadth, depth or reach of a subject; a domain."
+  },
+  "scrutiny": {
+    "phonetic": "/ˈskɹuː.tɪ.ni/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Intense study of someone or something."
+  },
+  "secular": {
+    "phonetic": "/ˈsɛkjʊlə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A secular ecclesiastic, or one not bound by monastic rules."
+  },
+  "seemingly": {
+    "phonetic": "/ˈsiːmɪŋli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "As it appears; apparently."
+  },
+  "segment": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A length of some object."
+  },
+  "seize": {
+    "phonetic": "/siːz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To deliberately take hold of; to grab or capture."
+  },
+  "seldom": {
+    "phonetic": "/ˈsɛldəm/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Rare; infrequent."
+  },
+  "selective": {
+    "phonetic": "/səˈlɛktɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to the process of selection."
+  },
+  "sensation": {
+    "phonetic": "/sɛnˈseɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A physical feeling or perception from something that comes into contact with the body; something sensed."
+  },
+  "sensitivity": {
+    "phonetic": "/ˌsɛnsɪˈtɪvɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality or state of being sensitive; sensitiveness."
+  },
+  "sentiment": {
+    "phonetic": "/ˈsɛn.tɪ.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A general thought, feeling, or sense."
+  },
+  "separation": {
+    "phonetic": "/sɛpəˈɹeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of disuniting two or more things, or the condition of being separated."
+  },
+  "serial": {
+    "phonetic": "/ˈsɪəɹiːəɫ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A work, such as a work of fiction, published in installments, often numbered and without a specified end."
+  },
+  "settlement": {
+    "phonetic": "/ˈset.l.mənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of settling."
+  },
+  "set-up": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Equipment designed for a particular purpose; an apparatus."
+  },
+  "sexuality": {
+    "phonetic": "/sɛksjuˈælɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being sexual; that which is characterized or distinguished by sex."
+  },
+  "shareholder": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who owns shares of stock in a corporation."
+  },
+  "shatter": {
+    "phonetic": "/ˈʃæt.ə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fragment of anything shattered."
+  },
+  "sheer": {
+    "phonetic": "/ˈʃɪə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sheer curtain or fabric."
+  },
+  "shrink": {
+    "phonetic": "/ˈʃɹɪŋk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Shrinkage; contraction; recoil."
+  },
+  "shrug": {
+    "phonetic": "/ʃɹʌɡ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A lifting of the shoulders to signal indifference or a casual lack of knowledge."
+  },
+  "simulate": {
+    "phonetic": "/-jə-/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To model, replicate, duplicate the behavior, appearance or properties of."
+  },
+  "simulation": {
+    "phonetic": "/sɪmjʊleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that simulates a system or environment in order to predict actual behaviour."
+  },
+  "simultaneously": {
+    "phonetic": "/ˌsɪməlˈteɪnɪəsli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Occurring at the same time."
+  },
+  "situated": {
+    "phonetic": "/ˈsɪt͡ʃueɪtɪd/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To place on or into a physical location."
+  },
+  "solely": {
+    "phonetic": "/ˈsəʊl.li/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Alone; exclusively."
+  },
+  "solicitor": {
+    "phonetic": "/səˈlɪsɪtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who solicits."
+  },
+  "solidarity": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A bond of unity or agreement between individuals, united around a common goal or against a common enemy, such as the unifying principle that defines the labor movement; mutual support within a group."
+  },
+  "sovereignty": {
+    "phonetic": "/ˈsɒv.ɹən.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(of a polity) The state of making laws and controlling resources without the coercion of other nations."
+  },
+  "span": {
+    "phonetic": "/spæn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The space from the thumb to the end of the little finger when extended; nine inches; an eighth of a fathom."
+  },
+  "spark": {
+    "phonetic": "/spɑːk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A small particle of glowing matter, either molten or on fire."
+  },
+  "specialized": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make distinct or separate, particularly:"
+  },
+  "specification": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An explicit set of requirements to be satisfied by a material, product, or service."
+  },
+  "specimen": {
+    "phonetic": "/ˈspɛsɪmɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An individual instance that represents a class; an example."
+  },
+  "spectacle": {
+    "phonetic": "/ˈspɛktəkl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An exciting or extraordinary scene, exhibition, performance etc."
+  },
+  "spectrum": {
+    "phonetic": "/ˈspektɹəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A range; a continuous, infinite, one-dimensional set, possibly bounded by extremes."
+  },
+  "sphere": {
+    "phonetic": "/sfɪə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A regular three-dimensional object in which every cross-section is a circle; the figure described by the revolution of a circle about its diameter ."
+  },
+  "spin": {
+    "phonetic": "/spɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Rapid circular motion."
+  },
+  "spotlight": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A bright, directional light or lamp, especially one used to illuminate the focus or center of attention on a stage."
+  },
+  "spouse": {
+    "phonetic": "/spaʊs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person in a marriage or marital relationship."
+  },
+  "stability": {
+    "phonetic": "/stəˈbɪlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The condition of being stable or in equilibrium, and thus resistant to change."
+  },
+  "stabilize": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make stable."
+  },
+  "stake": {
+    "phonetic": "/steɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A piece of wood or other material, usually long and slender, pointed at one end so as to be easily driven into the ground as a marker or a support or stay."
+  },
+  "standing": {
+    "phonetic": "/ˈstændɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(heading) To position or be positioned physically."
+  },
+  "stark": {
+    "phonetic": "/stɑːk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Hard, firm; obdurate."
+  },
+  "statistical": {
+    "phonetic": "/stəˈtɪstɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or pertaining to statistics."
+  },
+  "steer": {
+    "phonetic": "/stɪə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A suggestion about a course of action."
+  },
+  "stem": {
+    "phonetic": "/stɛm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The stock of a family; a race or generation of progenitors."
+  },
+  "stereotype": {
+    "phonetic": "/ˈstɛ.ɹi.əˌtaɪp/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A conventional, formulaic, and often oversimplified or exaggerated conception, opinion, or image of (a person)."
+  },
+  "stimulus": {
+    "phonetic": "/ˈstɪm.jə.ləs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any external phenomenon that has an influence on a system, by triggering or modifying an internal phenomenon."
+  },
+  "strain": {
+    "phonetic": "/stɹeɪ̯n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Treasure."
+  },
+  "strand": {
+    "phonetic": "/stɹænd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The shore or beach of the sea or ocean; shore; beach."
+  },
+  "submission": {
+    "phonetic": "/səbˈmɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of submitting or yielding; surrender."
+  },
+  "subscriber": {
+    "phonetic": "/səbˈskɹaɪbəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who subscribes to a publication or a service"
+  },
+  "subscription": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Access to a resource for a period of time, generally for payment."
+  },
+  "subsidy": {
+    "phonetic": "/ˈsʌbsɨdi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Financial support or assistance, such as a grant."
+  },
+  "substantial": {
+    "phonetic": "/səbˈstænʃəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Anything having substance; an essential part."
+  },
+  "substantially": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In a strong substantial manner; considerably."
+  },
+  "substitution": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of substituting or the state of being substituted."
+  },
+  "subtle": {
+    "phonetic": "/ˈsʌt(ə)l/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Hard to grasp; not obvious or easily understood; barely noticeable."
+  },
+  "suburban": {
+    "phonetic": "/səˈbɜː(ɹ)bən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who lives in a suburb."
+  },
+  "succession": {
+    "phonetic": "/səkˈsɛʃ.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of following in sequence."
+  },
+  "successive": {
+    "phonetic": "/səkˈsɛsɪv/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Coming one after the other in a series."
+  },
+  "successor": {
+    "phonetic": "/səkˈsɛsə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person or thing that immediately follows another in holding an office or title."
+  },
+  "sue": {
+    "phonetic": "/suː/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To file a legal action against someone, generally a non-criminal action."
+  },
+  "suite": {
+    "phonetic": "/swiːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A retinue or company of attendants, as of a distinguished personage"
+  },
+  "summit": {
+    "phonetic": "/ˈsʌmɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A peak; the topmost point or surface, as of a mountain."
+  },
+  "superior": {
+    "phonetic": "/suːˈpɪəɹi.ə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person of higher rank or quality."
+  },
+  "supervise": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To oversee or direct a task or organization."
+  },
+  "supervision": {
+    "phonetic": "/ˌs(j)uːpəˈvɪʒən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or instance of supervising."
+  },
+  "supervisor": {
+    "phonetic": "/ˈsuːpɚˌvaɪzɚ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person with the official task of overseeing the work of a person or group, or of other operations and activities."
+  },
+  "supplement": {
+    "phonetic": "/ˈsʌpləmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something added, especially to make up for a deficiency."
+  },
+  "supposedly": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "As a matter of supposition; in the beliefs or according to the claims of some people."
+  },
+  "suppress": {
+    "phonetic": "/səˈpɹɛs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put an end to, especially with force, to crush, do away with; to prohibit, subdue."
+  },
+  "supreme": {
+    "phonetic": "/ˌs(j)uːˈpɹiːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The highest point."
+  },
+  "surge": {
+    "phonetic": "/sɜːdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sudden transient rush, flood or increase."
+  },
+  "surgical": {
+    "phonetic": "/ˈsɜːdʒɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, relating to, used in, or resulting from surgery."
+  },
+  "surplus": {
+    "phonetic": "/ˈsɜːpləs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which remains when use or need is satisfied, or when a limit is reached; excess; overplus."
+  },
+  "surrender": {
+    "phonetic": "/səˈɹɛndəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of surrendering, submission into the possession of another; abandonment, resignation."
+  },
+  "surveillance": {
+    "phonetic": "/səɹˈveɪ.ləns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Close observation of an individual or group; person or persons under suspicion."
+  },
+  "suspension": {
+    "phonetic": "/səˈspɛnʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of suspending, or the state of being suspended."
+  },
+  "systematic": {
+    "phonetic": "/ˌsɪs.təˈmæt.ɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Carried out using a planned, ordered procedure."
+  },
+  "tackle": {
+    "phonetic": "/ˈtækəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A device for grasping an object and an attached means of moving it, as a rope and hook."
+  },
+  "tactic": {
+    "phonetic": "/ˈtæktɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A maneuver, or action calculated to achieve some end."
+  },
+  "tactical": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A combinator of proof tactics."
+  },
+  "taxpayer": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who is subject to, liable for, or pays tax as opposed to a nontaxpayer who is neither the subject nor the object of revenue laws."
+  },
+  "tenant": {
+    "phonetic": "/ˈtɛ.nənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who pays a fee (rent) in return for the use of land, buildings, or other property owned by others."
+  },
+  "tender": {
+    "phonetic": "/ˈtɛn.də(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Care, kind concern, regard."
+  },
+  "tenure": {
+    "phonetic": "/ˈtɛn.jə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A status of possessing a thing or an office; an incumbency."
+  },
+  "terminal": {
+    "phonetic": "/ˈtɚmɪnəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A building in an airport where passengers transfer from ground transportation to the facilities that allow them to board airplanes."
+  },
+  "terminate": {
+    "phonetic": "/ˈtɜːmɪneɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To end, especially in an incomplete state."
+  },
+  "terrain": {
+    "phonetic": "/tə.ˈreɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A single, distinctive rock formation; an area having a preponderance of a particular rock or group of rocks."
+  },
+  "testify": {
+    "phonetic": "/ˈtɛstɪfaɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make a declaration, or give evidence, under oath."
+  },
+  "testimony": {
+    "phonetic": "/ˈtɛstɪməni/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Statements made by a witness in court."
+  },
+  "texture": {
+    "phonetic": "/ˈtɛkstʃə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The feel or shape of a surface or substance; the smoothness, roughness, softness, etc. of something."
+  },
+  "theatrical": {
+    "phonetic": "/θiˈæt.ɹɪ.kəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A stage performance, especially one by amateurs."
+  },
+  "theoretical": {
+    "phonetic": "/ˌθi.əˈɹɛtɪkəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or relating to theory; abstract; not empirical."
+  },
+  "thereafter": {
+    "phonetic": "/ˌðeəɹˈæf.tə(ɹ)/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "After that, from then on; thenceforth."
+  },
+  "thereby": {
+    "phonetic": "/ðɛəˈbaɪ/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "By it; by that; by that means, or as a consequence of that."
+  },
+  "thought-provoking": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Interesting in a way that challenges one's beliefs, attitudes, or perspective."
+  },
+  "thread": {
+    "phonetic": "[θɾ̪̊ɛd]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A long, thin and flexible form of material, generally with a round cross-section, used in sewing, weaving or in the construction of string."
+  },
+  "threshold": {
+    "phonetic": "/ˈθɹeʃ(h)əʊld/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The bottom-most part of a doorway that one crosses to enter; a sill."
+  },
+  "thrive": {
+    "phonetic": "/θɹaɪv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To grow or increase stature; to grow vigorously or luxuriantly, to flourish."
+  },
+  "tighten": {
+    "phonetic": "/ˈtaɪ.tən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make tighter."
+  },
+  "timber": {
+    "phonetic": "/ˈtɪmbə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Trees in a forest regarded as a source of wood."
+  },
+  "timely": {
+    "phonetic": "/ˈtaɪmli/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Done at the proper time or within the proper time limits; prompt."
+  },
+  "tolerance": {
+    "phonetic": "/ˈtɒləɹəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The ability to endure pain or hardship; endurance."
+  },
+  "tolerate": {
+    "phonetic": "/ˈtɒl.ə.ɹeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To accept hardship without objection."
+  },
+  "transcript": {
+    "phonetic": "/ˈtɹænskɹɪpt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something which has been transcribed; a writing or composition consisting of the same words as the original; a written copy."
+  },
+  "transformation": {
+    "phonetic": "/ˌtɹæns.fə(ɹ)ˈmeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of transforming or the state of being transformed."
+  },
+  "transit": {
+    "phonetic": "/ˈtɹæn.sɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of passing over, across, or through something."
+  },
+  "transmission": {
+    "phonetic": "/tɹænsˈmɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of transmitting, e.g. data or electric power."
+  },
+  "transparency": {
+    "phonetic": "/tɹænsˈpæɹənsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The quality of being transparent; transparence."
+  },
+  "transparent": {
+    "phonetic": "/tɹæn(t)sˈpæɹənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "(of a material or object) See-through, clear; having the property that light passes through it almost undisturbed, such that one can see through it clearly."
+  },
+  "trauma": {
+    "phonetic": "/ˈtɹaʊ.mə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any serious injury to the body, often resulting from violence or an accident."
+  },
+  "treaty": {
+    "phonetic": "/ˈtɹiːti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A binding agreement concluded by subjects of international law, namely states and international organizations."
+  },
+  "tribal": {
+    "phonetic": "/ˈtɹaɪbəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A design or image that has been influenced by indigenous peoples; especially such a tattoo."
+  },
+  "tribunal": {
+    "phonetic": "/tɹaɪˈbjuːnəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An assembly including one or more judges to conduct judicial business; a court of law."
+  },
+  "tribute": {
+    "phonetic": "/ˈtɹɪbjuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An acknowledgment of gratitude, respect or admiration; an accompanying gift."
+  },
+  "trigger": {
+    "phonetic": "/ˈtɹɪɡə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A finger-operated lever used to fire a gun."
+  },
+  "triumph": {
+    "phonetic": "/ˈtɹaɪ.ʌmf/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A conclusive success following an effort, conflict, or confrontation of obstacles; victory; conquest."
+  },
+  "troubled": {
+    "phonetic": "/ˈtɹʌbl̩d/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To disturb, stir up, agitate (a medium, especially water)."
+  },
+  "tuition": {
+    "phonetic": "/ˈtjuːʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A sum of money paid for instruction (such as in a high school, boarding school, university, or college)."
+  },
+  "turnout": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of coming forth."
+  },
+  "turnover": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The amount of money taken as sales transacted in a given period."
+  },
+  "undergraduate": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A student at a university who has not yet received a degree."
+  },
+  "underlying": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To lie in a position directly beneath."
+  },
+  "undermine": {
+    "phonetic": "/ʌndəˈmaɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To dig underneath (something), to make a passage for destructive or military purposes; to sap."
+  },
+  "undoubtedly": {
+    "phonetic": "/ʌnˈdaʊtɪdli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Without doubt; definitely."
+  },
+  "unify": {
+    "phonetic": "/ˈjuːnɪfaɪ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "Cause to become one; make into a unit; consolidate; merge; combine."
+  },
+  "unprecedented": {
+    "phonetic": "/ʌnˈpɹɛsɪdɛntɪd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Never before seen, done, or experienced; without precedent."
+  },
+  "unveil": {
+    "phonetic": "/ʌnˈveɪl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To remove a veil from; to uncover; to reveal something hidden."
+  },
+  "uphold": {
+    "phonetic": "/ˌʌpˈhold/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To hold up; to lift on high; to elevate."
+  },
+  "utility": {
+    "phonetic": "/juːˈtɪl.ɪ.ti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state or condition of being useful; usefulness."
+  },
+  "utilize": {
+    "phonetic": "/ˈjuːtɨlaɪz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make use of; to use."
+  },
+  "utterly": {
+    "phonetic": "/ˈʌt.ə(ɹ).li/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Completely, entirely, to the fullest extent"
+  },
+  "validity": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being valid, authentic or genuine."
+  },
+  "variable": {
+    "phonetic": "/ˈvɛəɹ.i.ə.bl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is variable."
+  },
+  "venture": {
+    "phonetic": "/ˈvɛn.t͡ʃə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A risky or daring undertaking or journey."
+  },
+  "vibrant": {
+    "phonetic": "/ˈvaɪbɹənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pulsing with energy or activity."
+  },
+  "vice": {
+    "phonetic": "/vaɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A bad habit."
+  },
+  "violate": {
+    "phonetic": "/ˈvaɪəˌleɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To break or disregard (a rule or convention)."
+  },
+  "violation": {
+    "phonetic": "/ˌvaɪəˈleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or an instance of violating or the condition of being violated."
+  },
+  "virtue": {
+    "phonetic": "/-tjuː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Accordance with moral principles; conformity of behaviour or thought with the strictures of morality; good moral conduct."
+  },
+  "vocal": {
+    "phonetic": "/ˈvəʊ.kəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A vocal sound; specifically, a purely vocal element of speech, unmodified except by resonance; a vowel or a diphthong; a tonic element; a tonic; distinguished from a subvocal, and a nonvocal"
+  },
+  "vow": {
+    "phonetic": "/vaʊ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A solemn promise to perform some act, or behave in a specified manner, especially a promise to live and act in accordance with the rules of a religious order."
+  },
+  "vulnerability": {
+    "phonetic": "/ˌvʌlnəɹəˈbɪlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Susceptibility to attack or injury; the state or condition of being weak or poorly defended."
+  },
+  "vulnerable": {
+    "phonetic": "/ˈvʌln(ə)ɹəbl̩/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "More or most likely to be exposed to the chance of being attacked or harmed, either physically or emotionally."
+  },
+  "ward": {
+    "phonetic": "/wɔːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A warden; a guard; a guardian or watchman."
+  },
+  "warfare": {
+    "phonetic": "/ˈwɔːfɛə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The waging of war or armed conflict against an enemy."
+  },
+  "warrant": {
+    "phonetic": "/ˈwɒɹənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Authorization or certification; a sanction, as given by a superior."
+  },
+  "weaken": {
+    "phonetic": "/ˈwikən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make weaker or less strong."
+  },
+  "weave": {
+    "phonetic": "/wiːv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A type or way of weaving."
+  },
+  "well-being": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A state of health, happiness and/or prosperity."
+  },
+  "whatsoever": {
+    "phonetic": "/ˌwɒtsəʊˈɛvə(ɹ)/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Whatever."
+  },
+  "whereby": {
+    "phonetic": "/wɛə(ɹ)ˈbaɪ/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "(interrogative) By what, in which direction; how."
+  },
+  "whilst": {
+    "phonetic": "/hwaɪlst/",
+    "partOfSpeech": "other",
+    "rawDefinition": "(rare or literary in North America) While, at the same time."
+  },
+  "wholly": {
+    "phonetic": "/ˈhəʊli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Completely and entirely; to the fullest extent."
+  },
+  "widen": {
+    "phonetic": "/ˈwaɪdən/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To become wide or wider."
+  },
+  "willingness": {
+    "phonetic": "/ˈwɪlɪŋnəs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being willing"
+  },
+  "wit": {
+    "phonetic": "/wɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(now usually in the plural) Sanity."
+  },
+  "withdrawal": {
+    "phonetic": "/wɪðˈdɹɔːəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Receiving from someone's care what one has earlier entrusted to them. Usually refers to money."
+  },
+  "worthwhile": {
+    "phonetic": "/wɜː(ɹ)θˈwaɪl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Good and important enough to spend time, effort, or money on."
+  },
+  "worthy": {
+    "phonetic": "/ˈwɜːði/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A distinguished or eminent person"
+  },
+  "yield": {
+    "phonetic": "/jiːld/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To pay, give in payment; repay, recompense; reward; requite."
+  },
+  "alien": {
+    "phonetic": "/ˈeɪ.li.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any life form of extraterrestrial or extradimensional origin."
+  },
+  "align": {
+    "phonetic": "/æˈlaɪn/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To form a line; to fall into line."
+  },
+  "alignment": {
+    "phonetic": "[əˈɫaɪnmənt]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An arrangement of items in a line."
+  },
+  "allegation": {
+    "phonetic": "/ˌæl.əˈɡeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An assertion, especially an accusation, not necessarily based on facts."
+  },
+  "allege": {
+    "phonetic": "/əˈlɛdʒ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To state under oath, to plead."
+  },
+  "assemble": {
+    "phonetic": "/əˈsɛmbl̩/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To put together."
+  },
+  "assembly": {
+    "phonetic": "/əˈsɛmb.lɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A set of pieces that work together in unison as a mechanism or device."
+  },
+  "assert": {
+    "phonetic": "/əˈsɜːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An assertion; a section of source code which tests whether an expected condition is true."
+  },
+  "assertion": {
+    "phonetic": "/əˈsɜːʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of asserting; positive declaration or averment."
+  },
+  "assurance": {
+    "phonetic": "/əˈʃɔːɹəns/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of assuring; a declaration tending to inspire full confidence; that which is designed to give confidence."
+  },
+  "asylum": {
+    "phonetic": "/əˈsaɪləm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place of safety."
+  },
+  "bizarre": {
+    "phonetic": "/bəˈzɑː(ɹ)/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Strangely unconventional in style or appearance."
+  },
+  "blast": {
+    "phonetic": "/blɑːst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A violent gust of wind."
+  },
+  "blend": {
+    "phonetic": "/blɛnd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A mixture of two or more things."
+  },
+  "blessing": {
+    "phonetic": "/ˈblɛs.ɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To make something holy by religious rite, sanctify."
+  },
+  "boast": {
+    "phonetic": "/bəʊst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A brag; ostentatious positive appraisal of oneself."
+  },
+  "chamber": {
+    "phonetic": "/ˈtʃeɪmbə(ɹ)/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A room or set of rooms, particularly:"
+  },
+  "characterize": {
+    "phonetic": "/ˈkæɹəktəɹaɪz/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To depict someone or something a particular way (often negative)."
+  },
+  "charter": {
+    "phonetic": "/ˈt͡ʃɑːtə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A document issued by some authority, creating a public or private institution, and defining its purposes and privileges."
+  },
+  "chronic": {
+    "phonetic": "/ˈkɹɒnɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Marijuana, typically of high quality."
+  },
+  "chunk": {
+    "phonetic": "/t͡ʃʌŋk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A part of something that has been separated."
+  },
+  "comparable": {
+    "phonetic": "/kəmˈpæɹəbl̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something suitable for comparison."
+  },
+  "compassion": {
+    "phonetic": "/kəmˈpæʃ.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Deep awareness of the suffering of another, coupled with the wish to relieve it."
+  },
+  "compel": {
+    "phonetic": "/kəmˈpɛl/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To drive together, round up"
+  },
+  "constitute": {
+    "phonetic": "/ˈkɒnstɪtjuːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An established law."
+  },
+  "constitution": {
+    "phonetic": "/ˌkɒnstɪˈtjuːʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act, or process of setting something up, or establishing something; the composition or structure of such a thing; its makeup."
+  },
+  "councillor": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A member of a council."
+  },
+  "counselling": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To give advice, especially professional advice, to (somebody)."
+  },
+  "counsellor": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A professional who counsels people, especially on personal problems."
+  },
+  "counterpart": {
+    "phonetic": "/ˈkaʊntəˌpɑːt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Either of two parts that fit together, or complement one another."
+  },
+  "coup": {
+    "phonetic": "/kuː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A quick, brilliant, and highly successful act."
+  },
+  "depict": {
+    "phonetic": "/dɪˈpɪkt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To render a representation of something, using words, sounds, images, or other means."
+  },
+  "deploy": {
+    "phonetic": "/dɪˈplɔɪ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Deployment"
+  },
+  "deployment": {
+    "phonetic": "/dɪˈplɔɪmənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An arrangement or classification of things."
+  },
+  "deprive": {
+    "phonetic": "/dɪˈpɹaɪv/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To take something away from (someone) and keep it away; to deny someone something."
+  },
+  "deputy": {
+    "phonetic": "/ˈdɛpjəti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One appointed as the substitute of another, and empowered to act for them, in their name or their behalf; a substitute in office"
+  },
+  "disrupt": {
+    "phonetic": "/dɪsˈɹʌpt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To throw into confusion or disorder."
+  },
+  "disruption": {
+    "phonetic": "/dɪsˈɹʌpʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An interruption to the regular flow or sequence of something."
+  },
+  "dissolve": {
+    "phonetic": "/dɪˈzɒlv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A form of film punctuation in which there is a gradual transition from one scene to the next"
+  },
+  "distinction": {
+    "phonetic": "/dɪˈstɪŋkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which distinguishes; a single occurrence of a determining factor or feature, the fact of being divided; separation, discrimination."
+  },
+  "distinctive": {
+    "phonetic": "/dɪˈstɪŋktɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A distinctive thing: a quality or property permitting distinguishing; a characteristic."
+  },
+  "endorse": {
+    "phonetic": "/ɪnˈdɔːs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A diminutive of the pale, usually appearing in pairs on either side of a pale."
+  },
+  "endorsement": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act or quality of endorsing"
+  },
+  "endure": {
+    "phonetic": "/ɪnˈdjɔː(ɹ)/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To continue or carry on, despite obstacles or hardships; to persist."
+  },
+  "enforce": {
+    "phonetic": "/ɪnˈfɔːs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To keep up, impose or bring into effect something, not necessarily by force."
+  },
+  "enforcement": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of enforcing; compulsion."
+  },
+  "explicit": {
+    "phonetic": "/ɪkˈsplɪsɪt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Very specific, clear, or detailed."
+  },
+  "explicitly": {
+    "phonetic": "",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "In an explicit manner."
+  },
+  "exploitation": {
+    "phonetic": "/ˌɛksplɔɪˈteɪʃn̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of utilizing something; industry."
+  },
+  "glimpse": {
+    "phonetic": "/ɡlɪmps/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A brief look, glance, or peek."
+  },
+  "glorious": {
+    "phonetic": "/ˈɡlɔː.ɹi.əs/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Exhibiting attributes, qualities, or acts that are worthy of or receive glory."
+  },
+  "hostage": {
+    "phonetic": "/ˈhɒstɪdʒ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person given as a pledge or security for the performance of the conditions of a treaty or similar agreement, such as to ensure the status of a vassal."
+  },
+  "hostile": {
+    "phonetic": "/ˈhɒstaɪl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(chiefly in the plural) An enemy."
+  },
+  "hostility": {
+    "phonetic": "/hɒˈstɪlɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being hostile."
+  },
+  "humanitarian": {
+    "phonetic": "/hjʊˌmæ.nɪˈtɛː.ɹɪ.ən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A scholar of one of the subjects in the humanities."
+  },
+  "humanity": {
+    "phonetic": "/hjuˈmænɪti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Mankind; human beings as a group."
+  },
+  "insider": {
+    "phonetic": "/ɪnˈsaɪdɚ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person who has special knowledge about the inner workings of a group, organization, or institution."
+  },
+  "inspection": {
+    "phonetic": "/ɪnˈspɛkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of examining something, often closely."
+  },
+  "instinct": {
+    "phonetic": "/ˈɪn.stɪŋkt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A natural or inherent impulse or behaviour."
+  },
+  "institutional": {
+    "phonetic": "/-ʃnəl/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, pertaining to, characteristic of, or organized along the lines of an institution."
+  },
+  "instrumental": {
+    "phonetic": "/ɪnstɹəˈmɛntəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(grammar) The instrumental case."
+  },
+  "irrelevant": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Not related, not applicable, unimportant, not connected."
+  },
+  "isolation": {
+    "phonetic": "/ˌaɪsəˈleɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being isolated, detached, or separated."
+  },
+  "judicial": {
+    "phonetic": "/dʒuˈdɪʃəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That branch of government which is responsible for maintaining the courts of law and for the administration of justice."
+  },
+  "jurisdiction": {
+    "phonetic": "/d͡ʒɔːɹɪsˈdɪkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The power, right, or authority to interpret and apply the law."
+  },
+  "justification": {
+    "phonetic": "/ˌdʒʌstɪfɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A reason, explanation, or excuse which provides convincing, morally acceptable support for behavior or for a belief or occurrence."
+  },
+  "loyalty": {
+    "phonetic": "/ˈlɔɪəlti/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The state of being loyal; fidelity."
+  },
+  "machinery": {
+    "phonetic": "/məˈʃiːnəɹi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The machines constituting a production apparatus, in a plant etc., collectively."
+  },
+  "magistrate": {
+    "phonetic": "/ˈmædʒɪstɹeɪt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A judicial officer with limited authority to administer and enforce the law. A magistrate's court may have jurisdiction in civil or criminal cases, or both."
+  },
+  "magnetic": {
+    "phonetic": "/mæɡˈnɛtɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of, relating to, operating by, or caused by magnetism."
+  },
+  "magnitude": {
+    "phonetic": "/ˈmæɡnɪtjuːd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The absolute or relative size, extent or importance of something."
+  },
+  "merit": {
+    "phonetic": "/ˈmɛɹət/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A claim to commendation or a reward."
+  },
+  "methodology": {
+    "phonetic": "/meθəˈdɒlədʒi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(originally science) The study of methods used in a field."
+  },
+  "midst": {
+    "phonetic": "/mɪdst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A place in the middle of something; may be used of a literal or metaphorical location."
+  },
+  "migration": {
+    "phonetic": "/maɪˈɡɹeɪʃ(ə)n/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An instance of moving to live in another place for a while."
+  },
+  "militant": {
+    "phonetic": "/ˈmɪlɪtənt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A soldier, a combatant."
+  },
+  "objection": {
+    "phonetic": "/əbˈdʒɛkʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of objecting."
+  },
+  "patrol": {
+    "phonetic": "/pəˈtɹəʊl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A going of the rounds along the chain of sentinels and between the posts, by a guard, usually consisting of three or four men, to insure greater security from attacks on the outposts."
+  },
+  "patron": {
+    "phonetic": "/ˈpeɪ.tɹən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who protects or supports; a defender or advocate."
+  },
+  "peculiar": {
+    "phonetic": "[pʰə̥ˈkʰj̊uːljʊə]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "That which is peculiar; a sole or exclusive property; a prerogative; a characteristic."
+  },
+  "persist": {
+    "phonetic": "/pəˈsɪst/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To go on stubbornly or resolutely."
+  },
+  "persistent": {
+    "phonetic": "/pəˈsɪstənt/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Obstinately refusing to give up or let go."
+  },
+  "premise": {
+    "phonetic": "/ˈpɹɛ.mɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A proposition antecedently supposed or proved; something previously stated or assumed as the basis of further argument; a condition; a supposition."
+  },
+  "premium": {
+    "phonetic": "/ˈpɹimiəm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A prize or award."
+  },
+  "prescribe": {
+    "phonetic": "/pɹɪˈskɹaɪb/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To order (a drug or medical device) for use by a particular patient (under licensed authority)."
+  },
+  "prescription": {
+    "phonetic": "/pɝˈskɹɪpʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of prescribing a rule, law, etc.."
+  },
+  "presently": {
+    "phonetic": "/ˈpɹɛzəntli/",
+    "partOfSpeech": "adverb",
+    "rawDefinition": "Immediately, at once; quickly."
+  },
+  "proposition": {
+    "phonetic": "/ˌpɹɑpəˈzɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of offering (an idea) for consideration."
+  },
+  "prosecute": {
+    "phonetic": "/ˈpɹɒsɪkjuːt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To start criminal proceedings against."
+  },
+  "prosecution": {
+    "phonetic": "/ˌpɹɑ.səˈkju.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of prosecuting a scheme or endeavor."
+  },
+  "prosecutor": {
+    "phonetic": "/ˈpɹɑsəˌkjuːtəɹ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A prosecuting attorney."
+  },
+  "prospective": {
+    "phonetic": "/pɹəˈspɛktɪv/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The scene before or around, in time or in space; view; prospect."
+  },
+  "regime": {
+    "phonetic": "/ɹeɪˈʒiːm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Mode of rule or management."
+  },
+  "regulator": {
+    "phonetic": "/ɹɛɡ.juː.leɪt.ə/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A device that controls or limits something."
+  },
+  "regulatory": {
+    "phonetic": "/ˈɹɛɡjələtɹi/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or pertaining to regulation."
+  },
+  "rehabilitation": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The process of rehabilitating somebody or something."
+  },
+  "reign": {
+    "phonetic": "[ɹeɪn]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The exercise of sovereign power."
+  },
+  "rotate": {
+    "phonetic": "/ɹəʊˈteɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To spin, turn, or revolve."
+  },
+  "rotation": {
+    "phonetic": "/ɹoʊˈteɪʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of turning around a centre or an axis."
+  },
+  "ruling": {
+    "phonetic": "/ˈɹuːlɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To regulate, be in charge of, make decisions for, reign over."
+  },
+  "sack": {
+    "phonetic": "/sæk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A bag; especially a large bag of strong, coarse material for storage and handling of various commodities, such as potatoes, coal, coffee; or, a bag with handles used at a supermarket, a grocery sack; or, a small bag for small items, a satchel."
+  },
+  "sacred": {
+    "phonetic": "/ˈseɪkɹɪd/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Characterized by solemn religious ceremony or religious use, especially, in a positive sense; consecrated, made holy."
+  },
+  "slash": {
+    "phonetic": "/slaʃ/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A slashing action or motion, particularly:"
+  },
+  "slot": {
+    "phonetic": "/slɒt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A broad, flat, wooden bar, a slat, especially as used to secure a door, window, etc."
+  },
+  "soar": {
+    "phonetic": "/sɔː/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of soaring."
+  },
+  "structural": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Structural steel, used in construction."
+  },
+  "stumble": {
+    "phonetic": "/ˈstʌmbəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fall, trip or substantial misstep."
+  },
+  "suspicion": {
+    "phonetic": "/sə.ˈspɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of suspecting something or someone, especially of something wrong."
+  },
+  "sustain": {
+    "phonetic": "/səˈsteɪn/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A mechanism which can be used to hold a note, as the right pedal on a piano."
+  },
+  "symbolic": {
+    "phonetic": "",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Pertaining to a symbol."
+  },
+  "syndrome": {
+    "phonetic": "/ˈsɪndɹəʊm/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A recognizable pattern of signs, symptoms and/or behaviours, especially of a disease or medical or psychological condition."
+  },
+  "synthesis": {
+    "phonetic": "/ˈsɪnθəsɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The formation of something complex or coherent by combining simpler things."
+  },
+  "toll": {
+    "phonetic": "/toʊl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Loss or damage incurred through a disaster."
+  },
+  "toxic": {
+    "phonetic": "/ˈtɒk.sɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Having a chemical nature that is harmful to health or lethal if consumed or otherwise entering into the body in sufficient quantities."
+  },
+  "trace": {
+    "phonetic": "/tɹeɪs/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An act of tracing."
+  },
+  "trademark": {
+    "phonetic": "/ˈtɹeɪdmɑː(ɹ)k/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A word, symbol, or phrase used to identify a particular company's product and differentiate it from other companies' products."
+  },
+  "transaction": {
+    "phonetic": "/tɹænˈzækʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The act of conducting or carrying out (business, negotiations, plans)."
+  },
+  "verdict": {
+    "phonetic": "/ˈvɝ.dɪkt/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A decision on an issue of fact in a civil or criminal case or an inquest."
+  },
+  "verify": {
+    "phonetic": "",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To substantiate or prove the truth of something"
+  },
+  "vessel": {
+    "phonetic": "/ˈvɛs.l̩/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any craft designed for transportation on water, such as a ship or boat."
+  },
+  "veteran": {
+    "phonetic": "[ˈvɛ.t̬ə.ɹən]",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A person with long experience of a particular activity."
+  },
+  "viable": {
+    "phonetic": "/ˈvaɪəbəl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An organism that is able to live and develop."
+  },
+  "compelling": {
+    "phonetic": "/kəmˈpɛlɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To drive together, round up"
+  },
+  "compensate": {
+    "phonetic": "/ˈkɒm.pən.seɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To do (something good) after (something bad) happens"
+  },
+  "consistency": {
+    "phonetic": "/kənˈsɪst(ə)nsi/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Local coherence."
+  },
+  "consolidate": {
+    "phonetic": "/kənˈsɒlɪdeɪt/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To combine into a single unit; to group together or join."
+  },
+  "constituency": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A district represented by one or more elected officials."
+  },
+  "explosive": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Any explosive substance."
+  },
+  "extract": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Something that is extracted or drawn out."
+  },
+  "gaze": {
+    "phonetic": "/ɡeɪz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A fixed look; a look of eagerness, wonder, or admiration; a continued look of attention."
+  },
+  "generic": {
+    "phonetic": "/dʒɪˈnɛɹɪk/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A product sold under a generic name."
+  },
+  "genocide": {
+    "phonetic": "/ˈd͡ʒɛnəsaɪd/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "The systematic killing of substantial numbers of people on the basis of their ethnicity, religion, political beliefs, social status, or other particularities."
+  },
+  "oblige": {
+    "phonetic": "/əˈblaɪdʒ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "To constrain someone by force or by social, moral or legal means."
+  },
+  "obsess": {
+    "phonetic": "/əbˈsɛs/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(passive, constructed with \"with\") To be preoccupied with a single topic or emotion."
+  },
+  "obsession": {
+    "phonetic": "/əbˈsɛʃən/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A compulsive or irrational preoccupation."
+  },
+  "occurrence": {
+    "phonetic": "/əˈkɐɹən(t)s/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "An actual instance when a situation occurs; an event or happening."
+  },
+  "odds": {
+    "phonetic": "/ɒdz/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "(diminutive) An odd number."
+  },
+  "socialist": {
+    "phonetic": "/ˈsəʊʃəlɪst/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "One who practices or advocates socialism."
+  },
+  "sole": {
+    "phonetic": "/səʊl/",
+    "partOfSpeech": "noun",
+    "rawDefinition": "A wooden band or yoke put around the neck of an ox or cow in the stall."
+  },
+  "strategic": {
+    "phonetic": "/stɹəˈtiː.dʒɪk/",
+    "partOfSpeech": "adjective",
+    "rawDefinition": "Of or pertaining to strategy"
+  },
+  "striking": {
+    "phonetic": "/ˈstɹaɪkɪŋ/",
+    "partOfSpeech": "verb",
+    "rawDefinition": "(sometimes with out or through) To delete or cross out; to scratch or eliminate."
+  },
+  "strive": {
+    "phonetic": "",
+    "partOfSpeech": "noun",
+    "rawDefinition": "Striving; earnest endeavor; hard work."
+  }
+}
