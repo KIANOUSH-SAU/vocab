@@ -5,10 +5,16 @@ import { useProgressStore } from '@store/progressStore'
 import { useWordStore } from '@store/wordStore'
 import type { Word, UserWord } from '@/types'
 
+export interface AddManualWordSubmitResult {
+  word: Word
+  userWord: UserWord
+  alreadyExisted: boolean
+}
+
 interface UseAddManualWordReturn {
   isSubmitting: boolean
   error: string | null
-  submit: (word: string) => Promise<{ word: Word; userWord: UserWord } | null>
+  submit: (word: string) => Promise<AddManualWordSubmitResult | null>
   reset: () => void
 }
 
@@ -17,10 +23,16 @@ interface UseAddManualWordReturn {
  * Looks the word up via Free Dictionary, falls back to Claude for any
  * missing fields, persists Word + UserWord docs in Appwrite, and updates
  * the local Zustand stores so the new entry shows up immediately.
+ *
+ * After a successful write, force-refreshes from Appwrite so the local
+ * mirror is reconciled against the canonical server state — without this
+ * the optimistic local write could be silently overwritten by a refresh
+ * that was already in flight when Add was tapped.
  */
 export function useAddManualWord(): UseAddManualWordReturn {
   const user = useCurrentUser()
   const updateUserWord = useProgressStore((s) => s.updateUserWord)
+  const refreshFromAppwrite = useProgressStore((s) => s.refreshFromAppwrite)
   const cacheWord = useWordStore((s) => s.cacheWord)
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -45,6 +57,13 @@ export function useAddManualWord(): UseAddManualWordReturn {
         })
         cacheWord(result.word)
         updateUserWord(result.userWord)
+        // Force a reconcile against the server now that the write is
+        // committed. The merge in refreshFromAppwrite preserves our optimistic
+        // write, and any other stale state (e.g. an older snapshot stuck from
+        // a race that started before the Add) gets corrected at the same time.
+        refreshFromAppwrite(user.id, { force: true }).catch((err) => {
+          console.warn('[useAddManualWord] post-add refresh failed:', err)
+        })
         return result
       } catch (e) {
         const message =
@@ -55,7 +74,7 @@ export function useAddManualWord(): UseAddManualWordReturn {
         setIsSubmitting(false)
       }
     },
-    [isSubmitting, user, cacheWord, updateUserWord],
+    [isSubmitting, user, cacheWord, updateUserWord, refreshFromAppwrite],
   )
 
   const reset = useCallback(() => setError(null), [])

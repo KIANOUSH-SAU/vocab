@@ -266,10 +266,6 @@ export default function ReviewScreen() {
   const { width: screenWidth } = useWindowDimensions();
   const storeUserWords = useUserWords();
   const wordCache = useWordStore((s) => s.wordCache);
-  const todaysWords = useWordStore((s) => s.todaysWords);
-  const isDailySessionCompleted = useWordStore(
-    (s) => s.isDailySessionCompleted,
-  );
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [addOpen, setAddOpen] = useState(false);
@@ -280,21 +276,25 @@ export default function ReviewScreen() {
   const vault = useMemo(() => {
     const entries = Object.values(storeUserWords);
 
-    // Hide today's words from the vault until the daily session is done.
-    // They re-appear automatically once `isDailySessionCompleted` flips true.
-    const excluded = !isDailySessionCompleted
-      ? new Set(todaysWords.map((w) => w.id))
-      : new Set<string>();
-
     return entries
-      .filter((uw) => !excluded.has(uw.wordId))
       .map((uw) => {
         const word = wordCache[uw.wordId];
-        if (!word) return null;
+        if (!word) {
+          // The UserWord exists but its Word is missing from the local cache.
+          // Drop it from rendering but surface it so we can debug — usually
+          // means a previous refresh fetched the UserWord without fetching
+          // the matching Word doc (or the Word was deleted server-side).
+          if (__DEV__) {
+            console.warn(
+              `[ReviewScreen] dropping userWord ${uw.id} for missing wordId ${uw.wordId} (not in wordCache)`,
+            );
+          }
+          return null;
+        }
         return { word, userWord: uw };
       })
       .filter(Boolean) as { word: Word; userWord: UserWord }[];
-  }, [storeUserWords, wordCache, todaysWords, isDailySessionCompleted]);
+  }, [storeUserWords, wordCache]);
 
   const filtered = useMemo(() => {
     let result = vault;

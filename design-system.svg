@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" width="1400" height="620">
+  <rect width="1400" height="620" fill="#FAFAF8"/>
+
+  <text x="700" y="44" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#18181B" letter-spacing="-0.5">Design System — Color &amp; Typography</text>
+  <text x="700" y="70" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#71717A">Source of truth: .claude/DESIGN-SYSTEM.md · Implementation: src/constants/theme.ts</text>
+
+  <!-- ===== COLOR PALETTE ===== -->
+  <text x="60" y="115" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#18181B" letter-spacing="1.5">COLOR PALETTE</text>
+
+  <!-- Swatch 1: cream -->
+  <rect x="40" y="135" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="55" y="150" width="210" height="85" rx="8" fill="#FAFAF8" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="55" y="254" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">#FAFAF8</text>
+  <text x="265" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">cream</text>
+  <text x="55" y="273" font-family="Inter, sans-serif" font-size="11" fill="#71717A">App background · warm white</text>
+
+  <!-- Swatch 2: iris -->
+  <rect x="310" y="135" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="325" y="150" width="210" height="85" rx="8" fill="#7C5CFC"/>
+  <text x="325" y="254" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">#7C5CFC</text>
+  <text x="535" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">iris</text>
+  <text x="325" y="273" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Primary accent · selected states</text>
+
+  <!-- Swatch 3: mint -->
+  <rect x="580" y="135" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="595" y="150" width="210" height="85" rx="8" fill="#2DD4A8"/>
+  <text x="595" y="254" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">#2DD4A8</text>
+  <text x="805" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">mint</text>
+  <text x="595" y="273" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Success · mastered words</text>
+
+  <!-- Swatch 4: amber -->
+  <rect x="850" y="135" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="865" y="150" width="210" height="85" rx="8" fill="#FBBF24"/>
+  <text x="865" y="254" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">#FBBF24</text>
+  <text x="1075" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">amber</text>
+  <text x="865" y="273" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Learning · streaks · warnings</text>
+
+  <!-- Swatch 5: sky -->
+  <rect x="1120" y="135" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="1135" y="150" width="210" height="85" rx="8" fill="#38BDF8"/>
+  <text x="1135" y="254" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">#38BDF8</text>
+  <text x="1345" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">sky</text>
+  <text x="1135" y="273" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Info · Profile/Stats theme</text>
+
+  <text x="60" y="315" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#71717A">Secondary semantic: coral <tspan font-family="'JetBrains Mono', monospace" fill="#71717A">#FB7185</tspan> (error · struggling) · ink <tspan font-family="'JetBrains Mono', monospace" fill="#71717A">#18181B</tspan> (primary text · CTA gradient) · ink2 <tspan font-family="'JetBrains Mono', monospace" fill="#71717A">#71717A</tspan> (secondary text)</text>
+
+  <!-- ===== TYPOGRAPHY ===== -->
+  <text x="60" y="355" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#18181B" letter-spacing="1.5">TYPOGRAPHY · THREE FAMILIES, THREE ROLES</text>
+
+  <!-- Card 1: Display (DM Serif Display) -->
+  <rect x="40" y="375" width="430" height="220" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="40" y="375" width="430" height="40" rx="12" fill="#F0ECFF" stroke="none"/>
+  <rect x="40" y="404" width="430" height="11" fill="#F0ECFF" stroke="none"/>
+  <line x1="40" y1="415" x2="470" y2="415" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="58" y="400" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#5B3FD4" letter-spacing="1.5">DISPLAY · DM SERIF DISPLAY</text>
+
+  <text x="255" y="505" text-anchor="middle" font-family="'DM Serif Display', 'Playfair Display', Georgia, serif" font-size="68" font-weight="400" fill="#18181B" letter-spacing="-2">Vocab</text>
+
+  <text x="58" y="545" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">Display titles · word cards · the V wordmark</text>
+  <text x="58" y="565" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Weight: 400 · Letter-spacing: −1px</text>
+  <text x="58" y="582" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#A1A1AA">Used sparingly. Never for body or buttons.</text>
+
+  <!-- Card 2: UI (Space Grotesk) -->
+  <rect x="485" y="375" width="430" height="220" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="485" y="375" width="430" height="40" rx="12" fill="#ECFDF5" stroke="none"/>
+  <rect x="485" y="404" width="430" height="11" fill="#ECFDF5" stroke="none"/>
+  <line x1="485" y1="415" x2="915" y2="415" stroke="#86EFAC" stroke-width="1"/>
+  <text x="503" y="400" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#059669" letter-spacing="1.5">UI · SPACE GROTESK</text>
+
+  <text x="700" y="467" text-anchor="middle" font-family="'Space Grotesk', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#18181B" letter-spacing="-0.3">Learn the words</text>
+  <text x="700" y="497" text-anchor="middle" font-family="'Space Grotesk', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#71717A">that matter for your career.</text>
+
+  <text x="503" y="545" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">All body · buttons · labels · navigation</text>
+  <text x="503" y="565" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Weights: 400 · 500 · 600 · 700</text>
+  <text x="503" y="582" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#A1A1AA">Workhorse font. Default for everything UI.</text>
+
+  <!-- Card 3: Data (JetBrains Mono) -->
+  <rect x="930" y="375" width="430" height="220" rx="12" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <rect x="930" y="375" width="430" height="40" rx="12" fill="#E0F2FE" stroke="none"/>
+  <rect x="930" y="404" width="430" height="11" fill="#E0F2FE" stroke="none"/>
+  <line x1="930" y1="415" x2="1360" y2="415" stroke="#7DD3FC" stroke-width="1"/>
+  <text x="948" y="400" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#0369A1" letter-spacing="1.5">DATA · JETBRAINS MONO</text>
+
+  <text x="1145" y="473" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="26" font-weight="500" fill="#18181B">/rɪˈzɪl.i.ənt/</text>
+  <text x="1145" y="505" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="400" fill="#71717A">B2 · 0:42 · 30 day</text>
+
+  <text x="948" y="545" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">Phonetics · timers · level codes · tags</text>
+  <text x="948" y="565" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Weights: 400 · 500</text>
+  <text x="948" y="582" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#A1A1AA">Anything that reads as data, not prose.</text>
+</svg>

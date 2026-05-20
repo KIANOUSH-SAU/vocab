@@ -111,6 +111,53 @@ Return ONLY a JSON object with this exact shape — no prose, no markdown:
   }
 }
 
+/**
+ * Generate 3 plausible-but-wrong definitions for use as distractors in the
+ * swipe session's True/False mechanic. Returns [] on failure so callers can
+ * proceed without distractors (the swipe code has its own fallback).
+ */
+export async function generateDistractors(
+  word: string,
+  correctDefinition: string,
+  level: Level,
+): Promise<string[]> {
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 250,
+      messages: [
+        {
+          role: 'user',
+          content: `Write 3 SHORT plausible-but-WRONG one-sentence definitions for the English word "${word}" (CEFR ${level}).
+The correct definition is: "${correctDefinition}"
+Each wrong definition must:
+- Be the same length and tone as the correct one (one short sentence).
+- Be at or below CEFR ${level} vocabulary — don't use words harder than the target.
+- Sound believable to a learner but be unambiguously incorrect.
+- NOT include the word "${word}" itself.
+
+Return ONLY a JSON array of 3 strings, no prose or markdown:
+["...", "...", "..."]`,
+        },
+      ],
+    })
+
+    const text =
+      message.content[0]?.type === 'text' ? message.content[0].text : ''
+    const start = text.indexOf('[')
+    const end = text.lastIndexOf(']')
+    if (start < 0 || end < 0) return []
+    const parsed = JSON.parse(text.slice(start, end + 1)) as unknown
+    if (!Array.isArray(parsed)) return []
+    return parsed
+      .filter((d): d is string => typeof d === 'string' && d.trim().length > 0)
+      .slice(0, 3)
+  } catch (err) {
+    console.warn('[aiService.generateDistractors]', err)
+    return []
+  }
+}
+
 /** Generate a wrong-answer explanation (voiced by celebrity voice) */
 export async function generateWrongAnswerExplanation(
   word: Word,

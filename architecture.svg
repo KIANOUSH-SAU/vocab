@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 940" width="1400" height="940">
+  <rect width="1400" height="940" fill="#FAFAF8"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7C5CFC"/>
+    </marker>
+    <marker id="arrow-dashed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#A1A1AA"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="44" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#18181B" letter-spacing="-0.5">Vocab — System Architecture</text>
+  <text x="700" y="70" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#71717A">Layered architecture: Screens → Hooks/Stores → Services → External Systems · Pipeline as an independent batch process</text>
+
+  <!-- LAYER 1: SCREENS -->
+  <rect x="40" y="95" width="1320" height="140" rx="14" fill="#F0ECFF" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="60" y="120" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#7C5CFC" letter-spacing="1.5">SCREENS · src/app/</text>
+
+  <rect x="60" y="135" width="305" height="85" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">(onboarding)</text>
+  <text x="78" y="180" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Welcome · Placement Test</text>
+  <text x="78" y="196" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Level Result · Auth (email + OAuth)</text>
+
+  <rect x="385" y="135" width="305" height="85" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="403" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">(tabs)</text>
+  <text x="403" y="180" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Home · Learn · Review · Profile</text>
+  <text x="403" y="196" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Streak · Word of the Day · Mastery Vault</text>
+
+  <rect x="710" y="135" width="305" height="85" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="728" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">learning/session</text>
+  <text x="728" y="180" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Nibble-style swipe engine</text>
+  <text x="728" y="196" font-family="Inter, sans-serif" font-size="11" fill="#71717A">True/False · stamps · completion</text>
+
+  <rect x="1035" y="135" width="305" height="85" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="1053" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">word/[id] · modules · celebExplains</text>
+  <text x="1053" y="180" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Word deep dive · stub modules</text>
+  <text x="1053" y="196" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Pronunciation · Letters · Celeb voice</text>
+
+  <line x1="700" y1="240" x2="700" y2="258" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LAYER 2: HOOKS & STORES -->
+  <rect x="40" y="265" width="1320" height="160" rx="14" fill="#ECFDF5" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="60" y="290" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#059669" letter-spacing="1.5">HOOKS &amp; STORES · src/hooks/ · src/store/</text>
+
+  <rect x="60" y="305" width="640" height="105" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="330" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">React Hooks (component-level logic)</text>
+  <text x="78" y="352" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">useAuthForm · useDailyWord · useExerciseSession</text>
+  <text x="78" y="370" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">useSpacedRepetition · useAudio · usePlacementTest</text>
+  <text x="78" y="388" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">useAddManualWord · useAvatarUpload · useEditProfile</text>
+  <text x="78" y="406" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">useRemoteSync · useTabFocusSync</text>
+
+  <rect x="720" y="305" width="620" height="105" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="738" y="330" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">Zustand Stores · AsyncStorage persist</text>
+  <text x="738" y="352" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">userStore — user, isAuthenticated, lastLoggedInEmail</text>
+  <text x="738" y="370" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">wordStore — todaysWords, wordCache, audioCache</text>
+  <text x="738" y="388" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">progressStore — userWords, streak, sessionDates</text>
+  <text x="738" y="406" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A1A1AA">scoped persistence policies · throttled remote sync</text>
+
+  <line x1="700" y1="430" x2="700" y2="448" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LAYER 3: SERVICES -->
+  <rect x="40" y="455" width="1320" height="140" rx="14" fill="#FFFBEB" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="60" y="480" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#D97706" letter-spacing="1.5">SERVICES · src/services/ — I/O ADAPTERS</text>
+
+  <rect x="60" y="495" width="310" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="520" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">appwriteService</text>
+  <text x="220" y="520" font-family="Inter, sans-serif" font-size="11" fill="#71717A">auth · DB · storage · OAuth</text>
+
+  <rect x="380" y="495" width="310" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="398" y="520" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">vocabularyService</text>
+  <text x="540" y="520" font-family="Inter, sans-serif" font-size="11" fill="#71717A">words + userwords CRUD</text>
+
+  <rect x="700" y="495" width="310" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="718" y="520" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">aiService</text>
+  <text x="820" y="520" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Claude — score · enrich · explain</text>
+
+  <rect x="1020" y="495" width="320" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="1038" y="520" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">ttsService</text>
+  <text x="1130" y="520" font-family="Inter, sans-serif" font-size="11" fill="#71717A">ElevenLabs voice resolution</text>
+
+  <rect x="60" y="543" width="310" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="568" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">dictionaryService</text>
+  <text x="220" y="568" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Free Dictionary API</text>
+
+  <rect x="380" y="543" width="310" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="398" y="568" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">manualWordService</text>
+  <text x="540" y="568" font-family="Inter, sans-serif" font-size="11" fill="#71717A">add-word orchestrator</text>
+
+  <rect x="700" y="543" width="640" height="38" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="718" y="568" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#18181B">notificationService</text>
+  <text x="850" y="568" font-family="Inter, sans-serif" font-size="11" fill="#71717A">expo-notifications wrapper · implemented, not yet invoked</text>
+
+  <line x1="700" y1="600" x2="700" y2="618" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LAYER 4: EXTERNAL -->
+  <rect x="40" y="625" width="1320" height="130" rx="14" fill="#E0F2FE" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="60" y="650" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#0EA5E9" letter-spacing="1.5">EXTERNAL SYSTEMS</text>
+
+  <rect x="60" y="665" width="305" height="75" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="690" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">Appwrite Cloud</text>
+  <text x="78" y="709" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Auth · OAuth · words · userwords · users</text>
+  <text x="78" y="725" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Storage bucket (avatars)</text>
+
+  <rect x="385" y="665" width="305" height="75" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="403" y="690" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">Anthropic Claude</text>
+  <text x="403" y="709" font-family="Inter, sans-serif" font-size="11" fill="#71717A">claude-sonnet-4-6 — pipeline</text>
+  <text x="403" y="725" font-family="Inter, sans-serif" font-size="11" fill="#71717A">claude-haiku-4-5 — live in-app</text>
+
+  <rect x="710" y="665" width="305" height="75" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="728" y="690" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">ElevenLabs</text>
+  <text x="728" y="709" font-family="Inter, sans-serif" font-size="11" fill="#71717A">eleven_v3 — celebrity voices</text>
+  <text x="728" y="725" font-family="Inter, sans-serif" font-size="11" fill="#71717A">eleven_turbo_v2_5 — fallback</text>
+
+  <rect x="1035" y="665" width="305" height="75" rx="10" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="1053" y="690" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#18181B">Free Dictionary</text>
+  <text x="1053" y="709" font-family="Inter, sans-serif" font-size="11" fill="#71717A">dictionaryapi.dev</text>
+  <text x="1053" y="725" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Phonetics · Part of speech</text>
+
+  <!-- PIPELINE -->
+  <rect x="40" y="780" width="1320" height="140" rx="14" fill="#FFF1F2" stroke="#A1A1AA" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="60" y="805" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="600" fill="#E11D48" letter-spacing="1.5">VOCABULARY PIPELINE · scripts/ — INDEPENDENT NODE.JS BATCH PROCESS · NEVER BUNDLED INTO THE APP</text>
+
+  <rect x="60" y="822" width="195" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="78" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">cefr-words-{level}.txt</text>
+  <text x="78" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">CEFR source list (input)</text>
+
+  <line x1="262" y1="850" x2="278" y2="850" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="285" y="822" width="195" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="303" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">scoreWords.ts</text>
+  <text x="303" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Claude — score + level fit</text>
+
+  <line x1="487" y1="850" x2="503" y2="850" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="510" y="822" width="195" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="528" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">enrichWords.ts</text>
+  <text x="528" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Dictionary + Claude rewrite</text>
+
+  <line x1="712" y1="850" x2="728" y2="850" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="735" y="822" width="195" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="753" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">seedAppwrite.ts</text>
+  <text x="753" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Upsert by (word, level)</text>
+
+  <line x1="937" y1="850" x2="953" y2="850" stroke="#7C5CFC" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="960" y="822" width="195" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+  <text x="978" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">wordFixer.ts</text>
+  <text x="978" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Auto post-seed repair</text>
+
+  <line x1="1162" y1="850" x2="1178" y2="850" stroke="#A1A1AA" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-dashed)"/>
+
+  <rect x="1185" y="822" width="155" height="56" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="1203" y="845" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#18181B">manual tools</text>
+  <text x="1203" y="864" font-family="Inter, sans-serif" font-size="11" fill="#71717A">doctor · sifter · wipe</text>
+
+  <text x="60" y="903" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#71717A">Output: Appwrite `words` collection → consumed at runtime by vocabularyService.fetchWordsByLevel · Resumable via on-disk caches</text>
+</svg>

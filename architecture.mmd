@@ -1,0 +1,136 @@
+%% Vocab — Visual Artifacts (Mermaid source)
+%% This file contains three diagrams matching architecture.svg:
+%%   PART 1 — System Architecture (layered)
+%%   PART 2 — Data Model (ER)
+%%   PART 3 — Design System (described as text; palette/typography is
+%%            non-graphable in Mermaid — see architecture.svg)
+%%
+%% Render: paste each section into https://mermaid.live OR install mermaid-cli
+%%   npm i -g @mermaid-js/mermaid-cli
+%%   mmdc -i architecture.mmd -o architecture.png
+
+%% ============================================================
+%% PART 1 — SYSTEM ARCHITECTURE
+%% ============================================================
+
+flowchart TB
+    %% Screens
+    subgraph Screens["📱 SCREENS · src/app/"]
+        direction LR
+        S1["<b>(onboarding)</b><br/>Welcome · Placement Test<br/>Level Result · Auth"]
+        S2["<b>(tabs)</b><br/>Home · Learn · Review · Profile<br/>Streak · WOTD · Mastery Vault"]
+        S3["<b>learning/session</b><br/>Nibble-style swipe engine<br/>True/False · stamps · completion"]
+        S4["<b>word/[id] · modules · celebExplains</b><br/>Word deep dive · stubs"]
+    end
+
+    %% Hooks & Stores
+    subgraph Logic["🧠 HOOKS &amp; STORES"]
+        direction LR
+        H["<b>React Hooks</b><br/>useAuthForm · useDailyWord<br/>useExerciseSession · useSpacedRepetition<br/>useAudio · usePlacementTest<br/>useAddManualWord · useRemoteSync"]
+        ST["<b>Zustand Stores · AsyncStorage</b><br/>userStore — auth, profile<br/>wordStore — todaysWords, caches<br/>progressStore — userWords, streak"]
+    end
+
+    %% Services
+    subgraph Services["⚙️ SERVICES · src/services/"]
+        direction LR
+        SV1["appwriteService"]
+        SV2["vocabularyService"]
+        SV3["aiService"]
+        SV4["ttsService"]
+        SV5["dictionaryService"]
+        SV6["manualWordService"]
+        SV7["notificationService"]
+    end
+
+    %% External
+    subgraph External["🌐 EXTERNAL SYSTEMS"]
+        direction LR
+        E1["<b>Appwrite Cloud</b><br/>Auth · OAuth · DB · Storage"]
+        E2["<b>Anthropic Claude</b><br/>Sonnet 4.6 (pipeline)<br/>Haiku 4.5 (live)"]
+        E3["<b>ElevenLabs</b><br/>eleven_v3 · eleven_turbo_v2_5"]
+        E4["<b>Free Dictionary</b><br/>dictionaryapi.dev"]
+    end
+
+    %% Pipeline (separate)
+    subgraph Pipeline["📦 VOCABULARY PIPELINE · scripts/ — BATCH, NEVER BUNDLED"]
+        direction LR
+        P0["cefr-words-{level}.txt"]
+        P1["scoreWords.ts"]
+        P2["enrichWords.ts"]
+        P3["seedAppwrite.ts"]
+        P4["wordFixer.ts (auto)"]
+        P5["<i>manual tools</i><br/>doctor · sifter · wipe"]
+        P0 --> P1 --> P2 --> P3 --> P4
+        P4 -.-> P5
+    end
+
+    Screens --> Logic
+    Logic --> Services
+    Services --> External
+
+    Pipeline -.->|seeds words| E1
+    Pipeline -.->|calls| E2
+    Pipeline -.->|calls| E4
+
+    classDef screensLayer fill:#F0ECFF,stroke:#7C5CFC,color:#18181B
+    classDef logicLayer fill:#ECFDF5,stroke:#059669,color:#18181B
+    classDef servicesLayer fill:#FFFBEB,stroke:#D97706,color:#18181B
+    classDef externalLayer fill:#E0F2FE,stroke:#0EA5E9,color:#18181B
+    classDef pipelineLayer fill:#FFF1F2,stroke:#E11D48,color:#18181B,stroke-dasharray:6 4
+
+    class Screens screensLayer
+    class Logic logicLayer
+    class Services servicesLayer
+    class External externalLayer
+    class Pipeline pipelineLayer
+
+%% ============================================================
+%% PART 2 — DATA MODEL (ER)
+%% ============================================================
+%% Render separately from PART 1. Paste this block alone into mermaid.live.
+
+erDiagram
+    words ||--o{ userwords : "1 ── N (wordId)"
+    users ||--o{ userwords : "1 ── N (userId)"
+    users ||--o| avatars : "avatarFileId"
+
+    words {
+        string id PK
+        string word
+        string phonetic
+        enum   partOfSpeech
+        string definition
+        string exampleSentence
+        string contextPassage
+        array  distractors
+        enum   level "A1|A2|B1|B2|C1"
+        number usabilityScore
+        string audioUrl "placeholder"
+    }
+
+    userwords {
+        string id PK
+        string userId FK
+        string wordId FK
+        enum   status "new|learning|mastered"
+        string nextReviewDate
+        number intervalIndex "0..4"
+        number totalAttempts
+        text   correctAttempts "⚠ legacy quirk"
+    }
+
+    users {
+        string id PK "= Appwrite Account id"
+        string name
+        string email
+        enum   level "A1|A2|B1|B2|C1"
+        string voiceStyleId
+        number streak
+        string lastActiveDate
+        array  sessionDates
+        string avatarFileId FK
+    }
+
+    avatars {
+        string file_id PK "Appwrite Storage bucket"
+    }

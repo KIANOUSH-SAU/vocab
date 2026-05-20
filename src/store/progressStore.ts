@@ -101,14 +101,30 @@ export const useProgressStore = create<ProgressState & ProgressActions>()(
             ? ((userDoc as any).sessionDates as string[])
             : [];
 
-          const userWordsMap: Record<string, UserWord> = {};
+          const remoteMap: Record<string, UserWord> = {};
           for (const uw of userWordsArr) {
-            if (uw?.wordId) userWordsMap[uw.wordId] = uw;
+            if (uw?.wordId) remoteMap[uw.wordId] = uw;
+          }
+
+          // Merge: start from the server snapshot, then preserve any local
+          // entry the server doesn't have. This covers two real cases:
+          //   1. A manual Add Word that was just written and the Appwrite
+          //      index hasn't propagated yet (hundreds-of-ms latency).
+          //   2. An in-flight refresh that started before a local mutation
+          //      and would otherwise overwrite the optimistic write.
+          // Server is preferred when both sides have the same wordId, since
+          // it's the authoritative store for SRS progression.
+          const localNow = get().userWords;
+          const merged: Record<string, UserWord> = { ...remoteMap };
+          for (const [wordId, uw] of Object.entries(localNow)) {
+            if (!merged[wordId]) {
+              merged[wordId] = uw;
+            }
           }
 
           // Batch-fetch the Word details for every UserWord we just pulled,
           // so the Review page (and any other consumer) can look them up.
-          const wordIds = Object.keys(userWordsMap);
+          const wordIds = Object.keys(merged);
           if (wordIds.length > 0) {
             try {
               const wordMap = await fetchWordsByIds(wordIds);
@@ -135,7 +151,7 @@ export const useProgressStore = create<ProgressState & ProgressActions>()(
                   sessionDates: remoteSessionDates,
                 }
               : {}),
-            userWords: userWordsMap,
+            userWords: merged,
             isSyncing: false,
             lastSyncedAt: Date.now(),
           });

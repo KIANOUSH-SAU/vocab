@@ -124,26 +124,65 @@ export async function fetchWordsByIds(
   }
 }
 
-/** Fetch all UserWord records for a user. Returns empty array when Appwrite is not configured. */
+/**
+ * Fetch all UserWord records for a user. Returns empty array when Appwrite
+ * is not configured.
+ *
+ * Pages through results with cursor pagination — Appwrite caps each page at
+ * 100 documents (and rejects `limit > 100` on some plans). Without this loop
+ * a power user above the page size silently loses records on every refresh,
+ * which surfaces as words "added but not shown" in the Mastery Vault.
+ */
+const USER_WORDS_PAGE_SIZE = 100;
+const USER_WORDS_MAX_PAGES = 20; // safety cap = 2000 records
+
 export async function fetchUserWords(userId: string): Promise<UserWord[]> {
   if (!isAppwriteConfigured) return [];
 
   try {
     const db = getDatabases();
-    const response = await db.listDocuments(DB_ID, COLLECTIONS.USER_WORDS, [
-      Query.equal("userId", userId),
-      Query.limit(500),
-    ]);
-    return response.documents.map((doc) => ({
-      id: doc.$id ?? (doc as any).id,
-      userId: (doc as any).userId,
-      wordId: (doc as any).wordId,
-      status: (doc as any).status,
-      nextReviewDate: (doc as any).nextReviewDate,
-      intervalIndex: (doc as any).intervalIndex,
-      totalAttempts: Number((doc as any).totalAttempts) || 0,
-      correctAttempts: Number((doc as any).correctAttempts) || 0,
-    })) as UserWord[];
+    const all: UserWord[] = [];
+    let cursor: string | null = null;
+    let pages = 0;
+
+    while (pages < USER_WORDS_MAX_PAGES) {
+      const queries = [
+        Query.equal("userId", userId),
+        Query.limit(USER_WORDS_PAGE_SIZE),
+      ];
+      if (cursor) queries.push(Query.cursorAfter(cursor));
+
+      const response = await db.listDocuments(
+        DB_ID,
+        COLLECTIONS.USER_WORDS,
+        queries,
+      );
+
+      const batch = response.documents.map((doc) => ({
+        id: doc.$id ?? (doc as any).id,
+        userId: (doc as any).userId,
+        wordId: (doc as any).wordId,
+        status: (doc as any).status,
+        nextReviewDate: (doc as any).nextReviewDate,
+        intervalIndex: (doc as any).intervalIndex,
+        totalAttempts: Number((doc as any).totalAttempts) || 0,
+        correctAttempts: Number((doc as any).correctAttempts) || 0,
+      })) as UserWord[];
+
+      all.push(...batch);
+      pages += 1;
+
+      if (response.documents.length < USER_WORDS_PAGE_SIZE) break;
+      cursor = response.documents[response.documents.length - 1].$id;
+    }
+
+    if (pages >= USER_WORDS_MAX_PAGES) {
+      console.warn(
+        `[vocabularyService.fetchUserWords] hit safety cap of ${USER_WORDS_MAX_PAGES} pages — some userwords may be missing for user ${userId}`,
+      );
+    }
+
+    return all;
   } catch (error) {
     throw new Error(`[vocabularyService.fetchUserWords] ${error}`);
   }

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500" width="1400" height="500">
+  <rect width="1400" height="500" fill="#FAFAF8"/>
+
+  <defs>
+    <marker id="arrow-er" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#18181B"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="44" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#18181B" letter-spacing="-0.5">Appwrite Data Model — Entity Relationship</text>
+  <text x="700" y="70" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#71717A">Three collections (words · userwords · users) + one Storage bucket (avatars) · userwords is the join entity bridging users and words</text>
+
+  <!-- ===== words entity ===== -->
+  <rect x="60" y="110" width="350" height="320" rx="12" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="2"/>
+  <rect x="60" y="110" width="350" height="44" rx="12" fill="#F0ECFF" stroke="none"/>
+  <rect x="60" y="143" width="350" height="11" fill="#F0ECFF" stroke="none"/>
+  <line x1="60" y1="154" x2="410" y2="154" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="78" y="133" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#5B3FD4">words</text>
+  <text x="78" y="148" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Global vocabulary dictionary · seeded by pipeline</text>
+
+  <text x="78" y="180" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#18181B">🔑 $id</text>
+  <text x="220" y="180" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · PK</text>
+  <text x="78" y="201" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">word</text>
+  <text x="220" y="201" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · lowercase</text>
+  <text x="78" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">phonetic</text>
+  <text x="220" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · IPA</text>
+  <text x="78" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">partOfSpeech</text>
+  <text x="220" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">enum</text>
+  <text x="78" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">definition</text>
+  <text x="220" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · level-rewritten</text>
+  <text x="78" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">exampleSentence</text>
+  <text x="220" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string</text>
+  <text x="78" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">contextPassage</text>
+  <text x="220" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string</text>
+  <text x="78" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">distractors[]</text>
+  <text x="220" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string[3] · for swipe</text>
+  <text x="78" y="348" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">level</text>
+  <text x="220" y="348" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">A1|A2|B1|B2|C1</text>
+  <text x="78" y="369" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">usabilityScore</text>
+  <text x="220" y="369" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">number 1-10</text>
+  <text x="78" y="390" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">audioUrl</text>
+  <text x="220" y="390" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A1A1AA">"" — TTS placeholder</text>
+  <text x="78" y="415" font-family="Inter, sans-serif" font-size="10" font-style="italic" fill="#A1A1AA">Composite identity: (word, level)</text>
+
+  <!-- ===== userwords entity (the JOIN) ===== -->
+  <rect x="525" y="110" width="350" height="252" rx="12" fill="#FFFFFF" stroke="#FBBF24" stroke-width="2"/>
+  <rect x="525" y="110" width="350" height="44" rx="12" fill="#FFFBEB" stroke="none"/>
+  <rect x="525" y="143" width="350" height="11" fill="#FFFBEB" stroke="none"/>
+  <line x1="525" y1="154" x2="875" y2="154" stroke="#FBBF24" stroke-width="1"/>
+  <text x="543" y="133" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#D97706">userwords</text>
+  <text x="543" y="148" font-family="Inter, sans-serif" font-size="11" fill="#71717A">Per-user SRS records · join table</text>
+
+  <text x="543" y="180" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#18181B">🔑 $id</text>
+  <text x="685" y="180" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · PK</text>
+  <text x="543" y="201" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#D97706">🔗 userId</text>
+  <text x="685" y="201" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">FK → users.$id</text>
+  <text x="543" y="222" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#D97706">🔗 wordId</text>
+  <text x="685" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">FK → words.$id</text>
+  <text x="543" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">status</text>
+  <text x="685" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">new|learning|mastered</text>
+  <text x="543" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">nextReviewDate</text>
+  <text x="685" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · ISO date</text>
+  <text x="543" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">intervalIndex</text>
+  <text x="685" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">0|1|2|3|4</text>
+  <text x="543" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">totalAttempts</text>
+  <text x="685" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">number</text>
+  <text x="543" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">correctAttempts</text>
+  <text x="685" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#E11D48">⚠ text (legacy)</text>
+  <text x="543" y="350" font-family="Inter, sans-serif" font-size="10" font-style="italic" fill="#A1A1AA">SRS intervals: 1 → 3 → 7 → 14 → 30 days</text>
+
+  <!-- ===== users entity ===== -->
+  <rect x="990" y="110" width="350" height="272" rx="12" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <rect x="990" y="110" width="350" height="44" rx="12" fill="#E0F2FE" stroke="none"/>
+  <rect x="990" y="143" width="350" height="11" fill="#E0F2FE" stroke="none"/>
+  <line x1="990" y1="154" x2="1340" y2="154" stroke="#7DD3FC" stroke-width="1"/>
+  <text x="1008" y="133" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0369A1">users</text>
+  <text x="1008" y="148" font-family="Inter, sans-serif" font-size="11" fill="#71717A">User profile · mirrors Appwrite Account</text>
+
+  <text x="1008" y="180" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#18181B">🔑 $id</text>
+  <text x="1150" y="180" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">= auth.$id</text>
+  <text x="1008" y="201" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">name</text>
+  <text x="1150" y="201" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string</text>
+  <text x="1008" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">email</text>
+  <text x="1150" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string · unique</text>
+  <text x="1008" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">level</text>
+  <text x="1150" y="243" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">A1|A2|B1|B2|C1</text>
+  <text x="1008" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">voiceStyleId</text>
+  <text x="1150" y="264" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">ElevenLabs voice</text>
+  <text x="1008" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">streak</text>
+  <text x="1150" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">number</text>
+  <text x="1008" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">lastActiveDate</text>
+  <text x="1150" y="306" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string</text>
+  <text x="1008" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#18181B">sessionDates[]</text>
+  <text x="1150" y="327" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">string[]</text>
+  <text x="1008" y="348" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#0EA5E9">🔗 avatarFileId</text>
+  <text x="1150" y="348" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">FK → Storage</text>
+  <text x="1008" y="370" font-family="Inter, sans-serif" font-size="10" font-style="italic" fill="#A1A1AA">Document id = Appwrite Account id</text>
+
+  <!-- ===== Storage bucket ===== -->
+  <rect x="1040" y="415" width="250" height="60" rx="10" fill="#FFFFFF" stroke="#FB7185" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1058" y="437" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#18181B">avatars (bucket)</text>
+  <text x="1058" y="455" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">Appwrite Storage · file_id (PK)</text>
+
+  <!-- ===== Relationship lines ===== -->
+  <line x1="410" y1="236" x2="525" y2="236" stroke="#18181B" stroke-width="1.5"/>
+  <text x="416" y="231" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#7C5CFC">1</text>
+  <text x="510" y="231" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#D97706">N</text>
+  <rect x="437" y="241" width="62" height="20" rx="10" fill="#F0ECFF" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="468" y="255" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#5B3FD4">wordId</text>
+
+  <line x1="875" y1="215" x2="990" y2="215" stroke="#18181B" stroke-width="1.5"/>
+  <text x="881" y="210" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#D97706">N</text>
+  <text x="975" y="210" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#0369A1">1</text>
+  <rect x="900" y="220" width="65" height="20" rx="10" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1"/>
+  <text x="932" y="234" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#0369A1">userId</text>
+
+  <line x1="1165" y1="382" x2="1165" y2="415" stroke="#18181B" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-er)"/>
+  <text x="1175" y="402" font-family="'JetBrains Mono', monospace" font-size="10" font-style="italic" fill="#71717A">avatarFileId</text>
+
+  <!-- Legend -->
+  <text x="60" y="475" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#71717A">Legend: 🔑 primary key · 🔗 foreign key · ⚠ legacy quirk (frontend defends with Number(...))  ·  Cardinality: 1 = one, N = many  ·  Dashed = bucket reference (not a relational FK)</text>
+</svg>
